@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: concepts/service-levels.html 
+keywords: service levels, service level 
+summary: Unterstützte Service-Level 
+---
+= Service-Level in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone bietet einen Service als ababonnierte Storage-Kapazität mit einem zugeordneten Service-Level.
+
+Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
+
+Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Vorgänge und der gesamte auf dem jeweiligen Volume verwendete Storage werden in die E/A-Dichteberechnung des Volumes berücksichtigt.
+
+
+
+== Service Levels für unterschiedliche Storage-Typen
+
+Hier sind die Service Level für Datei-, Block-, Objekt-Storage und Cloud-Services aufgeführt.
+
+Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.
+
+
+
+=== File- und Block-Services
+
+* Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC
+
+|===
+
+
+| *Service Level* | *Extreme* | *Premium* | *Leistung* | *Standard* | *Wert* 
+
+
+| * Workload-Typ* | Analytics, Datenbanken, geschäftskritische Applikationen | VDI, VSI, Softwareentwicklung | OLTP, OLAP, Container, Softwareentwicklung | Dateifreigaben, Webserver | Backup 
+
+
+| *max. IOPS/tib* | 12,288 | 4,096 | 2,048 | 512 | 128 
+
+
+| *Maximaler Durchsatz MB/s/tib* | 384 | 128 | 64 | 16 | 4 
+
+
+| *Latenz* | <1 ms | <1 ms | <1 ms | <17 ms | <17 ms 
+|===
+
+NOTE: Beachten Sie Folgendes:
+
+* Durchsatz-Performance-Kennzahlen (gelten nur für File- und Block-Services) basieren auf:
++
+** 32-KB-Blockgrößen
+** 70 % Lesen/30 % Schreiben-I/O-Kombination
+
+
+* Die tatsächlichen IOPS/tib und/oder MB/s/tib können je nach Workload-Merkmalen variieren
+* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem
+
+
+
+
+=== Objekt-Storage
+
+*unterstütztes Protokoll*: S3
+
+|===
+
+
+| *Service Level* | Objekt 
+
+
+| * Workload-Typ* | Medien-Repository, Archivierung 
+
+
+| *Ziel-IOPS/tib* | K. A. 
+
+
+| *max. IOPS/tib* | K. A. 
+
+
+| *maximaler Durchsatz MB/s (32 KB/IOP)* | K. A. 
+
+
+| *Latenz* | K. A. 
+|===
+
+NOTE: Beachten Sie Folgendes:
+
+* Die tatsächlichen IOPS/tib und/oder MB/s/tib können je nach Workload-Merkmalen variieren
+* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem
+
+
+
+
+=== Cloud-Storage
+
+*Unterstütztes Protokoll*: NFS, CIFS, iSCSI
+
+|===
+
+
+| *Service Level* | Cloud Volumes ONTAP®** (alle Wolken) 
+
+
+| * Workload-Typ* | Disaster Recovery, Softwareentwicklung/Test, Business-Applikationen 
+
+
+| *Ziel-IOPS/tib* | K. A. 
+
+
+| *max. IOPS/tib* | K. A. 
+
+
+| *maximaler Durchsatz MB/s (32 KB/IOP)* | K. A. 
+
+
+| *Latenz* | K. A. 
+|===
+
+NOTE: Beachten Sie Folgendes:
+
+* Cloud-native Services wie Computing, Storage und Netzwerk werden von Cloud-Providern in Rechnung gestellt
+* Diese Services hängen von den Cloud-Storage- und Computing-Merkmalen ab
+

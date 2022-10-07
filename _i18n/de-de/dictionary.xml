@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marken</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Patente</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Eine aktuelle Liste der NetApp Patente finden Sie unter:</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Datenschutzrichtlinie</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="5c578a7cd5fdea7f09cabf897bbb389d" category="summary">Infrastrukturkomponenten</block>
+  <block id="3c0d9137e7a6bf6e7b1cbaad394ac5ec" category="doc">Komponenten für die Implementierung</block>
+  <block id="bcb4c6f879e94f564292beef0f6bab25" category="paragraph">Für die Aktivierung von NetApp Keystone Services in Ihrer Umgebung gelten verschiedene Anforderungen.</block>
+  <block id="c9da0796f309773995aa86a3901c5e00" category="section-title">Standortanforderungen</block>
+  <block id="6eb9dd90c2cfc7011acbce7dca93857a" category="paragraph">Es gibt einige standortspezifische Anforderungen wie Platz, Racks, PDUs, Strom, Und Kühlung mit zusätzlichen Netzwerk- und Sicherheitsanforderungen.</block>
+  <block id="d511f8439ecde36647437fbba67a4394" category="section-title">Platzbedarf</block>
+  <block id="8e07eaea6ef5a15b6e14d5d1c74446a0" category="paragraph">Stellfläche für das Hosten der Keystone Infrastruktur-Ausrüstung (die von den Kunden bereitgestellt werden) NetApp stellt die Gewichtsspezifikationen auf Basis der endgültigen Konfiguration bereit.</block>
+  <block id="04e07e3547b329c2073dfb941335e7fe" category="section-title">Racks</block>
+  <block id="749ddfb3b6b9f4dd141812149dbefbe7" category="paragraph">Vier Postregale im kundengesteuerten Angebot (wird vom Kunden bereitgestellt). Beim NetApp Angebot können NetApp oder der Kunde die Racks je nach Anforderungen bereitstellen. NetApp bietet 42 enge Racks.</block>
+  <block id="c556f9cf21e8773770e784b54885c293" category="section-title">PDUs</block>
+  <block id="7c37163e273814103ad7313a49a6ab38" category="paragraph">Sie sollten die Stromverteiler (PDUs) bereitstellen, die an zwei separate, geschützte Schaltkreise mit ausreichend C13-Steckdosen angeschlossen sind. Im kundengesteuerten Angebot sind in einigen Fällen C19-Steckdosen erforderlich. Beim NetApp Angebot können NetApp oder der Kunde die PDUs je nach Anforderungen bereitstellen.</block>
+  <block id="dd4fe0cc913f704600b97d1f5dd285de" category="section-title">Strom</block>
+  <block id="39eeade2e73eb4823932331e5a459f8c" category="paragraph">Sie sollten die erforderliche Stromversorgung angeben. NetApp stellt die Spezifikationen für die Stromversorgung auf Basis der Nennleistung von 200 V bereit (typisch A, max A, typisch W, max W, Netzkabel, Und Menge), basierend auf der endgültigen Konfiguration. Alle Komponenten verfügen über redundante Netzteile. NetApp stellt die Stromkabel im Schrank bereit.</block>
+  <block id="8c880fe54cae171fa97132f8c5e82297" category="section-title">Kühlung</block>
+  <block id="e49c1cb86b679c35d94b37728ee6dfb6" category="paragraph">NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen die Spezifikationen für die Kühlungsanforderungen (BTU, max BTU) bereit.</block>
+  <block id="4d2caccc34711835f6ff99da411ac04e" category="section-title">Storage Virtual Machines</block>
+  <block id="02e1aa31c2191eece350edd271260aa9" category="paragraph">Storage Virtual Machines (Storage VMs) sollten folgendermaßen implementiert werden, um das Monitoring und die Nutzungsmessung von Keystone Abonnements zu unterstützen. Für den Keystone Collector ist eine Storage VM erforderlich – eine weitere wird für das OpsRamp Gateway benötigt</block>
+  <block id="ea499517d120e59b698edd3b0e9b03ea" category="list-text">Keystone Collector – zur Erfassung von Nutzungsmetriken:</block>
+  <block id="8bdf4f114c9098ba3fdea93bebf82839" category="list-text">VCPU: 4</block>
+  <block id="21c3987c5465a9d1dac24e575c718364" category="list-text">VRAM: 16 GB</block>
+  <block id="7c0886fffc74a7b64e90744419e68707" category="list-text">VDisk: 200 GB</block>
+  <block id="40d3a2dbc93408ab5e3aafd7fc3b4a19" category="list-text">OpsRamp Gateway – zur Echtzeitüberwachung + Remote-Support-ONTAP von Keystone GSSC:</block>
+  <block id="2f11c8227592a45cc8abe03cd297016d" category="list-text">VCPU: 8</block>
+  <block id="f910487762637173c68eb89d21dcb743" category="list-text">VDisk: 100 GB</block>
+  <block id="b81687f75b28f9a0cfb73649c9cca458" category="section-title">Implementierungsoptionen</block>
+  <block id="246dfda784335eef257ddd5ba4322a18" category="paragraph">Der Keystone Collector kann auf folgende Weise bereitgestellt werden:</block>
+  <block id="a100eabbc0de64e817f5268550f98e40" category="list-text">VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)</block>
+  <block id="e306861432fdc26395776b050a8d4eff" category="list-text">Der Kunde stellt Red hat Enterprise Linux 7 oder 8 oder CentOS 7 Linux Server bereit und Keystone Software wird über den `.rpm`-Installationsprozess installiert.</block>
+  <block id="3323e8fb7096cf3b5b43db57ba6576ee" category="paragraph">OpsRamp Gateway wird in der folgenden Konfiguration bereitgestellt:</block>
+  <block id="982460f46a9c865b5659aba58b2214e3" category="list-text">Bootfähiges .iso-Installationsprogramm für</block>
+  <block id="12d3f37fc10bb62fe3297b7457e90417" category="list-text">Citrix XenServer</block>
+  <block id="bbc2d665b02dc421c5c756db4b973610" category="list-text">Microsoft Hyper-V</block>
+  <block id="e05386baa04fdb8086234b221371bac1" category="list-text">Kernel-Based Virtual Machine (Linux KVM)</block>
+  <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">Netzwerkbetrieb</block>
+  <block id="c711d976f76bfa70e95af42b8654fb93" category="paragraph">Für den Betrieb und die Wartung des Keystone Collector und OpsRamp Gateway ist ein abgehender Zugriff für die folgenden Dienste erforderlich:</block>
+  <block id="6a289655b3295fc9e844e417d89ad1d9" category="list-text">support.netapp.com (Upload der Nutzungsdaten)</block>
+  <block id="28e1a3383bffc4e3398dba57600db789" category="list-text">keystone.netapp.com (Software-Updates)</block>
+  <block id="ebe9aca07858175421a1a9356e13ef73" category="list-text">Hub.Docker.io (Software-Updates)</block>
+  <block id="50908356248f20b74814544406990e61" category="paragraph">Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 GB, 40 GB und 100 GB.</block>
+  <block id="bc9ce1a2001f13d5a3489030a7b630e9" category="paragraph">NetApp liefert nur die erforderlichen Transceiver für von NetApp zur Verfügung gestellte Infrastrukturgeräte. Sie sollten Transceiver zur Verfügung stellen, die für Kundengeräte und zur Verkabelung zu den von NetApp bereitgestellten Keystone Infrastrukturgeräten erforderlich sind.</block>
+  <block id="d701dcea67fd884a29f39c9adfdeb8bf" category="section-title">Remote-Zugriff</block>
+  <block id="10c4d7c9f6bb4d01c98681da5a8c9605" category="paragraph">Die Netzwerkkonnektivität ist erforderlich zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden und dem Keystone Operations Center. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internet-Services. Das Netzwerk-Design erfolgt über ein sicheres Protokoll und Firewall-Richtlinien und werden sowohl von NetApp als auch von Kunden genehmigt.</block>
+  <block id="e087b210b0b25de538565418ba75ff89" category="paragraph">NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Applikationen wie OpsRamp und Zuora nutzen diese Verbindung, um die entsprechenden Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.</block>
+  <block id="b33c741c562e791f067740096844ffe9" category="summary">Willkommen beim Keystone</block>
+  <block id="8ae3d79d3f1b6cb3022dbfb96c477b67" category="doc">Weitere Informationen zu NetApp Keystone</block>
+  <block id="0b8640f441fb84d7a2ea903628d78e70" category="paragraph">NetApp Keystone (Keystone) ist ein abonnementbasiertes Servicemodell, bei dem das nutzungsbasierte Zahlungsmodell mit einem nahtlosen Hybrid-Cloud-Modell verändert wird. Für diejenigen, die einen Betriebskostenverbrauch von einem Vorabinvestition oder einem Leasing bevorzugen.</block>
+  <block id="97f0ecea1fe6ddc3c5155aa3590c4cf1" category="paragraph">Kunden profitieren von einer schnelleren Amortisierung, indem sie Hürden für das Management des unvorhersehbaren Kapazitätswachstums und die komplexen Beschaffungszyklen überwinden. Keystone ermöglicht Kunden, die Wirtschaftlichkeit und den Betrieb auf ihre Geschäftsprioritäten abzustimmen.</block>
+  <block id="341d84aa26cb4521474864e04ea2a63b" category="inline-image-macro">Fehler: Fehlendes Grafikbild</block>
+  <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="13607df7346e5dda197d0a5ac2302675" category="paragraph">Keystone ist ein abonnementbasiertes Serviceangebot mit Storage-Kapazität für vordefinierte Service-Level für Block-, Datei- und Objektdatentypen, die lokal implementiert werden können und von NetApp, einem Partner oder dem Kunden bedient werden können. Außerdem kann sie in Verbindung mit NetApp Cloud-Services wie Cloud Volumes ONTAP genutzt werden, die auf einer Hyperscale-Umgebung Ihrer Wahl implementiert werden können.</block>
+  <block id="b8ae90ca93129ae537095f32357022d7" category="section-title">Keystone Storage-as-a-Service (STaaS)</block>
+  <block id="73b0cd2f6a4aa1645cb6a6a43113809b" category="paragraph">Während der Großteil der Unternehmen noch an ihrer Strategie für die Hybrid Cloud arbeitet, möchten Sie als Kunde möglicherweise nicht zögern, den Wechsel zu einem Betriebskostenmodell _Pay-per-Use_ -Nutzungsmodell zu verschieben. Möglicherweise haben Sie keine Übersicht über den Zeitpunkt, zu dem ein bestimmter Teil oder alle Workloads in die Cloud verschoben werden sollen. Dies könnte jedoch möglicherweise ein Auftrag für die Migration in die Cloud haben. Keystone Storage-as-a-Service bietet die Flexibilität, die Sie mit On-Premises-Services starten und zu einem späteren Zeitpunkt über die richtigen Workloads entscheiden können und erst dann über die Cloud übertragen werden. Keystone Storage-as-a-Service (STaaS) bietet Verpflichtungs-Schutz für Ihre diversen Implementierungsmodelle, anstatt mehr Cloud-Service-Kosten zusätzlich zu lokalen Lösungen abzustapeln. Kunden können ihre lokalen Ausgaben neu zuweisen, um Cloud-Services hinzuzufügen. Im Wesentlichen werden dabei mindestens dieselbe monatliche Rechnung bezahlt, die vor dieser Neuzuweisung bereitgestellt wurde.</block>
+  <block id="a6f1b0a7a0dc76c228aff931a7f131c9" category="summary">Keystone-Preisgestaltung</block>
+  <block id="498fc747d4afdfa17f90e9f2508dc1d8" category="paragraph">NetApp Keystone ermöglicht planbare und Vorauspreise für Ihr Storage-Abonnement.</block>
+  <block id="20bf37f13c617e9f93531b4c89e316f7" category="paragraph">Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing vorziehen, können Sie sich für das Keystone Pay-as-you-grow-Modell für Ihr flexibles und skalierbares Nutzungsmodell entscheiden.</block>
+  <block id="ef379c37057d9a196c5c79f68a141fe6" category="paragraph">Keystone bietet Ihnen folgende Abrechnungsmöglichkeiten:</block>
+  <block id="cab4239b470346bf2f8afb64e2083bdb" category="list-text">Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Die verschiedenen Performance-Service-Tiers: Extreme, Premium, Performance, Standard, Value, Zudem können Sie mithilfe von Object Ihr erworbenes Service-Level für Keystone managen.</block>
+  <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.</block>
+  <block id="a40d52252bf8cd6939e9352eeffb837b" category="list-text">Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie verfügen über eine einzelne Rechnung für jeden Storage-Typ, jeden File-, Block-, Objekt- oder Cloud-Storage-Service.</block>
+  <block id="63ac7258199619c39eb7b180529b9840" category="list-text">Wählen Sie einen flexiblen Begriff für die Services und die Zahlung aus: Sie können sich für 12 Monate, 25 tib oder mehr pro Standort entscheiden. Danach können Sie 12 Monate automatisch verlängern.</block>
+  <block id="1506e8c7e13ed05e538e60e10a3477b1" category="paragraph">Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-Nutzung.</block>
+  <block id="b3f5d2a190d6e7bd7689ffbabbb1e2f2" category="inline-link-macro">Unterstützte Storage-Kapazitäten in Keystone</block>
+  <block id="61257cc41f9d0be05004f19df1a35f85" category="paragraph">Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter <block ref="85c4e06da3b978d5cb2b8ba9dc870124" category="inline-link-macro-rx"></block></block>
+  <block id="77fb4a998df70518a615aa086dcede60" category="summary">Quality of Service in Keystone</block>
+  <block id="b0c2a97a674f701e042904eabd2ce86c" category="doc">Quality of Service (QoS) in Keystone</block>
+  <block id="bff19ffadab3b2c0f2336fe90bfd9be9" category="inline-link">Durchsatz garantieren mit QoS-Übersicht</block>
+  <block id="40cf2c6306126b92829ce27884c4bfb5" category="paragraph">Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS können bestimmte Workloads wie das Booten mehrerer Systeme über einen Zeitraum ganze Ressourcen beanspruchen und andere Workloads beeinträchtigen. Informationen zur QoS finden Sie unter<block ref="4aff95bf567baa6ead09a4f66961b38a" category="inline-link-rx"></block>.</block>
+  <block id="4dbcb780b2afaca4e14c86b698ea3b98" category="inline-link">QoS max</block>
+  <block id="6f84bbf222b31dbe79e07a2c75da49f7" category="inline-link">QoS-Min</block>
+  <block id="6e57268dc27211b142ba6a04af03a292" category="paragraph">Durch die Verwendung von QoS wird sichergestellt, dass Applikationen stets eine konsistente Performance erhalten. NetApp ONTAP definiert zwei Parameter für QoS-Decken.<block ref="bd312d4ec5e215241554b5a080c2074c" category="inline-link-rx"></block>, Und Durchsatz<block ref="3eb73ba51ff00cdb54c637e9e4162c50" category="inline-link-rx"></block>. QoS max steht für die maximale Anzahl an IOPS oder MB/s oder IOPS und MB/s, die ein Workload erreichen kann. QoS-Min hingegen garantiert, dass der Durchsatz für einen Workload nicht unter einer bestimmten Anzahl von IOPS oder MB/s bzw. IOPS und MB/Sek. liegt.</block>
+  <block id="acdda1c20fb3985ce840929f7525c803" category="section-title">Anpassungsfähige QoS</block>
+  <block id="24fe24243f6cf0a0fada99032a85c028" category="inline-link">Allgemeines zur anpassungsfähigen QoS</block>
+  <block id="b504c1bfc53ce760e8a025424916dc4c" category="paragraph">Adaptive QoS wird bei Keystone-Services eingesetzt. Bei schwankenden QoS-Richtlinien wird das Verhältnis von IOPS zu TB/GB erhalten. Weitere Informationen zur adaptiven QoS finden Sie unter<block ref="0b0432aa3ca26288c18ad101be107649" category="inline-link-rx"></block>.</block>
+  <block id="93f9ecd00ef36c1d1c0fdeb039717989" category="paragraph">Keystone bietet flexible QoS-Richtlinien, die Sie einrichten können, sobald das Cluster in der Produktion ist. Sie sollten sicherstellen, dass alle Volumes mit der richtigen adaptiven QoS-Richtlinie verknüpft sind, die bereits in Ihrem System erstellt und verfügbar sind.</block>
+  <block id="5333a4037149d6d11a7f90a215530cfc" category="admonition">Wenn Sie keine anpassungsfähigen QoS-Richtlinien auf Ihre Volumes korrekt angewendet haben, werden diese Volumes gemäß Ihrem Abonnement auf dem höchsten Service-Level gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.</block>
+  <block id="e1e6381427a3975fa7597be88e8d2f70" category="section-title">Konfiguration der adaptiven QoS-Richtliniengruppe</block>
+  <block id="c9e7ca1e0ddb7dc805d3f4b515bc5b5c" category="paragraph">Sie können anpassungsfähige QoS-Richtlinien konfigurieren, um eine Durchsatzdecke oder -Untergrenze automatisch auf die Volume-Größe zu skalieren. Beim Konfigurieren einer Richtlinie sollten Sie Folgendes beachten:</block>
+  <block id="dc0bf2a6006e9a578431da0999f3c3f2" category="list-text">Name der Richtliniengruppe: Der Name der adaptiven QoS-Richtliniengruppe. Beispiel: `Keystone_extreme`.</block>
+  <block id="c0b4178f000168c6ea573c9a9897fb28" category="list-text">Vserver: Der Name der Vserver oder Storage VM (Storage Virtual Machine).</block>
+  <block id="7b3e733ebacc2050201e568993b23ceb" category="list-text">Erwartete IOPS: Die Anzahl der IOPS/tib, die ONTAP mindestens bietet, solange Performance-Garantie vorhanden ist.</block>
+  <block id="d1ff420a36adce394b3ddba223359344" category="list-text">IOPS-Spitzenwert. Die maximale Anzahl an IOPS/tib, die für ein Volume verfügbar ist, bevor die Performance eingeschränkt wird.</block>
+  <block id="b3bce6305b3ec6759588c183b5d92f8c" category="list-text">Erwartete IOPS-Zuweisung: Ob zugewiesener Speicherplatz oder genutzter Speicherplatz für erwartete IOPS berücksichtigt wird Dieses Feld steuert, ob die für das Volume verfügbaren IOPS auf der bereitgestellten oder genutzten Größe des Volume basieren. In Keystone basieren alle QoS-Berechnungen auf dem verwendeten Speicherplatz.</block>
+  <block id="136968f15ab6c1549edde11fcf6dbaee" category="list-text">IOPS-Spitzenzuweisung: Hierbei wird berücksichtigt, ob der zugewiesene Speicherplatz oder der genutzte Speicherplatz für Spitzen-IOPS gelten. Dieses Feld steuert, ob der für das Volume verfügbare IOPS-Spitzenwert auf der bereitgestellten oder genutzten Größe des Volume basiert. In Keystone basieren alle QoS-Berechnungen auf dem verwendeten Speicherplatz.</block>
+  <block id="512aabc687910813bbed0ae5551be06b" category="list-text">Absolutes IOPS-Minimum: Die niedrigste Zahl erwartet, dass IOPS auf ein Volume angewendet wird, wenn die Volume-Größe sehr klein ist und ansonsten eine inakzeptable Anzahl von IOPS zur Folge hätte. Dieser Wert liegt standardmäßig bei 1,000 für `Extreme`, 500 für `Premium` und 75 für andere Service-Level.</block>
+  <block id="4db69e448403f877751b701118fb0d6b" category="admonition">Dies ist keine IOPS-Dichte (z. B. 75 IOPS/tib), sondern eine absolute Mindestanzahl an IOPS.</block>
+  <block id="0dfe1d120dbd110a4d7bb29a9dea1779" category="inline-link">Verwendung von adaptiven QoS-Richtliniengruppen</block>
+  <block id="836728f5ee330d97ae5d9a72f9f1dc60" category="paragraph">Weitere Informationen finden Sie unter<block ref="d3ed2247f824ed549e87cae3c22534c2" category="inline-link-rx"></block>.</block>
+  <block id="2da83d8f6744d94e4db3195a4a4edfc0" category="section-title">Einstellungen anpassungsfähiger QoS-Richtlinien</block>
+  <block id="cbb6fc09497e6b462ee7b79a327e9491" category="paragraph">Die Einstellungen für anpassungsfähige QoS-Richtlinien variieren für jeden Service-Level.</block>
+  <block id="547c4738072689a91e04dc9c9c8f6c84" category="section-title">Einstellungen für Extreme Service Level</block>
+  <block id="0a1b61445eb72416e57d2c7ea8ad6377" category="paragraph">Für Extreme Service Level sind die Einstellungen und Befehle:</block>
+  <block id="5fd300737b7909532dc522634d75def5" category="list-text">Beispielbefehl:</block>
+  <block id="eec649d0629c0d4daca55ba4f12c8e0d" category="list-text">Minimale Volume-Größe: 100 gib, 0,1 tib</block>
+  <block id="92583c0936263d9a68a3fd624b7b24db" category="list-text">Maximale Volume-Größe: 10 tib</block>
+  <block id="25720426b4f9400d825effad9cc98cf4" category="section-title">Einstellungen für Premium-Service-Level</block>
+  <block id="41d6dba5b8908f01f444971e8a55c324" category="paragraph">Für Premium Service Level sind dies die Einstellungen und Befehle:</block>
+  <block id="1e8543e81fe8622a8aa785a23448ce74" category="list-text">Minimale Volume-Größe: 500 gib, 0,5 tib</block>
+  <block id="f59d8a930f65f82d8f21450de71784f2" category="list-text">Maximale Volume-Größe: 50 tib</block>
+  <block id="c335b79291cf3c370f0819292ea37103" category="section-title">Einstellungen für Leistungsstufen</block>
+  <block id="49b952fa54d9b67dd5d8c3784cced2f0" category="paragraph">Für das Performance Service Level sind die Einstellungen und Befehle:</block>
+  <block id="647b2fc1150676057fa08112aa455c76" category="list-text">Maximale Volume-Größe: 80 tib</block>
+  <block id="43384bba14e9ac0e1e3604da457dacd3" category="section-title">Einstellungen für Service-Level Wert</block>
+  <block id="ac583868dd3b0b2a11bd9db8bb25f8df" category="paragraph">Für Value Service Level sind dies die Einstellungen und Befehle:</block>
+  <block id="c5dd4ef3a979aa464f4d87ea8ac7b398" category="list-text">Minimale Volume-Größe: 1 tib</block>
+  <block id="d80459bf7c52b9b618a3832a91b72964" category="list-text">Maximale Volume-Größe: 100 tib</block>
+  <block id="267ac61356e61b878c714160ec38a642" category="section-title">Empfehlungen für die Volume-Größe</block>
+  <block id="4a79ba3eedbc7e207815ec2ba4a4f49d" category="paragraph">Die hier beschriebenen Minimum- und Maximum-Volume-Größen für jedes Service Level ermöglichen optimale IOPS- und Latenzwerte für ein Volume. Wenn zu viele Volumes außerhalb dieser Richtlinien erstellt werden, kann dies negative Auswirkungen auf die Performance dieser Volumes haben.</block>
+  <block id="e8cf569a737f3c6ca0de02023bb45074" category="section-title">Berechnung der Blockgröße</block>
+  <block id="b77f85f9490573cc674ceb0b9512f811" category="paragraph">Beachten Sie die folgenden Punkte, bevor Sie die Blockgröße mithilfe der folgenden Einstellungen berechnen:</block>
+  <block id="5cf0d288a8f6413cd5081b042a609034" category="list-text">IOPS/tib = MB/s/tib geteilt durch (Blockgröße * 1024)</block>
+  <block id="3054b3eab6506b148b8f255cf6c91456" category="list-text">Blockgröße ist in KB/IO</block>
+  <block id="b33667f1f1bd3abb2593a5226cf7aeec" category="list-text">TIB = 1024 gib; gib = 1024 MiB; MiB = 1024 KiB; KiB = 1024 Byte; gemäß Basis 2</block>
+  <block id="3f2e7c232425cd76862bc1b0de689d36" category="list-text">TB = 1.000 GB; GB = 1000 MB; MB = 1.000 KB; KB = 1000 Bytes; Stand 10</block>
+  <block id="9cd254eadf6bd0f0b5adf539786046ab" category="paragraph">Um den Durchsatz für das A-Service-Level zu berechnen, z. B. `Extreme` Service Level:</block>
+  <block id="5823839bc893623342447999dd558444" category="list-text">Maximale IOPS: 12,288</block>
+  <block id="d578d491479765feb511ce998c751bcc" category="list-text">Block-Größe pro I/O: 32 KB</block>
+  <block id="99bd16c85cd1ef64c6ea102f25b33359" category="list-text">Maximaler Durchsatz = (12288 * 32 * 1024) / (1024*1024) = 384 MBps/tib</block>
+  <block id="237499763b358b8ef0c6dc69fde2706a" category="paragraph">Wenn ein Volume über 700 gib der logischen Daten verfügt, beträgt der verfügbare Durchsatz:</block>
+  <block id="02a49e3ec5c5ab57dc26bbd217365bc3" category="paragraph">`mAximumdurchsatz = 384 * 0.7 = 268,8 MB`</block>
+  <block id="8a73a45becb1972a998dc8490856f730" category="summary">Abrechnung auf Basis von Burst-Nutzung</block>
+  <block id="6d1996f7ad775701eebe06768737c848" category="paragraph">Die Abrechnung mit NetApp Keystone (Keystone) basiert auf Burst-Kapazität, d. h. auf der von Ihnen verbrauchten Kapazität, zusätzlich zur für Sie abonnierten Kapazität der Service-Level.</block>
+  <block id="d6db0e971c52f5e8fdbac75e04c4566a" category="paragraph">Wenn die verbrauchte Kapazität größer ist als die für ein Service-Level verplante Kapazität, wird der Burst-Verbrauch erfasst und die Gebühren entsprechend erhoben. Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider.</block>
+  <block id="83cd48b4617f1e69361a1ecec3f5b3a3" category="summary">Die Abrechnung basiert auf verschiedenen Volume-Typen</block>
+  <block id="bb6903e39254cc1a8d4ee2116c8e91e1" category="doc">Verschiedene Szenarien für Keystone Abrechnung</block>
+  <block id="73cadb4cf764cf8de417608b2e01a846" category="paragraph">Es gibt verschiedene Szenarien für die Keystone Abrechnung. Sie sollten mit diesen Szenarien vertraut sein.</block>
+  <block id="ff6306dccf086261b36fc9764ec0a69c" category="section-title">Abrechnung für geklonte Volumes</block>
+  <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone ohne zusätzliche Zahlungen weiterhin verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Beachten Sie Folgendes:</block>
+  <block id="9ecca21c579121ef7bd72dc9d12e518a" category="list-text">Der Verbrauch der geklonten Volumes wird während der ersten 24 Stunden nach der Klonerstellung nicht berücksichtigt. Während dieser Zeit fallen für diese Zeit keine Gebühren an.</block>
+  <block id="ca7735d59738030991af47c8ebc587e7" category="list-text">Geklonte Volumes mit Standard- und Value-Service-Leveln werden nicht als Verbrauch betrachtet, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.</block>
+  <block id="d37a813a136d622d708c8200aef13f52" category="section-title">Abrechnung für erweiterte Datensicherung</block>
+  <block id="5fd78de0aa4c543ff56cb7656502fcd0" category="paragraph">Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.</block>
+  <block id="59461da5661eef64d28d9da99e80e312" category="paragraph">Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Keystone erkennt 10 TB des Verbrauchs an jedem Standort, was einer Erhöhung der Gesamtzahl um 20 TB ergibt. System Manager und Unified Manager berichten ein 10-TB-Volume, das in Standort A erstellt wurde, jedoch kein 10-TB-Volume in Standort B melden</block>
+  <block id="eeeb76af3f8badbcccdfd5a1b14f4e37" category="paragraph">Darüber hinaus werden alle Volumes, die auf einem Keystone System mit erweiterter Datensicherung erstellt wurden, auf den Verbrauch einer erweiterten Datensicherung angerechnet, unabhängig davon, ob diese Volumes gespiegelt wurden oder nicht.</block>
+  <block id="ba4c22a98feebac558bbaac68b704e09" category="section-title">Abrechnung für temporäre Volumes</block>
+  <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">Gelegentlich werden durch ONTAP temporäre Volumes (TMP) beim Verschieben von Volumes erstellt. Diese temporären Volumen sind kurzlebig, und der Verbrauch auf diesen Volumen wird nicht für die Abrechnung gemessen.</block>
+  <block id="f3fd1171857d8ea7abb7920fd1fd0c55" category="section-title">Abrechnung und anpassungsfähige QoS-Richtlinien</block>
+  <block id="81c2f1700a0bfc1c3a72e7a3bcb88cf0" category="paragraph">Keystone misst die Nutzung basierend auf Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes die entsprechenden QoS-Richtlinien entsprechend Ihren abonnierten Service-Leveln zugewiesen sind, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter <block ref="7f8846f19a6367d0efc82511d70933cd" category="inline-link-macro-rx"></block>.</block>
+  <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">Abrechnung für SnapMirror Ziele</block>
+  <block id="822d70344d224e2e68e8dcf4ec044c3c" category="paragraph">Die Preise für das SnapMirror Ziel-Volume unterliegen der QoS-Richtlinie für das Service-Level, das auf dem Quell-Volume zugewiesen ist. Wenn der Quelle jedoch keine zugewiesene QoS-Richtlinie vorliegt, wird das Ziel basierend auf dem niedrigsten verfügbaren Service-Level in Rechnung gestellt.</block>
+  <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">Abrechnung für LUNs</block>
+  <block id="05741b4ec38077cef83606c70f08f335" category="paragraph">Bei LUNs wird in der Regel dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:</block>
+  <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">Die LUN-Größe wird gemäß dem zugehörigen Service-Level der LUN für den Verbrauch gezählt.</block>
+  <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">Der restliche Speicherplatz im Volume wird, falls vorhanden, gemäß der QoS-Richtlinie des Service-Levels, die auf dem Volume festgelegt sind, berechnet.</block>
+  <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">System- und Root-Volumes</block>
+  <block id="3655e8bb18b4941a3bf9ce392c24bbb4" category="paragraph">System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Service überwacht, jedoch nicht gezählt oder abgerechnet. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.</block>
+  <block id="8ae2f411abd3cc165322ca02f81cde27" category="summary">Keystone und Equinix</block>
+  <block id="14c29ea9bc1bc3825786a06b4e07becd" category="doc">Keystone Co-Location-Services auf Basis von Equinix</block>
+  <block id="9dce5f1226f1cff09bc6384f9ee8b920" category="paragraph">NetApp hat sich mit Equinix zum Hosten von NetApp Keystone Services in einem Equinix Datacenter zusammengeschlossen, um Ihnen eine einheitliche Lösung zu bieten.</block>
+  <block id="130c3598aa08fc7ea1a58f5a13c59e7c" category="paragraph">Die Keystone Co-Location (Co-Lo) Services mit Equinix bleiben im Standard-Keystone-Service-Angebot unverändert.</block>
+  <block id="ab8f1d41f34d86519574f8ff7d968420" category="paragraph">In diesem Service:</block>
+  <block id="2e986b8517427f1318fcb6cde88cfe70" category="list-text">Equinix bietet Platz, Strom, Kühlung, Netzwerk und Rechnung Und Storage auf monatlicher Basis.</block>
+  <block id="484f921a271151147e4842b97cbe5119" category="list-text">Für bestimmte Keystone Sales Motions wird Unterstützung geboten.</block>
+  <block id="1ceb26b0e51c1e0eda91ef049cd504b2" category="list-text">Die Services werden in 21 Rechenzentren in 11 Ländern unterstützt.</block>
+  <block id="4014aa6ca6c4b222aeea8afca1522395" category="paragraph">Equinix verfügt über die Datacenter an folgenden Standorten:</block>
+  <block id="70b8a65cfdc8cb99446cf0efce595a78" category="cell">Im Rechenzentrum</block>
+  <block id="59716c97497eb9694541f7c3d37b1a4d" category="cell">Land</block>
+  <block id="3eb8670d999ac077dd0e2c345cb7c905" category="paragraph">Amsterdam</block>
+  <block id="a67d4cbdd1b59e0ffccc6bafc83eb033" category="cell">Niederlande</block>
+  <block id="8b1c40ce6629723de95905617aaf5743" category="paragraph">Atlanta, Usa</block>
+  <block id="6e1de07d015f5bd63086bfd38014efe8" category="cell">USA</block>
+  <block id="9cfa1e69f507d007a516eb3e9f5074e2" category="paragraph">Chicago, Usa</block>
+  <block id="09ea9b5e69df9e1385463fde29bc41cf" category="paragraph">Dallas, Usa</block>
+  <block id="67100af8b08e073c3ba7f4de2707584b" category="paragraph">Denver</block>
+  <block id="4312d5c8cdda027420c474e2221abc34" category="paragraph">Frankfurt</block>
+  <block id="d8b00929dec65d422303256336ada04f" category="cell">Deutschland</block>
+  <block id="59ead8d1e124ccfb79f3ace06f43e703" category="paragraph">London</block>
+  <block id="a98a6014b084f2a0c04df7f25ea1736f" category="cell">GROSSBRITANNIEN</block>
+  <block id="6b36360c14a3477023f0d543cc5727a5" category="paragraph">Verlorene Angeles</block>
+  <block id="6314044c3803213e9fd3f3ecf8c90d65" category="paragraph">Madrid</block>
+  <block id="907eba32d950bfab68227fd7ea22999b" category="cell">Spanien</block>
+  <block id="7c885b9c7c703a77befcabeea54944d5" category="paragraph">Melbourne</block>
+  <block id="4442e4af0916f53a07fb8ca9a49b98ed" category="cell">Australien</block>
+  <block id="0f5de708d2f6808ffb0c3893b2b8964a" category="paragraph">Miami</block>
+  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="paragraph">Mailand</block>
+  <block id="1007e1b7f894dfbf72a0eaa80f3bc57e" category="cell">Italien</block>
+  <block id="0d70a380fe641d8206c6d43c185b9c23" category="paragraph">Osaka</block>
+  <block id="53a577bb3bc587b0c28ab808390f1c9b" category="cell">Japan</block>
+  <block id="e20d37a5d7fcc4c35be6fc18a8e71bfa" category="paragraph">Paris</block>
+  <block id="0309a6c666a7a803fdb9db95de71cf01" category="cell">Frankreich</block>
+  <block id="4c54c163f43d0ac8512df032b3b07bff" category="paragraph">Seattle</block>
+  <block id="2839cbbae4c8fab9ecb75b26050b6482" category="paragraph">Silicon Valley</block>
+  <block id="1fc91e86962825bb745de53d1657b3e4" category="paragraph">Sydney</block>
+  <block id="62413a57c5e3dc51177995fa175d3286" category="paragraph">Tokio</block>
+  <block id="948ce72be6c871b84f6d0dab24f209ed" category="paragraph">Toronto</block>
+  <block id="445d337b5cd5de476f99333df6b0c2a7" category="cell">Kanada</block>
+  <block id="af2d21b994ceb580773abb07a8691b58" category="paragraph">Washington DC</block>
+  <block id="2b29c5739ec4158573c66d2124e2c7e9" category="paragraph">Zürich</block>
+  <block id="3ad08396dc5afa78f34f548eea3c1d64" category="cell">Schweiz</block>
+  <block id="10288ddd3c9dd46deaa222ee129df3fb" category="summary">US Citizen Support (USCS)</block>
+  <block id="3b4d5a194534074e4e26b153c90a2ef6" category="doc">USA Citizen Support (USCS)</block>
+  <block id="90770185e7f0d93f4befd67871a81092" category="paragraph">USA Citizen Support (USCS) ist ein Add-on-Angebot für NetApp Keystone-Abonnements. Sie erhalten Anspruch auf Lieferung und Support von laufenden Keystone-Services von den USA US-Bürger Bereitgestellt.</block>
+  <block id="0298010e49da89b748a96d3dd60c3579" category="paragraph">Lesen Sie die folgenden Abschnitte, um zu erfahren, welche Elemente Ihrer Abonnements von diesem Add-on-Service gebunden sind und die unter den Bedingungen der NetApp Keystone-Vereinbarung bereitgestellt werden.Fußnote:haftungsausschluss1[die hier beschriebenen Services und Angebote unterliegen einer vollständig ausgeführten Keystone-Vereinbarung und unterliegen diesen Einschränkungen.]</block>
+  <block id="616e342ef98270057c5d3a2f3e3e7338" category="section-title">Monitoring des NetApp Global Services Support Center</block>
+  <block id="c779911684ebe3ceed4035306e2997c3" category="paragraph">Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.</block>
+  <block id="b47b3a710484adb2c8cfacd64043b550" category="section-title">Keystone Success Manager</block>
+  <block id="42f709e8a5be1c018041912b530ca640" category="paragraph">Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.</block>
+  <block id="e8483ac20b1990d2362dd45e18cfb1d2" category="section-title">Implementierungsaktivitäten</block>
+  <block id="221d560cb3a4127ba5fc624a195a7f29" category="paragraph">Sofern verfügbar, werden die Implementierungs- und Installationsaktivitäten vor Ort oder per Remote-Zugriff von US-amerikanischen Unternehmen durchgeführt US-Bürger Bereitgestellt. Fußnote:Haftungsausschluss[die Verfügbarkeit eines geeigneten Personals für Aktivitäten vor Ort ist von dem geografischen Standort abhängig, an dem die Keystone Systeme eingesetzt werden.]</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="section-title">Unterstützung</block>
+  <block id="cedba9b370f4f8fb7584b8a96576dbce" category="paragraph">Sofern verfügbar, werden die notwendigen Fehlerbehebungs- und Support-Aktivitäten vor Ort von US-amerikanischen durchgeführt US-Bürger Bereitgestellt. Fußnote:Haftungsausschluss[]</block>
+  <block id="2dd5f36775604dad2303abf8267a2c4a" category="summary">Unterstützte Speicherkapazitäten</block>
+  <block id="96d2b38eee6470bf2333246e23312820" category="paragraph">Die NetApp Keystone Service-Kapazitäten umfassen:</block>
+  <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">Logische Kapazität</block>
+  <block id="07a94a7bd2b381bae37a94cd365377c7" category="paragraph">Das sind die Daten, die ein Kunde in die Keystone Infrastruktur setzt. Alle Keystone Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Keystone Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.</block>
+  <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">Engagierte Kapazität</block>
+  <block id="03cd8c6bf7fa9b89369c8da2bc2063e7" category="paragraph">Die minimale logische Kapazität, die jeden Monat für die Dauer der Laufzeit in Rechnung gestellt wird:</block>
+  <block id="5e4631059cd88370a28a74ba7f45c7b3" category="list-text">Jedem Service Level ist die Kapazität zugeordnet.</block>
+  <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">Verplante Kapazität und zusätzliche Service Level können während der Laufzeit hinzugefügt werden.</block>
+  <block id="326cde132ee3d2c6dbda5e81887d37fd" category="section-title">Änderungen der zugesagt Kapazität</block>
+  <block id="e80564e6a1386159e71203ed98662fc4" category="paragraph">Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ändern. Es gibt jedoch bestimmte Voraussetzungen:</block>
+  <block id="bd3fd623256db562bebda3e697d43452" category="inline-link-macro">Senkung der Kapazität</block>
+  <block id="38ee5c58ab48cb8a1b633c2aea7a1e45" category="list-text">Die zuges. Kapazität kann unter bestimmten Bedingungen verringert werden. Weitere Informationen finden Sie unter <block ref="bce311488cda7b3fc83e86e7b3939fd8" category="inline-link-macro-rx"></block>.</block>
+  <block id="c7ba6335b772c84090b8f2d9dd8b58a3" category="list-text">Die verplante Kapazität kann nicht 90 Tage vor Ablauf Ihres Abonnements verlängert werden, es sei denn, das Abonnement muss für eine zusätzliche Laufzeit von 12 Monaten verlängert werden.</block>
+  <block id="1df0745e84cded8b1998d4aaf3fce411" category="inline-link-macro">NetApp Global Services Support Center</block>
+  <block id="441fb9755b7dbda078af7adc172f0826" category="list-text">Sie können Änderungen an der zugesagt Kapazität über die Cloud Manager Schnittstelle oder über Keystone Success Manager anfordern. Informationen zum anfordern von Änderungen finden Sie unter <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>.</block>
+  <block id="dd83b22a815febb6c6547eab078bbf30" category="section-title">Verbrauchte Kapazität</block>
+  <block id="88d15e07f84d2adc95591402e40e17f1" category="paragraph">Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Der Keystone Service berücksichtigt die Summe der logischen Größen (nicht der verwendeten physischen Kapazität) aller Volumes auf einem bestimmten Service-Level, die als verbrauchte Kapazität für dieses Service-Level betrachtet werden.</block>
+  <block id="08d63a30cdbc798edef3e21cacda1ac2" category="section-title">Burst-Kapazität</block>
+  <block id="27fcf41f82a75aca016a66da24ab3abe" category="paragraph">Dies ist die verbrauchte Kapazität, die die engagierte Kapazität überschritten hat. Beachten Sie folgende Punkte:</block>
+  <block id="dfe3a64edf2cc8e36f72d43579e07d11" category="list-text">Keystone bietet 20 % Kapazität über die engagierte Kapazität.</block>
+  <block id="abda4117b1311f6ae0b218aeba00fae6" category="list-text">Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis des verbrauchten Durchschnitts abgerechnet.</block>
+  <block id="aec1005ee7c9c20d1a1b0df3290a5c34" category="list-text">Burst-Kapazität wird auf bis zu 20 % mit derselben Rate für die engagierte Kapazität berechnet.</block>
+  <block id="b6e76ea727138e1a2c7199dd3f0874db" category="section-title">Rechnungskapazität</block>
+  <block id="0b2c78b413a92fa3d683991180e6b149" category="paragraph">Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (durchschnittliche tägliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]). Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.</block>
+  <block id="2eb54516538e34e5753ac19de355cf86" category="paragraph">Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch.</block>
+  <block id="c556196a410876d85c1dc7aafc4fee9f" category="summary">Keystone Infrastruktur</block>
+  <block id="ebe2c820030cbe84c19b6c86f0fc0f8b" category="paragraph">In diesem Abschnitt werden die NetApp Keystone Infrastruktur, Architektur und Management-Applikation für NetApp und vom Kunden betriebene Umgebungen beschrieben.</block>
+  <block id="689c091c4dc73c32308dec8f364a8c91" category="paragraph">Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten ausschließlich mit NetApp im Unternehmen. NetApp behält sich das Recht vor, folgende Maßnahmen zu ergreifen:</block>
+  <block id="4de39da4981120681cbe9328c80e44c0" category="list-text">Wählen Sie Produkte aus, ersetzen Sie sie oder verwenden Sie sie für andere Zwecke.</block>
+  <block id="8ee500899221695e76d9d58e146df90f" category="list-text">Aktualisieren Sie bei Bedarf Produkte mit neuer Technologie.</block>
+  <block id="c9f8c46c19cc33ee0a4a750a7062ea9e" category="list-text">Erhöhen oder verringern Sie die Kapazitäten der Produkte, um die Serviceanforderungen zu erfüllen.</block>
+  <block id="c922e260c91e9dfb9972aed0ec4df400" category="list-text">Ändern Sie Architektur, Technologie und/oder Produkte, um die Service-Anforderungen zu erfüllen.</block>
+  <block id="63960c1414ae7aedf0bb17dff5c6759d" category="paragraph">Die Keystone-Infrastruktur umfasst mehrere Komponenten, u. a. die folgenden:</block>
+  <block id="fa219bcc6143a056d4e01170fa0df8d5" category="list-text">Die Keystone Infrastruktur mit Storage Controllern</block>
+  <block id="50b3ca2bf45db45c46e3f489f5322d29" category="list-text">Tools zum Managen und Betreiben des Service wie OpsRamp, Active IQ und Active IQ Unified Manager.</block>
+  <block id="f9267c96d3041f6412751f589901c372" category="section-title">Storage-Plattformen</block>
+  <block id="414aed93a577927f0e7911bc9b07e11e" category="paragraph">Enterprise-Applikationen benötigen Storage-Plattformen, um schnelle Bereitstellungs-Workflows zu unterstützen, eine kontinuierliche Verfügbarkeit aufrechtzuerhalten, hohe Workloads mit niedriger Latenz aufrechtzuerhalten, eine höhere Performance zu ermöglichen und die Integration mit führenden Cloud-Providern zu unterstützen. NetApp bietet verschiedene Produkte und Technologien zur Erfüllung dieser Anforderungen. Für den Keystone-Service setzt NetApp AFF und StorageGRID Plattformen ein.</block>
+  <block id="2e36da56dea864a88d8bfe77e37ce8ce" category="section-title">Monitoring-Tools</block>
+  <block id="6961b64b96800d43e0da115e9763a226" category="paragraph">In einem vom Keystone Kunden betriebenen Service sind die Storage-Infrastruktur und Monitoring-Tools vor Ort installiert. Die Storage-Infrastruktur besteht aus der erforderlichen Storage-Hardware zur Unterstützung Ihres Erstauftrags. Die Infrastruktur kann später mehr Storage bestellt werden.</block>
+  <block id="ae031eb46bb3af9ef59c200e318f13e4" category="paragraph">Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und Verbrauchsüberwachung bereitgestellt.</block>
+  <block id="fd743d6b8cc0efa021c01a2c37789e28" category="list-text">OpsRamp Local Gateway: OpsRamp ist eine Cloud-basierte Anwendung zur Überwachung Ihres Netzwerks. Es verfügt über integrierte Integrationen mit NetApp Storage-Plattformen, um Umgebungsdaten zu erfassen und das Netzwerk zu überwachen. Dieser Service wird mithilfe eines lokalen Gateways aktiviert, das auf Ihrer Website installiert ist und mit dem Cloud-Portal kommuniziert. Weitere Informationen zu</block>
+  <block id="da1a82eaffa9f0ef5a1b5cd7a2262bd3" category="list-text">Keystone Data Collector: Keystone Collector bietet Keystone Kunden Abrechnungsservices. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst in regelmäßigen Abständen alle fünf Minuten Daten von ONTAP und StorageGRID Controllern. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Der Active IQ Data Lake verarbeitet die Daten für die Abrechnung und sendet sie zur Abrechnung an Zuora. Über das Active IQ Digital Advisor Kundenportal können Sie sich einloggen und Ihre Abonnement- und Nutzungsdetails für Ihr Keystone Abonnement anzeigen.</block>
+  <block id="4a08d1835c4f40051f2bf2514b677434" category="paragraph"><block ref="4a08d1835c4f40051f2bf2514b677434" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a3297beb0c913ab1ce7de0647b5264d0" category="inline-link-macro">Keystone und Active IQ Digital Advisor</block>
+  <block id="e62833be583237b7e797e3a412bfe405" category="paragraph">Weitere Informationen finden Sie unter <block ref="a744b29bbc6a9b79feb7932381ec9110" category="inline-link-macro-rx"></block></block>
+  <block id="8ef6698c4c0c28e13ff87fec7e5388eb" category="summary">Erweiterte Datensicherung</block>
+  <block id="949bf8f2d0dd74e70896f200c673026c" category="paragraph">Sie können das Add-on für Advanced Data Protection als Bestandteil Ihres Keystone Abonnements abonnieren.</block>
+  <block id="d6caec3bda3124681a05dff706499611" category="inline-link-macro">Unterstützte Storage-Services</block>
+  <block id="268110f9bb0d90807e348c1935b2ac24" category="paragraph">Weitere Informationen über den Basis-Storage und den Cloud-Storage-Service finden Sie unter <block ref="f6a6b9b5f978ea05dc72fa8625771489" category="inline-link-macro-rx"></block></block>
+  <block id="c575a20db4934726a8fadd53d81a0c98" category="inline-link-macro">Service-Level in Keystone</block>
+  <block id="784c4d313713f6d9994c5a826d923a2b" category="paragraph">Informationen zu Service-Levels finden Sie unter <block ref="7ea66a5a0ec24dd88c60fc26a094a732" category="inline-link-macro-rx"></block></block>
+  <block id="7f4d4fbe08a8a895671d05c4a82b0c85" category="inline-link-macro">MetroCluster-Dokumentation</block>
+  <block id="d886c53a96b3aef274c1c86281e31b79" category="paragraph">Der erweiterte Keystone Datensicherungsservice kann Daten synchron an einen sekundären Standort spiegeln und im Falle eines Ausfalls am primären Standort übernehmen – ohne Datenverlust. Diese Funktion nutzt die MetroCluster Konfiguration zwischen zwei Standorten für die Datensicherung. Erweiterte Datensicherungs-Add-on-Services stehen nur für Ihre Datei- und Block-Storage-Services zur Verfügung. Informationen zu ONTAP MetroCluster finden Sie unter <block ref="c63f678b886b21286031481ae7dbcfa9" category="inline-link-macro-rx"></block></block>
+  <block id="e546de34a539e742c4aada554ca6129b" category="paragraph">Die Zusatzgebühren gelten für alle Kapazitäten im Abonnement, also die Quelle, gespiegelte Kopie und nicht gespiegelte Daten.</block>
+  <block id="e67cbe175f9cc456664f39623ff8bd0b" category="list-text">Bei diesem Service werden 100 % der zugewiesenen Kapazität zu einem damit verbundenen Storage-Service als zugeordnete Kapazität konfiguriert.</block>
+  <block id="b21152b7b912739b58060e9f661767eb" category="list-text">Der Storage wird sowohl für das Quell- als auch das Ziel-Cluster abgerechnet. Dieser Add-on Service wird sowohl für die primären als auch für sekundäre (gespiegelte) Volumes in Rechnung gestellt.</block>
+  <block id="219292372e67c08a8be91d3c24f07b87" category="list-text">Die Gebühren gelten nur für Ihre File- und Block-Storage-Services.</block>
+  <block id="55c3d2c1c0c6799aaef74bc75de96797" category="summary">Berechnungen von Kennzahlen und Definitionen der Keystone Services</block>
+  <block id="5ac36e6be3720d69479533a204a80ef9" category="doc">Metriken und Definitionen für Keystone Services</block>
+  <block id="f1274478f14b664193cad0741c8c2ad6" category="paragraph">Die folgenden Begriffe und Definitionen werden im NetApp Keystone (Keystone) Service zur Messung von Kennzahlen verwendet:</block>
+  <block id="083391d447b65d40416f359a5f144c70" category="list-text">Kapazität Maßeinheiten: Gib, tib und PiB</block>
+  <block id="714717d53beaae55c202e96d1662971b" category="list-text">I/O-Dichte: IOPS/tib: Anzahl der pro Sekunde verarbeiteten Input/Output-Vorgänge, basierend auf dem gesamten Speicherplatz, der vom Workload in Terabyte verbraucht wird.</block>
+  <block id="36e9a03898f9ae86972da464b865fd7e" category="list-text">Service-Verfügbarkeit</block>
+  <block id="f99112a4c6eaa146943fa5e2ddfd9879" category="list-text">Datenaufbewahrung bei präzisen Datenzugriffs</block>
+  <block id="4e8c569f63eedc90f70f80e1008f201e" category="list-text">Latenz und Geschwindigkeit</block>
+  <block id="0719eeba43039e5122ee28a4a45955e4" category="section-title">Kennzahlenmessung</block>
+  <block id="770eb4f67d3b31e9a06f723e25a540a8" category="list-text">*Kapazitätsmessung in gib, tib und PiB.* Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).</block>
+  <block id="b3c1726820f049c750d75ab549fca249" category="list-text">*Operationen Zählerdiagramm: IOPS/tib.* die Protokollvorgänge pro Sekunde, angefordert von der Applikation, geteilt durch die Größe des von Workloads verwendeten Volumes.</block>
+  <block id="7c2e5015aef4dbaf8009f18a7d57a052" category="list-text">*Verfügbarkeit* wird als Prozentsatz der Anzahl der vom Dienst erfolgreich beantworteten I/O-Anfragen gemessen, geteilt durch die Gesamtzahl der E/A-Anforderungen, die an den Dienst gestellt wurden. Dies wird bei der Serviceeingrenzung in einem Monat gemessen und schließt nicht die geplante Ausfallzeit oder Nichtverfügbarkeit der vom Kunden bereitgestellten Einrichtungen, Netzwerke oder sonstigen Dienste ein.</block>
+  <block id="56bdf49f19a9ae376d462293296a3ca4" category="list-text">*Langlebigkeit* ist der Prozentsatz der Daten, auf die ohne Verlust der Treue zugegriffen wird, ohne kundenbedingte Löschung oder Beschädigung auszuschließen.</block>
+  <block id="93df9c79daa24b389866d9bf40848977" category="list-text">*Latenz.* Zeit zur Verarbeitung einer I/O-Anfrage, die von einem Client erhalten wurde, gemessen an der Serviceeingrenzung (Storage-Controller-I/O-Port).</block>
+  <block id="fb0313f9403d2f1c6713354a48e245bd" category="section-title">Metriken für Durchsatz-Performance</block>
+  <block id="3d5a243d310205930c4ec04e36543488" category="paragraph">Durchsatz-Performance-Kennzahlen gelten nur für File- und Block-Services. Sie basieren auf:</block>
+  <block id="5048ff69f87c85209021d8c026e01f3c" category="list-text">Blockgrößen von 32 KB</block>
+  <block id="e8fbd9f6f420e483e6c622bb47cd6854" category="list-text">70 % Lese-/30 % Schreib-I/O-Kombination</block>
+  <block id="60498bea38bc14433a21075b5c7d0b46" category="section-title">Variationen in der I/O-Dichte</block>
+  <block id="fa72e8db20975a24341789b04e39496d" category="paragraph">Die in IOPS/tib und/oder MB/s/tib berechnete I/O-Dichte kann basierend auf den folgenden Faktoren variieren:</block>
+  <block id="852a8b6906ba8abf72b6418bdf8b5ea5" category="list-text">Workload-Merkmale</block>
+  <block id="8ec22227c0b030947bddd2c4d3531d9c" category="list-text">Latenz, ohne Folgendes:</block>
+  <block id="5b8941c55ade7ebbdc315d116077e1cb" category="list-text">Applikationslatenz</block>
+  <block id="3dc995ca2f3e29ab83828237ddfb6e01" category="list-text">Host-Latenz</block>
+  <block id="b75777b15e142a11a322b36f867e1049" category="list-text">Latenz im Kundennetzwerk bei Übertragung der Daten an und von den Controller-Ports</block>
+  <block id="f8ed1667ffe2b20a5273752af4726faa" category="list-text">Overheadlatenz im Zusammenhang mit der Datenübertragung an den Objektspeicher im Fall von FabricPool</block>
+  <block id="cb5a96c5a4ffa77a49aaa4721d1fdbcf" category="list-text">Die durch die QoS automatisch angewandte Latenz wird I/O-Prozesse innerhalb der maximalen Service-Level-Maximalwerte beibehalten</block>
+  <block id="72c371ac4eea814fdca22073c43b5cd2" category="list-text">Daten der Benutzer- und Snapshot-Kopie, die als Teil der genutzten Kapazität gezählt werden</block>
+  <block id="a6193d0f0c4ce290ab2a6d53032fdf74" category="list-text">Das zugewiesene absolute Minimum an IOPS für jedes ONTAP Volume, unabhängig von der Menge der darin vorhandenen Daten:</block>
+  <block id="41a82de5cce1f4315d40362417d5400e" category="list-text">Extrem: 1,000 IOPS</block>
+  <block id="87c7ebf0218d3670ce3d2f93a702663e" category="list-text">Premium: 500 IOPS</block>
+  <block id="69cbdfcaaeb853a3a22106281d7479e4" category="list-text">Performance, Standard und Wert: 75 IOPS</block>
+  <block id="d1ac3fe70db588b50bdb783ecf2a0679" category="list-text">Bei Verwendung der Add-on-Services für Advanced Data Protection gilt die Ziellatenz nur für die Bearbeitung von I/O-Anfragen vom lokalen Storage</block>
+  <block id="6d254a15ba3fea951a58068af61e1688" category="section-title">Volume AQoS</block>
+  <block id="8c037b7d81c288bf1b9266d8836d1b4a" category="paragraph">Für jedes ONTAP Volume sollte eine entsprechende adaptive Quality of Service (AQoS)-Richtlinie angewendet werden. Andernfalls wird die Kapazität in jedem Volume, auf das keine AQoS-Richtlinie angewendet wird, mit der Rate des höchsten Service-Level abgerechnet.</block>
+  <block id="3f4845c140708c07e69de229e819825e" category="summary">Unterstützte Service-Level</block>
+  <block id="0b0b10149a946818850dc04884d24d2a" category="paragraph">Keystone bietet einen Service als ababonnierte Storage-Kapazität mit einem zugeordneten Service-Level.</block>
+  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.</block>
+  <block id="79e15df4b74a29eeb42b763502935abc" category="paragraph">Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Vorgänge und der gesamte auf dem jeweiligen Volume verwendete Storage werden in die E/A-Dichteberechnung des Volumes berücksichtigt.</block>
+  <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">Service Levels für unterschiedliche Storage-Typen</block>
+  <block id="374e0ab3723f6414e5c3d32d0f6e7450" category="paragraph">Hier sind die Service Level für Datei-, Block-, Objekt-Storage und Cloud-Services aufgeführt.</block>
+  <block id="89c3a4001bb90f26ff84b68cb534b8ee" category="paragraph">Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.</block>
+  <block id="bea49d8bc94938ed67e5ee6942094935" category="section-title">File- und Block-Services</block>
+  <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC</block>
+  <block id="079bbc110741f438dfb37f32218c4c21" category="cell">*Service Level*</block>
+  <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">*Extreme*</block>
+  <block id="153a19d482de580ce84c77ac52c6f907" category="cell">*Premium*</block>
+  <block id="64bd5015546813c113a50d1d816a2fce" category="cell">*Leistung*</block>
+  <block id="3ecb63821538cb0fde443d82bdb28861" category="cell">*Standard*</block>
+  <block id="4cc402eecdb589b122553e660ac696c4" category="cell">*Wert*</block>
+  <block id="9256405ef4b3e50cc40cc8f3d4e135e9" category="cell">* Workload-Typ*</block>
+  <block id="9b00e85f3de98b33a5dc104b3336a02c" category="cell">Analytics, Datenbanken, geschäftskritische Applikationen</block>
+  <block id="bb606d4181e97fbe036b3b9ea110f0cd" category="cell">VDI, VSI, Softwareentwicklung</block>
+  <block id="b1082bbe755cf28c4bb0924c487eeb62" category="cell">OLTP, OLAP, Container, Softwareentwicklung</block>
+  <block id="ff1c70afac4394fd1bdfad3ce8d0fbe9" category="cell">Dateifreigaben, Webserver</block>
+  <block id="3500ba09d0538297440ca620c9dd46bf" category="cell">Backup</block>
+  <block id="ec5026517f56850bf1f5b45ae35c31ac" category="cell">*max. IOPS/tib*</block>
+  <block id="d38753fed54aa499bc5e6c27d3945c19" category="cell">12,288</block>
+  <block id="c9ca1ec49e8aac1615059e421cbb4793" category="cell">4,096</block>
+  <block id="4546199e2bcb9ae49a13edef9675fd03" category="cell">2,048</block>
+  <block id="10a7cdd970fe135cf4f7bb55c0e3b59f" category="cell">512</block>
+  <block id="76dc611d6ebaafc66cc0879c71b5db5c" category="cell">128</block>
+  <block id="e4637ae69ecc3ef6d95aa17dc2abd0a5" category="cell">*Maximaler Durchsatz MB/s/tib*</block>
+  <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384</block>
+  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
+  <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
+  <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
+  <block id="eea2274bcc20c5ab5c322a30dcee6258" category="cell">*Latenz*</block>
+  <block id="99f8d77b50f8491531357b2d907d59d1" category="cell">&lt;1 ms</block>
+  <block id="342e06f2c04b016459176bdbbd984dfe" category="cell">&lt;17 ms</block>
+  <block id="f8a53c14576af044213d4c5aed84f064" category="list-text">Durchsatz-Performance-Kennzahlen (gelten nur für File- und Block-Services) basieren auf:</block>
+  <block id="b52248c4cb4389d77e35c5e05233ed1a" category="list-text">32-KB-Blockgrößen</block>
+  <block id="3d29758328b1358d8f5979a77c728079" category="list-text">70 % Lesen/30 % Schreiben-I/O-Kombination</block>
+  <block id="f654387f20ff017d772b881c4720a414" category="list-text">Die tatsächlichen IOPS/tib und/oder MB/s/tib können je nach Workload-Merkmalen variieren</block>
+  <block id="f6f865abcf6c48ce5f046d363f6397a8" category="list-text">Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem</block>
+  <block id="670aaecb1a526fbed439dad3ec353a96" category="section-title">Objekt-Storage</block>
+  <block id="58d801506333ab644845942779162cbc" category="paragraph">*unterstütztes Protokoll*: S3</block>
+  <block id="497031794414a552435f90151ac3b54b" category="cell">Objekt</block>
+  <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">Medien-Repository, Archivierung</block>
+  <block id="15a506ce1c9786829c379b6e3d6104f6" category="cell">*Ziel-IOPS/tib*</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">K. A.</block>
+  <block id="49f593d642a7f3dccf1fe5bf08aaf55a" category="cell">*maximaler Durchsatz MB/s (32 KB/IOP)*</block>
+  <block id="6872c2b6282a1ff41523f7b84a51d4da" category="section-title">Cloud-Storage</block>
+  <block id="0204bd4a145964446ee73a3e57c11e4e" category="paragraph">*Unterstütztes Protokoll*: NFS, CIFS, iSCSI</block>
+  <block id="0b178ef09df287da4b0d02c3800725ce" category="cell">Cloud Volumes ONTAP®** (alle Wolken)</block>
+  <block id="a6b775035306fc8ea9ed0392f6da3bfa" category="cell">Disaster Recovery, Softwareentwicklung/Test, Business-Applikationen</block>
+  <block id="f11e20f4fa531efbb33b8373b7d1a77d" category="list-text">Cloud-native Services wie Computing, Storage und Netzwerk werden von Cloud-Providern in Rechnung gestellt</block>
+  <block id="2a44eac6716b470f38e28d845feb5eeb" category="list-text">Diese Services hängen von den Cloud-Storage- und Computing-Merkmalen ab</block>
+  <block id="34de092c612c654c5fd27c6d9ff3bfeb" category="summary">OpsRamp als Überwachungsanwendung</block>
+  <block id="382f4a867287761cfea9a6f6b9ed9a60" category="paragraph">OpsRamp ist eine SaaS-basierte Applikation, mit der Keystone Ressourcen erkennen, überwachen und kontinuierlich managen kann. Mit dem OpsRamp Tool kann das Monitoring-Team von NetApp den Kunden, die Keystone implementieren, per Fernzugriff Überwachungs- und Managementservices bereitstellen.</block>
+  <block id="b81ff76d52b237aa245e39913f840b9d" category="paragraph">Dieses Tool verfügt über umfassende und leistungsstarke Funktionen zur Ermittlung von Ressourcen wie Applikationen, Servern, Netzwerkgeräten, Containern und anderen Ressourcen, die in der Regel in EINER IT-Umgebung verwendet werden. Dieser Remote Management Service ist einfach zu implementieren an verschiedenen Standorten, erfasst Daten schnell und lässt sich leicht auf einer zentralen Konsole anzeigen. Weitere Informationen zum OpsRamp-Programm finden Sie unter<block ref="4490de11b8adc62f0a394db07a9aef6e" category="inline-link-rx"></block>.</block>
+  <block id="6c00330d2a26248fda642bc7d5579f3d" category="paragraph"><block ref="6c00330d2a26248fda642bc7d5579f3d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ebaea1050d4e42fa1326b2f740b72922" category="paragraph">Wie diese Abbildung zeigt, gibt es in der OpsRamp-Architektur zwei unterschiedliche Komponenten einer zentralen SaaS-Applikation. Am Überwachungsstandort kann entweder das lokale Gateway OpsRamp vorhanden sein, das die Daten von den Assets sammelt, oder der OpsRamp Agent in den zu überwachenden Ressourcen oder eine Kombination aus dem lokalen Gateway und dem Agent.</block>
+  <block id="7edf5493dbd819b6a6022e6339f194cf" category="paragraph">OpsRamp Cloud-Portal ist eine SaaS-basierte Anwendung, die Metadaten des am Kundenstandort installierten Agenten oder lokalen Gateways erfasst, verarbeitet und auf seinem Dashboard mit Beobachtungen anzeigt. Das Keystone Überwachungsteam überwacht dieses Dashboard regelmäßig, um Einblicke zu erhalten.</block>
+  <block id="e3bd1d9c0841cd12eb394cd52e1a4088" category="paragraph">Das zentralisierte OpsRamp-Tool und das lokale OpsRamp-Gateway funktionieren zusammen, um Assets zu überwachen und zu verwalten. Das zentralisierte Tool gibt die Befehle aus, und das lokale Gateway fungiert dabei, sammelt die Daten und sendet sie zurück an das zentrale Portal.</block>
+  <block id="0f63e54ffaa738810d523b9c01ab58ef" category="paragraph">OpsRamp Local Gateway wird am Kundenstandort installiert und bietet verschiedene Vorteile, u. a.:</block>
+  <block id="479380705f5d366e922b5a0bd903e4fd" category="list-text">Die Installation des OpsRamp-Agenten auf allen Assets entfällt.</block>
+  <block id="c4c52b5ed565bb0d9e83873baf1f9507" category="list-text">Die Ressourcen können nur auf das lokale Gateway verweisen, das aggregiert und Meldungen an das zentrale Portal sendet.</block>
+  <block id="cb4542f091147cb7d66b55d0dde25cf2" category="list-text">Kunden können den eingehenden und ausgehenden Datenverkehr auf dem lokalen Gateway einschränken und überwachen, anstatt den OpsRamp-Agentenverkehr auf verschiedenen Geräten zu erlauben.</block>
+  <block id="a7b66a2d4e4ff13875009f305dd65473" category="section-title">OpsRamp-Sicherheit</block>
+  <block id="9489d34587f04c7f6c07ccbb6980e343" category="paragraph">OpsRamp entspricht Standards wie SOC 2 Typ II und wird in Tier 1-Rechenzentren-Providern gehostet, die in Sicherheits-, Verfügbarkeits- und Vertraulichkeitsbestimmungen gemäß ISO 27001 und SOC 1 Typ I entsprechen.</block>
+  <block id="09725618ea51bf7b1ed3b88053d1c28a" category="paragraph">Darüber hinaus bietet OpsRamp dem Keystone Team die folgenden Sicherheitsfunktionen:</block>
+  <block id="8f8f65e5ddf3a4bcc61fe72c734e6252" category="list-text">OpsRamp verwaltet Protokolle zu Benutzeraktivitäten und das Keystone-Team kann Ad-hoc- oder zeitplanmäßige Berichte zu Benutzeraktivitäten generieren</block>
+  <block id="16d25f1fc03b8e83da527717a5e7c672" category="list-text">Die gesamte Kommunikation vom OpsRamp Gateway zum OpsRamp Cloud-Portal ist TLS verschlüsselt</block>
+  <block id="eb4abf31e225054c6b7aaa861c615ddf" category="list-text">Daten im Ruhezustand und genutzte Daten werden über TLS verschlüsselt</block>
+  <block id="1d953af695a8dd462ac3828ca81448b1" category="list-text">OpsRamp bietet zwei-Faktor-Authentifizierungsoptionen für das Keystone Engineering Team</block>
+  <block id="af746de3f3221260f9d288df6a53ecb2" category="list-text">OpsRamp implementiert die rollenbasierte Zugriffssteuerung, sodass das Keystone-Team mehrere Rollen erstellen und Benutzern geeignete Berechtigungen zuweisen kann</block>
+  <block id="f52cc80996d4c5f54309a0095c010fa7" category="summary">Abrechnungspläne im Grundpfeiler</block>
+  <block id="dfd0252d57910ac70c5c31013436bba6" category="doc">Abrechnungszeitpläne</block>
+  <block id="1d7dae7e1b4012c3951e3a057ff4bdaf" category="paragraph">Keystone Abonnements werden monatlich und jährlich abgerechnet.</block>
+  <block id="7f5043ec0394d759e4ce437fc8c9cd52" category="section-title">Monatliche Abrechnung</block>
+  <block id="4984e08f464a2069cf4e4d2bc61ffe7e" category="paragraph">Rechnungen werden monatlich versendet. Für den Monat, in dem die Dienstleistungen verfügbar sind, wird im nächsten Monat eine Rechnung verschickt. So wird beispielsweise die Rechnung für die im Januar verwendeten Dienste Anfang Februar zugestellt. Diese Rechnung beinhaltet die Gebühren für die verplante Kapazität und, falls zutreffend, eventuelle Burst-Nutzung.</block>
+  <block id="51ebf10290dc90afa947ed3f3696db87" category="section-title">Jährliche Abrechnung</block>
+  <block id="ce604aadef843c4d82da037f9b0c3ff5" category="paragraph">Eine Rechnung wird zu Beginn jedes Abonnementjahres für die Mindestzahlung der verplanten Kapazität erstellt. Sie wird am Startdatum des Abonnements generiert. Am Ende eines Abonnementquartals wird eine andere Rechnung gesendet, in der die anwendbaren Gebühren für jegliche Burst-Nutzung in diesem Quartal zusammengefasst werden. Wenn die zugesandte Kapazität während eines Abonnements geändert wird, wird eine Rechnung am selben Tag versendet, an dem die Änderung der zugesandten Kapazität wirksam ist, für die anteiligen Mindestzahlungen für den Rest des Abonnementjahres.</block>
+  <block id="49548332c080d5b18c9857c44f50e733" category="summary">Kapazitätsanforderungen für Service Levels</block>
+  <block id="75a6726775e328ced9880ba4a9f47ad3" category="doc">Kapazitätsanforderungen für Service Levels</block>
+  <block id="9b1fc3795ac03552dcfef23ea39ab958" category="paragraph">Die Kapazitätsanforderungen für jedes Service-Level unterscheiden sich je nach Storage-Service, wie z. B. Datei-, Block- und Objekt-Storage.</block>
+  <block id="f9b23c1d6c500cf58f2bd0f79306c64b" category="section-title">Mindestkapazitätsanforderungen für File- und Block-Services</block>
+  <block id="ceac78532dd172fbfb60ef73ba7eb666" category="paragraph">Die minimale Kapazität und die inkrementelle Kapazität, die pro Abonnement zulässig ist, werden in der folgenden Tabelle beschrieben. Es wird definiert, dass die Mindestkapazität pro Service-Level für Keystone Sales Motions gleich ist. Die Kapazität über der minimalen Kapazität, sei es zu Beginn des Abonnements, als Add-on-Service für das Abonnement oder nach der Optimierung während des Abonnements, ist ebenfalls in der Tabelle gegliedert.</block>
+  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="cell">Kapazität</block>
+  <block id="ba1f6c59525d71aee4c027798d2470fd" category="cell">Extrem</block>
+  <block id="8d5e7e72f12067991186cdf3cb7d5d9d" category="cell">Premium</block>
+  <block id="9446a98ad14416153cc4d45ab8b531bf" category="cell">Leistung</block>
+  <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">Standard</block>
+  <block id="689202409e48743b914713f96d93947c" category="cell">Wert</block>
+  <block id="c8878f880559d69deeaabcf46c7f8f0f" category="paragraph">Minimale Kapazität [in tib]</block>
+  <block id="8e296a067a37563370ded05f5a3bf3ec" category="cell">25</block>
+  <block id="f899139df5e1059396431415e770c6dd" category="cell">100</block>
+  <block id="1d9f5e05ed20ff32c476cb05ba8a11a4" category="paragraph">Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]</block>
+  <block id="f0d6650ca06d708ec2c6a1bed46485d3" category="paragraph">Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]</block>
+  <block id="5f35f43a84523349d7512aad7cebc67d" category="section-title">Mindestkapazitätsanforderungen für Objekt-Storage</block>
+  <block id="67bd9042fd1358fe71d08b72f11c1935" category="paragraph">Die minimale Kapazitätsanforderungen für Objekt-Storage-Service sind in der folgenden Tabelle aufgeführt:</block>
+  <block id="396928510e06818ef017921022cce2af" category="cell">Daten-Tiering</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="cell">Cloud Volumes ONTAP</block>
+  <block id="7f3147ea4e9363ef0179f80965b58649" category="cell">Cloud Backup Service</block>
+  <block id="e681a3b45989b468533c4b90ee960bf9" category="paragraph">Keine Angabe</block>
+  <block id="cee631121c2ec9232f3a2f028ad5c89b" category="paragraph">500</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="paragraph">1</block>
+  <block id="00fbf03a10283116fbaa1df317c78879" category="section-title">Kapazitätsanpassungen</block>
+  <block id="21ad3b84e8de6a6de82c41c3a0038af9" category="paragraph">Beachten Sie die folgenden Klauseln für Kapazitätsanpassungen:</block>
+  <block id="514bb59f7d76ed0e86b086ad13d84229" category="list-text">Die Kapazität kann jederzeit während der Laufzeit hinzugefügt werden, mit Ausnahme der letzten 90 Tage der Vertragslaufzeit, in den Schritten pro Service-Level, wie in den Tabellen im vorherigen Abschnitt beschrieben. Die Ergänzung von Kapazitäten und/oder Dienstleistungen ist innerhalb der letzten 90 Tage nach der Vertragslaufzeit zulässig, solange eine Zustimmung zur Serviceverlängerung vorliegt. Jede zusätzliche Kapazität und jeder neue Service vor Ort oder in der Cloud können mit der bestehenden Laufzeit in Verbindung stehen. Die Rechnung, die Ihnen nach Aktivierung der neuen Services zugesandt wurde, entspricht der überarbeiteten Abrechnung. Die verplante Kapazität von Cloud-Services kann während der Abonnementdauer an keinem Punkt verringert werden. In der Zwischenzeit können die zugewisserten Kapazitäten und die für die On-Premises-Services während der Vertragslaufzeit erforderlichen Ausgaben aufgrund bestimmter Kriterien, wie im folgenden Abschnitt _Kapazitätsreduzierung_ definiert, verringert werden.</block>
+  <block id="5cd0f15535e7df584b5229d2962edaa9" category="list-text">20 % der Burst-Kapazität ist an jedem Standort verfügbar. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Falls Sie zusätzliche Burst-Anforderungen benötigen, die mehr als 20 % betragen, wenden Sie sich an den Support.</block>
+  <block id="b0ba5edc3c109e946a18ba8c3e71362b" category="list-text">Die verplante Kapazität kann während einer Vertragslaufzeit nur unter bestimmten Bedingungen geändert werden, wie im folgenden Abschnitt _Kapazitätsreduzierung_ beschrieben.</block>
+  <block id="160614fcea2b5d18812256a37f251395" category="list-text">Eine Erhöhung der Kapazität oder ein Wechsel auf ein höheres Service Level während einer Abonnementlaufzeit ist zulässig. Ein Wechsel von einem höheren Service-Level zu einem niedrigeren Service-Level ist jedoch nicht zulässig.</block>
+  <block id="0b5abf5c3cccffbee4f48538a8f46c07" category="list-text">Jede Änderungsanfrage in den letzten 90 Tagen der Servicezeit erfordert eine Erneuerung des Services für mindestens ein Jahr.</block>
+  <block id="9fe3ac8cfa4270920c1a2dc0ec6e0a5b" category="paragraph">Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen müssen während der Laufzeit jederzeit über= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.</block>
+  <block id="9d1428ccdab4043962de6baff242d619" category="paragraph"><block ref="9d1428ccdab4043962de6baff242d619" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6e563e9d321b309cdef7d3f5a45b0d65" category="section-title">Vierteljährliche Neuzuweisung von Ausgaben</block>
+  <block id="075e59191efd36ae9c9c7094fbdab596" category="paragraph">Anforderungen und Bedingungen auf Abonnementebene:</block>
+  <block id="525638a12e9c8aa67d400bc4cae26beb" category="list-text">Gilt nur für monatliche Abrechnung im ARRück-Modell.</block>
+  <block id="6ebeee8bed2e7241685cf6e9c275e94a" category="list-text">Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.</block>
+  <block id="ab34ce4ba180fd29c57617614b8c63c9" category="list-text">Kapazität für Cloud Volumes ONTAP und Cloud Backup Service muss über Keystone erworben werden.</block>
+  <block id="5e4b323295f9f67894cdf2fd31d63cd6" category="list-text">Für die Neuzuordnung von Cloud Services können bis zu 25 % der bestehenden lokalen, servicebasierten monatlichen Zahlungen verwendet werden.</block>
+  <block id="d1e08d2f11c532d072b8acda04dcf9b1" category="list-text">Die Service-basierten monatlichen Zahlungen vor Ort müssen innerhalb der Laufzeit &gt;= 16.7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.</block>
+  <block id="6a25837b8815930341a1bb5594936448" category="list-text">Anfragen zur Neuzuordnung werden erst nach 90 Tagen nach dem letzten Aktivierungsdatum der Neuzuweisung wirksam.</block>
+  <block id="e1b83be7c1f4641d3c78efe1a0ad30aa" category="list-text">Die Neuzuordnung von Cloud-Services in On-Premises-Umgebungen ist nicht möglich.</block>
+  <block id="a402d3e90c1de536ee2a5c0c9474747a" category="list-text">Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum dem Kunden oder Partner Keystone Success Manager (KSM) formal übermittelt werden.</block>
+  <block id="e6174082850be1c9a7e5a9b03b3fd758" category="list-text">Neue Anfragen werden nur ab dem nächsten Abrechnungszeitraum wirksam.</block>
+  <block id="77bb86a7476fdc4f9b8e1320e8d3f8e8" category="paragraph">Ein Beispiel für eine vierteljährliche Neuzuweisung von Ausgaben ist im folgenden Bild dargestellt:</block>
+  <block id="0778919f1cae85d2f557cc72ce8c6ed0" category="paragraph"><block ref="0778919f1cae85d2f557cc72ce8c6ed0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c11d3902def90b2c39f1b05142fc762e" category="summary">Betriebsmodelle in Keystone</block>
+  <block id="9f3cbaa7bf5d2cfff77118beade98dda" category="paragraph">NetApp Keystone (Keystone) bietet zwei operative Modelle für die Service-Erbringung: Vom Partner betriebenes Modell und vom Kunden betriebenes Modell.</block>
+  <block id="88de2014a4d76bdeb1d3b86daf2a67f7" category="list-text">*Vom Partner betriebenes Modell*: In diesem Modell betreibt der Partner oder Dienstleister die Dienstleistungen für seine Endkunden. Bei NetApp ist der Partner der referenzierte Vertragspartner. Mandanten sind Kunden von Partnern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell verfügt in der Regel über eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter über eigene Abonnements verfügen, die vom Partner in Rechnung gestellt werden. Der Partneradministrator führt die administrativen Aufgaben für alle Mandanten aus.</block>
+  <block id="37a2beae617e8a351de409b3a8b5b9d0" category="list-text">*Vom Kunden betriebenes Modell*: In einem vom Kunden betriebenen Modell können Sie als Kunde Keystone-Services gemäß Ihren ausgewählten Performance-Tiers und Storage-Servicetypen abonnieren. NetApp definiert die Architektur und die Produkte und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Als Kunde sind Sie der Mandant oder Untermandant zu NetApp oder einem Partner/Service Provider. Basierend auf Ihrem Vertrag können Sie Serviceanfragen erheben, die an NetApp oder Ihren Service Provider gerichtet werden müssen. Ein Kundenadministrator kann am Ende die administrativen Aufgaben an einem Standort (Ihrer Umgebung) ausführen. Diese Aufgaben sind an die Benutzer in Ihrer Umgebung gebunden.</block>
+  <block id="63e70807fd57df527662a30262f5b0cc" category="section-title">Rollen und Verantwortlichkeiten über den gesamten Servicezyklus hinweg</block>
+  <block id="06a0368e2f654d7dbee4961d201d589e" category="list-text">*Partner-Operated Model*: Der Anteil von Rollen und Verantwortlichkeiten hängt vom SLA zwischen Ihnen und dem Dienstleister oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.</block>
+  <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">*vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.</block>
+  <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Aufgabe</block>
+  <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
+  <block id="ce26601dac0dea138b7295f02b7620a7" category="cell">Kunde</block>
+  <block id="faf37da472ffd232f9810c360b4c1f18" category="paragraph">Installation und zugehörige Aufgaben</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="list-text">Installieren</block>
+  <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">Konfigurieren</block>
+  <block id="507a3a88cebc46603ce2be8eaa924eee" category="list-text">Implementieren</block>
+  <block id="79b7581616a6892a33647af8676f7c45" category="list-text">Onboarding</block>
+  <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="cell">Keine</block>
+  <block id="b407d85189fae6568411d1e0477e1a61" category="paragraph">Administration und Monitoring</block>
+  <block id="d2986ac8cb6bd55892099c1ffd6b1f6f" category="list-text">Überwachen</block>
+  <block id="4b1b4dc8cf38b3c64b1d657da8f5ac8c" category="list-text">Bericht</block>
+  <block id="e38bf2476e8d2e225da1a053aacfd12c" category="list-text">Ausführung administrativer Aufgaben</block>
+  <block id="b92071d61c88498171928745ca53078b" category="list-text">Alarm</block>
+  <block id="c22aff68d4c151984d3e3059f7389289" category="paragraph">Betrieb und Optimierung</block>
+  <block id="29930ffab2df479b4c9daf785d967075" category="list-text">Kapazitätsmanagement</block>
+  <block id="c34138e317002ec9728d2c9e157799ee" category="list-text">Performance-Management</block>
+  <block id="07de8c2f393655cba5ee3012e3689412" category="list-text">SLA-Management</block>
+  <block id="b932b332a780d244d163d8aeaa1cc82e" category="list-text">Kunden-Support</block>
+  <block id="550340cfbad3ac61a634336458de3119" category="list-text">Behebung von Hardware-Problemen</block>
+  <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">Softwaresupport</block>
+  <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">Upgrades und Patches</block>
+  <block id="8b469adb9c9b55a74a59bf0b6936345b" category="paragraph">Weitere Informationen zur Bereitstellung finden Sie unter <block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block> Und <block ref="141d19b4a500cb7c8f293062f31c9e48" category="inline-link-macro-rx"></block></block>
+  <block id="b87b21afb7206c2f67ed669c943d4153" category="summary">Abrechnung basiert auf verbrauchter Kapazität</block>
+  <block id="4f0b4700902f5cec62b2b3a60c2d65b9" category="doc">Messung basierend auf verbrauchter Kapazität</block>
+  <block id="63cb9aa126763eeec54be27804d9b38c" category="paragraph">Keystone bietet außerdem eine Nutzungsmessung basierend auf der Kapazität, die Sie während der Service-Nutzung verbraucht haben.</block>
+  <block id="7c89fdeb87b9040cd6c96f6222bc57a6" category="paragraph">Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Alle fünf Minuten wird ein Verbrauchsdatensatz durch das System generiert, in dem die aktuelle verbrauchte Kapazität für Ihr Abonnement detailliert aufgeführt wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen</block>
+  <block id="2ea275b12277dc03e50388e4d208934d" category="paragraph">Keystone Service unterstützt die Basis-Storage-Typen von ONTAP, wie Datei- und Block-Storage. Objekt-Storage für StorageGRID Plattform wird ebenfalls unterstützt. Datenmanagement-Funktionen für Cloud Volumes ONTAP werden ebenfalls unterstützt.</block>
+  <block id="08c17d120c88502c6a7f3449445a0b4b" category="section-title">Basis-Storage-Services</block>
+  <block id="707282b18b803a35662ad1b525926f09" category="cell">Storage-Service</block>
+  <block id="9bc05d0fdf5b16984c37b23709d0e7b4" category="cell">Basis</block>
+  <block id="f6d7a1a39c7e76b0a2ad7044af130caf" category="cell">Unterstützte Funktionen</block>
+  <block id="9985b4390c40137573e6da05caf85874" category="cell">Protokolle</block>
+  <block id="4bf6c8c02a43c4ae5ff566acdd8213b8" category="paragraph">File-Storage</block>
+  <block id="741322ba61dd4c577d5dc30397f52fe2" category="cell">Basiert auf ONTAP Technologie</block>
+  <block id="b68e99791b7967f2041fc05f31780e0d" category="cell">Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung)</block>
+  <block id="ac0ead2363f24a0d46b14287c8e81d6a" category="cell">NFS, CIFS und S3 (für FabricPool Ziel verwendet)</block>
+  <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="paragraph">Block-Storage</block>
+  <block id="cd2ccc0aa3cb84e9852fdab3c8b018f0" category="cell">FC, iSCSI und S3 (für FabricPool Ziel verwendet)</block>
+  <block id="d8a33f6a10e7aaefaa9bf3609a074745" category="cell">Basierend auf der StorageGRID Plattform</block>
+  <block id="0b1c043b38a0d236a651cc4bf48266fd" category="cell">Unterstützt mehrere Information Lifecycle Management-Richtlinien (ILM) über mehrere Standorte hinweg. Hinweis: Jede Website muss über ein separates Abonnement verfügen.</block>
+  <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="cell">S3</block>
+  <block id="c511e47fd0656457345ee7e6849c30a3" category="admonition">Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig in Datei- und Block-Storage-Service-Tiers enthalten.</block>
+  <block id="0d4b35794b8fba9c7d6ede84f16deb21" category="inline-link-macro">Daten-Tiering</block>
+  <block id="b16d4109d68a4a2e4be1fa24afb71ffc" category="paragraph">Weitere Informationen zum Daten-Tiering finden Sie unter <block ref="972dbd9e2ad7e594a9f7684973004b2c" category="inline-link-macro-rx"></block>Weitere Informationen zu Datensicherungsdiensten finden Sie unter <block ref="975e05366acb844a211ea737d80f3250" category="inline-link-macro-rx"></block></block>
+  <block id="88be929536f637e07b3e198ba685668a" category="section-title">Cloud-Storage-Services</block>
+  <block id="5ce75ac5532f7e063fdfad62803fa460" category="paragraph">Keystone unterstützt die _Datenmanagementfunktionen für Cloud Volumes ONTAP, die auf AWS, Azure und Google_ unterstützt werden. Dieser Service kann mit Ihren vorhandenen Abonnements gemeinsam genutzt werden. Der Cloud-Service kann während der Servicezeit an jedem Punkt berücksichtigt werden. Wenn Sie jedoch keine Verlängerung Ihres Abonnements planen, können Sie den Cloud-Service nicht innerhalb der letzten 90 Tage Ihres Abonnements einschließen.</block>
+  <block id="2cc4a68da4f3a4552f2912ca792f1179" category="admonition">Hyperscale-basierte Computing- und Storage-Infrastrukturen stehen NetApp nicht als Teil Ihrer Keystone-Abonnements zur Verfügung. Sie müssen sie bei einem Hyperscale Cloud-Service-Provider erwerben.</block>
+  <block id="02de04a8ab8cebed30d4a10b9f5a2868" category="summary">Keystone Datenflüsse</block>
+  <block id="8b9ebc949c2bd3b7f585608d2fec312f" category="doc">Keystone Datenfluss</block>
+  <block id="b5244ddc24106cd49ca6a6f18f310824" category="paragraph">Keystone-Systeme begegnen dem Datenfluss durch zwei Systeme, Keystone Collector-Verkehr und Monitoring der Datenflüsse.</block>
+  <block id="0476a04360a8efd6e70433fd2939cef7" category="section-title">Keystone Collector-Datenfluss</block>
+  <block id="ad6ca69fb00eeba1a8b26c6b09d3d1a4" category="paragraph">Keystone Collector initiiert regelmäßig REST-API-Aufrufe an die Speicher-Controller und erhält Einzelheiten zur Nutzung der Controller, wie im folgenden Bild beschrieben:.</block>
+  <block id="7084d98d1c25d2e28eda5dd92c5dd52b" category="paragraph"><block ref="7084d98d1c25d2e28eda5dd92c5dd52b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b27e12d584b3438e811533b32e026e8" category="list-title">Legende</block>
+  <block id="2f2c1d21fda60b1066a3074dfb2cd2f1" category="list-text">NetApp Collector initiiert eine HTTPS-Sitzung für das Active-IQ Cloud-Portal.</block>
+  <block id="2e7f14de45ed71b1653760184c2ecf5e" category="list-text">Die vom Kunden betriebene Firewall muss diese Verbindung zulassen.</block>
+  <block id="478005d1fa6a104e77b4c5d4465024ad" category="list-text">Das Active IQ Cloud Portal akzeptiert die Verbindung und baut einen Tunnel zum NetApp Collector auf.</block>
+  <block id="f287fa36e151b864ec592cb7dde90241" category="list-text">Der NetApp Collector richtet eine REST-API-Sitzung an die Managementverbindung des Storage Controllers ein, bezieht die Umgebungsdaten und sendet diese an das Active IQ Portal.</block>
+  <block id="4cf8f8268c14ee43943d5216b5df21a8" category="section-title">Monitoring des Datenflusses</block>
+  <block id="a93e6ed10df1d738f0e86c9a2f48eff0" category="paragraph">Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines der wichtigsten Funktionen von Keystone Service. Keystone verwendet zur Überwachung OpsRamp, die Remote-Zugriff auf das Kundennetzwerk benötigt. Das folgende Bild beschreibt, wie der Remote-Zugriff auf den Standort des Kunden über das OpsRamp-Tool gesichert wird.</block>
+  <block id="325857741b37b2bb27cc84f38d841478" category="paragraph"><block ref="325857741b37b2bb27cc84f38d841478" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="32f2b8075d98a5c6dd0b7181201d5f6f" category="list-text">Das OpsRamp Gateway initiiert eine TLS-Sitzung zum OpsRamp Cloud-Portal in der Cloud.</block>
+  <block id="061a5118e14c355a024e0623887781e4" category="list-text">Der OpsRamp-Server in der Cloud akzeptiert die Verbindung.</block>
+  <block id="5de9d282f8292263da5a0596b560efac" category="list-text">Der TLS-Tunnel wird zwischen dem OpsRamp Cloud-Portal und dem OpsRamp Local Gateway eingerichtet.</block>
+  <block id="7eeacfd620ed4cc0dd3247fe4b415256" category="list-text">Die NetApp-Controller senden Benachrichtigungen über das SNMP-Protokoll oder reagieren auf API-Anfragen an das lokale OpsRamp Gateway.</block>
+  <block id="e7cd3e2d72716bd82dcc540f399a494a" category="list-text">Das lokale Gateway OpsRamp sendet diese Warnmeldungen über die zuvor festgelegte TLS-Sitzung an sein Cloud-Portal.</block>
+  <block id="7621fcf3337893076016c8382d82f20e" category="summary">Add-on, zusätzliche Service-Details, Daten-Tiering</block>
+  <block id="a90f22d79814547ab270dd2ac5ba6c69" category="paragraph">Der NetApp Keystone (Keystone) Service umfasst eine Tiering-Funktion für abonnierte Datei- und Block-Services, mit der selten genutzte Daten identifiziert und in einem Cold Storage verschoben werden, der sich im Besitz von NetApp befindet, bereitgestellt und gemanagt wird.</block>
+  <block id="0bac64abd9ce36ecb353086758d65636" category="paragraph">Sie können diese zusätzlichen Services als Teil Ihres Keystone Abonnements abonnieren. Weitere Informationen über den Basis-Storage und den Cloud-Storage-Service finden Sie unter <block ref="f6a6b9b5f978ea05dc72fa8625771489" category="inline-link-macro-rx"></block></block>
+  <block id="405bc1a87dcf8aeeb6f5c9496a0d4818" category="admonition">Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig in Datei- und Block-Storage-Service-Tiers enthalten. Der Add-on Service ist nur erforderlich, wenn Daten Storage anderer Anbieter wie AWS S3, Azure Blob und EMC ECS per Tiering verteilt werden.</block>
+  <block id="65b06b66954cfb479123093063f74275" category="paragraph">Die Tiering-Funktion nutzt die NetApp FabricPool Technologie, mit der Daten-Tiering auf kostengünstige Objekt-Storage Tiers entweder lokal oder extern durchgeführt werden können. Bei dieser Funktion werden selten genutzte Daten auf Grundlage der vereinbarten Services automatisch in einen kostengünstigeren Storage verschoben – entweder vor Ort oder in der Cloud.</block>
+  <block id="ac1cd17b3e809fedf50f2edd046f8db9" category="paragraph">Der Tiering-Service ermöglicht Tiering vom Extreme, Premium, Performance, Standard und Value Tier zu einem Objektziel. Der Hot-Tier und der kalte Tier werden getrennt gemessen und in Rechnung gestellt. Daten-Tiering kann jederzeit und ohne Preisänderung hinzugefügt werden und erhöht die Flexibilität im Verhältnis „heiße“, kalte Daten:</block>
+  <block id="801da1673b380399ce7173367b2a55b0" category="paragraph">Gehen Sie die folgenden Berechnungen durch, um das besser zu verstehen:</block>
+  <block id="ecf0fbac3689c517cab6d990840097ae" category="paragraph">Wenn das Ziel für Cold Storage Tier lautet:</block>
+  <block id="adea71630bcfc0f795923635034f21c7" category="list-text">Wert Tier (bis zu 500 tib), Objekt-Tier (&gt;500tib), vorhandenes SGWS Grid (Kundenbesitz) – Es entstehen keine zusätzlichen Gebühren, und es ist Teil des Basis-Storage-Service.</block>
+  <block id="741e3e441faa6e2657e64d8f4ea5063d" category="list-text">Public Cloud (AWS, Azure, Google) und jeder andere von Drittanbietern unterstützte Objekt-Storage – eine zusätzliche Gebühr für Datenkapazität, die als Out-Tier berechnet wird, ist kostenpflichtig.</block>
+  <block id="f437e75d93dda406ded9fe17fc526df0" category="paragraph">Für das Add-on-Tiering-Abonnement fallen keine Gebühren an, die einmalige Gebühr erhoben werden. Die Lösung muss für die gesamte Laufzeit bezahlt werden, um die Tiering-Beziehung zwischen den Keystone On-Premises-Datei- und Block-Services und dem von Drittanbietern unterstützten Objekt-Storage-Ziel aufrechtzuerhalten.</block>
+  <block id="229083e2a35eb72d29e05d46de28acf9" category="paragraph">Mit diesem Angebot können kalte Daten nur auf kostengünstigeren Ziel-Storage Tier und nicht die Kosten der Public-Cloud/Hyperscale-Infrastruktur Tier platziert werden.</block>
+  <block id="20ce0ec8b53728092deec662a7406cb1" category="summary">Non-Returnable, Non-Volatile Komponenten und SnapLock-Compliance</block>
+  <block id="240f8cd7a5a26e96dd18576d36e316a8" category="paragraph">Im Rahmen des NetApp Keystone Abonnements erweitert NetApp das Angebot an Non-Returnable, Non-Volatile Components (NRNVC) für File-, Block- und Objekt-Services.</block>
+  <block id="2e210f3a66473288bfe5f457db6320fd" category="paragraph">Sie können diese zusätzlichen Services als Teil Ihres Keystone Abonnements abonnieren. Weitere Informationen über den Basis-Storage und den Cloud-Storage-Service finden Sie unter <block ref="348cd7efad171d351b13b64b45ae8286" category="inline-link-macro-rx"></block></block>
+  <block id="c5362d4c47bc0b20f1e6873a4a685afd" category="paragraph">NetApp stellt die während der gesamten Servicezeit verwendeten physischen Storage-Medien oder bei einer Beendigung der Services nicht wieder her, wenn NetApp anderenfalls alle bei der Erbringung des Service genutzten physischen Ressourcen wiederherstellt.</block>
+  <block id="abda546406da466370337cf5c31e05a2" category="paragraph">Wenn Sie diesen Service erworben haben, beachten Sie Folgendes:</block>
+  <block id="8fb8439538faf3e9aca510b975990816" category="list-text">Sie müssen keine Laufwerke und nicht-flüchtigen Speicher am Ende der Servicezeit zurückgeben oder Fehler während der Servicezeit feststellen.</block>
+  <block id="c390ff57b01f3da644988ff384a92bf8" category="list-text">Sie müssen jedoch eine Bescheinigung über die Vernichtung der Laufwerke und/oder des nicht-flüchtigen Speichers vorlegen und können nicht für andere Zwecke verwendet werden.</block>
+  <block id="5a076f1c5bc8d16d1eb849ccb92d5785" category="list-text">Die mit dem NRNVC verbundenen zusätzlichen Kosten werden als Prozentsatz des gesamten Storage Service (einschließlich Storage Service, Advanced Data Protection und Daten-Tiering) monatliche Rechnung berechnet.</block>
+  <block id="864b8b012409791710df6eeccafacd75" category="list-text">Dieser Service ist nur für File-, Block- und Objekt-Services anwendbar.</block>
+  <block id="39fd5e3ddc496ef780ff5e3fe13bb2d1" category="section-title">SnapLock-Compliance</block>
+  <block id="3b75076bb231753a28f968ad21ef5206" category="paragraph">Die SnapLock-Technologie aktiviert die NRNVC-Funktion, indem das Laufwerk nach dem im Volume festgelegten Ablaufdatum unbrauchbar wird. Um die SnapLock-Technologie auf Ihren Volumes nutzen zu können, müssen Sie NRNVC abonnieren. Dies gilt nur für File- und Block-Services.</block>
+  <block id="f14c7b4687be07acacb0f5aeed1474f5" category="inline-link">Was ist SnapLock</block>
+  <block id="18677c04cb7733e91e5e1bb04fc91930" category="paragraph">Informationen zur SnapLock-Technologie finden Sie unter<block ref="7bc47f340e579853a1daae86dfb72c77" category="inline-link-rx"></block></block>
+  <block id="da0abce09003b51065ed5b06d06021f1" category="doc">Abrechnung basiert auf der verplante Kapazität</block>
+  <block id="14499647de4eb1466ac83a98a3e9a929" category="paragraph">NetApp Keystone (Keystone) Abrechnung basiert auf der Ihnen als Teil des Keystone-Service-Abonnements bereitgestellten Kapazität.</block>
+  <block id="dcfb022fb130a6b389d8e36d9a49a60a" category="paragraph">Engagierte Kapazität sind die Kapazitäten verschiedener Services in einem einzigen Abonnement, wie von Ihnen und NetApp/Partner akzeptiert. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch abgerechnet.</block>
+  <block id="6918efdb84c8dba836b132c8c389051f" category="summary">NetApp Global Services Support Center GSSC</block>
+  <block id="6996736fb79dd4178631c9db6807f60e" category="paragraph">NetApp Keystone Services werden mithilfe des NetApp Global Services and Support Center (GSSC), des NetApp Keystone Success Managers und des NetApp Keystone Service Delivery Managers erbracht.</block>
+  <block id="10f15832f9a0baabcebb5224cb7b725e" category="section-title">NetApp Global Services und Support Center (GSSC)</block>
+  <block id="6dd89d8ee4d83062ef9dba0e795d0094" category="paragraph">NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services umfassen Betriebsdisziplinen, die zu Storage-Management-Aktivitäten gehören, darunter Asset- und Konfigurations-Management, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignis-, Vorfall- und Problemmanagement, Bearbeitung von Service-Anfragen und Berichterstellung. NetApp demonstriert bei Bedarf die nötige Kontrolle und belegt Belege.</block>
+  <block id="0a01a33e5f29d399207cdf2d0bedd8e4" category="section-title">Kontakt für weitere Informationen und Support</block>
+  <block id="41ac6df99b19964ddc5db21ba036a552" category="paragraph">Das NetApp Global Services and Support Center (GSSC) Team unterstützt die Services hauptsächlich für NetApp Keystone Kunden. Mithilfe der folgenden Informationen können Sie sich an das Support-Team wenden.</block>
+  <block id="74ded5eeafd192c5308818ba594b43cc" category="list-text">Ansprechpartner für den weltweiten Service:<block ref="85c2386291061c6540196c84b0b38a60" category="inline-link-rx"></block></block>
+  <block id="71a3933bc2f89b1e1331a8b9bbd14fdf" category="list-text">Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie bitte eine E-Mail an eine der folgenden Adressen: keystone.services@netapp.com keystone.escalations@netapp.com</block>
+  <block id="1427c4269ac71009fcf20e320f428d42" category="list-text">NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv die NetApp Keystone-Umgebung zu Fehlerbehebungszwecken zu überwachen und eine Verbindung herzustellen. Informationen zu OpsRamp finden Sie unter<block ref="ddbfe3d63449639712fee69542f32fdc" category="inline-link-rx"></block>.</block>
+  <block id="d07ce0fbeead06848c212d3cd2b328b8" category="admonition">In einem von Partnern betriebenen Modell werden die Service-Anfragen des Mandanten und des Submandanten dem Service-Desk des Partners zugewiesen. Das Support-Tool des Partners kann mit OpsRamp- und GSSC-Applikationen integriert werden. Es werden nur L3-Probleme über GSSC an NetApp eskaliert.</block>
+  <block id="7d5b957cd473f6eaf5ad335a9c63c4ff" category="paragraph">Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:</block>
+  <block id="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link"><block ref="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link-rx"></block></block>
+  <block id="1c6d9d150de7c9865ab3839ec9e99e4b" category="list-text">NetApp Keystone<block ref="4b675bc45aec5ce1523a19f69a2ff928" category="inline-link-rx"></block></block>
+  <block id="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link"><block ref="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link-rx"></block></block>
+  <block id="0f185ccd88416daec4eee0a846d110b8" category="list-text">NetApp Produktdokumentation<block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
+  <block id="8ed38172f401cd08c379f8397810fe02" category="section-title">GSSC-Überwachung</block>
+  <block id="2ca3a2e384bb1273fc489561ed845e9a" category="paragraph">Weitere Informationen finden Sie unter <block ref="67454bb0b87fadd9d30c4ec9114012a1" category="inline-link-macro-rx"></block></block>
+  <block id="e2997dee828588be220f904bec8caf05" category="summary">Keystone und Active IQ Digital Advisor</block>
+  <block id="578256180f87784448843bdfee5b208b" category="paragraph">Wenn Sie die NetApp Keystone Services abonniert haben, können Sie Ihre Nutzungsberichte und Diagramme im Active IQ Digital Advisor Dashboard anzeigen. Mit Active IQ Digital Advisor können Sie Details und Informationen zu Storage als Service (STaaS) und zur eigenen NetApp Infrastruktur anzeigen. Active IQ Digital Advisor bietet eine zentrale Dashboard-Ansicht mit Einblick in die Kapazitätsauslastung und Trenddaten sowie die Möglichkeit, detaillierte Berichte zu erstellen. Darüber hinaus können Sie Ihre Keystone-Abonnements über den Active IQ Digital Advisor verwalten. Sie können neue Services für Ihr Abonnement bestellen und die Kapazität für alle vorhandenen Dienste aktualisieren.</block>
+  <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link">Active IQ Digital Advisor Dokumentation</block>
+  <block id="167b195c69663e9cb0fba86c7eddae6e" category="paragraph">Weitere Informationen zu Active IQ Digital Advisor finden Sie unter<block ref="f764c240dcd6d91e5520526132ec0ef1" category="inline-link-rx"></block></block>
+  <block id="b89d8ed8d5adb2dd42ea11be1617f29c" category="paragraph">Weitere Informationen zum Datenfluss finden Sie unter <block ref="f2276c2e5545294a1a6121724c0f31c5" category="inline-link-macro-rx"></block>.</block>
+  <block id="d06f2a2be4d5f2408ff1403abde75c10" category="summary">Keystone und Cloud Manager</block>
+  <block id="5978a793dfb6cd15988f80e52890ea01" category="paragraph">Wenn Sie einen Cloud-Service auf einem Keystone Abonnement erwerben, können Sie diese Services über Cloud Manager aufrufen und verwalten.</block>
+  <block id="42596fd4ac4fbcb2bfb3ba8877629d54" category="paragraph">Wenn Keystone Kunden über ein Cloud Volumes ONTAP-Abonnement verfügen, können Sie mit Keystone-Services die Cloud Volumes ONTAP-Nutzung berechnen und sich über Cloud Manager Ihre Rechnungs- und Nutzungsdetails anzeigen lassen.</block>
+  <block id="c31fa1b1fd103b5d5427452c13c1dc54" category="paragraph">Dazu sollten Sie ein oder mehrere Cloud Manager Accounts erstellen und sie mit Ihrem Keystone Konto verknüpfen. Während Sie einen Cloud-Service über Keystone erwerben, müssen Sie Ihrem Keystone Success Manager alle Einzelheiten Ihrer Cloud Manager Konten zukommen lassen. So können Sie Ihre Cloud-Service-Nutzung über Ihr Keystone Abonnement richtig Messung und Abrechnung ausführen.</block>
+  <block id="04eed0527b438cb694999e2a56342fe6" category="paragraph">Weitere Informationen finden Sie unter den folgenden Links in den Dokumenten zu Cloud Manager:</block>
+  <block id="fc860be5f135f0d58f6a4cc1a552d57f" category="inline-link">Keystone Abonnement</block>
+  <block id="3b5d653ddd0a374a81cc285aeb9e4408" category="list-text"><block ref="3b5d653ddd0a374a81cc285aeb9e4408" category="inline-link-rx"></block></block>
+  <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="inline-link">Keystone Abonnements Managen</block>
+  <block id="70e5fcf0028615e75226bd07bb1ee1e4" category="list-text"><block ref="70e5fcf0028615e75226bd07bb1ee1e4" category="inline-link-rx"></block></block>
+  <block id="885a7272db12515ccb176ecc5739bfc0" category="summary">Dokumentation für NetApp Keystone</block>
+  <block id="eafe2da4c3641f4864397b0d97fff137" category="doc">Keystone Dokumentation</block>
+  <block id="e5471403f1b2eefb0fe47b6193a72bbc" category="sidebar">Keystone Dokumentation</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Los geht's</block>
+  <block id="4c9a4fbc49b946c974f43f9b95467093" category="sidebar">Weitere Informationen zu Keystone</block>
+  <block id="9e7726388491901aceba9f74c81020a7" category="sidebar">Unterstützte Storage-Kapazität in Keystone</block>
+  <block id="3db0f7c8d33366749c373c5802d2d1c0" category="sidebar">Metriken und Definitionen von Keystone Services</block>
+  <block id="152f76edbe755ad0fcf4b57373cc4511" category="sidebar">Unterstützte Storage-Typen in Keystone</block>
+  <block id="8c2dbe4be9f9daf82f71c41e1cd8f1e1" category="sidebar">Add-on-Services</block>
+  <block id="5acf3eaacab2f897759e5e1e27667847" category="sidebar">Weitere Informationen zu Service-Leveln</block>
+  <block id="8bc14f0cb78851f59e85c1d447c2c99f" category="sidebar">Quality of Service</block>
+  <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">Abrechnung</block>
+  <block id="c8c7fb7e022f78b915af0ad7300b7824" category="sidebar">Partner- und vom Kunden betriebene Umgebungen zu optimieren</block>
+  <block id="352b67da62e25a1a8f45636930053f08" category="sidebar">Detaillierte Informationen zur Infrastruktur</block>
+  <block id="05bbb43b3d923283e0b6ffafd088f41f" category="sidebar">Komponenten</block>
+  <block id="51e229527022b23ef548bfc016bfb0ac" category="sidebar">Datenfluss</block>
+  <block id="c4068cabe0040e62a0f9e5c030ce1b50" category="sidebar">Mit Keystone Services mehr erreichen</block>
+  <block id="895b14af35ea6854d4009fe0ca2d99a9" category="sidebar">Was ist NetApp Keystone?</block>
+  <block id="272552b591277a155ab212d038a32279" category="sidebar">Was sind die Maßeinheiten?</block>
+  <block id="202e5e87c64fed77827697acb780124e" category="sidebar">Welcher Basis-Storage wird unterstützt?</block>
+  <block id="37b0f94c110a3323d97e788bfbac1738" category="sidebar">Was ist Daten-Tiering?</block>
+  <block id="8024b35524898383f60ac31a89fbc7fd" category="sidebar">Sind meine Keystone-Daten geschützt?</block>
+  <block id="4819eb92352187a66e6bbc61b2f8d4c1" category="sidebar">Keystone Service-Level</block>
+  <block id="edfc4c86589e31546a8fb2d8b085b8c9" category="sidebar">Servicequalität (QoS)</block>
+  <block id="66fa51a591446379d49cd00d160de7d3" category="sidebar">Wie kann ich meine Verbrauchsdaten sehen?</block>
+  <block id="7ee9e94f28ed6df01387cc1330a5b1c7" category="sidebar">Informationen zur Keystone Abrechnung</block>
+  <block id="7fb6ecbfc2c7172d977f1ac481edef36" category="sidebar">Meine Abrechnungspläne</block>
+  <block id="e6bdb181d03ed18f61204d6fa6f9e26d" category="sidebar">Was geschieht, wenn ich mehr als meine engagierte Kapazität verbraucht habe?</block>
+  <block id="a7c5201b644834daf4816d3080e93837" category="sidebar">Ihr Support-Team kennen (Keystone GSSC)</block>
+  <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">US Citizen Support</block>
+  <block id="f0411ca83e625da2c18b5f0c0682bd93" category="sidebar">Erfahren Sie mehr</block>
+  <block id="a47bcecd4f4a1f89ad4e82bca88975ab" category="sidebar">Keystone Flex Abonnement</block>
+  <block id="dab2edf9eaac3950e92c281ce358af01" category="sidebar">Active IQ Digitalberater</block>
+  <block id="315474a8ef79b74899073fc979f12da4" category="sidebar">Cloud Manager</block>
+  <block id="5ecb6b24c169667ff1a176768115659e" category="sidebar">Active IQ Unified Manager</block>
+</blocks>

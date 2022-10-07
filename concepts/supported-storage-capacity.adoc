@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-capacity.html 
+keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
+summary: Unterstützte Speicherkapazitäten 
+---
+= Unterstützte Storage-Kapazitäten in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die NetApp Keystone Service-Kapazitäten umfassen:
+
+
+
+== Logische Kapazität
+
+Das sind die Daten, die ein Kunde in die Keystone Infrastruktur setzt. Alle Keystone Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Keystone Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.
+
+
+
+== Engagierte Kapazität
+
+Die minimale logische Kapazität, die jeden Monat für die Dauer der Laufzeit in Rechnung gestellt wird:
+
+* Jedem Service Level ist die Kapazität zugeordnet.
+* Verplante Kapazität und zusätzliche Service Level können während der Laufzeit hinzugefügt werden.
+
+
+
+
+=== Änderungen der zugesagt Kapazität
+
+Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ändern. Es gibt jedoch bestimmte Voraussetzungen:
+
+* Die zuges. Kapazität kann unter bestimmten Bedingungen verringert werden. Weitere Informationen finden Sie unter link:../concepts/capacity-requirements.html["Senkung der Kapazität"].
+* Die verplante Kapazität kann nicht 90 Tage vor Ablauf Ihres Abonnements verlängert werden, es sei denn, das Abonnement muss für eine zusätzliche Laufzeit von 12 Monaten verlängert werden.
+* Sie können Änderungen an der zugesagt Kapazität über die Cloud Manager Schnittstelle oder über Keystone Success Manager anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].
+
+
+
+
+== Verbrauchte Kapazität
+
+Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Der Keystone Service berücksichtigt die Summe der logischen Größen (nicht der verwendeten physischen Kapazität) aller Volumes auf einem bestimmten Service-Level, die als verbrauchte Kapazität für dieses Service-Level betrachtet werden.
+
+
+
+== Burst-Kapazität
+
+Dies ist die verbrauchte Kapazität, die die engagierte Kapazität überschritten hat. Beachten Sie folgende Punkte:
+
+* Keystone bietet 20 % Kapazität über die engagierte Kapazität.
+* Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis des verbrauchten Durchschnitts abgerechnet.
+* Burst-Kapazität wird auf bis zu 20 % mit derselben Rate für die engagierte Kapazität berechnet.
+
+
+
+
+== Rechnungskapazität
+
+Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (durchschnittliche tägliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]). Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.
+
+Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch.

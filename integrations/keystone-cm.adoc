@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-cm.html 
+keywords: Keystone-Cloud Manager 
+summary: Keystone und Cloud Manager 
+---
+= Keystone und Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie einen Cloud-Service auf einem Keystone Abonnement erwerben, können Sie diese Services über Cloud Manager aufrufen und verwalten.
+
+Wenn Keystone Kunden über ein Cloud Volumes ONTAP-Abonnement verfügen, können Sie mit Keystone-Services die Cloud Volumes ONTAP-Nutzung berechnen und sich über Cloud Manager Ihre Rechnungs- und Nutzungsdetails anzeigen lassen.
+
+Dazu sollten Sie ein oder mehrere Cloud Manager Accounts erstellen und sie mit Ihrem Keystone Konto verknüpfen. Während Sie einen Cloud-Service über Keystone erwerben, müssen Sie Ihrem Keystone Success Manager alle Einzelheiten Ihrer Cloud Manager Konten zukommen lassen. So können Sie Ihre Cloud-Service-Nutzung über Ihr Keystone Abonnement richtig Messung und Abrechnung ausführen.
+
+Weitere Informationen finden Sie unter den folgenden Links in den Dokumenten zu Cloud Manager:
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#keystone-flex-subscription["Keystone Abonnement"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html["Keystone Abonnements Managen"]
+

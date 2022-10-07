@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-flow.html 
+keywords: data flow 
+summary: Keystone Datenflüsse 
+---
+= Keystone Datenfluss
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone-Systeme begegnen dem Datenfluss durch zwei Systeme, Keystone Collector-Verkehr und Monitoring der Datenflüsse.
+
+
+
+== Keystone Collector-Datenfluss
+
+Keystone Collector initiiert regelmäßig REST-API-Aufrufe an die Speicher-Controller und erhält Einzelheiten zur Nutzung der Controller, wie im folgenden Bild beschrieben:.
+
+image:collector-data-flow.png[""]
+
+.Legende
+. NetApp Collector initiiert eine HTTPS-Sitzung für das Active-IQ Cloud-Portal.
+. Die vom Kunden betriebene Firewall muss diese Verbindung zulassen.
+. Das Active IQ Cloud Portal akzeptiert die Verbindung und baut einen Tunnel zum NetApp Collector auf.
+. Der NetApp Collector richtet eine REST-API-Sitzung an die Managementverbindung des Storage Controllers ein, bezieht die Umgebungsdaten und sendet diese an das Active IQ Portal.
+
+
+
+
+== Monitoring des Datenflusses
+
+Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines der wichtigsten Funktionen von Keystone Service. Keystone verwendet zur Überwachung OpsRamp, die Remote-Zugriff auf das Kundennetzwerk benötigt. Das folgende Bild beschreibt, wie der Remote-Zugriff auf den Standort des Kunden über das OpsRamp-Tool gesichert wird.
+
+image:monitoring-flow.png[""]
+
+.Legende
+. Das OpsRamp Gateway initiiert eine TLS-Sitzung zum OpsRamp Cloud-Portal in der Cloud.
+. Die vom Kunden betriebene Firewall muss diese Verbindung zulassen.
+. Der OpsRamp-Server in der Cloud akzeptiert die Verbindung.
+. Der TLS-Tunnel wird zwischen dem OpsRamp Cloud-Portal und dem OpsRamp Local Gateway eingerichtet.
+. Die NetApp-Controller senden Benachrichtigungen über das SNMP-Protokoll oder reagieren auf API-Anfragen an das lokale OpsRamp Gateway.
+. Das lokale Gateway OpsRamp sendet diese Warnmeldungen über die zuvor festgelegte TLS-Sitzung an sein Cloud-Portal.
+

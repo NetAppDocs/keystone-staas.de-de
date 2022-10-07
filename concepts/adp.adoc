@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: concepts/adp.html 
+keywords: data protection advanced 
+summary: Erweiterte Datensicherung 
+---
+= Erweiterte Datensicherung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Add-on für Advanced Data Protection als Bestandteil Ihres Keystone Abonnements abonnieren.
+
+Weitere Informationen über den Basis-Storage und den Cloud-Storage-Service finden Sie unter link:../concepts/supported-storage-services.html["Unterstützte Storage-Services"]
+
+Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"]
+
+Der erweiterte Keystone Datensicherungsservice kann Daten synchron an einen sekundären Standort spiegeln und im Falle eines Ausfalls am primären Standort übernehmen – ohne Datenverlust. Diese Funktion nutzt die MetroCluster Konfiguration zwischen zwei Standorten für die Datensicherung. Erweiterte Datensicherungs-Add-on-Services stehen nur für Ihre Datei- und Block-Storage-Services zur Verfügung. Informationen zu ONTAP MetroCluster finden Sie unter link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster-Dokumentation"]
+
+Die Zusatzgebühren gelten für alle Kapazitäten im Abonnement, also die Quelle, gespiegelte Kopie und nicht gespiegelte Daten.
+
+Beachten Sie Folgendes:
+
+* Bei diesem Service werden 100 % der zugewiesenen Kapazität zu einem damit verbundenen Storage-Service als zugeordnete Kapazität konfiguriert.
+* Der Storage wird sowohl für das Quell- als auch das Ziel-Cluster abgerechnet. Dieser Add-on Service wird sowohl für die primären als auch für sekundäre (gespiegelte) Volumes in Rechnung gestellt.
+* Die Gebühren gelten nur für Ihre File- und Block-Storage-Services.
+

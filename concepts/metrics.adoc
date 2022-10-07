@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: concepts/metrics.html 
+keywords: metrics, GiB, IOPS, latency, durability 
+summary: Berechnungen von Kennzahlen und Definitionen der Keystone Services 
+---
+= Metriken und Definitionen für Keystone Services
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die folgenden Begriffe und Definitionen werden im NetApp Keystone (Keystone) Service zur Messung von Kennzahlen verwendet:
+
+* Kapazität Maßeinheiten: Gib, tib und PiB
+* I/O-Dichte: IOPS/tib: Anzahl der pro Sekunde verarbeiteten Input/Output-Vorgänge, basierend auf dem gesamten Speicherplatz, der vom Workload in Terabyte verbraucht wird.
+* Service-Verfügbarkeit
+* Datenaufbewahrung bei präzisen Datenzugriffs
+* Latenz und Geschwindigkeit
+
+
+
+
+== Kennzahlenmessung
+
+* *Kapazitätsmessung in gib, tib und PiB.* Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).
+* *Operationen Zählerdiagramm: IOPS/tib.* die Protokollvorgänge pro Sekunde, angefordert von der Applikation, geteilt durch die Größe des von Workloads verwendeten Volumes.
+* *Verfügbarkeit* wird als Prozentsatz der Anzahl der vom Dienst erfolgreich beantworteten I/O-Anfragen gemessen, geteilt durch die Gesamtzahl der E/A-Anforderungen, die an den Dienst gestellt wurden. Dies wird bei der Serviceeingrenzung in einem Monat gemessen und schließt nicht die geplante Ausfallzeit oder Nichtverfügbarkeit der vom Kunden bereitgestellten Einrichtungen, Netzwerke oder sonstigen Dienste ein.
+* *Langlebigkeit* ist der Prozentsatz der Daten, auf die ohne Verlust der Treue zugegriffen wird, ohne kundenbedingte Löschung oder Beschädigung auszuschließen.
+* *Latenz.* Zeit zur Verarbeitung einer I/O-Anfrage, die von einem Client erhalten wurde, gemessen an der Serviceeingrenzung (Storage-Controller-I/O-Port).
+
+
+
+
+=== Metriken für Durchsatz-Performance
+
+Durchsatz-Performance-Kennzahlen gelten nur für File- und Block-Services. Sie basieren auf:
+
+* Blockgrößen von 32 KB
+* 70 % Lese-/30 % Schreib-I/O-Kombination
+
+
+
+
+=== Variationen in der I/O-Dichte
+
+Die in IOPS/tib und/oder MB/s/tib berechnete I/O-Dichte kann basierend auf den folgenden Faktoren variieren:
+
+* Workload-Merkmale
+* Latenz, ohne Folgendes:
++
+** Applikationslatenz
+** Host-Latenz
+** Latenz im Kundennetzwerk bei Übertragung der Daten an und von den Controller-Ports
+** Overheadlatenz im Zusammenhang mit der Datenübertragung an den Objektspeicher im Fall von FabricPool
+** Die durch die QoS automatisch angewandte Latenz wird I/O-Prozesse innerhalb der maximalen Service-Level-Maximalwerte beibehalten
+
+
+* Daten der Benutzer- und Snapshot-Kopie, die als Teil der genutzten Kapazität gezählt werden
+* Das zugewiesene absolute Minimum an IOPS für jedes ONTAP Volume, unabhängig von der Menge der darin vorhandenen Daten:
++
+** Extrem: 1,000 IOPS
+** Premium: 500 IOPS
+** Performance, Standard und Wert: 75 IOPS
+
+
+* Bei Verwendung der Add-on-Services für Advanced Data Protection gilt die Ziellatenz nur für die Bearbeitung von I/O-Anfragen vom lokalen Storage
+
+
+
+
+=== Volume AQoS
+
+Für jedes ONTAP Volume sollte eine entsprechende adaptive Quality of Service (AQoS)-Richtlinie angewendet werden. Andernfalls wird die Kapazität in jedem Volume, auf das keine AQoS-Richtlinie angewendet wird, mit der Rate des höchsten Service-Level abgerechnet.

@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/infra.html 
+keywords: keystone infrastructure, infra 
+summary: Keystone Infrastruktur 
+---
+= Keystone Infrastruktur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+In diesem Abschnitt werden die NetApp Keystone Infrastruktur, Architektur und Management-Applikation für NetApp und vom Kunden betriebene Umgebungen beschrieben.
+
+Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten ausschließlich mit NetApp im Unternehmen. NetApp behält sich das Recht vor, folgende Maßnahmen zu ergreifen:
+
+* Wählen Sie Produkte aus, ersetzen Sie sie oder verwenden Sie sie für andere Zwecke.
+* Aktualisieren Sie bei Bedarf Produkte mit neuer Technologie.
+* Erhöhen oder verringern Sie die Kapazitäten der Produkte, um die Serviceanforderungen zu erfüllen.
+* Ändern Sie Architektur, Technologie und/oder Produkte, um die Service-Anforderungen zu erfüllen.
+
+
+Die Keystone-Infrastruktur umfasst mehrere Komponenten, u. a. die folgenden:
+
+* Die Keystone Infrastruktur mit Storage Controllern
+* Tools zum Managen und Betreiben des Service wie OpsRamp, Active IQ und Active IQ Unified Manager.
+
+
+
+
+== Storage-Plattformen
+
+Enterprise-Applikationen benötigen Storage-Plattformen, um schnelle Bereitstellungs-Workflows zu unterstützen, eine kontinuierliche Verfügbarkeit aufrechtzuerhalten, hohe Workloads mit niedriger Latenz aufrechtzuerhalten, eine höhere Performance zu ermöglichen und die Integration mit führenden Cloud-Providern zu unterstützen. NetApp bietet verschiedene Produkte und Technologien zur Erfüllung dieser Anforderungen. Für den Keystone-Service setzt NetApp AFF und StorageGRID Plattformen ein.
+
+
+
+== Monitoring-Tools
+
+In einem vom Keystone Kunden betriebenen Service sind die Storage-Infrastruktur und Monitoring-Tools vor Ort installiert. Die Storage-Infrastruktur besteht aus der erforderlichen Storage-Hardware zur Unterstützung Ihres Erstauftrags. Die Infrastruktur kann später mehr Storage bestellt werden.
+
+Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und Verbrauchsüberwachung bereitgestellt.
+
+* OpsRamp Local Gateway: OpsRamp ist eine Cloud-basierte Anwendung zur Überwachung Ihres Netzwerks. Es verfügt über integrierte Integrationen mit NetApp Storage-Plattformen, um Umgebungsdaten zu erfassen und das Netzwerk zu überwachen. Dieser Service wird mithilfe eines lokalen Gateways aktiviert, das auf Ihrer Website installiert ist und mit dem Cloud-Portal kommuniziert. Weitere Informationen zu
+* Keystone Data Collector: Keystone Collector bietet Keystone Kunden Abrechnungsservices. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst in regelmäßigen Abständen alle fünf Minuten Daten von ONTAP und StorageGRID Controllern. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Der Active IQ Data Lake verarbeitet die Daten für die Abrechnung und sendet sie zur Abrechnung an Zuora. Über das Active IQ Digital Advisor Kundenportal können Sie sich einloggen und Ihre Abonnement- und Nutzungsdetails für Ihr Keystone Abonnement anzeigen.
+
+
+image:mgmt-stack.png[""]
+
+Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Active IQ Digital Advisor"]

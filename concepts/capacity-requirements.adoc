@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: concepts/capacity-requirements.html 
+keywords: storage capacity requirement for service levels, capacity definition per PSL, 
+summary: Kapazitätsanforderungen für Service Levels 
+---
+= Kapazitätsanforderungen für Service Levels
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Kapazitätsanforderungen für jedes Service-Level unterscheiden sich je nach Storage-Service, wie z. B. Datei-, Block- und Objekt-Storage.
+
+
+
+== Mindestkapazitätsanforderungen für File- und Block-Services
+
+Die minimale Kapazität und die inkrementelle Kapazität, die pro Abonnement zulässig ist, werden in der folgenden Tabelle beschrieben. Es wird definiert, dass die Mindestkapazität pro Service-Level für Keystone Sales Motions gleich ist. Die Kapazität über der minimalen Kapazität, sei es zu Beginn des Abonnements, als Add-on-Service für das Abonnement oder nach der Optimierung während des Abonnements, ist ebenfalls in der Tabelle gegliedert.
+
+|===
+
+
+| Kapazität | Extrem | Premium | Leistung | Standard | Wert 
+
+
+ a| 
+Minimale Kapazität [in tib]
+3+| 25 2+| 100 
+
+
+ a| 
+Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]
+3+| 25 2+| 25 
+
+
+ a| 
+Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]
+3+| 25 2+| 25 
+|===
+
+
+== Mindestkapazitätsanforderungen für Objekt-Storage
+
+Die minimale Kapazitätsanforderungen für Objekt-Storage-Service sind in der folgenden Tabelle aufgeführt:
+
+|===
+
+
+| Kapazität | Daten-Tiering | Objekt | Cloud Volumes ONTAP | Cloud Backup Service 
+
+
+ a| 
+Minimale Kapazität [in tib]
+ a| 
+Keine Angabe
+ a| 
+500
+ a| 
+4
+ a| 
+4
+
+
+
+ a| 
+Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]
+ a| 
+Keine Angabe
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+
+
+ a| 
+Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]
+ a| 
+Keine Angabe
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+|===
+
+
+== Kapazitätsanpassungen
+
+Beachten Sie die folgenden Klauseln für Kapazitätsanpassungen:
+
+* Die Kapazität kann jederzeit während der Laufzeit hinzugefügt werden, mit Ausnahme der letzten 90 Tage der Vertragslaufzeit, in den Schritten pro Service-Level, wie in den Tabellen im vorherigen Abschnitt beschrieben. Die Ergänzung von Kapazitäten und/oder Dienstleistungen ist innerhalb der letzten 90 Tage nach der Vertragslaufzeit zulässig, solange eine Zustimmung zur Serviceverlängerung vorliegt. Jede zusätzliche Kapazität und jeder neue Service vor Ort oder in der Cloud können mit der bestehenden Laufzeit in Verbindung stehen. Die Rechnung, die Ihnen nach Aktivierung der neuen Services zugesandt wurde, entspricht der überarbeiteten Abrechnung. Die verplante Kapazität von Cloud-Services kann während der Abonnementdauer an keinem Punkt verringert werden. In der Zwischenzeit können die zugewisserten Kapazitäten und die für die On-Premises-Services während der Vertragslaufzeit erforderlichen Ausgaben aufgrund bestimmter Kriterien, wie im folgenden Abschnitt _Kapazitätsreduzierung_ definiert, verringert werden.
+* 20 % der Burst-Kapazität ist an jedem Standort verfügbar. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Falls Sie zusätzliche Burst-Anforderungen benötigen, die mehr als 20 % betragen, wenden Sie sich an den Support.
+* Die verplante Kapazität kann während einer Vertragslaufzeit nur unter bestimmten Bedingungen geändert werden, wie im folgenden Abschnitt _Kapazitätsreduzierung_ beschrieben.
+* Eine Erhöhung der Kapazität oder ein Wechsel auf ein höheres Service Level während einer Abonnementlaufzeit ist zulässig. Ein Wechsel von einem höheren Service-Level zu einem niedrigeren Service-Level ist jedoch nicht zulässig.
+* Jede Änderungsanfrage in den letzten 90 Tagen der Servicezeit erfordert eine Erneuerung des Services für mindestens ein Jahr.
+
+
+
+
+=== Senkung der Kapazität
+
+Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen müssen während der Laufzeit jederzeit über= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.
+
+image:capacity-reduction.png[""]
+
+
+
+=== Vierteljährliche Neuzuweisung von Ausgaben
+
+Anforderungen und Bedingungen auf Abonnementebene:
+
+* Gilt nur für monatliche Abrechnung im ARRück-Modell.
+* Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.
+* Kapazität für Cloud Volumes ONTAP und Cloud Backup Service muss über Keystone erworben werden.
+* Für die Neuzuordnung von Cloud Services können bis zu 25 % der bestehenden lokalen, servicebasierten monatlichen Zahlungen verwendet werden.
+* Die Service-basierten monatlichen Zahlungen vor Ort müssen innerhalb der Laufzeit >= 16.7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.
+* Anfragen zur Neuzuordnung werden erst nach 90 Tagen nach dem letzten Aktivierungsdatum der Neuzuweisung wirksam.
+* Die Neuzuordnung von Cloud-Services in On-Premises-Umgebungen ist nicht möglich.
+* Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum dem Kunden oder Partner Keystone Success Manager (KSM) formal übermittelt werden.
+* Neue Anfragen werden nur ab dem nächsten Abrechnungszeitraum wirksam.
+
+
+Ein Beispiel für eine vierteljährliche Neuzuweisung von Ausgaben ist im folgenden Bild dargestellt:
+
+image:spend-alloc.png[""]

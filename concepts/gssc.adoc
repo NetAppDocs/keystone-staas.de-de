@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/gssc.html 
+keywords: Global Services Support Center, GSSC, Keystone support 
+summary: NetApp Global Services Support Center GSSC 
+---
+= NetApp Global Services Support Center
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone Services werden mithilfe des NetApp Global Services and Support Center (GSSC), des NetApp Keystone Success Managers und des NetApp Keystone Service Delivery Managers erbracht.
+
+
+
+== NetApp Global Services und Support Center (GSSC)
+
+NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services umfassen Betriebsdisziplinen, die zu Storage-Management-Aktivitäten gehören, darunter Asset- und Konfigurations-Management, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignis-, Vorfall- und Problemmanagement, Bearbeitung von Service-Anfragen und Berichterstellung. NetApp demonstriert bei Bedarf die nötige Kontrolle und belegt Belege.
+
+
+
+== Kontakt für weitere Informationen und Support
+
+Das NetApp Global Services and Support Center (GSSC) Team unterstützt die Services hauptsächlich für NetApp Keystone Kunden. Mithilfe der folgenden Informationen können Sie sich an das Support-Team wenden.
+
+* Ansprechpartner für den weltweiten Service:https://www.netapp.com/us/contact-us/support.aspx[]
+* Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie bitte eine E-Mail an eine der folgenden Adressen: keystone.services@netapp.com keystone.escalations@netapp.com
+* NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv die NetApp Keystone-Umgebung zu Fehlerbehebungszwecken zu überwachen und eine Verbindung herzustellen. Informationen zu OpsRamp finden Sie unter https://www.opsramp.com/#[].
+
+
+
+NOTE: In einem von Partnern betriebenen Modell werden die Service-Anfragen des Mandanten und des Submandanten dem Service-Desk des Partners zugewiesen. Das Support-Tool des Partners kann mit OpsRamp- und GSSC-Applikationen integriert werden. Es werden nur L3-Probleme über GSSC an NetApp eskaliert.
+
+Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:
+
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp Produktdokumentationhttps://docs.netapp.com["https://docs.netapp.com"^]
+
+
+
+
+== GSSC-Überwachung
+
+Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.
+
+Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.
+
+Weitere Informationen finden Sie unter link:../concepts/uscs.html["USA Citizen Support (USCS)"]

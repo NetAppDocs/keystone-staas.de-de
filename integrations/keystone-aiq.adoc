@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Active IQ	Digital Advisor, keystone-aiq, aiq 
+summary: Keystone und Active IQ Digital Advisor 
+---
+= Keystone und Active IQ Digital Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+Wenn Sie die NetApp Keystone Services abonniert haben, können Sie Ihre Nutzungsberichte und Diagramme im Active IQ Digital Advisor Dashboard anzeigen. Mit Active IQ Digital Advisor können Sie Details und Informationen zu Storage als Service (STaaS) und zur eigenen NetApp Infrastruktur anzeigen. Active IQ Digital Advisor bietet eine zentrale Dashboard-Ansicht mit Einblick in die Kapazitätsauslastung und Trenddaten sowie die Möglichkeit, detaillierte Berichte zu erstellen. Darüber hinaus können Sie Ihre Keystone-Abonnements über den Active IQ Digital Advisor verwalten. Sie können neue Services für Ihr Abonnement bestellen und die Kapazität für alle vorhandenen Dienste aktualisieren.
+
+Weitere Informationen zu Active IQ Digital Advisor finden Sie unter https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Active IQ Digital Advisor Dokumentation"]
+
+Weitere Informationen zum Datenfluss finden Sie unter link:../concepts/infra.html["Monitoring-Tools"].

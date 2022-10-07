@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: concepts/components.html 
+keywords: infrastructure component, deployment requirement, installation requirement 
+summary: Infrastrukturkomponenten 
+---
+= Komponenten für die Implementierung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für die Aktivierung von NetApp Keystone Services in Ihrer Umgebung gelten verschiedene Anforderungen.
+
+
+
+== Standortanforderungen
+
+Es gibt einige standortspezifische Anforderungen wie Platz, Racks, PDUs, Strom, Und Kühlung mit zusätzlichen Netzwerk- und Sicherheitsanforderungen.
+
+
+
+=== Platzbedarf
+
+Stellfläche für das Hosten der Keystone Infrastruktur-Ausrüstung (die von den Kunden bereitgestellt werden) NetApp stellt die Gewichtsspezifikationen auf Basis der endgültigen Konfiguration bereit.
+
+
+
+=== Racks
+
+Vier Postregale im kundengesteuerten Angebot (wird vom Kunden bereitgestellt). Beim NetApp Angebot können NetApp oder der Kunde die Racks je nach Anforderungen bereitstellen. NetApp bietet 42 enge Racks.
+
+
+
+=== PDUs
+
+Sie sollten die Stromverteiler (PDUs) bereitstellen, die an zwei separate, geschützte Schaltkreise mit ausreichend C13-Steckdosen angeschlossen sind. Im kundengesteuerten Angebot sind in einigen Fällen C19-Steckdosen erforderlich. Beim NetApp Angebot können NetApp oder der Kunde die PDUs je nach Anforderungen bereitstellen.
+
+
+
+=== Strom
+
+Sie sollten die erforderliche Stromversorgung angeben. NetApp stellt die Spezifikationen für die Stromversorgung auf Basis der Nennleistung von 200 V bereit (typisch A, max A, typisch W, max W, Netzkabel, Und Menge), basierend auf der endgültigen Konfiguration. Alle Komponenten verfügen über redundante Netzteile. NetApp stellt die Stromkabel im Schrank bereit.
+
+
+
+=== Kühlung
+
+NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen die Spezifikationen für die Kühlungsanforderungen (BTU, max BTU) bereit.
+
+
+
+=== Storage Virtual Machines
+
+Storage Virtual Machines (Storage VMs) sollten folgendermaßen implementiert werden, um das Monitoring und die Nutzungsmessung von Keystone Abonnements zu unterstützen. Für den Keystone Collector ist eine Storage VM erforderlich – eine weitere wird für das OpsRamp Gateway benötigt
+
+* Keystone Collector – zur Erfassung von Nutzungsmetriken:
++
+** VCPU: 4
+** VRAM: 16 GB
+** VDisk: 200 GB
+
+
+* OpsRamp Gateway – zur Echtzeitüberwachung + Remote-Support-ONTAP von Keystone GSSC:
++
+** VCPU: 8
+** VRAM: 16 GB
+** VDisk: 100 GB
+
+
+
+
+
+
+=== Implementierungsoptionen
+
+Der Keystone Collector kann auf folgende Weise bereitgestellt werden:
+
+* VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
+* Der Kunde stellt Red hat Enterprise Linux 7 oder 8 oder CentOS 7 Linux Server bereit und Keystone Software wird über den `.rpm`-Installationsprozess installiert.
+
+
+OpsRamp Gateway wird in der folgenden Konfiguration bereitgestellt:
+
+* VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
+* Bootfähiges .iso-Installationsprogramm für
++
+** Citrix XenServer
+** Microsoft Hyper-V
+** Kernel-Based Virtual Machine (Linux KVM)
+
+
+
+
+
+
+=== Netzwerkbetrieb
+
+Für den Betrieb und die Wartung des Keystone Collector und OpsRamp Gateway ist ein abgehender Zugriff für die folgenden Dienste erforderlich:
+
+* support.netapp.com (Upload der Nutzungsdaten)
+* keystone.netapp.com (Software-Updates)
+* Hub.Docker.io (Software-Updates)
+
+
+Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 GB, 40 GB und 100 GB.
+
+NetApp liefert nur die erforderlichen Transceiver für von NetApp zur Verfügung gestellte Infrastrukturgeräte. Sie sollten Transceiver zur Verfügung stellen, die für Kundengeräte und zur Verkabelung zu den von NetApp bereitgestellten Keystone Infrastrukturgeräten erforderlich sind.
+
+
+
+== Remote-Zugriff
+
+Die Netzwerkkonnektivität ist erforderlich zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden und dem Keystone Operations Center. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internet-Services. Das Netzwerk-Design erfolgt über ein sicheres Protokoll und Firewall-Richtlinien und werden sowohl von NetApp als auch von Kunden genehmigt.
+
+NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Applikationen wie OpsRamp und Zuora nutzen diese Verbindung, um die entsprechenden Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.

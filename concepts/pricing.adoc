@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: Keystone-Preisgestaltung 
+---
+= Keystone-Preisgestaltung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone ermöglicht planbare und Vorauspreise für Ihr Storage-Abonnement.
+
+Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing vorziehen, können Sie sich für das Keystone Pay-as-you-grow-Modell für Ihr flexibles und skalierbares Nutzungsmodell entscheiden.
+
+Keystone bietet Ihnen folgende Abrechnungsmöglichkeiten:
+
+* Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Die verschiedenen Performance-Service-Tiers: Extreme, Premium, Performance, Standard, Value, Zudem können Sie mithilfe von Object Ihr erworbenes Service-Level für Keystone managen.
+* Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.
+* Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie verfügen über eine einzelne Rechnung für jeden Storage-Typ, jeden File-, Block-, Objekt- oder Cloud-Storage-Service.
+* Wählen Sie einen flexiblen Begriff für die Services und die Zahlung aus: Sie können sich für 12 Monate, 25 tib oder mehr pro Standort entscheiden. Danach können Sie 12 Monate automatisch verlängern.
+
+
+Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-Nutzung.
+
+Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"]

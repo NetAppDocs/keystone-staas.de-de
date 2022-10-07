@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: concepts/opsramp.html 
+keywords: OpsRamp, monitoring application 
+summary: OpsRamp als Überwachungsanwendung 
+---
+= OpsRamp als Überwachungsanwendung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpsRamp ist eine SaaS-basierte Applikation, mit der Keystone Ressourcen erkennen, überwachen und kontinuierlich managen kann. Mit dem OpsRamp Tool kann das Monitoring-Team von NetApp den Kunden, die Keystone implementieren, per Fernzugriff Überwachungs- und Managementservices bereitstellen.
+
+Dieses Tool verfügt über umfassende und leistungsstarke Funktionen zur Ermittlung von Ressourcen wie Applikationen, Servern, Netzwerkgeräten, Containern und anderen Ressourcen, die in der Regel in EINER IT-Umgebung verwendet werden. Dieser Remote Management Service ist einfach zu implementieren an verschiedenen Standorten, erfasst Daten schnell und lässt sich leicht auf einer zentralen Konsole anzeigen. Weitere Informationen zum OpsRamp-Programm finden Sie unter https://docs.opsramp.com/[].
+
+image:opsramp-1.png[""]
+
+Wie diese Abbildung zeigt, gibt es in der OpsRamp-Architektur zwei unterschiedliche Komponenten einer zentralen SaaS-Applikation. Am Überwachungsstandort kann entweder das lokale Gateway OpsRamp vorhanden sein, das die Daten von den Assets sammelt, oder der OpsRamp Agent in den zu überwachenden Ressourcen oder eine Kombination aus dem lokalen Gateway und dem Agent.
+
+OpsRamp Cloud-Portal ist eine SaaS-basierte Anwendung, die Metadaten des am Kundenstandort installierten Agenten oder lokalen Gateways erfasst, verarbeitet und auf seinem Dashboard mit Beobachtungen anzeigt. Das Keystone Überwachungsteam überwacht dieses Dashboard regelmäßig, um Einblicke zu erhalten.
+
+Das zentralisierte OpsRamp-Tool und das lokale OpsRamp-Gateway funktionieren zusammen, um Assets zu überwachen und zu verwalten. Das zentralisierte Tool gibt die Befehle aus, und das lokale Gateway fungiert dabei, sammelt die Daten und sendet sie zurück an das zentrale Portal.
+
+OpsRamp Local Gateway wird am Kundenstandort installiert und bietet verschiedene Vorteile, u. a.:
+
+* Die Installation des OpsRamp-Agenten auf allen Assets entfällt.
+* Die Ressourcen können nur auf das lokale Gateway verweisen, das aggregiert und Meldungen an das zentrale Portal sendet.
+* Kunden können den eingehenden und ausgehenden Datenverkehr auf dem lokalen Gateway einschränken und überwachen, anstatt den OpsRamp-Agentenverkehr auf verschiedenen Geräten zu erlauben.
+
+
+
+
+== OpsRamp-Sicherheit
+
+OpsRamp entspricht Standards wie SOC 2 Typ II und wird in Tier 1-Rechenzentren-Providern gehostet, die in Sicherheits-, Verfügbarkeits- und Vertraulichkeitsbestimmungen gemäß ISO 27001 und SOC 1 Typ I entsprechen.
+
+Darüber hinaus bietet OpsRamp dem Keystone Team die folgenden Sicherheitsfunktionen:
+
+* OpsRamp verwaltet Protokolle zu Benutzeraktivitäten und das Keystone-Team kann Ad-hoc- oder zeitplanmäßige Berichte zu Benutzeraktivitäten generieren
+* Die gesamte Kommunikation vom OpsRamp Gateway zum OpsRamp Cloud-Portal ist TLS verschlüsselt
+* Daten im Ruhezustand und genutzte Daten werden über TLS verschlüsselt
+* OpsRamp bietet zwei-Faktor-Authentifizierungsoptionen für das Keystone Engineering Team
+* OpsRamp implementiert die rollenbasierte Zugriffssteuerung, sodass das Keystone-Team mehrere Rollen erstellen und Benutzern geeignete Berechtigungen zuweisen kann
+

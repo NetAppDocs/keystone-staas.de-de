@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: concepts/operational-models.html 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+summary: Betriebsmodelle in Keystone 
+---
+= Betriebsmodelle in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone (Keystone) bietet zwei operative Modelle für die Service-Erbringung: Vom Partner betriebenes Modell und vom Kunden betriebenes Modell.
+
+* *Vom Partner betriebenes Modell*: In diesem Modell betreibt der Partner oder Dienstleister die Dienstleistungen für seine Endkunden. Bei NetApp ist der Partner der referenzierte Vertragspartner. Mandanten sind Kunden von Partnern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell verfügt in der Regel über eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter über eigene Abonnements verfügen, die vom Partner in Rechnung gestellt werden. Der Partneradministrator führt die administrativen Aufgaben für alle Mandanten aus.
+* *Vom Kunden betriebenes Modell*: In einem vom Kunden betriebenen Modell können Sie als Kunde Keystone-Services gemäß Ihren ausgewählten Performance-Tiers und Storage-Servicetypen abonnieren. NetApp definiert die Architektur und die Produkte und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Als Kunde sind Sie der Mandant oder Untermandant zu NetApp oder einem Partner/Service Provider. Basierend auf Ihrem Vertrag können Sie Serviceanfragen erheben, die an NetApp oder Ihren Service Provider gerichtet werden müssen. Ein Kundenadministrator kann am Ende die administrativen Aufgaben an einem Standort (Ihrer Umgebung) ausführen. Diese Aufgaben sind an die Benutzer in Ihrer Umgebung gebunden.
+
+
+
+
+== Rollen und Verantwortlichkeiten über den gesamten Servicezyklus hinweg
+
+* *Partner-Operated Model*: Der Anteil von Rollen und Verantwortlichkeiten hängt vom SLA zwischen Ihnen und dem Dienstleister oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
+* *vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.
+
+
+|===
+| Aufgabe | NetApp | Kunde 
+
+
+ a| 
+Installation und zugehörige Aufgaben
+
+* Installieren
+* Konfigurieren
+* Implementieren
+* Onboarding
+
+| image:check.png[""] | Keine 
+
+
+ a| 
+Administration und Monitoring
+
+* Überwachen
+* Bericht
+* Ausführung administrativer Aufgaben
+* Alarm
+
+| Keine | image:check.png[""] 
+
+
+ a| 
+Betrieb und Optimierung
+
+* Kapazitätsmanagement
+* Performance-Management
+* SLA-Management
+
+| Keine | image:check.png[""] 
+
+
+ a| 
+Unterstützung
+
+* Kunden-Support
+* Behebung von Hardware-Problemen
+* Softwaresupport
+* Upgrades und Patches
+
+| image:check.png[""] | Keine 
+|===
+Weitere Informationen zur Bereitstellung finden Sie unter link:../concepts/infra.html["Keystone Infrastruktur"] Und link:..//concepts/components.html["Komponenten für die Implementierung"]

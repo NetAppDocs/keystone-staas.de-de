@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/committed-capacity-billing.html 
+keywords: Billing based on committed capacity, committed capacity billing 
+summary: Unterstützte Speicherkapazitäten 
+---
+= Abrechnung basiert auf der verplante Kapazität
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone (Keystone) Abrechnung basiert auf der Ihnen als Teil des Keystone-Service-Abonnements bereitgestellten Kapazität.
+
+Engagierte Kapazität sind die Kapazitäten verschiedener Services in einem einzigen Abonnement, wie von Ihnen und NetApp/Partner akzeptiert. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch abgerechnet.
+
+Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"]
