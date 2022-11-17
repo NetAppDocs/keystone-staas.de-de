@@ -109,7 +109,7 @@ Beachten Sie die folgenden Klauseln für Kapazitätsanpassungen:
 
 === Senkung der Kapazität
 
-Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen müssen während der Laufzeit jederzeit über= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.
+Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen sollten während der Laufzeit >= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.
 
 image:capacity-reduction.png[""]
 
@@ -121,12 +121,12 @@ Anforderungen und Bedingungen auf Abonnementebene:
 
 * Gilt nur für monatliche Abrechnung im ARRück-Modell.
 * Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.
-* Kapazität für Cloud Volumes ONTAP und Cloud Backup Service muss über Keystone erworben werden.
+* Kapazität für Cloud Volumes ONTAP und Cloud Backup Service sollte über Keystone erworben werden.
 * Für die Neuzuordnung von Cloud Services können bis zu 25 % der bestehenden lokalen, servicebasierten monatlichen Zahlungen verwendet werden.
-* Die Service-basierten monatlichen Zahlungen vor Ort müssen innerhalb der Laufzeit >= 16.7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.
+* Die Service-basierten monatlichen Zahlungen vor Ort sollten innerhalb der Laufzeit von >= 16,7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.
 * Anfragen zur Neuzuordnung werden erst nach 90 Tagen nach dem letzten Aktivierungsdatum der Neuzuweisung wirksam.
 * Die Neuzuordnung von Cloud-Services in On-Premises-Umgebungen ist nicht möglich.
-* Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum dem Kunden oder Partner Keystone Success Manager (KSM) formal übermittelt werden.
+* Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum durch den Kunden oder Partner Keystone Success Manager (KSM) formal eingereicht werden.
 * Neue Anfragen werden nur ab dem nächsten Abrechnungszeitraum wirksam.
 
 

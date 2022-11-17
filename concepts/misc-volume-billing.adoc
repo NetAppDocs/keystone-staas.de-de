@@ -13,26 +13,26 @@ summary: Die Abrechnung basiert auf verschiedenen Volume-Typen
 :imagesdir: ../media/
 
 
-[role="lead"]
-Es gibt verschiedene Szenarien für die Keystone Abrechnung. Sie sollten mit diesen Szenarien vertraut sein.
-
 
 
 == Abrechnung für geklonte Volumes
 
-Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone ohne zusätzliche Zahlungen weiterhin verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.
+Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone weiterhin ohne zusätzliche Zahlungen verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.
 
-Beachten Sie Folgendes:
+
+NOTE: Hinweis:
 
 * Der Verbrauch der geklonten Volumes wird während der ersten 24 Stunden nach der Klonerstellung nicht berücksichtigt. Während dieser Zeit fallen für diese Zeit keine Gebühren an.
-* Geklonte Volumes mit Standard- und Value-Service-Leveln werden nicht als Verbrauch betrachtet, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.
+* Geklonte Volumes mit den Service-Leveln „Standard“ und „Wert“ werden nicht als Verbrauch betrachtet, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.
 
 
 
 
 == Abrechnung für erweiterte Datensicherung
 
-Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.
+Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden, oder ob sie gespiegelt oder unverspiegelte Daten sind.
+
+Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.
 
 Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Keystone erkennt 10 TB des Verbrauchs an jedem Standort, was einer Erhöhung der Gesamtzahl um 20 TB ergibt. System Manager und Unified Manager berichten ein 10-TB-Volume, das in Standort A erstellt wurde, jedoch kein 10-TB-Volume in Standort B melden
 
@@ -60,7 +60,7 @@ Die Preise für das SnapMirror Ziel-Volume unterliegen der QoS-Richtlinie für d
 
 == Abrechnung für LUNs
 
-Bei LUNs wird in der Regel dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:
+Bei LUNs wird dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:
 
 * Die LUN-Größe wird gemäß dem zugehörigen Service-Level der LUN für den Verbrauch gezählt.
 * Der restliche Speicherplatz im Volume wird, falls vorhanden, gemäß der QoS-Richtlinie des Service-Levels, die auf dem Volume festgelegt sind, berechnet.

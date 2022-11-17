@@ -14,7 +14,7 @@ summary: Infrastrukturkomponenten
 
 
 [role="lead"]
-Für die Aktivierung von NetApp Keystone Services in Ihrer Umgebung gelten verschiedene Anforderungen.
+In diesem Abschnitt werden die Komponenten aufgeführt, die zur Aktivierung von NetApp Keystone Services in Ihrer Umgebung erforderlich sind.
 
 
 
@@ -115,6 +115,6 @@ NetApp liefert nur die erforderlichen Transceiver für von NetApp zur Verfügung
 
 == Remote-Zugriff
 
-Die Netzwerkkonnektivität ist erforderlich zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden und dem Keystone Operations Center. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internet-Services. Das Netzwerk-Design erfolgt über ein sicheres Protokoll und Firewall-Richtlinien und werden sowohl von NetApp als auch von Kunden genehmigt.
+Zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden, und dem Keystone Operations Center ist Netzwerkkonnektivität erforderlich. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internetservices. Das Netzwerk-Design sollte über ein sicheres Protokoll verfügen und Firewall-Richtlinien werden sowohl von NetApp als auch von Kunden genehmigt.
 
 NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Applikationen wie OpsRamp und Zuora nutzen diese Verbindung, um die entsprechenden Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.

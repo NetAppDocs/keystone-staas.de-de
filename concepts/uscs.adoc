@@ -16,7 +16,7 @@ summary: 'US Citizen Support (USCS)'
 [role="lead"]
 USA Citizen Support (USCS) ist ein Add-on-Angebot für NetApp Keystone-Abonnements. Sie erhalten Anspruch auf Lieferung und Support von laufenden Keystone-Services von den USA US-Bürger Bereitgestellt.
 
-Lesen Sie die folgenden Abschnitte, um zu erfahren, welche Elemente Ihrer Abonnements von diesem Add-on-Service gebunden sind und die unter den Bedingungen der NetApp Keystone-Vereinbarung bereitgestellt werden.Fußnote:haftungsausschluss1[die hier beschriebenen Services und Angebote unterliegen einer vollständig ausgeführten Keystone-Vereinbarung und unterliegen diesen Einschränkungen.]
+Lesen Sie die folgenden Abschnitte, um zu erfahren, welche Elemente Ihrer Abonnements von diesem Add-on-Service gebunden sind und unter den Bedingungen der NetApp Keystone-Vereinbarung zur Verfügung gestellt werden.Fußnote:haftungsausschluss1[die hier beschriebenen Services und Angebote unterliegen einer vollständig ausgeführten Keystone-Vereinbarung und unterliegen diesen Einschränkungen.]
 
 
 

@@ -14,16 +14,16 @@ summary: Willkommen beim Keystone
 
 
 [role="lead"]
-NetApp Keystone (Keystone) ist ein abonnementbasiertes Servicemodell, bei dem das nutzungsbasierte Zahlungsmodell mit einem nahtlosen Hybrid-Cloud-Modell verändert wird. Für diejenigen, die einen Betriebskostenverbrauch von einem Vorabinvestition oder einem Leasing bevorzugen.
+NetApp Keystone (Keystone) ist ein abonnementbasiertes Servicemodell, bei dem das nutzungsbasierte Pay-as-you-grow-Modell bietet Unternehmen nahtloses Hybrid-Cloud-Modell, bei dem sie lieber Betriebskosten als vorab- oder Leasingmodelle bevorzugen.
 
-Kunden profitieren von einer schnelleren Amortisierung, indem sie Hürden für das Management des unvorhersehbaren Kapazitätswachstums und die komplexen Beschaffungszyklen überwinden. Keystone ermöglicht Kunden, die Wirtschaftlichkeit und den Betrieb auf ihre Geschäftsprioritäten abzustimmen.
+Keystone ermöglicht Kunden eine schnellere Amortisierung, indem es Hürden beim Management des unvorhersehbaren Kapazitätswachstums und der komplexen Beschaffungszyklen beseitigt. Keystone ermöglicht Kunden, die Wirtschaftlichkeit und den Betrieb auf ihre Geschäftsprioritäten abzustimmen.
 
 image:nkfsosm_image2.png["Fehler: Fehlendes Grafikbild"]
 
-Keystone ist ein abonnementbasiertes Serviceangebot mit Storage-Kapazität für vordefinierte Service-Level für Block-, Datei- und Objektdatentypen, die lokal implementiert werden können und von NetApp, einem Partner oder dem Kunden bedient werden können. Außerdem kann sie in Verbindung mit NetApp Cloud-Services wie Cloud Volumes ONTAP genutzt werden, die auf einer Hyperscale-Umgebung Ihrer Wahl implementiert werden können.
+Keystone bietet Storage-Kapazität für vordefinierte Service-Level für Block-, Datei- und Objektdatentypen, die lokal implementiert und von NetApp, einem Partner oder dem Kunden betrieben werden können. Keystone kann in Verbindung mit NetApp Cloud-Services wie Cloud Volumes ONTAP verwendet werden, die in einer Hyperscale-Umgebung Ihrer Wahl implementiert werden können.
 
 
 
 == Keystone Storage-as-a-Service (STaaS)
 
-Während der Großteil der Unternehmen noch an ihrer Strategie für die Hybrid Cloud arbeitet, möchten Sie als Kunde möglicherweise nicht zögern, den Wechsel zu einem Betriebskostenmodell _Pay-per-Use_ -Nutzungsmodell zu verschieben. Möglicherweise haben Sie keine Übersicht über den Zeitpunkt, zu dem ein bestimmter Teil oder alle Workloads in die Cloud verschoben werden sollen. Dies könnte jedoch möglicherweise ein Auftrag für die Migration in die Cloud haben. Keystone Storage-as-a-Service bietet die Flexibilität, die Sie mit On-Premises-Services starten und zu einem späteren Zeitpunkt über die richtigen Workloads entscheiden können und erst dann über die Cloud übertragen werden. Keystone Storage-as-a-Service (STaaS) bietet Verpflichtungs-Schutz für Ihre diversen Implementierungsmodelle, anstatt mehr Cloud-Service-Kosten zusätzlich zu lokalen Lösungen abzustapeln. Kunden können ihre lokalen Ausgaben neu zuweisen, um Cloud-Services hinzuzufügen. Im Wesentlichen werden dabei mindestens dieselbe monatliche Rechnung bezahlt, die vor dieser Neuzuweisung bereitgestellt wurde.
+Während die meisten Unternehmen noch an ihrer Hybrid Cloud-Strategie arbeiten, können Sie als Kunde sich für ein Betriebskostenmodell ("Pay-per-use"_ -Nutzungsmodell entscheiden. Unter Umständen gibt es ein Mandat, um alle Workloads in die Cloud zu verschieben – ohne dabei aber einen klaren Plan oder Zeitplan für die Migration bestimmter Teile oder aller Workloads in die Cloud zu haben. Mit Keystone Storage-as-a-Service (STaaS) erhalten Sie die Flexibilität, mit On-Premises-Services zu beginnen und zu einem späteren Zeitpunkt die richtigen Workloads zu bestimmen. Keystone STaaS bietet Schutz für alle Implementierungsmodelle. Statt für Cloud Services mehr bezahlen zu müssen, können Sie als On-Premises-Kunde Ihre lokalen Ausgaben neu zuweisen, um Cloud Services hinzuzufügen. Sie zahlen im Wesentlichen dieselben monatlichen Rechnungen, die vor dieser Neuzuordnung bereitgestellt wurden.

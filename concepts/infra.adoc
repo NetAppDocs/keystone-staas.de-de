@@ -50,4 +50,4 @@ Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und
 
 image:mgmt-stack.png[""]
 
-Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Active IQ Digital Advisor"]
+Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Active IQ Digital Advisor"].

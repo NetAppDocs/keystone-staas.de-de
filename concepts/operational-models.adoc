@@ -16,8 +16,8 @@ summary: Betriebsmodelle in Keystone
 [role="lead"]
 NetApp Keystone (Keystone) bietet zwei operative Modelle für die Service-Erbringung: Vom Partner betriebenes Modell und vom Kunden betriebenes Modell.
 
-* *Vom Partner betriebenes Modell*: In diesem Modell betreibt der Partner oder Dienstleister die Dienstleistungen für seine Endkunden. Bei NetApp ist der Partner der referenzierte Vertragspartner. Mandanten sind Kunden von Partnern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell verfügt in der Regel über eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter über eigene Abonnements verfügen, die vom Partner in Rechnung gestellt werden. Der Partneradministrator führt die administrativen Aufgaben für alle Mandanten aus.
-* *Vom Kunden betriebenes Modell*: In einem vom Kunden betriebenen Modell können Sie als Kunde Keystone-Services gemäß Ihren ausgewählten Performance-Tiers und Storage-Servicetypen abonnieren. NetApp definiert die Architektur und die Produkte und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Als Kunde sind Sie der Mandant oder Untermandant zu NetApp oder einem Partner/Service Provider. Basierend auf Ihrem Vertrag können Sie Serviceanfragen erheben, die an NetApp oder Ihren Service Provider gerichtet werden müssen. Ein Kundenadministrator kann am Ende die administrativen Aufgaben an einem Standort (Ihrer Umgebung) ausführen. Diese Aufgaben sind an die Benutzer in Ihrer Umgebung gebunden.
+* *Vom Partner betriebenes Modell*: Ein Partner oder Dienstleister betreibt die Dienstleistungen für seine Endkunden. Bei NetApp ist der Partner der referenzierte Vertragspartner. Mandanten sind Kunden von Partnern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell nutzt eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter ihre eigenen Abonnements haben, die vom Partner in Rechnung gestellt werden. Der Partneradministrator führt die administrativen Aufgaben für alle Mandanten aus.
+* *Vom Kunden betriebenes Modell*: Als Kunde können Sie Keystone-Services nach Ihren ausgewählten Performance-Stufen und Storage-Servicetypen abonnieren. NetApp definiert die Architektur und das Produkt und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Als Kunde sind Sie der Mandant oder Mandant von NetApp oder einem Partner/Service Provider. Auf der Grundlage Ihres Vertrags können Sie Service-Anfragen stellen, die von NetApp oder Ihrem Service Provider bearbeitet werden müssen. Ein Administrator am Ende kann die administrativen Aufgaben an Ihrem Standort (Ihrer Umgebung) ausführen. Diese Aufgaben sind an die Benutzer in Ihrer Umgebung gebunden.
 
 
 
@@ -74,4 +74,4 @@ Unterstützung
 
 | image:check.png[""] | Keine 
 |===
-Weitere Informationen zur Bereitstellung finden Sie unter link:../concepts/infra.html["Keystone Infrastruktur"] Und link:..//concepts/components.html["Komponenten für die Implementierung"]
+Weitere Informationen zur Bereitstellung finden Sie unter link:../concepts/infra.html["Keystone Infrastruktur"] Und link:..//concepts/components.html["Komponenten für die Implementierung"].

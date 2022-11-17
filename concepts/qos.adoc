@@ -22,9 +22,9 @@ Durch die Verwendung von QoS wird sichergestellt, dass Applikationen stets eine 
 
 == Anpassungsfähige QoS
 
-Adaptive QoS wird bei Keystone-Services eingesetzt. Bei schwankenden QoS-Richtlinien wird das Verhältnis von IOPS zu TB/GB erhalten. Weitere Informationen zur adaptiven QoS finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Allgemeines zur anpassungsfähigen QoS"].
+Adaptive QoS wird bei Keystone-Services verwendet, um das Verhältnis von IOPS zu TBs/GB zu erhalten, wenn die Größe die QoS-Richtlinie automatisch angewendet wird. Weitere Informationen zur adaptiven QoS finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Allgemeines zur anpassungsfähigen QoS"].
 
-Keystone bietet flexible QoS-Richtlinien, die Sie einrichten können, sobald das Cluster in der Produktion ist. Sie sollten sicherstellen, dass alle Volumes mit der richtigen adaptiven QoS-Richtlinie verknüpft sind, die bereits in Ihrem System erstellt und verfügbar sind.
+Keystone bietet flexible QoS-Richtlinien, die Sie einrichten können, sobald das Cluster in Produktion ist. Sie sollten sicherstellen, dass alle Volumes mit den richtigen anpassungsfähigen QoS-Richtlinien verknüpft sind, die bereits in Ihrem System erstellt und verfügbar sind.
 
 
 NOTE: Wenn Sie keine anpassungsfähigen QoS-Richtlinien auf Ihre Volumes korrekt angewendet haben, werden diese Volumes gemäß Ihrem Abonnement auf dem höchsten Service-Level gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.
@@ -60,7 +60,7 @@ Die Einstellungen für anpassungsfähige QoS-Richtlinien variieren für jeden Se
 
 === Einstellungen für Extreme Service Level
 
-Für Extreme Service Level sind die Einstellungen und Befehle:
+Einstellungen und Befehle für den Extreme Service Level:
 
 * Beispielbefehl:
 
@@ -76,8 +76,7 @@ qos adaptive-policy-group create -policy group <Keystone_extreme> -vserver <SVM_
 
 === Einstellungen für Premium-Service-Level
 
-Für Premium Service Level sind dies die Einstellungen und Befehle:
-
+ Settings and commands for the Premium service level:
 * Beispielbefehl:
 
 
@@ -92,7 +91,7 @@ qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_
 
 === Einstellungen für Leistungsstufen
 
-Für das Performance Service Level sind die Einstellungen und Befehle:
+Einstellungen und Befehle für das Performance Service Level:
 
 * Beispielbefehl:
 
@@ -108,8 +107,7 @@ qos adaptive-policy-group create -policy group <Keystone_performance> -vserver <
 
 === Einstellungen für Service-Level Wert
 
-Für Value Service Level sind dies die Einstellungen und Befehle:
-
+ Settings and commands for the Value  service level:
 * Beispielbefehl:
 
 

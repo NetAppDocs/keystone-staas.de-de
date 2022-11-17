@@ -14,17 +14,17 @@ summary: Unterstützte Service-Level
 
 
 [role="lead"]
-Keystone bietet einen Service als ababonnierte Storage-Kapazität mit einem zugeordneten Service-Level.
+Keystone bietet Ihnen Services als Abonnementmodell, indem es Ihnen engagierte Storage-Kapazität bietet und diese mit vordefinierten Service-Levels verknüpft.
 
 Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
 
-Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Vorgänge und der gesamte auf dem jeweiligen Volume verwendete Storage werden in die E/A-Dichteberechnung des Volumes berücksichtigt.
+Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Operationen und alle verwendeten Speicher auf dem jeweiligen Volumen werden in die E/A-Dichteberechnung des Volumens berücksichtigt.
 
 
 
 == Service Levels für unterschiedliche Storage-Typen
 
-Hier sind die Service Level für Datei-, Block-, Objekt-Storage und Cloud-Services aufgeführt.
+Hier sind die Service Level für Datei-, Block-, Objekt- und Cloud-Services aufgeführt.
 
 Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.
 
@@ -52,16 +52,16 @@ Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte wäh
 | *Latenz* | <1 ms | <1 ms | <1 ms | <17 ms | <17 ms 
 |===
 
-NOTE: Beachten Sie Folgendes:
+NOTE: Hinweis:
 
-* Durchsatz-Performance-Kennzahlen (gelten nur für File- und Block-Services) basieren auf:
+* Durchsatz-Performance-Kennzahlen (gelten nur für Datei- und Block-Services) basieren auf folgenden Kriterien:
 +
 ** 32-KB-Blockgrößen
 ** 70 % Lesen/30 % Schreiben-I/O-Kombination
 
 
-* Die tatsächlichen IOPS/tib und/oder MB/s/tib können je nach Workload-Merkmalen variieren
-* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem
+* Die tatsächlichen IOPS/tib und/oder MB/s/tib hängen von den Workload-Merkmalen ab.
+* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem.
 
 
 
@@ -91,10 +91,10 @@ NOTE: Beachten Sie Folgendes:
 | *Latenz* | K. A. 
 |===
 
-NOTE: Beachten Sie Folgendes:
+NOTE: Hinweis:
 
-* Die tatsächlichen IOPS/tib und/oder MB/s/tib können je nach Workload-Merkmalen variieren
-* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem
+* Die tatsächlichen IOPS/tib und/oder MB/s/tib hängen von den Workload-Merkmalen ab.
+* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem.
 
 
 
@@ -124,8 +124,8 @@ NOTE: Beachten Sie Folgendes:
 | *Latenz* | K. A. 
 |===
 
-NOTE: Beachten Sie Folgendes:
+NOTE: Hinweis:
 
-* Cloud-native Services wie Computing, Storage und Netzwerk werden von Cloud-Providern in Rechnung gestellt
-* Diese Services hängen von den Cloud-Storage- und Computing-Merkmalen ab
+* Cloud-native Services wie Computing, Storage und Netzwerk werden von Cloud-Providern in Rechnung gestellt.
+* Diese Services hängen von den Cloud-Storage- und Computing-Merkmalen ab.
 

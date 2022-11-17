@@ -14,13 +14,15 @@ summary: Unterstützte Storage-Services
 
 
 [role="lead"]
-Keystone Service unterstützt die Basis-Storage-Typen von ONTAP, wie Datei- und Block-Storage. Objekt-Storage für StorageGRID Plattform wird ebenfalls unterstützt. Datenmanagement-Funktionen für Cloud Volumes ONTAP werden ebenfalls unterstützt.
+Keystone Service unterstützt die Basis-Storage-Typen von ONTAP, Dateien und Blöcken. Zudem unterstützt es Objekt-Storage für die StorageGRID Plattform und die Datenmanagement-Funktionen für Cloud Volumes ONTAP.
 
-Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"]
+Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
 
 
 
 == Basis-Storage-Services
+
+Die grundlegenden Storage-Services von Keystone bieten Datensicherungsservices mithilfe von NetApp Technologien wie SnapMirror, SnapVault und Snapshot sowie Tiering-Funktionen auf unterstützten NetApp Storage-Zielen für Datei- und Block-Storage-Services. Sie können sich außerdem für Add-on-Services zur Datensicherung und für Tiering entscheiden. Informationen zu Add-on-Services finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"] Und link:../concepts/data-tiering.html["Daten-Tiering"].
 
 |===
 | Storage-Service | Basis | Unterstützte Funktionen | Protokolle 
@@ -38,18 +40,18 @@ Block-Storage
 
  a| 
 Objekt-Storage
-| Basierend auf der StorageGRID Plattform | Unterstützt mehrere Information Lifecycle Management-Richtlinien (ILM) über mehrere Standorte hinweg. Hinweis: Jede Website muss über ein separates Abonnement verfügen. | S3 
+| Basierend auf der StorageGRID Plattform | Unterstützt mehrere Information Lifecycle Management-Richtlinien (ILM) über mehrere Standorte hinweg. Hinweis: Jede Website sollte ein separates Abonnement haben. | S3 
 |===
 
 NOTE: Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig in Datei- und Block-Storage-Service-Tiers enthalten.
 
-Weitere Informationen zum Daten-Tiering finden Sie unter link:../concepts/data-tiering.html["Daten-Tiering"]Weitere Informationen zu Datensicherungsdiensten finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"]
+Weitere Informationen zum Daten-Tiering finden Sie unter link:../concepts/data-tiering.html["Daten-Tiering"]. Weitere Informationen zu Datensicherungsdiensten finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"].
 
 
 
 == Cloud-Storage-Services
 
-Keystone unterstützt die _Datenmanagementfunktionen für Cloud Volumes ONTAP, die auf AWS, Azure und Google_ unterstützt werden. Dieser Service kann mit Ihren vorhandenen Abonnements gemeinsam genutzt werden. Der Cloud-Service kann während der Servicezeit an jedem Punkt berücksichtigt werden. Wenn Sie jedoch keine Verlängerung Ihres Abonnements planen, können Sie den Cloud-Service nicht innerhalb der letzten 90 Tage Ihres Abonnements einschließen.
+Keystone unterstützt das Datenmanagement von Cloud Volumes ONTAP auf Amazon Web Services (AWS), Microsoft Azure und Google Cloud Platform. Dieser Service kann mit Ihren vorhandenen Abonnements gemeinsam genutzt werden. Der Cloud-Service kann während der Servicezeit an jedem Punkt berücksichtigt werden. Wenn Sie jedoch keine Verlängerung Ihres Abonnements planen, können Sie den Cloud-Service nicht innerhalb der letzten 90 Tage Ihres Abonnements einschließen.
 
 
-NOTE: Hyperscale-basierte Computing- und Storage-Infrastrukturen stehen NetApp nicht als Teil Ihrer Keystone-Abonnements zur Verfügung. Sie müssen sie bei einem Hyperscale Cloud-Service-Provider erwerben.
+NOTE: Hyperscale-basierte Computing- und Storage-Infrastrukturen stehen NetApp nicht als Teil Ihrer Keystone-Abonnements zur Verfügung. Sie müssen sie von einem Hyperscale Cloud-Service-Provider erwerben.

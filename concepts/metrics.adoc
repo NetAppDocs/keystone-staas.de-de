@@ -27,18 +27,18 @@ Die folgenden Begriffe und Definitionen werden im NetApp Keystone (Keystone) Ser
 
 == Kennzahlenmessung
 
-* *Kapazitätsmessung in gib, tib und PiB.* Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).
+* *Kapazitätsmessung in gib, tib und PiB.*: Maße der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).
 * *Operationen Zählerdiagramm: IOPS/tib.* die Protokollvorgänge pro Sekunde, angefordert von der Applikation, geteilt durch die Größe des von Workloads verwendeten Volumes.
-* *Verfügbarkeit* wird als Prozentsatz der Anzahl der vom Dienst erfolgreich beantworteten I/O-Anfragen gemessen, geteilt durch die Gesamtzahl der E/A-Anforderungen, die an den Dienst gestellt wurden. Dies wird bei der Serviceeingrenzung in einem Monat gemessen und schließt nicht die geplante Ausfallzeit oder Nichtverfügbarkeit der vom Kunden bereitgestellten Einrichtungen, Netzwerke oder sonstigen Dienste ein.
-* *Langlebigkeit* ist der Prozentsatz der Daten, auf die ohne Verlust der Treue zugegriffen wird, ohne kundenbedingte Löschung oder Beschädigung auszuschließen.
-* *Latenz.* Zeit zur Verarbeitung einer I/O-Anfrage, die von einem Client erhalten wurde, gemessen an der Serviceeingrenzung (Storage-Controller-I/O-Port).
+* *Verfügbarkeit*: Gemessen als Prozentsatz der vom Dienst erfolgreich beantworteten E/A-Anfragen, geteilt durch die Gesamtzahl der an den Dienst gestellten I/O-Anfragen. Dies wird bei der Serviceeingrenzung in einem Monat gemessen und schließt nicht die geplante Ausfallzeit oder Nichtverfügbarkeit der vom Kunden bereitgestellten Einrichtungen, Netzwerke oder sonstigen Dienste ein.
+* *Langlebigkeit*: Prozentsatz der Daten, auf die ohne Verlust der Treue zugegriffen wird, ausgenommen vom Kunden verursachte Löschung oder Beschädigung.
+* *Latenz*: Zeit zur Bedienung einer von einem Client erhaltenen I/O-Anfrage, gemessen an der Serviceeingrenzung (Storage-Controller-I/O-Port).
 
 
 
 
 === Metriken für Durchsatz-Performance
 
-Durchsatz-Performance-Kennzahlen gelten nur für File- und Block-Services. Sie basieren auf:
+Kennzahlen für Durchsatz gelten nur für Datei- und Block-Services, die auf folgenden Kriterien basieren:
 
 * Blockgrößen von 32 KB
 * 70 % Lese-/30 % Schreib-I/O-Kombination
@@ -48,7 +48,7 @@ Durchsatz-Performance-Kennzahlen gelten nur für File- und Block-Services. Sie b
 
 === Variationen in der I/O-Dichte
 
-Die in IOPS/tib und/oder MB/s/tib berechnete I/O-Dichte kann basierend auf den folgenden Faktoren variieren:
+Die in IOPS/tib und/oder MB/s/tib berechnete I/O-Dichte variiert basierend auf den folgenden Faktoren:
 
 * Workload-Merkmale
 * Latenz, ohne Folgendes:
@@ -61,14 +61,14 @@ Die in IOPS/tib und/oder MB/s/tib berechnete I/O-Dichte kann basierend auf den f
 
 
 * Daten der Benutzer- und Snapshot-Kopie, die als Teil der genutzten Kapazität gezählt werden
-* Das zugewiesene absolute Minimum an IOPS für jedes ONTAP Volume, unabhängig von der Menge der darin vorhandenen Daten:
+* Das zugewiesene absolute Minimum an IOPS auf jedem ONTAP Volume, unabhängig von der Datenmenge im Volume:
 +
 ** Extrem: 1,000 IOPS
 ** Premium: 500 IOPS
 ** Performance, Standard und Wert: 75 IOPS
 
 
-* Bei Verwendung der Add-on-Services für Advanced Data Protection gilt die Ziellatenz nur für die Bearbeitung von I/O-Anfragen vom lokalen Storage
+* Bei Nutzung der Add-on-Services für Advanced Data Protection gilt die Ziellatenz nur für die Bearbeitung von I/O-Anfragen vom lokalen Storage.
 
 
 
