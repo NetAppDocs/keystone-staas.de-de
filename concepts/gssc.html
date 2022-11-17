@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/de-de/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/de-de/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/de-de/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><script src='/de-de/keystone-staas/js/na-utility.js'></script>
   <script src='/de-de/keystone-staas/js/clouddocs.js'></script>
   <script src='/de-de/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/de-de/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Los geht's</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Weitere Informationen zu Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Add-on-Services</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Daten-Tiering"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Weitere Informationen zu Service-Leveln</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Quality of Service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Abrechnung</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone-Preisgestaltung"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Keystone Infrastruktur</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Detaillierte Informationen zur Infrastruktur"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Mit Keystone Services mehr erreichen</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone und Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:25:43 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:46:33 +0000">11/17/2022</time>
     
   
 
@@ -930,7 +918,7 @@
 <h2 id="netapp-global-services-und-support-center-gssc">NetApp Global Services und Support Center (GSSC)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services umfassen Betriebsdisziplinen, die zu Storage-Management-Aktivitäten gehören, darunter Asset- und Konfigurations-Management, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignis-, Vorfall- und Problemmanagement, Bearbeitung von Service-Anfragen und Berichterstellung. NetApp demonstriert bei Bedarf die nötige Kontrolle und belegt Belege.</p>
+<p>NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services umfassen Betriebsdisziplinen zu Storage Management-Aktivitäten. Zu diesen Services gehören Asset- und Konfigurationsmanagement, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignisse, Vorfall- und Problemmanagement, Bearbeitung von Serviceanfragen und Berichterstellung. NetApp weist nach Bedarf einen Kontrollstatus auf und weist entsprechende Nachweise auf.</p>
 </div>
 </div>
 </div>
@@ -946,10 +934,10 @@
 <p>Ansprechpartner für den weltweiten Service:https://www.netapp.com/us/contact-us/support.aspx[]</p>
 </li>
 <li>
-<p>Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie bitte eine E-Mail an eine der folgenden Adressen: <a href="mailto:keystone.services@netapp.com">keystone.services@netapp.com</a> <a href="mailto:keystone.escalations@netapp.com">keystone.escalations@netapp.com</a></p>
+<p>Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie eine E-Mail an eine der folgenden Adressen: <a href="mailto:keystone.services@netapp.com">keystone.services@netapp.com</a> <a href="mailto:keystone.escalations@netapp.com">keystone.escalations@netapp.com</a></p>
 </li>
 <li>
-<p>NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv die NetApp Keystone-Umgebung zu Fehlerbehebungszwecken zu überwachen und eine Verbindung herzustellen. Informationen zu OpsRamp finden Sie unter <a href="https://www.opsramp.com/#" class="bare">https://www.opsramp.com/#</a>.</p>
+<p>NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv zu überwachen und eine Verbindung zur NetApp Keystone-Umgebung zur Fehlerbehebung herzustellen. Informationen zu OpsRamp finden Sie unter <a href="https://www.opsramp.com/#" class="bare">https://www.opsramp.com/#</a>.</p>
 </li>
 </ul>
 </div>
@@ -966,7 +954,7 @@ In einem von Partnern betriebenen Modell werden die Service-Anfragen des Mandant
 </table>
 </div>
 <div class="paragraph">
-<p>Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:</p>
+<p>Weitere Informationen finden Sie unter:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -987,10 +975,10 @@ In einem von Partnern betriebenen Modell werden die Service-Anfragen des Mandant
 <p>Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.</p>
 </div>
 <div class="paragraph">
-<p>Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.</p>
+<p>Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Die Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.</p>
 </div>
 <div class="paragraph">
-<p>Weitere Informationen finden Sie unter <a href="../concepts/uscs.html">"USA Citizen Support (USCS)"</a></p>
+<p>Weitere Informationen finden Sie unter <a href="../concepts/uscs.html">"USA Citizen Support (USCS)"</a>.</p>
 </div>
 </div>
 </div>

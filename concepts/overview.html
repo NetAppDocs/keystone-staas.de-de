@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/de-de/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/de-de/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/de-de/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><script src='/de-de/keystone-staas/js/na-utility.js'></script>
   <script src='/de-de/keystone-staas/js/clouddocs.js'></script>
   <script src='/de-de/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/de-de/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Los geht's</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Weitere Informationen zu Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Add-on-Services</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Daten-Tiering"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Weitere Informationen zu Service-Leveln</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Quality of Service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Abrechnung</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone-Preisgestaltung"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Keystone Infrastruktur</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Detaillierte Informationen zur Infrastruktur"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Mit Keystone Services mehr erreichen</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone und Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:25:43 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:46:33 +0000">11/17/2022</time>
     
   
 
@@ -922,16 +910,16 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>NetApp Keystone (Keystone) ist ein abonnementbasiertes Servicemodell, bei dem das nutzungsbasierte Zahlungsmodell mit einem nahtlosen Hybrid-Cloud-Modell verändert wird. Für diejenigen, die einen Betriebskostenverbrauch von einem Vorabinvestition oder einem Leasing bevorzugen.</p>
+<p>NetApp Keystone (Keystone) ist ein abonnementbasiertes Servicemodell, bei dem das nutzungsbasierte Pay-as-you-grow-Modell bietet Unternehmen nahtloses Hybrid-Cloud-Modell, bei dem sie lieber Betriebskosten als vorab- oder Leasingmodelle bevorzugen.</p>
 </div>
 <div class="paragraph">
-<p>Kunden profitieren von einer schnelleren Amortisierung, indem sie Hürden für das Management des unvorhersehbaren Kapazitätswachstums und die komplexen Beschaffungszyklen überwinden. Keystone ermöglicht Kunden, die Wirtschaftlichkeit und den Betrieb auf ihre Geschäftsprioritäten abzustimmen.</p>
+<p>Keystone ermöglicht Kunden eine schnellere Amortisierung, indem es Hürden beim Management des unvorhersehbaren Kapazitätswachstums und der komplexen Beschaffungszyklen beseitigt. Keystone ermöglicht Kunden, die Wirtschaftlichkeit und den Betrieb auf ihre Geschäftsprioritäten abzustimmen.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../media/nkfsosm_image2.png" alt="Fehler: Fehlendes Grafikbild"></span></p>
 </div>
 <div class="paragraph">
-<p>Keystone ist ein abonnementbasiertes Serviceangebot mit Storage-Kapazität für vordefinierte Service-Level für Block-, Datei- und Objektdatentypen, die lokal implementiert werden können und von NetApp, einem Partner oder dem Kunden bedient werden können. Außerdem kann sie in Verbindung mit NetApp Cloud-Services wie Cloud Volumes ONTAP genutzt werden, die auf einer Hyperscale-Umgebung Ihrer Wahl implementiert werden können.</p>
+<p>Keystone bietet Storage-Kapazität für vordefinierte Service-Level für Block-, Datei- und Objektdatentypen, die lokal implementiert und von NetApp, einem Partner oder dem Kunden betrieben werden können. Keystone kann in Verbindung mit NetApp Cloud-Services wie Cloud Volumes ONTAP verwendet werden, die in einer Hyperscale-Umgebung Ihrer Wahl implementiert werden können.</p>
 </div>
 </div>
 </div>
@@ -939,7 +927,7 @@
 <h2 id="keystone-storage-as-a-service-staas">Keystone Storage-as-a-Service (STaaS)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Während der Großteil der Unternehmen noch an ihrer Strategie für die Hybrid Cloud arbeitet, möchten Sie als Kunde möglicherweise nicht zögern, den Wechsel zu einem Betriebskostenmodell <em>Pay-per-Use</em> -Nutzungsmodell zu verschieben. Möglicherweise haben Sie keine Übersicht über den Zeitpunkt, zu dem ein bestimmter Teil oder alle Workloads in die Cloud verschoben werden sollen. Dies könnte jedoch möglicherweise ein Auftrag für die Migration in die Cloud haben. Keystone Storage-as-a-Service bietet die Flexibilität, die Sie mit On-Premises-Services starten und zu einem späteren Zeitpunkt über die richtigen Workloads entscheiden können und erst dann über die Cloud übertragen werden. Keystone Storage-as-a-Service (STaaS) bietet Verpflichtungs-Schutz für Ihre diversen Implementierungsmodelle, anstatt mehr Cloud-Service-Kosten zusätzlich zu lokalen Lösungen abzustapeln. Kunden können ihre lokalen Ausgaben neu zuweisen, um Cloud-Services hinzuzufügen. Im Wesentlichen werden dabei mindestens dieselbe monatliche Rechnung bezahlt, die vor dieser Neuzuweisung bereitgestellt wurde.</p>
+<p>Während die meisten Unternehmen noch an ihrer Hybrid Cloud-Strategie arbeiten, können Sie als Kunde sich für ein Betriebskostenmodell ("Pay-per-use"_ -Nutzungsmodell entscheiden. Unter Umständen gibt es ein Mandat, um alle Workloads in die Cloud zu verschieben – ohne dabei aber einen klaren Plan oder Zeitplan für die Migration bestimmter Teile oder aller Workloads in die Cloud zu haben. Mit Keystone Storage-as-a-Service (STaaS) erhalten Sie die Flexibilität, mit On-Premises-Services zu beginnen und zu einem späteren Zeitpunkt die richtigen Workloads zu bestimmen. Keystone STaaS bietet Schutz für alle Implementierungsmodelle. Statt für Cloud Services mehr bezahlen zu müssen, können Sie als On-Premises-Kunde Ihre lokalen Ausgaben neu zuweisen, um Cloud Services hinzuzufügen. Sie zahlen im Wesentlichen dieselben monatlichen Rechnungen, die vor dieser Neuzuordnung bereitgestellt wurden.</p>
 </div>
 </div>
 </div>

@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/de-de/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/de-de/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/de-de/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><script src='/de-de/keystone-staas/js/na-utility.js'></script>
   <script src='/de-de/keystone-staas/js/clouddocs.js'></script>
   <script src='/de-de/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/de-de/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Los geht's</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Weitere Informationen zu Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Add-on-Services</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Daten-Tiering"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Weitere Informationen zu Service-Leveln</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Quality of Service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Abrechnung</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone-Preisgestaltung"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Keystone Infrastruktur</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Detaillierte Informationen zur Infrastruktur"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Mit Keystone Services mehr erreichen</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone und Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:25:43 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:46:33 +0000">11/17/2022</time>
     
   
 
@@ -1080,7 +1068,7 @@
 <div class="sect2">
 <h3 id="senkung-der-kapazität">Senkung der Kapazität</h3>
 <div class="paragraph">
-<p>Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell <em>Annual in Advance</em> und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen müssen während der Laufzeit jederzeit über= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.</p>
+<p>Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell <em>Annual in Advance</em> und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen sollten während der Laufzeit &gt;= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../media/capacity-reduction.png" alt=""></span></p>
@@ -1100,13 +1088,13 @@
 <p>Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.</p>
 </li>
 <li>
-<p>Kapazität für Cloud Volumes ONTAP und Cloud Backup Service muss über Keystone erworben werden.</p>
+<p>Kapazität für Cloud Volumes ONTAP und Cloud Backup Service sollte über Keystone erworben werden.</p>
 </li>
 <li>
 <p>Für die Neuzuordnung von Cloud Services können bis zu 25 % der bestehenden lokalen, servicebasierten monatlichen Zahlungen verwendet werden.</p>
 </li>
 <li>
-<p>Die Service-basierten monatlichen Zahlungen vor Ort müssen innerhalb der Laufzeit &gt;= 16.7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.</p>
+<p>Die Service-basierten monatlichen Zahlungen vor Ort sollten innerhalb der Laufzeit von &gt;= 16,7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.</p>
 </li>
 <li>
 <p>Anfragen zur Neuzuordnung werden erst nach 90 Tagen nach dem letzten Aktivierungsdatum der Neuzuweisung wirksam.</p>
@@ -1115,7 +1103,7 @@
 <p>Die Neuzuordnung von Cloud-Services in On-Premises-Umgebungen ist nicht möglich.</p>
 </li>
 <li>
-<p>Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum dem Kunden oder Partner Keystone Success Manager (KSM) formal übermittelt werden.</p>
+<p>Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum durch den Kunden oder Partner Keystone Success Manager (KSM) formal eingereicht werden.</p>
 </li>
 <li>
 <p>Neue Anfragen werden nur ab dem nächsten Abrechnungszeitraum wirksam.</p>

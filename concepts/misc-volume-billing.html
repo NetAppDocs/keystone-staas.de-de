@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/de-de/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/de-de/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/de-de/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/de-de/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/de-de/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/de-de/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/de-de/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone-staas/js/na-search.js'></script><script src='/de-de/keystone-staas/js/na-pagenav.js'></script><script src='/de-de/keystone-staas/js/na-utility.js'></script>
   <script src='/de-de/keystone-staas/js/clouddocs.js'></script>
   <script src='/de-de/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/de-de/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Los geht's</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Weitere Informationen zu Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Add-on-Services</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Daten-Tiering"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Weitere Informationen zu Service-Leveln</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Quality of Service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Abrechnung</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone-Preisgestaltung"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Keystone Infrastruktur</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Detaillierte Informationen zur Infrastruktur"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Mit Keystone Services mehr erreichen</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone und Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:25:43 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:46:33 +0000">11/17/2022</time>
     
   
 
@@ -919,21 +907,23 @@
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph lead">
-<p>Es gibt verschiedene Szenarien für die Keystone Abrechnung. Sie sollten mit diesen Szenarien vertraut sein.</p>
-</div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="abrechnung-für-geklonte-volumes">Abrechnung für geklonte Volumes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone ohne zusätzliche Zahlungen weiterhin verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.</p>
+<p>Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone weiterhin ohne zusätzliche Zahlungen verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.</p>
 </div>
-<div class="paragraph">
-<p>Beachten Sie Folgendes:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone-staas/images/note.svg" alt="Anmerkung">
+</td>
+<td class="content">
+Hinweis:
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
@@ -941,7 +931,7 @@
 <p>Der Verbrauch der geklonten Volumes wird während der ersten 24 Stunden nach der Klonerstellung nicht berücksichtigt. Während dieser Zeit fallen für diese Zeit keine Gebühren an.</p>
 </li>
 <li>
-<p>Geklonte Volumes mit Standard- und Value-Service-Leveln werden nicht als Verbrauch betrachtet, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.</p>
+<p>Geklonte Volumes mit den Service-Leveln „Standard“ und „Wert“ werden nicht als Verbrauch betrachtet, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.</p>
 </li>
 </ul>
 </div>
@@ -951,7 +941,10 @@
 <h2 id="abrechnung-für-erweiterte-datensicherung">Abrechnung für erweiterte Datensicherung</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.</p>
+<p>Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden, oder ob sie gespiegelt oder unverspiegelte Daten sind.</p>
+</div>
+<div class="paragraph">
+<p>Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.</p>
 </div>
 <div class="paragraph">
 <p>Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Keystone erkennt 10 TB des Verbrauchs an jedem Standort, was einer Erhöhung der Gesamtzahl um 20 TB ergibt. System Manager und Unified Manager berichten ein 10-TB-Volume, das in Standort A erstellt wurde, jedoch kein 10-TB-Volume in Standort B melden</p>
@@ -989,7 +982,7 @@
 <h2 id="abrechnung-für-luns">Abrechnung für LUNs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Bei LUNs wird in der Regel dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:</p>
+<p>Bei LUNs wird dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:</p>
 </div>
 <div class="ulist">
 <ul>
