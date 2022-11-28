@@ -16,7 +16,7 @@ summary: Add-on, zusätzliche Service-Details, Daten-Tiering
 [role="lead"]
 Die Keystone Basis-Services umfassen standardmäßig Tiering-Funktionen für Ihre abonnierten Datei- und Block-Services, mit denen weniger häufig genutzte Daten identifiziert werden, und verschieben sie in einen Cold Storage, der im Besitz von NetApp ist, bereitgestellt und von NetApp gemanagt wird. Sie können Tiering als Add-on-Service nutzen, wenn Sie Ihre kalten Daten auf beliebigen Storage anderer Anbieter, wie z. B. jedem beliebigen Enterprise-Cloud-Storage, verschieben möchten.
 
-Der Tiering Add-on Service ist nur erforderlich, wenn Daten auf Storage anderer Anbieter wie AWS S3, Azure Blob und EMC ECS verschoben werden.
+Der Tiering-Add-on Service ist nur erforderlich, wenn Daten auf Storage anderer Anbieter verteilt werden, wie z. B. Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) und andere, unterstützte S3-kompatible Objekt-Storage von Drittanbietern.
 
 Weitere Informationen über den Basis-Storage und den Cloud-Storage-Service finden Sie unter link:../concepts/supported-storage-services.html["Unterstützte Storage-Services"].
 

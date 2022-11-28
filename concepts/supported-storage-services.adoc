@@ -22,7 +22,7 @@ Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels
 
 == Basis-Storage-Services
 
-Die grundlegenden Storage-Services von Keystone bieten Datensicherungsservices mithilfe von NetApp Technologien wie SnapMirror, SnapVault und Snapshot sowie Tiering-Funktionen auf unterstützten NetApp Storage-Zielen für Datei- und Block-Storage-Services. Sie können sich außerdem für Add-on-Services zur Datensicherung und für Tiering entscheiden. Informationen zu Add-on-Services finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"] Und link:../concepts/data-tiering.html["Daten-Tiering"].
+Die Basis-Storage-Services für Dateien und Blöcke bieten standardmäßige Datensicherungsservices. Dabei werden NetApp Technologien wie SnapMirror, SnapVault und Snapshot genutzt. Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig auch auf Datei- und Block-Storage-Service-Tiers enthalten. Sie können sich außerdem für Add-on-Services zur Datensicherung und für Tiering entscheiden. Informationen zu Add-on-Services finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"] Und link:../concepts/data-tiering.html["Daten-Tiering"].
 
 |===
 | Storage-Service | Basis | Unterstützte Funktionen | Protokolle 
@@ -30,23 +30,18 @@ Die grundlegenden Storage-Services von Keystone bieten Datensicherungsservices m
 
  a| 
 File-Storage
-| Basiert auf ONTAP Technologie | Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung) | NFS, CIFS und S3 (für FabricPool Ziel verwendet) 
+| Basiert auf ONTAP Technologie | Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung) | NFS und CIFS. 
 
 
  a| 
 Block-Storage
-| Basiert auf ONTAP Technologie | Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung) | FC, iSCSI und S3 (für FabricPool Ziel verwendet) 
+| Basiert auf ONTAP Technologie | Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung) | FC und iSCSI 
 
 
  a| 
 Objekt-Storage
 | Basierend auf der StorageGRID Plattform | Unterstützt mehrere Information Lifecycle Management-Richtlinien (ILM) über mehrere Standorte hinweg. Hinweis: Jede Website sollte ein separates Abonnement haben. | S3 
 |===
-
-NOTE: Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig in Datei- und Block-Storage-Service-Tiers enthalten.
-
-Weitere Informationen zum Daten-Tiering finden Sie unter link:../concepts/data-tiering.html["Daten-Tiering"]. Weitere Informationen zu Datensicherungsdiensten finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"].
-
 
 
 == Cloud-Storage-Services

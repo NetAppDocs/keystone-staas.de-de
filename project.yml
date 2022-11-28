@@ -19,7 +19,7 @@ sidebar:
       url: "/concepts/supported-storage-capacity.html"
     - title: Metriken und Definitionen von Keystone Services
       url: "/concepts/metrics.html"
-    - title: Unterstützte Storage-Typen in Keystone
+    - title: Unterstützte Storage-Services in Keystone
       url: "/concepts/supported-storage-services.html"
     - title: Service-Level in Keystone
       url: "/concepts/service-levels.html"
@@ -71,9 +71,9 @@ sidebar:
     url: "/concepts/gssc.html"
   - title: Mit Keystone Services mehr erreichen
     entries:
-    - title: Keystone und Cloud Manager
+    - title: Keystone und BlueXP
       url: "/integrations/keystone-cm.html"
-    - title: Keystone und Active IQ Digital Advisor
+    - title: Keystone und Digital Advisor
       url: "/integrations/keystone-aiq.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
@@ -118,9 +118,9 @@ homepage:
     links:
     - title: Ihr Support-Team kennen (Keystone GSSC)
       url: "/concepts/gssc.html"
-    - title: Keystone und Cloud Manager
+    - title: Keystone und BlueXP
       url: "/integrations/keystone-cm.html"
-    - title: Keystone und Active IQ Digital Advisor
+    - title: Keystone und Digital Advisor
       url: "/integrations/keystone-aiq.html"
     - title: US Citizen Support
       url: "/concepts/uscs.html"
@@ -128,9 +128,9 @@ homepage:
     links:
     - title: Keystone Flex Abonnement
       url: https://docs.netapp.com/us-en/keystone/
-    - title: Active IQ Digitalberater
+    - title: Digital Advisor
       url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: Cloud Manager
+    - title: BlueXP
       url: https://docs.netapp.com/us-en/cloud-manager-family/
     - title: Active IQ Unified Manager
       url: https://docs.netapp.com/us-en/active-iq-unified-manager/
