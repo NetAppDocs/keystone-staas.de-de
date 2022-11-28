@@ -623,11 +623,11 @@
         Metriken und Definitionen von Keystone Services
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Unterstützte Storage-Typen in Keystone"
+      data-pdf-filename="Unterstützte Storage-Services in Keystone"
       data-li-level="2#" 
       class="  active "
     ><a class="na-navbar-padding" href="/de-de/keystone-staas/concepts/supported-storage-services.html">
-        Unterstützte Storage-Typen in Keystone
+        Unterstützte Storage-Services in Keystone
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Service-Level in Keystone"
@@ -815,18 +815,18 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Keystone und Cloud Manager"
+      data-pdf-filename="Keystone und BlueXP"
       data-li-level="2#" 
       class=" "
     ><a class="na-navbar-padding" href="/de-de/keystone-staas/integrations/keystone-cm.html">
-        Keystone und Cloud Manager
+        Keystone und BlueXP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Keystone und Active IQ Digital Advisor"
+      data-pdf-filename="Keystone und Digital Advisor"
       data-li-level="2#" 
       class=" "
     ><a class="na-navbar-padding" href="/de-de/keystone-staas/integrations/keystone-aiq.html">
-        Keystone und Active IQ Digital Advisor
+        Keystone und Digital Advisor
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Rechtliche Hinweise"
@@ -897,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 09:46:33 +0000">11/17/2022</time>
+    <time datetime="2022-11-28 10:33:42 +0000">11/28/2022</time>
     
   
 
@@ -921,7 +921,7 @@
 <h2 id="basis-storage-services">Basis-Storage-Services</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die grundlegenden Storage-Services von Keystone bieten Datensicherungsservices mithilfe von NetApp Technologien wie SnapMirror, SnapVault und Snapshot sowie Tiering-Funktionen auf unterstützten NetApp Storage-Zielen für Datei- und Block-Storage-Services. Sie können sich außerdem für Add-on-Services zur Datensicherung und für Tiering entscheiden. Informationen zu Add-on-Services finden Sie unter <a href="../concepts/adp.html">"Erweiterte Datensicherung"</a> Und <a href="../concepts/data-tiering.html">"Daten-Tiering"</a>.</p>
+<p>Die Basis-Storage-Services für Dateien und Blöcke bieten standardmäßige Datensicherungsservices. Dabei werden NetApp Technologien wie SnapMirror, SnapVault und Snapshot genutzt. Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig auch auf Datei- und Block-Storage-Service-Tiers enthalten. Sie können sich außerdem für Add-on-Services zur Datensicherung und für Tiering entscheiden. Informationen zu Add-on-Services finden Sie unter <a href="../concepts/adp.html">"Erweiterte Datensicherung"</a> Und <a href="../concepts/data-tiering.html">"Daten-Tiering"</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -945,7 +945,7 @@
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Basiert auf ONTAP Technologie</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NFS, CIFS und S3 (für FabricPool Ziel verwendet)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS und CIFS.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -953,7 +953,7 @@
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Basiert auf ONTAP Technologie</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unterstützte ONTAP-Funktionen: FlexVol FlexGroup Snapshot Kopien SnapMirror (asynchron) SnapVault SnapLock Enterprise FabricPool/Cloud Tiering Restore Clone SnapCenter (die Lizenz ist enthalten, aber dies ist nicht Teil der Keystone-Services und es steht kein garantiertes Management zur Verfügung)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FC, iSCSI und S3 (für FabricPool Ziel verwendet)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FC und iSCSI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -965,21 +965,6 @@
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/keystone-staas/images/note.svg" alt="Anmerkung">
-</td>
-<td class="content">
-Daten-Tiering zu einem NetApp Storage-Ziel ist standardmäßig in Datei- und Block-Storage-Service-Tiers enthalten.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Weitere Informationen zum Daten-Tiering finden Sie unter <a href="../concepts/data-tiering.html">"Daten-Tiering"</a>. Weitere Informationen zu Datensicherungsdiensten finden Sie unter <a href="../concepts/adp.html">"Erweiterte Datensicherung"</a>.</p>
-</div>
 </div>
 </div>
 <div class="sect1">
