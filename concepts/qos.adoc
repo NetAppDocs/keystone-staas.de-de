@@ -136,6 +136,7 @@ Beachten Sie die folgenden Punkte, bevor Sie die Blockgröße mithilfe der folge
 * TB = 1.000 GB; GB = 1000 MB; MB = 1.000 KB; KB = 1000 Bytes; Stand 10
 
 
+.Berechnung der Größe des Probenblocks
 Um den Durchsatz für das A-Service-Level zu berechnen, z. B. `Extreme` Service Level:
 
 * Maximale IOPS: 12,288
