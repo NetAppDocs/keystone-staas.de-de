@@ -14,23 +14,25 @@ summary: Unterstützte Service-Level
 
 
 [role="lead"]
-Keystone bietet Ihnen Services als Abonnementmodell, indem es Ihnen engagierte Storage-Kapazität bietet und diese mit vordefinierten Service-Levels verknüpft.
+Keystone STaaS bietet Storage-Kapazität zu vordefinierten Performance-Service-Leveln (Service-Level) im Abonnement.
 
-Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
+Service Levels werden definiert durch:
 
-Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Operationen und alle verwendeten Speicher auf dem jeweiligen Volumen werden in die E/A-Dichteberechnung des Volumens berücksichtigt.
+* Durchschnittliche Latenz
+* Maximale IOPS pro logischem tib gespeichert pro Volume
+
+
+Ein Volume muss einem Service Level zugewiesen werden.
 
 
 
-== Service Levels für unterschiedliche Storage-Typen
+== Service Levels für unterstützten Storage
 
 Hier sind die Service Level für Datei-, Block-, Objekt- und Cloud-Services aufgeführt.
 
-Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.
 
 
-
-=== File- und Block-Services
+=== Datei- und Block-Storage
 
 * Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC
 
@@ -40,28 +42,30 @@ Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte wäh
 | *Service Level* | *Extreme* | *Premium* | *Leistung* | *Standard* | *Wert* 
 
 
-| * Workload-Typ* | Analytics, Datenbanken, geschäftskritische Applikationen | VDI, VSI, Softwareentwicklung | OLTP, OLAP, Container, Softwareentwicklung | Dateifreigaben, Webserver | Backup 
+| *Workload-Typen der Probe* | Analytics, Datenbanken, geschäftskritische Applikationen | VDI, VSI, Softwareentwicklung | OLTP, OLAP, Container, Softwareentwicklung | Dateifreigaben, Webserver | Backup 
 
 
-| *max. IOPS/tib* | 12,288 | 4,096 | 2,048 | 512 | 128 
+| *Maximale IOPS/logische TIBS gespeichert pro Volumen* | 12,288 | 4,096 | 2,048 | 512 | 128 
 
 
-| *Maximaler Durchsatz MB/s/tib* | 384 | 128 | 64 | 16 | 4 
+| *Maximale Mbps/logische TIBS gespeichert pro Volumen* | 384 | 128 | 64 | 16 | 4 
 
 
-| *Latenz* | <1 ms | <1 ms | <1 ms | <17 ms | <17 ms 
+| *Latenz* | <1 ms | <2 ms | <4 ms | <17 ms | <17 ms 
 |===
 
-NOTE: Hinweis:
+NOTE: Beachten Sie die folgenden Punkte für Durchsatz-Performance-Kennzahlen (gilt nur für Datei- und Block-Services):
 
-* Durchsatz-Performance-Kennzahlen (gelten nur für Datei- und Block-Services) basieren auf folgenden Kriterien:
+* Datei- und Block-Service-Level basieren auf ONTAP 9.7 und höher.
+* IOPS/tib und Latenzwerte für Service-Level basieren auf der Menge der logischen Daten, die im Volume gespeichert sind, auf der Blockgröße von 32 KB und einer zufälligen Mischung aus 70 % Lese- und /30 % Schreib-I/O.
+* Die tatsächlichen IOPS/tib und/oder MB/s/tib variieren je nach Workload-Parallelität und -Nutzungsmustern.
+* Die Latenz umfasst nicht Folgendes:
 +
-** 32-KB-Blockgrößen
-** 70 % Lesen/30 % Schreiben-I/O-Kombination
+** Die Applikations-, Hosts- oder Netzwerklatenz des Kunden zu den Controller-Ports bzw. von diesen aus.
+** Durch QoS wird die Latenz automatisch angewendet, um die I/O-Vorgänge innerhalb der maximalen Service-Level-Maximalwerte zu halten.
 
 
-* Die tatsächlichen IOPS/tib und/oder MB/s/tib hängen von den Workload-Merkmalen ab.
-* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem.
+* Beim Einsatz des Add-on Service Advanced Data Protection wird die Ziellatenz nur für die Bearbeitung von I/O-Anfragen von lokalen Keystone Produkten angewendet.
 
 
 
@@ -79,49 +83,39 @@ NOTE: Hinweis:
 | * Workload-Typ* | Medien-Repository, Archivierung 
 
 
-| *Ziel-IOPS/tib* | K. A. 
+| *Maximale IOPS/logische tib gespeichert pro Volume* | K. A. 
 
 
-| *max. IOPS/tib* | K. A. 
+| *Maximale Mbps/logische tib gespeichert pro Volume* | K. A. 
 
 
-| *maximaler Durchsatz MB/s (32 KB/IOP)* | K. A. 
-
-
-| *Latenz* | K. A. 
+| * Durchschnittliche Latenz* | K. A. 
 |===
 
-NOTE: Hinweis:
-
-* Die tatsächlichen IOPS/tib und/oder MB/s/tib hängen von den Workload-Merkmalen ab.
-* Die Latenz umfasst keine Applikations-, Host- oder Netzwerklatenz für Applikationen zu den Controller-Ports oder von diesem.
-
+NOTE: Die Latenz umfasst keine Overhead-Köpfe, die im Zusammenhang mit dem Datentransfer zum Objektspeicher im Falle von FabricPool Storage stehen.
 
 
 
 === Cloud-Storage
 
-*Unterstütztes Protokoll*: NFS, CIFS, iSCSI
+*Unterstütztes Protokoll*: NFS, CIFS, iSCSI und S3 (nur AWS und Azure)
 
 |===
 
 
-| *Service Level* | Cloud Volumes ONTAP®** (alle Wolken) 
+| *Service Level* | Cloud Volumes ONTAP 
 
 
 | * Workload-Typ* | Disaster Recovery, Softwareentwicklung/Test, Business-Applikationen 
 
 
-| *Ziel-IOPS/tib* | K. A. 
+| *Maximale IOPS/logische tib gespeichert pro Volume* | K. A. 
 
 
-| *max. IOPS/tib* | K. A. 
+| *Maximale Mbps/logische tib gespeichert pro Volume* | K. A. 
 
 
-| *maximaler Durchsatz MB/s (32 KB/IOP)* | K. A. 
-
-
-| *Latenz* | K. A. 
+| * Durchschnittliche Latenz* | K. A. 
 |===
 
 NOTE: Hinweis:

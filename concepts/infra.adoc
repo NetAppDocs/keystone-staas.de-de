@@ -14,7 +14,7 @@ summary: Keystone Infrastruktur
 
 
 [role="lead"]
-In diesem Abschnitt werden die NetApp Keystone Infrastruktur, Architektur und Management-Applikation für NetApp und vom Kunden betriebene Umgebungen beschrieben.
+Dieser Abschnitt enthält eine Beschreibung der NetApp Keystone STaaS-Infrastruktur-, Architektur- und Management-Applikation für NetApp Umgebungen und von Kunden betriebene Umgebungen.
 
 Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten ausschließlich mit NetApp im Unternehmen. NetApp behält sich das Recht vor, folgende Maßnahmen zu ergreifen:
 

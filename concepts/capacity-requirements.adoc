@@ -14,7 +14,7 @@ summary: Kapazitätsanforderungen für Service Levels
 
 
 [role="lead"]
-Die Kapazitätsanforderungen für jedes Service-Level unterscheiden sich je nach Storage-Service, wie z. B. Datei-, Block- und Objekt-Storage.
+Die Kapazitätsanforderungen für Keystone STaaS-Service-Level unterscheiden sich von dem Datei-, Block-, Objekt- oder Cloud-Storage, der vom Keystone STaaS Abonnement unterstützt wird.
 
 
 
@@ -46,7 +46,7 @@ Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements
 
 == Mindestkapazitätsanforderungen für Objekt-Storage
 
-Die minimale Kapazitätsanforderungen für Objekt-Storage-Service sind in der folgenden Tabelle aufgeführt:
+In der folgenden Tabelle werden die Mindestanforderungen an die Kapazität für Objekt-Storage angezeigt:
 
 |===
 
@@ -99,7 +99,7 @@ Keine Angabe
 Beachten Sie die folgenden Klauseln für Kapazitätsanpassungen:
 
 * Die Kapazität kann jederzeit während der Laufzeit hinzugefügt werden, mit Ausnahme der letzten 90 Tage der Vertragslaufzeit, in den Schritten pro Service-Level, wie in den Tabellen im vorherigen Abschnitt beschrieben. Die Ergänzung von Kapazitäten und/oder Dienstleistungen ist innerhalb der letzten 90 Tage nach der Vertragslaufzeit zulässig, solange eine Zustimmung zur Serviceverlängerung vorliegt. Jede zusätzliche Kapazität und jeder neue Service vor Ort oder in der Cloud können mit der bestehenden Laufzeit in Verbindung stehen. Die Rechnung, die Ihnen nach Aktivierung der neuen Services zugesandt wurde, entspricht der überarbeiteten Abrechnung. Die verplante Kapazität von Cloud-Services kann während der Abonnementdauer an keinem Punkt verringert werden. In der Zwischenzeit können die zugewisserten Kapazitäten und die für die On-Premises-Services während der Vertragslaufzeit erforderlichen Ausgaben aufgrund bestimmter Kriterien, wie im folgenden Abschnitt _Kapazitätsreduzierung_ definiert, verringert werden.
-* 20 % der Burst-Kapazität ist an jedem Standort verfügbar. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Falls Sie zusätzliche Burst-Anforderungen benötigen, die mehr als 20 % betragen, wenden Sie sich an den Support.
+* An jedem Standort steht mithilfe der Keystone-Vereinbarung ein Burst-Speicherplatz zur Verfügung. In der Regel liegt sie 20 % über der für ein Service Level verplanten Kapazität. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Falls Sie zusätzliche Burst-Anforderungen benötigen, die über der vereinbarten Kapazität liegen, wenden Sie sich an den Support.
 * Die verplante Kapazität kann während einer Vertragslaufzeit nur unter bestimmten Bedingungen geändert werden, wie im folgenden Abschnitt _Kapazitätsreduzierung_ beschrieben.
 * Eine Erhöhung der Kapazität oder ein Wechsel auf ein höheres Service Level während einer Abonnementlaufzeit ist zulässig. Ein Wechsel von einem höheren Service-Level zu einem niedrigeren Service-Level ist jedoch nicht zulässig.
 * Jede Änderungsanfrage in den letzten 90 Tagen der Servicezeit erfordert eine Erneuerung des Services für mindestens ein Jahr.

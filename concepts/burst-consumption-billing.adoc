@@ -14,8 +14,12 @@ summary: Abrechnung auf Basis von Burst-Nutzung
 
 
 [role="lead"]
-Die Abrechnung mit NetApp Keystone (Keystone) basiert auf Burst-Kapazität, d. h. auf der von Ihnen genutzten Kapazität, zusätzlich zur für die Service-Level in Ihrem Abonnement genutzten Kapazität.
+Die Abrechnung für NetApp Keystone (Keystone) STaaS basiert auf Burst-Kapazität, d. h. der von Ihnen genutzten Kapazität, zusätzlich zur für Sie bereitgestellten Kapazität der Service-Level in Ihrem Abonnement.
 
-Wenn die verbrauchte Kapazität größer ist als die für ein Service-Level verplante Kapazität, wird der Burst-Verbrauch aufgezeichnet und entsprechend abgerechnet. Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider.
+Das Burst-Limit wird festgelegt und in Ihrer Keystone Vereinbarung angegeben. In der Regel liegt sie 20 % über der bereits verplante Kapazität.
+
+Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. Verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen. Wenn die verbrauchte Kapazität größer ist als die für ein Service-Level verplante Kapazität, wird der Burst-Verbrauch aufgezeichnet und entsprechend abgerechnet. In der Regel liegt sie 20 % über der für ein Service Level verplanten Kapazität. Der Verbrauch über der Burst-Kapazität wird als „oberhalb der Burst-Grenze“ angegeben.
+
+Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider.
 
 Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].

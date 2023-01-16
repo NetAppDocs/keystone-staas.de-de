@@ -40,7 +40,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 * Die zuges. Kapazität kann unter bestimmten Bedingungen verringert werden. Weitere Informationen finden Sie unter link:../concepts/capacity-requirements.html["Senkung der Kapazität"].
 * Die verplante Kapazität kann nicht 90 Tage vor Ablauf Ihres Abonnements verlängert werden, es sei denn, das Abonnement muss für eine zusätzliche Laufzeit von 12 Monaten verlängert werden.
-* Sie können Änderungen an der zugesagt Kapazität über die BlueXP Schnittstelle oder über Keystone Success Manager anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].
+* Sie können Änderungen an der zugesagt Kapazität über die BlueXP-Schnittstelle oder über Keystone Success Manager (KSM) anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].
 
 
 
@@ -58,9 +58,9 @@ Dies ist die verbrauchte Kapazität, die die engagierte Kapazität überschritte
 
 NOTE: Hinweis:
 
-* Keystone bietet 20 % Kapazität über die engagierte Kapazität.
+* Keystone ist eine zusätzliche Kapazität, die zusätzlich zur Verfügung steht, um die Kapazität nutzen zu können. Dies ist die Burst-Kapazität.
 * Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis für den verbrauchten Durchschnitt berechnet.
-* Burst-Kapazität wird auf bis zu 20 % mit der gleichen Rate für die engagierte Kapazität berechnet.
+* Burst-Kapazität liegt in der Regel bis zu 20 % über der engagierte Kapazität und wird mit der gleichen Rate wie die engagierte Kapazität berechnet.
 
 
 

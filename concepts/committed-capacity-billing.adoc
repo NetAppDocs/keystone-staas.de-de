@@ -14,8 +14,8 @@ summary: Unterstützte Speicherkapazitäten
 
 
 [role="lead"]
-NetApp Keystone (Keystone) Abrechnung basiert auf der Ihnen als Teil des Keystone-Service-Abonnements bereitgestellten Kapazität.
+NetApp Keystone (Keystone) Abrechnung basiert auf der Ihnen als Teil des Keystone Abonnements zugesagt Kapazität.
 
-Engagierte Kapazität sind die Kapazitäten verschiedener Services in einem einzigen Abonnement, wie von Ihnen und NetApp/Partner akzeptiert. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch abgerechnet.
+Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. Die zugesagt Kapazität kann die Gesamtkapazität für verschiedene Service Level in einem einzelnen Abonnement sein, wie Sie und NetApp/Partner akzeptiert haben. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Kapazitätsverbrauch in Rechnung gestellt.
 
 Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].

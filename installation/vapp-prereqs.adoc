@@ -1,0 +1,221 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-prereqs.html 
+keywords: prerequisites, VMware vSphere, vApp 
+summary: Voraussetzungen für die Installation von Keystone Collector auf VMware vSphere Systemen 
+---
+= Anforderungen an die virtuelle Infrastruktur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für die Installation von Keystone Collector auf Ihrem VMware vSphere System sind einige Konfigurationen für die virtuelle Infrastruktur erforderlich.
+
+Die virtuelle Maschine des Keystone Collector-Servers sollte folgende Eigenschaften aufweisen:
+
+* Betriebssystem: VMware vCenter Server und ESXi 6.5 oder höher
+* Kern: 4 CPUs
+* RAM: 12 GB RAM
+* Speicherplatz: 200 GB vDisk
+
+
+
+
+== Andere Anforderungen
+
+Halten Sie die folgenden allgemeinen Anforderungen fest:
+
+
+
+=== Netzwerkanforderungen
+
+In der folgenden Tabelle werden die Netzwerkanforderungen von Keystone Collector beschrieben.
+
+
+NOTE: Keystone Collector erfordert Internetverbindung. Sie können Internet-Konnektivität durch direktes Routing über Standard-Gateway (über NAT) oder über HTTP Proxy bereitstellen. Beide Varianten werden hier beschrieben.
+
+|===
+
+
+| Quelle | Ziel | Service | Protokoll und Ports | Kategorie | Zweck 
+
+
+ a| 
+Keystone Collector
+ a| 
+Active IQ Unified Manager (Unified Manager)
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+Obligatorisch
+ a| 
+Sammlung der Metriken zur Verwendung von Keystone Collector
+
+
+
+ a| 
+Keystone Collector
+ a| 
+Internet (gemäß URL-Anforderungen, die später angegeben werden)
+ a| 
+HTTP, HTTPS
+ a| 
+TCP 80, TCP 443
+ a| 
+Obligatorisch (Internetverbindung)
+ a| 
+Keystone Collector, OS-Updates und Uploads von Metriken
+
+
+
+ a| 
+Keystone Collector
+ a| 
+HTTP-Proxy des Kunden
+ a| 
+HTTP-Proxy
+ a| 
+Proxy-Port Des Kunden
+ a| 
+Obligatorisch (Internetverbindung)
+ a| 
+Keystone Collector, OS-Updates und Uploads von Metriken
+
+
+
+ a| 
+Keystone Collector
+ a| 
+DNS-Server des Kunden
+ a| 
+DNS
+ a| 
+TCP/UDP 53
+ a| 
+Obligatorisch
+ a| 
+DNS-Auflösung
+
+
+
+ a| 
+Keystone Collector
+ a| 
+NTP-Server von Kunden
+ a| 
+NTP
+ a| 
+UDP 123
+ a| 
+Obligatorisch
+ a| 
+Zeitsynchronisierung
+
+
+
+ a| 
+Operations Workstations des Kunden
+ a| 
+Keystone Collector
+ a| 
+SSH
+ a| 
+TCP 22
+ a| 
+Vereinfachtes
+ a| 
+Zugriff auf die Keystone Collector-Verwaltung
+
+
+
+ a| 
+NetApp ONTAP-Cluster- und Node-Management-Adressen
+ a| 
+Keystone Collector
+ a| 
+HTTP_8000, PING
+ a| 
+TCP 8000, ICMP Echo Request/Reply
+ a| 
+Optionale Funktionen
+ a| 
+Webserver für ONTAP-Firmware-Updates
+
+
+
+ a| 
+Keystone Collector
+ a| 
+Unified Manager
+ a| 
+MYSQL
+ a| 
+TCP 3306
+ a| 
+Optionale Funktionen
+ a| 
+Sammlung von Performance-Kennzahlen für Keystone Collector
+
+
+
+ a| 
+Keystone Collector
+ a| 
+Kundenüberwachungssystem
+ a| 
+HTTP
+ a| 
+TCP 777
+ a| 
+Optionale Funktionen
+ a| 
+Statusberichte für Keystone Collector
+
+|===
+
+
+=== URL-Zugriff
+
+Keystone Collector benötigt Zugriff auf die folgenden Internet-Hosts:
+
+|===
+
+
+| Adresse | Grund 
+
+
+ a| 
+https://keystone.netapp.com[]
+ a| 
+Keystone Collector Software-Updates und Nutzungsberichte
+
+
+
+ a| 
+https://support.netapp.com[]
+ a| 
+NetApp HQ für Rechnungsinformationen und AutoSupport-Lieferungen
+
+
+
+ a| 
+https://mirror.centos.org[]
+https://mirrorlist.centos.org[]
+ a| 
+OS-Updates für Keystone Collector (nur OVA-Bereitstellungen)
+
+
+
+ a| 
+http://repo.mysql.com[]
+ a| 
+Herunterladen und Aktualisieren der mysql-Abhängigkeiten (nur für Linux-Bereitstellungen)
+
+|===

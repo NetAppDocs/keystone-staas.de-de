@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-installation.html 
+keywords: install, VMware 
+summary: Installation von Keystone Collector auf VMware Systemen 
+---
+= Implementieren Sie Keystone Collector auf VMware vSphere Systemen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Bereitstellung von Keystone Collector auf VMware vSphere Systemen umfasst das Herunterladen der OVA-Vorlage, die Bereitstellung der Vorlage mithilfe des Assistenten *OVF-Vorlage* bereitstellen, die Integrität der Zertifikate überprüfen und die Bereitschaft der VM überprüfen.
+
+
+
+== Bereitstellen der OVA-Vorlage
+
+Führen Sie hierzu folgende Schritte aus:
+
+.Schritte
+. Laden Sie die OVA-Datei von herunter https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova[] Auf Ihrem VMware vSphere System speichern.
+. Navigieren Sie auf Ihrem VMware vSphere System zur Ansicht *VMs und Vorlagen*.
+. Klicken Sie mit der rechten Maustaste auf den gewünschten Ordner für die virtuelle Maschine (VM) (oder das Rechenzentrum, falls keine VM-Ordner verwendet werden) und wählen Sie *OVF-Vorlage bereitstellen* aus.
+. Klicken Sie auf _Schritt 1_ des Assistenten * OVF-Vorlage bereitstellen* auf *Auswählen und OVF-Vorlage*, um das heruntergeladene auszuwählen `KeystoneCollector-latest.ova` Datei:
+. Geben Sie unter _Schritt 2_ den VM-Namen an und wählen Sie den VM-Ordner aus.
+. Geben Sie in _Schritt 3_ die erforderliche Computing-Ressource an, die zur Ausführung der VM erforderlich ist.
+. Auf _Schritt 4: Überprüfen Sie die Details_, überprüfen Sie die Richtigkeit und Authentizität der OVA. Der Produktname sollte als _NetApp Keystone Collector_ angezeigt werden.image:ova-deploy.png[""]VCenter validiert die Integrität der OVA-Inhalte und stellt sicher, dass für die in der OVA enthaltenen Dateien ein gültiger Code-Signing-Digest bereitgestellt wird. Die Echtheit des Codsignieren-Zertifikats wird jedoch nicht überprüft. Um die Integrität zu überprüfen, sollten Sie das vollständige Signieren-Digest-Zertifikat herunterladen und es mit dem öffentlichen Zertifikat von Keystone veröffentlicht überprüfen.
++
+.. Klicken Sie auf den Link *Publisher*, um das vollständige Signieren-Digest-Zertifikat herunterzuladen.
+.. Laden Sie das öffentliche Zertifikat _Keystone Billing_ herunter: https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem[].
+.. Überprüfen Sie die Authentizität des OVA-Signaturzertifikats anhand des öffentlichen Zertifikats mithilfe von OpenSSL:
+`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
+
+
+. Geben Sie in _Schritt 5_ des Assistenten * OVF-Vorlage bereitstellen* den Speicherort für die VM an.
+. Wählen Sie bei _Schritt 6_ das Zielnetzwerk aus, das die VM verwenden soll.
+. Geben Sie in _Schritt 7 Vorlage anpassen_ die ursprüngliche Netzwerkadresse und das Kennwort für das Admin-Benutzerkonto an.
++
+
+NOTE: Das Admin-Passwort wird in einem reversiblen Format in vCenter gespeichert und sollte als Bootstrap-Anmeldedaten verwendet werden, um ersten Zugriff auf das VMware vSphere System zu erhalten. Dieses Admin-Passwort sollte während der anfänglichen Softwarekonfiguration geändert werden. Die Subnetzmaske für die IPv4-Adresse sollte in CIDR-Notation bereitgestellt werden. Verwenden Sie beispielsweise den Wert 24 für eine Subnetzmaske von 255.255.255.0.
+
+. Prüfen Sie bei _Schritt 8 Ready to complete_ des Assistenten *Deploy OVF Template* die Konfiguration und stellen Sie sicher, dass Sie die Parameter für die OVA-Bereitstellung richtig eingestellt haben.
+
+
+Nachdem die VM aus der Vorlage implementiert und eingeschaltet wurde, öffnen Sie eine SSH-Sitzung für die VM, und loggen Sie sich mit den temporären Administratorberechtigungen ein, um zu überprüfen, ob die VM bereit für die Konfiguration ist.
+
+
+
+== Erstkonfiguration Des Systems
+
+Führen Sie auf Ihren VMware vSphere Systemen folgende Schritte aus, um die Erstkonfiguration von Keystone Collector-Servern zu erhalten, die über OVA bereitgestellt werden:
+
+
+NOTE: Nach Abschluss der Implementierung können Sie die Konfigurations- und Überwachungsaktivitäten über das Dienstprogramm Keystone Collector Management Terminal User Interface (TUI) durchführen. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
+
+. Öffnen Sie eine SSH-Sitzung für den Keystone Collector-Server. Beim Anmelden wird die TUI angezeigt. Sie können die TUI auch manuell starten, indem Sie die ausführen `keystone-collector-tui` CLI-Befehl.
+. Konfigurieren Sie bei Bedarf die Proxydetails im Abschnitt *Konfiguration > Netzwerk* auf der TUI.
+. Aktualisieren Sie das System/den Collector mit der Option *Wartung > Update System*. Einige ausgewählte Spiegelungen sind möglicherweise nicht verfügbar, und die Systemdetails werden nach einigen Wiederholungen aktualisiert.
+. Konfigurieren Sie im Abschnitt *Konfiguration > System* den Hostnamen, den Speicherort und den NTP-Server des Systems.
+. Aktualisieren Sie das Admin-Passwort im Abschnitt *Wartung > Benutzer*.
+. Markieren Sie die ursprüngliche OVA-Konfiguration im Abschnitt *Konfiguration > Erweitert* als abgeschlossen.
+

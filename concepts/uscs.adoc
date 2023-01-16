@@ -28,7 +28,7 @@ Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihre
 
 == Keystone Success Manager
 
-Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.
+Der Keystone Success Manager (KSM) ist ein USA US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.
 
 
 

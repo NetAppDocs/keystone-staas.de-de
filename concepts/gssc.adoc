@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concepts/gssc.html 
-keywords: Global Services Support Center, GSSC, Keystone support 
+keywords: Global Services Support Center, GSSC, Keystone support, service request, support ticket 
 summary: NetApp Global Services Support Center GSSC 
 ---
 = NetApp Global Services Support Center
@@ -49,6 +49,16 @@ Weitere Informationen finden Sie unter:
 Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.
 
 .Keystone Success Manager
-Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Die Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.
+Der Keystone Success Manager (KSM) arbeitet eng mit Ihnen zusammen, um Ihre Keystone-Services zu nutzen. Er aktualisiert Sie auf wöchentlichen bzw. monatlichen Abrechnungen und Betriebsberichten. Die Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.
 
-Weitere Informationen finden Sie unter link:../concepts/uscs.html["USA Citizen Support (USCS)"].
+
+
+== Serviceanforderungen werden erstellt
+
+Wenn Sie während des Onboarding Zugangsdaten für den Zugriff auf NetApp Keystone ServiceNow und die Verwendung von erhalten haben, können Sie über das Portal Serviceanfragen bei Problemen Ihrer Keystone Abonnements generieren:
+
+https://netappgssc.service-now.com/csm[]
+
+Stellen Sie sicher, dass Sie die Systemdetails, Protokolle und zugehörigen Informationen bereit haben, bevor Sie die Serviceanfrage senden. Wenn Sie eine Service-Anfrage stellen, erhält das GSSC Team das Support-Ticket und greift auf die Informationen zur Fehlerbehebung zu. Sie können Ihr ServiceNow-Ticket verfolgen, um den Status und die Lösung zu kennen.
+
+Informationen zum Hinzufügen von Supportpaketen finden Sie unter link:../installation/monitor-health.html["Support Bundle generieren und sammeln"].

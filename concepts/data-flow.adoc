@@ -14,7 +14,7 @@ summary: Keystone Datenflüsse
 
 
 [role="lead"]
-Keystone Systeme stoßen durch Keystone Collector-Datenverkehr auf Datenfluss und überwachen Datenflüsse.
+Keystone STaaS-Systeme begegnen dem Datenfluss durch Keystone Collector Verkehr und überwachen die Datenflüsse.
 
 
 

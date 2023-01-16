@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: installation/installation-overview.html 
+keywords: installation, Keystone Collector 
+summary: Was ist Keystone Collector 
+---
+= Übersicht über Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie Ihre Keystone-Services nutzen und aktivieren möchten, sollten Sie Keystone Collector auf einem VMware vSphere- oder Linux-System an Ihrem Standort installieren.
+
+
+NOTE: Die hier verfügbaren Informationen zur Installation und Konfiguration gelten nur für ONTAP.
+
+Keystone Collector ist die Hauptkomponente der Keystone Abrechnungsplattform, die Active IQ Unified Manager und andere Applikationen für eine Verbindung zu ONTAP Storage-Systemen nutzt. Sie bietet die Möglichkeit, den Zustand der Storage-Umgebung zu überwachen und gleichzeitig die Rechnungsdaten für die Berichterstellung zu senden.
+
+Dieses Architekturdiagramm zeigt die einzelnen Komponenten und deren Konnektivität in einer typischen Keystone-Umgebung.
+
+image:collector-arch.png[""]

@@ -14,7 +14,7 @@ summary: Infrastrukturkomponenten
 
 
 [role="lead"]
-In diesem Abschnitt werden die Komponenten aufgeführt, die zur Aktivierung von NetApp Keystone Services in Ihrer Umgebung erforderlich sind.
+In diesem Abschnitt werden die erforderlichen Komponenten zur Aktivierung von NetApp Keystone STaaS-Services in Ihrer Umgebung aufgeführt.
 
 
 

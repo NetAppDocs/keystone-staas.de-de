@@ -14,7 +14,7 @@ summary: Keystone-Preisgestaltung
 
 
 [role="lead"]
-NetApp Keystone ermöglicht planbare und Vorauspreise für Ihr Storage-Abonnement.
+NetApp Keystone STaaS ermöglicht vorhersehbare und vorab-Preise für Ihre Storage-Subskription.
 
 Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing vorziehen, können Sie sich für das Keystone Pay-as-you-grow-Modell für Ihr flexibles und skalierbares Nutzungsmodell entscheiden.
 

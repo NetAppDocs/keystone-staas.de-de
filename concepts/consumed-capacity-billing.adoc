@@ -14,8 +14,8 @@ summary: Abrechnung basiert auf verbrauchter Kapazität
 
 
 [role="lead"]
-Keystone bietet außerdem eine Nutzungsmessung basierend auf der Kapazität, die Sie während der Service-Nutzung verbraucht haben.
+Keystone STaaS bietet eine Messung basierend auf der Kapazität, die Sie während der Service-Nutzung verbraucht.
 
-Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Alle fünf Minuten wird ein Verbrauchsdatensatz durch das System generiert, in dem die aktuelle verbrauchte Kapazität für Ihr Abonnement detailliert aufgeführt wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
+Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. Verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen. Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Alle fünf Minuten wird ein Verbrauchsdatensatz durch das System generiert, in dem die aktuelle verbrauchte Kapazität für Ihr Abonnement detailliert aufgeführt wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
 
 Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].

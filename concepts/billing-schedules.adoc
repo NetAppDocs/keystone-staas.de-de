@@ -14,7 +14,7 @@ summary: Abrechnungspläne im Grundpfeiler
 
 
 [role="lead"]
-Keystone Abonnements werden monatlich und jährlich abgerechnet.
+Keystone STaaS Abonnements werden monatlich und jährlich abgerechnet.
 
 
 

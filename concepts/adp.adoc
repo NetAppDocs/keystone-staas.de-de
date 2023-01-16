@@ -14,11 +14,12 @@ summary: Erweiterte Datensicherung
 
 
 [role="lead"]
-Sie können den Advanced Data Protection Add-on Service als Teil Ihres Keystone Abonnements abonnieren. Dieser Add-on-Service nutzt die NetApp MetroCluster-Technologie, um eine effiziente Datensicherung für Ihre geschäftskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 zu gewährleisten.
+Sie können den Advanced Data Protection Add-on Service als Bestandteil Ihres Keystone STaaS Abonnements abonnieren. Dieser Add-on-Service nutzt die NetApp MetroCluster-Technologie, um eine effiziente Datensicherung für Ihre geschäftskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 zu gewährleisten.
 
-Die Basis-Storage-Services von Keystone bieten Datensicherungsservices (mit NetApp Technologien wie SnapMirror, SnapVault und Snapshot) für File- und Block-Storage-Services.
 
-Weitere Informationen über den Basis-Storage und den Cloud-Storage-Service finden Sie unter link:../concepts/supported-storage-services.html["Unterstützte Storage-Services"].
+NOTE: Die Keystone STaaS-Standardservices für Datei- und Block-Storage bieten dank NetApp Technologien wie SnapMirror, SnapVault und Snapshot standardmäßige Datensicherungsservices.
+
+Informationen zum Standard- und Cloud-Service finden Sie unter link:../concepts/supported-storage-services.html["Keystone STaaS Services"].
 
 Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
 
@@ -29,9 +30,9 @@ Die Zusatzgebühren gelten für alle Kapazitäten im Abonnement: Die Quelle, ges
 
 NOTE: Hinweis:
 
-* Bei diesem Service werden 100 % der zugewiesenen Kapazität zu einem damit verbundenen Storage-Service als zugeordnete Kapazität konfiguriert.
+* Für diesen Service werden 100 % der zugewiesenen Kapazität zu einem damit verbundenen Storage als zugewiesene Kapazität konfiguriert.
 * Der Storage wird sowohl für das Quell- als auch das Ziel-Cluster abgerechnet. Dieser Add-on Service wird sowohl für die primären als auch für sekundäre (gespiegelte) Volumes in Rechnung gestellt.
-* Die Gebühren gelten nur für Ihre File- und Block-Storage-Services. Es werden die folgenden MetroCluster-Szenarien unterstützt:
+* Die Gebühren gelten nur für Ihre Datei- und Blocklagerung. Es werden die folgenden MetroCluster-Szenarien unterstützt:
 
 
 image:mcc.png["MetroCluster Konfigurationen werden von Keystone unterstützt"]
