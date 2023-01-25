@@ -99,6 +99,8 @@ sidebar:
       url: "/integrations/keystone-cm.html"
     - title: Keystone und Digital Advisor
       url: "/integrations/keystone-aiq.html"
+    - title: Digital Advisor Keystone Dashboard und Reporting
+      url: "/integrations/aiq-keystone-details.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
 homepage:
@@ -127,6 +129,8 @@ homepage:
       url: "/concepts/data-tiering.html"
     - title: Sind meine Keystone-Daten geschützt?
       url: "/concepts/adp.html"
+    - title: Wie kann ich meinen Verbrauch je Service Level erkennen?
+      url: "/integrations/aiq-keystone-details.html"
   - title: Keystone-Preisgestaltung
     links:
     - title: Informationen zur Keystone Abrechnung

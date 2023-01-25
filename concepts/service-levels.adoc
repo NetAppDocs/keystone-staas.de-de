@@ -53,21 +53,18 @@ Hier sind die Service Level für Datei-, Block-, Objekt- und Cloud-Services aufg
 
 | *Latenz* | <1 ms | <2 ms | <4 ms | <17 ms | <17 ms 
 |===
-
-NOTE: Beachten Sie die folgenden Punkte für Durchsatz-Performance-Kennzahlen (gilt nur für Datei- und Block-Services):
+[NOTE]
+====
+Beachten Sie die folgenden Punkte für Metriken zur Durchsatz-Performance (gilt nur für Dateien
 
 * Datei- und Block-Service-Level basieren auf ONTAP 9.7 und höher.
 * IOPS/tib und Latenzwerte für Service-Level basieren auf der Menge der logischen Daten, die im Volume gespeichert sind, auf der Blockgröße von 32 KB und einer zufälligen Mischung aus 70 % Lese- und /30 % Schreib-I/O.
 * Die tatsächlichen IOPS/tib und/oder MB/s/tib variieren je nach Workload-Parallelität und -Nutzungsmustern.
-* Die Latenz umfasst nicht Folgendes:
-+
-** Die Applikations-, Hosts- oder Netzwerklatenz des Kunden zu den Controller-Ports bzw. von diesen aus.
-** Durch QoS wird die Latenz automatisch angewendet, um die I/O-Vorgänge innerhalb der maximalen Service-Level-Maximalwerte zu halten.
-
-
+* Die Latenz umfasst nicht Folgendes: - Die Applikationen, Hosts oder die Netzwerklatenz des Kunden zu den Controller-Ports oder von diesen. -- die Latenz, die automatisch durch QoS angewendet wird, um I/O innerhalb der maximalen Anzahl von Service-Level zu halten.
 * Beim Einsatz des Add-on Service Advanced Data Protection wird die Ziellatenz nur für die Bearbeitung von I/O-Anfragen von lokalen Keystone Produkten angewendet.
 
 
+====
 
 
 === Objekt-Storage
@@ -117,9 +114,10 @@ NOTE: Die Latenz umfasst keine Overhead-Köpfe, die im Zusammenhang mit dem Date
 
 | * Durchschnittliche Latenz* | K. A. 
 |===
-
-NOTE: Hinweis:
-
+[NOTE]
+====
 * Cloud-native Services wie Computing, Storage und Netzwerk werden von Cloud-Providern in Rechnung gestellt.
 * Diese Services hängen von den Cloud-Storage- und Computing-Merkmalen ab.
 
+
+====

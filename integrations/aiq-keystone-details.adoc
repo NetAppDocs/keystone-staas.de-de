@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: integrations/aiq-keystone-details.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+summary: Keystone-Abonnementberichte und -Diagramme 
+---
+= Keystone Abonnement-Dashboard und Berichterstellung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die NetApp Keystone STaaS-Dienste abonniert haben, können Sie Ihre Nutzung über das Widget *Keystone Abonnements* auf dem Digital Advisor Dashboard überwachen.
+
+Informationen zum Widget „Digital Advisor“ finden Sie unter https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
+
+Klicken Sie auf *Weitere Details* auf dem Widget, um die Nutzungsdetails und Warnungen auf Ihren Volumes auf der Seite *Keystone Abonnement* anzuzeigen. Wechseln Sie alternativ im linken Navigationsbereich zu *ALLGEMEIN > Keystone-Abonnement*.
+
+Die Details zu den Abonnements, Nutzungsdiagramme für die einzelnen Servicelevel und Volume-Details werden auf den verschiedenen Registerkarten auf diesem Bildschirm angezeigt.
+
+
+NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt, bis zu zwei Dezimalstellen. Wenn der Wert kleiner als 0.01 tib ist, wird der Wert als 0 oder angezeigt `No Usage`. Weitere Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
+
+
+
+== Abonnementdetails anzeigen
+
+Auf der Registerkarte *Abonnementdetails* können Sie alle Abonnements für einen Kontonamen anzeigen.
+
+image:aiq-ks-dtls.png[""]
+
+Für jede Abonnementnummer sehen Sie die folgenden Informationen:
+
+* *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
+* *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
+* *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
+* *Startdatum*: Das Startdatum des Abonnements.
+* *Enddatum*: Das Enddatum des Abonnements. Basierend auf diesem Datum werden unter Umständen Informationsmeldungen für Abonnements angezeigt, die sich dem Ablauf nähern, oder eine bestimmte Kulanzzeit.
+* *Nutzungsstatus*: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
+* image:aiq-ks-time-icon.png[""]: Klicken Sie auf dieses Symbol, um die Registerkarte *Subscription Time Series* zu öffnen, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist
+
+
+Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt. Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Alle für Ihre Volumes erzeugten Warnungen und Warnungen werden ebenfalls angezeigt.
+
+Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
+
+image:usage-indicator.png[""]
+
+.Indizieren
+image:icon-grey.png[""]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levelsimage:icon-green.png[""]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtetimage:icon-amber.png[""]: Der maximale Verbrauch, das ist die Nutzung in etwa 100% oder mehr der verpflichteten Kapazität zu erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität animage:icon-red.png[""]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %image:icon-purple.png[""]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an
+
+
+
+== Anzeigen historischer Abonnementdaten
+
+Auf der Registerkarte *Subscription Time Series* werden historische Daten Ihrer Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
+
+.Schritte
+. Klicken Sie auf die Registerkarte *Subscription Time Series*.
+. Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
+. Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der standardmäßig ausgewählte Zeitbereich liegt vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
+. Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme bewegen, um die Nutzungszusammensetzung in Bezug auf die Werte „Übersetzen“, „Verbrauch“, „Burst“ und „oberhalb der Burst-Limit-Daten“ an diesem Punkt anzuzeigen.
+
+
+image:aiq-ks-subtime-2.png[""]
+
+Die folgenden Details werden angezeigt:
+
+* *Aktuell verbraucht*: Dieses Gauge/Donut-Diagramm auf der linken Seite zeigt die verbrauchte Kapazität für ein Servicelevel für den Abrechnungszeitraum an. In diesem Diagramm werden bestimmte Farben angezeigt, um die folgende Verwendung anzugeben:
++
+** Grau: Keine
+** Grün: Innerhalb von 80% der zugesagt Kapazität
+** Gelb: Jeder Verbrauch über 80% der Kapazität des Verzus
+
+
+* *Aktueller Burst*: Dieses Gauge-/Donut-Diagramm zeigt die verbrauchte Kapazität für einen Service-Level an, der sich innerhalb oder oberhalb des Burst-Limits befindet. Bei einem Service-Level liegt der Verbrauch zwischen 100 % und dem vereinbarten Burst-Limit, beispielsweise 20 % über der festgelegten Kapazität, innerhalb des Burst-Limits. Weitere Nutzung wird als Verbrauch über dem Burst-Limit betrachtet. In diesem Diagramm werden bestimmte Farben angezeigt, um die folgende Verwendung anzugeben:
++
+** Grau: Keine
+** Rot: Burst
+** Violett: Über der Burst-Grenze
+
+
+* *Aufgelaufene Burst*: Die aufgelaufene Burst-Nutzung oder die genutzte Kapazität wird pro Monat für den aktuellen Abrechnungszeitraum berechnet. Die aufgelaufene Burst-Nutzung wird auf Basis der zurecheneten und verbrauchten Kapazität für ein Service-Level berechnet: `(consumed - committed)/365.25/12`
+* *Zeitreihe*: Die Balkendiagramme zeigen die Kapazitätsnutzung für die ausgewählte Zeit an. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt. Die Balkendiagramme werden in diesen Farben angezeigt, um die Verwendung anzuzeigen:
++
+** Grün: Innerhalb Von 80%
+** Gelb: 80 % - 100 %
+** Rot: Burst-Nutzung (100 % der festzugesagte Kapazität bis zur vereinbarten Burst-Grenze)
+** Violett: Über der Burst-Grenze oder `Above Limit`
+** Grau: Provisorische Nutzung - Verwendung, die aufgezeichnet wird, wenn die genauen Daten für den Zeitraum nicht verfügbar sind und durch die Daten ersetzt werden, die am vorherigen Datenerfassungspunkt verfügbar sind
+
+
+
+
+
+
+== Zeigen Sie Volume-Details an
+
+Klicken Sie auf die Registerkarte *Systemdetails*, um die Details der einzelnen Volumes in Ihrer Speicherumgebung anzuzeigen, die von einem Keystone-Abonnement verwaltet werden.
+
+image:aiq-ks-sysdtls.png[""]
+
+Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
+
+
+
+== Berichte generieren
+
+Sie können Berichte für Ihre Abonnementdetails, historische Nutzungsdaten für einen bestimmten Zeitraum und Systemdetails über die einzelnen Registerkarten generieren und anzeigen, indem Sie auf die Download-Schaltfläche klicken: image:download-icon.png[""]
+
+Die Details werden im CSV-Format erstellt, das Sie zur späteren Verwendung speichern können.
+
+Beispielbericht für die Registerkarte *Subscription Time Series*, in der die grafischen Daten konvertiert werden:
+
+image:report.png[""]
+
+
+
+== Anzeigen von Meldungen
+
+Warnungen auf der Konsole senden Warnhinweise, mit denen Sie die in Ihrer Storage-Umgebung auftretenden Probleme verstehen.
+
+Es gibt zwei Arten von Warnmeldungen:
+
+* *Informationen*: Bei Problemen, wie zum Beispiel Ihren Abonnements, die sich einem Ende nähern oder die Kulanzzeit erreichen, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr zu dem Problem zu erfahren.
+* *Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Klicken Sie auf den Link in der Warnmeldung, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Systemdetails* anzuzeigen.
++
+Informationen zu AQoS-Richtlinien finden Sie unter link:../concepts/qos.html["Anpassungsfähige QoS"].
+
+
+
+image:alert-aiq.png[""]
+
+Wenden Sie sich an den Support, um weitere Informationen zu diesen Warn- und Fehlermeldungen zu erhalten. Weitere Informationen finden Sie unter link:../concepts/gssc.html["Serviceanforderungen werden erstellt"].

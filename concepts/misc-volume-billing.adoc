@@ -49,7 +49,7 @@ Gelegentlich werden durch ONTAP temporäre Volumes (TMP) beim Verschieben von Vo
 
 == Abrechnung und anpassungsfähige QoS-Richtlinien
 
-Keystone misst die Nutzung basierend auf Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes die entsprechenden QoS-Richtlinien entsprechend Ihren abonnierten Service-Leveln zugewiesen sind, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"].
+Keystone misst die Nutzung basierend auf Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes die entsprechenden QoS-Richtlinien entsprechend Ihren abonnierten Service-Leveln zugewiesen sind, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"^].
 
 
 

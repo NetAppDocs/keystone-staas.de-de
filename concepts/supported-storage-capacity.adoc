@@ -14,7 +14,7 @@ summary: Unterstützte Speicherkapazitäten
 
 
 [role="lead"]
-Die NetApp Keystone Service-Kapazitäten umfassen:
+Die NetApp Keystone STaaS-Kapazitäten umfassen:
 
 
 
@@ -53,14 +53,14 @@ Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die
 
 == Burst-Kapazität
 
-Dies ist die verbrauchte Kapazität, die die engagierte Kapazität überschritten hat.
+Jeder Verbrauch, der die fest zugesagt Kapazität für ein Service-Level übersteigt, ist die Burst-Kapazität.
 
 
 NOTE: Hinweis:
 
-* Keystone ist eine zusätzliche Kapazität, die zusätzlich zur Verfügung steht, um die Kapazität nutzen zu können. Dies ist die Burst-Kapazität.
+* Mit Keystone Service können Sie zusätzlich Kapazität für einen Service Level nutzen. Dies ist die Burst-Kapazität.
 * Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis für den verbrauchten Durchschnitt berechnet.
-* Burst-Kapazität liegt in der Regel bis zu 20 % über der engagierte Kapazität und wird mit der gleichen Rate wie die engagierte Kapazität berechnet.
+* Burst-Kapazität wird in der Keystone Vereinbarung vereinbart. Sie ist in der Regel bis zu 20 % über der festgelegten Kapazität angelegt und wird mit der gleichen Rate wie die zugesagt Kapazität berechnet.
 
 
 

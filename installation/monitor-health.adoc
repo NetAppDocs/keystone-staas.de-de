@@ -32,7 +32,7 @@ Diese Statuscodes werden zurückgegeben:
 
 .Linux-Benutzer, beachten Sie dieses bekannte Problem:
 
-NOTE: *Beschreibung der Ausgabe*: Keystone Collector führt eine Reihe von Containern als Teil des Verbrauchsmesssystems aus. Wenn der Red hat Enterprise Linux 8.x-Server mit den USA Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG) gehärtet wird, wurde zeitweise ein bekanntes Problem mit dem fapolicyd (File Access Policy Daemon) festgestellt. Dieses Problem wird als identifiziert link:https://bugzilla.redhat.com/show_bug.cgi?id=1907870["Bug 1907870"]. *Problemumgehung*: Bis zur Lösung durch Red hat Enterprise empfiehlt NetApp, dieses Problem durch den Einsatz zu umgehen `fapolicyd` In den permissiven Modus. In /`etc/fapolicyd/fapolicyd.conf`, Legt den Wert von fest `permissive = 1`.
+NOTE: *Beschreibung der Ausgabe*: Keystone Collector führt eine Reihe von Containern als Teil des Verbrauchsmesssystems aus. Wenn der Red hat Enterprise Linux 8.x-Server mit den USA Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG) gehärtet wird, wurde zeitweise ein bekanntes Problem mit dem fapolicyd (File Access Policy Daemon) festgestellt. Dieses Problem wird als identifiziert link:https://bugzilla.redhat.com/show_bug.cgi?id=1907870["Bug 1907870"^]. *Problemumgehung*: Bis zur Lösung durch Red hat Enterprise empfiehlt NetApp, dieses Problem durch den Einsatz zu umgehen `fapolicyd` In den permissiven Modus. In /`etc/fapolicyd/fapolicyd.conf`, Legt den Wert von fest `permissive = 1`.
 
 
 
