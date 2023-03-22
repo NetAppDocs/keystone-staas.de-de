@@ -26,7 +26,7 @@ Der Daten-Tiering-Service mit Add-on ermöglicht das Tiering von Extreme-, Premi
 
 Wenn das Ziel für Cold-Storage Tier beispielsweise lautet:
 
-* Keystone STaaS Value Tier, Keystone STaaS StorageGRID Objektebene oder vorhandenes SGWS Grid (Kundenbesitz) – Es entstehen keine zusätzlichen Gebühren, es ist Teil des Standardservice.
+* Keystone STaaS-Objekt-Tier, Keystone STaaS-StorageGRID-Objekt-Tier oder vorhandenes SGWS-Grid (Eigentum des Kunden) – Es fallen keine zusätzlichen Kosten an und es ist Teil des Standard-Service.
 * Public Cloud (AWS, Azure, Google) oder von Keystone STaaS unterstützter Objekt-Storage von Drittanbietern – Es gibt eine zusätzliche Gebühr für Datenkapazität, die auf Cold-Storage-Ziel verschoben wird.
 
 

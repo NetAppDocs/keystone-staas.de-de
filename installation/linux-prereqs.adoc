@@ -16,7 +16,7 @@ summary: Voraussetzungen für die Installation von Keystone Collector auf Linux-
 [role="lead"]
 Für die Installation von Keystone Collector auf Linux-Systemen sind einige Konfigurationen erforderlich.
 
-Die folgenden Konfigurationen sind erforderlich:
+Für den Linux-Server sind folgende Konfigurationen erforderlich:
 
 * Betriebssystem: CentOS 7 oder Red hat Enterprise Linux 8.6 oder höher
 * Synchronisierungszeit synchronisiert
@@ -29,6 +29,13 @@ Der gleiche Server sollte auch die folgenden Drittanbieter-Pakete haben:
 * sos
 * Chrony
 * python 3 (3.6.8 bis 3.9.13)
+
+
+Die folgenden Konfigurationen sind für die virtuelle Maschine (SVM) des Keystone Collector Servers erforderlich:
+
+* Core: 2 CPUs
+* RAM: 4 GB RAM
+* Festplattenspeicher: 50 GB vDisk
 
 
 
@@ -53,7 +60,7 @@ NOTE: Keystone Collector erfordert Internetverbindung. Sie können Internet-Konn
 
 
  a| 
-Keystone Collector
+Keystone Collector (für Keystone ONTAP)
  a| 
 Active IQ Unified Manager (Unified Manager)
  a| 
@@ -61,14 +68,29 @@ HTTPS
  a| 
 TCP 443
  a| 
-Obligatorisch
+Obligatorisch (bei Verwendung von Keystone ONTAP)
  a| 
-Sammlung der Metriken zur Verwendung von Keystone Collector
+Erfassung der Nutzungsmetriken von Keystone Collector für ONTAP
 
 
 
  a| 
-Keystone Collector
+Keystone Collector (für Keystone StorageGRID)
+ a| 
+StorageGRID-Administratorknoten
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+Obligatorisch (bei Verwendung von Keystone StorageGRID)
+ a| 
+Erfassung der Nutzungsmetriken von Keystone Collector für StorageGRID
+
+
+
+ a| 
+Keystone Collector (allgemein)
  a| 
 Internet (gemäß URL-Anforderungen, die später angegeben werden)
  a| 
@@ -83,7 +105,7 @@ Keystone Collector, OS-Updates und Uploads von Metriken
 
 
  a| 
-Keystone Collector
+Keystone Collector (allgemein)
  a| 
 HTTP-Proxy des Kunden
  a| 
@@ -98,7 +120,7 @@ Keystone Collector, OS-Updates und Uploads von Metriken
 
 
  a| 
-Keystone Collector
+Keystone Collector (allgemein)
  a| 
 DNS-Server des Kunden
  a| 
@@ -113,7 +135,7 @@ DNS-Auflösung
 
 
  a| 
-Keystone Collector
+Keystone Collector (allgemein)
  a| 
 NTP-Server von Kunden
  a| 
@@ -124,6 +146,36 @@ UDP 123
 Obligatorisch
  a| 
 Zeitsynchronisierung
+
+
+
+ a| 
+Keystone Collector (für Keystone ONTAP)
+ a| 
+Unified Manager
+ a| 
+MYSQL
+ a| 
+TCP 3306
+ a| 
+Optionale Funktionen
+ a| 
+Sammlung von Performance-Kennzahlen für Keystone Collector
+
+
+
+ a| 
+Keystone Collector (allgemein)
+ a| 
+Kundenüberwachungssystem
+ a| 
+HTTP
+ a| 
+TCP 777
+ a| 
+Optionale Funktionen
+ a| 
+Statusberichte für Keystone Collector
 
 
 
@@ -154,36 +206,6 @@ TCP 8000, ICMP Echo Request/Reply
 Optionale Funktionen
  a| 
 Webserver für ONTAP-Firmware-Updates
-
-
-
- a| 
-Keystone Collector
- a| 
-Unified Manager
- a| 
-MYSQL
- a| 
-TCP 3306
- a| 
-Optionale Funktionen
- a| 
-Sammlung von Performance-Kennzahlen für Keystone Collector
-
-
-
- a| 
-Keystone Collector
- a| 
-Kundenüberwachungssystem
- a| 
-HTTP
- a| 
-TCP 777
- a| 
-Optionale Funktionen
- a| 
-Statusberichte für Keystone Collector
 
 |===
 

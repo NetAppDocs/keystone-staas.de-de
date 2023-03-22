@@ -14,9 +14,9 @@ summary: Keystone-Abonnementberichte und -Diagramme
 
 
 [role="lead"]
-Wenn Sie die NetApp Keystone STaaS-Dienste abonniert haben, können Sie Ihre Nutzung über das Widget *Keystone Abonnements* auf dem Digital Advisor Dashboard überwachen.
+Wenn Sie NetApp Keystone StaaS-Services abonniert haben, können Sie Ihre Nutzung im Widget *Keystone Abonnements* im Dashboard von Active IQ Digital Advisor (digitaler Berater) überwachen.
 
-Informationen zum Widget „Digital Advisor“ finden Sie unter https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
+Informationen zum Widget „Digital Advisor“ finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
 
 Klicken Sie auf *Weitere Details* auf dem Widget, um die Nutzungsdetails und Warnungen auf Ihren Volumes auf der Seite *Keystone Abonnement* anzuzeigen. Wechseln Sie alternativ im linken Navigationsbereich zu *ALLGEMEIN > Keystone-Abonnement*.
 

@@ -25,7 +25,7 @@ Führen Sie die folgenden Schritte aus, um die Software auf Ihrem Linux-Server z
 `# rpm -qa gpg-pubkey --qf '%_<Description>_'|gpg --show-keys --fingerprint`Der richtige Fingerabdruck sieht so aus:
 `90B3 83AF E07B 658A 6058  5B4E 76C2 45E4 33B6 C17D`
 . Laden Sie die herunter `keystonerepo.rpm` Datei:
-`# wget https://keystone.netapp.com/repo/keystonerepo.rpm`
+`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
 . Überprüfen Sie die Authentizität der Datei:
 `rpm --checksig -v keystonerepo.rpm`Eine Signatur für eine authentische Datei sieht wie folgt aus:
 `Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
@@ -34,3 +34,6 @@ Führen Sie die folgenden Schritte aus, um die Software auf Ihrem Linux-Server z
 . Wenn Keystone Repo installiert ist, installieren Sie das Keystone-Collector-Paket über den YUM-Paketmanager:
 `# yum install keystone-collector`
 
+
+
+NOTE: Nach Abschluss der Installation können Sie das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ verwenden, um die Konfigurations- und Überwachungsaktivitäten durchzuführen. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren. Siehe link:../installation/configuration.html["Konfigurieren Sie Keystone Collector"] Und link:../installation/monitor-health.html["Systemzustand überwachen"].

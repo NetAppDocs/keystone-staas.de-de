@@ -28,7 +28,7 @@ Keystone STaaS Services können nebeneinander bestehen. Ein Cloud-Storage-Abonne
 
 == Services für File-, Block- und Objekt-Storage
 
-Die Keystone STaaS-Services für ONTAP-Datei- und Block-Storage und StorageGRID Objekt-Storage unterstützen mehrere Funktionen und Protokolle. Die nachfolgende Tabelle enthält eine Beschreibung:
+Keystone STaaS Services für ONTAP-File- und Block-Storage sowie StorageGRID-Objekt-Storage unterstützen zahlreiche Funktionen und Protokolle. Beschreibung in der folgenden Tabelle:
 
 |===
 | Storage | Plattform | Protokolle | Unterstützte Funktionen 

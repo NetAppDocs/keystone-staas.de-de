@@ -20,7 +20,7 @@ Wenn Sie Keystone Kunden über ein Cloud Volumes ONTAP-Abonnement verfügen, kö
 
 Dazu sollten Sie ein oder mehrere BlueXP Accounts erstellen und sie mit Ihrem Keystone Konto verknüpfen. Während Sie einen Cloud-Service über Keystone erwerben, müssen Sie Ihrem Keystone Success Manager (KSM) alle Einzelheiten Ihres BlueXP Kontos angeben. So können Sie Ihre Cloud-Service-Nutzung über Ihr Keystone Abonnement richtig Messung und Abrechnung ausführen.
 
-Weitere Informationen finden Sie unter den folgenden Links in den BlueXP-Dokumenten:
+Weitere Informationen zu Keystone und BlueXP erhalten Sie über die folgenden Links in den BlueXP Dokumenten:
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#keystone-flex-subscription["Keystone Abonnement"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html["Keystone Abonnements Managen"^]

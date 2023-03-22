@@ -22,26 +22,26 @@ Durch die Verwendung von QoS wird sichergestellt, dass Applikationen stets eine 
 
 == Anpassungsfähige QoS
 
-Adaptive QoS (AQoS) wird für Keystone-Services verwendet, um das Verhältnis von IOPS zu TB/GB zu erhalten, wenn die QoS-Richtlinie automatisch angewendet wird. Weitere Informationen zur adaptiven QoS finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Allgemeines zur anpassungsfähigen QoS"^].
+Adaptive QoS (AQoS) wird für Keystone-Services verwendet, um das Verhältnis von IOPS zu TB/GB zu erhalten, wenn die QoS-Richtlinie automatisch angewendet wird. Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Allgemeines zur anpassungsfähigen QoS"^].
 
-Keystone bietet flexible QoS-Richtlinien, die Sie einrichten können, sobald das Cluster in Produktion ist. Sie sollten sicherstellen, dass alle Volumes mit den richtigen anpassungsfähigen QoS-Richtlinien verknüpft sind, die bereits in Ihrem System erstellt und verfügbar sind.
+Keystone stellt Ihnen AQoS-Richtlinien zur Verfügung, die Sie einrichten können, sobald Ihr Cluster in Betrieb ist. Sie sollten sicherstellen, dass alle Ihre Volumes mit den richtigen AQoS-Richtlinien verknüpft sind, die bereits erstellt und in Ihrem System verfügbar sind.
 
 
-NOTE: Wenn Sie keine anpassungsfähigen QoS-Richtlinien auf Ihre Volumes korrekt angewendet haben, werden diese Volumes gemäß Ihrem Abonnement auf dem höchsten Service-Level gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.
+NOTE: Wenn Sie Ihre AQoS-Richtlinien nicht korrekt auf Ihre Volumes angewendet haben, werden diese Volumes auf dem höchsten Service-Level gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.
 
 
 
 == Konfiguration der adaptiven QoS-Richtliniengruppe
 
-Sie können anpassungsfähige QoS-Richtlinien konfigurieren, um eine Durchsatzdecke oder -Untergrenze automatisch auf die Volume-Größe zu skalieren. Beim Konfigurieren einer Richtlinie sollten Sie Folgendes beachten:
+Sie können AQoS-Richtlinien (Adaptive QoS) so konfigurieren, dass eine Durchsatzobergrenze oder -Größe automatisch von der Größe des Volumes bis zur Höhe skaliert werden kann. Beim Konfigurieren einer Richtlinie sollten Sie Folgendes beachten:
 
-* *Policy Group Name*: Der Name der adaptiven QoS Policy Group. Beispiel: `Keystone_extreme`.
+* *Policy Group Name*: Der Name der AQoS Policy Group. Beispiel: `Keystone_extreme`.
 * *Vserver*: Der Name des Vservers oder der Storage VM (Storage Virtual Machine).
 * *Erwartete IOPS*: Die Anzahl der IOPS/tib, die ONTAP bietet als Minimum, solange es Performance-Garantie gibt.
 * *IOPS-Spitzenwert*: Die maximale Anzahl an IOPS/tib, die einem Volume zur Verfügung stehen wird, bevor die Performance begrenzt ist.
 * *Erwartete IOPS-Zuweisung*: Dieses Feld steuert, ob die erwarteten für das Volume verfügbaren IOPS auf der zugewiesenen oder genutzten Größe des Volumes basieren. In Keystone basiert die Zuordnung des Speicherplatzes.
 * *IOPS-Spitzenzuweisung*: Dieses Feld steuert, ob der für das Volume verfügbare IOPS-Spitzenwert auf der zugewiesenen oder genutzten Größe des Volumes basiert. In Keystone basiert dies auf dem verwendeten Speicherplatz.
-* *Absolute IOPS-Minimum*: Die niedrigste Anzahl der erwarteten IOPS, die auf ein Volume angewendet wird, wenn die Volume-Größe sehr klein ist und ansonsten eine inakzeptable Anzahl von IOPS zur Folge hätte. Dieser Wert liegt standardmäßig bei 1,000 für `Extreme`, 500 für `Premium`, Und 75 für andere Service-Level.
+* *Absolute IOPS-Minimum*: Die niedrigste Anzahl der erwarteten IOPS, die auf ein Volume angewendet wird, wenn die Volume-Größe sehr klein ist und ansonsten eine inakzeptable Anzahl von IOPS zur Folge hätte. Dieser Wert liegt standardmäßig bei 1,000 für `Extreme`, 500 für `Premium`, Und 250 für `Performance`, Und 75 für `Standard` Und `Value` Service-Leveln.
 +
 
 NOTE: Dies ist keine IOPS-Dichte (z. B. 75 IOPS/tib), sondern eine absolute Mindestanzahl an IOPS.
@@ -54,7 +54,7 @@ Informationen zur I/O-Dichte finden Sie unter link:../concepts/metrics.html["Met
 
 == Einstellungen anpassungsfähiger QoS-Richtlinien
 
-Die Einstellungen für anpassungsfähige QoS-Richtlinien für jedes Service Level werden in den folgenden Abschnitten beschrieben. Die Minimum- und Höchstgrößen für jedes hier angegebene Service Level ermöglichen optimale IOPS- und Latenzwerte für ein Volume. Wenn zu viele Volumes außerhalb dieser Richtlinien erstellt werden, kann dies negative Auswirkungen auf die Performance dieser Volumes haben.
+Die Einstellungen für AQoS-Richtlinien (Adaptive QoS) für jedes Service-Level werden in den folgenden Abschnitten beschrieben. Die Minimum- und Höchstgrößen für jedes hier angegebene Service Level ermöglichen optimale IOPS- und Latenzwerte für ein Volume. Wenn zu viele Volumes außerhalb dieser Richtlinien erstellt werden, kann dies negative Auswirkungen auf die Performance dieser Volumes haben.
 
 
 
@@ -66,7 +66,7 @@ Einstellungen und Befehle für den Extreme Service Level:
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 1000
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
 ....
 * Minimale Volume-Größe: 100 gib, 0,1 tib
 * Maximale Volume-Größe: 10 tib
@@ -82,7 +82,7 @@ Einstellungen und Befehle für den Premium Service Level:
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 500
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
 ....
 * Minimale Volume-Größe: 500 gib, 0,5 tib
 * Maximale Volume-Größe: 50 tib
@@ -98,7 +98,7 @@ Einstellungen und Befehle für das Performance Service Level:
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 250
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
 ....
 * Minimale Volume-Größe: 500 gib, 0,5 tib
 * Maximale Volume-Größe: 80 tib
@@ -114,7 +114,7 @@ Einstellungen und Befehle für Standard-Service-Level:
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 77
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
 * Minimale Volume-Größe: 1 tib
 * Maximale Volume-Größe: 100 tib
@@ -130,7 +130,7 @@ Einstellungen und Befehle für die Service-Ebene Wert:
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 59
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
 * Minimale Volume-Größe: 1 tib
 * Maximale Volume-Größe: 100 tib
