@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: installation/upgrade.html 
+keywords: Keystone Collector upgrade 
+summary: Aktualisieren Sie Keystone Collector 
+---
+= Aktualisieren Sie Keystone Collector manuell
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die automatische Aktualisierungsfunktion in Keystone Collector ist standardmäßig aktiviert, wodurch die Keystone Collector-Software bei jeder neuen Version automatisch aktualisiert wird. Sie können diese Funktion jedoch deaktivieren und die Software manuell aktualisieren.
+
+.Schritte
+. Starten Sie das Management-TUI-Dienstprogramm Keystone Collector:
+`$ keystone-collector-tui`
+. Wählen Sie auf dem Wartungsbildschirm die Option *Collectors jetzt aktualisieren* aus.
++
+image:upgrade-1.png[""]
+
++
+Führen Sie alternativ diesen Befehl aus, um die Version zu aktualisieren:
+
++
+[listing]
+----
+sudo yum clean metadata && sudo yum install keystone-collector
+----
++
+image:upgrade-2.png[""]
+
+. Keystone Collector Management neu starten TUI, Sie können die neueste Version im oberen linken Bereich des Home-Bildschirms sehen.
++
+Führen Sie alternativ diesen Befehl aus, um die neueste Version anzuzeigen:
+
++
+[listing]
+----
+rpm -q keystone-collector
+----
+

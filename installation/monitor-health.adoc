@@ -99,7 +99,7 @@ Nachfolgend ein Beispiel für einen erfolgreichen Auftrag zur optionalen Erfassu
 Über die Keystone Collector TUI lassen sich Supportpakete generieren und Serviceanforderungen zur Behebung von Supportproblemen hinzufügen. Gehen Sie folgendermaßen vor:
 
 .Schritte
-. Öffnen Sie das Dienstprogramm Keystone Collector Management TUI:
+. Starten Sie das Management-TUI-Dienstprogramm Keystone Collector:
 `$ keystone-collector-tui`
 . Gehen Sie zu *Fehlerbehebung > Supportpaket generieren*.image:tui-sup-bundl.png[""]
 . Bei der Erzeugung wird der Speicherort des Pakets angezeigt. Verwenden Sie FTP, SFTP oder SCP, um eine Verbindung zum Speicherort herzustellen und die Protokolldatei auf ein lokales System herunterzuladen.image:tui-sup-bundl-2.png[""]

@@ -20,7 +20,7 @@ Sie müssen einige Konfigurationsaufgaben ausführen, damit Keystone Collector N
 NOTE: Der Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
 
 .Schritte
-. Öffnen Sie das Dienstprogramm Keystone Collector Management TUI:
+. Starten Sie das Management-TUI-Dienstprogramm Keystone Collector:
 `$ keystone-collector-tui`
 . Gehen Sie zu **Konfigurieren > KS-Collector**, um den Konfigurationsbildschirm von Keystone Collector zu öffnen und die verfügbaren Optionen für das Update anzuzeigen.
 . Aktualisieren Sie die erforderlichen Optionen.
@@ -29,7 +29,7 @@ NOTE: Der Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collect
 [%collapsible]
 ====
 ** *Collect ONTAP usage*: Diese Option ermöglicht die Erfassung von Nutzungsdaten für ONTAP. Fügen Sie die Details zum Active IQ Unified Manager-Server (Unified Manager) und zum Service-Konto hinzu.
-** *Collect ONTAP Leistungsdaten*: Diese Option ermöglicht die Erfassung von Leistungsdaten für ONTAP. Dies ist standardmäßig deaktiviert. Aktivieren Sie diese Option, wenn in Ihrer Umgebung Performance-Monitoring für SLA-Zwecke erforderlich ist. Geben Sie Details zum Benutzerkonto für die Unified Manager Database an. Informationen zum Erstellen von Datenbankbenutzern finden Sie unter link:../addl-req.html["Erstellen von Unified Manager-Benutzern"].
+** *Collect ONTAP Leistungsdaten*: Diese Option ermöglicht die Erfassung von Leistungsdaten für ONTAP. Dies ist standardmäßig deaktiviert. Aktivieren Sie diese Option, wenn in Ihrer Umgebung Performance-Monitoring für SLA-Zwecke erforderlich ist. Geben Sie Details zum Benutzerkonto für die Unified Manager Database an. Informationen zum Erstellen von Datenbankbenutzern finden Sie unter link:../installation/addl-req.html["Erstellen von Unified Manager-Benutzern"].
 ** *Private Daten entfernen*: Diese Option entfernt bestimmte private Daten von Kunden und ist standardmäßig aktiviert. Informationen darüber, welche Daten von den Metriken ausgeschlossen werden, wenn diese Option aktiviert ist, finden Sie unter link:../installation/configuration.html#limit-collection-of-private-data["Begrenzung der Erhebung privater Daten"].
 
 
@@ -39,7 +39,7 @@ NOTE: Der Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collect
 [%collapsible]
 ====
 ** *Collect StorageGRID Usage*: Diese Option ermöglicht die Erfassung von Node Usage Details. Fügen Sie die StorageGRID-Node-Adresse und Benutzerdetails hinzu.
-** *Private Daten entfernen*: Diese Option entfernt bestimmte private Daten von Kunden und ist standardmäßig aktiviert. Informationen darüber, welche Daten von den Metriken ausgeschlossen werden, wenn diese Option aktiviert ist, finden Sie unter link:../configuration.html#limit-collection-of-private-data["Begrenzung der Erhebung privater Daten"].
+** *Private Daten entfernen*: Diese Option entfernt bestimmte private Daten von Kunden und ist standardmäßig aktiviert. Informationen darüber, welche Daten von den Metriken ausgeschlossen werden, wenn diese Option aktiviert ist, finden Sie unter link:../installation/configuration.html#limit-collection-of-private-data["Begrenzung der Erhebung privater Daten"].
 
 
 ====
@@ -56,7 +56,7 @@ NOTE: Der Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collect
 Die Collector-Software unterstützt die Verwendung eines HTTP-Proxys für die Kommunikation mit dem Internet. Diese kann in der TUI konfiguriert werden.
 
 .Schritte
-. Öffnen Sie das Dienstprogramm Keystone Collector Management TUI, wenn es bereits geschlossen ist:
+. Starten Sie das Keystone Collector Management TUI Utility neu, falls es bereits geschlossen wurde:
 `$ keystone-collector-tui`
 . Schalten Sie das Feld **HTTP Proxy** ein und fügen Sie die Details für den HTTP Proxy-Server, den Port und die Anmeldeinformationen hinzu, falls eine Authentifizierung erforderlich ist.
 . Klicken Sie Auf **Speichern**.image:tui-3.png[""]

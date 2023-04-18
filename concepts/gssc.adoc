@@ -30,11 +30,11 @@ Das NetApp Global Services and Support Center (GSSC) Team unterstützt die Servi
 
 * Ansprechpartner für den weltweiten Service:https://www.netapp.com/us/contact-us/support.aspx[]
 * Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie eine E-Mail an eine der folgenden Adressen: keystone.services@netapp.com keystone.escalations@netapp.com
-* NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv zu überwachen und eine Verbindung zur NetApp Keystone-Umgebung zur Fehlerbehebung herzustellen. Informationen zu OpsRamp finden Sie unter https://www.opsramp.com/#[].
+* NetApp nutzt eine AIOPs-Lösung, um proaktiv die NetApp Keystone Umgebung zu überwachen und eine Verbindung zur Fehlerbehebung herzustellen.
 
 
 
-NOTE: In einem von Partnern betriebenen Modell werden die Service-Anfragen des Mandanten und des Submandanten dem Service-Desk des Partners zugewiesen. Das Support-Tool des Partners kann mit OpsRamp- und GSSC-Applikationen integriert werden. Es werden nur L3-Probleme über GSSC an NetApp eskaliert.
+NOTE: In einem von Partnern betriebenen Modell werden die Service-Anfragen des Mandanten und des Submandanten dem Service-Desk des Partners zugewiesen. Das Support-Tool des Partners ist möglicherweise in die AIOPs-Lösung und GSSC-Anwendungen integriert. Es werden nur L3-Probleme über GSSC an NetApp eskaliert.
 
 Weitere Informationen zu Keystone Services finden Sie unter:
 

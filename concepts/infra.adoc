@@ -27,7 +27,7 @@ Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten aus
 Die Keystone-Infrastruktur umfasst mehrere Komponenten, u. a. die folgenden:
 
 * Die Keystone Infrastruktur mit Storage Controllern
-* Tools zum Managen und Betreiben des Service wie OpsRamp, Active IQ und Active IQ Unified Manager.
+* Tools zum Managen und Betreiben des Service, z. B. AIOPs-Lösung, Active IQ und Active IQ Unified Manager
 
 
 
@@ -44,10 +44,10 @@ In einem vom Keystone Kunden betriebenen Service sind die Storage-Infrastruktur 
 
 Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und Verbrauchsüberwachung bereitgestellt.
 
-* OpsRamp Local Gateway: OpsRamp ist eine Cloud-basierte Anwendung zur Überwachung Ihres Netzwerks. Es verfügt über integrierte Integrationen mit NetApp Storage-Plattformen, um Umgebungsdaten zu erfassen und das Netzwerk zu überwachen. Dieser Service wird mithilfe eines lokalen Gateways aktiviert, das auf Ihrer Website installiert ist und mit dem Cloud-Portal kommuniziert. Weitere Informationen zu
-* Keystone Data Collector: Keystone Collector bietet Keystone Kunden Abrechnungsservices. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst in regelmäßigen Abständen alle fünf Minuten Daten von ONTAP und StorageGRID Controllern. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Der Active IQ Data Lake verarbeitet die Daten für die Abrechnung und sendet sie zur Abrechnung an Zuora. Mit dem digitalen Berater-Kundenportal (Digital Advisor) von Active IQ können Sie sich einloggen und die Details zu Ihrem Abonnement und der Nutzung für Ihr Keystone Abonnement einsehen.
+* AIOPs Lösung Lokales Gateway: Eine Cloud-basierte Anwendung zur Überwachung Ihres Netzwerks. Es verfügt über integrierte Integrationen mit NetApp Storage-Plattformen, um Umgebungsdaten zu erfassen und das Netzwerk zu überwachen. Dieser Service wird mithilfe eines lokalen Gateways aktiviert, das auf Ihrer Website installiert ist und mit dem Cloud-Portal kommuniziert.
+* Keystone Data Collector: Keystone Collector bietet Keystone Kunden Abrechnungsservices. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst Daten von ONTAP und StorageGRID Controllern in einem Intervall von fünf Minuten. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Active IQ Data Lake verarbeitet die Abrechnungsdaten und sendet sie zur Abrechnung an Zuora.
 
 
 image:mgmt-stack.png[""]
 
-Weitere Informationen zu Keystone Berichten im Digital Advisor Dashboard finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Digital Advisor"].
+Digitaler Berater (Digital Advisor) von Active IQ ermöglicht Ihnen die Anmeldung und die Anzeige der Abonnement- und Nutzungsdetails für Ihre Keystone Abonnements. Weitere Informationen zu Keystone Berichten im Digital Advisor Dashboard finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Digital Advisor"].

@@ -56,23 +56,7 @@ NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen
 
 === Storage Virtual Machines
 
-Storage Virtual Machines (Storage VMs) sollten folgendermaßen implementiert werden, um das Monitoring und die Nutzungsmessung von Keystone Abonnements zu unterstützen. Für den Keystone Collector ist eine Storage VM erforderlich – eine weitere wird für das OpsRamp Gateway benötigt
-
-* Keystone Collector – zur Erfassung von Nutzungsmetriken:
-+
-** VCPU: 4
-** VRAM: 16 GB
-** VDisk: 200 GB
-
-
-* OpsRamp Gateway – zur Echtzeitüberwachung + Remote-Support-ONTAP von Keystone GSSC:
-+
-** VCPU: 8
-** VRAM: 16 GB
-** VDisk: 100 GB
-
-
-
+Für die Implementierung von Keystone Collector und dem AIOPs-Lösungs-Gateway ist eine Storage Virtual Machine (Storage-VM) erforderlich. Die Voraussetzungen für die Installation von Keystone Collector sind hier verfügbar: link:..//installation/installation-overview.html["Installationsanleitung für Keystone Collector"]. Die anderen Anforderungen werden während der Implementierung gemeinsam genutzt.
 
 
 
@@ -81,10 +65,10 @@ Storage Virtual Machines (Storage VMs) sollten folgendermaßen implementiert wer
 Der Keystone Collector kann auf folgende Weise bereitgestellt werden:
 
 * VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
-* Der Kunde stellt Red hat Enterprise Linux 7 oder 8 oder CentOS 7 Linux Server bereit und Keystone Software wird über den `.rpm`-Installationsprozess installiert.
+* Der Kunde stellt Red hat Enterprise Linux 7 oder 8 oder CentOS 7 Linux Server zur Verfügung. Die Keystone Software wird über installiert `.rpm` Installationsprozess.
 
 
-OpsRamp Gateway wird in der folgenden Konfiguration bereitgestellt:
+Das Gateway für die AIOPs-Lösung wird in folgender Konfiguration bereitgestellt:
 
 * VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
 * Bootfähiges .iso-Installationsprogramm für
@@ -100,7 +84,7 @@ OpsRamp Gateway wird in der folgenden Konfiguration bereitgestellt:
 
 === Netzwerkbetrieb
 
-Für den Betrieb und die Wartung des Keystone Collector und OpsRamp Gateway ist ein abgehender Zugriff für die folgenden Dienste erforderlich:
+Für den Betrieb und die Wartung des Keystone Collector und des AIOPs Solution Gateways ist ausgehender Zugriff auf die folgenden Services erforderlich:
 
 * support.netapp.com (Upload der Nutzungsdaten)
 * keystone.netapp.com (Software-Updates)
@@ -117,4 +101,4 @@ NetApp liefert nur die erforderlichen Transceiver für von NetApp zur Verfügung
 
 Zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden, und dem Keystone Operations Center ist Netzwerkkonnektivität erforderlich. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internetservices. Das Netzwerk-Design sollte über ein sicheres Protokoll verfügen und Firewall-Richtlinien werden sowohl von NetApp als auch von Kunden genehmigt.
 
-NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Applikationen wie OpsRamp und Zuora nutzen diese Verbindung, um die entsprechenden Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.
+NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Applikationen, wie AIOPs Solution und Zuora, verwenden diese Verbindung, um die jeweiligen Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.

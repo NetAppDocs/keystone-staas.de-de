@@ -14,36 +14,36 @@ summary: Keystone Datenflüsse
 
 
 [role="lead"]
-Keystone STaaS-Systeme begegnen dem Datenfluss durch Keystone Collector Verkehr und überwachen die Datenflüsse.
+Die Daten in Keystone STaaS-Systemen laufen über Keystone Collector und das zugehörige Monitoring-System, das AIOPs Lösungs-Tool.
 
 
 
 == Keystone Collector-Datenfluss
 
-Keystone Collector initiiert REST-API-Aufrufe an die Storage-Controller und erhält regelmäßig Einzelheiten zur Nutzung der Controller.
+Keystone Collector initiiert REST-API-Aufrufe an die Storage Controller und erhält regelmäßig Nutzungsdetails der Controller, wie in diesem Flussdiagramm dargestellt:
 
 image:collector-data-flow.png[""]
 
 .Legende
 . NetApp Collector initiiert eine HTTPS-Session für das Active-IQ Cloud-Portal.
 . Die vom Kunden betriebene Firewall erlaubt die Verbindung.
-. Das Active IQ Cloud Portal akzeptiert die Verbindung und baut einen Tunnel zum NetApp Collector auf.
-. Der NetApp Collector richtet eine REST-API-Sitzung an die Managementverbindung des Storage Controllers ein, bezieht die Umgebungsdaten und sendet diese an das Active IQ Portal.
+. Das Active IQ Cloud-Portal akzeptiert die Verbindung und stellt einen Tunnel zum NetApp Collector her.
+. Der NetApp Collector erstellt eine REST-API-Sitzung für die Managementverbindung des Storage Controllers. Er ruft Umgebungsdaten ab und sendet sie an das Active IQ-Portal.
 
 
 
 
 == Monitoring des Datenflusses
 
-Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines der wichtigsten Funktionen von Keystone Service. Keystone verwendet zur Überwachung OpsRamp, die Remote-Zugriff auf das Netzwerk des Kunden benötigt. Das folgende Bild beschreibt, wie der Remote-Zugriff auf den Standort des Kunden über das OpsRamp-Tool gesichert wird.
+Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines der wichtigsten Funktionen von Keystone Service. Für Monitoring und Berichterstellung verwendet Keystone eine AIOPs Lösung, die Remote-Zugriff auf das Kundennetzwerk benötigt. Im folgenden Bild wird beschrieben, wie der Remote-Zugriff auf den Kundenstandort durch das AIOPs-Lösungstool gesichert wird.
 
 image:monitoring-flow.png[""]
 
 .Legende
-. Das OpsRamp Gateway initiiert eine TLS-Sitzung zum OpsRamp Cloud-Portal in der Cloud.
+. Das Gateway der AIOPs-Lösung initiiert eine TLS-Sitzung zum ITS-Cloud-Portal.
 . Die vom Kunden betriebene Firewall erlaubt die Verbindung.
-. Der OpsRamp-Server in der Cloud akzeptiert die Verbindung.
-. Zwischen dem OpsRamp-Cloud-Portal und dem lokalen OpsRamp-Gateway wird ein TLS-Tunnel eingerichtet.
-. Die NetApp-Controller senden Benachrichtigungen über das SNMP-Protokoll oder reagieren auf API-Anfragen an das lokale OpsRamp Gateway.
-. Das lokale Gateway OpsRamp sendet diese Warnmeldungen über die zuvor festgelegte TLS-Sitzung an sein Cloud-Portal.
+. Der AIOPs Lösungsserver in der Cloud akzeptiert die Verbindung.
+. Zwischen dem Cloud-Portal und dem lokalen Gateway wird ein TLS-Tunnel aufgebaut.
+. Die NetApp Controller senden Warnmeldungen per SNMP-Protokoll oder antworten auf API-Anfragen an das lokale Gateway.
+. Das lokale Gateway sendet diese Warnungen über die zuvor eingerichtete TLS-Sitzung an sein Cloud-Portal.
 
