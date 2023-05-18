@@ -14,25 +14,15 @@ summary: Unterstützte Service-Level
 
 
 [role="lead"]
-Keystone STaaS bietet Storage-Kapazität zu vordefinierten Performance-Service-Leveln (Service-Level) im Abonnement.
+Keystone STaaS bietet Storage-Kapazität zu vordefinierten Performance-Service-Leveln (Service-Level) im Abonnement. Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen.
 
-Service Levels werden definiert durch:
+Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/tib/Volume entspricht. Dies ist das Verhältnis der Performance (IOPS) (Input/Output Operations per Second) und der genutzten Storage-Kapazität (tib). Dies ist IOPS/tib bei einer durchschnittlichen Latenz pro Volume.
 
-* Durchschnittliche Latenz
-* Maximale IOPS pro logischem tib gespeichert pro Volume
-
-
-Ein Volume muss einem Service Level zugewiesen werden.
+Hier sind die Service-Level für die unterstützten Storage-Typen, File-, Block-, Objekt- und Cloud-Services aufgelistet.
 
 
 
-== Service Levels für unterstützten Storage
-
-Hier sind die Service Level für Datei-, Block-, Objekt- und Cloud-Services aufgeführt.
-
-
-
-=== Datei- und Block-Storage
+== Service-Level für File- und Block-Storage
 
 * Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC
 
@@ -48,26 +38,43 @@ Hier sind die Service Level für Datei-, Block-, Objekt- und Cloud-Services aufg
 | *Maximale IOPS/logische TIBS gespeichert pro Volumen* | 12,288 | 4,096 | 2,048 | 512 | 128 
 
 
-| *Maximale Mbps/logische TIBS gespeichert pro Volumen* | 384 | 128 | 64 | 16 | 4 
+| *Maximale Anzahl an IOPS/logischem TIBS pro Volume* | 6,144 | 2,048 | 1,024 | 256 | 64 
 
 
-| *Latenz* | <1 ms | <2 ms | <4 ms | <17 ms | <17 ms 
+| *Maximale MB/s/logische TIBS gespeichert pro Volume @ 32K B/S* | 384 | 128 | 64 | 16 | 4 
+
+
+| * Durchschnittliche Latenz* | 1 ms | 2 ms | 4 ms | 17 ms | 17 ms 
+
+
+| *Blockgröße* 5+| 32K 
 |===
-[NOTE]
-====
-Beachten Sie die folgenden Punkte für Metriken zur Durchsatz-Performance (gilt nur für Dateien
-
-* Datei- und Block-Service-Level basieren auf ONTAP 9.7 und höher.
-* IOPS/tib und Latenzwerte für Service-Level basieren auf der Menge der logischen Daten, die im Volume gespeichert sind, auf der Blockgröße von 32 KB und einer zufälligen Mischung aus 70 % Lese- und /30 % Schreib-I/O.
-* Die tatsächlichen IOPS/tib und/oder MB/s/tib variieren je nach Workload-Parallelität und -Nutzungsmustern.
-* Die Latenz umfasst nicht Folgendes: - Die Applikationen, Hosts oder die Netzwerklatenz des Kunden zu den Controller-Ports oder von diesen. -- die Latenz, die automatisch durch QoS angewendet wird, um I/O innerhalb der maximalen Anzahl von Service-Level zu halten.
-* Beim Einsatz des Add-on Service Advanced Data Protection wird die Ziellatenz nur für die Bearbeitung von I/O-Anfragen von lokalen Keystone Produkten angewendet.
 
 
-====
+=== Mehr auf Service-Levels für File- und Block-Storage
+
+Die Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
+
+* Die Service-Level für File- und Block-Storage unterstützen ONTAP 9.7 und höher.
+* IOPS/tib/Volume, MB/s/tib/Volume und Latenzwerte für Service-Level basieren auf der Menge der im Volume gespeicherten Daten, der Blockgröße von 32 KB sowie einer zufälligen Kombination von I/O-Vorgängen mit 70 % Lesevorgängen und 30 % Schreibzugriffen.
+* Der tatsächliche IOPS-/tib-/Volume-Wert und MB/s-/tib-Volume können basierend auf der tatsächlichen oder angenommenen Blockgröße, der Parallelität des System-Workloads oder Input/Output-Operationen variieren.
+* Die Latenz umfasst nicht Folgendes:
++
+** Applikations- oder Host-Latenz erzielt
+** Netzwerklatenz des Kunden zu bzw. von den Controller-Ports
+** Gemeinkosten für die Datenübertragung an den Objektspeicher bei FabricPool
+** Automatische Anwendung der Latenz durch QoS, um den I/O-Wert innerhalb der maximalen Service-Level zu halten
 
 
-=== Objekt-Storage
+* Latenzwerte gelten nicht für MetroCluster-Schreibvorgänge. Diese Schreibvorgänge sind von der Entfernung von Remote-Systemen abhängig.
+* Wenn einem oder mehreren Volumes auf einem Storage-System keine AQoS-Richtlinie zugewiesen ist, werden diese Volumes als nicht konforme Volumes betrachtet und für diese Systeme gelten keine Service-Ziellevel.
+* _Expected IOPS_ wird nur für FabricPool angestrebt, wenn die Tiering-Richtlinie auf „keine“ gesetzt ist und sich keine Blöcke in der Cloud befinden. _Expected IOPS_ ist für Volumes bestimmt, die sich nicht in einer synchronen SnapMirror-Beziehung befinden.
+* Workload-I/O-Vorgänge müssen gemäß der Keystone Reihenfolge über alle implementierten Controller hinweg ausgeglichen werden.
+
+
+
+
+== Objekt-Storage
 
 *unterstütztes Protokoll*: S3
 
@@ -93,7 +100,7 @@ NOTE: Die Latenz umfasst keine Overhead-Köpfe, die im Zusammenhang mit dem Date
 
 
 
-=== Cloud-Storage
+== Cloud-Storage
 
 *Unterstütztes Protokoll*: NFS, CIFS, iSCSI und S3 (nur AWS und Azure)
 

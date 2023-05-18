@@ -44,8 +44,8 @@ NOTE: Der Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collect
 
 ====
 . Schalten Sie das Feld **KS-Collector mit System** ein.
-. Klicken Sie Auf **Speichern**.image:tui-1.png[""]
-. Stellen Sie sicher, dass sich Keystone Collector in einem gesunden Zustand befindet, indem Sie zum Hauptbildschirm der TUI zurückkehren und die **Service Status**-Informationen überprüfen. Das System sollte zeigen, dass die Dienste in einem **insgesamt: Gesund** Status sind.image:tui-2.png[""]
+. Klicken Sie Auf **Speichern**.image:tui-1.png["tui-Bildschirm"]
+. Stellen Sie sicher, dass sich Keystone Collector in einem gesunden Zustand befindet, indem Sie zum Hauptbildschirm der TUI zurückkehren und die **Service Status**-Informationen überprüfen. Das System sollte zeigen, dass die Dienste in einem **insgesamt: Gesund** Status sind.image:tui-2.png["tui-Bildschirm"]
 . Beenden Sie die Keystone Collector Management TUI, indem Sie auf dem Home-Bildschirm die Option **Exit to Shell** auswählen.
 
 
@@ -59,7 +59,7 @@ Die Collector-Software unterstützt die Verwendung eines HTTP-Proxys für die Ko
 . Starten Sie das Keystone Collector Management TUI Utility neu, falls es bereits geschlossen wurde:
 `$ keystone-collector-tui`
 . Schalten Sie das Feld **HTTP Proxy** ein und fügen Sie die Details für den HTTP Proxy-Server, den Port und die Anmeldeinformationen hinzu, falls eine Authentifizierung erforderlich ist.
-. Klicken Sie Auf **Speichern**.image:tui-3.png[""]
+. Klicken Sie Auf **Speichern**.image:tui-3.png["tui-Bildschirm"]
 
 
 
@@ -70,6 +70,6 @@ Keystone Collector sammelt Informationen zu eingeschränkter Konfiguration, Stat
 
 Die Begrenzung der Erfassung bestimmter Kundendaten ist eine konfigurierbare Option auf dem Keystone Collector TUI-Bildschirm. Diese Option, *Private Daten entfernen*, ist standardmäßig aktiviert.
 
-image:tui-4.png[""]
+image:tui-4.png["tui-Bildschirm"]
 
 Informationen zu den Elementen, die zur Beschränkung des Zugriffs auf private Daten in ONTAP und StorageGRID entfernt wurden, finden Sie unter link:../installation/data-collection.html["Liste der bei der Beschränkung des Zugriffs auf private Daten entfernten Elemente"].

@@ -14,10 +14,9 @@ summary: Voraussetzungen für die Installation von Keystone Collector auf VMware
 
 
 [role="lead"]
-Für die Installation von Keystone Collector auf Ihrem VMware vSphere System sind einige Konfigurationen für die virtuelle Infrastruktur erforderlich.
+Für die Installation von Keystone Collector auf Ihren VMware vSphere-Systemen sind einige Konfigurationen der virtuellen Infrastruktur erforderlich.
 
-Die virtuelle Maschine des Keystone Collector-Servers sollte folgende Eigenschaften aufweisen:
-
+.Voraussetzungen für die Keystone Collector-Server-VM:
 * Betriebssystem: VMware vCenter Server und ESXi 6.5 oder höher
 * Kern: 4 CPUs
 * RAM: 12 GB RAM
@@ -28,13 +27,13 @@ Die virtuelle Maschine des Keystone Collector-Servers sollte folgende Eigenschaf
 
 == Andere Anforderungen
 
-Halten Sie die folgenden allgemeinen Anforderungen fest:
+Stellen Sie sicher, dass die folgenden allgemeinen Anforderungen erfüllt sind:
 
 
 
 === Netzwerkanforderungen
 
-In der folgenden Tabelle werden die Netzwerkanforderungen von Keystone Collector beschrieben.
+Die Netzwerkanforderungen von Keystone Collector sind in der folgenden Tabelle aufgeführt.
 
 
 NOTE: Keystone Collector erfordert Internetverbindung. Sie können Internet-Konnektivität durch direktes Routing über Standard-Gateway (über NAT) oder über HTTP Proxy bereitstellen. Beide Varianten werden hier beschrieben.
@@ -207,30 +206,30 @@ Keystone Collector benötigt Zugriff auf die folgenden Internet-Hosts:
 
 
  a| 
-https://keystone.netapp.com[]
+https://[]
  a| 
 Keystone Collector Software-Updates und Nutzungsberichte
 
 
 
  a| 
-https://support.netapp.com[]
+https://[]
  a| 
 NetApp HQ für Rechnungsinformationen und AutoSupport-Lieferungen
 
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+https://[]
+https://[]
  a| 
 OS-Updates für Keystone Collector (nur OVA-Bereitstellungen)
 
 
 
  a| 
-http://repo.mysql.com[]
+https://[]
  a| 
-Herunterladen und Aktualisieren der mysql-Abhängigkeiten (nur für Linux-Bereitstellungen)
+MySQL-Abhängigkeiten herunterladen und aktualisieren (nur für Linux-Implementierungen)
 
 |===

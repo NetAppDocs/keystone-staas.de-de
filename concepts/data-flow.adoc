@@ -22,7 +22,7 @@ Die Daten in Keystone STaaS-Systemen laufen über Keystone Collector und das zug
 
 Keystone Collector initiiert REST-API-Aufrufe an die Storage Controller und erhält regelmäßig Nutzungsdetails der Controller, wie in diesem Flussdiagramm dargestellt:
 
-image:collector-data-flow.png[""]
+image:collector-data-flow.png["Zeigt den Datenfluss innerhalb der Kollektorkomponenten an"]
 
 .Legende
 . NetApp Collector initiiert eine HTTPS-Session für das Active-IQ Cloud-Portal.
@@ -37,7 +37,7 @@ image:collector-data-flow.png[""]
 
 Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines der wichtigsten Funktionen von Keystone Service. Für Monitoring und Berichterstellung verwendet Keystone eine AIOPs Lösung, die Remote-Zugriff auf das Kundennetzwerk benötigt. Im folgenden Bild wird beschrieben, wie der Remote-Zugriff auf den Kundenstandort durch das AIOPs-Lösungstool gesichert wird.
 
-image:monitoring-flow.png[""]
+image:monitoring-flow.png["Datenfluss"]
 
 .Legende
 . Das Gateway der AIOPs-Lösung initiiert eine TLS-Sitzung zum ITS-Cloud-Portal.

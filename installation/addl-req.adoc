@@ -24,22 +24,22 @@ Führen Sie für die Installation von Keystone Collector in ONTAP die folgenden 
 
 . Stellen Sie sicher, dass ein Active IQ Unified Manager-Server (Unified Manager) mit Unified Manager 9.7 oder höher konfiguriert ist. Informationen zum Installieren von Unified Manager finden Sie unter den folgenden Links:
 +
-** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["Installation von Unified Manager auf VMware vSphere Systemen"^]
-** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["Installation von Unified Manager auf Linux Systemen"^]
+** https://["Installation von Unified Manager auf VMware vSphere Systemen"^]
+** https://["Installation von Unified Manager auf Linux Systemen"^]
 
 
-. Stellen Sie sicher, dass das ONTAP-Cluster zu Unified Manager hinzugefügt wurde. Informationen zum Hinzufügen von Clustern finden Sie unter https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_clusters.html["Hinzufügen von Clustern"^].
-. Erstellen Sie Unified Manager Benutzer mit spezifischen Rollen für die Erfassung von Nutzungs- und Performance-Daten. Führen Sie diese Schritte aus. Informationen zu Benutzerrollen finden Sie unter https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_definitions_of_user_roles.html["Definitionen von Benutzerrollen"^].
+. Stellen Sie sicher, dass das ONTAP-Cluster zu Unified Manager hinzugefügt wurde. Informationen zum Hinzufügen von Clustern finden Sie unter https://["Hinzufügen von Clustern"^].
+. Erstellen Sie Unified Manager Benutzer mit spezifischen Rollen für die Erfassung von Nutzungs- und Performance-Daten. Führen Sie diese Schritte aus. Informationen zu Benutzerrollen finden Sie unter https://["Definitionen von Benutzerrollen"^].
 +
-.. Melden Sie sich bei der Unified Manager-Web-Benutzeroberfläche mit den Standardanmeldeinformationen des Anwendungsadministrators an, die während der Installation generiert werden. Siehe https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["Zugriff auf die Web-Benutzeroberfläche von Unified Manager"^].
-.. Erstellen Sie mit ein Servicekonto für Keystone Collector `Operator` Benutzerrolle. Die Keystone Collector Service-APIs verwenden dieses Servicekonto für die Kommunikation mit Unified Manager und die Erfassung von Nutzungsdaten. Siehe https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["Benutzer hinzufügen"^].
-.. Erstellen Sie ein `Database` Benutzerkonto, mit `Report Schema` Rolle: Dieser Benutzer ist für die Erfassung von Leistungsdaten erforderlich. Siehe https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["Erstellen eines Datenbankbenutzers"^].
+.. Melden Sie sich bei der Unified Manager-Web-Benutzeroberfläche mit den Standardanmeldeinformationen des Anwendungsadministrators an, die während der Installation generiert werden. Siehe https://["Zugriff auf die Web-Benutzeroberfläche von Unified Manager"^].
+.. Erstellen Sie mit ein Servicekonto für Keystone Collector `Operator` Benutzerrolle. Die Keystone Collector Service-APIs verwenden dieses Servicekonto für die Kommunikation mit Unified Manager und die Erfassung von Nutzungsdaten. Siehe https://["Benutzer hinzufügen"^].
+.. Erstellen Sie ein `Database` Benutzerkonto, mit `Report Schema` Rolle: Dieser Benutzer ist für die Erfassung von Leistungsdaten erforderlich. Siehe https://["Erstellen eines Datenbankbenutzers"^].
 
 
 . Aktivieren Sie API Gateway in Unified Manager. Keystone Collector verwendet die API-Gateway-Funktion zur Kommunikation mit ONTAP-Clustern. Sie können das API-Gateway entweder über die Web-UI oder durch Ausführen einiger Befehle über die Unified Manager-CLI aktivieren.
 +
 .Web-UI
-Um das API-Gateway über die Web-Benutzeroberfläche von Unified Manager zu aktivieren, melden Sie sich bei der Web-UI von Unified Manager an und aktivieren Sie das API-Gateway. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_api_gateway.html["Aktivieren des API-Gateways"^].
+Um das API-Gateway über die Web-Benutzeroberfläche von Unified Manager zu aktivieren, melden Sie sich bei der Web-UI von Unified Manager an und aktivieren Sie das API-Gateway. Weitere Informationen finden Sie unter https://["Aktivieren des API-Gateways"^].
 
 +
 .CLI
@@ -47,15 +47,15 @@ Um API Gateway über die Unified Manager CLI zu aktivieren, gehen Sie wie folgt 
 
 +
 .. Starten Sie auf dem Unified Manager-Server eine SSH-Session und melden Sie sich bei der Unified Manager CLI an.
-`um cli login -u _<umadmin>_`Informationen zu CLI-Befehlen finden Sie unter https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_supported_unified_manager_cli_commands.html["Unterstützte CLI-Befehle von Unified Manager"^].
+`um cli login -u _<umadmin>_`Informationen zu CLI-Befehlen finden Sie unter https://["Unterstützte CLI-Befehle von Unified Manager"^].
 .. Überprüfen Sie, ob das API-Gateway bereits aktiviert ist.
 `um option list api.gateway.enabled`A `true` Wert gibt an, dass das API-Gateway aktiviert ist.
 .. Wenn der zurückgegebene Wert ist `false`, Führen Sie diesen Befehl aus:
 `um option set api.gateway.enabled=true`
 .. Starten Sie den Unified Manager Server neu:
 +
-*** Linux https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/task_restart_unified_manager.html["Neustart Von Unified Manager"^].
-*** VMware vSphere: https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/task_restart_unified_manager_virtual_machine.html["Starten Sie die Virtual Machine von Unified Manager neu"^].
+*** Linux https://["Neustart Von Unified Manager"^].
+*** VMware vSphere: https://["Starten Sie die Virtual Machine von Unified Manager neu"^].
 
 
 
@@ -71,8 +71,8 @@ Die folgenden Konfigurationen sind für die Installation von Keystone Collector 
 * Für die Erfassung von Nutzungsdaten sollte ein lokales StorageGRID-Administratorbenutzerkonto erstellt werden. Dieses Servicekonto wird vom Keystone Collector Service für die Kommunikation mit StorageGRID über Administrator-Node-APIs verwendet.
 +
 .Schritte
-.. Melden Sie sich beim Grid Manager an. Siehe https://docs.netapp.com/us-en/storagegrid-116/admin/signing-in-to-grid-manager.html["Melden Sie sich beim Grid Manager an"^].
-.. Erstellen Sie eine lokale Administratorgruppe mit `Access mode: Read-only`. Siehe https://docs.netapp.com/us-en/storagegrid-116/admin/managing-admin-groups.html#create-an-admin-group["Erstellen einer Admin-Gruppe"^].
+.. Melden Sie sich beim Grid Manager an. Siehe https://["Melden Sie sich beim Grid Manager an"^].
+.. Erstellen Sie eine lokale Administratorgruppe mit `Access mode: Read-only`. Siehe https://["Erstellen einer Admin-Gruppe"^].
 .. Fügen Sie die folgenden Berechtigungen hinzu:
 +
 *** Mandantenkonten
@@ -80,7 +80,7 @@ Die folgenden Konfigurationen sind für die Installation von Keystone Collector 
 *** Abfrage Von Kennzahlen
 
 
-.. Erstellen Sie einen Keystone Service-Account-Benutzer und verknüpfen Sie ihn mit der Administratorgruppe. Siehe https://docs.netapp.com/us-en/storagegrid-116/admin/managing-users.html["Benutzer managen"].
+.. Erstellen Sie einen Keystone Service-Account-Benutzer und verknüpfen Sie ihn mit der Administratorgruppe. Siehe https://["Benutzer managen"].
 
 
 

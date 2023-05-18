@@ -36,4 +36,4 @@ Wenn Sie diesen Service erworben haben, beachten Sie Folgendes:
 
 Die SnapLock-Technologie aktiviert die NRNVC-Funktion, indem das Laufwerk nach dem im Volume festgelegten Ablaufdatum unbrauchbar wird. Um die SnapLock-Technologie auf Ihren Volumes nutzen zu können, müssen Sie NRNVC abonnieren. Dies gilt nur für File- und Block-Services.
 
-Informationen zur SnapLock-Technologie finden Sie unter https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["Was ist SnapLock"].
+Informationen zur SnapLock-Technologie finden Sie unter https://["Was ist SnapLock"].

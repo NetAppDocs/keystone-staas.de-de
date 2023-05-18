@@ -40,7 +40,7 @@ Installation und zugehörige Aufgaben
 * Implementieren
 * Onboarding
 
-| image:check.png[""] | Keine 
+| image:check.png["Aktivieren Sie das Kontrollkästchen"] | Keine 
 
 
  a| 
@@ -51,7 +51,7 @@ Administration und Monitoring
 * Ausführung administrativer Aufgaben
 * Alarm
 
-| Keine | image:check.png[""] 
+| Keine | image:check.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
  a| 
@@ -61,7 +61,7 @@ Betrieb und Optimierung
 * Performance-Management
 * SLA-Management
 
-| Keine | image:check.png[""] 
+| Keine | image:check.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
  a| 
@@ -72,6 +72,6 @@ Unterstützung
 * Softwaresupport
 * Upgrades und Patches
 
-| image:check.png[""] | Keine 
+| image:check.png["Aktivieren Sie das Kontrollkästchen"] | Keine 
 |===
 Weitere Informationen zur Bereitstellung finden Sie unter link:../concepts/infra.html["Keystone Infrastruktur"] Und link:..//concepts/components.html["Komponenten für die Implementierung"].

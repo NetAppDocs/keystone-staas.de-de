@@ -14,33 +14,59 @@ summary: Quality of Service in Keystone
 
 
 [role="lead"]
-Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS können bestimmte Workloads wie das Booten mehrerer Systeme über einen Zeitraum ganze Ressourcen beanspruchen und andere Workloads beeinträchtigen. Informationen zur QoS finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"^].
-
-Durch die Verwendung von QoS wird sichergestellt, dass Applikationen stets eine konsistente Performance erhalten. NetApp ONTAP definiert zwei QoS-Parameter: Decken- https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-ceilings-qos-max["QoS max"^], Und Durchsatz https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-throughput-floors-qos-min["QoS-Min"^]. QoS max steht für die maximale Anzahl an IOPS oder MB/s oder IOPS und MB/s, die ein Workload erreichen kann. QoS Min hingegen garantiert, dass der Durchsatz für einen Workload nicht unter einer bestimmten Anzahl von IOPS, MB/s, IOPS und MB/s liegt.
+Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS verbrauchen bestimmte Workloads, beispielsweise beim Booten mehrerer Systeme, die meisten oder alle Ressourcen eines bestimmten Zeitraums und wirken sich auf andere Workloads aus. Informationen zur QoS finden Sie unter https://["Durchsatz garantieren mit QoS-Übersicht"^].
 
 
 
 == Anpassungsfähige QoS
 
-Adaptive QoS (AQoS) wird für Keystone-Services verwendet, um das Verhältnis von IOPS zu TB/GB zu erhalten, wenn die QoS-Richtlinie automatisch angewendet wird. Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Allgemeines zur anpassungsfähigen QoS"^].
+Adaptive QoS (AQoS) wird von Keystone Services verwendet, um das IOPS-/tib-Verhältnis basierend auf der Volume-Größe dynamisch beizubehalten. Informationen zu AQoS-Richtlinien finden Sie unter https://["Allgemeines zur anpassungsfähigen QoS"^].
 
 Keystone stellt Ihnen AQoS-Richtlinien zur Verfügung, die Sie einrichten können, sobald Ihr Cluster in Betrieb ist. Sie sollten sicherstellen, dass alle Ihre Volumes mit den richtigen AQoS-Richtlinien verknüpft sind, die bereits erstellt und in Ihrem System verfügbar sind.
 
+Ein ONTAP-Volume ist nicht konform, wenn keine AQoS-Richtlinie angewendet wird. Ein Volume ohne QoS-Richtlinie stellt als letztes in der Prioritätenliste jedes System verfügbare Input/Output-Operationen zur Verfügung. Wenn jedoch Input/Output-Vorgänge verfügbar sind, könnte das Volume alle verfügbaren I/O-Vorgänge verbrauchen.
 
-NOTE: Wenn Sie Ihre AQoS-Richtlinien nicht korrekt auf Ihre Volumes angewendet haben, werden diese Volumes auf dem höchsten Service-Level gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.
 
+NOTE: Wenn Sie keine AQoS-Richtlinien auf Ihre Volumes angewendet haben, werden diese Volumes auf dem höchsten Service-Level gemäß Ihrem Abonnement gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.
+
+
+
+== Adaptive QoS-Einstellungen
+
+Die AQoS-Einstellungen (Adaptive QoS) variieren je nach Service-Level.
+
+|===
+
+
+| *Name der Richtlinie* | *Extreme* | *Premium* | *Leistung* | *Standard* | *Wert* 
+
+
+| *Erwartete IOPS* | 6,144 | 2,048 | 1,024 | 256 | 64 
+
+
+| *Erwartete IOPS-Zuweisung* 5+| Zugewiesener Speicherplatz 
+
+
+| *Spitzen-IOPS* | 12,288 | 4,096 | 2,048 | 512 | 128 
+
+
+| *Maximale IOPS-Zuweisung* 5+| Genutzter Speicherplatz 
+
+
+| *Blockgröße* 5+| 32K 
+|===
 
 
 == Konfiguration der adaptiven QoS-Richtliniengruppe
 
-Sie können AQoS-Richtlinien (Adaptive QoS) so konfigurieren, dass eine Durchsatzobergrenze oder -Größe automatisch von der Größe des Volumes bis zur Höhe skaliert werden kann. Beim Konfigurieren einer Richtlinie sollten Sie Folgendes beachten:
+Sie können AQoS-Richtlinien (Adaptive QoS) so konfigurieren, dass eine Durchsatzobergrenze oder -Größe automatisch von der Größe des Volumes bis zur Höhe skaliert werden kann. Nicht alle Keystone Service-Level sind mit den standardmäßigen QoS-Richtlinien von ONTAP abgestimmt. Sie können für diese benutzerdefinierte QoS-Richtlinien erstellen. Beim Konfigurieren einer Richtlinie sollten Sie Folgendes beachten:
 
 * *Policy Group Name*: Der Name der AQoS Policy Group. Beispiel: `Keystone_extreme`.
 * *Vserver*: Der Name des Vservers oder der Storage VM (Storage Virtual Machine).
-* *Erwartete IOPS*: Die Anzahl der IOPS/tib, die ONTAP bietet als Minimum, solange es Performance-Garantie gibt.
-* *IOPS-Spitzenwert*: Die maximale Anzahl an IOPS/tib, die einem Volume zur Verfügung stehen wird, bevor die Performance begrenzt ist.
-* *Erwartete IOPS-Zuweisung*: Dieses Feld steuert, ob die erwarteten für das Volume verfügbaren IOPS auf der zugewiesenen oder genutzten Größe des Volumes basieren. In Keystone basiert die Zuordnung des Speicherplatzes.
-* *IOPS-Spitzenzuweisung*: Dieses Feld steuert, ob der für das Volume verfügbare IOPS-Spitzenwert auf der zugewiesenen oder genutzten Größe des Volumes basiert. In Keystone basiert dies auf dem verwendeten Speicherplatz.
+* *Erwartete IOPS*: Mindestzahl an IOPS pro zugewiesenem tib pro Volume, die das System zu liefern versucht, wenn genügend System-IOPS verfügbar sind.
+* *Peak IOPS*: Die maximale Anzahl an IOPS pro verwendetes tib und Volume, das das System dem Volume ermöglichen kann, bevor es die IOPS durch Injektion von Latenz drosselt.
+* *Erwartete IOPS-Zuweisung*: Dieser Parameter steuert, ob die erwarteten für das Volume verfügbaren IOPS auf der zugewiesenen oder genutzten Größe des Volumes basieren. In Keystone basiert die Zuordnung des Speicherplatzes.
+* *Spitzenwerte-IOPS-Zuweisung*: Dieser Parameter steuert, ob die für das Volume verfügbaren Spitzenwerte-IOPS auf der zugewiesenen oder genutzten Größe des Volumes basieren. In Keystone basiert dies auf dem verwendeten Speicherplatz.
 * *Absolute IOPS-Minimum*: Die niedrigste Anzahl der erwarteten IOPS, die auf ein Volume angewendet wird, wenn die Volume-Größe sehr klein ist und ansonsten eine inakzeptable Anzahl von IOPS zur Folge hätte. Dieser Wert liegt standardmäßig bei 1,000 für `Extreme`, 500 für `Premium`, Und 250 für `Performance`, Und 75 für `Standard` Und `Value` Service-Leveln.
 +
 
@@ -48,7 +74,7 @@ NOTE: Dies ist keine IOPS-Dichte (z. B. 75 IOPS/tib), sondern eine absolute Mind
 
 
 
-Informationen zur I/O-Dichte finden Sie unter link:../concepts/metrics.html["Metriken und Definitionen für Keystone Services"]. Weitere Informationen zu AQoS-Richtliniengruppen finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["Verwendung von adaptiven QoS-Richtliniengruppen"^].
+Informationen zur I/O-Dichte finden Sie unter link:../concepts/metrics.html["Metriken und Definitionen für Keystone Services"]. Weitere Informationen zu AQoS-Richtliniengruppen finden Sie unter https://["Verwendung von adaptiven QoS-Richtliniengruppen"^].
 
 
 

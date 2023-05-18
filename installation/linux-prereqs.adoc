@@ -16,11 +16,10 @@ summary: Voraussetzungen für die Installation von Keystone Collector auf Linux-
 [role="lead"]
 Für die Installation von Keystone Collector auf Linux-Systemen sind einige Konfigurationen erforderlich.
 
-Für den Linux-Server sind folgende Konfigurationen erforderlich:
-
+.Voraussetzungen für den Linux-Server:
 * Betriebssystem: CentOS 7 oder Red hat Enterprise Linux 8.6 oder höher
 * Synchronisierungszeit synchronisiert
-* Zugriff auf die Standard-Software-Repositorys für Linux
+* Zugriff auf die standardmäßigen Linux-Software-Repositorys
 
 
 Der gleiche Server sollte auch die folgenden Drittanbieter-Pakete haben:
@@ -31,8 +30,7 @@ Der gleiche Server sollte auch die folgenden Drittanbieter-Pakete haben:
 * python 3 (3.6.8 bis 3.9.13)
 
 
-Die folgenden Konfigurationen sind für die virtuelle Maschine (SVM) des Keystone Collector Servers erforderlich:
-
+.Voraussetzungen für die Keystone Collector-Server-VM:
 * Core: 2 CPUs
 * RAM: 4 GB RAM
 * Festplattenspeicher: 50 GB vDisk
@@ -42,13 +40,13 @@ Die folgenden Konfigurationen sind für die virtuelle Maschine (SVM) des Keyston
 
 == Andere Anforderungen
 
-Halten Sie die folgenden allgemeinen Anforderungen fest:
+Stellen Sie sicher, dass die folgenden allgemeinen Anforderungen erfüllt sind:
 
 
 
 === Netzwerkanforderungen
 
-In der folgenden Tabelle werden die Netzwerkanforderungen von Keystone Collector beschrieben.
+Die Netzwerkanforderungen von Keystone Collector sind in der folgenden Tabelle aufgeführt.
 
 
 NOTE: Keystone Collector erfordert Internetverbindung. Sie können Internet-Konnektivität durch direktes Routing über Standard-Gateway (über NAT) oder über HTTP Proxy bereitstellen. Beide Varianten werden hier beschrieben.
@@ -221,30 +219,30 @@ Keystone Collector benötigt Zugriff auf die folgenden Internet-Hosts:
 
 
  a| 
-https://keystone.netapp.com[]
+https://[]
  a| 
 Keystone Collector Software-Updates und Nutzungsberichte
 
 
 
  a| 
-https://support.netapp.com[]
+https://[]
  a| 
 NetApp HQ für Rechnungsinformationen und AutoSupport-Lieferungen
 
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+https://[]
+https://[]
  a| 
 OS-Updates für Keystone Collector (nur OVA-Bereitstellungen)
 
 
 
  a| 
-http://repo.mysql.com[]
+https://[]
  a| 
-Herunterladen und Aktualisieren der mysql-Abhängigkeiten (nur für Linux-Bereitstellungen)
+MySQL-Abhängigkeiten herunterladen und aktualisieren (nur für Linux-Implementierungen)
 
 |===

@@ -111,7 +111,7 @@ Beachten Sie die folgenden Klauseln für Kapazitätsanpassungen:
 
 Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen sollten während der Laufzeit >= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.
 
-image:capacity-reduction.png[""]
+image:capacity-reduction.png["Bild zeigt Kapazitätsreduzierung an"]
 
 
 
@@ -132,4 +132,4 @@ Anforderungen und Bedingungen auf Abonnementebene:
 
 Ein Beispiel für eine vierteljährliche Neuzuweisung von Ausgaben ist im folgenden Bild dargestellt:
 
-image:spend-alloc.png[""]
+image:spend-alloc.png["Wie die Ausgaben verteilt werden"]

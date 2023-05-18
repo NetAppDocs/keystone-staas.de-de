@@ -23,4 +23,4 @@ Keystone Collector ist eine Nutzungsanschaffungskosten der Keystone Abrechnungsp
 
 Dieses Architekturdiagramm zeigt die einzelnen Komponenten und deren Konnektivität in einer typischen Keystone-Umgebung.
 
-image:collector-arch.png[""]
+image:collector-arch.png["Collector-Architektur"]

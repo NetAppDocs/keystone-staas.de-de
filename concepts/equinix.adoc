@@ -22,7 +22,7 @@ In diesem Service:
 
 * Equinix bietet Platz, Strom, Kühlung, Netzwerk und Rechnung Und Storage auf monatlicher Basis.
 * Für bestimmte Keystone Sales Motions wird Unterstützung geboten.
-* Die Services werden in 21 Rechenzentren in 11 Ländern unterstützt.
+* Die Services werden in Rechenzentren in 11 Ländern unterstützt.
 
 
 Equinix verfügt über die Datacenter an folgenden Standorten:
@@ -67,7 +67,7 @@ London
 
 
  a| 
-Verlorene Angeles
+Los Angeles
 | USA 
 
 

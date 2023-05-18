@@ -48,6 +48,6 @@ Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und
 * Keystone Data Collector: Keystone Collector bietet Keystone Kunden Abrechnungsservices. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst Daten von ONTAP und StorageGRID Controllern in einem Intervall von fünf Minuten. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Active IQ Data Lake verarbeitet die Abrechnungsdaten und sendet sie zur Abrechnung an Zuora.
 
 
-image:mgmt-stack.png[""]
+image:mgmt-stack.png["Management-Stack"]
 
 Digitaler Berater (Digital Advisor) von Active IQ ermöglicht Ihnen die Anmeldung und die Anzeige der Abonnement- und Nutzungsdetails für Ihre Keystone Abonnements. Weitere Informationen zu Keystone Berichten im Digital Advisor Dashboard finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Digital Advisor"].
