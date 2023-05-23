@@ -19,7 +19,7 @@ summary: Keystone-Abonnementberichte und -Diagramme
 
 NOTE: Die hier verfügbaren Informationen gelten sowohl für ONTAP als auch für StorageGRID. Ausnahmen wurden in den entsprechenden Abschnitten erwähnt.
 
-Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
+Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
 
 So zeigen Sie die Details an:
 
@@ -75,6 +75,10 @@ Auf der Registerkarte *Subscription Time Series* werden historische Daten Ihrer 
 . Klicken Sie auf die Registerkarte *Subscription Time Series*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
++
+
+NOTE: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
+
 . Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme bewegen, um die Nutzungszusammensetzung in Bezug auf die Werte „Übersetzen“, „Verbrauch“, „Burst“ und „oberhalb der Burst-Limit-Daten“ an diesem Punkt anzuzeigen.
 
 

@@ -23,7 +23,7 @@ Die Bereitstellung von Keystone Collector auf VMware vSphere Systemen umfasst da
 Führen Sie hierzu folgende Schritte aus:
 
 .Schritte
-. Laden Sie die OVA-Datei von herunter https://[] Auf Ihrem VMware vSphere System speichern.
+. Laden Sie die OVA-Datei von herunter https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova[] Auf Ihrem VMware vSphere System speichern.
 . Navigieren Sie auf Ihrem VMware vSphere System zur Ansicht *VMs und Vorlagen*.
 . Klicken Sie mit der rechten Maustaste auf den gewünschten Ordner für die virtuelle Maschine (VM) (oder das Rechenzentrum, falls keine VM-Ordner verwendet werden) und wählen Sie *OVF-Vorlage bereitstellen* aus.
 . Klicken Sie auf _Schritt 1_ des Assistenten * OVF-Vorlage bereitstellen* auf *Auswählen und OVF-Vorlage*, um das heruntergeladene auszuwählen `KeystoneCollector-latest.ova` Datei:
@@ -32,7 +32,7 @@ Führen Sie hierzu folgende Schritte aus:
 . Am _Schritt 4: Überprüfen Sie die Details_, überprüfen Sie die Richtigkeit und Authentizität der OVA-Datei. Der Produktname sollte als _NetApp Keystone Collector_ angezeigt werden.image:ova-deploy.png["ova-Benutzeroberfläche"]VCenter überprüft die Integrität der OVA-Dateiinhalte und stellt für die in der OVA-Datei enthaltenen Dateien einen gültigen Code-Signing Digest bereit. Die Echtheit des Codsignieren-Zertifikats wird jedoch nicht überprüft. Um die Integrität zu überprüfen, sollten Sie das vollständige Signieren-Digest-Zertifikat herunterladen und es mit dem öffentlichen Zertifikat von Keystone veröffentlicht überprüfen. Führen Sie hierzu folgende Schritte aus:
 +
 .. Klicken Sie auf den Link *Publisher*, um das vollständige Signieren-Digest-Zertifikat herunterzuladen.
-.. Laden Sie das öffentliche Zertifikat _Keystone Billing_ herunter: https://[].
+.. Laden Sie das öffentliche Zertifikat _Keystone Billing_ herunter: https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem[].
 .. Überprüfen Sie die Authentizität des OVA-Signaturzertifikats anhand des öffentlichen Zertifikats mithilfe von OpenSSL:
 `openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
 

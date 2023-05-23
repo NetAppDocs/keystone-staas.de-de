@@ -28,7 +28,7 @@ NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services u
 
 Das NetApp Global Services and Support Center (GSSC) Team unterstützt die Services hauptsächlich für NetApp Keystone Kunden. Mithilfe der folgenden Informationen können Sie sich an das Support-Team wenden.
 
-* Ansprechpartner für den weltweiten Service:https://[]
+* Ansprechpartner für den weltweiten Service:https://www.netapp.com/us/contact-us/support.aspx[]
 * Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie eine E-Mail an eine der folgenden Adressen: keystone.services@netapp.com keystone.escalations@netapp.com
 * NetApp nutzt eine AIOPs-Lösung, um proaktiv die NetApp Keystone Umgebung zu überwachen und eine Verbindung zur Fehlerbehebung herzustellen.
 
@@ -38,8 +38,8 @@ NOTE: In einem von Partnern betriebenen Modell werden die Service-Anfragen des M
 
 Weitere Informationen zu Keystone Services finden Sie unter:
 
-* NetApp Keystonehttps://["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* NetApp Produktdokumentationhttps://["https://docs.netapp.com"^]
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp Produktdokumentationhttps://docs.netapp.com["https://docs.netapp.com"^]
 
 
 
@@ -57,7 +57,7 @@ Der Keystone Success Manager (KSM) arbeitet eng mit Ihnen zusammen, um Ihre Keys
 
 Wenn Sie während des Onboarding Zugangsdaten für den Zugriff auf NetApp Keystone ServiceNow und die Verwendung von erhalten haben, können Sie über das Portal Serviceanfragen bei Problemen Ihrer Keystone Abonnements generieren:
 
-https://[]
+https://netappgssc.service-now.com/csm[]
 
 Stellen Sie sicher, dass Sie die Systemdetails, Protokolle und zugehörigen Informationen bereit haben, bevor Sie die Serviceanfrage senden. Wenn Sie eine Service-Anfrage stellen, erhält das GSSC Team das Support-Ticket und greift auf die Informationen zur Fehlerbehebung zu. Sie können Ihr ServiceNow-Ticket verfolgen, um den Status und die Lösung zu kennen.
 

@@ -18,7 +18,7 @@ Wenn Sie NetApp Keystone Services abonniert haben, können Sie Ihre Nutzungsberi
 
 Digital Advisor ermöglicht Ihnen, Details und Informationen zu Storage-als-Service (STaaS) und zur eigenen NetApp Infrastruktur anzuzeigen. Digital Advisor bietet eine zentrale Konsole mit einer Übersicht über Ihre Abonnements, Service-Level und die Kapazitätsauslastung sowie der Möglichkeit, detaillierte Berichte zu erstellen.
 
-Weitere Informationen über das Widget „Digital Advisor Dashboard“ für Keystone finden Sie unter https://["Digital Advisor Dokumentation"^].
+Weitere Informationen über das Widget „Digital Advisor Dashboard“ für Keystone finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor Dokumentation"^].
 
 Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"].
 
