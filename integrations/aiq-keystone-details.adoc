@@ -44,6 +44,7 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 
 * *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
 * *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
+* *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp nach der bereitgestellten oder der logischen Nutzung für eine der beiden abrechnet `v1` Oder `v2`. Weitere Informationen zu Keystone Abonnements Version 1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Dokumentation für NetApp Keystone"].
 * *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
 * *Enddatum*: Das Enddatum des Abonnements. Ein leeres Datum zeigt an, dass das Abonnement kein Enddatum hat und automatisch erneuert wird. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.
@@ -54,7 +55,7 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.
 
 
-NOTE: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+TIP: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
 
 Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
 
@@ -133,7 +134,11 @@ NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene
 
 Auf der Registerkarte *Systemdetails* können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.
 
-.<strong>-</strong>
+
+
+=== Details zum ONTAP Volume
+
+.Klicken Sie hier
 [%collapsible]
 ====
 Für ONTAP werden auf der Registerkarte „Systemdetails“ Informationen wie Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und Service-Level der Volumes in Ihrer Storage-Umgebung angezeigt, die durch das Keystone Abonnement gemanagt werden.
@@ -153,7 +158,11 @@ NOTE: Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die 
 image:aiq-ks-sysdtls.png["Registerkarte „Systemdetails“"]
 
 ====
-.<strong>-UmeNodes und </strong>
+
+
+=== StorageGRID Nodes und Verbrauchsdetails
+
+.Klicken Sie hier
 [%collapsible]
 ====
 Bei StorageGRID wird auf dieser Registerkarte die physische Nutzung der Nodes in der Objekt-Storage-Umgebung angezeigt.
@@ -193,6 +202,10 @@ Es gibt zwei Arten von Warnmeldungen:
 
 * *Information*: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.
 * *Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Klicken Sie auf den Link in der Warnmeldung, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Systemdetails* anzuzeigen.
++
+
+NOTE: Wenn Sie einen einzelnen Service-Level- oder Tarifplan abonniert haben, können Sie die Warnmeldung für nicht konforme Volumes nicht sehen.
+
 +
 Informationen zu AQoS-Richtlinien finden Sie unter link:../concepts/qos.html["Anpassungsfähige QoS"].
 

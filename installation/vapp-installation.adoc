@@ -23,19 +23,41 @@ Die Bereitstellung von Keystone Collector auf VMware vSphere Systemen umfasst da
 Führen Sie hierzu folgende Schritte aus:
 
 .Schritte
-. Laden Sie die OVA-Datei von herunter https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova[] Auf Ihrem VMware vSphere System speichern.
+. Laden Sie die OVA-Datei von herunter https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova["Dieser Link"^] Auf Ihrem VMware vSphere System speichern.
 . Navigieren Sie auf Ihrem VMware vSphere System zur Ansicht *VMs und Vorlagen*.
 . Klicken Sie mit der rechten Maustaste auf den gewünschten Ordner für die virtuelle Maschine (VM) (oder das Rechenzentrum, falls keine VM-Ordner verwendet werden) und wählen Sie *OVF-Vorlage bereitstellen* aus.
 . Klicken Sie auf _Schritt 1_ des Assistenten * OVF-Vorlage bereitstellen* auf *Auswählen und OVF-Vorlage*, um das heruntergeladene auszuwählen `KeystoneCollector-latest.ova` Datei:
 . Geben Sie unter _Schritt 2_ den VM-Namen an und wählen Sie den VM-Ordner aus.
 . Geben Sie in _Schritt 3_ die erforderliche Computing-Ressource an, die zur Ausführung der VM erforderlich ist.
-. Am _Schritt 4: Überprüfen Sie die Details_, überprüfen Sie die Richtigkeit und Authentizität der OVA-Datei. Der Produktname sollte als _NetApp Keystone Collector_ angezeigt werden.image:ova-deploy.png["ova-Benutzeroberfläche"]VCenter überprüft die Integrität der OVA-Dateiinhalte und stellt für die in der OVA-Datei enthaltenen Dateien einen gültigen Code-Signing Digest bereit. Die Echtheit des Codsignieren-Zertifikats wird jedoch nicht überprüft. Um die Integrität zu überprüfen, sollten Sie das vollständige Signieren-Digest-Zertifikat herunterladen und es mit dem öffentlichen Zertifikat von Keystone veröffentlicht überprüfen. Führen Sie hierzu folgende Schritte aus:
+. Am _Schritt 4: Überprüfen Sie die Details_, überprüfen Sie die Richtigkeit und Authentizität der OVA-Datei.
+VCenter-Versionen vor 7.0u2 können die Authentizität des Codesignaturzertifikats nicht automatisch überprüfen. VCenter 7.0u2 und höher können die Überprüfungen durchführen, dafür sollte jedoch die Signaturzertifikatberechtigung zu vCenter hinzugefügt werden. Folgen Sie diesen Anweisungen für Ihre Version von vCenter:
 +
+.VCenter 7.0u1 und früher: Klicken Sie hier
+[%collapsible]
+====
+VCenter überprüft die Integrität der OVA-Dateiinhalte und stellt für die in der OVA-Datei enthaltenen Dateien einen gültigen Code-Signing Digest bereit. Die Echtheit des Codsignieren-Zertifikats wird jedoch nicht überprüft. Um die Integrität zu überprüfen, sollten Sie das vollständige Signieren-Digest-Zertifikat herunterladen und es mit dem öffentlichen Zertifikat von Keystone veröffentlicht überprüfen.
+
 .. Klicken Sie auf den Link *Publisher*, um das vollständige Signieren-Digest-Zertifikat herunterzuladen.
-.. Laden Sie das öffentliche Zertifikat _Keystone Billing_ herunter: https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem[].
+.. Laden Sie das öffentliche _Keystone Billing_-Zertifikat von herunter https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem["Dieser Link"^].
 .. Überprüfen Sie die Authentizität des OVA-Signaturzertifikats anhand des öffentlichen Zertifikats mithilfe von OpenSSL:
 `openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
 
+
+====
++
+.VCenter 7.0u2 und höher: Klicken Sie hier
+[%collapsible]
+====
+7.0u2 und neuere Versionen von vCenter können die Integrität des OVA-Dateiinhalts und die Authentizität des Codesignaturzertifikats überprüfen, wenn ein gültiger Codesignaturdigest bereitgestellt wird. Der vCenter Root-Vertrauensspeicher enthält nur VMware-Zertifikate. NetApp verwendet Entrust als Zertifizierungsstelle, und diese Zertifikate müssen zum vCenter Trust Store hinzugefügt werden.
+
+.. Laden Sie das Zertifikat für die Codesignaturierungsstelle von Entrust herunter https://web.entrust.com/subca-certificates/OVCS2-CSBR1-crosscert.cer["Hier"^].
+.. Befolgen Sie die Schritte unter `Resolution` Abschnitt dieses Knowledge Base-Artikels (KB): https://kb.vmware.com/s/article/84240[].
+
+
+====
++
+Wenn die Integrität und Authentizität des Keystone Collector OVA validiert werden, können Sie den Text sehen `(Trusted certificate)` Mit dem Herausgeber.
+image:ova-deploy.png["OVA-Benutzeroberfläche, die ein verifiziertes Zertifikat anzeigt"]
 
 . Geben Sie in _Schritt 5_ des Assistenten * OVF-Vorlage bereitstellen* den Speicherort für die VM an.
 . Wählen Sie bei _Schritt 6_ das Zielnetzwerk aus, das die VM verwenden soll.
