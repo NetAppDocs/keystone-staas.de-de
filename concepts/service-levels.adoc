@@ -20,7 +20,9 @@ Ein Abonnement kann mehrere Tarifpläne haben, und jeder Tarifplan entspricht ei
 
 Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/tib/Volume entspricht. Dies ist das Verhältnis der Performance (IOPS) (Input/Output Operations per Second) und der genutzten Storage-Kapazität (tib). Dies ist IOPS/tib bei einer durchschnittlichen Latenz pro Volume.
 
-Hier sind die Service-Level für die unterstützten Storage-Typen, File-, Block-, Objekt- und Cloud-Services aufgelistet.
+Sie wählen Service-Level basierend auf Ihrer Storage-Umgebung sowie Ihren Storage- und Verbrauchsanforderungen aus. Die Basis-Service-Level stehen Ihnen standardmäßig zur Verfügung. Wenn Sie sich für zusätzliche Services entschieden haben, stehen Ihnen zusätzlich bestimmte Service-Level zur Verfügung. Für den erweiterten Datenschutz-Add-on-Service wird Ihrem Abonnement beispielsweise der Service _Advanced Data-Protect_ zugewiesen.
+
+Hier sind die Basis-Service-Level für die unterstützten Storage-Typen, File-, Block-, Objekt- und Cloud-Services aufgelistet.
 
 
 
@@ -55,7 +57,7 @@ Hier sind die Service-Level für die unterstützten Storage-Typen, File-, Block-
 
 === Mehr auf Service-Levels für File- und Block-Storage
 
-Die Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
+Die Basis-Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
 
 * Die Service-Level für File- und Block-Storage unterstützen ONTAP 9.7 und höher.
 * IOPS/tib/Volume, MB/s/tib/Volume und Latenzwerte für Service-Level basieren auf der Menge der im Volume gespeicherten Daten, der Blockgröße von 32 KB sowie einer zufälligen Kombination von I/O-Vorgängen mit 70 % Lesevorgängen und 30 % Schreibzugriffen.

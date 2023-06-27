@@ -30,7 +30,7 @@ So zeigen Sie die Details an:
 Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Level und Volume-Details werden auf den verschiedenen Registerkarten auf dem Bildschirm *Keystone Abonnements* angezeigt.
 
 
-NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt, bis zu zwei Dezimalstellen. Wenn der Wert kleiner als 0.01 tib ist, wird der Wert als 0 oder angezeigt `No Usage`. Weitere Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
+NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn der Wert kleiner als 0.01 tib ist, wird der Wert als 0 oder angezeigt `No Usage`. Weitere Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
 
 
 
@@ -44,6 +44,10 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 
 * *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
 * *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
++
+
+TIP: Wenn Sie den Add-on-Service für erweiterte Datensicherung abonniert haben, können Sie auf die Kurzinformation zu Ihrer Abonnementnummer klicken, um die Tracking ID des Partnerabonnements in einer MetroCluster Einrichtung anzuzeigen. Informationen zum Anzeigen der detaillierten Nutzung nach Partnerabonnements in einer MetroCluster Konfiguration finden Sie unter link:../integrations/aiq-keystone-details.html#additional-details-for-advanced-data-protection["Zusätzliche Details für erweiterte Datensicherung"].
+
 * *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp nach der bereitgestellten oder der logischen Nutzung für eine der beiden abrechnet `v1` Oder `v2`. Weitere Informationen zu Keystone Abonnements Version 1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Dokumentation für NetApp Keystone"].
 * *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
@@ -130,6 +134,52 @@ NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene
 
 
 
+=== Zusätzliche Details für erweiterte Datensicherung
+
+.Klicken Sie hier
+[%collapsible]
+====
+Wenn Sie den erweiterten Datenschutz-Zusatzdienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte *Abonnementzeitreihen* einsehen.
+
+Weitere Informationen zum erweiterten Add-on-Service für Datensicherheit finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"].
+
+Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements in dasselbe Zeitreihendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basis-Service-Level anzuzeigen.
+
+
+NOTE: Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für den erweiterten Datenschutz-Add-on-Service, also den Service-Level _Advanced Data-Protect_, erscheint diese Abgrenzung nicht.
+
+.Service-Level für erweiterte Datensicherung
+Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Das ist ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Wenn Sie daher die Abonnementnummer für den primären Standort auf der Registerkarte *Subscription Time Series* auswählen, zeigen die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Service die diskreten Verbrauchsdetails nur für den primären Standort an. Da jeder Partnerstandort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am Standort erstellt wurden.
+
+
+TIP: Der Tooltip neben der Tacking-ID Ihres Abonnements auf der Registerkarte *Abonnementdetails* hilft Ihnen dabei, das Partnerabonnement in der MetroCluster-Einrichtung zu identifizieren.
+
+.Basis-Service-Level
+Für die Basis-Service-Level werden alle Volumes gemäß der Bereitstellung am primären Standort und an den gespiegelten Standorten abgerechnet. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären Standort und an den gespiegelten Standorten aufgeteilt.
+
+.Was Sie für das primäre Abonnement sehen können
+Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ (Basis-Service-Level) und eine primäre Abonnementnummer. Die Zeitreihendiagramme markieren den Verbrauch der Spiegelseite in einem helleren Farbton des Farbcodes, der für den primären Standort verwendet wird. Über die Kurzinformation beim Mauszeiger wird die Verbrauchsaufschlüsselung (in tib) für die primären und gespiegelten Standorte mit 1.02 tib bzw. 1.05 tib angezeigt.
+
+image:mcc-chart.png["mcc primär"]
+
+Für den _Advanced Data-Protect_ Service-Level werden die Diagramme wie folgt angezeigt:
+
+image:adp-src.png["mcc-Primärbasis"]
+
+.Was Sie für das sekundäre Abonnement (Mirror Site) sehen können
+Wenn Sie das sekundäre Abonnement prüfen, wird das Balkendiagramm für den Service-Level _Extreme_ (Basis-Service-Level) am gleichen Datenerfassungspunkt wie der Partner-Standort umgekehrt und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort beträgt 1.05 tib bzw. 1.02 tib.
+
+image:mcc-chart-mirror.png["mcc-Spiegel"]
+
+Für den Service-Level _Advanced Data-Protect_ wird das Diagramm für denselben Erfassungspunkt wie auf der Partnerseite wie folgt angezeigt:
+
+image:adp-mir.png["mcc-Spiegelsockel"]
+
+Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datensicherung und Disaster Recovery verstehen"^].
+
+====
+
+
 == Zeigen Sie Systemdetails an
 
 Auf der Registerkarte *Systemdetails* können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.
@@ -151,7 +201,7 @@ Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und
 
 +
 
-NOTE: Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
+NOTE: Für einen erweiterten Add-on für die Datensicherung wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
 
 
 
