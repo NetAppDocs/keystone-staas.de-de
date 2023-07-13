@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/aiq-keystone-details.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, iq sustainability, digital advisor sustainability, metrocluster, storagegrid, ontap, tracking id, burst usage, alerts 
 summary: Keystone-Abonnementberichte und -Diagramme 
 ---
 = Keystone Abonnement-Dashboard und Berichterstellung
@@ -21,26 +21,26 @@ NOTE: Die hier verfügbaren Informationen gelten sowohl für ONTAP als auch für
 
 Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
 
-So zeigen Sie die Details an:
+So zeigen Sie Ihr Keystone Abonnement sowie die Nutzungsdetails an:
 
 .Schritte
-. Klicken Sie im Digital Advisor auf *Weitere Details anzeigen* im Widget, um die Nutzungsdetails und Benachrichtigungen zu Ihren Volumes auf der Seite *Keystone Subscriptions* anzuzeigen. Alternativ dazu können Sie im linken Navigationsfenster auf *ALLGEMEIN > Keystone Abonnements* klicken.
-
-
+. Melden Sie sich bei Digital Advisor an. Sie können das Widget *Keystone Abonnements* sehen, in dem die Kapazitätsnutzung mit den von Ihnen erworbenen Keystone Services verglichen wird.
+. Klicken Sie im Widget *Keystone Subscriptions* auf *Weitere Details anzeigen*, um die Nutzungsdetails und Benachrichtigungen zu Ihren Volumes auf der Seite *Keystone Subscriptions* anzuzeigen. Alternativ dazu können Sie im linken Navigationsfenster auf *ALLGEMEIN > Keystone Abonnements* klicken.
 Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Level und Volume-Details werden auf den verschiedenen Registerkarten auf dem Bildschirm *Keystone Abonnements* angezeigt.
+
 
 
 NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn der Wert kleiner als 0.01 tib ist, wird der Wert als 0 oder angezeigt `No Usage`. Weitere Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
 
 
 
-== Abonnementdetails anzeigen
+== Alle Abonnements anzeigen
 
-Auf der Registerkarte *Abonnementdetails* können Sie alle Abonnements für einen Kontonamen anzeigen.
+Sie können eine Liste aller Ihrer Abonnements auf der Registerkarte *Alle Abonnements* anzeigen.
 
-image:aiq-ks-dtls.png["Registerkarte „Abonnementdetails“"]
+image:all-subs.png["Ein Bild der Registerkarte Alle Abonnements"]
 
-Für jede Abonnementnummer sehen Sie die folgenden Informationen:
+Für jedes Abonnement können Sie die folgenden Informationen sehen:
 
 * *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
 * *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
@@ -49,19 +49,13 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 TIP: Wenn Sie den Add-on-Service für erweiterte Datensicherung abonniert haben, können Sie auf die Kurzinformation zu Ihrer Abonnementnummer klicken, um die Tracking ID des Partnerabonnements in einer MetroCluster Einrichtung anzuzeigen. Informationen zum Anzeigen der detaillierten Nutzung nach Partnerabonnements in einer MetroCluster Konfiguration finden Sie unter link:../integrations/aiq-keystone-details.html#additional-details-for-advanced-data-protection["Zusätzliche Details für erweiterte Datensicherung"].
 
 * *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp nach der bereitgestellten oder der logischen Nutzung für eine der beiden abrechnet `v1` Oder `v2`. Weitere Informationen zu Keystone Abonnements Version 1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Dokumentation für NetApp Keystone"].
-* *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
+* *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, wie monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
-* *Enddatum*: Das Enddatum des Abonnements. Ein leeres Datum zeigt an, dass das Abonnement kein Enddatum hat und automatisch erneuert wird. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.
-* *Nutzungsstatus*: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
-* image:aiq-ks-time-icon.png["Symbol"]: Klicken Sie auf dieses Symbol, um die Registerkarte *Subscription Time Series* zu öffnen, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist
+* *Enddatum*: Das Enddatum des Abonnements. Ein leeres Datumsfeld zeigt an, dass das Abonnement kein Enddatum hat und automatisch erneuert wird. Basierend auf diesem Datum werden möglicherweise Benachrichtigungen für Abonnements angezeigt, die kurz vor dem Ende stehen oder an die Richtlinien zur automatischen Verlängerung angehängt sind.
+* *Nutzungsstatus*: Zeigt den Nutzungsindikator an, um anzugeben, ob der Verbrauch innerhalb oder außerhalb des Abonnementlimits liegt. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
+* image:subs-dtls-icon.png["Symbol"]: Wenn Sie auf dieses Symbol für ein Abonnement klicken, wird der Reiter *Abonnementdetails* mit zusätzlichen Details zu diesem Abonnement geöffnet.
+* image:aiq-ks-time-icon.png["Symbol"]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Zeitreihen* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level in diesem Abonnement sehen können.
 
-
-Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.
-
-
-TIP: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
-
-Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
 
 Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
 
@@ -72,12 +66,69 @@ image:icon-grey.png["Graues Punktsymbol"]: Keine Kapazitätsnutzung erfasst mit 
 
 
 
-== Anzeigen historischer Abonnementdatendiagramme
+== Abonnementdetails anzeigen
 
-Auf der Registerkarte *Subscription Time Series* werden historische Daten Ihrer Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
+Um die Details Ihrer Abonnements zu erfahren, klicken Sie auf die Registerkarte *Abonnementdetails* und wählen Sie die gewünschte Abonnementnummer aus.
+
+image:aiq-ks-dtls.png["Registerkarte „Abonnementdetails“"]
+
+Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.
+
+
+TIP: Der image:icon-info.png["Informationssymbol"] Neben den einzelnen Spalten finden Sie umfassende Informationen zu dieser Spalte. Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+
+Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
+
+
+
+== Details zu SLAs für die Nachhaltigkeit anzeigen
+
+.Weitere Informationen .
+[%collapsible]
+====
+Die Registerkarte *SLA-Details* steht nur zur Verfügung, wenn Sie über einen gültigen Service Level Agreement (SLA) für Nachhaltigkeit mit NetApp verfügen. Informationen zu SLA für Nachhaltigkeit in Keystone STaaS finden Sie unter link:../concepts/sla-sustainability.html["NachhaltigkeitssSLA für Keystone"].
+
+Die Registerkarte *SLA Details* bietet Ihnen die Details zum Sustainability SLA.
 
 .Schritte
-. Klicken Sie auf die Registerkarte *Subscription Time Series*.
+. Klicken Sie auf die Registerkarte *SLA-Details*.
+. Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Sie können nur die Abonnements anzeigen, die die Kriterien für die SLA für Nachhaltigkeit erfüllen. Informationen zu den Kriterien finden Sie unter link:../concepts/sla-sustainability.html#eligibility-criteria-for-sustainability-sla["Kriterien für die Eignung von SLAs für Nachhaltigkeit"].
+
+
+Sie sehen eine tägliche Aufschlüsselung der gemessenen Nachhaltigkeitsmetriken für den aktuellen Monat:
+
+image:sla-sustainability.png["sla-Details, die Details zur Nachhaltigkeit enthalten"]
+
+Die folgenden Details werden angezeigt:
+
+* *Abonnement*: Die Abonnementnummer, sowie das Startdatum, das Enddatum und die Abrechnungsfrist des von Ihnen gewählten Abonnements.
+* *Durchschnittliche Nachhaltigkeit*: Der durchschnittliche Stromverbrauch in Watt/tib über den letzten Abrechnungszeitraum dieses Abonnements.
+* *Tag*: Der Tag des Monats, an dem dieses Datenelement abgerufen wird.
+* *Generated Date*: Das tatsächliche Datum des Monats.
+* *Durchschnittliche Watt*: Der durchschnittliche Stromverbrauch des Clusters an diesem Tag.
+* *Effektive Kapazität (tib*): Die Summe der gebuchten Kapazität und der zugewiesenen Burst-Kapazität für das Service-Level.
+* *Tatsächlicher Watt (tib*): Der tatsächliche Energieverbrauch pro tib für diesen Tag durch das Cluster. Sie können es mit dem Wert in *SLA Watts/tib* vergleichen, um ein beliebiges Overshoot zu analysieren.
+* *SLA Watt/tib*: Der Watt/tib Wert für das im SLA definierte Servicelevel.
+* *Durchschnittstemperatur (^o^C)*: Die durchschnittliche Umgebungstemperatur des Tages.
+* *Storage-Effizienzverhältnis*: Das Storage-Effizienzverhältnis in der Keystone Storage-Umgebung Dies ist das Verhältnis des vom System insgesamt genutzten logischen Speicherplatzes nach Aktivierung der Storage-Effizienzeinstellungen zum gesamten physischen Speicherplatz, der zum Speichern der Daten verwendet wird. Informationen über das Storage-Effizienzverhältnis finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_storage_efficiency.html["Und verstehen Sie die Storage-Effizienz"^].
+
+
+Wenn es zu einer SLA-Verletzung kommt, wird ein Symbol angezeigt image:warning.png["Symbol für Warnung"] Neben der Säule informiert Sie über die Art der Verletzung. Die folgenden Warnungen werden angezeigt:
+
+* Umgebungstemperatur: Wenn die Temperatur außerhalb des Bereichs von 25^o^C - 27^o^C liegt
+* SLA-Watt/tib: Wenn die SLA-Kennzahlen für das Service-Level nicht eingehalten werden, Weitere Informationen finden Sie unter link:../concepts/sla-sustainability.html#sustainability-service-level["Service-Level Nachhaltigkeit"].
+* Storage-Effizienz-Verhältnis: Wenn die Storage-Effizienz unter 2 liegt.
+
+
+====
+
+
+== Anzeigen historischer Abonnementdatendiagramme
+
+Auf der Registerkarte *Zeitreihen* werden historische Daten Ihrer Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
+
+.Schritte
+. Klicken Sie auf die Registerkarte *Zeitreihen*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
 +
@@ -91,8 +142,8 @@ image:aiq-ks-subtime-2.png["Registerkarte „Zeitreihen“"]
 
 Die folgenden Details werden angezeigt:
 
-* *Abonnementdetails*: Das Start- und Enddatum des Abonnements und der Abrechnungszeitraum, z. B. vierteljährlich, jährlich usw.
-* *Nutzungsdiagramme*: Die Balkendiagramme zeigen den Namen des Service-Levels und die Kapazität an, die für diesen Service-Level für den Datumsbereich verbraucht wird. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt.
+* Abonnementdetails: Das Start- und Enddatum des Abonnements sowie der Abrechnungszeitraum, z. B. vierteljährlich, jährlich usw.
+* Nutzungsdiagramme: Die Balkendiagramme zeigen den Namen des Service-Levels und die Kapazität an, die für diesen Service-Level für den Datumsbereich verbraucht wurde. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt.
 +
 
 NOTE: Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt.
@@ -136,10 +187,10 @@ NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene
 
 === Zusätzliche Details für erweiterte Datensicherung
 
-.Klicken Sie hier
+.Weitere Informationen .
 [%collapsible]
 ====
-Wenn Sie den erweiterten Datenschutz-Zusatzdienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte *Abonnementzeitreihen* einsehen.
+Wenn Sie den erweiterten Datenschutz-Zusatzdienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte *Zeitreihen* anzeigen.
 
 Weitere Informationen zum erweiterten Add-on-Service für Datensicherheit finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"].
 
@@ -149,7 +200,7 @@ Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup kon
 NOTE: Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für den erweiterten Datenschutz-Add-on-Service, also den Service-Level _Advanced Data-Protect_, erscheint diese Abgrenzung nicht.
 
 .Service-Level für erweiterte Datensicherung
-Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Das ist ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Wenn Sie daher die Abonnementnummer für den primären Standort auf der Registerkarte *Subscription Time Series* auswählen, zeigen die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Service die diskreten Verbrauchsdetails nur für den primären Standort an. Da jeder Partnerstandort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am Standort erstellt wurden.
+Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Das ist ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Aus diesem Grund werden bei Auswahl der Abonnementnummer für den primären Standort auf der Registerkarte *Time Series* die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Service die diskreten Verbrauchsdetails nur für den primären Standort anzeigen. Da jeder Partnerstandort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am Standort erstellt wurden.
 
 
 TIP: Der Tooltip neben der Tacking-ID Ihres Abonnements auf der Registerkarte *Abonnementdetails* hilft Ihnen dabei, das Partnerabonnement in der MetroCluster-Einrichtung zu identifizieren.
@@ -188,7 +239,7 @@ Auf der Registerkarte *Systemdetails* können Sie den Verbrauch und andere Detai
 
 === Details zum ONTAP Volume
 
-.Klicken Sie hier
+.Weitere Informationen .
 [%collapsible]
 ====
 Für ONTAP werden auf der Registerkarte „Systemdetails“ Informationen wie Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und Service-Level der Volumes in Ihrer Storage-Umgebung angezeigt, die durch das Keystone Abonnement gemanagt werden.
@@ -212,7 +263,7 @@ image:aiq-ks-sysdtls.png["Registerkarte „Systemdetails“"]
 
 === StorageGRID Nodes und Verbrauchsdetails
 
-.Klicken Sie hier
+.Weitere Informationen .
 [%collapsible]
 ====
 Bei StorageGRID wird auf dieser Registerkarte die physische Nutzung der Nodes in der Objekt-Storage-Umgebung angezeigt.
@@ -238,7 +289,7 @@ Sie können Berichte für Ihre Abonnementdetails, historische Nutzungsdaten für
 
 Die Details werden im CSV-Format erstellt, das Sie zur späteren Verwendung speichern können.
 
-Beispielbericht für die Registerkarte *Subscription Time Series*, in der die grafischen Daten konvertiert werden:
+Ein Beispielbericht für die Registerkarte *Zeitreihen*, in der die grafischen Daten konvertiert werden:
 
 image:report.png["csv des Berichts"]
 

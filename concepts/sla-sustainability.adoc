@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-sustainability.html 
+keywords: sustainability, sla, service level agreement, 
+summary: Nachhaltigkeit, sla, Service Level Agreement 
+---
+= NachhaltigkeitssSLA für Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS bietet Service-Level-Agreements oder SLA-gestützte Service-Level für die Nachhaltigkeit, die die maximale Nutzung von Watt/tib pro Service-Level definieren. Sie unterstützt Sie bei der Planung, Überwachung und Einhaltung Ihrer IT-Nachhaltigkeitsziele.
+
+
+
+== Nachhaltigkeitsmetriken
+
+Die folgenden Kennzahlen werden verwendet, um Nachhaltigkeit zu definieren und zu messen:
+
+* Watt: Der tägliche Stromverbrauch der ONTAP AFF Arrays Der A-Series und angebundener SSD-Shelfs.
+* TIB: Je größer:
++
+** Die gebuchte Kapazität und die zugewiesene Burst-Kapazität für das Service-Level oder
+** Die effektiv implementierte Kapazität, ausgehend von einem Faktor für die Storage-Effizienz von zwei. Informationen über das Storage-Effizienzverhältnis finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_storage_efficiency.html["Und verstehen Sie die Storage-Effizienz"^].
+
+
+
+
+
+
+== Service-Level für die Nachhaltigkeit
+
+Die folgende Tabelle fasst die Service-Level für Nachhaltigkeit zusammen: Extreme, Premium und Performance:
+
+|===
+
+
+| *Service Level* | *SLA-Kriterien* | *Mindestkapazität* | * Plattform* 
+
+
+ a| 
+Extrem
+| < = 8 Watt/tib | 200 tib | AFF A800 und AFF A900 
+
+
+ a| 
+Premium
+| < = 4 Watt/tib | 300 tib | AFF A800 und AFF A900 
+
+
+ a| 
+Leistung
+| < = 4 Watt/tib | 300 tib | AFF A800 und AFF A900 
+|===
+
+
+== Kriterien für die Eignung von SLAs für Nachhaltigkeit
+
+Keystone STaaS-Abonnements erfüllen die folgenden Kriterien und gelten für SLAs:
+
+* Standardmäßige, nicht angepasste Keystone STaaS-Abonnements mit einem einzelnen Service-Level, die monatlich rückwirkend in Rechnung gestellt werden
+* Für Abonnements mit den folgenden Service-Levels gelten die Service-Level Extreme, Premium und Performance.
+* Nicht angepasste, nachhaltige Keystone Hardware-Konfigurationen mit Referenzen, bestehend aus:
++
+** ONTAP AFF A-Series Storage-Arrays beispielsweise NetApp AFF A900 oder AFF A800 All-Flash-Storage-Plattform Weitere Informationen finden Sie unter https://www.netapp.com/data-storage/aff-a-series["AFF A-Serie"^].
+** 2-Node-Cluster ohne Switches.
+Commingled- und MetroCluster-Konfigurationen werden nicht unterstützt.
+
+
+* Keystone nutzt AutoSupport Telemetriedaten und Transportmechanismen zur Erfassung von Nachhaltigkeitsdaten. AutoSupport sollte auf allen ONTAP AFF Storage Arrays aktiviert und betriebsbereit sein. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_autosupport.html["AutoSupport"^].
+* Die gespeicherten Daten sollten einen minimalen durchschnittlichen Storage-Effizienzfaktor von zwei erreichen.
+* Die Umgebungstemperatur sollte zwischen 25 und 27 Grad Celsius betragen
+* Es sollte die Mindestkapazität pro Service-Level erreicht werden.
+
+
+
+
+== Nachhaltigkeitsberichte
+
+Die Registerkarte „SLA“ im Keystone Dashboard von Active IQ Digital Advisor (Digital Advisor) bietet eine detaillierte Ansicht der Nachhaltigkeitsmetriken für Ihre Keystone Abonnements. Sie können die Kennzahlen anzeigen und Berichte für zukünftige Analysen und Aktionen erstellen.
+
+Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"].
+
+
+
+== Gutschriften für Nachhaltigkeitsservices
+
+Falls der Watt-/tib-Verbrauch die im SLA für ein Service-Level festgelegten Kriterien überschreitet oder nicht erfüllt, bietet NetApp für alle qualifizierten Abonnements eine Gutschrift für die Differenz aus den ausgewiesenen Unterschieden innerhalb eines Abrechnungszeitraums an. Wenn die Service-Level-SLA-Kennzahlen nicht erfüllt werden, wenden Sie sich spätestens eine Woche vor Ende des Service-Monats an das NetApp Global Services Support Center (GSSC) Bei der Ermittlung des Service-Level-Verstoßes werden die Gutschriften auf Basis der gebuchten Kapazität des Service-Levels berechnet und mit der Rechnung des nächsten Monats gutgeschrieben.
+
+Weitere Informationen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].

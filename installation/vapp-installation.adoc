@@ -32,7 +32,7 @@ Führen Sie hierzu folgende Schritte aus:
 . Am _Schritt 4: Überprüfen Sie die Details_, überprüfen Sie die Richtigkeit und Authentizität der OVA-Datei.
 VCenter-Versionen vor 7.0u2 können die Authentizität des Codesignaturzertifikats nicht automatisch überprüfen. VCenter 7.0u2 und höher können die Überprüfungen durchführen, dafür sollte jedoch die Signaturzertifikatberechtigung zu vCenter hinzugefügt werden. Folgen Sie diesen Anweisungen für Ihre Version von vCenter:
 +
-.VCenter 7.0u1 und früher: Klicken Sie hier
+.VCenter 7.0u1 und früher: Weitere Informationen
 [%collapsible]
 ====
 VCenter überprüft die Integrität der OVA-Dateiinhalte und stellt für die in der OVA-Datei enthaltenen Dateien einen gültigen Code-Signing Digest bereit. Die Echtheit des Codsignieren-Zertifikats wird jedoch nicht überprüft. Um die Integrität zu überprüfen, sollten Sie das vollständige Signieren-Digest-Zertifikat herunterladen und es mit dem öffentlichen Zertifikat von Keystone veröffentlicht überprüfen.
@@ -45,7 +45,7 @@ VCenter überprüft die Integrität der OVA-Dateiinhalte und stellt für die in 
 
 ====
 +
-.VCenter 7.0u2 und höher: Klicken Sie hier
+.VCenter 7.0u2 und höher: Weitere Informationen
 [%collapsible]
 ====
 7.0u2 und neuere Versionen von vCenter können die Integrität des OVA-Dateiinhalts und die Authentizität des Codesignaturzertifikats überprüfen, wenn ein gültiger Codesignaturdigest bereitgestellt wird. Der vCenter Root-Vertrauensspeicher enthält nur VMware-Zertifikate. NetApp verwendet Entrust als Zertifizierungsstelle, und diese Zertifikate müssen zum vCenter Trust Store hinzugefügt werden.

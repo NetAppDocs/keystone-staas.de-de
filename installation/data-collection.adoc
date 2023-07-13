@@ -20,7 +20,7 @@ Keystone erfasst Informationen zu Konfiguration, Status und Nutzung Ihrer Keysto
 
 == ONTAP Datenerfassung
 
-.<strong>-Datenerhebung für ONTAP: Klicken Sie auf "</strong>"
+.<strong>-DatenausDatenausDatenerhebung für ONTAP: Lern-</strong>
 [%collapsible]
 ====
 Die folgende Liste enthält ein repräsentatives Beispiel für die Daten zur Kapazitätsnutzung, die für ONTAP erfasst wurden:
@@ -198,7 +198,7 @@ Die folgende Liste enthält ein repräsentatives Beispiel für die Daten zur Kap
 
 
 ====
-.<strong>-Datenerhebung für ONTAP: Klicken Sie auf "</strong>"
+.<strong>-DatenausDatenausDatenerhebung für ONTAP: Lern-</strong>
 [%collapsible]
 ====
 Die folgende Liste ist ein repräsentatives Beispiel für die Performance-Daten, die für ONTAP erfasst wurden:
@@ -247,7 +247,7 @@ Die folgende Liste ist ein repräsentatives Beispiel für die Performance-Daten,
 
 
 ====
-.<strong>-AusDatenausDatenausDatenausDatenausnahme bei Beschränkung des privaten Datenzugangs: Klicken Sie auf "Ausbegehen </strong>"
+.<strong> Ausbegehen von Objekten entfernt auf Beschränkung des privaten Datenzugangs: Lernen Sie Ausbegehen </strong>
 [%collapsible]
 ====
 Wenn die Option *Private Daten entfernen* auf Keystone Collector aktiviert ist, werden die folgenden Nutzungsinformationen für ONTAP gelöscht. Diese Option ist standardmäßig aktiviert.
@@ -275,7 +275,7 @@ Wenn die Option *Private Daten entfernen* auf Keystone Collector aktiviert ist, 
 
 == StorageGRID Datenerfassung
 
-.<strong>-Datenerhebung für StorageGRID: Klicken Sie auf "</strong>"
+.<strong>-DatenausDatenausDatenerhebung für StorageGRID: Lern-</strong>
 [%collapsible]
 ====
 Die folgende Liste enthält ein repräsentatives Beispiel für die `Logical Data` Für StorageGRID gesammelt:
@@ -301,7 +301,7 @@ Die folgende Liste enthält ein repräsentatives Beispiel für die `Physical Dat
 
 
 ====
-.<strong>-AusDatenausDatenausDatenausDatenausnahme bei Beschränkung des privaten Datenzugangs: Klicken Sie auf "Ausbegehen </strong>"
+.<strong> Ausbegehen von Objekten entfernt auf Beschränkung des privaten Datenzugangs: Lernen Sie Ausbegehen </strong>
 [%collapsible]
 ====
 Wenn die Option *Private Daten entfernen* auf Keystone Collector aktiviert ist, werden die folgenden Nutzungsinformationen für StorageGRID gelöscht. Diese Option ist standardmäßig aktiviert.
