@@ -197,19 +197,19 @@ Weitere Informationen zum erweiterten Add-on-Service für Datensicherheit finden
 Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements in dasselbe Zeitreihendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basis-Service-Level anzuzeigen.
 
 
-NOTE: Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für den erweiterten Datenschutz-Add-on-Service, also den Service-Level _Advanced Data-Protect_, erscheint diese Abgrenzung nicht.
+NOTE: Die Verbrauchsbalkentabellen sind nur für die Basis-Service-Level aufgeteilt. Für den erweiterten Datenschutz-Add-on-Service, also den Service-Level _Advanced Data-Protect_, erscheint diese Abgrenzung nicht.
 
 .Service-Level für erweiterte Datensicherung
-Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Das ist ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Aus diesem Grund werden bei Auswahl der Abonnementnummer für den primären Standort auf der Registerkarte *Time Series* die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Service die diskreten Verbrauchsdetails nur für den primären Standort anzeigen. Da jeder Partnerstandort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am Standort erstellt wurden.
+Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Dies ist der Grund, warum, wenn Sie die Abonnementnummer für den primären Standort auf der Registerkarte *Time Series* auswählen, die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Dienst die diskreten Verbrauchsdetails nur des primären Standorts anzeigen. Da jeder Partnerstandort in einer MetroCluster Konfiguration sowohl als Quelle als auch als Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.
 
 
-TIP: Der Tooltip neben der Tacking-ID Ihres Abonnements auf der Registerkarte *Abonnementdetails* hilft Ihnen dabei, das Partnerabonnement in der MetroCluster-Einrichtung zu identifizieren.
+TIP: Die Kurzinformation neben der Tracking-ID Ihres Abonnements auf der Registerkarte *Abonnementdetails* hilft Ihnen, das Partnerabonnement in der MetroCluster-Einrichtung zu identifizieren.
 
 .Basis-Service-Level
-Für die Basis-Service-Level werden alle Volumes gemäß der Bereitstellung am primären Standort und an den gespiegelten Standorten abgerechnet. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären Standort und an den gespiegelten Standorten aufgeteilt.
+Für die Basis-Service-Level wird jedes Volume gemäß der Bereitstellung am primären Standort und an den gespiegelten Standorten in Rechnung gestellt. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären Standort und an den gespiegelten Standorten aufgeteilt.
 
 .Was Sie für das primäre Abonnement sehen können
-Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ (Basis-Service-Level) und eine primäre Abonnementnummer. Die Zeitreihendiagramme markieren den Verbrauch der Spiegelseite in einem helleren Farbton des Farbcodes, der für den primären Standort verwendet wird. Über die Kurzinformation beim Mauszeiger wird die Verbrauchsaufschlüsselung (in tib) für die primären und gespiegelten Standorte mit 1.02 tib bzw. 1.05 tib angezeigt.
+Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ (Basis-Service-Level) und eine primäre Abonnementnummer. Das Diagramm der gleichen Zeitreihen zeigt auch den Verbrauch der Spiegelstelle in einem helleren Farbton mit demselben Farbcode an, der für den primären Standort verwendet wird. Mit der Kurzinformation beim Mauszeiger wird der Aufschlüsselungsverbrauch (in tib) für die primären und gespiegelten Standorte, 1.02 tib bzw. 1.05 tib angezeigt.
 
 image:mcc-chart.png["mcc primär"]
 
