@@ -22,7 +22,10 @@ Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/ti
 
 Sie wählen Service-Level basierend auf Ihrer Storage-Umgebung sowie Ihren Storage- und Verbrauchsanforderungen aus. Die Basis-Service-Level stehen Ihnen standardmäßig zur Verfügung. Wenn Sie sich für zusätzliche Services entschieden haben, stehen Ihnen zusätzlich bestimmte Service-Level zur Verfügung. Für den erweiterten Datenschutz-Add-on-Service wird Ihrem Abonnement beispielsweise der Service _Advanced Data-Protect_ zugewiesen.
 
-Hier sind die Basis-Service-Level für die unterstützten Storage-Typen, File-, Block-, Objekt- und Cloud-Services aufgelistet.
+
+TIP: Eine detaillierte Servicebeschreibung für die Service-Level von NetApp Keystone STaaS ist verfügbar https://www.netapp.com/pdf.html?item=/media/77179-Keystone-STaaS-Service-Description-On-Prem.pdf["Hier"].
+
+Die Basis-Service-Level für die unterstützten Storage-Typen, File-, Block-, Objekt- und Cloud-Services werden in den folgenden Abschnitten beschrieben:
 
 
 
@@ -48,7 +51,7 @@ Hier sind die Basis-Service-Level für die unterstützten Storage-Typen, File-, 
 | *Maximale MB/s/logische TIBS gespeichert pro Volume @ 32K B/S* | 384 | 128 | 64 | 16 | 4 
 
 
-| * Durchschnittliche Latenz* | 1 ms | 2 ms | 4 ms | 17 ms | 17 ms 
+| *Ziel: 90^th^ Perzentillatenz* | <1 ms | <2 ms | <4 ms | <4 ms | <17 ms 
 
 
 | *Blockgröße* 5+| 32K 
