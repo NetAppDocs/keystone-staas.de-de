@@ -73,3 +73,31 @@ Die Begrenzung der Erfassung bestimmter Kundendaten ist eine konfigurierbare Opt
 image:tui-4.png["tui-Bildschirm"]
 
 Informationen zu den Elementen, die zur Beschränkung des Zugriffs auf private Daten in ONTAP und StorageGRID entfernt wurden, finden Sie unter link:../installation/data-collection.html["Liste der bei der Beschränkung des Zugriffs auf private Daten entfernten Elemente"].
+
+
+
+== Einer benutzerdefinierten Stammzertifizierungsstelle vertrauen
+
+Die Überprüfung von Zertifikaten gegen eine öffentliche Stammzertifizierungsstelle (CA) ist Teil der Sicherheitsfunktionen von Keystone Collector. Falls erforderlich, können Sie Keystone Collector jedoch so konfigurieren, dass eine benutzerdefinierte Stammzertifizierungsstelle vertrauenswürdig ist.
+
+Wenn Sie SSL/TLS-Prüfung in Ihrer System-Firewall verwenden, wird der internetbasierte Datenverkehr mit Ihrem benutzerdefinierten CA-Zertifikat erneut verschlüsselt. Die Einstellungen müssen konfiguriert werden, um die Quelle als vertrauenswürdige CA zu überprüfen, bevor das Stammzertifikat akzeptiert und Verbindungen zugelassen werden. Führen Sie hierzu folgende Schritte aus:
+
+.Schritte
+. Vorbereiten des CA-Zertifikats. Es sollte im _base64-kodierten X.509_-Dateiformat vorliegen.
++
+
+NOTE: Die unterstützten Dateierweiterungen sind `.pem`, `.crt`, `.cert`. Stellen Sie sicher, dass sich das Zertifikat in einem dieser Formate befindet.
+
+. Kopieren Sie das Zertifikat auf den Keystone Collector-Server. Notieren Sie sich den Speicherort, an den die Datei kopiert wird.
+. Öffnen Sie ein Terminal auf dem Server und führen Sie das Management-TUI-Dienstprogramm aus.
+`$ keystone-collector-tui`
+. Gehen Sie zu *Konfiguration > Erweitert*.
+. Aktivieren Sie die Option *Benutzerdefiniertes Stammzertifikat aktivieren*.
+. Wählen Sie für *Select Custom root Certificate path:* aus `- Unset -`
+. Drücken Sie Die Eingabetaste. Ein Dialogfeld zur Auswahl des Zertifikatspfads wird angezeigt.
+. Wählen Sie das Stammzertifikat im Dateisystem-Browser aus, oder geben Sie den genauen Pfad ein.
+. Drücken Sie Die Eingabetaste. Sie kehren zum *Advanced*-Bildschirm zurück.
+. Wählen Sie *Speichern*. Die Konfiguration wird angewendet.
+
+
+image:kc-custom-ca.png["TUI-Bildschirm für CA-Anpassung"]

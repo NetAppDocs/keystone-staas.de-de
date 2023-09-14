@@ -82,7 +82,7 @@ NOTE: Nach Abschluss der Implementierung können Sie die Konfigurations- und Üb
 
 . Öffnen Sie eine SSH-Sitzung für den Keystone Collector-Server. Beim Anmelden wird die TUI angezeigt. Alternativ können Sie die TUI manuell starten, indem Sie den ausführen `keystone-collector-tui` CLI-Befehl.
 . Konfigurieren Sie bei Bedarf die Proxydetails im Abschnitt *Konfiguration > Netzwerk* auf der TUI.
-. Aktualisieren Sie den Collector mit der Option *Wartung > System aktualisieren*. Einige ausgewählte Spiegelungen sind möglicherweise nicht verfügbar, und die Systemdetails werden nach einigen Versuchen aktualisiert.
+. Aktualisieren Sie Keystone Collector mit der Option *Wartung > System aktualisieren*. Einige ausgewählte Spiegelungen sind möglicherweise nicht verfügbar, und die Systemdetails werden nach einigen Versuchen aktualisiert.
 . Konfigurieren Sie im Abschnitt *Konfiguration > System* den Hostnamen, den Speicherort und den NTP-Server des Systems.
 . Aktualisieren Sie das Admin-Passwort im Abschnitt *Wartung > Benutzer*.
 . Markieren Sie die ursprüngliche OVA-Konfiguration im Abschnitt *Konfiguration > Erweitert* als abgeschlossen.
