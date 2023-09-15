@@ -64,7 +64,7 @@ image:ova-deploy.png["OVA-Benutzeroberfläche, die ein verifiziertes Zertifikat 
 . Geben Sie in _Schritt 7 Vorlage anpassen_ die ursprüngliche Netzwerkadresse und das Kennwort für das Admin-Benutzerkonto an.
 +
 
-NOTE: Das Admin-Passwort wird in einem reversiblen Format in vCenter gespeichert und sollte als Bootstrap-Anmeldedaten verwendet werden, um ersten Zugriff auf das VMware vSphere System zu erhalten. Dieses Admin-Passwort sollte während der anfänglichen Softwarekonfiguration geändert werden. Die Subnetzmaske für die IPv4-Adresse sollte in CIDR-Notation bereitgestellt werden. Verwenden Sie beispielsweise den Wert 24 für eine Subnetzmaske von 255.255.255.0.
+NOTE: Das Admin-Passwort wird in einem umkehrbaren Format in vCenter gespeichert und sollte als Bootstrap-Anmeldeinformationen verwendet werden, um ersten Zugriff auf das VMware vSphere-System zu erhalten. Dieses Admin-Passwort sollte während der anfänglichen Softwarekonfiguration geändert werden. Die Subnetzmaske für die IPv4-Adresse sollte in CIDR-Notation bereitgestellt werden. Verwenden Sie beispielsweise den Wert 24 für eine Subnetzmaske von 255.255.255.0.
 
 . Prüfen Sie bei _Schritt 8 Ready to complete_ des Assistenten *Deploy OVF Template* die Konfiguration und stellen Sie sicher, dass Sie die Parameter für die OVA-Bereitstellung richtig eingestellt haben.
 

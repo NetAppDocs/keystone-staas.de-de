@@ -26,7 +26,7 @@ Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten aus
 
 Die Keystone-Infrastruktur umfasst mehrere Komponenten, u. a. die folgenden:
 
-* Die Keystone Infrastruktur mit Storage Controllern
+* Keystone-Infrastruktur, einschließlich Storage-Controllern
 * Tools zum Managen und Betreiben des Service, z. B. AIOPs-Lösung, Active IQ und Active IQ Unified Manager
 
 

@@ -175,7 +175,7 @@ Beachten Sie die folgenden Punkte, bevor Sie die Blockgröße mithilfe der folge
 
 
 .Berechnung der Größe des Probenblocks
-Um den Durchsatz für das A-Service-Level zu berechnen, z. B. `Extreme` Service Level:
+Zum Berechnen des Durchsatzes für einen Service-Level, z. B. `Extreme` Service-Level:
 
 * Maximale IOPS: 12,288
 * Block-Größe pro I/O: 32 KB

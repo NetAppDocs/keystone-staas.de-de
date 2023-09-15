@@ -16,7 +16,9 @@ summary: Monitoring des Systemzustands über Keystone Collector
 [role="lead"]
 Sie können den Systemzustand über die Keystone Collector-Dienste überwachen, indem Sie jedes Überwachungssystem verwenden, das HTTP-Anfragen unterstützt.
 
-Standardmäßig akzeptieren die Keystone-Gesundheitsservices keine Verbindungen von einer anderen IP als localhost. Der Keystone Zustandsendpunkt ist `/uber/health`, Und es wartet auf alle Schnittstellen des Keystone Collector Servers am Port `7777`. Bei der Abfrage wird ein HTTP-Anforderungsstatuscode mit einer JSON-Ausgabe vom Endpunkt als Antwort zurückgegeben, der den Status des Keystone Collector-Systems beschreibt. Der JSON-Körper bietet einen allgemeinen Integritätsstatus für das `is_healthy` Attribut, das ein boolescher Wert ist; und eine detaillierte Liste der Status pro Komponente für das `component_details` Attribut. Hier ein Beispiel:
+Standardmäßig akzeptieren die Keystone Systemzustandsservices keine Verbindungen von anderen IP-Adressen als localhost. Der Keystone Zustandsendpunkt ist `/uber/health`, Und es wartet auf alle Schnittstellen des Keystone Collector Servers am Port `7777`. Bei der Abfrage wird ein HTTP-Anforderungsstatuscode mit einer JSON-Ausgabe vom Endpunkt als Antwort zurückgegeben, der den Status des Keystone Collector-Systems beschreibt.
+Der JSON-Körper bietet einen allgemeinen Integritätsstatus für das `is_healthy` Attribut, das ein boolescher Wert ist; und eine detaillierte Liste der Status pro Komponente für das `component_details` Attribut.
+Hier ein Beispiel:
 
 [listing]
 ----

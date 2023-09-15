@@ -21,7 +21,7 @@ NOTE: Die Keystone STaaS-Standardservices für Datei- und Block-Storage bieten d
 
 Informationen zum Standard- und Cloud-Service finden Sie unter link:../concepts/supported-storage-services.html["Keystone STaaS Services"].
 
-Der erweiterte Keystone Datensicherungsservice kann Daten synchron an einen sekundären Standort spiegeln. Im Falle eines Ausfalls am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion nutzt die MetroCluster Konfiguration zwischen zwei Standorten für die Datensicherung. Sie können die erweiterten Datensicherungs-Add-on-Services nur für Ihre Datei- und Block-Storage-Services in Anspruch nehmen. Als Teil dieses Add-on-Service bietet die `Advanced Data-Protect` Der Service-Level wird Ihrem Abonnement zugewiesen.
+Der erweiterte Keystone Datensicherungsservice kann Daten synchron an einen sekundären Standort spiegeln. Im Falle eines Ausfalls am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion nutzt die MetroCluster Konfiguration zwischen zwei Standorten, um die Datensicherung zu ermöglichen. Sie können die erweiterten Datensicherungs-Add-on-Services nur für Ihre Datei- und Block-Storage-Services in Anspruch nehmen. Als Teil dieses Add-on-Service bietet die `Advanced Data-Protect` Der Service-Level wird Ihrem Abonnement zugewiesen.
 Informationen zu ONTAP MetroCluster finden Sie unter link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster-Dokumentation"^].
 
 Informationen zum Anzeigen des Verbrauchs in einer MetroCluster-Konfiguration finden Sie unter link:../integrations/aiq-keystone-details.html#reference-charts-for-advanced-data-protection["Referenzdiagramme für erweiterten Datenschutz"].

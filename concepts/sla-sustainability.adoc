@@ -90,6 +90,6 @@ Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link
 
 == Gutschriften für Nachhaltigkeitsservices
 
-Falls der Watt-/tib-Verbrauch die im SLA für ein Service-Level festgelegten Kriterien überschreitet oder nicht erfüllt, bietet NetApp für alle qualifizierten Abonnements eine Gutschrift für die Differenz aus den ausgewiesenen Unterschieden innerhalb eines Abrechnungszeitraums an. Wenn die Service-Level-SLA-Kennzahlen nicht erfüllt werden, wenden Sie sich spätestens eine Woche vor Ende des Service-Monats an das NetApp Global Services Support Center (GSSC) Bei der Ermittlung des Service-Level-Verstoßes werden die Gutschriften auf Basis der gebuchten Kapazität des Service-Levels berechnet und mit der Rechnung des nächsten Monats gutgeschrieben.
+Falls der Watt-/tib-Verbrauch die im SLA für ein Service-Level festgelegten Kriterien überschreitet oder nicht erfüllt, bietet NetApp für alle qualifizierten Abonnements eine Gutschrift für die Differenz aus den angegebenen Unterschieden innerhalb eines Abrechnungszeitraums an. Wenn die Service-Level-SLA-Kennzahlen nicht erfüllt werden, wenden Sie sich spätestens eine Woche vor Ende des Service-Monats an das NetApp Global Services Support Center (GSSC) Nach Ermittlung des Service-Level-Verstoßes werden die Gutschriften auf Basis der gebuchten Kapazität des Service-Levels berechnet und mit der Rechnung des nächsten Monats gutgeschrieben.
 
 Weitere Informationen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].

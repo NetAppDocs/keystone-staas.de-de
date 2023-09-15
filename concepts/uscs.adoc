@@ -34,7 +34,7 @@ Der Keystone Success Manager (KSM) ist ein USA US-Bürger ist tätig Bereitgeste
 
 == Implementierungsaktivitäten
 
-Sofern verfügbar, werden die Implementierungs- und Installationsaktivitäten vor Ort oder per Remote-Zugriff von US-amerikanischen Unternehmen durchgeführt US-Bürger Bereitgestellt. Fußnote:Haftungsausschluss[die Verfügbarkeit eines geeigneten Personals für Aktivitäten vor Ort ist von dem geografischen Standort abhängig, an dem die Keystone Systeme eingesetzt werden.]
+Sofern verfügbar, werden die Implementierungs- und Installationsaktivitäten vor Ort oder per Remote-Zugriff von US-amerikanischen Unternehmen durchgeführt US-Bürger Bereitgestellt. Fußnote:Haftungsausschluss[die Verfügbarkeit eines geeigneten Personals für Aktivitäten vor Ort hängt vom geografischen Standort ab, an dem die Keystone Systeme implementiert werden.]
 
 
 

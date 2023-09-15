@@ -16,11 +16,11 @@ summary: Keystone und Equinix
 [role="lead"]
 NetApp hat eine Partnerschaft mit Equinix für das Hosting von NetApp Keystone STaaS Services in einem Equinix Datacenter eingegangen, um Ihnen eine einheitliche Lösung zu bieten.
 
-Die Keystone Co-Location (Co-Lo) Services mit Equinix bleiben im Standard-Keystone-Service-Angebot unverändert.
+Die Co-Location-Services (Co-Lo) von Keystone mit Equinix bleiben unverändert im Vergleich zum Standard-Service von Keystone.
 
 In diesem Service:
 
-* Equinix bietet Platz, Strom, Kühlung, Netzwerk und Rechnung Und Storage auf monatlicher Basis.
+* Equinix bietet Platz, Strom, Kühlung, Networking, Rechnung und Storage, auf monatlicher Basis.
 * Für bestimmte Keystone Sales Motions wird Unterstützung geboten.
 * Die Services werden in Rechenzentren in 11 Ländern unterstützt.
 

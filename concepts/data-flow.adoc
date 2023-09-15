@@ -40,7 +40,7 @@ Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines 
 image:monitoring-flow.png["Datenfluss"]
 
 .Legende
-. Das Gateway der AIOPs-Lösung initiiert eine TLS-Sitzung zum ITS-Cloud-Portal.
+. Das Gateway der AIOPs-Lösung initiiert eine TLS-Sitzung zum Cloud-Portal.
 . Die vom Kunden betriebene Firewall erlaubt die Verbindung.
 . Der AIOPs Lösungsserver in der Cloud akzeptiert die Verbindung.
 . Zwischen dem Cloud-Portal und dem lokalen Gateway wird ein TLS-Tunnel aufgebaut.

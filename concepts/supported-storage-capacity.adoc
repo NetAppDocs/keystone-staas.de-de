@@ -39,7 +39,7 @@ Die minimale logische Kapazität, die während des Abonnements monatlich in Rech
 Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ändern. Es gibt jedoch bestimmte Voraussetzungen:
 
 * Die zuges. Kapazität kann unter bestimmten Bedingungen verringert werden. Weitere Informationen finden Sie unter link:../concepts/capacity-requirements.html["Senkung der Kapazität"].
-* Die verplante Kapazität kann nicht 90 Tage vor Ablauf Ihres Abonnements verlängert werden, es sei denn, das Abonnement muss für eine zusätzliche Laufzeit von 12 Monaten verlängert werden.
+* Die gebuchte Kapazität kann 90 Tage vor Ablauf Ihres Abonnements nicht erhöht werden, es sei denn, das Abonnement muss für eine zusätzliche 12-monatige Laufzeit verlängert werden.
 * Sie können Änderungen an der zugesagt Kapazität über die BlueXP-Schnittstelle oder über Keystone Success Manager (KSM) anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].
 
 

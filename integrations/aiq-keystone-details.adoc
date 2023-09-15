@@ -218,7 +218,7 @@ Für den _Advanced Data-Protect_ Service-Level werden die Diagramme wie folgt an
 image:adp-src.png["mcc-Primärbasis"]
 
 .Was Sie für das sekundäre Abonnement (Mirror Site) sehen können
-Wenn Sie das sekundäre Abonnement überprüfen, können Sie sehen, dass das Balkendiagramm für den _Extreme_ Service Level (Basisservice Leverent Usagel) am gleichen Datenerfassungspunkt wie die Partnerseite umgekehrt wird, und die Trennung des Verbrauchs an den primären und gespiegelten Standorten ist 1.05 tib bzw. 1.02 tib.
+Wenn Sie das sekundäre Abonnement prüfen, wird das Balkendiagramm für den Service-Level _Extreme_ (Basis-Service-Level) am gleichen Datenerfassungspunkt wie der Partner-Standort umgekehrt und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort beträgt 1.05 tib bzw. 1.02 tib.
 
 image:mcc-chart-mirror.png["mcc-Spiegel"]
 

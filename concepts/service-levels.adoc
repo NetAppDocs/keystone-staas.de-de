@@ -130,8 +130,8 @@ NOTE: Die Latenz umfasst keine Overhead-Köpfe, die im Zusammenhang mit dem Date
 |===
 [NOTE]
 ====
-* Cloud-native Services wie Computing, Storage und Netzwerk werden von Cloud-Providern in Rechnung gestellt.
-* Diese Services hängen von den Cloud-Storage- und Computing-Merkmalen ab.
+* Cloud-native Services wie Computing, Storage, Netzwerk werden von Cloud-Providern in Rechnung gestellt.
+* Diese Services hängen von Cloud-Storage- und Computing-Merkmalen ab.
 
 
 ====
