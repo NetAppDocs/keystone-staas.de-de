@@ -17,13 +17,13 @@ summary: Die Abrechnung basiert auf verschiedenen Volume-Typen
 
 == Abrechnung für geklonte Volumes
 
-Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone weiterhin ohne zusätzliche Zahlungen verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.
+Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone ohne zusätzliche Zahlungen weiterhin verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.
 
+Beachten Sie Folgendes:
 
-NOTE: Hinweis:
-
-* Der Verbrauch der geklonten Volumes wird während der ersten 24 Stunden nach der Klonerstellung nicht berücksichtigt. Während dieser Zeit fallen für diese Zeit keine Gebühren an.
-* Geklonte Volumes mit den Service-Leveln „Standard“ und „Wert“ werden nicht als Verbrauch betrachtet, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.
+* Klon-Volumes berechnen keine Kosten, solange ihre Größe weniger als 10 % des übergeordneten Volume beträgt (die physische Kapazität, die im Klon-Volume im Vergleich mit der im übergeordneten Volume genutzten physischen Kapazität verwendet wird).
+* Für geklonte Volumes gibt es keine 24-Stunden-Frist, es wird nur die Größe des Klons berücksichtigt.
+* Sobald das Klon-Volume 10 % der physischen Größe des übergeordneten Volume überschreitet, wird der Klon als Standard-Volume abgerechnet (genutzte logische Kapazität).
 
 
 
