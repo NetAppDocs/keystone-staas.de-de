@@ -53,14 +53,10 @@ Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die
 
 == Burst-Kapazität
 
-Jeder Verbrauch, der die fest zugesagt Kapazität für ein Service-Level übersteigt, ist die Burst-Kapazität.
+Mit Keystone Service können Sie zusätzlich Kapazität für einen Service Level nutzen. Dies ist die Burst-Kapazität. Beachten Sie folgende Punkte:
 
-
-NOTE: Hinweis:
-
-* Mit Keystone Service können Sie zusätzlich Kapazität für einen Service Level nutzen. Dies ist die Burst-Kapazität.
-* Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis für den verbrauchten Durchschnitt berechnet.
 * Burst-Kapazität wird in der Keystone Vereinbarung vereinbart. Sie ist in der Regel bis zu 20 % über der festgelegten Kapazität angelegt und wird mit der gleichen Rate wie die zugesagt Kapazität berechnet.
+* Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis für den verbrauchten Durchschnitt berechnet.
 
 
 
