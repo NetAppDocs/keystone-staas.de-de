@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: Neue Funktionen und Verbesserungen bei Keystone STaaS. 
+---
+= Neuerungen bei Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Keystone STaaS Services.
+
+
+
+== Neue Funktionen und Verbesserungen für den 15. Dezember 2023
+
+Erfahren Sie, was in dieser Version neu ist.
+
+
+
+=== Möglichkeit zur Suche nach Watchlisten
+
+Die Unterstützung für Watchlisten im digitalen Berater von Active IQ wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen zur Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"^].
+
+
+
+=== Datum in UTC-Zeitzone umgewandelt
+
+Die auf den Registerkarten des Bildschirms *Keystone Abonnements* von Active IQ Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"^].

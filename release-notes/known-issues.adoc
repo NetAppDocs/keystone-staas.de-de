@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: Bekannte Probleme in der NetApp Service Engine 
+---
+= Bekannte Probleme in der NetApp Service Engine
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Das folgende bekannte Problem wurde in NetApp Keystone STaaS gemeldet. Wenn Sie Ihren Storage als Teil Ihrer Keystone Abonnements bereitstellen oder verwenden, kann dieses Problem für Sie auftreten.
+
+[cols="3*"]
+|===
+| Bekanntes Problem | Beschreibung | Behelfslösung 
+
+
+ a| 
+Falsches Service-Level für Spiegelungs-Volumes abgeleitet.
+ a| 
+Wenn sowohl MetroCluster als auch FabricPool in einer Umgebung aktiviert werden, in der die Tarifen für Tiering und Objekt-Storage anwendbar sind, sind die Service-Level für die gespiegelten Volumes (zusammengehörige und FabricPool Volumes) möglicherweise falsch.
+ a| 
+Keine.
+
+|===

@@ -199,8 +199,8 @@ NetApp HQ für Rechnungsinformationen und AutoSupport-Lieferungen
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+http://mirror.centos.org[]
+http://mirrorlist.centos.org[]
  a| 
 OS-Updates für Keystone Collector (nur OVA-Bereitstellungen)
 

@@ -36,4 +36,4 @@ Führen Sie die folgenden Schritte aus, um die Software auf Ihrem Linux-Server z
 
 
 
-NOTE: Nach Abschluss der Installation können Sie das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ verwenden, um die Konfigurations- und Überwachungsaktivitäten durchzuführen. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren. Siehe link:../installation/configuration.html["Konfigurieren Sie Keystone Collector"] Und link:../installation/monitor-health.html["Systemzustand überwachen"].
+NOTE: Nach Abschluss der Installation können Sie das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ verwenden, um die Konfigurations- und Überwachungsaktivitäten durchzuführen. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren. Siehe link:../installation/configuration.html["Konfigurieren Sie Keystone Collector"] Und link:../installation/monitor-health.html["Systemzustand überwachen"] Zur Information.

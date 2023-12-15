@@ -111,11 +111,13 @@ Beachten Sie die folgenden Klauseln für Kapazitätsanpassungen:
 
 Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen sollten während der Laufzeit >= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.
 
-image:capacity-reduction.png["Bild zeigt Kapazitätsreduzierung an"]
+image:reallocation.png["Logik der Neuzuweisung erklärt"]
 
 
 
 === Vierteljährliche Neuzuweisung von Ausgaben
+
+Keystone STaaS bietet Ihnen die Möglichkeit, Ausgaben für On-Premises-Services für Cloud Volumes ONTAP-Ausgaben neu zuzuordnen.
 
 Anforderungen und Bedingungen auf Abonnementebene:
 
@@ -123,13 +125,38 @@ Anforderungen und Bedingungen auf Abonnementebene:
 * Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.
 * Kapazität für Cloud Volumes ONTAP und Cloud Backup Service sollte über Keystone erworben werden.
 * Für die Neuzuordnung von Cloud Services können bis zu 25 % der bestehenden lokalen, servicebasierten monatlichen Zahlungen verwendet werden.
-* Die Service-basierten monatlichen Zahlungen vor Ort sollten innerhalb der Laufzeit von >= 16,7.000 US-Dollar erfolgen, um von einer Neuzuordnung zu profitieren.
 * Anfragen zur Neuzuordnung werden erst nach 90 Tagen nach dem letzten Aktivierungsdatum der Neuzuweisung wirksam.
-* Die Neuzuordnung von Cloud-Services in On-Premises-Umgebungen ist nicht möglich.
+* Die Neuzuordnung kann nicht über Cloud-Services zu On-Premises-Services vorgenommen werden.
 * Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum durch den Kunden oder Partner Keystone Success Manager (KSM) formal eingereicht werden.
-* Neue Anfragen werden nur ab dem nächsten Abrechnungszeitraum wirksam.
+* Neue Anfragen werden nur ab dem aufeinanderfolgenden Abrechnungszeitraum wirksam.
 
 
-Ein Beispiel für eine vierteljährliche Neuzuweisung von Ausgaben ist im folgenden Bild dargestellt:
+Einem Teil der Ausgaben können Sie Ihren abonnierten File-, Block- oder Objekt-Storage-Service-Levels zuweisen und Hybrid-Cloud-Storage-Services zuweisen. Bis zu 25 % des Jahresvertragswerts (ACV) können vierteljährlich auf Cloud Volumes ONTAP Primär- und Cloud Volumes ONTAP Sekundärdienste neu zugewiesen werden:
 
-image:spend-alloc.png["Wie die Ausgaben verteilt werden"]
+image:reallocation.png["Logik der Neuzuweisung erklärt"]
+
+Diese Tabelle enthält eine Reihe von Beispielwerten, die zeigen, wie die Neuzuweisung von Ausgaben funktioniert. In diesem Beispiel `$5000` Die monatlichen Ausgaben werden dem Hybrid-Cloud-Storage-Service zugewiesen.
+
+|===
+
+
+| *Vor der Zuweisung* | *Kapazität (tib)* | *Monatlich ausgewiesene Ausgaben* 
+
+
+| Extrem | 125 | 37,376 
+
+
+| *Nach Neuzuweisung* | *Kapazität (tib)* | *Monatlich ausgewiesene Ausgaben* 
+
+
+| Extrem | 108 | 37,376 
+
+
+| Cloud Volumes ONTAP | 47 | 5,000 
+
+
+|  |  | 37,376 
+|===
+Die Reduzierung beträgt (125-108) = 17 tib der dem Extreme Service Level zugewiesenen Kapazität. Bei der Ausgabenzuweisung beträgt der zugewiesene Hybrid-Cloud-Storage nicht 17 tib, sondern eine äquivalente Kapazität, die 5.000 US-Dollar erworben werden kann. In diesem Beispiel erhalten Sie für 5000 USD 17 tib lokale Storage-Kapazität für das Extreme Service Level und 47 tib Hybrid-Cloud-Kapazität des Cloud Volumes ONTAP Service Levels. Die Neuzuweisung richtet sich daher eher nach den Ausgaben, nicht nach der Kapazität.
+
+Wenden Sie sich an Ihren Keystone Success Manager (KSM), wenn Sie Ausgaben von Ihren On-Premises-Services mit Cloud-Services neu zuordnen möchten.

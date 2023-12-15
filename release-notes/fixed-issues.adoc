@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: release-notes/fixed-issues.html 
+keywords: fixed issues 
+summary: Probleme in verschiedenen Versionen von Keystone STaaS behoben 
+---
+= Probleme wurden behoben
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden wurden, wurden in späteren Versionen behoben. In der folgenden Tabelle sind die Fehlerbehebungen aufgeführt.
+
+[cols="3*"]
+|===
+| Problembeschreibung | Nach dem Fix | Behoben in Freigabe 
+
+
+ a| 
+Die Verwendungsanzeige für einen Burst-Verbrauchsdatensatz wurde gelb angezeigt.
+ a| 
+Die Anzeige erscheint rot.
+ a| 
+Dezember 13, 2023
+
+
+
+ a| 
+Der Datumsbereich und die Daten in den Registerkarten Kapazitätstrend, Aktuelle Nutzung und Leistung wurden nicht in die UTC-Zeitzone konvertiert.
+ a| 
+Der Datumsbereich für Abfrage und Daten in allen Registerkarten wird in UTC-Zeit (Serverzeitzone) angezeigt. Die UTC-Zeitzone wird auch für jedes Datumsfeld auf den Registerkarten angezeigt.
+ a| 
+Dezember 13, 2023
+
+
+
+ a| 
+Das Start- und Enddatum zwischen den Registerkarten und den heruntergeladenen CSV-Berichten stimmt nicht überein.
+ a| 
+Behoben.
+ a| 
+Dezember 13, 2023
+
+|===

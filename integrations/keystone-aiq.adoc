@@ -4,7 +4,7 @@ permalink: integrations/keystone-aiq.html
 keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
 summary: Keystone und Digital Advisor 
 ---
-= Keystone und Digital Advisor
+= Das Keystone Dashboard finden Sie im Active IQ Digital Advisor
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,10 +16,12 @@ summary: Keystone und Digital Advisor
 [role="lead"]
 Wenn Sie NetApp Keystone StaaS-Services abonniert haben, erhalten Sie im Widget *Keystone Abonnements* des Digital Advisor Dashboards von Active IQ einen Überblick über Ihre Abonnements.
 
+Sie können nach den Keystone Abonnementdetails suchen, indem Sie nach einem Kundennamen oder einem Watchlistennamen mit mehreren Kunden suchen. Informationen zum Durchsuchen der Keystone STaaS-Abonnements nach Watchlisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"].
+
 Digital Advisor bietet ein einheitliches Dashboard, das über die Schaltfläche *zum alten/neuen Dashboard wechseln* Einblicke in verschiedene Ebenen Ihrer Abonnementdaten und Nutzungsinformationen gibt.
 
 .Standard-Dashboard (alt)
-Sie können Ihre Abonnementnummer, Ihren Kontonamen, Start- und Enddaten des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Serviceleveln anzeigen.
+Sie sehen den Kundennamen und die Abonnementnummer, den Kontonamen, das Start- und Enddatum des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Service-Leveln.
 
 image:old-db.png["Altes Dashboard"]
 
@@ -53,3 +55,24 @@ image:new-db.png["Neues Dashboard"]
 Weitere Informationen über das Widget „Digital Advisor Dashboard“ für Keystone finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor Dokumentation"^].
 
 Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"].
+
+
+
+== Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten
+
+Watchlist ist eine Funktion des digitalen Beraters von Active IQ (Digital Advisor). Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Watchlist verstehen"^]. Informationen zum Erstellen von Watchlisten finden Sie unter https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Erstellen Sie eine Watchlist"^].
+
+Keystone STaaS unterstützt das Erstellen von Watchlisten und die Suche anhand von Abonnements mehrerer Kunden. So erstellen Sie eine Watchlist für Keystone Kunden:
+
+. Geben Sie auf dem Bildschirm *Create Watchlist* einen Namen für die Keystone Watchlist ein.
+. Wählen Sie im Feld *Add Systems by* die Option *Category* aus. *Kunde* ist standardmäßig im Feld *Kategorie auswählen* ausgewählt.
+. Suchen Sie nach den gewünschten Kunden anhand ihrer Namen und fügen Sie sie hinzu. Sie können nur Kunden hinzufügen, deren Daten Sie einsehen dürfen.
+. Klicken Sie Auf *Watchlist Erstellen*. Im Digital Advisor-Bildschirm werden die Daten für die neue Watchlist angezeigt.
+
+
+Bei der Suche nach einer Watchlist auf dem Digital Advisor-Bildschirm können Sie die Kunden und deren Abonnements in der Dropdown-Liste *Abonnement* im Widget *Keystone Abonnements* einsehen.
+
+
+TIP: Wenn Sie das _New_ Dashboard im Widget *Keystone Subscriptions* anzeigen, klicken Sie auf *zum alten Dashboard wechseln*, um die Liste anzuzeigen.
+
+image:watchlist.png["Bildschirm „watchlist“"]
