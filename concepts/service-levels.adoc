@@ -4,7 +4,7 @@ permalink: concepts/service-levels.html
 keywords: service levels, service level, rate plan or service level 
 summary: Unterstützte Service-Level 
 ---
-= Service-Level in Keystone
+= Service-Level bei Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -135,3 +135,10 @@ NOTE: Die Latenz umfasst keine Overhead-Köpfe, die im Zusammenhang mit dem Date
 
 
 ====
+*Verwandte Informationen*
+
+* link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"]
+* link:..//concepts/metrics.html["Metriken und Definitionen für Keystone Services"]
+* link:../concepts/qos.html["Quality of Service (QoS) in Keystone"]
+* link:../concepts/pricing.html["Keystone-Preisgestaltung"]
+

@@ -18,6 +18,26 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
+== Neue Funktionen und Verbesserungen für den 11. Januar 2024
+
+Erfahren Sie, was in dieser Version neu ist.
+
+Die folgenden Änderungen wurden auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch bekannt als Digital Advisor) vorgenommen.
+
+
+
+=== Die Rechnungsdaten wurden für aufgelaufene Burst zurückgegeben
+
+Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html#view-invoiced-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+
+
+
+=== Details des aufgelaufenen Verbrauchs für spezifische Tarifpläne
+
+Wenn Sie ein Abonnement mit Tarifen mit _Null_ gebuchter Kapazität haben, können Sie die Details des aufgelaufenen Verbrauchs auf der Registerkarte *Kapazitätstrend* anzeigen. Bei Auswahl der Option *fakturierter aufgelaufener Verbrauch* können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Verbrauchsdaten anzeigen.
+
+
+
 == Neue Funktionen und Verbesserungen für den 15. Dezember 2023
 
 Erfahren Sie, was in dieser Version neu ist.
@@ -26,7 +46,7 @@ Erfahren Sie, was in dieser Version neu ist.
 
 === Möglichkeit zur Suche nach Watchlisten
 
-Die Unterstützung für Watchlisten im digitalen Berater von Active IQ wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen zur Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"^].
+Die Unterstützung für Watchlisten im digitalen Berater von Active IQ (auch als digitaler Berater bekannt) wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen zur Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"^].
 
 
 

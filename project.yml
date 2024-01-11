@@ -53,7 +53,7 @@ sidebar:
       url: "/installation/asup-config.html"
     - title: Daten, die zur Abrechnung erfasst werden
       url: "/installation/data-collection.html"
-  - title: Mit Keystone Services mehr erreichen
+  - title: Hier können Sie das Keystone Dashboard anzeigen und Abonnements managen
     entries:
     - title: Das Keystone Dashboard finden Sie im Active IQ Digital Advisor
       url: "/integrations/keystone-aiq.html"
@@ -69,10 +69,12 @@ sidebar:
       url: "/concepts/metrics.html"
     - title: Unterstützter Storage in Keystone
       url: "/concepts/supported-storage-services.html"
-    - title: Service-Level in Keystone
+    - title: Service-Level bei Keystone
       url: "/concepts/service-levels.html"
     - title: Add-on-Services
       entries:
+      - title: Zusätzliche Services in Keystone STaaS
+        url: "/concepts/add-on.html"
       - title: Daten-Tiering
         url: "/concepts/data-tiering.html"
       - title: Erweiterte Datensicherung

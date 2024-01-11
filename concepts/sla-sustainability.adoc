@@ -16,7 +16,7 @@ summary: Nachhaltigkeit, sla, Service Level Agreement
 [role="lead"]
 NetApp Keystone STaaS bietet Service-Level-Agreements oder SLA-gestützte Service-Level für die Nachhaltigkeit, die die maximale Nutzung von Watt/tib pro Service-Level definieren. Sie unterstützt Sie bei der Planung, Überwachung und Einhaltung Ihrer IT-Nachhaltigkeitsziele.
 
-Im Widget „Keystone“ im digitalen Berater-Dashboard von Active IQ können Sie sich über Probleme mit SLAs informieren.
+Im Dashboard von Active IQ Digital Advisor (auch als digitaler Berater bekannt) erhalten Sie Informationen über Probleme im Zusammenhang mit SLAs über das Keystone Widget.
 
 
 
@@ -84,7 +84,7 @@ Commingled- und MetroCluster-Konfigurationen werden nicht unterstützt.
 
 == Nachhaltigkeitsberichte
 
-Die Registerkarte „SLA“ im Keystone Dashboard von Active IQ Digital Advisor (Digital Advisor) bietet eine detaillierte Ansicht der Nachhaltigkeitsmetriken für Ihre Keystone Abonnements. Sie können die Kennzahlen anzeigen und Berichte für zukünftige Analysen und Aktionen erstellen.
+Das Keystone Dashboard von Digital Advisor bietet eine detaillierte Ansicht der Nachhaltigkeitsmetriken für Ihre Keystone Abonnements. Sie können die Kennzahlen anzeigen und Berichte für zukünftige Analysen und Aktionen erstellen.
 
 Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"].
 
