@@ -18,6 +18,18 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
+== Neue Funktionen und Verbesserungen für 13. Februar 2024
+
+Die folgende Änderung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch bekannt als Digital Advisor) vorgenommen.
+
+
+
+=== Möglichkeit, Abonnements anzuzeigen, die mit einem primären Abonnement verknüpft sind
+
+Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnements vorhanden sein. In diesem Fall wird die primäre Abonnementnummer weiterhin in der Spalte *Abonnementnummer* angezeigt, während die verknüpften Abonnementnummern in einer neuen Spalte *verknüpfte Abonnements* auf der Registerkarte *Abonnements* aufgeführt werden. Die Spalte *Verknüpfte Abonnements* steht Ihnen nur dann zur Verfügung, wenn Sie mit Abonnements verknüpft sind, und Sie können Informationsmeldungen sehen, die Sie darüber informieren.
+
+
+
 == Neue Funktionen und Verbesserungen für den 11. Januar 2024
 
 Erfahren Sie, was in dieser Version neu ist.

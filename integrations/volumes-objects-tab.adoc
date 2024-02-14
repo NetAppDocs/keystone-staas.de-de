@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: Volumes-Objects-tab 
+---
+= Registerkarte „Volumes & Objekte“
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Registerkarte *Volumes & Objekte* können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.
+
+
+NOTE: Der Name dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl Volumes als auch Objektspeicher haben, können Sie die Registerkarte *Volumes & Objekte* sehen. Wenn Sie nur ONTAP Volumes in Ihrer Storage-Umgebung haben, ändert sich der Name in *Volumes*. Für StorageGRID-Objektspeicher können Sie die Registerkarte *Objects* sehen.
+
+
+
+== Zeigen Sie Details zum ONTAP Volume an
+
+Für ONTAP werden auf der Registerkarte *Volumes* Informationen angezeigt, beispielsweise die Kapazitätsauslastung, der Volume-Typ, das Cluster, das Aggregat und das Service-Level der Volumes in Ihrer durch das Keystone Abonnement verwalteten Storage-Umgebung.
+
+.Schritte
+. Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes*.
+. Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.
++
+Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
+
++
+
+NOTE: Für einen erweiterten Add-on für die Datensicherung wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
+
+
+
+image:aiq-ks-sysdtls.png["Registerkarte Volumes  Objekte"]
+
+
+
+== StorageGRID Nodes und Verbrauch anzeigen
+
+Bei StorageGRID wird auf dieser Registerkarte die physische Nutzung der Nodes für den Objektspeicher angezeigt.
+
+.Schritte
+. Klicken Sie auf *GENERAL > Keystone Subscriptions > Objects*.
+. Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt. Bei Auswahl der Abonnementnummer wird der Link für Details zum Objekt-Storage aktiviert.
++
+image:sg-link.png["Dialogfeld „StorageGRID“"]
+
+. Klicken Sie auf den Link, um die Knotennamen und Details zur physischen Nutzung für jeden Node anzuzeigen.
++
+image:sg-link-2.png["Dialogfeld „StorageGRID“"]
+
+
+
+*Verwandte Informationen*
+
+* link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
+* link:../integrations/sla-details-tab.html["SLA-Details"]
+* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/performance-tab.html["Leistung"]
+

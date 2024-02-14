@@ -52,9 +52,9 @@ Diese Subsysteme sind standardmäßig in den wöchentlichen AutoSupport-Paketen 
 
 .Schritte
 . Melden Sie sich als Systemadministrator über SSH beim Keystone ONTAP-Cluster an. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["Greifen Sie über SSH auf das Cluster zu"^].
-. Führen Sie den folgenden Befehl aus, und überprüfen Sie die vorhandene Konfiguration:
+. Führen Sie den folgenden Befehl aus, und überprüfen Sie die vorhandene Konfiguration in Bezug auf die vorhandenen Subsysteme:
 +
-`autosupport trigger show -node * -autosupport-message management.log -instance`
+`autosupport trigger show -node * -autosupport-message management.log -fields basic-additional`
 
 +
 Weitere Informationen zu diesem Befehl finden Sie unter https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-manifest-show.html#parameters["System-Node-AutoSupport-Manifest anzeigen"^].

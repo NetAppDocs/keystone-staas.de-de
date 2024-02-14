@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current usage tab 
+summary: Registerkarte „Aktuelle Nutzung“ im AIQ da Keystone Dashboard 
+---
+= Registerkarte „Aktuelle Nutzung“
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Registerkarte *Aktuelle Nutzung* werden die Nutzungsdetails Ihrer Abonnements angezeigt.
+
+Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Current Usage*, und wählen Sie die gewünschte Abonnementnummer aus.
+
+image:aiq-ks-dtls.png["Registerkarte „Aktuelle Nutzung“"]
+
+Für das ausgewählte Abonnement können Sie Details wie das Start- und Enddatum des Abonnements sowie den Abrechnungszeitraum, z. B. monatlich oder jährlich, anzeigen. Im Rahmen der Abonnementnutzung können Sie den Service-Level-Namen, die gebuchten, verbrauchten, verfügbaren Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung (in tib) anzeigen.
+
+
+TIP: Der image:icon-info.png["Informationssymbol"] Neben den einzelnen Spalten finden Sie umfassende Informationen zu dieser Spalte. Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+
+Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
+
+In Verbindung mit der aktuellen Nutzung können Sie die historischen Nutzungsdaten zum Vergleich anzeigen. Klicken Sie auf die Schaltfläche *Historische Daten anzeigen*, um zur Registerkarte *Kapazitätstrend* zu navigieren, um die historischen Daten für dasselbe Abonnement anzuzeigen.
+
+*Verwandte Informationen*
+
+* link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/sla-details-tab.html["SLA-Details"]
+* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
+* link:../integrations/performance-tab.html["Leistung"]
+

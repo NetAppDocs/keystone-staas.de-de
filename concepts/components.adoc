@@ -56,7 +56,7 @@ NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen
 
 === Storage Virtual Machines
 
-Für die Implementierung von Keystone Collector und dem AIOPs-Lösungs-Gateway ist eine Storage Virtual Machine (Storage-VM) erforderlich. Die Voraussetzungen für die Installation von Keystone Collector sind hier verfügbar: link:..//installation/installation-overview.html["Installationsanleitung für Keystone Collector"]. Die anderen Anforderungen werden während der Implementierung gemeinsam genutzt.
+Für die Implementierung von Keystone Collector und dem AIOPs-Lösungs-Gateway ist eine Storage Virtual Machine (Storage-VM) erforderlich. Die Voraussetzungen für die Installation von Keystone Collector sind hier verfügbar: link:../installation/installation-overview.html["Installationsanleitung für Keystone Collector"]. Die anderen Anforderungen werden während der Implementierung gemeinsam genutzt.
 
 
 
