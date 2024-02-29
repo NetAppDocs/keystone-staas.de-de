@@ -56,4 +56,5 @@ Bei einer SLA-Verletzung wird A angezeigt image:warning.png["Symbol für Warnung
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/performance-tab.html["Leistung"]
+* link:../integrations/assets-tab.html["Ressourcen"]
 

@@ -4,7 +4,7 @@ permalink: installation/linux-installation.html
 keywords: Linux installation Keystone, Linux Collector installation 
 summary: Installieren von Keystone Collector unter Linux 
 ---
-= Installieren von Keystone Collector auf Linux-Systemen
+= Installieren Sie Keystone Collector auf Linux Systemen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

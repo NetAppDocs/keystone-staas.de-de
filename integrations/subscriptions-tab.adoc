@@ -16,11 +16,11 @@ summary: Registerkarte „Abonnements“ im AIQ da Keystone Dashboard
 [role="lead"]
 Sie können eine Liste aller Ihrer Abonnements auf der Registerkarte *Abonnements* anzeigen.
 
-Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Subscriptions*.
+Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Subscriptions*. Alle Ihre Abonnements werden aufgelistet.
 
 image:all-subs.png["Ein Bild der Registerkarte Abonnements"]
 
-Sie können die folgenden Informationen sehen. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
+Sie können die Auswahl filtern, indem Sie auf das Hamburger-Symbol klicken image:icon-hamburger.png["hamburger-Symbol"] Um eine Spalte anzuzeigen, oder um alle Abonnements anzuzeigen, indem Sie auf die Schaltfläche *Filter löschen* klicken. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
 
 * *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
 * *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
@@ -52,4 +52,5 @@ image:icon-grey.png["Graues Punktsymbol"]: Keine Kapazitätsnutzung erfasst mit 
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/performance-tab.html["Leistung"]
+* link:../integrations/assets-tab.html["Ressourcen"]
 

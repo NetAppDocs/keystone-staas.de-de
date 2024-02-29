@@ -22,7 +22,7 @@ Im Dashboard von Active IQ Digital Advisor (auch als digitaler Berater bekannt) 
 
 == Nachhaltigkeitsmetriken
 
-Die folgenden Kennzahlen werden verwendet, um Nachhaltigkeit zu definieren und zu messen:
+Die folgenden Kennzahlen definieren und messen Nachhaltigkeit:
 
 * Watt: Der tägliche Stromverbrauch der ONTAP AFF Arrays Der A-Series und angebundener SSD-Shelfs.
 * TIB: Je größer:

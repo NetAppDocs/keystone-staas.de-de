@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets-tab.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab 
+summary: Keystone-Abonnementberichte und -Diagramme 
+---
+= Registerkarte „Assets“
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nutzen Sie die Registerkarte *Assets*, um Perspektiven auf Ihr Cluster und die Nodes zu sammeln, die durch Ihre Keystone Abonnements gemanagt werden.
+
+Digitaler Berater von Active IQ (Digital Advisor) bietet umfassende Informationen auf Bestandsebene Ihrer Implementierungen. Auf der Registerkarte *Assets* des Keystone Dashboards hingegen werden die Informationen auf Cluster-Ebene auf Basis Ihrer Abonnements gesammelt, getrennt und mit den genauen Details dargestellt.
+
+.Schritte
+. Klicken Sie auf *GENERAL > Keystone Subscriptions > Assets*.
+. Wählen Sie die Abonnementnummer aus, für die Sie die Cluster anzeigen möchten.
+
+
+Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten.
+
+image:assets-tab.png["Registerkarte „Assets“"]
+
+*Verwandte Informationen*
+
+* link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
+* link:../integrations/sla-details-tab.html["SLA-Details"]
+* link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
+* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/performance-tab.html["Leistung"]
+

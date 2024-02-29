@@ -16,19 +16,19 @@ summary: Keystone und Digital Advisor
 [role="lead"]
 Wenn Sie NetApp Keystone StaaS-Services abonniert haben, erhalten Sie im Dashboard von Active IQ Digital Advisor (auch bekannt als digitaler Berater) eine Übersicht über Ihre Abonnements.
 
-Sie können nach den Keystone Abonnementdetails suchen, indem Sie nach einem Kundennamen oder einem Watchlistennamen mit mehreren Kunden suchen. Informationen zum Durchsuchen der Keystone STaaS-Abonnements nach Watchlisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"].
+Sie können nach einem Keystone Abonnement suchen, indem Sie die ersten drei Zeichen eines Kunden- bzw. Watchlistennamens oder die Keystone Abonnementnummer eingeben. Informationen zum Durchsuchen der Keystone STaaS-Abonnements nach Watchlisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"].
 
 Digital Advisor bietet ein einheitliches Dashboard, das über die Schaltfläche *zum alten/neuen Dashboard wechseln* Einblicke in verschiedene Ebenen Ihrer Abonnementdaten und Nutzungsinformationen gibt.
 
 .Standard-Dashboard (alt)
-Sie sehen den Kundennamen und die Abonnementnummer, den Kontonamen, das Start- und Enddatum des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Service-Leveln.
+Sie sehen den Kundennamen und die Abonnementnummer, den Kontonamen, das Start- und Enddatum des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Service-Leveln. Sie können den Erfassungsstamp der Verbrauchsdaten in UTC-Zeit sehen.
 
 image:old-db.png["Altes Dashboard"]
 
 .Alternatives (neues) Dashboard
 Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowie Warnungen und Warnungen, die sofortige Aufmerksamkeit oder Maßnahmen erfordern. Die Informationen werden abhängig von Ihren Abonnements und dem Status Ihrer Nutzung selektiv angezeigt. Sie können diese Informationen anzeigen:
 
-* Kapazitätsnutzung, z. B.:
+* *Kapazitätsnutzung*: Verbrauchsdaten wie:
 +
 ** Keine Nutzung.
 ** Verbrauch von mehr als 80 % der gebuchten Kapazität.
@@ -36,8 +36,8 @@ Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowi
 ** Verbrauch über der Burst-Kapazität hinaus.
 
 
-* Service Level Agreement: Dieser Status wird angezeigt, wenn mindestens eines Ihrer Abonnements über einen gültigen Service Level Agreement (SLA) für Nachhaltigkeit mit NetApp verfügt. Der Status gibt an, ob die Abonnements die in Ihrem SLA definierten Nachhaltigkeitskriterien erfüllen. Wenn Ihre Abonnements die SLA-Kriterien erfüllen, können Sie den Status als _Alle OK_ sehen.
-* Verschiedene Warnungen werden angezeigt, wenn sie für Sie relevant sind.
+* *Service Level Agreement*: Dieser Status wird angezeigt, wenn mindestens eines Ihrer Abonnements einen gültigen Service Level Agreement (SLA) für Nachhaltigkeit mit NetApp hat. Der Status gibt an, ob die Abonnements die in Ihrem SLA definierten Nachhaltigkeitskriterien erfüllen. Wenn Ihre Abonnements die SLA-Kriterien erfüllen, können Sie den Status als _Alle OK_ sehen.
+* *Warnungen*: Sie sehen Warnungen für verschiedene Szenarien, wenn sie für Sie relevant sind.
 +
 ** *Läuft bald ab*: Falls Ihre Abonnements innerhalb von 90 Tagen ablaufen.
 ** *Kritische Hardware-Upgrades*: Wenn kritische Hardware-Upgrades ausstehen.
@@ -58,21 +58,13 @@ Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link
 
 
 
-== Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten
+== Sie können nach Keystone Watchlisten suchen
 
 Watchlist ist eine Funktion des digitalen Beraters von Active IQ (Digital Advisor). Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Watchlist verstehen"^]. Informationen zum Erstellen von Watchlisten finden Sie unter https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Erstellen Sie eine Watchlist"^].
 
-Keystone STaaS unterstützt das Erstellen von Watchlisten und die Suche anhand von Abonnements mehrerer Kunden. So erstellen Sie eine Watchlist für Keystone Kunden:
-
-. Geben Sie auf dem Bildschirm *Create Watchlist* einen Namen für die Keystone Watchlist ein.
-. Wählen Sie im Feld *Add Systems by* die Option *Category* aus. *Kunde* ist standardmäßig im Feld *Kategorie auswählen* ausgewählt.
-. Suchen Sie nach den gewünschten Kunden anhand ihrer Namen und fügen Sie sie hinzu. Sie können nur Kunden hinzufügen, deren Daten Sie einsehen dürfen.
-. Klicken Sie Auf *Watchlist Erstellen*. Im Digital Advisor-Bildschirm werden die Daten für die neue Watchlist angezeigt.
+Für Keystone STaaS können Sie Watchlisten für Kunden oder Abonnementnummern erstellen. Im Digital Advisor-Bildschirm können Sie nach dem Namen der Watchlist suchen. Bei der Suche nach einer Watchlist können Sie die Kunden und deren Abonnements in der Dropdown-Liste *Abonnement* im Widget *Keystone Abonnements* einsehen.
 
 
-Bei der Suche nach einer Watchlist auf dem Digital Advisor-Bildschirm können Sie die Kunden und deren Abonnements in der Dropdown-Liste *Abonnement* im Widget *Keystone Abonnements* einsehen.
-
-
-TIP: Wenn Sie das _New_ Dashboard im Widget *Keystone Subscriptions* anzeigen, klicken Sie auf *zum alten Dashboard wechseln*, um die Liste anzuzeigen.
+NOTE: Eine Suche nach Watchlisten ruft die Liste der Abonnements auf dem alten Dashboard ab. Wenn eine Watchlist aus Abonnementnummern besteht, wird nur das Widget *Keystone Abonnements* auf dem Digital Advisor Dashboard angezeigt.
 
 image:watchlist.png["Bildschirm „watchlist“"]

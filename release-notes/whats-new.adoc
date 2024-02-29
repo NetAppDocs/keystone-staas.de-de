@@ -18,9 +18,39 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
+== Neue Funktionen und Verbesserungen für 29. Februar 2024
+
+Im Dashboard von Active IQ Digital Advisor (auch als digitaler Berater bekannt) und im Bildschirm *Keystone Abonnements* für diese Version wurden verschiedene Verbesserungen vorgenommen:
+
+
+
+=== Hinzufügen der Registerkarte „Assets“
+
+Der Bildschirm *Keystone Subscriptions* enthält jetzt die Registerkarte *Assets*. Auf dieser neuen Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene angezeigt. Weitere Informationen finden Sie unter link:../integrations/assets-tab.html["Registerkarte „Assets“"^].
+
+
+
+=== Verbesserungen an der Registerkarte Volumes & Objekte
+
+Um Ihre ONTAP-Systemvolumes besser zu machen, wurden zwei neue Tabulatortasten, *Volume Summary* und *Volume Details*, auf der Registerkarte *Volumes* hinzugefügt. Die Registerkarte *Volume Summary* bietet eine Gesamtanzahl der Volumes, die Ihren abonnierten Service-Levels zugeordnet sind, einschließlich des AQoS-Compliance-Status und der Kapazitätsinformationen. Die Registerkarte *Volume Details* listet alle Volumes und ihre Besonderheiten auf. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+
+
+
+=== Verbesserte Suchfunktionen auf Digital Advisor
+
+Die Suchparameter auf dem *Digital Advisor*-Bildschirm enthalten nun die für Keystone Abonnements erstellten Keystone Abonnementnummern und Watchlisten. Sie können die ersten drei Zeichen einer Abonnementnummer oder eines Watchlist-Namens eingeben. Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Das Keystone Dashboard finden Sie im Active IQ Digital Advisor"^].
+
+
+
+=== Zeitstempel der Verbrauchsdaten anzeigen
+
+Sie können den Zeitstempel der Verbrauchsdaten (in UTC) auf dem alten Dashboard des Widgets *Keystone Abonnements* anzeigen.
+
+
+
 == Neue Funktionen und Verbesserungen für 13. Februar 2024
 
-Die folgende Änderung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch bekannt als Digital Advisor) vorgenommen.
+Die folgende Verbesserung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen.
 
 
 
@@ -34,7 +64,7 @@ Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnemen
 
 Erfahren Sie, was in dieser Version neu ist.
 
-Die folgenden Änderungen wurden auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch bekannt als Digital Advisor) vorgenommen.
+Die folgenden Verbesserungen wurden auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen.
 
 
 

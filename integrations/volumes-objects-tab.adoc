@@ -14,22 +14,36 @@ summary: Volumes-Objects-tab
 
 
 [role="lead"]
-Auf der Registerkarte *Volumes & Objekte* können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.
+Verwenden Sie die Registerkarte *Volumes & Objekte*, um die zusammenfassenden Informationen und Details Ihrer ONTAP-Volumes anzuzeigen. Bei StorageGRID können Sie auf dieser Registerkarte den Verbrauch durch die einzelnen Nodes in Ihrer Objekt-Storage-Umgebung lesen.
 
 
-NOTE: Der Name dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl Volumes als auch Objektspeicher haben, können Sie die Registerkarte *Volumes & Objekte* sehen. Wenn Sie nur ONTAP Volumes in Ihrer Storage-Umgebung haben, ändert sich der Name in *Volumes*. Für StorageGRID-Objektspeicher können Sie die Registerkarte *Objects* sehen.
+NOTE: Der Titel dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl ONTAP als auch Objektspeicher haben, wird der Titel der Registerkarte als *Volumes & Objekte* angezeigt. Nur für ONTAP erscheint der Name *Volumes*. Für StorageGRID-Objektspeicher können Sie die Registerkarte *Objects* sehen.
 
 
 
-== Zeigen Sie Details zum ONTAP Volume an
+== Zeigen Sie ONTAP Volume Summary und Details an
 
-Für ONTAP werden auf der Registerkarte *Volumes* Informationen angezeigt, beispielsweise die Kapazitätsauslastung, der Volume-Typ, das Cluster, das Aggregat und das Service-Level der Volumes in Ihrer durch das Keystone Abonnement verwalteten Storage-Umgebung.
+Die Registerkarte Volumes bietet verschiedene Detailebenen zu Ihren ONTAP-System-Volumes. Es gibt zwei Registerkarten, jeweils eine für die Zusammenfassung und Detailansicht Ihrer ONTAP Volumes. Die Registerkarte *Volume Summary* bietet eine Gesamtanzahl der Volumes, die den abonnierten Service-Levels zugeordnet sind. Die entsprechenden Bände werden erneut im Register *Volume Details* mit ihren Angaben aufgelistet.
 
-.Schritte
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes*.
+[role="tabbed-block"]
+====
+.Volume-Übersicht
+--
+. Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes & Objects > Volume Summary*.
+. Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.
+
+
+Beim ausgewählten Keystone STaaS Abonnement können Sie die Gesamtzahl der Volumes, ihren AQoS-Compliance-Status und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen Volumes klicken, werden die einzelnen Volumes auf der Registerkarte *Volume-Details* angezeigt.
+
+image:volume-summary.png["Registerkarte „Volume Summary“"]
+
+--
+.Volume-Details
+--
+. Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes > Volume Details*.
 . Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.
 +
-Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
+Die Volumes, beispielsweise Kapazitätsauslastung, Volume-Typ, Cluster, Aggregat und die zugewiesenen Keystone Service-Level, werden tabellarisch aufgelistet. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
 
 +
 
@@ -37,8 +51,10 @@ NOTE: Für einen erweiterten Add-on für die Datensicherung wird eine zusätzlic
 
 
 
-image:aiq-ks-sysdtls.png["Registerkarte Volumes  Objekte"]
+image:volume-details.png["Registerkarte „Volume-Details“"]
 
+--
+====
 
 
 == StorageGRID Nodes und Verbrauch anzeigen
@@ -65,4 +81,5 @@ image:sg-link-2.png["Dialogfeld „StorageGRID“"]
 * link:../integrations/sla-details-tab.html["SLA-Details"]
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/performance-tab.html["Leistung"]
+* link:../integrations/assets-tab.html["Ressourcen"]
 
