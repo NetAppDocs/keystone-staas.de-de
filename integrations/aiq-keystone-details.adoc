@@ -44,15 +44,16 @@ Die folgenden Links bieten weitere Informationen zu den einzelnen Registerkarten
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/performance-tab.html["Leistung"]
+* link:../integrations/assets-tab.html["Ressourcen"]
 
 
 
 
 == Berichte generieren
 
-Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Volume-Details auf den einzelnen Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche „Download“ klicken: image:download-icon.png["Symbol zum Herunterladen des Berichts"]
+Sie können Berichte für Keystone Daten generieren und anzeigen. Auf jeder Registerkarte der Seite *Keystone Abonnements* können Sie durch Klicken auf die Download-Schaltfläche Berichte für Ihre Abonnements, Nutzungsdaten und Burst-Nutzung, Performance, Ressourcen sowie Volumes und Objekte generieren: image:download-icon.png["Symbol zum Herunterladen des Berichts"]
 
-Die Details werden im CSV-Format erstellt, das Sie zur späteren Verwendung speichern können.
+Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwendung und den Vergleich speichern können.
 
 Ein Beispielbericht für die Registerkarte *Capacity Trend*, in der die grafischen Daten konvertiert werden:
 
