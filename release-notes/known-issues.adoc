@@ -24,18 +24,18 @@ Die folgenden bekannten Probleme wurden in NetApp Keystone STaaS gemeldet.
 
 
  a| 
-Gelegentliche Diskrepanz bei der Anzahl der nicht kompatiblen AQoS-Volumes im Register *Volumes*.
+Informationen zu AQoS-nicht-konformen Volumes und MetroCluster-Partnern stehen für AutoSupport-Abonnements nicht zur Verfügung.
  a| 
-Wenn einem Volume zwei Service-Level zugewiesen sind, die AQoS-Compliance nur für einen Service-Level erfüllen, kann die Anzahl der nicht-konformen AQoS-Volumes auf den Registerkarten *Volume Summary* und *Volume Details* abweichen.
+Wenn die AutoSupport Telemetrie zum Erfassen von Keystone-Daten verwendet wird, sind die auf den Registerkarten *Volume-Übersicht* und *Aktuelle Nutzung* aufgeführten AQoS-Volumes und Informationen zu MetroCluster-Partnern nicht verfügbar, wenn Keystone-Daten 24 Stunden lang nicht vorhanden sind.
  a| 
 Keine
 
 
 
  a| 
-*Assets*-Registerkarte für AutoSupport-Abonnements nicht ausgefüllt.
+Gelegentliche Diskrepanz bei der Anzahl der nicht kompatiblen AQoS-Volumes im Register *Volumes*.
  a| 
-Wenn die AutoSupport Telemetrie zum Erfassen von Keystone Daten für eine Abonnementnummer verwendet wird, werden auf der Registerkarte „*Assets“ keine Informationen abgerufen.
+Wenn einem Volume zwei Service-Level zugewiesen sind, die AQoS-Compliance nur für einen Service-Level erfüllen, kann die Anzahl der nicht-konformen AQoS-Volumes auf den Registerkarten *Volume Summary* und *Volume Details* abweichen.
  a| 
 Keine
 

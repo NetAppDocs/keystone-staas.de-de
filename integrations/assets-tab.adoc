@@ -25,7 +25,7 @@ Digitaler Berater von Active IQ (Digital Advisor) bietet umfassende Informatione
 
 Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten.
 
-image:assets-tab.png["Registerkarte „Assets“"]
+image:assets-tab-2.png["Registerkarte „Assets“"]
 
 *Verwandte Informationen*
 

@@ -1541,8 +1541,6 @@ Der richtige Fingerabdruck sieht so aus:<block ref="821b59fa560f6b692841b490c9d5
   <block id="f7168a4acbbbaa603715b2a0aeb4cea5" category="paragraph">Die folgenden bekannten Probleme wurden in NetApp Keystone STaaS gemeldet.</block>
   <block id="b57ac208343300b485336a006b1b8d3a" category="paragraph">Gelegentliche Diskrepanz bei der Anzahl der nicht kompatiblen AQoS-Volumes im Register *Volumes*.</block>
   <block id="e869f03abde9aeae1c0e990b9ab25b5d" category="paragraph">Wenn einem Volume zwei Service-Level zugewiesen sind, die AQoS-Compliance nur für einen Service-Level erfüllen, kann die Anzahl der nicht-konformen AQoS-Volumes auf den Registerkarten *Volume Summary* und *Volume Details* abweichen.</block>
-  <block id="dff510fff5f3e0445103891eda4984fa" category="paragraph">*Assets*-Registerkarte für AutoSupport-Abonnements nicht ausgefüllt.</block>
-  <block id="7ae14e4cb0932c9b84aa8e8223343a96" category="paragraph">Wenn die AutoSupport Telemetrie zum Erfassen von Keystone Daten für eine Abonnementnummer verwendet wird, werden auf der Registerkarte „*Assets“ keine Informationen abgerufen.</block>
   <block id="c3793f37646d7912d9f966e272bf6e19" category="paragraph">Falsche Darstellung der QuickInfo.</block>
   <block id="0fc4cafaef1f137e9c12e2f6d181561c" category="paragraph">Der Tooltip für das Index-Symbol *Aktuelle Burst* wird im Register *Kapazitätstrend* falsch angezeigt.</block>
   <block id="1256b327f17e3f51e207a701dde2481e" category="paragraph">Lesen Sie den korrekten QuickInfo-Text „_die Menge der Burst-Kapazität, die derzeit verbraucht wird. Hinweis: Dies gilt für den aktuellen Abrechnungszeitraum, nicht für den ausgewählten Datumsbereich._“</block>
@@ -1611,10 +1609,15 @@ Der richtige Fingerabdruck sieht so aus:<block ref="821b59fa560f6b692841b490c9d5
   <block id="e2a2270c486beacf71e6bd4a48314991" category="list-text">Klicken Sie auf *GENERAL &gt; Keystone Subscriptions &gt; Assets*.</block>
   <block id="89c9ef7132e6fac6325de01d876fc5aa" category="list-text">Wählen Sie die Abonnementnummer aus, für die Sie die Cluster anzeigen möchten.</block>
   <block id="1014f28a098809635129e3768d88c841" category="paragraph">Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten.</block>
-  <block id="fa664bb18e5c689d25a1899359c9245e" category="paragraph"><block ref="fa664bb18e5c689d25a1899359c9245e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="50f8af23d47854d6e926cd5b6a614505" category="sidebar">Installieren Sie Keystone Collector auf VMware vSphere</block>
   <block id="86215e54968c6d7de59c34d62652d9b9" category="sidebar">Installieren Sie Keystone Collector unter Linux</block>
   <block id="b4c8d461cf544f3b1324e87e550416e1" category="sidebar">Bereiten Sie Ihr System vor</block>
   <block id="d44d28fd40b9c69ef8ce92777484e334" category="paragraph">Sie können Berichte für Keystone Daten generieren und anzeigen. Auf jeder Registerkarte der Seite *Keystone Abonnements* können Sie durch Klicken auf die Download-Schaltfläche Berichte für Ihre Abonnements, Nutzungsdaten und Burst-Nutzung, Performance, Ressourcen sowie Volumes und Objekte generieren: <block ref="8dec166a4f6cf96a41e44a339dcc6d98" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2982b614ac2cf7f1a9aabd6fd79028f2" category="paragraph">Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwendung und den Vergleich speichern können.</block>
+  <block id="27e4fdbd0cb158caedf682943810f5af" category="paragraph"><block ref="27e4fdbd0cb158caedf682943810f5af" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16299daea8c4c1acc7d9eb66580654e7" category="paragraph">Für AutoSupport-Abonnements sind auf der Registerkarte *Assets* keine Informationen verfügbar.</block>
+  <block id="4457d440870ad6d42bab9082d9bf9b61" category="paragraph">Fest</block>
+  <block id="824332c973fd0c189c484864ad8005ab" category="paragraph">März 14, 2024</block>
+  <block id="bffa1ad2163e84c8afb350de90d9c62b" category="paragraph">Informationen zu AQoS-nicht-konformen Volumes und MetroCluster-Partnern stehen für AutoSupport-Abonnements nicht zur Verfügung.</block>
+  <block id="a9984fe861efdaed7977f6ae7356a850" category="paragraph">Wenn die AutoSupport Telemetrie zum Erfassen von Keystone-Daten verwendet wird, sind die auf den Registerkarten *Volume-Übersicht* und *Aktuelle Nutzung* aufgeführten AQoS-Volumes und Informationen zu MetroCluster-Partnern nicht verfügbar, wenn Keystone-Daten 24 Stunden lang nicht vorhanden sind.</block>
 </blocks>

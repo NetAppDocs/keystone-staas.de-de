@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Für AutoSupport-Abonnements sind auf der Registerkarte *Assets* keine Informationen verfügbar.
+ a| 
+Fest
+ a| 
+März 14, 2024
+
+
+
+ a| 
 Wenn sowohl MetroCluster als auch FabricPool in einer Umgebung aktiviert wurden, in der die Tarifen für Tiering und Objekt-Storage gelten, könnten die Service-Level für die gespiegelten Volumes (sowohl konstituierende Volumes als auch FabricPool Volumes) falsch abgeleitet werden.
  a| 
 Auf Spiegelungsvolumes werden die korrekten Service-Level angewendet.
