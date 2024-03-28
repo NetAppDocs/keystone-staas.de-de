@@ -33,9 +33,9 @@ Die Registerkarte Volumes bietet verschiedene Detailebenen zu Ihren ONTAP-System
 . Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.
 
 
-Beim ausgewählten Keystone STaaS Abonnement können Sie die Gesamtzahl der Volumes, ihren AQoS-Compliance-Status und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen Volumes klicken, werden die einzelnen Volumes auf der Registerkarte *Volume-Details* angezeigt.
+Für das ausgewählte Keystone STaaS Abonnement können Sie die Gesamtanzahl der Volumes, ihren AQoS-Compliance-Status, die Anzahl der geschützten Volumes und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen oder geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste anzeigen können, die entweder die nicht kompatiblen Volumes oder die geschützten Volumes anzeigt, basierend auf Ihrer Auswahl.
 
-image:volume-summary.png["Registerkarte „Volume Summary“"]
+image:volume-summary-1.png["Registerkarte „Volume Summary“"]
 
 --
 .Volume-Details
@@ -51,7 +51,7 @@ NOTE: Für einen erweiterten Add-on für die Datensicherung wird eine zusätzlic
 
 
 
-image:volume-details.png["Registerkarte „Volume-Details“"]
+image:volume-details-1.png["Registerkarte „Volume-Details“"]
 
 --
 ====
@@ -78,7 +78,6 @@ image:sg-link-2.png["Dialogfeld „StorageGRID“"]
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
 * link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
-* link:../integrations/sla-details-tab.html["SLA-Details"]
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/performance-tab.html["Leistung"]
 * link:../integrations/assets-tab.html["Ressourcen"]

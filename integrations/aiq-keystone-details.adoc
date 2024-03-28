@@ -40,7 +40,6 @@ Die folgenden Links bieten weitere Informationen zu den einzelnen Registerkarten
 
 * link:../integrations/subscriptions-tab.html["Abonnements"]
 * link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
-* link:../integrations/sla-details-tab.html["SLA-Details"]
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/performance-tab.html["Leistung"]

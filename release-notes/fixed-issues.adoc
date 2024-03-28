@@ -22,6 +22,33 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Falscher QuickInfo-Text für das Index-Symbol *Aktueller Burst* im Register *Kapazitätstrend*.
+ a| 
+Zeigt den korrekten QuickInfo-Text „_die Menge der aktuell verbrauchten Burst-Kapazität an. Hinweis: Dies gilt für den aktuellen Abrechnungszeitraum, nicht für den ausgewählten Datumsbereich._“
+ a| 
+März 28, 2024
+
+
+
+ a| 
+Informationen zu nicht konformen AQoS-Volumes und MetroCluster-Partnern stehen für AutoSupport-Abonnements nicht zur Verfügung, wenn Keystone Daten 24 Stunden lang nicht vorhanden sind.
+ a| 
+Fest
+ a| 
+März 28, 2024
+
+
+
+ a| 
+Gelegentliche Diskrepanz bei der Anzahl der nicht-konformen AQoS-Volumes, die auf den Registerkarten *Volume Summary* und *Volume Details* aufgeführt sind, wenn zwei Service-Levels einem Volume zugewiesen sind, das AQoS-Compliance nur für ein Service-Level erfüllt.
+ a| 
+Fest
+ a| 
+März 28, 2024
+
+
+
+ a| 
 Für AutoSupport-Abonnements sind auf der Registerkarte *Assets* keine Informationen verfügbar.
  a| 
 Fest

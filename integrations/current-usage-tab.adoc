@@ -33,7 +33,6 @@ In Verbindung mit der aktuellen Nutzung können Sie die historischen Nutzungsdat
 
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/sla-details-tab.html["SLA-Details"]
 * link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/performance-tab.html["Leistung"]

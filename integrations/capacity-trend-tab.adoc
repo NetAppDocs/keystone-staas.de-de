@@ -134,7 +134,6 @@ Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https:/
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
 * link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
-* link:../integrations/sla-details-tab.html["SLA-Details"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/performance-tab.html["Leistung"]
 * link:../integrations/assets-tab.html["Ressourcen"]

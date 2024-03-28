@@ -36,7 +36,6 @@ Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowi
 ** Verbrauch über der Burst-Kapazität hinaus.
 
 
-* *Service Level Agreement*: Dieser Status wird angezeigt, wenn mindestens eines Ihrer Abonnements einen gültigen Service Level Agreement (SLA) für Nachhaltigkeit mit NetApp hat. Der Status gibt an, ob die Abonnements die in Ihrem SLA definierten Nachhaltigkeitskriterien erfüllen. Wenn Ihre Abonnements die SLA-Kriterien erfüllen, können Sie den Status als _Alle OK_ sehen.
 * *Warnungen*: Sie sehen Warnungen für verschiedene Szenarien, wenn sie für Sie relevant sind.
 +
 ** *Läuft bald ab*: Falls Ihre Abonnements innerhalb von 90 Tagen ablaufen.

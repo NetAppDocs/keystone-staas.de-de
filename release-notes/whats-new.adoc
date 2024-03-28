@@ -18,6 +18,44 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
+== Neue Funktionen und Verbesserungen für 28. März 2024
+
+Die folgende Verbesserung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen:
+
+
+
+=== Verbesserung der QoS-Richtlinienkonformität auf der Registerkarte „Volume Details“
+
+Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bietet jetzt einen besseren Einblick in die Einhaltung der QoS-Richtlinien. Die früher als *AQoS* bekannte Spalte wird in *Compliant* umbenannt, was angibt, ob die QoS-Richtlinie konform ist. Zusätzlich wird eine neue Spalte *QoS Policy Type* hinzugefügt, die angibt, ob die Policy fest oder adaptiv ist. Wenn keines der beiden Werte zutrifft, wird in der Spalte „_Not available_“ angezeigt. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+
+
+
+=== Neue Spalte und vereinfachte Abonnementanzeige auf der Registerkarte „Volume Summary“
+
+* Die Registerkarte *Volume Summary* auf der Registerkarte *Volumes & Objekte* enthält nun eine neue Spalte mit dem Titel *protected*. Diese Spalte enthält eine Anzahl der geschützten Volumes, die Ihren abonnierten Service-Levels zugeordnet sind. Wenn Sie auf die Anzahl der geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste geschützter Volumes anzeigen können.
+* Die Registerkarte *Volume Summary* wird aktualisiert, um nur Basisabonnements anzuzeigen, ohne Add-on-Dienste. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+
+
+
+
+=== Ändern Sie auf der Registerkarte „Kapazitätstrend“ die Detailanzeige für aufgelaufene Burst
+
+Die QuickInfo, die angezeigt wird, wenn Sie den Mauszeiger über dem Balkendiagramm für die Kapazitätsnutzung auf der Registerkarte *Kapazitätstrend* bewegen, zeigt die Details der aufgelaufenen Bursts für den aktuellen Monat an. Die Details werden in den vergangenen Monaten nicht verfügbar sein.
+
+
+
+=== Verbesserter Zugriff zum Anzeigen historischer Daten für Keystone Abonnements
+
+Sie können sich nun Verlaufsdaten ansehen, wenn ein Keystone Abonnement geändert oder verlängert wird. Sie können das Startdatum eines Abonnements auf ein vorheriges Datum einstellen, um Folgendes anzuzeigen:
+
+* Verbrauchsdaten und aufgelaufene Burst-Nutzungsdaten aus der Registerkarte *Capacity Trend*,
+* Leistungskennzahlen von ONTAP-Volumes aus der Registerkarte *Performance*,
+
+
+Alle zeigen die Daten basierend auf dem ausgewählten Datum des Abonnements an.
+
+
+
 == Neue Funktionen und Verbesserungen für 29. Februar 2024
 
 Im Dashboard von Active IQ Digital Advisor (auch als digitaler Berater bekannt) und im Bildschirm *Keystone Abonnements* für diese Version wurden verschiedene Verbesserungen vorgenommen:
