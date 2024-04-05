@@ -18,9 +18,9 @@ Für die Installation von Keystone Collector auf Ihren VMware vSphere-Systemen s
 
 .Voraussetzungen für die Keystone Collector-Server-VM:
 * Betriebssystem: VMware vCenter Server und ESXi 6.5 oder höher
-* Kern: 4 CPUs
-* RAM: 12 GB RAM
-* Speicherplatz: 200 GB vDisk
+* Kern: 1 CPU
+* RAM: 2 GB RAM
+* Festplattenspeicher: 20 GB vDisk
 
 
 
@@ -79,7 +79,7 @@ Keystone Collector (allgemein)
  a| 
 Internet (gemäß URL-Anforderungen, die später angegeben werden)
  a| 
-HTTP, HTTPS
+HTTPS
  a| 
 TCP 80, TCP 443
  a| 
@@ -154,7 +154,7 @@ Keystone Collector (allgemein)
  a| 
 Kundenüberwachungssystem
  a| 
-HTTP
+HTTPS
  a| 
 TCP 777
  a| 
