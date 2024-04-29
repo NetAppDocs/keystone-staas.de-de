@@ -99,6 +99,8 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: Keystone und Equinix
         url: "/concepts/equinix.html"
+    - title: Keystone Abonnementservices Version 1
+      url: "/subscription-services-v1.html"
   - title: Weitere Informationen zu Service-Leveln
     entries:
     - title: Quality of Service

@@ -40,7 +40,7 @@ Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der
 
 
 
-=== IOPS/tib
+== IOPS/tib
 
 In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Die Spitzenwerte-IOPS für das Service-Level und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/tib angezeigt.
 
@@ -48,7 +48,7 @@ image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
 
 
 
-=== Durchsatz (MB/s/tib)
+== Durchsatz (MB/s/tib)
 
 In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Service-Level (SLO Max) und den aktuellen Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitbereich in MBit/s/tib angezeigt.
 
@@ -56,7 +56,7 @@ image:perf-thr.png["Durchsatzdiagramme"]
 
 
 
-=== Latenz (ms)
+== Latenz (ms)
 
 In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume angezeigt, basierend auf dem Datumsbereich der Abfrage. Die maximale Latenz für das Service-Level (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.
 
@@ -70,7 +70,7 @@ image:perf-lat.png["Performance-Diagramme"]
 
 
 
-=== Genutzte logische Nutzung (tib)
+== Genutzte logische Nutzung (tib)
 
 In diesem Abschnitt werden die bereitgestellten und die logischen genutzten Kapazitäten des Volumes angezeigt. Die aktuell genutzte logische Kapazität (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimale, maximale und durchschnittliche Nutzung des Zeitbereichs werden in TIBS angezeigt. In diesem Diagramm steht der graue Bereich für die gebuchte Kapazität und das gelbe Diagramm für die logische Nutzung.
 

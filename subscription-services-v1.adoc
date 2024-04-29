@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: subscription-services-v1.html 
+keywords: Keystone Flex Subscriptions, kfs v1, keystone legacy, Keystone subscription services version 1 
+---
+= Keystone Abonnementservices von Version 1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vor Keystone STaaS gingen die Keystone Abonnementservices (ehemals Keystone Flex Subscription Services) ein.
+
+Während die Navigation der beiden Angebote in der ähnlich ist link:./integrations/aiq-keystone-details.html["Keystone Dashboard"^], Die Keystone Abonnement-Services unterscheiden sich von Keystone STaaS in den Bereichen Service-Level, Service-Angebot und Abrechnungsgrundsätze. Ab April 2024 erstellt und veröffentlicht NetApp Dokumentation nur für Keystone STaaS. Wenn Sie immer noch die Keystone Abonnementservices nutzen, erhalten Sie Unterstützung bei der Migration zu Keystone STaaS. Eine PDF-Version der Dokumentation zu den Keystone Abonnementservices finden Sie bei Bedarf hier:
+
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["Englisch"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["Japanisch"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ko-kr.pdf["Koreanisch"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-cn.pdf["Chinesisch (Vereinfacht)"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-tw.pdf["Chinesisch (Traditionell)"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-de-de.pdf["Deutsch"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-es-es.pdf["Spanisch"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-fr-fr.pdf["Französisch"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-it-it.pdf["Italienisch"^]
+

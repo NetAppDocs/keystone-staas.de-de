@@ -27,7 +27,7 @@ Wenn Sie diesen Service erworben haben, beachten Sie Folgendes:
 
 * Sie müssen am Ende der Laufzeit keine Laufwerke und keinen nichtflüchtigen Speicher zurückgeben, falls sie ausgefallen sind oder während der Laufzeit des Service defekt waren.
 * Sie müssen jedoch eine Bescheinigung über die Vernichtung der Laufwerke und/oder des nicht-flüchtigen Speichers vorlegen und können nicht für andere Zwecke verwendet werden.
-* Die mit dem NRNVC verbundenen zusätzlichen Kosten werden als Prozentsatz des gesamten Abonnementservice (einschließlich Standard-Service, Advanced Data Protection und Daten-Tiering) monatliche Rechnung berechnet.
+* Die zusätzlichen Kosten für den NRNVC werden als Prozentsatz der monatlichen Gesamtrechnung für Abonnementservices (einschließlich Standard-Service, erweiterte Datensicherung und Daten-Tiering) berechnet.
 * Dieser Service ist nur für File-, Block- und Objekt-Services anwendbar.
 
 
