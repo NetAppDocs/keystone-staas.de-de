@@ -20,50 +20,28 @@ Bei Verwendung des AutoSupport Telemetrie-Mechanismus berechnet Keystone die Nut
 Beachten Sie Folgendes, bevor Sie AutoSupport für die Einbeziehung von Keystone Daten konfigurieren.
 
 * Sie bearbeiten die AutoSupport Telemetrieoptionen mithilfe der ONTAP CLI. Informationen zum Verwalten von AutoSupport-Services und der Administratorrolle des Systems (Clusters) finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/manage-autosupport-concept.html["AutoSupport managen – Übersicht"^] Und https://docs.netapp.com/us-en/ontap/system-admin/cluster-svm-administrators-concept.html["Cluster- und SVM-Administratoren"^].
-* Sie integrieren die folgenden Subsysteme in die täglichen AutoSupport Bundles, um eine präzise Datenerfassung für Keystone zu gewährleisten. Informationen zu AutoSupport-Subsystemen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/autosupport-subsystem-collection-reference.html["Was sind AutoSupport-Subsysteme"^].
-+
-|===
-| Name des Subsystems | Für Keystone erforderliches Datenelement 
-
-
- a| 
-WAFL
-| `VOLUME-CLONE-SHOW.XML` 
-
-
- a| 
-Performance
-| `QOS-POLICY-GROUP.XML` Und `QOS-ADAPTIVE-POLICY.XML` 
-
-
- a| 
-snapshot
-| `SNAPSHOT.XML` 
-
-
- a| 
-Plattform
-| `ENVIRONMENT.txt` 
-|===
-+
-Diese Subsysteme sind standardmäßig in den wöchentlichen AutoSupport-Paketen enthalten, in denen die `asup_type` Ist _DOT-REGULAR_, und der `asup_subject` Ist _HA Group Notification (WEEKLY_LOG) NOTICE_. Sie müssen sie jedoch täglichen Paketen hinzufügen, um Keystone Nutzungsdaten abzurufen und Berichte zu erstellen.
-
+* Sie integrieren die Subsysteme in die täglichen und wöchentlichen AutoSupport Bundles, um eine präzise Datenerfassung für Keystone zu gewährleisten. Informationen zu AutoSupport-Subsystemen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/autosupport-subsystem-collection-reference.html["Was sind AutoSupport-Subsysteme"^].
 
 
 .Schritte
 . Melden Sie sich als Systemadministrator über SSH beim Keystone ONTAP-Cluster an. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["Greifen Sie über SSH auf das Cluster zu"^].
-. Führen Sie den folgenden Befehl aus, und überprüfen Sie die vorhandene Konfiguration in Bezug auf die vorhandenen Subsysteme:
+. Ändern Sie den Protokollinhalt.
 +
-`autosupport trigger show -node * -autosupport-message management.log -fields basic-additional`
-
+** Führen Sie diesen Befehl aus, um den täglichen Protokollinhalt zu ändern:
 +
-Weitere Informationen zu diesem Befehl finden Sie unter https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-manifest-show.html#parameters["System-Node-AutoSupport-Manifest anzeigen"^].
-
-. Ändern Sie den täglichen Protokollinhalt, indem Sie diesen Befehl ausführen:
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,nfs,performance,snapshot,platform,object_store_server,san,raid,snapmirror
+----
+** Führen Sie diesen Befehl aus, um den wöchentlichen Protokollinhalt zu ändern:
 +
-`autosupport trigger modify -node * -autosupport-message management.log -basic-additional _<existing comma-separated subsystems>_, _<new subsystems>_`
-
+[source]
+----
+autosupport trigger modify -autosupport-message weekly -troubleshooting-additional wafl -node *
+----
 +
 Weitere Informationen zu diesem Befehl finden Sie unter https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-trigger-modify.html["System-Node AutoSupport löst Modify aus"^].
+
+
 
 

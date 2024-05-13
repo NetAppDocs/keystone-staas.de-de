@@ -18,9 +18,33 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
+== Neue Funktionen und Verbesserungen für 09. Mai 2024
+
+Die folgenden Verbesserungen werden auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen:
+
+
+
+=== Neue Spalten in CSV-Berichten
+
+Die CSV-Berichte auf der Registerkarte *Capacity Trend* enthalten nun die Spalten *Subscription Number* und *Account Name* für verbesserte Details.
+
+
+
+=== Spalte „Enhanced Usage Type“
+
+Die Spalte *Usage Type* auf der Registerkarte *Subscriptions* wird erweitert, um logische und physische Nutzungen als kommagetrennte Werte für Abonnements anzuzeigen, die Service-Level für Datei und Objekt abdecken.
+
+
+
+=== Zugriff auf Details zum Objekt-Storage über die Registerkarte „Volume Details“
+
+Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bietet nun Details zum Objektspeicher sowie Volume-Informationen für Abonnements, die Service-Level für Datei und Objekt enthalten. Sie können auf die Schaltfläche *Object Storage Details* im Register *Volume Details* klicken, um die Details anzuzeigen.
+
+
+
 == Neue Funktionen und Verbesserungen für 28. März 2024
 
-Die folgende Verbesserung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen:
+Die folgende Verbesserung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor vorgenommen:
 
 
 

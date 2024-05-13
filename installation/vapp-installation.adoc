@@ -73,17 +73,19 @@ Nachdem die VM aus der Vorlage implementiert und eingeschaltet wurde, öffnen Si
 
 
 
-== Erstkonfiguration Des Systems
+== Erstkonfiguration des Systems
 
 Führen Sie diese Schritte auf Ihren VMware vSphere-Systemen für die Erstkonfiguration der über OVA bereitgestellten Keystone Collector-Server durch:
 
 
 NOTE: Nach Abschluss der Implementierung können Sie die Konfigurations- und Überwachungsaktivitäten über das Dienstprogramm Keystone Collector Management Terminal User Interface (TUI) durchführen. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
 
-. Öffnen Sie eine SSH-Sitzung für den Keystone Collector-Server. Beim Anmelden wird die TUI angezeigt. Alternativ können Sie die TUI manuell starten, indem Sie den ausführen `keystone-collector-tui` CLI-Befehl.
-. Konfigurieren Sie bei Bedarf die Proxydetails im Abschnitt *Konfiguration > Netzwerk* auf der TUI.
-. Aktualisieren Sie Keystone Collector mit der Option *Wartung > System aktualisieren*. Einige ausgewählte Spiegelungen sind möglicherweise nicht verfügbar, und die Systemdetails werden nach einigen Versuchen aktualisiert.
+. Öffnen Sie eine SSH-Sitzung für den Keystone Collector-Server. Wenn Sie eine Verbindung herstellen, werden Sie vom System aufgefordert, das Admin-Passwort zu aktualisieren. Füllen Sie bei Bedarf das Update des Admin-Passworts aus.
+. Melden Sie sich mit dem neuen Passwort an, um auf die TUI zuzugreifen.  Beim Anmelden wird die TUI angezeigt.
++
+Alternativ können Sie es manuell starten, indem Sie den ausführen `keystone-collector-tui` CLI-Befehl.
+
+. Konfigurieren Sie bei Bedarf die Proxy-Details im Abschnitt *Konfiguration > Netzwerk* auf der TUI.
 . Konfigurieren Sie im Abschnitt *Konfiguration > System* den Hostnamen, den Speicherort und den NTP-Server des Systems.
-. Aktualisieren Sie das Admin-Passwort im Abschnitt *Wartung > Benutzer*.
-. Markieren Sie die ursprüngliche OVA-Konfiguration im Abschnitt *Konfiguration > Erweitert* als abgeschlossen.
+. Aktualisieren Sie die Keystone Collectors mit der Option *Wartung > Collectors aktualisieren*. Starten Sie nach der Aktualisierung das TUI-Dienstprogramm für die Verwaltung des Keystone Collectors neu, um die Änderungen anzuwenden.
 

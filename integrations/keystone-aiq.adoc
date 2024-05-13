@@ -39,8 +39,7 @@ Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowi
 * *Warnungen*: Sie sehen Warnungen für verschiedene Szenarien, wenn sie für Sie relevant sind.
 +
 ** *Läuft bald ab*: Falls Ihre Abonnements innerhalb von 90 Tagen ablaufen.
-** *Kritische Hardware-Upgrades*: Wenn kritische Hardware-Upgrades ausstehen.
-** *AQoS Warnungen*: Sie haben Volumes ohne AQoS Richtlinien zugewiesen.
+** *QoS Warnungen*: Sie haben Volumes ohne AQoS Richtlinien zugewiesen.
 +
 
 TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonnements auf der Registerkarte *Abonnements* anzuzeigen.
@@ -49,7 +48,7 @@ TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonne
 
 
 
-image:new-db.png["Neues Dashboard"]
+image:new-db-2.png["Neues Dashboard"]
 
 Weitere Informationen über das Widget „Digital Advisor Dashboard“ für Keystone finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor Dokumentation"^].
 

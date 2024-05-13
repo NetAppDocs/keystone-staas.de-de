@@ -27,7 +27,7 @@ So zeigen Sie Ihr Keystone Abonnement sowie die Nutzungsdetails an:
 
 .Schritte
 . Melden Sie sich bei Digital Advisor an. Sie können das Widget *Keystone Abonnements* sehen, in dem die Kapazitätsnutzung mit den von Ihnen erworbenen Keystone Services verglichen wird.
-. Klicken Sie im Widget *Keystone Subscriptions* auf *Weitere Details anzeigen*, um die Nutzungsdetails und Benachrichtigungen zu Ihren Volumes auf der Seite *Keystone Subscriptions* anzuzeigen. Alternativ dazu können Sie im linken Navigationsfenster auf *ALLGEMEIN > Keystone Abonnements* klicken.
+. Klicken Sie im Widget *Keystone Abonnements* auf *Alle Abonnements anzeigen*, um die Nutzungsdetails und Benachrichtigungen zu Ihren Volumes auf der Seite *Keystone Abonnements* anzuzeigen. Alternativ dazu können Sie im linken Navigationsfenster auf *ALLGEMEIN > Keystone Abonnements* klicken.
 Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Level und Volume-Details werden auf den verschiedenen Registerkarten auf dem Bildschirm *Keystone Abonnements* angezeigt.
 
 
@@ -56,27 +56,19 @@ Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwend
 
 Ein Beispielbericht für die Registerkarte *Capacity Trend*, in der die grafischen Daten konvertiert werden:
 
-image:report.png["csv des Berichts"]
+image:report_1.png["csv des Berichts"]
 
 
 
 == Anzeigen von Meldungen
 
-Warnungen auf der Konsole senden Warnhinweise, mit denen Sie die in Ihrer Storage-Umgebung auftretenden Probleme verstehen.
+Das Dashboard enthält Warnmeldungen, mit denen Sie die Probleme in Ihrer Storage-Umgebung erkennen können. Diese Benachrichtigungen können als informative Warnungen oder Warnungen angezeigt werden. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Sie können auf den Link in der Warnmeldung klicken, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Volumes & Objekte* anzuzeigen.
 
-Es gibt zwei Arten von Warnmeldungen:
-
-* *Information*: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.
-* *Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Sie können auf den Link in der Warnmeldung klicken, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Volumes* anzuzeigen.
-+
 
 NOTE: Wenn Sie einen einzelnen Service-Level- oder Tarifplan abonniert haben, können Sie die Warnmeldung für nicht konforme Volumes nicht sehen.
 
-+
+image:alert-aiq-1.png["Alarm"]
+
 Informationen zu AQoS-Richtlinien finden Sie unter link:../concepts/qos.html["Anpassungsfähige QoS"].
 
-
-
-image:alert-aiq.png["Alarm"]
-
-Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Informationen zum Anbieten von Serviceanfragen finden Sie unter link:../concepts/gssc.html#generating-service-requests["Serviceanforderungen werden erstellt"].
+Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Meldungen zu erhalten. Informationen zum Anbieten von Serviceanfragen finden Sie unter link:../concepts/gssc.html#generating-service-requests["Serviceanforderungen werden erstellt"].

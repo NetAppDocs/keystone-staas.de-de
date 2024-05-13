@@ -49,9 +49,14 @@ Die Volumes, beispielsweise Kapazitätsauslastung, Volume-Typ, Cluster, Aggregat
 
 NOTE: Für einen erweiterten Add-on für die Datensicherung wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
 
++
+
+NOTE: Bei Abonnements, die Service-Level für Datei und Objekt abdecken, können Sie die Details zum Objektspeicher anzeigen, indem Sie auf die Schaltfläche *Object Storage Details* klicken.
+
++
+image:volume-details-2.png["Registerkarte „Volume-Details“"]
 
 
-image:volume-details-1.png["Registerkarte „Volume-Details“"]
 
 --
 ====

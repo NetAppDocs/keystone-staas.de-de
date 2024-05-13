@@ -18,7 +18,7 @@ Auf der Registerkarte *Aktuelle Nutzung* werden die Nutzungsdetails Ihrer Abonne
 
 Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Current Usage*, und wählen Sie die gewünschte Abonnementnummer aus.
 
-image:aiq-ks-dtls.png["Registerkarte „Aktuelle Nutzung“"]
+image:aiq-ks-dtls-1.png["Registerkarte „Aktuelle Nutzung“"]
 
 Für das ausgewählte Abonnement können Sie Details wie das Start- und Enddatum des Abonnements sowie den Abrechnungszeitraum, z. B. monatlich oder jährlich, anzeigen. Im Rahmen der Abonnementnutzung können Sie den Service-Level-Namen, die gebuchten, verbrauchten, verfügbaren Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung (in tib) anzeigen.
 
