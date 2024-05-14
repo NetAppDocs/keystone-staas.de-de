@@ -16,4 +16,18 @@ summary: Bekannte Probleme in Keystone STaaS
 [role="lead"]
 Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung der Keystone Abonnementservices verhindern könnten.
 
-Es werden keine bekannten Probleme identifiziert.
+Die folgenden bekannten Probleme wurden in NetApp Keystone STaaS gemeldet.
+
+[cols="3*"]
+|===
+| Bekanntes Problem | Beschreibung | Behelfslösung 
+
+
+ a| 
+Falsche Anzeige von Keystone Daten in CSV-Berichten
+ a| 
+Wenn die Spalte *Kontoname* in CSV-Berichten, die auf der Registerkarte *Kapazitätstrend* generiert wird, einen Kontonamen mit einem Komma enthält `(,)`, Keystone-Daten werden in CSV-Berichten verlegt.
+ a| 
+Keine
+
+|===

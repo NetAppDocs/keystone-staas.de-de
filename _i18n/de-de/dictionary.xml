@@ -1307,7 +1307,6 @@ Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortla
   <block id="c58866f1ef5f53d12f483be3139c8b21" category="paragraph">Die auf den Registerkarten des Bildschirms *Keystone Abonnements* von Active IQ Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter <block ref="fd9d2abed6b27ddb199966f81ac84d0e" category="inline-link-macro-rx"></block>.</block>
   <block id="ba72cb24d1620c10dda9d29d238cd62f" category="summary">Probleme in verschiedenen Versionen von Keystone STaaS behoben</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="doc">Probleme wurden behoben</block>
-  <block id="3e6913b831218e5028d3a4532f801a65" category="cell">Problembeschreibung</block>
   <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">Nach dem Fix</block>
   <block id="daacdb57878cbe5d9fa64d7c020a2e9d" category="cell">Behoben in Freigabe</block>
   <block id="ab8fe64a75f26e766fbdddeb24ad2b52" category="paragraph">Die Verwendungsanzeige für einen Burst-Verbrauchsdatensatz wurde gelb angezeigt.</block>
@@ -1501,7 +1500,6 @@ Der richtige Fingerabdruck sieht so aus:<block ref="821b59fa560f6b692841b490c9d5
   <block id="f9fb20285d9c1550cfd8af36cedeebff" category="list-text">Verbrauchsdaten und aufgelaufene Burst-Nutzungsdaten aus der Registerkarte *Capacity Trend*,</block>
   <block id="2edc64c57ca29e2f950fd753874bafbc" category="list-text">Leistungskennzahlen von ONTAP-Volumes aus der Registerkarte *Performance*,</block>
   <block id="7a7b2bda8aa958fd2f922e2acb85ca1e" category="paragraph">Alle zeigen die Daten basierend auf dem ausgewählten Datum des Abonnements an.</block>
-  <block id="f37be92ace88534a02480f8f04d48882" category="paragraph">Es werden keine bekannten Probleme identifiziert.</block>
   <block id="5f2b8b9897b51974b3e829ddd4511e8e" category="paragraph">Führen Sie alternativ die folgenden Befehle aus, um die Version zu aktualisieren:</block>
   <block id="014327995266184e82832bad8c943216" category="paragraph">Für CentOS:</block>
   <block id="21a26c88c032eccbe4aba03b7481511e" category="paragraph">Für Debian:</block>
@@ -1568,4 +1566,11 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">Ändern Sie den Protokollinhalt.</block>
   <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">Führen Sie diesen Befehl aus, um den täglichen Protokollinhalt zu ändern:</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">Führen Sie diesen Befehl aus, um den wöchentlichen Protokollinhalt zu ändern:</block>
+  <block id="f7168a4acbbbaa603715b2a0aeb4cea5" category="paragraph">Die folgenden bekannten Probleme wurden in NetApp Keystone STaaS gemeldet.</block>
+  <block id="e83464ce8bd634efb1f099c956ec64a8" category="cell">Bekanntes Problem</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Beschreibung</block>
+  <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">Behelfslösung</block>
+  <block id="05890055e47d7356b21b212f915e3d3b" category="paragraph">Falsche Anzeige von Keystone Daten in CSV-Berichten</block>
+  <block id="cf57a91fb76a6fe323d7bc94294753a2" category="paragraph">Wenn die Spalte *Kontoname* in CSV-Berichten, die auf der Registerkarte *Kapazitätstrend* generiert wird, einen Kontonamen mit einem Komma enthält<block ref="e1266d71c305ae3767d9d953acaf0aae" prefix=" " category="inline-code"></block>, Keystone-Daten werden in CSV-Berichten verlegt.</block>
+  <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">Problembeschreibung</block>
 </blocks>

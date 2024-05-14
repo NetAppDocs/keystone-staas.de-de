@@ -31,7 +31,7 @@ Beachten Sie Folgendes, bevor Sie AutoSupport für die Einbeziehung von Keystone
 +
 [source]
 ----
-autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,nfs,performance,snapshot,platform,object_store_server,san,raid,snapmirror
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,nfs,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
 ----
 ** Führen Sie diesen Befehl aus, um den wöchentlichen Protokollinhalt zu ändern:
 +
