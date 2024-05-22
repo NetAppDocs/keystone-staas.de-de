@@ -16,7 +16,7 @@ summary: Keystone und Digital Advisor
 [role="lead"]
 Wenn Sie NetApp Keystone StaaS-Services abonniert haben, erhalten Sie im Dashboard von Active IQ Digital Advisor (auch bekannt als digitaler Berater) eine Übersicht über Ihre Abonnements.
 
-Sie können nach einem Keystone Abonnement suchen, indem Sie die ersten drei Zeichen eines Kunden- bzw. Watchlistennamens oder die Keystone Abonnementnummer eingeben. Informationen zum Durchsuchen der Keystone STaaS-Abonnements nach Watchlisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"].
+Sie können nach einem Keystone Abonnement suchen, indem Sie die ersten drei Zeichen eines Kunden- bzw. Watchlistennamens oder die Keystone Abonnementnummer eingeben. Informationen zum Durchsuchen der Keystone STaaS-Abonnements nach Watchlisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"].
 
 Digital Advisor bietet ein einheitliches Dashboard, das über die Schaltfläche *zum alten/neuen Dashboard wechseln* Einblicke in verschiedene Ebenen Ihrer Abonnementdaten und Nutzungsinformationen gibt.
 
