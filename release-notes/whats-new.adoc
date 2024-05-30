@@ -16,11 +16,49 @@ summary: Neue Funktionen und Verbesserungen bei Keystone STaaS.
 [role="lead"]
 NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Keystone STaaS Services.
 
+Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgestellt:
 
 
-== Neue Funktionen und Verbesserungen für 09. Mai 2024
 
-Die folgenden Verbesserungen werden auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen:
+== Mai 29, 2024
+
+
+
+=== Erweiterte Burst-Anzeige
+
+Der *Burst*-Indikator im Nutzungsindex wird erweitert, um den prozentualen Wert für die Burst-Grenze anzuzeigen. Dieser Wert ändert sich je nach dem vereinbarten Burst-Limit für ein Abonnement. Sie können den Burst-Grenzwert auch auf der Registerkarte *Abonnements* anzeigen, indem Sie in der Spalte *Nutzungsstatus* den Mauszeiger über die Anzeige *Burst-Verwendung* bewegen.
+
+
+
+=== Hinzufügen von Service-Leveln
+
+Die Service-Level *CVO Primary* und *CVO Secondary* unterstützen Cloud Volumes ONTAP für Abonnements, die Ratenpläne mit Null gebuchter Kapazität oder solche mit einem Metro-Cluster konfiguriert haben.
+
+* Sie können die Kapazitätsauslastungsgrafik für diese Service-Levels vom alten Dashboard des Widgets *Keystone Abonnements* und der Registerkarte *Kapazitätstrend* sowie detaillierte Nutzungsinformationen aus der Registerkarte *Aktuelle Nutzung* anzeigen.
+* Auf der Registerkarte *Abonnement* werden diese Servicelevel als angezeigt `CVO (v2)` In der Spalte *Usage Type*, die die Identifizierung der Abrechnung nach diesen Service Levels ermöglicht.
+
+
+
+
+=== Zoom-Funktion für Microburst-Einblicke
+
+Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details der kurzfristigen Überspannungen, bekannt als Mikrobursts, in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html["Registerkarte „Kapazitätstrend“"^].
+
+
+
+=== Verbesserte Anzeige von Abonnements
+
+Die Standardanzeige der Abonnements wird erweitert, um nach Tracking-ID zu sortieren. Die Abonnements auf der Registerkarte *Abonnements*, auch in den Dropdown-Menüs *Abonnements* und CSV-Berichten, werden nun nach der alphabetischen Reihenfolge der Tracking-IDs in der Reihenfolge a, A, b, B usw. angezeigt.
+
+
+
+=== Verbesserte Anzeige der aufgelaufenen Burst-Funktion
+
+Die QuickInfo, die angezeigt wird, wenn Sie den Mauszeiger über dem Balkendiagramm für die Kapazitätsnutzung auf der Registerkarte *Kapazitätstrend* bewegen, zeigt nun die Art des aufgelaufenen Burst basierend auf der gebuchten Kapazität an. Es unterscheidet zwischen vorläufigen und fakturierten aufgelaufenen Burst und zeigt *provisorischer aufgelaufener Verbrauch* und *fakturierter aufgelaufener Verbrauch* für Abonnements mit Nulltarifen und *vorläufig aufgelaufener Burst* und *fakturierte aufgelaufene Burst* für diejenigen mit nicht-Null-zugesuchter Kapazität.
+
+
+
+== Mai 09, 2024
 
 
 
@@ -42,9 +80,7 @@ Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bie
 
 
 
-== Neue Funktionen und Verbesserungen für 28. März 2024
-
-Die folgende Verbesserung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor vorgenommen:
+== März 28, 2024
 
 
 
@@ -110,9 +146,7 @@ Sie können den Zeitstempel der Verbrauchsdaten (in UTC) auf dem alten Dashboard
 
 
 
-== Neue Funktionen und Verbesserungen für 13. Februar 2024
-
-Die folgende Verbesserung wurde auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen.
+== Februar 13, 2024
 
 
 
@@ -122,11 +156,7 @@ Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnemen
 
 
 
-== Neue Funktionen und Verbesserungen für den 11. Januar 2024
-
-Erfahren Sie, was in dieser Version neu ist.
-
-Die folgenden Verbesserungen wurden auf dem Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgenommen.
+== Januar 11, 2024
 
 
 
@@ -142,9 +172,7 @@ Wenn Sie ein Abonnement mit Tarifen mit _Null_ gebuchter Kapazität haben, könn
 
 
 
-== Neue Funktionen und Verbesserungen für den 15. Dezember 2023
-
-Erfahren Sie, was in dieser Version neu ist.
+== Dezember 15, 2023
 
 
 

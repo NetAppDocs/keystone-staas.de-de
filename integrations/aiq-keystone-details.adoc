@@ -67,7 +67,7 @@ Das Dashboard enthält Warnmeldungen, mit denen Sie die Probleme in Ihrer Storag
 
 NOTE: Wenn Sie einen einzelnen Service-Level- oder Tarifplan abonniert haben, können Sie die Warnmeldung für nicht konforme Volumes nicht sehen.
 
-image:alert-aiq-1.png["Alarm"]
+image:alert-aiq-2.png["Alarm"]
 
 Informationen zu AQoS-Richtlinien finden Sie unter link:../concepts/qos.html["Anpassungsfähige QoS"].
 

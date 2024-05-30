@@ -24,9 +24,36 @@ Die folgenden bekannten Probleme wurden in NetApp Keystone STaaS gemeldet.
 
 
  a| 
-Falsche Anzeige von Keystone Daten in CSV-Berichten
+Erweiterte Datenanzeige für die Tagesauswahl im Register *Kapazitätstrends*.
  a| 
-Wenn die Spalte *Kontoname* in CSV-Berichten, die auf der Registerkarte *Kapazitätstrend* generiert wird, einen Kontonamen mit einem Komma enthält `(,)`, Keystone-Daten werden in CSV-Berichten verlegt.
+Wenn das heutige Datum sowohl als Start- als auch Enddatum für den Vormonat über die Option *Kapazitätstrends* auf der Registerkarte *Kapazitätstrends* ausgewählt ist, werden in den Nutzungsdiagrammen Daten für einen Zeitraum angezeigt, der vom ausgewählten Startdatum bis zum aktuellen Datum reicht. statt Daten für den angegebenen eintägigen Zeitraum zu zeigen.
+ a| 
+Keine
+
+
+
+ a| 
+Historische anfallende Burst-Daten sind für Service-Level nicht verfügbar.
+ a| 
+Die historischen aufgelaufenen Burst-Nutzungsdaten für die Servicelevel *CVO Primary* und *CVO Secondary* auf der Registerkarte *Capacity Trend* stehen für Abonnements, die nicht mit einer MetroCluster-Konfiguration konfiguriert sind, nicht zur Verfügung.
+ a| 
+Keine
+
+
+
+ a| 
+Falsche Anzeige des Werts des verbrauchten Objektspeichers bei AutoSupport-Abonnements.
+ a| 
+Wenn die AutoSupport Telemetrie zum Erfassen von Keystone Daten verwendet wird, wird der auf der Registerkarte *Volume-Details* aufgeführte Wert für Objektspeicher bei Abonnements mit Datei-, Block- und Objekt-Services nicht korrekt angezeigt.
+ a| 
+Die richtigen Informationen finden Sie im verbrauchten Wert für den Objektspeicher, der auf der Registerkarte *Aktuelle Nutzung* aufgeführt ist.
+
+
+
+ a| 
+Informationen auf Cluster-Ebene können nicht auf der Registerkarte *Assets* angezeigt werden.
+ a| 
+Für AutoSupport-Abonnements, die mit einer MetroCluster-Konfiguration konfiguriert sind, sind keine Details auf der Registerkarte *Assets* verfügbar.
  a| 
 Keine
 

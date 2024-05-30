@@ -23,7 +23,7 @@ Digital Advisor bietet ein einheitliches Dashboard, das über die Schaltfläche 
 .Standard-Dashboard (alt)
 Sie sehen den Kundennamen und die Abonnementnummer, den Kontonamen, das Start- und Enddatum des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Service-Leveln. Sie können den Erfassungsstamp der Verbrauchsdaten in UTC-Zeit sehen.
 
-image:old-db.png["Altes Dashboard"]
+image:old-db-1.png["Altes Dashboard"]
 
 .Alternatives (neues) Dashboard
 Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowie Warnungen und Warnungen, die sofortige Aufmerksamkeit oder Maßnahmen erfordern. Die Informationen werden abhängig von Ihren Abonnements und dem Status Ihrer Nutzung selektiv angezeigt. Sie können diese Informationen anzeigen:

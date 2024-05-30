@@ -18,7 +18,7 @@ Sie können eine Liste aller Ihrer Abonnements auf der Registerkarte *Abonnement
 
 Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Subscriptions*. Alle Ihre Abonnements werden aufgelistet.
 
-image:all-subs.png["Ein Bild der Registerkarte Abonnements"]
+image:all-subs-2.png["Ein Bild der Registerkarte Abonnements"]
 
 Sie können die Auswahl filtern, indem Sie auf das Hamburger-Symbol klicken image:icon-hamburger.png["hamburger-Symbol"] Um eine Spalte anzuzeigen, oder um alle Abonnements anzuzeigen, indem Sie auf die Schaltfläche *Filter löschen* klicken. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
 
@@ -39,7 +39,7 @@ TIP: Wenn Sie den Add-on-Service für erweiterte Datensicherung abonniert haben,
 
 Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
 
-image:usage-indicator.png["Symbol"]
+image:usage-indicator-1.png["Symbol"]
 
 .Indizieren
 image:icon-grey.png["Graues Punktsymbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levelsimage:icon-green.png["Grünes Punktsymbol"]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtetimage:icon-amber.png["Gelbes Punktsymbol"]: Der maximale Verbrauch, das ist die Nutzung in etwa 100% oder mehr der verpflichteten Kapazität zu erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität animage:icon-red.png["Rotes Punktsymbol"]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %image:icon-purple.png["Violettes Punktsymbol"]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an

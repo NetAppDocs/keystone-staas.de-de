@@ -22,6 +22,24 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Falsche Platzierung von Keystone-Daten in CSV-Berichten, wenn die Spalte *Account Name* in CSV-Berichten, die auf der Registerkarte *Capacity Trend* generiert wird, einen Kontonamen mit einem Komma enthält `(,)`.
+ a| 
+Keystone Daten werden in CSV-Berichten korrekt ausgerichtet.
+ a| 
+Mai 29, 2024
+
+
+
+ a| 
+Zeigen Sie die aufgelaufene Burst-Nutzung auf der Registerkarte *Capacity Trend* an, auch wenn der Verbrauch unter der gebuchten Kapazität liegt.
+ a| 
+Fest
+ a| 
+Mai 29, 2024
+
+
+
+ a| 
 Falscher QuickInfo-Text für das Index-Symbol *Aktueller Burst* im Register *Kapazitätstrend*.
  a| 
 Zeigt den korrekten QuickInfo-Text „_die Menge der aktuell verbrauchten Burst-Kapazität an. Hinweis: Dies gilt für den aktuellen Abrechnungszeitraum, nicht für den ausgewählten Datumsbereich._“
