@@ -14,7 +14,7 @@ summary: Betriebsmodelle in Keystone
 
 
 [role="lead"]
-NetApp Keystone (Keystone) STaaS bietet zwei Betriebsmodelle für die Servicebereitstellung: Von Partnern betriebenes Modell und kundenbetriebenes Modell.
+NetApp Keystone STaaS bietet zwei Betriebsmodelle für die Servicebereitstellung: Modell mit Betrieb durch Partner und Modell mit Betrieb durch den Kunden.
 
 * *Vom Partner betriebenes Modell*: Ein Partner oder Dienstleister betreibt die Dienstleistungen für seine Endkunden. Bei NetApp ist der Partner der referenzierte Vertragspartner. Mandanten sind Kunden von Partnern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell nutzt eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter ihre eigenen Abonnements haben, die vom Partner in Rechnung gestellt werden. Der Partneradministrator führt die administrativen Aufgaben für alle Mandanten aus.
 * *Vom Kunden betriebenes Modell*: Als Kunde können Sie Keystone-Services nach Ihren ausgewählten Service-Levels und Storage abonnieren. NetApp definiert die Architektur und das Produkt und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Als Kunde sind Sie der Mandant oder Mandant von NetApp oder einem Partner/Service Provider. Auf der Grundlage Ihres Vertrags können Sie Service-Anfragen stellen, die von NetApp oder Ihrem Service Provider bearbeitet werden müssen. Ein Administrator am Ende kann die administrativen Aufgaben an Ihrem Standort (Ihrer Umgebung) ausführen. Diese Aufgaben sind an die Benutzer in Ihrer Umgebung gebunden.

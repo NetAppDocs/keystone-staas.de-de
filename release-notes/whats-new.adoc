@@ -20,6 +20,20 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 
 
+== 27. Juni 2024
+
+
+
+=== Konsistente Anzeige des Abonnements
+
+Der Bildschirm *Keystone Subscriptions* wird aktualisiert, um die ausgewählte Abonnementnummer auf allen Registerkarten anzuzeigen.
+
+* Wenn eine Registerkarte im Fenster *Keystone Abonnements* aktualisiert wird, navigiert der Bildschirm automatisch zur Registerkarte *Abonnements* und setzt alle Registerkarten auf das erste Abonnement zurück, das im Dropdown *Abonnement* aufgeführt ist.
+* Wenn das ausgewählte Abonnement nicht für Leistungskennzahlen abonniert ist, wird auf der Registerkarte *Leistung* das erste Abonnement angezeigt, das im *Abonnement*-Dropdown bei der Navigation aufgeführt wird.
+
+
+
+
 == Mai 29, 2024
 
 
@@ -35,7 +49,7 @@ Der *Burst*-Indikator im Nutzungsindex wird erweitert, um den prozentualen Wert 
 Die Service-Level *CVO Primary* und *CVO Secondary* unterstützen Cloud Volumes ONTAP für Abonnements, die Ratenpläne mit Null gebuchter Kapazität oder solche mit einem Metro-Cluster konfiguriert haben.
 
 * Sie können die Kapazitätsauslastungsgrafik für diese Service-Levels vom alten Dashboard des Widgets *Keystone Abonnements* und der Registerkarte *Kapazitätstrend* sowie detaillierte Nutzungsinformationen aus der Registerkarte *Aktuelle Nutzung* anzeigen.
-* Auf der Registerkarte *Abonnement* werden diese Servicelevel als angezeigt `CVO (v2)` In der Spalte *Usage Type*, die die Identifizierung der Abrechnung nach diesen Service Levels ermöglicht.
+* Auf der Registerkarte *Abonnements* werden diese Servicelevel als angezeigt `CVO (v2)` In der Spalte *Usage Type*, die die Identifizierung der Abrechnung nach diesen Service Levels ermöglicht.
 
 
 
@@ -48,7 +62,7 @@ Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die 
 
 === Verbesserte Anzeige von Abonnements
 
-Die Standardanzeige der Abonnements wird erweitert, um nach Tracking-ID zu sortieren. Die Abonnements auf der Registerkarte *Abonnements*, auch in den Dropdown-Menüs *Abonnements* und CSV-Berichten, werden nun nach der alphabetischen Reihenfolge der Tracking-IDs in der Reihenfolge a, A, b, B usw. angezeigt.
+Die Standardanzeige der Abonnements wird erweitert, um nach Tracking-ID zu sortieren. Die Abonnements auf der Registerkarte *Abonnements*, auch in den Dropdown-Menüs *Abonnement* und den CSV-Berichten, werden nun nach der alphabetischen Reihenfolge der Tracking-IDs in der Reihenfolge a, A, b, B usw. angezeigt.
 
 
 
@@ -116,9 +130,7 @@ Alle zeigen die Daten basierend auf dem ausgewählten Datum des Abonnements an.
 
 
 
-== Neue Funktionen und Verbesserungen für 29. Februar 2024
-
-Im Dashboard von Active IQ Digital Advisor (auch als digitaler Berater bekannt) und im Bildschirm *Keystone Abonnements* für diese Version wurden verschiedene Verbesserungen vorgenommen:
+== Februar 29, 2024
 
 
 
@@ -178,10 +190,10 @@ Wenn Sie ein Abonnement mit Tarifen mit _Null_ gebuchter Kapazität haben, könn
 
 === Möglichkeit zur Suche nach Watchlisten
 
-Die Unterstützung für Watchlisten im digitalen Berater von Active IQ (auch als digitaler Berater bekannt) wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen zur Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"^].
+Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen zur Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"^].
 
 
 
 === Datum in UTC-Zeitzone umgewandelt
 
-Die auf den Registerkarten des Bildschirms *Keystone Abonnements* von Active IQ Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"^].
+Die auf den Registerkarten des Bildschirms *Keystone Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"^].

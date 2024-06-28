@@ -50,4 +50,4 @@ Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und
 
 image:mgmt-stack.png["Management-Stack"]
 
-Mit dem digitalen Berater von Active IQ (auch als digitaler Berater bekannt) können Sie sich anmelden und die Abonnement- und Verbrauchsdaten für Ihre Keystone Abonnements anzeigen. Weitere Informationen zu Keystone Berichten im Digital Advisor Dashboard finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Digital Advisor"].
+ Digital Advisor enables you to log in and view the subscription and consumption details for your Keystone subscriptions. For more information about Keystone reporting on the Digital Advisor dashboard, see link:../integrations/keystone-aiq.html[Keystone and Digital Advisor].

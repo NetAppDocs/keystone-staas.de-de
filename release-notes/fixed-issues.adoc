@@ -22,6 +22,42 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+In den Nutzungsdiagrammen werden Daten angezeigt, die über den angegebenen Zeitraum eines Tages hinausgehen, wenn das dem aktuellen Tag entsprechende Datum sowohl als Start- als auch als Enddatum für den Vormonat aus der Option *Kapazitätstrends* auf der Registerkarte *Kapazitätstrends* ausgewählt wird.
+ a| 
+Die Verwendungsdiagramme zeigen nun die Daten für den angegebenen Zeitraum eines Tages korrekt an.
+ a| 
+27. Juni 2024
+
+
+
+ a| 
+Für die Servicelevel *CVO Primary* und *CVO Secondary* auf der Registerkarte *Capacity Trend* für Abonnements, die nicht mit einer MetroCluster-Konfiguration konfiguriert sind, sind keine historischen aufgelaufenen Burst-Daten verfügbar.
+ a| 
+Fest
+ a| 
+21. Juni 2024
+
+
+
+ a| 
+Falsche Anzeige des verbrauchten Objektspeichers auf der Registerkarte *Volume-Details* für AutoSupport-Abonnements.
+ a| 
+Der verbrauchte Wert für Objekt-Storage wird jetzt korrekt angezeigt.
+ a| 
+21. Juni 2024
+
+
+
+ a| 
+Informationen auf Cluster-Ebene auf der Registerkarte *Assets* für AutoSupport-Abonnements, die mit einer MetroCluster-Konfiguration konfiguriert sind, können nicht angezeigt werden.
+ a| 
+Fest
+ a| 
+21. Juni 2024
+
+
+
+ a| 
 Falsche Platzierung von Keystone-Daten in CSV-Berichten, wenn die Spalte *Account Name* in CSV-Berichten, die auf der Registerkarte *Capacity Trend* generiert wird, einen Kontonamen mit einem Komma enthält `(,)`.
  a| 
 Keystone Daten werden in CSV-Berichten korrekt ausgerichtet.

@@ -16,7 +16,7 @@ summary: Keystone-Abonnementberichte und -Diagramme
 [role="lead"]
 Nutzen Sie die Registerkarte *Assets*, um Perspektiven auf Ihr Cluster und die Nodes zu sammeln, die durch Ihre Keystone Abonnements gemanagt werden.
 
-Digitaler Berater von Active IQ (Digital Advisor) bietet umfassende Informationen auf Bestandsebene Ihrer Implementierungen. Auf der Registerkarte *Assets* des Keystone Dashboards hingegen werden die Informationen auf Cluster-Ebene auf Basis Ihrer Abonnements gesammelt, getrennt und mit den genauen Details dargestellt.
+Digital Advisor bietet umfassende Informationen auf Bestandsebene Ihrer Implementierungen. Auf der Registerkarte *Assets* des Keystone Dashboards hingegen werden die Informationen auf Cluster-Ebene auf Basis Ihrer Abonnements gesammelt, getrennt und mit den genauen Details dargestellt.
 
 .Schritte
 . Klicken Sie auf *GENERAL > Keystone Subscriptions > Assets*.
