@@ -73,7 +73,19 @@ Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Ve
 ** Lila: Über der Burst-Grenze.
 
 
-* *Aufgelaufene Burst*: Indikator für die aufgelaufene Burst-Nutzung oder verbrauchte Kapazität, die pro Monat für den aktuellen Abrechnungszeitraum berechnet wird. Die aufgelaufene Burst-Nutzung wird auf Basis der zurecheneten und verbrauchten Kapazität für ein Service-Level berechnet: `(consumed - committed)/365.25/12`.
+* *Aufgelaufene Burst*: Anzeige der gesamten Burst-Kapazität (in tib), die in jedem 2-Minuten-Intervall innerhalb eines Monats für den aktuellen Abrechnungszyklus angesammelt wurde. Die angesammelten Burst-Kapazitäten für einen gesamten Monat werden wie folgt berechnet:
++
+[Summe der Bursts in Monat / ((Tage in Monat) x 24 x 60)] x Intervalldauer
+
++
+Sie können den aufgelaufenen Burst für kurze Zeiträume berechnen, z. B. alle zwei Minuten. Verwenden Sie dazu folgende Optionen:
+
++
+[Burst / ((Tage im Monat) x 24 x 60)] x Intervalldauer
+
++
+Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kapazität. Beispiel: Wenn die verbrauchte Kapazität bei einem Monat von 30 Tagen 120 tib und die gebuchte Kapazität 100 tib für ein Intervall von 2 Minuten beträgt, ergibt sich daraus eine Burst-Kapazität von 20 tib, was einer angesammelten Burst-Nutzung von 0.000925926 tib für dieses Intervall entspricht.
+
 
 
 
