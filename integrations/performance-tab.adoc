@@ -80,8 +80,8 @@ image:perf-log-usd.png["Diagramm „genutzte logische Kapazität“"]
 
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
-* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/current-usage-tab.html["Stromaufnahme"]
+* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
 * link:../integrations/assets-tab.html["Ressourcen"]
 

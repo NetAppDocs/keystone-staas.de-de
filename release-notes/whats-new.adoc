@@ -20,6 +20,22 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 
 
+== Juli 10, 2024
+
+
+
+=== Änderungen an den Etiketten
+
+Die Bezeichnung *Aktuelle Nutzung* wird in *Aktueller Verbrauch* geändert, und *Kapazitätstrend* wird in *Verbrauchstrend* geändert.
+
+
+
+=== Suchleiste für Abonnements
+
+Die Dropdown-Liste *Abonnements* über alle Registerkarten im Fenster *Keystone Abonnements* enthält jetzt eine Suchleiste. Sie können nach bestimmten Abonnements suchen, die in der Dropdown-Liste *Abonnements* aufgeführt sind.
+
+
+
 == 27. Juni 2024
 
 
@@ -174,7 +190,7 @@ Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnemen
 
 === Die Rechnungsdaten wurden für aufgelaufene Burst zurückgegeben
 
-Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html#view-invoiced-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
 
 
 
@@ -190,7 +206,7 @@ Wenn Sie ein Abonnement mit Tarifen mit _Null_ gebuchter Kapazität haben, könn
 
 === Möglichkeit zur Suche nach Watchlisten
 
-Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen zur Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"^].
+Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen über die Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Sie können nach Keystone Watchlisten suchen"^].
 
 
 

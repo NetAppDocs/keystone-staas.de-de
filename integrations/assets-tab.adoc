@@ -21,18 +21,19 @@ Digital Advisor bietet umfassende Informationen auf Bestandsebene Ihrer Implemen
 .Schritte
 . Klicken Sie auf *GENERAL > Keystone Subscriptions > Assets*.
 . Wählen Sie die Abonnementnummer aus, für die Sie die Cluster anzeigen möchten.
-
-
++
 Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten.
 
-image:assets-tab-2.png["Registerkarte „Assets“"]
+
+
+image:assets-tab-3.png["Registerkarte „Assets“"]
 
 *Verwandte Informationen*
 
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
+* link:../integrations/current-usage-tab.html["Stromaufnahme"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
-* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
 * link:../integrations/performance-tab.html["Leistung"]
 

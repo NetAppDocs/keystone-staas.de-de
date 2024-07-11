@@ -34,16 +34,16 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
 
 NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn der Wert kleiner als 0.01 tib ist, wird der Wert als 0 oder angezeigt `No Usage`. Die Daten auf diesen Bildschirmen werden in UTC-Zeit (Serverzeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet.
 
-Informationen zu Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
+Weitere Informationen zu Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
 
 Die folgenden Links bieten weitere Informationen zu den einzelnen Registerkarten:
 
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
-* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/current-usage-tab.html["Stromaufnahme"]
+* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
-* link:../integrations/performance-tab.html["Leistung"]
 * link:../integrations/assets-tab.html["Ressourcen"]
+* link:../integrations/performance-tab.html["Leistung"]
 
 
 
@@ -54,7 +54,7 @@ Sie können Berichte für Keystone Daten generieren und anzeigen. Auf jeder Regi
 
 Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwendung und den Vergleich speichern können.
 
-Ein Beispielbericht für die Registerkarte *Capacity Trend*, in der die grafischen Daten konvertiert werden:
+Ein Beispielbericht für die Registerkarte *Verbrauchstrend*, in der die grafischen Daten konvertiert werden:
 
 image:report_1.png["csv des Berichts"]
 
@@ -67,7 +67,7 @@ Das Dashboard enthält Warnmeldungen, mit denen Sie die Probleme in Ihrer Storag
 
 NOTE: Wenn Sie einen einzelnen Service-Level- oder Tarifplan abonniert haben, können Sie die Warnmeldung für nicht konforme Volumes nicht sehen.
 
-image:alert-aiq-2.png["Alarm"]
+image:alert-aiq-3.png["Alarm"]
 
 Informationen zu AQoS-Richtlinien finden Sie unter link:../concepts/qos.html["Anpassungsfähige QoS"].
 

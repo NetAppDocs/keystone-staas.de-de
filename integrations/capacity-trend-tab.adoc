@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/capacity-trend-tab.html 
-keywords: keystone-aiq, digital advisor keystone, capacity trend tab, historical usage, accrued burst, accrued, consumption 
-summary: Registerkarte „Capacity“ im Keystone Subscription Dashboard 
+keywords: keystone-aiq, digital advisor keystone, consumption trend tab, historical usage, accrued burst, accrued, consumption 
+summary: Registerkarte „Consumption Trend“ im Keystone Subscription Dashboard 
 ---
-= Registerkarte „Kapazitätstrend“
+= Registerkarte „Verbrauchstrend“
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: Registerkarte „Capacity“ im Keystone Subscription Dashboard
 
 
 [role="lead"]
-Auf der Registerkarte *Capacity Trend* werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt.
+Auf der Registerkarte *Consumption Trend* werden historische Daten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt.
 
 In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
 
 .Schritte
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Capacity Trend*.
+. Klicken Sie auf *GENERAL > Keystone Subscriptions > Consumption Trend*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
-. Wählen Sie *Kapazitätstrends* aus, wenn Sie die historischen Daten anzeigen und den Trend zur Kapazitätsnutzung analysieren möchten. Wählen Sie *fakturierte aufgelaufene Burst* aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden. Mit diesen Daten können Sie die berechnete Nutzung gemäß Ihrer Rechnung analysieren.
+. Wählen Sie *Verbrauchstrends*, wenn Sie die historischen Daten anzeigen und den Trend zur Kapazitätsnutzung analysieren möchten. Wählen Sie *fakturierte aufgelaufene Burst* aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden. Mit diesen Daten können Sie die berechnete Nutzung gemäß Ihrer Rechnung analysieren.
 
 
 
 
-== Kapazitätstrends anzeigen
+== Verbrauchstrends anzeigen
 
-Wenn Sie die Option *Kapazitätstrend* ausgewählt haben, gehen Sie wie folgt vor:
+Wenn Sie die Option *Verbrauchstrend* ausgewählt haben, gehen Sie wie folgt vor:
 
 .Schritte
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.
@@ -97,7 +97,7 @@ Wenn Sie die Option *fakturierte aufgelaufene Burst* ausgewählt haben, sehen Si
 
 TIP: Die in Rechnung gestellte Burst-Nutzung wird pro Abrechnungszeitraum berechnet, basierend auf der gebuchten und verbrauchten Kapazität für ein Service-Level.
 
-image:accr-burst.png["Diagramme zur angesammelten Burst-Nutzung"]
+image:accr-burst-1.png["Diagramme zur angesammelten Burst-Nutzung"]
 
 Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.
 
@@ -105,7 +105,7 @@ Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM
 
 == Referenzdiagramme für erweiterten Datenschutz
 
-Wenn Sie den erweiterten Datenschutz-Add-on-Dienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte *Kapazitätstrend* einsehen.
+Wenn Sie den erweiterten Datenschutz-Add-on-Dienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte *Verbrauchstrend* einsehen.
 
 Weitere Informationen zum erweiterten Add-on-Service für Datensicherheit finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"].
 
@@ -115,31 +115,31 @@ Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup kon
 NOTE: Die Verbrauchsbalkentabellen sind nur für die Basis-Service-Level aufgeteilt. Für den erweiterten Datenschutz-Add-on-Service, also den Service-Level _Advanced Data-Protect_, erscheint diese Abgrenzung nicht.
 
 .Service-Level für erweiterte Datensicherung
-Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Aus diesem Grund werden bei Auswahl der Abonnementnummer für den primären Standort auf der Registerkarte *Capacity Trend* die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Dienst die diskreten Verbrauchsdetails nur des primären Standorts anzeigen. Da jeder Partnerstandort in einer MetroCluster Konfiguration sowohl als Quelle als auch als Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.
+Beim Service-Level „_Advanced Data-Protect_“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an den einzelnen Partnerstandorten wird in einem separaten Abonnement dargestellt und in Rechnung gestellt. Ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort. Dies ist der Grund, warum, wenn Sie die Abonnementnummer für den primären Standort auf der Registerkarte *Verbrauchstrend* auswählen, die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Dienst die diskreten Verbrauchsdetails nur des primären Standorts anzeigen. Da jeder Partnerstandort in einer MetroCluster Konfiguration sowohl als Quelle als auch als Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.
 
 
-TIP: Die QuickInfo neben der Tracking-ID Ihres Abonnements auf der Registerkarte *Aktuelle Nutzung* hilft Ihnen, das Partnerabonnement im MetroCluster-Setup zu identifizieren.
+TIP: Die QuickInfo neben der Tracking-ID Ihres Abonnements auf der Registerkarte *Aktueller Verbrauch* hilft Ihnen, das Partnerabonnement in der MetroCluster-Einrichtung zu identifizieren.
 
 .Basis-Service-Level
 Für die Basis-Service-Level wird jedes Volume gemäß der Bereitstellung am primären Standort und an den gespiegelten Standorten in Rechnung gestellt. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären Standort und an den gespiegelten Standorten aufgeteilt.
 
 .Was Sie für das primäre Abonnement sehen können
-Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ (Basis-Service-Level) und eine primäre Abonnementnummer. Das gleiche historische Datendiagramm zeigt auch den Verbrauch der Spiegelseite in einem helleren Farbton desselben Farbcodes an, der für den primären Standort verwendet wird. Mit der Kurzinformation beim Mauszeiger wird der Aufschlüsselungsverbrauch (in tib) für die primären und gespiegelten Standorte, 1.02 tib bzw. 1.05 tib angezeigt.
+Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ (Basis-Service-Level) und eine primäre Abonnementnummer. Das gleiche historische Datendiagramm zeigt auch den Verbrauch der Spiegelseite in einem helleren Farbton desselben Farbcodes an, der für den primären Standort verwendet wird. Mit der Kurzinformation beim Mauszeiger wird der Aufschlüsselungsverbrauch (in tib) für die primären und gespiegelten Standorte, 22.24 tib bzw. 14.86 tib angezeigt.
 
-image:mcc-chart.png["mcc primär"]
+image:mcc-chart-1.png["mcc primär"]
 
 Für den _Advanced Data-Protect_ Service-Level werden die Diagramme wie folgt angezeigt:
 
-image:adp-src.png["mcc-Primärbasis"]
+image:adp-src-1.png["mcc-Primärbasis"]
 
 .Was Sie für das sekundäre Abonnement (Mirror Site) sehen können
-Wenn Sie das sekundäre Abonnement prüfen, wird das Balkendiagramm für den Service-Level _Extreme_ (Basis-Service-Level) am gleichen Datenerfassungspunkt wie der Partner-Standort umgekehrt und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort beträgt 1.05 tib bzw. 1.02 tib.
+Wenn Sie das sekundäre Abonnement prüfen, wird das Balkendiagramm für den Service-Level _Extreme_ (Basis-Service-Level) am gleichen Datenerfassungspunkt wie der Partner-Standort umgekehrt und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort beträgt 14.86 tib bzw. 22.24 tib.
 
-image:mcc-chart-mirror.png["mcc-Spiegel"]
+image:mcc-chart-mirror-1.png["mcc-Spiegel"]
 
 Für den Service-Level _Advanced Data-Protect_ wird das Diagramm für denselben Erfassungspunkt wie auf der Partnerseite wie folgt angezeigt:
 
-image:adp-mir.png["mcc-Spiegelsockel"]
+image:adp-mir-1.png["mcc-Spiegelsockel"]
 
 Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datensicherung und Disaster Recovery verstehen"^].
 
@@ -147,8 +147,8 @@ Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https:/
 
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
+* link:../integrations/current-usage-tab.html["Stromaufnahme"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
-* link:../integrations/performance-tab.html["Leistung"]
 * link:../integrations/assets-tab.html["Ressourcen"]
+* link:../integrations/performance-tab.html["Leistung"]
 

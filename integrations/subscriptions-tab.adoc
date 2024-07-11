@@ -18,7 +18,7 @@ Sie können eine Liste aller Ihrer Abonnements auf der Registerkarte *Abonnement
 
 Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Subscriptions*. Alle Ihre Abonnements werden aufgelistet.
 
-image:all-subs-2.png["Ein Bild der Registerkarte Abonnements"]
+image:all-subs-3.png["Ein Bild der Registerkarte Abonnements"]
 
 Sie können die Auswahl filtern, indem Sie auf das Hamburger-Symbol klicken image:icon-hamburger.png["hamburger-Symbol"] Um eine Spalte anzuzeigen, oder um alle Abonnements anzuzeigen, indem Sie auf die Schaltfläche *Filter löschen* klicken. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
 
@@ -28,18 +28,18 @@ Sie können die Auswahl filtern, indem Sie auf das Hamburger-Symbol klicken imag
 
 TIP: Wenn Sie den Add-on-Service für erweiterte Datensicherung abonniert haben, können Sie auf die Kurzinformation zu Ihrer Abonnementnummer klicken, um die Tracking ID des Partnerabonnements in einer MetroCluster Einrichtung anzuzeigen. Informationen zum Anzeigen der detaillierten Nutzung nach Partnerabonnements in einer MetroCluster Konfiguration finden Sie unter link:../integrations/capacity-trend-tab.html#reference-charts-for-advanced-data-protection["Referenzdiagramme für erweiterten Datenschutz"].
 
-* *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp für die bereitgestellte, physische oder logische Nutzung berechnet wird `v1` Oder `v2`. Weitere Informationen zu Keystone Abonnements Version 1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Dokumentation für NetApp Keystone"^].
+* *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie den Wert in dieser Spalte betrachten, wissen Sie, ob der Nutzungstyp gemäß der bereitgestellten, physischen oder logischen Nutzung für entweder oder abgerechnet wird `v1` `v2`. Weitere Informationen zu Keystone Abonnements Version 1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Dokumentation für NetApp Keystone"^].
 * *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, wie monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
 * *Enddatum*: Das Enddatum des Abonnements. Wenn Sie ein monatlich abrechenbares Abonnement haben, das sich automatisch jeden Monat verlängert, sehen Sie `Month-on-month` Anstelle des Enddatums. Basierend auf diesem Datum werden möglicherweise Benachrichtigungen für Abonnements angezeigt, die kurz vor dem Ende stehen oder an die Richtlinien zur automatischen Verlängerung angehängt sind.
 * *Nutzungsstatus*: Zeigt den Nutzungsindikator an, um anzugeben, ob der Verbrauch innerhalb oder außerhalb des Abonnementlimits liegt. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
-* image:subs-dtls-icon.png["Symbol"]: Durch Klicken auf dieses Symbol für ein Abonnement wird der Reiter *Aktuelle Nutzung* mit den Nutzungsdetails des Abonnements geöffnet.
-* image:aiq-ks-time-icon.png["Symbol"]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Capacity Trend* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.
+* image:subs-dtls-icon.png["Symbol"]: Wenn Sie auf dieses Symbol für ein Abonnement klicken, wird der Tab *Aktueller Verbrauch* mit den Nutzungsdetails des Abonnements geöffnet.
+* image:aiq-ks-time-icon.png["Symbol"]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Verbrauchstrend* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.
 
 
 Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
 
-image:usage-indicator-1.png["Symbol"]
+image:usage-indicator-2.png["Symbol"]
 
 .Indizieren
 image:icon-grey.png["Graues Punktsymbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levelsimage:icon-green.png["Grünes Punktsymbol"]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtetimage:icon-amber.png["Gelbes Punktsymbol"]: Der maximale Verbrauch, das ist die Nutzung in etwa 100% oder mehr der verpflichteten Kapazität zu erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität animage:icon-red.png["Rotes Punktsymbol"]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %image:icon-purple.png["Violettes Punktsymbol"]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an
@@ -47,9 +47,9 @@ image:icon-grey.png["Graues Punktsymbol"]: Keine Kapazitätsnutzung erfasst mit 
 *Verwandte Informationen*
 
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
-* link:../integrations/current-usage-tab.html["Aktuelle Nutzung"]
-* link:../integrations/capacity-trend-tab.html["Kapazitätstrend"]
+* link:../integrations/current-usage-tab.html["Stromaufnahme"]
+* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
 * link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
-* link:../integrations/performance-tab.html["Leistung"]
 * link:../integrations/assets-tab.html["Ressourcen"]
+* link:../integrations/performance-tab.html["Leistung"]
 

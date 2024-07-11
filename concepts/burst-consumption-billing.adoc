@@ -21,6 +21,6 @@ Das Burst-Limit wird festgelegt und in Ihrer Keystone Vereinbarung angegeben. No
 Die zugesagt Kapazität ist die Kapazität, die Ihnen beim Kauf des Abonnements zugesagt wird. Die verplante Kapazität und Burst-Kapazität werden gemäß Service Level gemessen. Verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen.
 Wenn die verbrauchte Kapazität größer ist als die für ein Service-Level verplante Kapazität, wird der Burst-Verbrauch protokolliert und entsprechend abgerechnet. Normalerweise liegt er 20 % über der gebuchten Kapazität. Der Verbrauch über der Burst-Kapazität wird als „oberhalb der Burst-Grenze“ angegeben.
 
-Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider.
+Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html["Registerkarte „Verbrauchstrend“"].
 
 Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].

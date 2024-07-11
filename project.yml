@@ -75,16 +75,16 @@ sidebar:
       url: "/integrations/aiq-keystone-details.html"
     - title: Registerkarte Abonnements
       url: "/integrations/subscriptions-tab.html"
-    - title: Registerkarte „Aktuelle Nutzung“
+    - title: Registerkarte Stromaufnahme
       url: "/integrations/current-usage-tab.html"
-    - title: Registerkarte „Kapazitätstrend“
+    - title: Registerkarte „Verbrauchstrend“
       url: "/integrations/capacity-trend-tab.html"
     - title: Registerkarte „Volumes & Objekte“
       url: "/integrations/volumes-objects-tab.html"
-    - title: Registerkarte „Performance“
-      url: "/integrations/performance-tab.html"
     - title: Registerkarte „Assets“
       url: "/integrations/assets-tab.html"
+    - title: Registerkarte „Performance“
+      url: "/integrations/performance-tab.html"
     - title: Keystone Abonnements von BlueXP managen und
       url: "/integrations/keystone-cm.html"
   - title: Keystone STaaS Services
