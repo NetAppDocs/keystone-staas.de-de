@@ -38,6 +38,10 @@ Sie sollten einige zusätzliche Voraussetzungen für ONTAP und StorageGRID erfü
 .. Melden Sie sich bei der Unified Manager-Web-Benutzeroberfläche mit den Standardanmeldeinformationen des Anwendungsadministrators an, die während der Installation generiert werden. Siehe https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["Zugriff auf die Web-Benutzeroberfläche von Unified Manager"^].
 .. Erstellen Sie mit ein Servicekonto für Keystone Collector `Operator` Benutzerrolle. Die Keystone Collector Service-APIs verwenden dieses Servicekonto für die Kommunikation mit Unified Manager und die Erfassung von Nutzungsdaten. Siehe https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["Benutzer hinzufügen"^].
 .. Erstellen Sie ein `Database` Benutzerkonto, mit `Report Schema` Rolle: Dieser Benutzer ist für die Erfassung von Leistungsdaten erforderlich. Siehe https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["Erstellen eines Datenbankbenutzers"^].
++
+
+NOTE: Der Standardport für MySQL, 3306, ist während einer Neuinstallation von Unified Manager nur auf localhost beschränkt, wodurch die Erfassung von Performance-Daten für Keystone ONTAP verhindert wird. Diese Konfiguration kann geändert und die Verbindung kann über die Option in der Wartungskonsole von Unified Manager anderen Hosts zur Verfügung gestellt werden `Control access to MySQL port 3306` . Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_additional_menu_options.html["Zusätzliche Menüoptionen"^].
+
 
 
 . Aktivieren Sie API Gateway in Unified Manager. Keystone Collector verwendet die API-Gateway-Funktion zur Kommunikation mit ONTAP-Clustern. Sie können das API-Gateway entweder über die Web-UI oder durch Ausführen einiger Befehle über die Unified Manager-CLI aktivieren.

@@ -48,7 +48,7 @@ TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonne
 
 
 
-image:new-db-2.png["Neues Dashboard"]
+image:new-db-3.png["Neues Dashboard"]
 
 Weitere Informationen über das Widget „Digital Advisor Dashboard“ für Keystone finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor Dokumentation"^].
 

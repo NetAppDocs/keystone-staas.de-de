@@ -43,7 +43,7 @@ In den Balkendiagrammen werden der Name des Service-Levels und die für diesen S
 
 Mit der Zoom-Funktion können Sie kurzfristige Überspannungen in den Nutzungsdiagrammen, auch bekannt als Microbursts, anzeigen. Wenn ein Microburst vorhanden ist, wird dieser durch einen blauen Punkt auf dem entsprechenden Balken oder direkt auf der X-Achse angezeigt, wenn keine Daten verbraucht werden. Um die Details anzuzeigen, klicken Sie auf die Leiste oder die x-Achse, auf der der blaue Punkt angezeigt wird, und ziehen Sie den Cursor über das Diagramm, um das gewünschte Zeitintervall auszuwählen. Lassen Sie die Maustaste los, um die Auswahl zu bestätigen. Diese Aktion vergrößert die Daten und bietet eine detaillierte Ansicht der Kapazität, die auf diesem Service-Level für das ausgewählte Intervall verwendet wird. Sie können die Ansicht weiter vergrößern, um Details in einem 2-Minuten-Intervall anzuzeigen. Sie können auf die Schaltfläche *Zoom zurücksetzen* klicken, um zur ursprünglichen Kartenansicht zurückzukehren.
 
-image:aiq-ks-subtime-5.png["Registerkarte „Kapazitätstrend“ mit Details"]
+image:aiq-ks-subtime-6.png["Registerkarte „Kapazitätstrend“ mit Details"]
 
 Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an, die innerhalb des Service-Levels definiert ist. Monatliche Daten in den Diagrammen werden durch eine vertikale Linie getrennt.
 
