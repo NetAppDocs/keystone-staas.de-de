@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Billing and miscellaneous scenarios 
-summary: Die Abrechnung basiert auf verschiedenen Volume-Typen 
+summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Konfigurationen, darunter geklonte Volumes, erweiterte Datensicherung und mehr. 
 ---
 = Verschiedene Szenarien für Keystone Abrechnung
 :hardbreaks:
@@ -12,6 +12,9 @@ summary: Die Abrechnung basiert auf verschiedenen Volume-Typen
 :linkattrs: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Mit den Informationen zur Keystone Abrechnung für bestimmte Konfigurationen können Sie die Servicenutzung optimieren und Kosten managen. Zu den Szenarien zählen geklonte Volumes, erweiterte Datensicherung, temporäre Volumes, QoS-Richtlinien, SnapMirror Ziele, LUNs und System-/Root-Volumes.
 
 
 
@@ -28,16 +31,16 @@ Beachten Sie Folgendes:
 
 
 
-== Abrechnung für erweiterte Datensicherung
+== Die Kosten für die erweiterte Datensicherung werden abgerechnet
 
-Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden, oder ob sie gespiegelt oder unverspiegelte Daten sind.
+Die erweiterte Datensicherung verwendet NetApp MetroCluster, um Daten zwischen zwei physisch getrennten Clustern zu spiegeln. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden, oder ob sie gespiegelt oder unverspiegelte Daten sind.
 
 Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.
 
 .Beispiel:
 Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Keystone erkennt 10 TB des Verbrauchs an jedem Standort, was einer Erhöhung der Gesamtzahl um 20 TB ergibt. System Manager und Unified Manager melden ein 10-TB-Volume, das auf Standort A erstellt wurde, melden Sie jedoch kein 10-TB-Volume an Standort B.
 
-Darüber hinaus werden alle Volumes, die auf einem Keystone System mit erweiterter Datensicherung erstellt wurden, auf den Verbrauch einer erweiterten Datensicherung angerechnet, unabhängig davon, ob diese Volumes gespiegelt wurden oder nicht.
+Darüber hinaus zählen alle auf einem Keystone System mit erweiterter Datensicherung erstellten Volumes auf die Nutzung der erweiterten Datensicherung, unabhängig davon, ob diese Volumes gespiegelt wurden oder nicht.
 
 
 

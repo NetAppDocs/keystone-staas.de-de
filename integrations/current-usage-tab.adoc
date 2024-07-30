@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
 keywords: keystone-aiq, digital advisor keystone, current consumption tab 
-summary: Registerkarte „Stromaufnahme“ im AIQ da Keystone Dashboard 
+summary: Wenn Sie die Abonnementnutzung verstehen, haben Sie die Möglichkeit, die gebuchte Kapazität, die verbrauchte Kapazität, die verfügbare Kapazität und vieles mehr anzuzeigen. 
 ---
-= Registerkarte Stromaufnahme
+= Sehen Sie sich den aktuellen Verbrauch Ihrer Abonnements an
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Registerkarte „Stromaufnahme“ im AIQ da Keystone Dashboard
 
 
 [role="lead"]
-Auf der Registerkarte *Aktueller Verbrauch* werden die Nutzungsdetails Ihrer Abonnements angezeigt.
+Wenn Sie die Abonnementnutzung verstehen, können Sie sich Nutzungsdetails wie gebuchte Kapazität, verbrauchte Kapazität, verfügbare Kapazität und vieles mehr anzeigen lassen.
 
 Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Current Consumption*, und wählen Sie die gewünschte Abonnementnummer aus.
 

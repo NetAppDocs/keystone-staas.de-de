@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/volumes-objects-tab.html 
 keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
-summary: Volumes-Objects-tab 
+summary: Anzeige von Kapazitätsdetails auf Volume- oder Objekt-Storage-Ebene 
 ---
-= Registerkarte „Volumes & Objekte“
+= Zeigen Sie Details zu ONTAP Volumes und Objekt-Storage an
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Volumes-Objects-tab
 
 
 [role="lead"]
-Verwenden Sie die Registerkarte *Volumes & Objekte*, um Details zu ONTAP Volumes und Objektspeicher anzuzeigen. Bei StorageGRID können Sie auf dieser Registerkarte den Verbrauch durch die einzelnen Nodes in Ihrer Objekt-Storage-Umgebung lesen.
+Wenn Sie Kapazitätsdetails auf Volume- oder Objekt-Storage-Ebene anzeigen möchten, können Sie zu *Volumes & Objects* navigieren. Bei StorageGRID können Sie auf dieser Registerkarte den Verbrauch durch die einzelnen Nodes in Ihrer Objekt-Storage-Umgebung lesen.
 
 
 NOTE: Der Titel dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl ONTAP als auch Objektspeicher haben, wird der Titel der Registerkarte als *Volumes & Objekte* angezeigt. Nur für ONTAP erscheint der Name *Volumes*. Für StorageGRID-Objektspeicher können Sie die Registerkarte *Objects* sehen.
@@ -35,7 +35,7 @@ NOTE: Die Unterregisterkarte *objects* ist unter der Registerkarte *Volumes* nic
 . Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes & Objects > Volume Summary*.
 . Wählen Sie die Abonnementnummer aus.
 +
-Für das ausgewählte Keystone STaaS Abonnement können Sie die Gesamtanzahl der Volumes, ihren AQoS-Compliance-Status, die Anzahl der geschützten Volumes und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen oder geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste anzeigen können, die entweder die nicht kompatiblen Volumes oder die geschützten Volumes anzeigt, basierend auf Ihrer Auswahl.
+Für das ausgewählte Keystone STaaS Abonnement können Sie die Gesamtanzahl der Volumes, ihren QoS-Compliance-Status, die Anzahl der geschützten Volumes und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen oder geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste anzeigen können, die entweder die nicht kompatiblen Volumes oder die geschützten Volumes anzeigt, basierend auf Ihrer Auswahl.
 
 +
 image:volume-summary-2.png["Registerkarte „Volume Summary“"]

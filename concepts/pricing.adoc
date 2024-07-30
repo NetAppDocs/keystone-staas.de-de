@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/pricing.html 
 keywords: pricing, billing introduction, Keystone billing 
-summary: Keystone-Preisgestaltung 
+summary: Keystone bietet ein Pay-as-you-grow-Modell für Ihren flexiblen und skalierbaren Nutzungsbedarf. 
 ---
 = Keystone-Preisgestaltung
 :hardbreaks:
@@ -14,9 +14,7 @@ summary: Keystone-Preisgestaltung
 
 
 [role="lead"]
-NetApp Keystone STaaS ermöglicht vorhersehbare und vorab-Preise für Ihre Storage-Subskription.
-
-Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing vorziehen, können Sie sich für das Keystone Pay-as-you-grow-Modell für Ihr flexibles und skalierbares Nutzungsmodell entscheiden.
+Wenn Sie ein Nutzungsmodell für Betriebskosten statt Investitionskosten oder Leasing bevorzugen, können Sie sich für das Pay-as-you-grow-Modell von NetApp Keystone STaaS entscheiden. Es bietet eine flexible und skalierbare Nutzung mit vorhersehbaren Vorabpreisen für Ihr Storage-Abonnement.
 
 Keystone bietet Ihnen folgende Abrechnungsmöglichkeiten:
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/vapp-installation.html 
 keywords: install, VMware 
-summary: Installation von Keystone Collector auf VMware Systemen 
+summary: Implementieren Sie Keystone Collector auf einem VMware vSphere-System, indem Sie die OVA-Vorlage herunterladen, die Vorlage implementieren und vieles mehr. 
 ---
 = Implementieren Sie Keystone Collector auf VMware vSphere Systemen
 :hardbreaks:

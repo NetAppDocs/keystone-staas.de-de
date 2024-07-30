@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/performance-tab.html 
 keywords: keystone-aiq, digital advisor keystone, performance tab 
-summary: Registerkarte „Performance“ im AIQ da Dashboard von Keystone Subscription 
+summary: Performance-Kennzahlen für die von Ihren Keystone Abonnements gemanagten ONTAP Volumes lassen sich anzeigen, um die Performance der Systeme zu überwachen. 
 ---
-= Registerkarte „Performance“
+= Performance-Metriken anzeigen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Registerkarte „Performance“ im AIQ da Dashboard von Keystone Subscr
 
 
 [role="lead"]
-Auf der Registerkarte *Performance* können Sie die Performance-Kennzahlen der ONTAP Volumes anzeigen, die von Ihren Keystone Abonnements gemanagt werden.
+Performance-Kennzahlen für die von Ihren Keystone Abonnements gemanagten ONTAP Volumes lassen sich anzeigen, um die Performance der Systeme zu überwachen.
 
 
 TIP: Diese Registerkarte ist optional für Sie verfügbar. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.

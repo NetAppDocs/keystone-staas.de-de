@@ -27,19 +27,19 @@ sidebar:
       url: "/concepts/overview.html"
     - title: Keystone Infrastruktur
       url: "/concepts/infra.html"
+    - title: Keystone Collector
+      url: "/installation/installation-overview.html"
     - title: Komponenten
       url: "/concepts/components.html"
     - title: Datenfluss
       url: "/concepts/data-flow.html"
     - title: Betriebsmodelle
       url: "/concepts/operational-models.html"
-    - title: Keystone Collector
-      url: "/installation/installation-overview.html"
   - title: Keystone wird eingerichtet und konfiguriert
     entries:
     - title: Anforderungen
       entries:
-      - title: VMware vSphere
+      - title: Virtuelle Infrastruktur
         url: "/installation/vapp-prereqs.html"
       - title: Linux
         url: "/installation/linux-prereqs.html"
@@ -51,7 +51,7 @@ sidebar:
         url: "/installation/vapp-installation.html"
       - title: Installation unter Linux
         url: "/installation/linux-installation.html"
-      - title: Integrität überprüfen
+      - title: Automatische Validierung der Keystone Software
         url: "/installation/validation.html"
     - title: Konfigurieren Sie Keystone Collector
       url: "/installation/configuration.html"
@@ -63,13 +63,13 @@ sidebar:
       url: "/installation/data-collection.html"
   - title: Monitoring und Upgrade
     entries:
-    - title: Systemzustand überwachen
+    - title: Überwachen Sie den Zustand des Keystone Collectors
       url: "/installation/monitor-health.html"
     - title: Aktualisieren Sie Keystone Collector
       url: "/installation/upgrade.html"
   - title: Keystone Dashboard
     entries:
-    - title: Das Keystone Dashboard zeigt es an
+    - title: Übersicht über Keystone Dashboard
       url: "/integrations/keystone-aiq.html"
     - title: Nutzungsdetails anzeigen und Berichte erstellen
       url: "/integrations/aiq-keystone-details.html"
@@ -85,13 +85,13 @@ sidebar:
       url: "/integrations/assets-tab.html"
     - title: Registerkarte „Performance“
       url: "/integrations/performance-tab.html"
-    - title: Keystone Abonnements von BlueXP managen und
+    - title: Erfahren Sie mehr über Keystone und BlueXP
       url: "/integrations/keystone-cm.html"
   - title: Keystone STaaS Services
     entries:
     - title: Metriken und Definitionen
       url: "/concepts/metrics.html"
-    - title: Quality of Service
+    - title: Storage-Servicequalität
       url: "/concepts/qos.html"
     - title: Unterstützter Storage
       url: "/concepts/supported-storage-services.html"
@@ -99,7 +99,7 @@ sidebar:
       url: "/concepts/supported-storage-capacity.html"
     - title: Service-Leveln
       url: "/concepts/service-levels.html"
-    - title: Unterstützte Kapazität für Service-Level
+    - title: Kapazitätsanforderungen für Service Levels
       url: "/concepts/capacity-requirements.html"
     - title: Keystone Abonnementservices Version 1
       url: "/subscription-services-v1.html"
@@ -111,7 +111,7 @@ sidebar:
         url: "/concepts/data-tiering.html"
       - title: Equinix-gestützte Services
         url: "/concepts/equinix.html"
-      - title: Non-Returnable, Non-Volatile Komponenten und SnapLock-Compliance
+      - title: Non-Returnable, nichtflüchtige Komponenten und SnapLock Compliance
         url: "/concepts/nrnvc.html"
       - title: USA Citizen Support (USCS)
         url: "/concepts/uscs.html"
@@ -125,11 +125,11 @@ sidebar:
       url: "/concepts/consumed-capacity-billing.html"
     - title: Abrechnung auf Basis von Burst-Nutzung
       url: "/concepts/burst-consumption-billing.html"
-    - title: Die Abrechnung basiert auf verschiedenen Volume-Typen
+    - title: Verschiedene Szenarien für Keystone Abrechnung
       url: "/concepts/misc-volume-billing.html"
     - title: Abrechnungszeitpläne
       url: "/concepts/billing-schedules.html"
-  - title: NetApp Global Services Support Center
+  - title: Keystone hilft Ihnen dabei
     url: "/concepts/gssc.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/adp.html 
 keywords: data protection advanced 
-summary: Erweiterte Datensicherung 
+summary: Nutzen Sie den erweiterten Add-on Service für Datensicherheit, um eine effiziente Datensicherung für geschäftskritische Workloads zu gewährleisten. 
 ---
-= Erweiterte Datensicherung
+= Mehr über erweiterte Datensicherung erfahren
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Erweiterte Datensicherung
 
 
 [role="lead"]
-Sie können den Add-on-Service für die erweiterte Datensicherung als Teil Ihres Keystone STaaS Abonnements abonnieren. Dieser Add-on-Service nutzt die NetApp MetroCluster-Technologie, um eine effiziente Datensicherung für Ihre geschäftskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 zu gewährleisten.
+Sie können den Add-on für die erweiterte Datensicherung als Teil Ihres Keystone STaaS Abonnements abonnieren. Dieser Add-on-Service nutzt die NetApp MetroCluster Technologie, um eine effiziente Datensicherung Ihrer geschäftskritischen Workloads an einem Recovery Point Objective (RPO) von 0 zu gewährleisten.
 
 
 NOTE: Die Keystone STaaS-Standardservices für Datei- und Block-Storage bieten dank NetApp Technologien wie SnapMirror, SnapVault und Snapshot standardmäßige Datensicherungsservices.

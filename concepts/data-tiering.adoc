@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/data-tiering.html 
 keywords: add-on services, add-on, data tiering 
-summary: Add-on, zusätzliche Service-Details, Daten-Tiering 
+summary: Der Daten-Tiering Add-on Service identifiziert selten genutzte Daten und führt sie auf unterstützten Storage zu. 
 ---
-= Daten-Tiering
+= Mehr über Daten-Tiering erfahren
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

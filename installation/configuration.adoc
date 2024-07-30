@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/configuration.html 
 keywords: configuration keystone collector 
-summary: Konfiguration des Keystone Collectors 
+summary: Schließen Sie die Konfiguration ab, um Keystone Collector für die Erfassung von Nutzungsdaten in Ihrer Storage-Umgebung zu aktivieren. 
 ---
 = Konfigurieren Sie Keystone Collector
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: Konfiguration des Keystone Collectors
 
 
 [role="lead"]
-Sie müssen einige Konfigurationsaufgaben ausführen, damit Keystone Collector Nutzungsdaten in Ihrer Speicherumgebung erfasst. Dies ist eine einmalige Aktivität zur Aktivierung und Zuordnung der erforderlichen Collector-Komponente zu Ihrer Speicherumgebung.
+Sie müssen einige Konfigurationsaufgaben ausführen, damit Keystone Collector Nutzungsdaten in Ihrer Speicherumgebung erfasst. Dies ist eine einmalige Aktivität zur Aktivierung und Zuordnung der erforderlichen Komponenten zu Ihrer Storage-Umgebung.
 
 
-NOTE: Der Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
+NOTE: Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
 
 .Schritte
 . Starten Sie das Management-TUI-Dienstprogramm Keystone Collector:
@@ -66,7 +66,7 @@ Die Collector-Software unterstützt die Verwendung eines HTTP-Proxys für die Ko
 
 == Begrenzung der Erhebung privater Daten
 
-Keystone Collector sammelt Informationen zu eingeschränkter Konfiguration, Status und Leistung, die für die Durchführung der Abonnementmessung erforderlich sind. Es besteht die Möglichkeit, die gesammelten Informationen durch Maskierung sensibler Informationen aus dem hochgeladenen Inhalt weiter einzuschränken. Dies hat keine Auswirkung auf die Berechnung der Abrechnung. Eine Einschränkung der Informationen kann sich jedoch auf die Nutzbarkeit der Berichtsinformationen auswirken, da einige Elemente, die leicht von Benutzern identifiziert werden können, wie z. B. der Volumenname, durch UUIDs ersetzt werden.
+Keystone Collector erfasst begrenzte Konfigurations-, Status- und Performance-Informationen, die für die Durchführung der Abonnementmessung erforderlich sind. Es besteht die Möglichkeit, die gesammelten Informationen durch Maskierung sensibler Informationen aus dem hochgeladenen Inhalt weiter einzuschränken. Dies hat keine Auswirkung auf die Berechnung der Abrechnung. Eine Einschränkung der Informationen kann sich jedoch auf die Nutzbarkeit der Berichtsinformationen auswirken, da einige Elemente, die leicht von Benutzern identifiziert werden können, wie z. B. der Volumenname, durch UUIDs ersetzt werden.
 
 Die Begrenzung der Erfassung bestimmter Kundendaten ist eine konfigurierbare Option auf dem Keystone Collector TUI-Bildschirm. Diese Option, *Private Daten entfernen*, ist standardmäßig aktiviert.
 

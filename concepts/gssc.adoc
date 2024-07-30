@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/gssc.html 
 keywords: Global Services Support Center, GSSC, Keystone support, service request, support ticket 
-summary: NetApp Global Services Support Center GSSC 
+summary: Wenn Sie Hilfe benötigen, wenden Sie sich bitte an das Global Services and Support Center von NetApp. 
 ---
-= NetApp Global Services Support Center
+= Keystone hilft Ihnen dabei
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: NetApp Global Services Support Center GSSC
 
 
 [role="lead"]
-Das NetApp Global Services and Support Center (GSSC) und der NetApp Keystone Success Manager (KSM) stellen Ihnen Services für Ihre Keystone Abonnements bereit.
+Das NetApp Global Services and Support Center (GSSC) und der NetApp Keystone Success Manager (KSM) stellen Ihnen Services für Ihre Keystone Abonnements bereit. Wenn Sie Hilfe benötigen, können Sie sich an das Support-Team wenden.
 
 
 
-== NetApp Global Services und Support Center (GSSC)
+== NetApp Global Services und Supportcenter
 
 NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services umfassen Betriebsdisziplinen zu Storage Management-Aktivitäten. Zu diesen Services gehören Asset- und Konfigurationsmanagement, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignisse, Vorfall- und Problemmanagement, Bearbeitung von Serviceanfragen und Berichterstellung. NetApp weist bei Bedarf einen Zustand der Kontrolle und unterstützende Nachweise nach.
 
@@ -26,7 +26,7 @@ NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services u
 
 == Kontakt für weitere Informationen und Support
 
-Das NetApp Global Services and Support Center (GSSC) Team unterstützt die Services hauptsächlich für NetApp Keystone Kunden. Mithilfe der folgenden Informationen können Sie sich an das Support-Team wenden.
+Das NetApp Global Services und das Support Center Team unterstützen in erster Linie die Services für NetApp Keystone Kunden. Mithilfe der folgenden Informationen können Sie sich an das Support-Team wenden.
 
 * Ansprechpartner für den weltweiten Service:
 https://www.netapp.com/company/contact-us/support/[]
@@ -47,7 +47,7 @@ Weitere Informationen zu Keystone Services finden Sie unter:
 
 == GSSC-Überwachung
 
-Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.
+Das NetApp Global Services and Support Center überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den jeweiligen Keystone Abonnementbestellungen überwachen, sind aus S Bürger, die auf US-Boden tätig sind.
 
 .Keystone Success Manager
 Der Keystone Success Manager (KSM) arbeitet bei Ihren Keystone Services eng mit Ihnen zusammen und aktualisiert Sie bei wöchentlichen oder monatlichen Abrechnungs- und Betriebsberichten. Die Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.

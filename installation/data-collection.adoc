@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/data-collection.html 
 keywords: type of data collected by Keystone collector 
-summary: Abrechnungsdaten werden durch Keystone Collector für ONTAP und StorageGRID erfasst 
+summary: Keystone erfasst Konfigurations-, Status- und Verwendungsinformationen für ONTAP- und StorageGRID-Abonnements. Außerdem kann es ONTAP-Leistungsdaten erfassen. 
 ---
 = Arten von Benutzerdaten, die Keystone erfasst
 :hardbreaks:

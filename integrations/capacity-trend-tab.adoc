@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/capacity-trend-tab.html 
 keywords: keystone-aiq, digital advisor keystone, consumption trend tab, historical usage, accrued burst, accrued, consumption 
-summary: Registerkarte „Consumption Trend“ im Keystone Subscription Dashboard 
+summary: Um Sie bei der Überwachung Ihrer Abonnementnutzung zu unterstützen, haben Sie die Möglichkeit, historische Daten Ihrer Keystone Abonnements für einen bestimmten Zeitraum anzuzeigen. 
 ---
-= Registerkarte „Verbrauchstrend“
+= Verbrauchstrends anzeigen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Registerkarte „Consumption Trend“ im Keystone Subscription Dashboar
 
 
 [role="lead"]
-Auf der Registerkarte *Consumption Trend* werden historische Daten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt.
+Um Sie bei der Überwachung Ihrer Abonnementnutzung zu unterstützen, haben Sie die Möglichkeit, historische Daten Ihrer Keystone Abonnements für einen bestimmten Zeitraum anzuzeigen.
 
 In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
 

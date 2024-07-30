@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/nrnvc.html 
 keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
-summary: Non-Returnable, Non-Volatile Komponenten und SnapLock-Compliance 
+summary: Im Rahmen Ihres NetApp Keystone Abonnements erweitert NetApp das NRNVC-Angebot für Ihre File-, Block- und Objekt-Services. 
 ---
-= Non-Returnable, Non-Volatile Komponenten und SnapLock-Compliance
+= Non-Returnable, nichtflüchtige Komponenten und SnapLock Compliance
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,22 +14,21 @@ summary: Non-Returnable, Non-Volatile Komponenten und SnapLock-Compliance
 
 
 [role="lead"]
-Im Rahmen des NetApp Keystone Abonnements erweitert NetApp das Angebot an Non-Returnable, Non-Volatile Components (NRNVC) für File-, Block- und Objekt-Services.
-
-Diesen Add-on-Service können Sie als Teil Ihres Keystone Abonnements abonnieren.
-Informationen zu Standard- und Cloud-Services finden Sie unter link:supported-storage-services.html["Keystone STaaS Services"].
-
-Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
+Im Rahmen Ihres NetApp Keystone Abonnements erweitert NetApp das Angebot von nichtflüchtigen Komponenten zur Einwegnahme (Non-Volatile Components, NRNVC) für Ihre File-, Block- und Objekt-Services.
 
 NetApp stellt die während der gesamten Servicezeit verwendeten physischen Storage-Medien oder bei einer Beendigung der Services nicht wieder her, wenn NetApp anderenfalls alle bei der Erbringung des Service genutzten physischen Ressourcen wiederherstellt.
 
-Wenn Sie diesen Service erworben haben, beachten Sie Folgendes:
+Diesen Add-on-Service können Sie als Teil Ihres Keystone Abonnements abonnieren. Wenn Sie diesen Service erworben haben, beachten Sie Folgendes:
 
 * Sie müssen am Ende der Laufzeit keine Laufwerke und keinen nichtflüchtigen Speicher zurückgeben, falls sie ausgefallen sind oder während der Laufzeit des Service defekt waren.
 * Sie müssen jedoch eine Bescheinigung über die Vernichtung der Laufwerke und/oder des nicht-flüchtigen Speichers vorlegen und können nicht für andere Zwecke verwendet werden.
 * Die zusätzlichen Kosten für den NRNVC werden als Prozentsatz der monatlichen Gesamtrechnung für Abonnementservices (einschließlich Standard-Service, erweiterte Datensicherung und Daten-Tiering) berechnet.
 * Dieser Service ist nur für File-, Block- und Objekt-Services anwendbar.
 
+
+Informationen zu den Standard- und Cloud-Diensten finden Sie unter link:supported-storage-services.html["Keystone STaaS Services"].
+
+Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
 
 
 

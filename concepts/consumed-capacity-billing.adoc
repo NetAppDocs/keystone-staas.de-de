@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/consumed-capacity-billing.html 
 keywords: consumed capacity billing, billing and consumed capacity 
-summary: Abrechnung basiert auf verbrauchter Kapazität 
+summary: Verbrauchte Kapazität ist die Kapazität, die Workloads während der Service-Nutzung tatsächlich nutzen. 
 ---
 = Messung basierend auf verbrauchter Kapazität
 :hardbreaks:
@@ -14,9 +14,8 @@ summary: Abrechnung basiert auf verbrauchter Kapazität
 
 
 [role="lead"]
-Keystone STaaS bietet eine Messung basierend auf der Kapazität, die Sie während der Service-Nutzung verbraucht.
+Keystone STaaS bietet eine Messung basierend auf der Kapazität, die Sie während der Service-Nutzung verbraucht. Verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen.
 
-Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. Verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen.
 Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Mindestens einmal alle fünf Minuten wird vom System ein Verbrauchsdatensatz erstellt, in dem die aktuell verbrauchte Kapazität für Ihr Abonnement detailliert aufgeführt wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
 
 Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes/fixed-issues.html 
 keywords: fixed issues 
-summary: Probleme in verschiedenen Versionen von Keystone STaaS behoben 
+summary: Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden wurden, wurden in späteren Versionen behoben. 
 ---
 = Probleme wurden behoben
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Probleme in verschiedenen Versionen von Keystone STaaS behoben
 
 
 [role="lead"]
-Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden wurden, wurden in späteren Versionen behoben. Dies sind die Korrekturen.
+Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden wurden, wurden in späteren Versionen behoben.
 
 [cols="3*"]
 |===

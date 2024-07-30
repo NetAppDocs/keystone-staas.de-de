@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/uscs.html 
 keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
-summary: 'US Citizen Support (USCS)' 
+summary: Der Support für US-Bürger ist ein Add-on-Service für die Bereitstellung und den Support von laufenden Keystone Services durch US-Bürger. 
 ---
-= USA Citizen Support (USCS)
+= Erfahren Sie mehr über USCS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

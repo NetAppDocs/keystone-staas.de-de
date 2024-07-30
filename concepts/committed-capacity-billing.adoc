@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/committed-capacity-billing.html 
 keywords: Billing based on committed capacity, committed capacity billing 
-summary: Unterstützte Speicherkapazitäten 
+summary: Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. 
 ---
 = Abrechnung basiert auf der verplante Kapazität
 :hardbreaks:
@@ -14,8 +14,8 @@ summary: Unterstützte Speicherkapazitäten
 
 
 [role="lead"]
-NetApp Keystone (Keystone) Abrechnung basiert auf der Ihnen als Teil des Keystone Abonnements zugesagt Kapazität.
+Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist.
 
-Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. Die zugesagt Kapazität kann die Gesamtkapazität für verschiedene Service Level in einem einzelnen Abonnement sein, wie Sie und NetApp/Partner akzeptiert haben. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Kapazitätsverbrauch in Rechnung gestellt.
+Die zugesagt Kapazität kann die Gesamtkapazität für verschiedene Service Level in einem einzelnen Abonnement sein, wie Sie und NetApp/Partner akzeptiert haben. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Kapazitätsverbrauch in Rechnung gestellt.
 
 Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].

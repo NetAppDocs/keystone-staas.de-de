@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/subscriptions-tab.html 
 keywords: keystone-aiq, digital advisor keystone, subscriptions-tab 
-summary: Registerkarte „Abonnements“ im AIQ da Keystone Dashboard 
+summary: Weitere Informationen zu Ihren Keystone Abonnements finden Sie auf der Registerkarte Abonnements. 
 ---
-= Registerkarte Abonnements
+= Details zu Ihren Abonnements anzeigen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Registerkarte „Abonnements“ im AIQ da Keystone Dashboard
 
 
 [role="lead"]
-Sie können eine Liste aller Ihrer Abonnements auf der Registerkarte *Abonnements* anzeigen.
+Wenn Sie mehr über Ihre Keystone Abonnements erfahren möchten, können Sie sich eine Liste aller Ihrer Abonnements über die Registerkarte *Abonnements* anzeigen lassen.
 
 Um diese Registerkarte anzuzeigen, gehen Sie im linken Navigationsbereich zu *GENERAL > Keystone Subscriptions > Subscriptions*. Alle Ihre Abonnements werden aufgelistet.
 

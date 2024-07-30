@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/asup-config.html 
 keywords: ASUP, AutoSupport configuration 
-summary: Verfahren zur Konfiguration von AutoSupport für Keystone 
+summary: Konfiguration von AutoSupport zur Integration von Keystone Daten in die täglichen Support-Bundles, die von ONTAP Clustern gesendet werden 
 ---
 = AutoSupport für Keystone konfigurieren
 :hardbreaks:
