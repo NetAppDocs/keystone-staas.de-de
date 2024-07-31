@@ -115,6 +115,16 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: USA Citizen Support (USCS)
         url: "/concepts/uscs.html"
+  - title: Keystone STaaS SLA
+    entries:
+    - title: Gesteigerte
+      url: "/concepts/sla-availability.html"
+    - title: Leistung
+      url: "/concepts/sla-performance.html"
+    - title: Nachhaltigkeit
+      url: "/concepts/sla-sustainability.html"
+    - title: Recovery-Garantie Von Ransomware
+      url: "/concepts/sla-ransomware.html"
   - title: Abrechnung
     entries:
     - title: Keystone-Preisgestaltung

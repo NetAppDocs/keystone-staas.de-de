@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-ransomware.html 
+keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
+summary: NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garantie-Programm für Ransomware-Daten aus SnapLock Compliance Volumes 
+---
+= Recovery-Garantie Von Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garantie-Programm für Ransomware-Daten aus SnapLock Compliance Volumes. NetApp Ransomware Recovery Assurance Service ist zur Unterstützung des Ransomware-Recovery-Garantieprogramms erforderlich und sollte separat über die damit verbundene Keystone Bestellung erworben werden.
+
+
+
+== Service-Leveln
+
+Ransomware Recovery Assurance Service ist für die gesamte Hardware erforderlich, die das Keystone Abonnement unterstützt, während der Laufzeit des jeweiligen Abonnements.
+
+
+
+== Service-Gutschriften
+
+Wenn SnapLock Compliance gemäß den Best Practices implementiert wird und NetApp Professional Services die Lösung entweder konfigurieren oder beim Kauf eines Ransomware Recovery Assurance Service validieren, dann gibt NetApp die Service-Gutschriften aus, wenn die durch SnapLock geschützten Daten nicht wiederherstellbar sind. Die Kriterien für diese Gutschriften lauten wie folgt:
+
+* Service Credits können auf zukünftige Rechnungen angewendet werden. Die Gutschriften werden auf 10 % des festzugesuchten Vertragswerts (CCV) begrenzt und auf Abonnementbasis ausgezahlt.
+* Eine Gutschrift erhalten Sie während der aktiven Abonnementlaufzeit des jeweiligen Keystone Auftrags.
+* Bei Abonnements mit monatlicher Abrechnung werden die Gutschriften in den nächsten 12 Monaten aufgeteilt und können für zukünftige Keystone Rechnungen bis zum Ende der Abonnementlaufzeit verwendet werden. Wenn das Abonnement in weniger als 12 Monaten endet, kann es verlängert werden, um die Gutschriften weiterhin zu nutzen. Alternativ können die Gutschriften auf andere NetApp Rechnungen angerechnet werden.
+* Bei Jahresabonnements wird das Guthaben auf die nächste Keystone Rechnung angerechnet, sofern verfügbar. Werden in Zukunft keine Keystone Rechnungen gestellt, können die Gutschriften auf andere NetApp Rechnungen angerechnet werden.
+

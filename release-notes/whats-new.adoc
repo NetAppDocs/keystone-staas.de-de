@@ -70,9 +70,9 @@ Die Service-Level *CVO Primary* und *CVO Secondary* unterstützen Cloud Volumes 
 
 
 
-=== Zoom-Funktion für Microburst-Einblicke
+=== Zoom-Funktion für kurzfristige Bursts
 
-Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details der kurzfristigen Überspannungen, bekannt als Mikrobursts, in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html["Registerkarte „Kapazitätstrend“"^].
+Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details von kurzfristigen Bursts in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html["Registerkarte „Kapazitätstrend“"^].
 
 
 
