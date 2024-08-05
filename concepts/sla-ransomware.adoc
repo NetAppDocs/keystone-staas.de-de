@@ -17,6 +17,9 @@ summary: NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garan
 NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garantie-Programm für Ransomware-Daten aus SnapLock Compliance Volumes. NetApp Ransomware Recovery Assurance Service ist zur Unterstützung des Ransomware-Recovery-Garantieprogramms erforderlich und sollte separat über die damit verbundene Keystone Bestellung erworben werden.
 
 
+NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
+
+
 
 == Service-Leveln
 

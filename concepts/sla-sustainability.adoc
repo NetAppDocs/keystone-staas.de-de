@@ -17,6 +17,9 @@ summary: Nachhaltigkeit, sla, Service Level Agreement
 NetApp Keystone liefert eine garantierte Messung der maximalen tatsächlichen Watt-Anzahl pro Tebibyte (W/tib) für Storage-Services auf Basis von ONTAP Flash-Storage-Arrays mit SLA zur Nachhaltigkeit. SLA für Nachhaltigkeit definiert den maximalen Verbrauch von W/tib für jeden qualifizierten Service-Level und hilft Unternehmen beim Erreichen ihrer Nachhaltigkeitsziele.
 
 
+NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
+
+
 
 == Metriken
 

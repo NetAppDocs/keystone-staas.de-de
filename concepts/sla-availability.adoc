@@ -17,6 +17,9 @@ summary: Verfügbarkeit, sla, Service Level Agreement
 Das Verfügbarkeits-SLA zielt auf eine Uptime von 99.999 % während des Abrechnungszeitraums für alle bei der Keystone Bestellung implementierten NetApp ONTAP Flash Storage-Arrays ab.
 
 
+NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
+
+
 
 == Metriken
 
