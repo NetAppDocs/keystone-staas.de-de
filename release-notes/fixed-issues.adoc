@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Die Management-TUI für Keystone Collector reagiert nicht mehr, wenn AQoS-Richtlinien eingerichtet werden.
+ a| 
+Fest
+ a| 
+August 07, 2024
+
+
+
+ a| 
 In den Nutzungsdiagrammen werden Daten angezeigt, die über den angegebenen Zeitraum eines Tages hinausgehen, wenn das dem aktuellen Tag entsprechende Datum sowohl als Start- als auch als Enddatum für den Vormonat aus der Option *Kapazitätstrends* auf der Registerkarte *Kapazitätstrends* ausgewählt wird.
  a| 
 Die Verwendungsdiagramme zeigen nun die Daten für den angegebenen Zeitraum eines Tages korrekt an.

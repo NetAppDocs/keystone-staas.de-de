@@ -16,18 +16,4 @@ summary: Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung d
 [role="lead"]
 Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung der Keystone Abonnementservices verhindern könnten.
 
-Das folgende bekannte Problem wird gemeldet:
-
-[cols="3*"]
-|===
-| Bekanntes Problem | Beschreibung | Behelfslösung 
-
-
- a| 
-Die Management-TUI für Keystone Collector reagiert nicht mehr, wenn AQoS-Richtlinien eingerichtet werden.
- a| 
-Bei dem Versuch, AQoS-Richtlinien über die TUI zu erstellen, kann die TUI auf ein Problem stoßen und nicht mehr reagieren.
- a| 
-Wenden Sie sich an den NetApp Support.
-
-|===
+Es gibt derzeit keine bekannten Probleme.
