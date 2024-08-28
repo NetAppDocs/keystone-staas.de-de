@@ -1767,4 +1767,31 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="0fa7096028e231171f86212b096254bd" category="admonition">SLAs und Garantien sind auf Nominierungsbasis verfügbar.</block>
   <block id="90c1605e73fc10bc5c46dc4183664885" category="paragraph">August 07, 2024</block>
   <block id="5b56041030df17cc6aeb8d87e04d16db" category="paragraph">Es gibt derzeit keine bekannten Probleme.</block>
+  <block id="1e4eb13a6a1b07eeb2e7895fbc7a1bb1" category="section-title">Erstellung Von Performance-Service-Leveln</block>
+  <block id="5053594f32aa62a7113e670df7c0dcf6" category="paragraph">Sie können Performance Service Levels (PSLs) mit dem Management-TUI-Dienstprogramm Keystone Collector erstellen. Durch das Erstellen von PSLs über die TUI werden automatisch die Standardwerte für jedes Service-Level ausgewählt, wodurch das Risiko von Fehlern verringert wird, die auftreten können, wenn diese Werte manuell festgelegt werden, während PSLs über Active IQ Unified Manager erstellt werden.</block>
+  <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">Performance Service Level</block>
+  <block id="30b9ea415acabd68ca478ac9f480dcc4" category="paragraph">Weitere Informationen zu PSLs finden Sie unter <block ref="618fbf54ef577c932e12b764c4672483" category="inline-link-macro-rx"></block>.</block>
+  <block id="3366047110e1d4df81bd4a3c7e56a81a" category="paragraph">Weitere Informationen zu Service-Levels finden Sie unter <block ref="65aad034e764c488cc9555200d7886f8" category="inline-link-macro-rx"></block>.</block>
+  <block id="754f3f64186991aaafd04c50afc33fb9" category="list-text">Gehen Sie zu *Configure&gt;AIQUM*, um den AIQUM-Bildschirm zu öffnen.</block>
+  <block id="820f541e6131074b12653bbfb5e98b09" category="list-text">Aktivieren Sie die Option *AIQUM-Leistungsprofile erstellen*.</block>
+  <block id="a7fedce0e566016c4bf5bca06e58e7e3" category="list-text">Geben Sie die Details des Active IQ Unified Manager-Servers und des Benutzerkontos ein. Diese Angaben sind zum Erstellen von PSLs erforderlich und werden nicht gespeichert.</block>
+  <block id="0cae276070a3b9dc1d52e1054be203d8" category="inline-image-macro">TUI-Bildschirm, um die Details des AIQUM-Servers und des Service-Kontos einzugeben</block>
+  <block id="a340f4e56ce95ec64b455e8f0d0011b3" category="paragraph"><block ref="a340f4e56ce95ec64b455e8f0d0011b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03336d42dcb5f12fad5c27a77d7fc3bb" category="list-text">Wählen Sie für *Keystone-Version auswählen*<block ref="c26733d354ae6936934c7e8958092daa" prefix=" " category="inline-code"></block> .</block>
+  <block id="0e6957f023ba901638c8f4ab7d0fbcec" category="list-text">Drücken Sie Die Eingabetaste. Ein Dialogfeld zur Auswahl der Keystone-Version wird angezeigt.</block>
+  <block id="921dbe2a6293b980a37507e9b0ef99c9" category="list-text">Markieren Sie *STaaS*, um die Keystone Version für Keystone STaaS anzugeben, und drücken Sie dann die Eingabetaste.</block>
+  <block id="fcb2a80e16744614cdf6c2f2f82c4e2e" category="inline-image-macro">TUI-Bildschirm zur Angabe der Keystone-Version</block>
+  <block id="1e2d635219881df0b1d0ff05ce928dde" category="paragraph"><block ref="1e2d635219881df0b1d0ff05ce928dde" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d93cccfc0748834998c1743a905f0d3" category="admonition">Sie können die Option *KFS* für Keystone Abonnementservices Version 1 hervorheben. Die Keystone Abonnement-Services unterscheiden sich von Keystone STaaS in den Bereichen Service-Level, Service-Angebote und Abrechnungsgrundsätze. Weitere Informationen finden Sie unter <block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>.</block>
+  <block id="5a8df8e784147e10e20a7f96a1911ce8" category="list-text">Alle unterstützten Keystone Service-Level werden innerhalb der Option *Select Keystone Service Levels* für die angegebene Keystone Version angezeigt. Aktivieren Sie die gewünschten Service-Level aus der Liste.</block>
+  <block id="6792bca92745749645838a609966a8c2" category="inline-image-macro">TUI-Bildschirm, um alle unterstützten Keystone-Service-Level anzuzeigen</block>
+  <block id="40107ce73af0b4c30bdedbdec9454440" category="paragraph"><block ref="40107ce73af0b4c30bdedbdec9454440" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be76688bb0584656dac7cefe07517b47" category="admonition">Sie können mehrere Service-Level gleichzeitig auswählen, um PSLs zu erstellen.</block>
+  <block id="18e5eacb4fdad1ff92aee1fb4f0f41cc" category="list-text">Wählen Sie *Speichern* und drücken Sie die Eingabetaste. Performance Service Levels werden erstellt.</block>
+  <block id="0e0dd84db86e72ae77b4739377c3a4e1" category="inline-link-macro">Erstellen und Bearbeiten von Performance Service Levels</block>
+  <block id="be298fbf55a1c81157761b8b02a6d696" category="paragraph">Sie können die erstellten PSLs, wie Premium-KS-STaaS für STaaS oder Extreme KFS für KFS, auf der Seite *Leistungsstufen* in Active IQ Unified Manager anzeigen. Wenn die erstellten PSLs nicht Ihren Anforderungen entsprechen, können Sie PSLs an Ihre Anforderungen anpassen. Weitere Informationen finden Sie unter <block ref="84f3a19cf4d829ad37ba5eddb2b177a0" category="inline-link-macro-rx"></block>.</block>
+  <block id="e481e00ab54faed62b9dea98ed860aea" category="inline-image-macro">UI-Screenshot zum Anzeigen der erstellten AQoS-Richtlinien</block>
+  <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI-Bildschirm, um die Fehlermeldung für die Richtlinienerstellung anzuzeigen</block>
+  <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">Wenn auf dem angegebenen Active IQ-Server bereits eine PSL für den ausgewählten Service-Level vorhanden ist, können Sie sie nicht erneut erstellen. Wenn Sie versuchen, dies zu tun, erhalten Sie eine Fehlermeldung. <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
