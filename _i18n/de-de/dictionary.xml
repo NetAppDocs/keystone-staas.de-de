@@ -550,7 +550,6 @@
   <block id="c52919f8e1a989864d933795a6103494" category="paragraph">Keystone Collector Software-Updates und Nutzungsberichte</block>
   <block id="0dc1066c9360d7e2bbaf4bb6e9c5ebe1" category="paragraph">NetApp HQ für Rechnungsinformationen und AutoSupport-Lieferungen</block>
   <block id="2f0d22e6971fda1cbc3411961fec8360" category="doc">Anforderungen an die virtuelle Infrastruktur</block>
-  <block id="080838bb01c5d3b3c97a54a92d98023d" category="list-text">Betriebssystem: VMware vCenter Server und ESXi 6.5 oder höher</block>
   <block id="a1c9c4a1979d4de63c959aa0eb8db228" category="doc">Implementieren Sie Keystone Collector auf VMware vSphere Systemen</block>
   <block id="5636c5e292ad15c979ccdf35d4ddd63f" category="paragraph">Die Bereitstellung von Keystone Collector auf VMware vSphere Systemen umfasst das Herunterladen der OVA-Vorlage, die Bereitstellung der Vorlage mithilfe des Assistenten *OVF-Vorlage* bereitstellen, die Integrität der Zertifikate überprüfen und die Bereitschaft der VM überprüfen.</block>
   <block id="9f42f344107d0334c53b7214197ab946" category="section-title">Bereitstellen der OVA-Vorlage</block>
@@ -1794,4 +1793,5 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI-Bildschirm, um die Fehlermeldung für die Richtlinienerstellung anzuzeigen</block>
   <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">Wenn auf dem angegebenen Active IQ-Server bereits eine PSL für den ausgewählten Service-Level vorhanden ist, können Sie sie nicht erneut erstellen. Wenn Sie versuchen, dies zu tun, erhalten Sie eine Fehlermeldung. <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">Betriebssystem: VMware vCenter Server und ESXi 6.7 oder höher</block>
 </blocks>
