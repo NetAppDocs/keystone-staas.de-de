@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Das Feld *von Datum* zur Auswahl des Datumsbereichs zeigt standardmäßig ein künftiges Datum an, wenn Sie zur Registerkarte *Verbrauchstrend* navigieren.
+ a| 
+Fest
+ a| 
+1 2024-09-04
+
+
+
+ a| 
 Die Management-TUI für Keystone Collector reagiert nicht mehr, wenn AQoS-Richtlinien eingerichtet werden.
  a| 
 Fest

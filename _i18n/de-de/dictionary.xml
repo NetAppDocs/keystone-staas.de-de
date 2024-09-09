@@ -1794,4 +1794,6 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI-Bildschirm, um die Fehlermeldung für die Richtlinienerstellung anzuzeigen</block>
   <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">Wenn auf dem angegebenen Active IQ-Server bereits eine PSL für den ausgewählten Service-Level vorhanden ist, können Sie sie nicht erneut erstellen. Wenn Sie versuchen, dies zu tun, erhalten Sie eine Fehlermeldung. <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">Betriebssystem: VMware vCenter Server und ESXi 6.7 oder höher</block>
+  <block id="f7e13857abd03bc318b89fe886669d7d" category="paragraph">Das Feld *von Datum* zur Auswahl des Datumsbereichs zeigt standardmäßig ein künftiges Datum an, wenn Sie zur Registerkarte *Verbrauchstrend* navigieren.</block>
+  <block id="443c63f2975d5902a80f1597e417d9f2" category="paragraph">1 2024-09-04</block>
 </blocks>
