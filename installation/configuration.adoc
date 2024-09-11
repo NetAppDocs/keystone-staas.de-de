@@ -16,9 +16,13 @@ summary: Schließen Sie die Konfiguration ab, um Keystone Collector für die Erf
 [role="lead"]
 Sie müssen einige Konfigurationsaufgaben ausführen, damit Keystone Collector Nutzungsdaten in Ihrer Speicherumgebung erfasst. Dies ist eine einmalige Aktivität zur Aktivierung und Zuordnung der erforderlichen Komponenten zu Ihrer Storage-Umgebung.
 
+[NOTE]
+====
+* Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
+* Keystone Collector kann für Organisationen konfiguriert werden, die keinen Internetzugang haben, auch als _dark site_ oder _private Mode_ bezeichnet. Weitere Informationen zu finden Sie unter link:../dark-sites/overview.html["Keystone im privaten Modus"].
 
-NOTE: Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
 
+====
 .Schritte
 . Starten Sie das Management-TUI-Dienstprogramm Keystone Collector:
 `$ keystone-collector-tui`

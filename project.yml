@@ -125,6 +125,18 @@ sidebar:
       url: "/concepts/sla-sustainability.html"
     - title: Recovery-Garantie Von Ransomware
       url: "/concepts/sla-ransomware.html"
+  - title: Keystone im privaten Modus
+    entries:
+    - title: Überblick
+      url: "/dark-sites/overview.html"
+    - title: Installation vorbereiten
+      url: "/dark-sites/requirements.html"
+    - title: Installieren Sie Keystone Collector
+      url: "/dark-sites/install-collector.html"
+    - title: Konfigurieren Sie Keystone Collector
+      url: "/dark-sites/configure-collector.html"
+    - title: Überwachen Sie den Zustand des Keystone Collectors
+      url: "/dark-sites/monitor.html"
   - title: Abrechnung
     entries:
     - title: Keystone-Preisgestaltung
