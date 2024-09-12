@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: rest-api/get-customer-list.html 
+keywords: customer, keystone, api, IDs 
+summary: Diese API ruft eine Liste aller Kunden-IDs ab, die dem Benutzer zugeordnet sind. 
+---
+= Eine Liste aller Kunden, die die Digital Advisor REST API verwenden
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese API ruft eine Liste aller Kunden-IDs ab, die dem Benutzer zugeordnet sind.
+
+*Anfrage:*
+
+[cols="24%,76%"]
+|===
+
+
+| *Methode* | GET 
+
+
+| *Endpunkt* | https://api.activeiq.netapp.com/v1/keystone/customers[] 
+
+
+| *Kopfzeilen*  a| 
+* Akzeptieren: Anwendung/json
+* AutorizationToken: <access_key>
+
+
+|===
+*Antwort:*
+
+Die API antwortet mit einem JSON-Objekt, das eine Liste von Kundennamen und entsprechenden IDs enthält. Hier ein Beispiel für eine Antwort:
+
+[listing]
+----
+{
+"results":  {
+"returned_records": 0,
+"records": [
+{
+"Customers": [
+{
+"customer_id": "string",
+"customer_name": "string"
+}
+]
+}
+],
+"request_id": "string",
+"response_time": "string"
+}
+}
+
+----
+*Statuscode*: 200 – erfolgreiche Anfrage
+
+*Beispiel für Curl*:
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq.netapp.com/v1/keystone/customers' \ -H 'accept: application/json' -H 'authorizationToken: <access-key>'
+----

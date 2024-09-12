@@ -82,7 +82,6 @@
   <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">Abrechnung für SnapMirror Ziele</block>
   <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">Abrechnung für LUNs</block>
   <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">Die LUN-Größe wird gemäß dem zugehörigen Service-Level der LUN für den Verbrauch gezählt.</block>
-  <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">Der restliche Speicherplatz im Volume wird, falls vorhanden, gemäß der QoS-Richtlinie des Service-Levels, die auf dem Volume festgelegt sind, berechnet.</block>
   <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">System- und Root-Volumes</block>
   <block id="3655e8bb18b4941a3bf9ce392c24bbb4" category="paragraph">System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Service überwacht, jedoch nicht gezählt oder abgerechnet. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.</block>
   <block id="8ae2f411abd3cc165322ca02f81cde27" category="summary">Keystone und Equinix</block>
@@ -329,8 +328,6 @@
   <block id="b6b6ef9bcccde24a7790b0a3093601da" category="paragraph">Einstellungen und Befehle für den Extreme Service Level:</block>
   <block id="0a32480150714670b636bea04f9ef2a1" category="paragraph">Einstellungen und Befehle für das Performance Service Level:</block>
   <block id="536a21a9808fc714076b198f94a4a506" category="paragraph">Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.</block>
-  <block id="34331c74c5db43631e74f0ed21504ce2" category="paragraph">Die Preise für das SnapMirror Ziel-Volume unterliegen der QoS-Richtlinie für das Service-Level, das auf dem Quell-Volume zugewiesen ist. Wenn der Quelle jedoch keine zugewiesene QoS-Richtlinie vorliegt, wird das Ziel basierend auf dem niedrigsten verfügbaren Service-Level in Rechnung gestellt.</block>
-  <block id="0d128bf188abd70ede35e6c24063c36b" category="paragraph">Bei LUNs wird dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:</block>
   <block id="ba66768dfbbcde790d00e0de40f92803" category="paragraph">Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen sollten während der Laufzeit &gt;= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.</block>
   <block id="63da2e64853bf4155b1b1a1e9ee74a97" category="list-text">Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.</block>
   <block id="1ad380d64aaf6780bee52adfb88395c3" category="list-text">Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum durch den Kunden oder Partner Keystone Success Manager (KSM) formal eingereicht werden.</block>
@@ -603,7 +600,6 @@
   <block id="7448ec74d1e6091b2ad38508ebdc37f4" category="section-title">Einstellungen für Standard-Service-Level</block>
   <block id="f20f6fc30a0b0f9782dbad2fdc8d1694" category="paragraph">Einstellungen und Befehle für Standard-Service-Level:</block>
   <block id="5cd7d5370bb2b4b9a46af59b9c5c279e" category="paragraph">Einstellungen und Befehle für die Service-Ebene Wert:</block>
-  <block id="31dc6a9375ebd13745edd88d9ad398fa" category="paragraph">Keystone misst die Nutzung basierend auf Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes die entsprechenden QoS-Richtlinien entsprechend Ihren abonnierten Service-Leveln zugewiesen sind, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter <block ref="c361ea29a8da4892d7ebbf6b7b42594c" category="inline-link-macro-rx"></block>.</block>
   <block id="6ee89d6c0a15491675b7cc32e34a211d" category="list-text">*Kapazitätsmessung in Gibibyte (gib), Tebibyte (tib) und Pebibyte (PiB)*: Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).</block>
   <block id="d634acbcc57e75a34f7ef2ecf60eb69c" category="list-text">Burst-Kapazität wird in der Keystone Vereinbarung vereinbart. Sie ist in der Regel bis zu 20 % über der festgelegten Kapazität angelegt und wird mit der gleichen Rate wie die zugesagt Kapazität berechnet.</block>
   <block id="1bcbd92a1182a8044032c0af47695d8a" category="list-text">Laden Sie die herunter<block ref="5bec9e04971ed49ee2b3c939afa7a801" prefix=" " category="inline-code"></block> Datei:<block ref="d1ed07754d396f9745478bc6388ae23a" prefix=" " category="inline-code"></block></block>
@@ -1927,4 +1923,74 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="d94b27c65b00f48ddf2590d54d34311d" category="list-text">Keystone Collector kann für Organisationen konfiguriert werden, die keinen Internetzugang haben, auch als _dark site_ oder _private Mode_ bezeichnet. Weitere Informationen zu finden Sie unter <block ref="a6faf1739dac35fa9b42259f2ec27ee2" category="inline-link-macro-rx"></block>.</block>
   <block id="70746148197a1842a9455cddc0c18adc" category="paragraph">Keystone Collector kann entweder im _Standard_-Modus konfiguriert werden, der ohne Konnektivitätsbeschränkungen arbeitet, oder im _Private_-Modus, der für Unternehmen mit Konnektivitätsbeschränkungen entwickelt wurde. Informationen zur Installation von Keystone Collector im Standardmodus finden Sie unter <block ref="a9306132ed6aac4cbc6f1e3f3feb8703" category="inline-link-macro-rx"></block>; für den Privatmodus siehe <block ref="a6faf1739dac35fa9b42259f2ec27ee2" category="inline-link-macro-rx"></block>.</block>
   <block id="67f289221dc2b8315be57c85a28e0619" category="sidebar">Installation vorbereiten</block>
+  <block id="5e2de39ee27d191717827ce53298c90c" category="paragraph">Keystone misst den Verbrauch anhand von Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Implementierung werden Sie über die Details der einzelnen anpassungsfähigen QoS-Richtlinien für die abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes die entsprechenden anpassungsfähigen QoS-Richtlinien gemäß den abonnierten Service-Leveln zugewiesen sind, um unerwartete Abrechnungsvorgänge zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter <block ref="c361ea29a8da4892d7ebbf6b7b42594c" category="inline-link-macro-rx"></block>.</block>
+  <block id="b3f67b6d739086a60e5e83a06fc9385a" category="paragraph">Das Preismodell für das SnapMirror Ziel-Volume unterliegt der anpassungsfähigen QoS-Richtlinie für das Service-Level, das auf dem Quell-Volume zugewiesen ist. Wenn der Quelle jedoch keine Adaptive QoS-Richtlinie zugeordnet ist, wird das Ziel auf der Grundlage des niedrigsten verfügbaren Service-Levels abgerechnet.</block>
+  <block id="48a2e47bd08859aaadb33439caee37ab" category="paragraph">Bei LUNs wird dasselbe Abrechnungsmuster befolgt wie für Volumes, die durch anpassungsfähige QoS-Richtlinien gesteuert werden. Wenn separate anpassungsfähige QoS-Richtlinien auf LUNs festgelegt werden, dann:</block>
+  <block id="6490b5d86d9c2c555b3e5beda0a2a9d5" category="list-text">Der restliche Speicherplatz im Volume, falls vorhanden, wird gemäß der anpassungsfähigen QoS-Richtlinie des für das Volume festgelegten Service-Levels abgerechnet.</block>
+  <block id="9204b645e4eea2a02754c156cfd9e1a6" category="summary">Ein Refresh-Token wird verwendet, um programmatisch einen neuen Satz von Zugriffstoken zu erhalten und ist für eine Woche oder bis er verwendet wurde, um einen neuen Satz von Token zu erhalten.</block>
+  <block id="145b307d4ba69aec19da1f45298d0331" category="doc">Erstellen Sie Aktualisierungs- und Zugriffstoken</block>
+  <block id="927b8562aa4139e861d75cb3b52989c0" category="paragraph">So erstellen Sie ein Refresh Token mithilfe des Digital Advisor-Portals:</block>
+  <block id="6000572c108dfa296d55e1b66e617881" category="inline-link">Digital Advisor-Portal</block>
+  <block id="65b626e7fc3c2a629d8173445c374939" category="list-text">Melden Sie sich beim<block ref="68e1c8d460b05c6b3487ddd972231b8a" category="inline-link-rx"></block> mit NetApp-Anmeldeinformationen an und wählen Sie *Token generieren*.</block>
+  <block id="84a0716e9996908ee6c3f7844b40f16e" category="inline-image-macro">Schritte zum Generieren eines Aktualisierungs-Tokens über das Digital Advisor-Portal</block>
+  <block id="38ddf21c7008008f5756c8d45f73e98d" category="paragraph"><block ref="38ddf21c7008008f5756c8d45f73e98d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2eab0ef2787046e5ca1a37a551a84a52" category="admonition">Wenn die Option *Token generieren* für Erstbenutzer nicht verfügbar ist, wählen Sie *Registrieren*, um eine Autorisierungsanfrage zu senden. Füllen Sie das Registrierungsformular aus, um die Funktion zu aktivieren.</block>
+  <block id="dfafc53dc163bc9e881aaefa4141b99b" category="list-text">Das System generiert ein Zugriffstoken und ein Aktualisierungs-Token. Speichern Sie das Aktualisierungs-Token auf einer vertrauenswürdigen Plattform.</block>
+  <block id="99a9cfa523a42e23621796dfca6edb0a" category="admonition">Das Portal bietet Ihnen mehrere Möglichkeiten, ein oder beide Token im Set zu speichern. Sie können sie in die Zwischenablage kopieren, als Textdatei herunterladen oder als Klartext anzeigen.</block>
+  <block id="0c985b7de8ddbf36c9ba269c6fa7d19d" category="inline-image-macro">Token-Typen</block>
+  <block id="e1b9a61b4bf198d118cecea54ef50f05" category="paragraph"><block ref="e1b9a61b4bf198d118cecea54ef50f05" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="76acfd7cc1462b0cb95165dff3d80956" category="section-title">Generieren Sie das Zugriffstoken mithilfe der Digital Advisor REST-API</block>
+  <block id="3bec9bdc64ea5ba7cdaa6b6cbcced8c1" category="paragraph">Das Zugriffstoken wird zur Authentifizierung von Digital Advisor-API-Anforderungen verwendet. Es kann direkt über die Konsole zusammen mit dem Refresh-Token oder unter Verwendung des folgenden API-Aufrufs generiert werden:</block>
+  <block id="44ca1d23512f6b8b70e799213f0aa0cd" category="paragraph">*Anfrage:*</block>
+  <block id="28ed9b5b5df5d633073f9cca1d10bee9" category="cell">*Methode*</block>
+  <block id="a02439ec229d8be0e74b0c1602392310" category="cell">POST</block>
+  <block id="55322ba3b4cd3b7782949a6debd00e1c" category="cell">*Endpunkt*</block>
+  <block id="111ffa9d375a47f985e5a930df93acad" category="cell"><block ref="111ffa9d375a47f985e5a930df93acad" category="inline-link-rx"></block></block>
+  <block id="904069365b298cc4d7103f93cb31dbfc" category="cell">*Kopfzeilen*</block>
+  <block id="542ec3d8c98f371802d8fd77096ac7b2" category="list-text">Akzeptieren: Anwendung/json</block>
+  <block id="30de7c9b045a8fbe02ed2b9d4ffe4425" category="list-text">Content-Type: Anwendung/json</block>
+  <block id="b7fa10c6a4149a93a4eaaba61e0f23e1" category="cell">*Antragstelle*</block>
+  <block id="13bdfec6f8b9e7cc7abb43fab0b6b384" category="paragraph">{ „Refresh_Token“: „&lt;refresh-token&gt;“ }</block>
+  <block id="7893264e0d59291df9deafb0e9f1b841" category="admonition">Für den Zugriff auf diesen Endpunkt benötigen Sie einen administrativen Privileges für digitalen Berater.</block>
+  <block id="49fdcb561eb10ce1bc7df051ca7f8d08" category="paragraph">*Antwort:*</block>
+  <block id="746b4a10356112a607ace0b2038463aa" category="paragraph">API gibt als Antwort ein Zugriffstoken und ein Aktualisierungs-Token in einem JSON-Format zurück.</block>
+  <block id="fb024c1026b3468fe6493e58895bb1d2" category="paragraph">*Statuscode*: 200 – erfolgreiche Anfrage</block>
+  <block id="c1243520ab8986b01d2c43fb104c0bce" category="paragraph">*Beispiel für Curl*:</block>
+  <block id="da50043d1f7c61447ab36e5a81e7ab67" category="section-title">Führen Sie den API-Aufruf aus</block>
+  <block id="ffc141c1c95ba83a77683a29e2e3c158" category="paragraph">Nach der erfolgreichen Generierung eines Zugriffstoken können autorisierte Digital Advisor API-Aufrufe für die erforderlichen Informationen ausgeführt werden.</block>
+  <block id="60da99bd88f7966b796873420df2f1c3" category="summary">Diese API ruft die aktuellen Verbrauchsdetails für alle Abonnements ab, die mit der angegebenen Kunden-ID verknüpft sind.</block>
+  <block id="8bc9e7b2eb702a14a34a24bcc32c172d" category="doc">Details zur Kundennutzung erhalten Sie über die REST-API von Digital Advisor</block>
+  <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">GET</block>
+  <block id="41d2da547ce3e763f6eead2948c7bce6" category="cell">*Endpunkt*</block>
+  <block id="7390986cba8738a130d09a1ae8c7619d" category="cell"><block ref="7390986cba8738a130d09a1ae8c7619d" category="inline-link-rx"></block></block>
+  <block id="ff42ec92d6bd64c6ab6d1f0800017eef" category="cell">*Parameter*</block>
+  <block id="5ee9048a2df6bae318564eb60313820f" category="list-text">Typ: „Kunde“</block>
+  <block id="b6fcb149db1c33db8b3446e2f7582d90" category="list-text">id: &lt;customer-id&gt;</block>
+  <block id="630edeee8eb5e603fd6d970a407a9c25" category="list-text">AutorizationToken: &lt;access_key&gt;</block>
+  <block id="3d19254bb03e315d634fc0986c9eb4f0" category="paragraph">*Antwort:* die API reagiert mit einem JSON-Objekt, das eine Liste aller Abonnements mit den aktuellen Service-Nutzungsmetriken für den jeweiligen Kunden enthält. Hier ein Beispiel für eine Antwort:</block>
+  <block id="d3f7bd75a02cbe1c2370c78a86417b77" category="section-title">Abrufen der historischen Verbrauchsangaben für einen Kunden</block>
+  <block id="aa781d0910bba8a0c595fe9b0cd9d3b8" category="paragraph">Diese API ruft die historischen Verbrauchsdetails für alle Abonnements ab, die der angegebenen Kunden-ID zugeordnet sind, wie im angegebenen Zeitraum angegeben.</block>
+  <block id="1c706be136f0541b294fcc885fde1a63" category="cell"><block ref="1c706be136f0541b294fcc885fde1a63" category="inline-link-rx"></block></block>
+  <block id="72ce780c61cc8fc26c3fc393d965f9b7" category="list-text">From_date_utc: &lt;Start date(im RFC3339-Format)&gt;</block>
+  <block id="d4232bc3d79f7c2651bc3b089aa822c1" category="list-text">To_date_utc: &lt;end date(im RFC3339-Format)&gt;</block>
+  <block id="eb53e4bff92730b260ff2452a158fac7" category="paragraph">Die API antwortet mit einem JSON-Objekt, das eine Liste aller Abonnements mit den historischen Service-Nutzungsmetriken für den angegebenen Kunden im ausgewählten Zeitraum enthält. Hier ein Beispiel für eine Antwort:</block>
+  <block id="20fa5f9b2d4cd9672cce24531c8f1666" category="summary">Diese API ruft eine Liste aller Kunden-IDs ab, die dem Benutzer zugeordnet sind.</block>
+  <block id="2a2abaabc17b5a91d82e82303642b09c" category="doc">Eine Liste aller Kunden, die die Digital Advisor REST API verwenden</block>
+  <block id="b6c5a11b232c98606fb9ada3ec62627d" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" category="inline-link-rx"></block></block>
+  <block id="5b7e7d763cd7702a1e75085674fe6768" category="paragraph">Die API antwortet mit einem JSON-Objekt, das eine Liste von Kundennamen und entsprechenden IDs enthält. Hier ein Beispiel für eine Antwort:</block>
+  <block id="796057698de87bb393ab8b61e5aff5f2" category="summary">Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der angegebenen Kunden-ID verknüpft sind.</block>
+  <block id="9b6c21a9e3f04a27506fa4a5eb0cd41f" category="doc">Kunden-Abonnements über die Digital Advisor REST-API abrufen</block>
+  <block id="bb50b1b9a7f23ddec00f27c428c363f2" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" category="inline-link-rx"></block></block>
+  <block id="7dad8be1becd1cd3fe4d2ec1306c3b82" category="paragraph">Die API antwortet mit einem JSON-Objekt, das eine Liste aller Abonnements und zugehörigen Service-Level-Details für den angegebenen Kunden enthält. Hier ein Beispiel für eine Antwort:</block>
+  <block id="4add8177bc48d8ace8e3bcec902454ad" category="summary">Die NetApp Keystone ActiveIQ Digital Advisor APIs bieten eine programmatische Schnittstelle zum Abrufen von Keystone Servicedetails und Kennzahlen.</block>
+  <block id="0a076b1454da01faf38e4805c15570ee" category="doc">Erste Schritte zum Abrufen von Keystone-Daten über die REST-API von Digital Advisor</block>
+  <block id="e29debe73c0e9065a4267dfae6adefe9" category="paragraph">Die Digital Advisor REST-API bietet eine programmatische Schnittstelle zum Abrufen von Keystone Abonnement- und Nutzungsdetails.</block>
+  <block id="c3091c7f241015a003ff982080a072b0" category="paragraph">Der Workflow zur Interaktion mit der REST-API von Digital Advisor umfasst im allgemeinen die folgenden Schritte:</block>
+  <block id="6c0397360aa8b37bbbe1fa3a38744674" category="inline-link">Melden Sie sich bei Digital Advisor an.</block>
+  <block id="cb2ea5f9df257b4df0243d4cf9e535bf" category="list-text">Richten Sie Ihr Digital Advisor-Konto ein. Sie müssen über gültige Anmeldedaten für die NetApp Support-Website verfügen, um sich bei Digital Advisor anzumelden. Weitere Informationen finden Sie unter<block ref="f7709f12f686047b8295b5977c1d6d33" category="inline-link-rx"></block></block>
+  <block id="d99ad2d9a576f68ae4b88fb369c0150d" category="list-text">Verstehen Sie den zweistufigen Authentifizierungsprozess.</block>
+  <block id="10a330e0acf4a6c5af02e22d7528123d" category="list-text">*Erzeugen eines Refresh-Tokens*: Ein Refresh-Token wird über die Digital Advisor-Konsole mit NetApp-Anmeldeinformationen abgerufen. Dieses Token wird verwendet, um einen kontinuierlichen Zugriff ohne wiederholte Anmeldungen zu gewährleisten.</block>
+  <block id="2242d62d3e8be601b23d94ea56e90d58" category="list-text">*Einen Zugriffstoken generieren*: Das Refresh-Token wird verwendet, um Zugriffstoken zu generieren. Für die Autorisierung von API-Aufrufen des Keystone Service ist ein Zugriffstoken erforderlich. Das Token ist eine Stunde lang gültig.</block>
+  <block id="f8f8242a29d5eb9256ae05747db07412" category="list-text">Führen Sie einen API-Aufruf aus, um die gewünschten Daten abzurufen.Sie können programmgesteuert Kundenlisten, Kundenabonnement-Daten und Kundennutzungsdetails abrufen.</block>
+  <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">Zugriff auf Keystone über die Digital Advisor REST-API</block>
 </blocks>

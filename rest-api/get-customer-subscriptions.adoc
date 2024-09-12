@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: rest-api/get-customer-subscriptions.html 
+keywords: subscriptions, service levels, customer IDs, keystone, api 
+summary: Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der angegebenen Kunden-ID verknüpft sind. 
+---
+= Kunden-Abonnements über die Digital Advisor REST-API abrufen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der angegebenen Kunden-ID verknüpft sind.
+
+*Anfrage:*
+
+[cols="24%,76%"]
+|===
+
+
+| *Methode* | GET 
+
+
+| *Endpunkt* | https://api.activeiq.netapp.com/v1/keystone/customer/subscriptions-info[] 
+
+
+| *Parameter*  a| 
+* Typ: „Kunde“
+* id: <customer-id>
+
+
+
+
+| *Kopfzeilen*  a| 
+* Akzeptieren: Anwendung/json
+* AutorizationToken: <access_key>
+
+
+|===
+*Antwort:*
+
+Die API antwortet mit einem JSON-Objekt, das eine Liste aller Abonnements und zugehörigen Service-Level-Details für den angegebenen Kunden enthält. Hier ein Beispiel für eine Antwort:
+
+[listing]
+----
+[
+{
+"results": {
+"returned_records": 0,
+"records": [
+{
+"subscription": {
+"account_name": "string",
+"number": "string",
+"start_date": "2024-05-28T15:47:49.254Z",
+"end_date": "2024-05-28T15:47:49.255Z"
+},
+"service_levels": [
+{
+"name": "string",
+"committed_tib": 0
+}
+]
+}
+],
+"request_id": "string",
+"response_time": "string"
+}
+}
+]
+----
+*Statuscode*: 200 – erfolgreiche Anfrage
+
+*Beispiel für Curl*:
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq.netapp.com/v1/keystone/customer/subscriptions-info?type=customer&id=<customerID>' \ -H 'accept: application/json' \ -H 'authorizationToken: <access-key>'
+----
