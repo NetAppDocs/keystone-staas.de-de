@@ -65,7 +65,7 @@ Für die Implementierung von Keystone Collector und dem AIOPs-Lösungs-Gateway i
 Keystone Collector kann durch die folgenden Methoden implementiert werden:
 
 * VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
-* Der Kunde stellt Red hat Enterprise Linux 7 oder 8 oder CentOS 7 Linux Server zur Verfügung. Die Keystone Software wird über installiert `.rpm` Installationsprozess.
+* Der Kunde stellt einen Linux-Server zur Verfügung, der auf Red hat Enterprise Linux 8.6 oder neueren 8.x-Versionen oder CentOS 7 ausgeführt wird. Die Keystone Software wird über den Installationsprozess installiert `.rpm`.
 
 
 Das Gateway für die AIOPs-Lösung wird in folgender Konfiguration bereitgestellt:
@@ -84,12 +84,7 @@ Das Gateway für die AIOPs-Lösung wird in folgender Konfiguration bereitgestell
 
 === Netzwerkbetrieb
 
-Für den Betrieb und die Wartung des Keystone Collectors und des AIOPs Solution Gateways ist ausgehender Zugriff auf die folgenden Services erforderlich:
-
-* support.netapp.com (Upload der Nutzungsdaten)
-* keystone.netapp.com (Software-Updates)
-* Hub.Docker.io (Software-Updates)
-
+Der ausgehende Zugriff auf _Keystone.NetApp.com_ ist für Softwareupdates und Uploads von Nutzungsdaten erforderlich, die für den Betrieb und die Wartung des Keystone Collectors und AIOps Solution Gateways unerlässlich sind.
 
 Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 GB, 40 GB und 100 GB.
 
