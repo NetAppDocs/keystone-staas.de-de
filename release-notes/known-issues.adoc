@@ -10,7 +10,7 @@ summary: Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

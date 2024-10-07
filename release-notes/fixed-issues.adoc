@@ -10,7 +10,7 @@ summary: Probleme, die in früheren Versionen der NetApp Keystone STaaS Services
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

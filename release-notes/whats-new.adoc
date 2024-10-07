@@ -10,7 +10,7 @@ summary: NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Versi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

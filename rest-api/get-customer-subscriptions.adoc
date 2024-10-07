@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest-api/get-customer-subscriptions.html 
 keywords: subscriptions, service levels, customer IDs, keystone, api 
-summary: Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der angegebenen Kunden-ID verknüpft sind. 
+summary: Die REST-API von Digital Advisor ruft eine Liste aller Abonnements und Service-Level ab, die mit der angegebenen Kunden-ID verknüpft sind. 
 ---
 = Kunden-Abonnements über die Digital Advisor REST-API abrufen
 :hardbreaks:
@@ -25,7 +25,7 @@ Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der an
 | *Methode* | GET 
 
 
-| *Endpunkt* | https://api.activeiq.netapp.com/v1/keystone/customer/subscriptions-info[] 
+| *Endpunkt* | `https://api.activeiq.netapp.com/v1/keystone/customer/subscriptions-info` 
 
 
 | *Parameter*  a| 

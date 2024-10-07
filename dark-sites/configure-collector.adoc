@@ -97,7 +97,7 @@ Führen Sie zum Upgrade von ONTAP die folgenden Schritte aus:
 +
 image:dark-site-start-webserver-1.png["Webserver-Option starten"]
 
-. Rufen Sie http://<collector-ip>:8000[] einen Webbrowser auf, um Unterstützung bei der Aktualisierung zu erhalten.
+. Rufen Sie `http://<collector-ip>:8000` einen Webbrowser auf, um Unterstützung bei der Aktualisierung zu erhalten.
 
 
 
