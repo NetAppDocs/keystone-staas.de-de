@@ -16,4 +16,27 @@ summary: Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung d
 [role="lead"]
 Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung der Keystone Abonnementservices verhindern könnten.
 
-Es gibt derzeit keine bekannten Probleme.
+Die folgenden bekannten Probleme werden in NetApp Keystone STaaS gemeldet:
+
+[cols="3*"]
+|===
+| Bekanntes Problem | Beschreibung | Behelfslösung 
+
+
+ a| 
+Volume-Details für primäre und verknüpfte Abonnements nicht verfügbar
+ a| 
+Die Registerkarte *Volume Summary* zeigt Null für die Gesamtanzahl der Volumes, den QoS-Compliance-Status, die Anzahl der geschützten Volumes und die insgesamt verbrauchte Kapazität für primäre und verknüpfte sekundäre Abonnements an.
+ a| 
+Keine
+
+
+
+ a| 
+*Volumenübersicht* Unterregisterkarte wird für StorageGRID-Abonnements nicht geladen
+ a| 
+Die Unterregisterkarte *Volume Summary* auf der Registerkarte *Volumes & Objekte* wird für StorageGRID-Abonnements nicht geladen.
+ a| 
+Keine
+
+|===
