@@ -20,6 +20,16 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 
 
+== 1 2024-11-11
+
+
+
+=== Verbesserte Berichterstellung
+
+Mit der Funktion „Bericht“ in Digital Advisor können Sie jetzt einen konsolidierten Bericht erstellen, um die Details Ihrer Keystone-Daten anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html#generate-consolidated-report["Erstellen Sie einen konsolidierten Bericht"^].
+
+
+
 == Juli 10, 2024
 
 

@@ -60,6 +60,22 @@ image:report_1.png["csv des Berichts"]
 
 
 
+== Erstellen Sie einen konsolidierten Bericht
+
+Sie können einen konsolidierten Bericht zu Ihren Abonnements, Nutzungsdaten, Burst-Nutzung, Performance, Assets sowie Volumes und Objekten generieren und anzeigen. Wählen Sie dazu *Keystone Abonnements* als Berichtstyp aus der Berichtsfunktion in Digital Advisor aus. Sie können diese Berichte auf Kunden-, Cluster-, Watchlist- oder Abonnementebene generieren.
+
+image:report-generation.png["Bericht erstellen"]
+
+Der Bericht wird im Excel-Format erstellt, wobei jede Art von Informationen, wie z. B. Abonnementdetails oder Nutzungsverlauf, auf separaten Blättern angezeigt wird. Diese Blätter sind entsprechend den Registerkarten auf der Seite *Keystone Abonnements* für eine einfache Anzeige benannt. Sie können den Bericht für eine spätere Verwendung speichern.
+
+Ein Beispiel für einen konsolidierten Bericht mit Abonnementdetails auf einem Blatt:
+
+image:report-consolidated.png["Bericht, der im Excel-Format erstellt wurde und separate Blätter anzeigt"]
+
+Weitere Informationen zum Erstellen von Berichten finden Sie unter link:https://docs.netapp.com/us-en/active-iq/task_generate_reports.html["Erstellen benutzerdefinierter Berichte"^].
+
+
+
 == Anzeigen von Meldungen
 
 Das Dashboard enthält Warnmeldungen, mit denen Sie die Probleme in Ihrer Storage-Umgebung erkennen können. Diese Benachrichtigungen können als informative Warnungen oder Warnungen angezeigt werden. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Sie können auf den Link in der Warnmeldung klicken, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Volumes & Objekte* anzuzeigen.

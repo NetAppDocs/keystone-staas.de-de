@@ -96,8 +96,8 @@ Einstellungen und Befehle für den Extreme Service Level:
 ....
 qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
 ....
-* Minimale Volume-Größe: 100 gib, 0,1 tib
-* Maximale Volume-Größe: 10 tib
+* Empfohlene Mindestgröße für ein Volume: 100 gib, 0,1 tib
+* Empfohlene maximale Volume-Größe: 10 tib
 
 
 
@@ -112,8 +112,8 @@ Einstellungen und Befehle für den Premium Service Level:
 ....
 qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
 ....
-* Minimale Volume-Größe: 500 gib, 0,5 tib
-* Maximale Volume-Größe: 50 tib
+* Empfohlene Mindestgröße für ein Volume: 500 gib, 0,5 tib
+* Empfohlene maximale Volume-Größe: 50 tib
 
 
 
@@ -128,8 +128,8 @@ Einstellungen und Befehle für das Performance Service Level:
 ....
 qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
 ....
-* Minimale Volume-Größe: 500 gib, 0,5 tib
-* Maximale Volume-Größe: 80 tib
+* Empfohlene Mindestgröße für ein Volume: 500 gib, 0,5 tib
+* Empfohlene maximale Volume-Größe: 80 tib
 
 
 
@@ -144,8 +144,8 @@ Einstellungen und Befehle für Standard-Service-Level:
 ....
 qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
-* Minimale Volume-Größe: 1 tib
-* Maximale Volume-Größe: 100 tib
+* Empfohlene Mindestgröße für Volumes: 1 tib
+* Empfohlene maximale Volume-Größe: 100 tib
 
 
 
@@ -160,8 +160,8 @@ Einstellungen und Befehle für die Service-Ebene Wert:
 ....
 qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
-* Minimale Volume-Größe: 1 tib
-* Maximale Volume-Größe: 100 tib
+* Empfohlene Mindestgröße für Volumes: 1 tib
+* Empfohlene maximale Volume-Größe: 100 tib
 
 
 
