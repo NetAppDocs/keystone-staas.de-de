@@ -55,6 +55,9 @@ Die Basis-Service-Level für die unterstützten Storage-Typen, File-, Block-, Ob
 
 
 | *Blockgröße* 5+| 32K 
+
+
+| *Art der gebuchten und gemessenen Kapazität* 5+| Logisch 
 |===
 
 
@@ -101,6 +104,9 @@ Die Basis-Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
 
 
 | * Durchschnittliche Latenz* | K. A. 
+
+
+| *Art der gebuchten und gemessenen Kapazität* | Physisch 
 |===
 
 NOTE: Die Latenz umfasst keine Overhead-Köpfe, die im Zusammenhang mit dem Datentransfer zum Objektspeicher im Falle von FabricPool Storage stehen.
