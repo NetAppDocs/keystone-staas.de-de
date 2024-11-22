@@ -92,18 +92,24 @@ Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kap
 
 == Anzeigen der angefallenen Burst-Rechnung
 
-Wenn Sie die Option *fakturierte aufgelaufene Burst* ausgewählt haben, sehen Sie standardmäßig die monatlich aufgelaufenen Burst-Nutzungsdaten der letzten 12 Monate, die in Rechnung gestellt wurden. Sie können die Abfrage nach dem Datumsbereich der letzten 30 Monate durchführen. Balkendiagramme werden für die Rechnungsdaten angezeigt. Wenn die Nutzung noch nicht in Rechnung gestellt wurde, wird für diesen Monat „_Pending_“ angezeigt.
+Wenn Sie die Option *fakturierte aufgelaufene Burst* ausgewählt haben, werden Ihnen die aufgelaufenen Burst-Nutzungsdaten auf monatlicher oder vierteljährlicher Basis angezeigt, abhängig von Ihrem gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 Monate verfügbar, die in Rechnung gestellt wurden, und Sie können bis zu den letzten 30 Monaten nach dem Datumsbereich abfragen. Balkendiagramme zeigen die fakturierten Daten an, und wenn die Nutzung noch nicht in Rechnung gestellt wurde, werden sie für diesen Zeitraum als „_Pending_“ markiert.
 
 
 TIP: Die in Rechnung gestellte Burst-Nutzung wird pro Abrechnungszeitraum berechnet, basierend auf der gebuchten und verbrauchten Kapazität für ein Service-Level.
 
 image:accr-burst-1.png["Diagramme zur angesammelten Burst-Nutzung"]
 
+Wenn das Abonnement bei einem vierteljährlichen Abrechnungszeitraum an einem anderen Datum als dem 1^st^ des Monats beginnt, deckt die Quartalsrechnung den darauf folgenden 90-tägigen Zeitraum ab. Wenn Ihr Abonnement beispielsweise am 15. August beginnt, wird die Rechnung für den Zeitraum von August 15 bis Oktober 14 generiert.
+
+Wenn Sie von einer vierteljährlichen zu einer monatlichen Abrechnung wechseln, deckt die Quartalsrechnung weiterhin den 90-Tage-Zeitraum ab. Dabei werden im letzten Monat des Quartals zwei Rechnungen generiert: Eine für den vierteljährlichen Abrechnungszeitraum und eine weitere für die restlichen Tage dieses Monats. Mit dieser Umstellung kann der monatliche Abrechnungszeitraum am 1^st^ des Folgemonats beginnen. Wenn Ihr Abonnement beispielsweise am 15. Oktober beginnt, erhalten Sie im Januar zwei Rechnungen – eine für Oktober 15 bis Januar 14 und eine für Januar 15 bis 31 –, bevor der monatliche Abrechnungszeitraum am 1. Februar beginnt.
+
+image:accr-burst-2.png["Anfallende Burst-Nutzung vierteljährlich"]
+
 Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.
 
 
 
-== Referenzdiagramme für erweiterten Datenschutz
+== Referenzdiagramme zur erweiterten Datensicherung für MetroCluster
 
 Wenn Sie den erweiterten Datenschutz-Add-on-Dienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte *Verbrauchstrend* einsehen.
 

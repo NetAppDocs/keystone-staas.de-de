@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Die Unterregisterkarte *Volume Summary* auf der Registerkarte *Volumes & Objekte* wird für StorageGRID-Abonnements nicht geladen.
+ a| 
+Fest
+ a| 
+1 2024-11-21
+
+
+
+ a| 
 Das Feld *von Datum* zur Auswahl des Datumsbereichs zeigt standardmäßig ein künftiges Datum an, wenn Sie zur Registerkarte *Verbrauchstrend* navigieren.
  a| 
 Fest

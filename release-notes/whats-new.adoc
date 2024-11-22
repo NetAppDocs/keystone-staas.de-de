@@ -20,6 +20,28 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 
 
+== 1 2024-11-21
+
+
+
+=== Verbesserte aufgelaufene Burst-Kapazität in Rechnung gestellt
+
+Sie können nun über die Option *fakturierte aufgelaufene Burst-Kapazität* quartalsweise aufgelaufene Burst-Nutzungsdaten anzeigen, wenn Sie sich für einen vierteljährlichen Abrechnungszeitraum entschieden haben. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+
+
+
+=== Neue Spalten auf der Registerkarte „Volumendetails“
+
+Um die Berechnung der logischen Nutzung noch übersichtlicher zu gestalten, wurden der Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* zwei neue Spalten hinzugefügt:
+
+* *Logical AFS*: Zeigt die logische Kapazität an, die vom aktiven Dateisystem des Volumes verwendet wird.
+* *Physischer Snapshot*: Zeigt den von den Snapshots verwendeten physischen Speicherplatz an.
+
+
+Diese Spalten bieten eine bessere Übersichtlichkeit in der Spalte *Logical Used*, die die kombinierte logische Kapazität des aktiven Dateisystems des Volumes und den von Snapshots verwendeten physischen Speicherplatz anzeigt.
+
+
+
 == 1 2024-11-11
 
 

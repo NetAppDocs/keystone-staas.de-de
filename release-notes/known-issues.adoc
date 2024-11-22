@@ -33,9 +33,9 @@ Keine
 
 
  a| 
-*Volumenübersicht* Unterregisterkarte wird für StorageGRID-Abonnements nicht geladen
+Berichte für Abonnements können nicht erstellt werden
  a| 
-Die Unterregisterkarte *Volume Summary* auf der Registerkarte *Volumes & Objekte* wird für StorageGRID-Abonnements nicht geladen.
+Wenn auf der Seite *Keystone Abonnements* mehr als 10-12 Abonnements ausgewählt sind, kann der Bericht nicht generiert werden, wenn Sie auf die Schaltfläche *CSV herunterladen* mit der Option *Daten für jeden Service-Level einfügen* klicken.
  a| 
 Keine
 
