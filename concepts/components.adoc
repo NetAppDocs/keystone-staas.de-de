@@ -54,9 +54,9 @@ NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen
 
 
 
-=== Storage Virtual Machines
+=== Virtual Machines
 
-Für die Implementierung von Keystone Collector und dem AIOPs-Lösungs-Gateway ist eine Storage Virtual Machine (Storage-VM) erforderlich. Die Voraussetzungen für die Installation von Keystone Collector finden Sie hier: link:../installation/installation-overview.html["Installationsanleitung für Keystone Collector"]. Die anderen Anforderungen werden während der Implementierung gemeinsam genutzt.
+Virtual Machines sind für die Implementierung von Keystone Collector und ITOM Collector erforderlich. Informationen zu Installationsvoraussetzungen finden Sie unter link:../installation/installation-overview.html["Installationsanleitung für Keystone Collector"] und link:../installation/itom-prereqs.html["Installationsanforderungen für ITOM Collector"]. Die anderen Anforderungen werden während der Implementierung gemeinsam genutzt.
 
 
 
@@ -68,15 +68,13 @@ Keystone Collector kann durch die folgenden Methoden implementiert werden:
 * Der Kunde stellt einen Linux-Server zur Verfügung, der auf Red hat Enterprise Linux 8.6 oder neueren 8.x-Versionen oder CentOS 7 ausgeführt wird. Die Keystone Software wird über den Installationsprozess installiert `.rpm`.
 
 
-Das Gateway für die AIOPs-Lösung wird in folgender Konfiguration bereitgestellt:
+ITOM Collector kann über die folgenden Methoden bereitgestellt werden:
 
-* VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
-* Bootfähiges .iso-Installationsprogramm für
+* Der Kunde stellt einen Linux-Server bereit, der unter Debian 12, Ubuntu 20.04 LTS, Red hat Enterprise Linux (RHEL) 8.x, Amazon Linux 2023 oder neueren Versionen läuft.
+* Der Kunde stellt einen Windows-Server bereit, auf dem Windows Server 2016 oder neuere Versionen ausgeführt werden.
 +
-** Citrix XenServer
-** Microsoft Hyper-V
-** Kernel-Based Virtual Machine (Linux KVM)
 
+TIP: Die empfohlenen Betriebssysteme sind Debian 12, Windows Server 2016 oder neuere Versionen.
 
 
 
@@ -94,6 +92,6 @@ NetApp liefert nur die erforderlichen Transceiver für von NetApp zur Verfügung
 
 == Remote-Zugriff
 
-Zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden, und dem Keystone Operations Center ist Netzwerkkonnektivität erforderlich. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internetservices. Das Netzwerk-Design sollte über ein sicheres Protokoll verfügen und Firewall-Richtlinien werden sowohl von NetApp als auch von Kunden genehmigt.
+Zwischen der im Datacenter des Kunden installierten Storage-Infrastruktur oder den Services des Kunden, die sich im Besitz des Kunden befinden, und dem Keystone Operations Center ist Netzwerkkonnektivität erforderlich. Der Kunde ist verantwortlich für die Bereitstellung der Computing- und Virtual Machines sowie der Internetservices. Der Kunde ist auch für OS-Patches (nicht-OVA-basierte Bereitstellungen) und Sicherheitshärtungen auf der Grundlage interner Sicherheitsrichtlinien verantwortlich. Das Netzwerk-Design sollte über ein sicheres Protokoll verfügen und Firewall-Richtlinien werden sowohl von NetApp als auch von Kunden genehmigt.
 
-NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Applikationen, wie AIOPs Solution und Zuora, nutzen diese Verbindung, um ihre jeweiligen Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.
+NetApp muss auf die Hardware- und Softwarekomponenten zugreifen, die für Monitoring und Management installiert sind, um Services wie Monitoring und Abrechnung für Keystone Kunden bereitzustellen. Die häufigste Methode ist die Einrichtung einer VPN-Verbindung (Virtual Private Network) zum Kundennetzwerk und der Zugriff auf die erforderlichen Daten. Um die von Kunden vermeintliche Komplexität durch das Öffnen von Firewall-Ports zu neuen Services zu überwinden, initiieren die Überwachungstools eine externe Verbindung. NetApp Cloud-Anwendungen, wie ITOM Monitoring Solution und Zuora, nutzen diese Verbindung, um ihre jeweiligen Services auszuführen. Diese Methode erfüllt die Kundenanforderung, keine Firewall-Ports zu öffnen, obwohl sie Zugriff auf die Überwachungskomponenten bietet, die Teil dieses Services sind.

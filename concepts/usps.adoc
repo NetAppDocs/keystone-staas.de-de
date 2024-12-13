@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: concepts/uscs.html 
-keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
-summary: Der Support für US-Bürger ist ein Add-on-Service für die Bereitstellung und den Support von laufenden Keystone Services durch US-Bürger. 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: In den USA ist Protected Support ein Add-on-Service, der die Bereitstellung und den Support von laufenden Keystone Services durch US-Bürger auf US-amerikanischem Boden ermöglicht. 
 ---
-= Erfahren Sie mehr über USCS
+= Erfahren Sie mehr über USPS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: Der Support für US-Bürger ist ein Add-on-Service für die Bereitstell
 
 
 [role="lead"]
-USA Citizen Support (USCS) ist ein Add-on-Angebot für NetApp Keystone-Abonnements. Sie erhalten Anspruch auf Lieferung und Support von laufenden Keystone-Services von den USA US-Bürger Bereitgestellt.
+US Protected Support (USPS) ist ein Add-On-Angebot für NetApp Keystone-Abonnements. Sie erhalten damit das Recht, die laufenden Keystone Services von US-Staatsbürgern auf US-amerikanischem Boden bereitzustellen und zu unterstützen.
 
 Lesen Sie die folgenden Abschnitte, um zu erfahren, welche Elemente Ihrer Abonnements von diesem Add-on-Service gebunden sind und unter den Bedingungen der NetApp Keystone-Vereinbarung zur Verfügung gestellt werden.Fußnote:haftungsausschluss1[die hier beschriebenen Services und Angebote unterliegen einer vollständig ausgeführten Keystone-Vereinbarung und unterliegen diesen Einschränkungen.]
 
 
 
-== Monitoring des NetApp Global Services Support Center
+== NetApp USPS-Überwachung
 
-Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.
+Das NetApp Keystone Supportteam überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den jeweiligen Keystone Abonnementbestellungen überwachen, sind aus S Bürger, die auf US-Boden tätig sind.
 
 
 

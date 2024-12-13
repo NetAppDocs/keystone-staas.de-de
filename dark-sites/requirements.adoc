@@ -71,5 +71,5 @@ Die Netzwerkanforderungen für Keystone Collector umfassen:
 * Auf den Unified Manager-Server sollte der Keystone Collector-Server auf Port 443 (HTTPS) zugreifen können.
 * Für Keystone Collector auf dem Unified Manager-Server sollte ein Servicekonto mit Anwendungsbenutzerberechtigungen eingerichtet werden.
 * Eine externe Internetverbindung ist nicht erforderlich.
-* Exportieren Sie jeden Monat eine Datei aus Keystone Collector, und senden Sie sie per E-Mail an das Support-Team von NetApp. Weitere Informationen dazu, wie Sie das Support-Team kontaktieren können, finden Sie unter link:../concepts/gssc.html#netapp-global-services-and-support-center["Keystone hilft Ihnen dabei"].
+* Exportieren Sie jeden Monat eine Datei aus Keystone Collector, und senden Sie sie per E-Mail an das Support-Team von NetApp. Weitere Informationen dazu, wie Sie das Support-Team kontaktieren können, finden Sie unter link:../concepts/gssc.html["Keystone hilft Ihnen dabei"].
 
