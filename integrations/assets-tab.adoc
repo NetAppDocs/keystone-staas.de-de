@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets-tab.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab 
-summary: Auf der Registerkarte „Assets“ können Sie Details zu den Clustern und Nodes anzeigen, die von Ihren Keystone Abonnements gemanagt werden. 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und -Nodes sowie zu StorageGRID-Grids, -Sites und -Nodes anzeigen, die von Ihren Keystone Abonnements gemanagt werden. 
 ---
-= Zeigt Details zu Clustern und Nodes an, die von Keystone gemanagt werden
+= Zeigt Details zu Clustern und Grids an, die von Keystone gemanagt werden
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,41 @@ summary: Auf der Registerkarte „Assets“ können Sie Details zu den Clustern 
 
 
 [role="lead"]
-Über die Registerkarte *Assets* können Sie Details zu den von Ihren Keystone Abonnements gemanagten Clustern und Nodes einsehen.
+Auf der Registerkarte *Assets* können Sie Details zu ONTAP-Clustern und -Nodes sowie zu StorageGRID-Grids, -Standorten und -Nodes anzeigen, die von Ihren Keystone-Abonnements gemanagt werden.
 
-Digital Advisor bietet umfassende Informationen auf Bestandsebene Ihrer Implementierungen. Auf der Registerkarte *Assets* des Keystone Dashboards hingegen werden die Informationen auf Cluster-Ebene auf Basis Ihrer Abonnements gesammelt, getrennt und mit den genauen Details dargestellt.
+Die Registerkarte *Assets* des Keystone Dashboards enthält zwei Unterregisterkarten: *ONTAP* und *StorageGRID*. Auf dieser Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene für ONTAP und Informationen auf Grid-Ebene für StorageGRID gesammelt, wobei die Daten jeweils mit genauen Details getrennt und dargestellt werden. Sie können diese Informationen anzeigen, indem Sie auf die entsprechenden Unterregisterkarten klicken.
 
+[role="tabbed-block"]
+====
+.ONTAP
+--
 .Schritte
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Assets*.
+. Klicken Sie auf *GENERAL > Keystone Abonnements > Assets > ONTAP*.
 . Wählen Sie die Abonnementnummer aus, für die Sie die Cluster anzeigen möchten.
 +
-Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten.
+Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten. Digital Advisor bietet umfassende Informationen auf Bestandsebene Ihrer Implementierungen.
+
++
+image:assets-tab-3.png["Screenshot, um Informationen auf Cluster-Ebene für ONTAP anzuzeigen"]
 
 
 
-image:assets-tab-3.png["Registerkarte „Assets“"]
+--
+.StorageGRID
+--
+.Schritte
+. Klicken Sie auf *GENERAL > Keystone Abonnements > Assets > StorageGRID*.
+. Wählen Sie die Abonnementnummer aus.
++
+Sie sehen die Grid-Details, die nach Grid- und Node-Kennungen, Standortinformationen, Hardware-Spezifikationen und Kapazitätsdetails kategorisiert sind, die Sie beim Monitoring und Management von Nodes in der StorageGRID Infrastruktur unterstützen.
 
++
+image:assets-tab-storagegrid.png["Screenshot, um die Grid-Informationen für StorageGRID anzuzeigen"]
+
+
+
+--
+====
 *Verwandte Informationen*
 
 * link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]

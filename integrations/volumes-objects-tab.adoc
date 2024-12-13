@@ -51,6 +51,9 @@ image:volume-summary-2.png["Registerkarte „Volume Summary“"]
 Die Volumes, beispielsweise Kapazitätsauslastung, Volume-Typ, Cluster, Aggregat und die zugewiesenen Keystone Service-Level, werden tabellarisch aufgelistet. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
 
 +
+Sie können *Spalten ausblenden/einblenden* verwenden, um Spalten hinzuzufügen oder zu entfernen, die in der Tabelle angezeigt werden. Standardmäßig sind alle Spalten mit Ausnahme der Spalte *Abteilung* ausgewählt. Sie können alle Spalten auswählen oder die Auswahl aufheben, einschließlich der Spalte *Abteilung*, und Ihre Einstellungen werden für die spätere Verwendung gespeichert. Wenn Sie den CSV-Bericht herunterladen, werden die Details der Spalte *Abteilung* bei Auswahl berücksichtigt, während andere Spalten unabhängig von ihrem Auswahlstatus in der Tabelle angezeigt werden.
+
++
 
 NOTE: Für einen erweiterten Add-on für die Datensicherung wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
 

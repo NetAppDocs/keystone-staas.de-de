@@ -20,6 +20,28 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 
 
+== 1 2024-12-12
+
+
+
+=== Umbenannte logische verwendete Spalte
+
+Die Spalte *Logical used* im Register *Volume Details* innerhalb von *Volumes & Objects* wird nun in *Keystone Logical used* umbenannt.
+
+
+
+=== Registerkarte „Enhanced Assets“
+
+Die Registerkarte *Assets* im Fenster *Keystone Abonnements* hat nun zwei neue Unterregisterkarten: *ONTAP* und *StorageGRID*. Diese Unterregisterkarten bieten basierend auf Ihren Abonnements detaillierte Einblicke auf Cluster-Ebene für ONTAP und Informationen zur Grid-Ebene für StorageGRID. Weitere Informationen finden Sie unter link:../integrations/assets-tab.html["Registerkarte „Assets“"^].
+
+
+
+=== Neue Option „Spalten ausblenden/einblenden“
+
+Die Registerkarte *Volume Details* in *Volumes & Objects* enthält nun eine Option *Spalten ausblenden/einblenden*. Mit dieser Option können Sie Spalten auswählen oder abwählen, um die tabellarische Liste der Volumes Ihren Wünschen entsprechend anzupassen. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+
+
+
 == 1 2024-11-21
 
 

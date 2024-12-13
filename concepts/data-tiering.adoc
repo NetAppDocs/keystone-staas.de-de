@@ -34,3 +34,7 @@ Die Gebühren für zusätzliche Tiering-Services gelten für die gesamte Abonnem
 
 
 NOTE: Die von Cloud Volumes ONTAP benötigten Hyperscale-basierten Computing-, Storage- und Netzwerk-Services werden von NetApp nicht als Bestandteil der Keystone STaaS-Abonnements bereitgestellt. Diese Services müssen direkt von Hyperscale-Cloud-Service-Providern in Anspruch genommen werden.
+
+*Verwandte Informationen*
+
+link:https://kb.netapp.com/hybrid/Keystone/AIQ_Dashboard/How_to_approximate_Keystone_Consumption_with_Data_Tiering_(FabricPool)_through_the_ONTAP_cli["Ungefähre Angaben zur Keystone Nutzung mit Daten-Tiering (FabricPool) mithilfe der ONTAP CLI"^]
