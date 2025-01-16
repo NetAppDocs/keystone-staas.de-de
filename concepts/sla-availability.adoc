@@ -127,7 +127,7 @@ Die Service Credits betragen basierend auf der Berechnung 5 US-Dollar.
 
 == Service-Kredit-Anfrage
 
-Wenn eine Verletzung des SLA erkannt wird, eröffnen Sie ein Support-Ticket mit der Priorität 3 (P3) bei Keystone Global Services and Support Center (GSSC).
+Wenn ein Verstoß gegen den SLA erkannt wird, eröffnen Sie beim NetApp Keystone Support ein Support-Ticket mit der Priorität 3 (P3).
 
 * Folgende Angaben sind erforderlich:
 +
@@ -139,7 +139,7 @@ Wenn eine Verletzung des SLA erkannt wird, eröffnen Sie ein Support-Ticket mit 
 .. Alle anderen relevanten Dokumente
 
 
-* Geben Sie die Details in der Excel-Tabelle an, wie unten gezeigt, für ein P3-Ticket, das mit Keystone GSSC eröffnet wurde.
+* Geben Sie die Details in der Excel-Tabelle an, wie unten gezeigt, für ein P3-Ticket, das mit NetApp Keystone Support eröffnet wurde.
 +
 image:sla-breach.png["excel-Sheet-Vorlage"]
 
@@ -147,8 +147,8 @@ image:sla-breach.png["excel-Sheet-Vorlage"]
 
 [NOTE]
 ====
-* Innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den GSSC Partner sollte eine Anfrage zur Servicegutschrift gestellt werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.
-* Service Credits können auf eine zukünftige Rechnung angerechnet werden. Service-Gutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter link:../concepts/gssc.html["NetApp Global Services Support Center"].
+* Eine Service-Gutschriftanfrage sollte innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den NetApp Keystone Support eingeleitet werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.
+* Service Credits können auf eine zukünftige Rechnung angerechnet werden. Service-Gutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter link:../concepts/gssc.html["NetApp Keystone-Support"].
 
 
 ====

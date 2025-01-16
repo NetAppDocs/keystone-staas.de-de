@@ -92,7 +92,7 @@ Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kap
 
 == Anzeigen der angefallenen Burst-Rechnung
 
-Wenn Sie die Option *fakturierte aufgelaufene Burst* ausgewählt haben, werden Ihnen die aufgelaufenen Burst-Nutzungsdaten auf monatlicher oder vierteljährlicher Basis angezeigt, abhängig von Ihrem gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 Monate verfügbar, die in Rechnung gestellt wurden, und Sie können bis zu den letzten 30 Monaten nach dem Datumsbereich abfragen. Balkendiagramme zeigen die fakturierten Daten an, und wenn die Nutzung noch nicht in Rechnung gestellt wurde, werden sie für diesen Zeitraum als „_Pending_“ markiert.
+Wenn Sie die Option *fakturierte aufgelaufene Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung monatlich oder vierteljährlich anzeigen, abhängig von Ihrem gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 Monate verfügbar, die in Rechnung gestellt wurden, und Sie können bis zu den letzten 30 Monaten nach dem Datumsbereich abfragen. Balkendiagramme zeigen die fakturierten Daten an, und wenn die Nutzung noch nicht in Rechnung gestellt wurde, werden sie für diesen Zeitraum als „_Pending_“ markiert.
 
 
 TIP: Die in Rechnung gestellte Burst-Nutzung wird pro Abrechnungszeitraum berechnet, basierend auf der gebuchten und verbrauchten Kapazität für ein Service-Level.
@@ -106,6 +106,22 @@ Wenn Sie von einer vierteljährlichen zu einer monatlichen Abrechnung wechseln, 
 image:accr-burst-2.png["Anfallende Burst-Nutzung vierteljährlich"]
 
 Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.
+
+
+
+== Anzeige der täglichen angesammelten Burst-Datennutzung
+
+Sie können die tägliche aufgelaufene Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum anzeigen. Wenn Sie auf die Leiste klicken, in der die berechneten Daten angezeigt werden, wird der Abschnitt „abrechnungsfähige bereitgestellte Kapazität“ unter dem Balkendiagramm angezeigt. Er bietet Ihnen die Anzeigeoptionen *Grafik* und *Tabelle*. In der Standardgrafik-Ansicht wird die tägliche angesammelte Burst-Datennutzung in einem Liniengrafikformat angezeigt, in dem die Nutzungsänderungen im Laufe der Zeit angezeigt werden.
+
+image:invoiced-daily-accr-burst-1.png["Screenshot mit dem Balkendiagramm"]
+
+Ein Beispielbild, das die tägliche Nutzung der aufgelaufenen Burst-Daten in einem Liniendiagramm zeigt:
+
+image:invoiced-daily-accr-burst-2.png["Screenshot mit Burst-Nutzungsdaten in einem Liniendiagramm"]
+
+Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm auf die Option *Tabelle* klicken. Die Tabellenansicht bietet detaillierte tägliche Nutzungsmetriken, einschließlich Service-Level, Zeitstempel, belegte Kapazität, verbrauchte Kapazität und abrechenbare bereitgestellte Kapazität. Sie können auch einen Bericht dieser Details im CSV-Format für die zukünftige Verwendung und den Vergleich erstellen.
+
+image:invoiced-daily-accr-burst-3.png["Screenshot mit Burst-Nutzungsdaten in einem Tabellenformat"]
 
 
 

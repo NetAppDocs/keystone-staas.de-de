@@ -23,9 +23,8 @@ Sie können die Keystone Collector-Software auf einem Linux-Server mit einem RPM
 . SSH auf den Keystone Collector Server und erhöhen auf `root` Berechtigung.
 . Importieren Sie die öffentliche Keystone-Signatur:
 `# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
-. Stellen Sie sicher, dass das richtige öffentliche Zertifikat importiert wurde, indem Sie den Fingerabdruck für die Keystone Billing-Plattform in der RPM-Datenbank überprüfen:
-`# rpm -qa gpg-pubkey --qf '%_<Description>_'|gpg --show-keys --fingerprint`
-Der richtige Fingerabdruck sieht so aus:
+. Vergewissern Sie sich, dass das korrekte öffentliche Zertifikat importiert wurde, indem Sie den Fingerabdruck für die Keystone Billing Platform in der RPM-Datenbank überprüfen:
+`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` Der korrekte Fingerabdruck sieht folgendermaßen aus:
 `90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
 . Laden Sie die herunter `keystonerepo.rpm` Datei:
 `curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`

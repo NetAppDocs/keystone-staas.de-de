@@ -20,6 +20,16 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 
 
+== 1 2025-01-08
+
+
+
+=== Hinzufügen von Anzeigeoptionen für die tägliche aufgelaufene Datennutzung
+
+Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
+
+
+
 == 1 2024-12-12
 
 

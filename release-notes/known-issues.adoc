@@ -24,18 +24,18 @@ Die folgenden bekannten Probleme werden in NetApp Keystone STaaS gemeldet:
 
 
  a| 
-Volume-Details für primäre und verknüpfte Abonnements nicht verfügbar
+Anzeige des falschen QoS-Richtlinientyps
  a| 
-Die Registerkarte *Volume Summary* zeigt Null für die Gesamtanzahl der Volumes, den QoS-Compliance-Status, die Anzahl der geschützten Volumes und die insgesamt verbrauchte Kapazität für primäre und verknüpfte sekundäre Abonnements an.
+Auf der Registerkarte *Volume Details* wird in der Spalte *QoS Policy Type* _QoS_ angezeigt, wenn keine QoS-Richtlinie angewendet wird, und in der Spalte Compliant wird _Not set_ angezeigt, was zu einer Inkonsistenz im angezeigten QoS-Richtlinienstatus führt.
  a| 
 Keine
 
 
 
  a| 
-Berichte für Abonnements können nicht erstellt werden
+Volume-Details für primäre und verknüpfte Abonnements nicht verfügbar
  a| 
-Wenn auf der Seite *Keystone Abonnements* mehr als 10-12 Abonnements ausgewählt sind, kann der Bericht nicht generiert werden, wenn Sie auf die Schaltfläche *CSV herunterladen* mit der Option *Daten für jeden Service-Level einfügen* klicken.
+Die Registerkarte *Volume Summary* zeigt Null für die Gesamtanzahl der Volumes, den QoS-Compliance-Status, die Anzahl der geschützten Volumes und die insgesamt verbrauchte Kapazität für primäre und verknüpfte sekundäre Abonnements an.
  a| 
 Keine
 

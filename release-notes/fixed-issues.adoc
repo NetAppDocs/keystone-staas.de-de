@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Berichte für Abonnements können nicht erstellt werden, wenn mehr als 10-12 Abonnements auf der Registerkarte *Abonnements* auf der Seite *Keystone Abonnements* ausgewählt werden.
+ a| 
+Fest
+ a| 
+1 2025-01-08
+
+
+
+ a| 
 Die Unterregisterkarte *Volume Summary* auf der Registerkarte *Volumes & Objekte* wird für StorageGRID-Abonnements nicht geladen.
  a| 
 Fest
