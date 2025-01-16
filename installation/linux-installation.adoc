@@ -14,10 +14,12 @@ summary: Installieren Sie die Keystone Collector-Software aus dem YUM-Software-R
 
 
 [role="lead"]
-Die Keystone Collector-Software wird von einem Online-YUM-Software-Repository verteilt. Sie müssen die Datei auf einem Linux-Server importieren und installieren.
+Sie können die Keystone Collector-Software auf einem Linux-Server mit einem RPM oder einem Debian-Paket installieren. Führen Sie die Installationsschritte je nach Linux-Distribution aus.
 
-Führen Sie die folgenden Schritte aus, um die Software auf Ihrem Linux-Server zu installieren:
-
+[role="tabbed-block"]
+====
+.RPM wird verwendet
+--
 . SSH auf den Keystone Collector Server und erhöhen auf `root` Berechtigung.
 . Importieren Sie die öffentliche Keystone-Signatur:
 `# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
@@ -36,5 +38,22 @@ Der richtige Fingerabdruck sieht so aus:
 `# yum install keystone-collector`
 
 
+--
+.Debian Verwenden
+--
+. SSH zum Keystone Collector Server und Zugriff auf `root` Berechtigungen.
+`sudo su`
+. Laden Sie die Datei herunter `keystone-sw-repo.deb`:
+`curl -O https://keystone.netapp.com/downloads/keystone-sw-repo.deb`
+. Keystone-Software-Repository-Datei installieren:
+`# dpkg -i keystone-sw-repo.deb`
+. Paketliste aktualisieren:
+`# apt-get update`
+. Installieren Sie beim Installieren des Keystone-Repo das Keystone-Collector-Paket:
+`# apt-get install keystone-collector`
+
+
+--
+====
 
 NOTE: Nach Abschluss der Installation können Sie das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ verwenden, um die Konfigurations- und Überwachungsaktivitäten durchzuführen. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren. Siehe link:../installation/configuration.html["Konfigurieren Sie Keystone Collector"] Und link:../installation/monitor-health.html["Systemzustand überwachen"] Zur Information.

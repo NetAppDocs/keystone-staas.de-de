@@ -19,7 +19,13 @@ Die Vorbereitung Ihres Linux-Systems mit der erforderlichen Software gewährleis
 Stellen Sie sicher, dass Ihre Linux- und Keystone Collector-Server-VM über diese Konfigurationen verfügt.
 
 .Linux-Server:
-* Betriebssystem: CentOS 7 oder Red hat Enterprise Linux (RHEL) 8.6 oder höher innerhalb der RHEL 8.x-Serie
+* Betriebssystem: Eines der folgenden Betriebssysteme:
++
+** Debian 12
+** Red hat Enterprise Linux 8.6 oder höher 8.x-Versionen
+** CentOS 7 (nur für vorhandene Umgebungen)
+
+
 * Synchronisierungszeit synchronisiert
 * Zugriff auf die standardmäßigen Linux-Software-Repositorys
 

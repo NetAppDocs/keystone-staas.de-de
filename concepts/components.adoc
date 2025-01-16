@@ -65,7 +65,7 @@ Virtual Machines sind für die Implementierung von Keystone Collector und ITOM C
 Keystone Collector kann durch die folgenden Methoden implementiert werden:
 
 * VMware OVA-Vorlage (VMware vCenter Server 6.7 oder höher erforderlich)
-* Der Kunde stellt einen Linux-Server zur Verfügung, der auf Red hat Enterprise Linux 8.6 oder neueren 8.x-Versionen oder CentOS 7 ausgeführt wird. Die Keystone Software wird über den Installationsprozess installiert `.rpm`.
+* Der Kunde stellt einen Linux-Server bereit, der auf einem der folgenden Betriebssysteme läuft: Debian 12, Red hat Enterprise Linux 8.6 oder höher 8.x-Versionen oder CentOS 7 (nur für bestehende Umgebungen). Die Keystone Software wird je nach Linux Distribution mit dem Paket oder `.rpm` installiert `.deb`.
 
 
 ITOM Collector kann über die folgenden Methoden bereitgestellt werden:
