@@ -2193,4 +2193,9 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="2fd8a3db64e08617acb19923d6feb044" category="paragraph">Auf der Registerkarte *Volume Details* wird in der Spalte *QoS Policy Type* _QoS_ angezeigt, wenn keine QoS-Richtlinie angewendet wird, und in der Spalte Compliant wird _Not set_ angezeigt, was zu einer Inkonsistenz im angezeigten QoS-Richtlinienstatus führt.</block>
   <block id="6fac87c4e304acd1c313d83787f9b7bd" category="section-title">Hinzufügen von Anzeigeoptionen für die tägliche aufgelaufene Datennutzung</block>
   <block id="bce353c38d140a9c3cfcff4f836af86f" category="paragraph">Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter <block ref="2773c8880a0c489f5c889cad1b1aa49a" category="inline-link-macro-rx"></block>.</block>
+  <block id="0488df5729275bc610c775109a5e97ed" category="doc">Fehler in Keystone STaaS behoben</block>
+  <block id="e3cdc936dac2c0ff066e39a4166c9208" category="doc">Bekannte Probleme in Keystone STaaS</block>
+  <block id="cf456956bf4b18082e3ed1243aff31f5" category="paragraph">Historische Daten können nicht angezeigt werden</block>
+  <block id="7b19f6e9d0fb85adf96f95ba11a7325e" category="paragraph">Auf der Registerkarte *Consumption Trend* werden Service-Level, die mit dem vorherigen Abonnement verbunden sind, nicht angezeigt, sobald das Abonnement abläuft und mit derselben Tracking-ID, aber mit unterschiedlichen Service-Levels erneuert wird. Dadurch geht der Zugriff auf die historischen Verbrauchsdaten verloren.</block>
+  <block id="1dd6b840b80d1691b68b67682f45c121" category="doc">Bekannte Einschränkungen in Keystone STaaS</block>
 </blocks>

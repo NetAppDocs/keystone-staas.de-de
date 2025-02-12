@@ -4,7 +4,7 @@ permalink: release-notes/known-issues.html
 keywords: netapp, keystone, release notes, known issues 
 summary: Bekannte Probleme identifizieren Probleme, die eine effektive Nutzung der Keystone Abonnementservices verhindern könnten. 
 ---
-= Bekannte Probleme
+= Bekannte Probleme in Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -21,6 +21,15 @@ Die folgenden bekannten Probleme werden in NetApp Keystone STaaS gemeldet:
 [cols="3*"]
 |===
 | Bekanntes Problem | Beschreibung | Behelfslösung 
+
+
+ a| 
+Historische Daten können nicht angezeigt werden
+ a| 
+Auf der Registerkarte *Consumption Trend* werden Service-Level, die mit dem vorherigen Abonnement verbunden sind, nicht angezeigt, sobald das Abonnement abläuft und mit derselben Tracking-ID, aber mit unterschiedlichen Service-Levels erneuert wird. Dadurch geht der Zugriff auf die historischen Verbrauchsdaten verloren.
+ a| 
+Keine
+
 
 
  a| 

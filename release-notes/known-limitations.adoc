@@ -4,7 +4,7 @@ permalink: release-notes/known-limitations.html
 keywords: limitations, known limitations in Keystone STaaS 
 summary: Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit dem Produkt zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
 ---
-= Bekannte Einschränkungen
+= Bekannte Einschränkungen in Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
