@@ -117,7 +117,7 @@ image:invoiced-daily-accr-burst-1.png["Screenshot mit dem Balkendiagramm"]
 
 Ein Beispielbild, das die tägliche Nutzung der aufgelaufenen Burst-Daten in einem Liniendiagramm zeigt:
 
-image:invoiced-daily-accr-burst-2.png["Screenshot mit Burst-Nutzungsdaten in einem Liniendiagramm"]
+image:invoiced-daily-accr-burst-date.png["Screenshot mit Burst-Nutzungsdaten in einem Liniendiagramm"]
 
 Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm auf die Option *Tabelle* klicken. Die Tabellenansicht bietet detaillierte tägliche Nutzungsmetriken, einschließlich Service-Level, Zeitstempel, belegte Kapazität, verbrauchte Kapazität und abrechenbare bereitgestellte Kapazität. Sie können auch einen Bericht dieser Details im CSV-Format für die zukünftige Verwendung und den Vergleich erstellen.
 

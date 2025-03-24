@@ -2183,7 +2183,6 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="de75b30d787fc40e53cc46d0b5ab30cf" category="paragraph"><block ref="de75b30d787fc40e53cc46d0b5ab30cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eba7556a1fc4fd160e9d81ddb2112a3e" category="paragraph">Ein Beispielbild, das die tägliche Nutzung der aufgelaufenen Burst-Daten in einem Liniendiagramm zeigt:</block>
   <block id="515f3b344653c49257ced259fb9261bd" category="inline-image-macro">Screenshot mit Burst-Nutzungsdaten in einem Liniendiagramm</block>
-  <block id="47fdc60b1d26d7e27d3b186be572a4d8" category="paragraph"><block ref="47fdc60b1d26d7e27d3b186be572a4d8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="afb651343eb4e95550b828492b0990bf" category="paragraph">Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm auf die Option *Tabelle* klicken. Die Tabellenansicht bietet detaillierte tägliche Nutzungsmetriken, einschließlich Service-Level, Zeitstempel, belegte Kapazität, verbrauchte Kapazität und abrechenbare bereitgestellte Kapazität. Sie können auch einen Bericht dieser Details im CSV-Format für die zukünftige Verwendung und den Vergleich erstellen.</block>
   <block id="ef839937832da4065ea73d2af5bb0212" category="inline-image-macro">Screenshot mit Burst-Nutzungsdaten in einem Tabellenformat</block>
   <block id="fd4179e96bb6b563483e2da193ee3515" category="paragraph"><block ref="fd4179e96bb6b563483e2da193ee3515" category="inline-image-macro-rx" type="image"></block></block>
@@ -2195,7 +2194,10 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="bce353c38d140a9c3cfcff4f836af86f" category="paragraph">Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter <block ref="2773c8880a0c489f5c889cad1b1aa49a" category="inline-link-macro-rx"></block>.</block>
   <block id="0488df5729275bc610c775109a5e97ed" category="doc">Fehler in Keystone STaaS behoben</block>
   <block id="e3cdc936dac2c0ff066e39a4166c9208" category="doc">Bekannte Probleme in Keystone STaaS</block>
-  <block id="cf456956bf4b18082e3ed1243aff31f5" category="paragraph">Historische Daten können nicht angezeigt werden</block>
-  <block id="7b19f6e9d0fb85adf96f95ba11a7325e" category="paragraph">Auf der Registerkarte *Consumption Trend* werden Service-Level, die mit dem vorherigen Abonnement verbunden sind, nicht angezeigt, sobald das Abonnement abläuft und mit derselben Tracking-ID, aber mit unterschiedlichen Service-Levels erneuert wird. Dadurch geht der Zugriff auf die historischen Verbrauchsdaten verloren.</block>
   <block id="1dd6b840b80d1691b68b67682f45c121" category="doc">Bekannte Einschränkungen in Keystone STaaS</block>
+  <block id="d84ae5b6becc67f38fe4f478e713f236" category="paragraph"><block ref="d84ae5b6becc67f38fe4f478e713f236" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71246a468b7dd0ee3663403dfb3f159b" category="paragraph">Fehlende Option *Keystone Subscriptions* von *Watchlist* und die Option *Subscription Number* von *Reports* auf dem Digital Advisor Dashboard.</block>
+  <block id="738bb3187467e21f957b2120a45e356a" category="paragraph">1 2025-03-19</block>
+  <block id="f2c2ba26aedbdce8dba144e80789d0b1" category="paragraph">Einige Keystone-Abonnements von *Watchlist* fehlen, nachdem Sie die Watchlist im Digital Advisor-Dashboard erstellt oder geändert haben.</block>
+  <block id="dd3b859a25ffcf974732975af6e5a4e9" category="paragraph">Historische Daten können nicht auf der Registerkarte *Verbrauchstrend* für Service-Level angezeigt werden, die mit einem Abonnement verbunden sind, das abgelaufen ist und mit derselben Tracking-ID, aber unterschiedlichen Service-Levels erneuert wurde.</block>
 </blocks>
