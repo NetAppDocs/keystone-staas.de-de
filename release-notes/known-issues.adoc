@@ -24,6 +24,15 @@ Die folgenden bekannten Probleme werden in NetApp Keystone STaaS gemeldet:
 
 
  a| 
+Falsche Rechnung aufgrund von Datenabweichungen
+ a| 
+Wenn Nutzungsdaten für AutoSupport-Abonnements nicht übereinstimmen, werden falsche Rechnungen generiert, was zu Ungenauigkeiten bei der Abrechnung führt.
+ a| 
+Keine
+
+
+
+ a| 
 Anzeige des falschen QoS-Richtlinientyps
  a| 
 Auf der Registerkarte *Volume Details* wird in der Spalte *QoS Policy Type* _QoS_ angezeigt, wenn keine QoS-Richtlinie angewendet wird, und in der Spalte Compliant wird _Not set_ angezeigt, was zu einer Inkonsistenz im angezeigten QoS-Richtlinienstatus führt.

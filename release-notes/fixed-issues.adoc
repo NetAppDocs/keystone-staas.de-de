@@ -22,6 +22,24 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Die Verbrauchswerte für verknüpfte Abonnements zeigen falsche negative Zahlen an, was dazu führt, dass die gesamte gebuchte Nutzung ungenau hoch angezeigt wird.
+ a| 
+Fest
+ a| 
+1 2025-04-14
+
+
+
+ a| 
+Historische Daten können auf der Registerkarte *Verbrauchstrend* für Service-Levels für einige Abonnements nicht angezeigt werden.
+ a| 
+Fest
+ a| 
+1 2025-04-14
+
+
+
+ a| 
 Fehlende Option *Keystone Subscriptions* von *Watchlist* und die Option *Subscription Number* von *Reports* auf dem Digital Advisor Dashboard.
  a| 
 Fest

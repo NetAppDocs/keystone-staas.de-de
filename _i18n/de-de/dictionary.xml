@@ -2200,4 +2200,27 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="738bb3187467e21f957b2120a45e356a" category="paragraph">1 2025-03-19</block>
   <block id="f2c2ba26aedbdce8dba144e80789d0b1" category="paragraph">Einige Keystone-Abonnements von *Watchlist* fehlen, nachdem Sie die Watchlist im Digital Advisor-Dashboard erstellt oder geändert haben.</block>
   <block id="dd3b859a25ffcf974732975af6e5a4e9" category="paragraph">Historische Daten können nicht auf der Registerkarte *Verbrauchstrend* für Service-Level angezeigt werden, die mit einem Abonnement verbunden sind, das abgelaufen ist und mit derselben Tracking-ID, aber unterschiedlichen Service-Levels erneuert wurde.</block>
+  <block id="b2a3bf9896e977dfd8243da5ea25ed44" category="paragraph">Erfüllen Sie die folgenden Anforderungen, wenn Sie Nutzungsdaten nur über ONTAP erfassen möchten:</block>
+  <block id="3e53b7d63056b7201f19b650655aad66" category="list-text">Stellen Sie sicher, dass ONTAP 9.8 oder höher konfiguriert ist. Informationen zum Konfigurieren eines neuen Clusters finden Sie unter den folgenden Links:</block>
+  <block id="16b35791c547ec7b12d2d1bc88d72f59" category="inline-link">Konfigurieren Sie ONTAP mit System Manager in einem neuen Cluster</block>
+  <block id="8c6eef0a3d7e69df22688da3d1e6d26e" category="list-text"><block ref="8c6eef0a3d7e69df22688da3d1e6d26e" category="inline-link-rx"></block></block>
+  <block id="ec797c5e4fe95fdba62563dda4040b7c" category="inline-link">Richten Sie ein Cluster mit der CLI ein</block>
+  <block id="bf1c2cef91760714f3d41ccff2cdf9bb" category="list-text"><block ref="bf1c2cef91760714f3d41ccff2cdf9bb" category="inline-link-rx"></block></block>
+  <block id="e8f64c2c9954152b2bdf07515fefcbf3" category="inline-link">Erfahren Sie mehr über das Erstellen von ONTAP-Anmeldekonten</block>
+  <block id="38b5a2c7a8d52f27b8f9ac286e00f48d" category="list-text">Erstellen Sie ONTAP Anmeldekonten mit bestimmten Rollen. Weitere Informationen finden Sie unter<block ref="e69e255c042cc41ab7a6547befcd4b4a" category="inline-link-rx"></block>.</block>
+  <block id="d1d5b0ca67cfe96cd1bace50b8b15cbd" category="list-text">*Web UI*</block>
+  <block id="53b500e941f815e0da37832bbbb3f265" category="inline-link">Cluster-Management mit System Manager</block>
+  <block id="249c3b3c6a9f619b64fc657020594eb4" category="list-text">Melden Sie sich mit Ihren Standardanmeldeinformationen bei ONTAP System Manager an. Weitere Informationen finden Sie unter<block ref="6093e0d65a9e5cab5ae1ba1e186de22d" category="inline-link-rx"></block>.</block>
+  <block id="d07c5d1cca8977c9165277aa366fcad7" category="list-text">Erstellen Sie einen ONTAP-Benutzer mit der Rolle „Readonly“ und dem Anwendungstyp „http“, und aktivieren Sie die Kennwortauthentifizierung, indem Sie zu *Cluster &gt; Einstellungen &gt; Sicherheit &gt; Benutzer* navigieren.</block>
+  <block id="1ad46d8f16866c3c58ccf12d81ea41ba" category="list-text">*CLI*</block>
+  <block id="0ac6939a607b25b41877b7739b73fac6" category="inline-link">Cluster-Management mit CLI</block>
+  <block id="2aba549c4aa954187b9066ac9b8e6f24" category="list-text">Melden Sie sich bei der ONTAP CLI mit Ihren Standardanmeldeinformationen an. Weitere Informationen finden Sie unter<block ref="80681c6be3483d3efa48f0733e30d252" category="inline-link-rx"></block>.</block>
+  <block id="da7599bcceca45d5f685a0c9ca169dd1" category="inline-link">Aktivieren Sie den Zugriff auf das Kennwort des ONTAP-Kontos</block>
+  <block id="ce5996c36dc9e027cc9e9e6ac10b3c9f" category="list-text">Erstellen Sie einen ONTAP-Benutzer mit der Rolle „Readonly“ und dem Anwendungstyp „http“, und aktivieren Sie die Kennwortauthentifizierung. Weitere Informationen zur Authentifizierung finden Sie unter<block ref="ff30655b37a4a92ad3dccbb4dd39b63c" category="inline-link-rx"></block>.</block>
+  <block id="6fccd3079eed02626646a383fcba9c32" category="paragraph">Erfüllen Sie die folgenden Anforderungen, wenn Sie Nutzungsdaten über Active IQ Unified Manager erfassen möchten:</block>
+  <block id="ad822ed3350baf5e919fd093d9fce7c6" category="paragraph">Die Verbrauchswerte für verknüpfte Abonnements zeigen falsche negative Zahlen an, was dazu führt, dass die gesamte gebuchte Nutzung ungenau hoch angezeigt wird.</block>
+  <block id="1570fe5c09c488b2521f2eadf2c94b4a" category="paragraph">1 2025-04-14</block>
+  <block id="16fc27e61eb7cb21d80ac46bae8bf3c2" category="paragraph">Historische Daten können auf der Registerkarte *Verbrauchstrend* für Service-Levels für einige Abonnements nicht angezeigt werden.</block>
+  <block id="cb0b0f23652246b2cc88085920b86963" category="paragraph">Falsche Rechnung aufgrund von Datenabweichungen</block>
+  <block id="5bf5a6c38d050a01f149d67dba290961" category="paragraph">Wenn Nutzungsdaten für AutoSupport-Abonnements nicht übereinstimmen, werden falsche Rechnungen generiert, was zu Ungenauigkeiten bei der Abrechnung führt.</block>
 </blocks>
