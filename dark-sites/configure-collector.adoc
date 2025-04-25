@@ -34,9 +34,7 @@ image:dark-site-mode-1.png["Darksite-Modus"]
 . Schalten Sie das Feld *KS Collector mit System* starten ein.
 . Schalten Sie das Feld *Collect ONTAP Usage* ein. Fügen Sie die Details zum Active IQ Unified Manager-Server (Unified Manager) und zum Benutzerkonto hinzu.
 . *Optional*: Aktivieren Sie das Feld *mit Tiering Rate Plans*, wenn Daten-Tiering für das Abonnement erforderlich ist.
-+
-Aktualisieren Sie je nach erworbenem Abonnementtyp den *Nutzungstyp*.
-
+. Aktualisieren Sie je nach erworbenem Abonnementtyp den *Nutzungstyp*.
 +
 
 NOTE: Bestätigen Sie vor der Konfiguration den mit dem Abonnement verbundenen Nutzungstyp von NetApp.
