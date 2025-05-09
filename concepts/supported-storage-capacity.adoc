@@ -47,7 +47,13 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 == Verbrauchte Kapazität
 
-Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die derzeit auf dem Service verwendet wird. Der Keystone Service berücksichtigt die Summe der logischen Größen (nicht der verwendeten physischen Kapazität) aller Volumes auf einem bestimmten Service-Level, um die verbrauchte Kapazität für diesen Service-Level zu berechnen.
+Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die derzeit auf dem Service verwendet wird. Es ist die Summe aus:
+
+* Logische Kapazität zur Speicherung aller Instanzen und Typen von Benutzerdaten (wie Kopien, gespiegelte Kopien und Versionen).
+* Logische Kapazität, die für die Speicherung von Klon-Volumes verwendet wird, die mehr als 10 % der Größe des ursprünglichen Volumes betragen.
+* Die physische Kapazität, die zur Speicherung der differenziellen Daten von Snapshot-Kopien verwendet wird.
+* Die zugewiesene physische Kapazität.
+
 
 
 
