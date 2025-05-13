@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Keystone Collector für StorageGRID kann aufgrund fehlender allgemeiner Einstellungen nicht richtig konfiguriert werden.
+ a| 
+Fest
+ a| 
+1 2025-05-12
+
+
+
+ a| 
 Keystone Collector erfasst keine Nutzungsdaten für ONTAP-Cluster mit Versionen unter 9.11.
  a| 
 Fest

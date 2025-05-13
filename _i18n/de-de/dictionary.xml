@@ -2229,4 +2229,6 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
   <block id="b2a0ad297e26236d750246160723aa4e" category="list-text">Logische Kapazität, die für die Speicherung von Klon-Volumes verwendet wird, die mehr als 10 % der Größe des ursprünglichen Volumes betragen.</block>
   <block id="93fcc6bc4dfbcffb60fef19d3e82a054" category="list-text">Die physische Kapazität, die zur Speicherung der differenziellen Daten von Snapshot-Kopien verwendet wird.</block>
   <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">Die zugewiesene physische Kapazität.</block>
+  <block id="b972ea8fcf6c823010b9b37178b9d608" category="paragraph">Keystone Collector für StorageGRID kann aufgrund fehlender allgemeiner Einstellungen nicht richtig konfiguriert werden.</block>
+  <block id="3af3083ee373e5ebbb20d7719411dd4c" category="paragraph">1 2025-05-12</block>
 </blocks>
