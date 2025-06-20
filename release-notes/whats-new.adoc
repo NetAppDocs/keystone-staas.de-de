@@ -16,7 +16,24 @@ summary: NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Versi
 [role="lead"]
 NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Keystone STaaS Services.
 
-Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Active IQ Digital Advisor (auch als digitaler Berater bekannt) vorgestellt:
+
+
+== 1 2025-06-19
+
+
+
+=== Keystone-Dashboard in BlueXP
+
+Sie können jetzt direkt von BlueXP auf das Keystone-Dashboard zugreifen. Dank dieser Integration können Sie alle Ihre Keystone-Abonnements und Ihre anderen NetApp-Dienste zentral überwachen, verwalten und im Auge behalten.
+
+Mit dem Keystone-Dashboard in BlueXP können Sie:
+
+* Zeigen Sie alle Ihre Abonnementdetails, Kapazitätsnutzung und Assets an einem Ort an.
+* Verwalten Sie Abonnements ganz einfach und fordern Sie Änderungen an, wenn sich Ihre Anforderungen ändern.
+* Bleiben Sie mit den neuesten Informationen zu Ihrer Speicherumgebung auf dem Laufenden.
+
+
+Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:../integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"^].
 
 
 
@@ -26,7 +43,7 @@ Die folgenden Verbesserungen werden im Bildschirm *Keystone Abonnements* von Act
 
 === Hinzufügen von Anzeigeoptionen für die tägliche aufgelaufene Datennutzung
 
-Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
+Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
 
 
 
@@ -58,7 +75,7 @@ Die Registerkarte *Volume Details* in *Volumes & Objects* enthält nun eine Opti
 
 === Verbesserte aufgelaufene Burst-Kapazität in Rechnung gestellt
 
-Sie können nun über die Option *fakturierte aufgelaufene Burst-Kapazität* quartalsweise aufgelaufene Burst-Nutzungsdaten anzeigen, wenn Sie sich für einen vierteljährlichen Abrechnungszeitraum entschieden haben. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+Sie können nun über die Option *fakturierte aufgelaufene Burst-Kapazität* quartalsweise aufgelaufene Burst-Nutzungsdaten anzeigen, wenn Sie sich für einen vierteljährlichen Abrechnungszeitraum entschieden haben. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
 
 
 
@@ -80,7 +97,7 @@ Diese Spalten bieten eine bessere Übersichtlichkeit in der Spalte *Logical Used
 
 === Verbesserte Berichterstellung
 
-Mit der Funktion „Bericht“ in Digital Advisor können Sie jetzt einen konsolidierten Bericht erstellen, um die Details Ihrer Keystone-Daten anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html#generate-consolidated-report["Erstellen Sie einen konsolidierten Bericht"^].
+Mit der Funktion „Bericht“ in Digital Advisor können Sie jetzt einen konsolidierten Bericht erstellen, um die Details Ihrer Keystone-Daten anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/options.html#generate-consolidated-report-from-digital-advisor["Erstellen Sie einen konsolidierten Bericht"^] .
 
 
 
@@ -136,7 +153,7 @@ Die Service-Level *CVO Primary* und *CVO Secondary* unterstützen Cloud Volumes 
 
 === Zoom-Funktion für kurzfristige Bursts
 
-Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details von kurzfristigen Bursts in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html["Registerkarte „Kapazitätstrend“"^].
+Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details von kurzfristigen Bursts in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html["Registerkarte „Kapazitätstrend“"^].
 
 
 
@@ -254,7 +271,7 @@ Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnemen
 
 === Die Rechnungsdaten wurden für aufgelaufene Burst zurückgegeben
 
-Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
 
 
 
@@ -276,4 +293,4 @@ Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone System
 
 === Datum in UTC-Zeitzone umgewandelt
 
-Die auf den Registerkarten des Bildschirms *Keystone Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"^].
+Die auf den Registerkarten des Bildschirms *Keystone-Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Keystone Abonnement-Dashboard und Berichterstellung"^].

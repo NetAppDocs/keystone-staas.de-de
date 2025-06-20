@@ -22,6 +22,24 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Auf der Registerkarte *Assets* sind Assets für StorageGRID nicht sichtbar.
+ a| 
+Fest
+ a| 
+1 2025-06-19
+
+
+
+ a| 
+Für das Service-Level „Advance Data-Protect“ zeigt das Diagramm auf der Registerkarte „Verbrauchstrend“ eine Aufteilung für primäre und gespiegelte Sites.
+ a| 
+Das Diagramm zeigt keine Aufteilung mehr für primäre und gespiegelte Sites.
+ a| 
+1 2025-06-19
+
+
+
+ a| 
 Wenn der vorhandene Keystone Collector, der mit einem Debian-Paket installiert wurde, versucht, einen HTTP-Proxy zu konfigurieren oder Unified Manager über die Management-TUI Keystone Collector zu aktivieren, reagiert die TUI nicht mehr.
  a| 
 Fest

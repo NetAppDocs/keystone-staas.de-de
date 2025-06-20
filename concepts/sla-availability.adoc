@@ -30,9 +30,9 @@ NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
 
 
 
-== Service-Leveln
+== Leistungsservicelevel
 
-Für alle von ONTAP Flash-Storage-Arrays unterstützten Service-Level gelten die Verfügbarkeits-SLAs. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Service-Level bei Keystone"].
+Für alle Leistungsservicelevel, die von ONTAP Flash-Speicher-Arrays unterstützt werden, gilt das Verfügbarkeits-SLA. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Leistungsservicelevel in Keystone"].
 
 
 
@@ -82,8 +82,8 @@ Service-Gutschriften = (betroffene Kapazität/gesamte gebuchte Kapazität) X Kap
 Wo?
 
 * *Betroffene Kapazität*: Die Menge der betroffenen gespeicherten Kapazität.
-* *Gebuchte Gesamtkapazität*: Die gebuchte Kapazität für das Service-Level für die Keystone Bestellung.
-* *Kapazitätsgebühren*: Die Gebühren für das betroffene Servicelevel für den Monat.
+* *Gesamtkapazität zugesagt*: Die zugesagte Kapazität für das Leistungsservicelevel für die Keystone-Bestellung.
+* *Kapazitätsgebühren*: Die Gebühren für das betroffene Leistungsservicelevel für den Monat.
 * *Credit-Prozentsatz*: Der festgelegte Prozentsatz für den Service-Kredit.
 
 

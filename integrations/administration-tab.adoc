@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: integrations/administration-tab.html 
+keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription 
+summary: Serviceanfrage für Keystone-Abonnement anzeigen oder stornieren. 
+---
+= Serviceanfragen für Keystone-Abonnements anzeigen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Serviceanfragen zum Ändern von Keystone-Abonnements über BlueXP anzeigen und verfolgen, sodass Sie eine schnelle Zusammenfassung erhalten und den Fortschritt überwachen können.
+
+Um den Fortschritt anzuzeigen oder eine Anfrage abzubrechen, führen Sie die folgenden Schritte aus:
+
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Verwaltung*.
++
+Sie sehen eine Liste aller Serviceanfragen inklusive Anfragenummer, Anfragetyp und aktuellem Status.
+
+. Sie können auf das Symbol image:down-arrow.png["Abwärtspfeilsymbol"] Symbol neben der Spalte *Einreichungsdatum*, um die Anforderungsnummer zu erweitern und Details anzuzeigen. Sie sehen die Leistungsservicelevel, für die die Anforderungen gestellt wurden.
++
+image:bxp-service-request-list.png["Ein Screenshot zeigt, für welche Performance-Service-Levels die Änderungsanforderungen gestellt werden."]
+
+. Wählen Sie die Anforderungsnummer aus, um detaillierte Informationen anzuzeigen, einschließlich Änderungsdetails für das angeforderte Abonnement und den aktuellen Fortschrittsstatus.
++
+image:bxp-service-progress.png["ein Screenshot, der den aktuellen Fortschrittsstatus zeigt"]
+
+

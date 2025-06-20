@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/keystone-aiq.html 
-keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
 summary: Als Abonnent von NetApp Keystone STaaS erhalten Sie einen Überblick über Ihre Abonnements über das Digital Advisor Dashboard. 
 ---
-= Übersicht über Keystone Dashboard
+= Keystone-Dashboard im Digital Advisor
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,21 @@ summary: Als Abonnent von NetApp Keystone STaaS erhalten Sie einen Überblick ü
 
 
 [role="lead"]
-Als Abonnent von NetApp Keystone STaaS erhalten Sie im Dashboard von Active IQ Digital Advisor (auch als digitaler Berater bezeichnet) unter *Keystone Abonnements* einen Überblick über Ihre Abonnements.
+Als NetApp Keystone STaaS-Abonnent können Sie sich im Widget *Keystone-Abonnements* des Digital Advisor-Dashboards einen Überblick über Ihre Abonnements verschaffen.
 
-Sie können nach einem Keystone Abonnement suchen, indem Sie die ersten drei Zeichen eines Kunden- bzw. Watchlistennamens oder die Keystone Abonnementnummer eingeben. Informationen zum Durchsuchen der Keystone STaaS-Abonnements nach Watchlisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"].
+Sie können nach einem bestimmten Keystone-Abonnement suchen, indem Sie die ersten drei Zeichen eines Kunden- oder Beobachtungslistennamens oder die Keystone-Abonnementnummer eingeben. Informationen zur Suche nach Keystone STaaS-Abonnements anhand von Beobachtungslisten finden Sie unter link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Nutzen Sie die Keystone Watchlisten, um Ihre Suche zu starten"] .
 
 Digital Advisor bietet ein einheitliches Dashboard, das über die Schaltfläche *zum alten/neuen Dashboard wechseln* Einblicke in verschiedene Ebenen Ihrer Abonnementdaten und Nutzungsinformationen gibt.
 
 .Standard-Dashboard (alt)
-Sie sehen den Kundennamen und die Abonnementnummer, den Kontonamen, das Start- und Enddatum des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Service-Leveln. Sie können den Erfassungsstamp der Verbrauchsdaten in UTC-Zeit sehen.
+Sie können Ihren Kundennamen und Ihre Abonnementnummer, Ihren Kontonamen, das Start- und Enddatum des Abonnements sowie die Diagramme zur Kapazitätsnutzung gemäß Ihren abonnierten Leistungsserviceleveln sehen. Sie können den Erfassungsstamp der Verbrauchsdaten in UTC-Zeit sehen.
 
 image:old-db-2.png["Altes Dashboard"]
 
 .Alternatives (neues) Dashboard
 Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowie Warnungen und Warnungen, die sofortige Aufmerksamkeit oder Maßnahmen erfordern. Die Informationen werden abhängig von Ihren Abonnements und dem Status Ihrer Nutzung selektiv angezeigt. Sie können diese Informationen anzeigen:
 
-* *Kapazitätsnutzung*: Verbrauchsdaten wie:
-+
-** Keine Nutzung.
-** Verbrauch von mehr als 80 % der gebuchten Kapazität.
-** Burst-Nutzung.
-** Verbrauch über der Burst-Kapazität hinaus.
-
-
+* *Kapazitätsnutzung*: Verbrauchsdaten wie keine Nutzung, Verbrauch über 80 % der zugesagten Kapazität, Burst-Nutzung und Verbrauch über der Burst-Kapazität.
 * *Warnungen*: Sie sehen Warnungen für verschiedene Szenarien, wenn sie für Sie relevant sind.
 +
 ** *Läuft bald ab*: Falls Ihre Abonnements innerhalb von 90 Tagen ablaufen.
@@ -50,19 +43,31 @@ TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonne
 
 image:new-db-4.png["Neues Dashboard"]
 
-Weitere Informationen über das Widget „Digital Advisor Dashboard“ für Keystone finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Digital Advisor Dokumentation"^].
+Sie können auf *Alle Abonnements anzeigen* klicken, um die Nutzungsdetails und Warnungen zu Ihren Volumes auf der Seite *Keystone-Abonnements* anzuzeigen.
 
-Weitere Informationen zum Keystone Dashboard und Reporting finden Sie unter link:../integrations/aiq-keystone-details.html["Keystone Abonnement-Dashboard und Berichterstellung"].
+Die Details der Abonnements, Nutzungsdiagramme für jedes Leistungsservicelevel und Volumendetails werden in den verschiedenen Registerkarten auf dem Bildschirm *Keystone-Abonnements* angezeigt.
+
+
+NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0,01 TiB beträgt, wird der Wert als 0 oder „Keine Nutzung“ angezeigt. Die Daten auf diesen Bildschirmen werden in UTC-Zeit (Serverzeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen zu Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
 
 
 
 == Sie können nach Keystone Watchlisten suchen
 
-Watchlist ist ein Feature Digital Advisor. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Watchlist verstehen"^]. Informationen zum Erstellen von Watchlisten finden Sie unter https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Erstellen Sie eine Watchlist"^].
+Watchlist ist eine Funktion in Digital Advisor. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Watchlist verstehen"^]. Informationen zum Erstellen von Watchlists finden Sie unter  https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Erstellen Sie eine Watchlist"^] .
 
-Für Keystone STaaS können Sie Watchlisten für Kunden oder Abonnementnummern erstellen. Im Digital Advisor-Bildschirm können Sie nach dem Namen der Watchlist suchen. Bei der Suche nach einer Watchlist können Sie die Kunden und deren Abonnements in der Dropdown-Liste *Abonnement* im Widget *Keystone Abonnements* einsehen.
+Sie können Beobachtungslisten für Kunden oder Abonnementnummern erstellen und im Digital Advisor anhand der ersten drei Zeichen einer Abonnementnummer oder eines Beobachtungslistennamens nach einem Keystone-Abonnement suchen. Wenn Sie nach einem Beobachtungslistennamen suchen, werden die Kunden und ihre Abonnements in der Dropdown-Liste *Abonnement* im Widget *Keystone-Abonnements* angezeigt.
 
 
 NOTE: Eine Suche nach Watchlisten ruft die Liste der Abonnements auf dem alten Dashboard ab. Wenn eine Watchlist aus Abonnementnummern besteht, wird nur das Widget *Keystone Abonnements* auf dem Digital Advisor Dashboard angezeigt.
 
 image:watchlist.png["Bildschirm „watchlist“"]
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-access.html["Erste Schritte mit dem Keystone-Dashboard"]
+* link:../integrations/keystone-bluexp.html["Keystone-Dashboard in BlueXP"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+

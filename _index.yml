@@ -24,13 +24,21 @@ indexpage:
       url: "/installation/itom-prereqs.html"
     - title: Installieren Sie Keystone Collector im privaten Modus
       url: "/dark-sites/overview.html"
-    - title: Zeigen Sie Ihre Nutzung auf Digital Advisor an
-      url: "/integrations/keystone-aiq.html"
-    - title: Erstellen Sie Berichte über Ihre Nutzung
-      url: "/integrations/aiq-keystone-details.html"
+  - title: Keystone-Dashboard in BlueXP und Digital Advisor
+    links:
+    - title: Keystone-Dashboard verstehen
+      url: "/integrations/dashboard-overview.html"
+    - title: Zugriff auf das Keystone-Dashboard
+      url: "/integrations/dashboard-access.html"
+    - title: Abonnementinformationen anzeigen
+      url: "/integrations/subscriptions-tab.html"
+    - title: Assets anzeigen
+      url: "/integrations/assets-tab.html"
+    - title: Durchsuchen Sie Daten und erstellen Sie Berichte
+      url: "/integrations/options.html"
   - title: Unterstützte Services in Keystone
     links:
-    - title: Keystone Service-Level
+    - title: Keystone-Leistungsservice-Levels
       url: "/concepts/service-levels.html"
     - title: Servicequalität (QoS)
       url: "/concepts/qos.html"
@@ -63,8 +71,6 @@ indexpage:
       url: "/concepts/adp.html"
     - title: Überwachung, Fehlerbehebung und Verbesserung des Storage
       url: "/concepts/data-infra-insights.html"
-    - title: Keystone und BlueXP
-      url: "/integrations/keystone-cm.html"
     - title: US Citizen Support
       url: "/concepts/usps.html"
   - title: Erfahren Sie mehr

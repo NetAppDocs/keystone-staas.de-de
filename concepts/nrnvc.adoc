@@ -28,7 +28,7 @@ Diesen Add-on-Service können Sie als Teil Ihres Keystone Abonnements abonnieren
 
 Informationen zu den Standard- und Cloud-Diensten finden Sie unter link:supported-storage-services.html["Keystone STaaS Services"].
 
-Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
+Informationen zu Performance-Service-Levels finden Sie unter link:../concepts/service-levels.html["Leistungsservice-Levels in Keystone"] .
 
 
 

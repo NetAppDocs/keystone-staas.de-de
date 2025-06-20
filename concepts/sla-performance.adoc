@@ -14,7 +14,7 @@ summary: Nachhaltigkeit, sla, Service Level Agreement
 
 
 [role="lead"]
-NetApp Keystone bietet latenzbasierte SLAs pro Service-Level, die in der Keystone Bestellung für die verbrauchte Kapazität bis zum Burst-Limit beschrieben werden. Dabei gelten die folgenden Bedingungen:
+NetApp Keystone bietet latenzbasierte SLAs pro Leistungsservicelevel, wie in der Keystone-Bestellung für die verbrauchte Kapazität bis zum Burst-Limit beschrieben, gemäß den nachfolgend aufgeführten Geschäftsbedingungen.
 
 
 NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
@@ -42,9 +42,9 @@ NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
 
 
 
-== Service-Leveln
+== Leistungsservicelevel
 
-Alle von ONTAP Flash-Storage-Arrays unterstützten Service-Level gelten für das Performance SLA und garantieren die Einhaltung der folgenden Ziellatenz:
+Alle Performance-Service-Levels, die von ONTAP Flash-Speicher-Arrays unterstützt werden, sind für das Performance-SLA berechtigt und garantieren die Einhaltung der folgenden Ziellatenz:
 
 |===
 
@@ -56,7 +56,7 @@ Alle von ONTAP Flash-Storage-Arrays unterstützten Service-Level gelten für das
 *Ziel: 90^th^ Perzentillatenz*
 | <1 ms | <2 ms | <4 ms | <4 ms 
 |===
-Weitere Informationen zu den Latenzanforderungen der Service-Level finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
+Weitere Informationen zu den Latenzanforderungen der Performance-Service-Levels finden Sie unter link:../concepts/service-levels.html["Leistungsservice-Levels in Keystone"] .
 
 
 
@@ -85,7 +85,7 @@ Service-Gutschriften = (betroffene Kapazität/gesamte gebuchte Kapazität) X Kap
 Wo?
 
 * *Betroffene Kapazität*: Die Menge der betroffenen gespeicherten Kapazität.
-* *Gebuchte Gesamtkapazität*: Die gebuchte Kapazität für das Service-Level für die Keystone Bestellung.
+* *Gesamtkapazität zugesagt*: Die zugesagte Kapazität für das Leistungsservicelevel für die Keystone-Bestellung.
 * *Kapazitätsgebühren*: Die Gebühren für das betroffene Leistungsniveau gemäß der Keystone-Bestellung.
 * *Betroffene Tage*: Die Anzahl der betroffenen Kalendertage.
 * *Credit-Prozentsatz*: Der festgelegte Prozentsatz für den Service-Kredit.

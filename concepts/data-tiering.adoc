@@ -16,7 +16,7 @@ summary: Der Daten-Tiering Add-on Service identifiziert selten genutzte Daten un
 [role="lead"]
 Die Keystone STaaS-Standardservices für File- und Block-Storage umfassen Tiering-Funktionen zur Identifizierung seltener genutzter Daten und Tiering-Stufen auf von Keystone STaaS unterstützter NetApp Cold-Storage. Daten-Tiering kann als Add-on-Service genutzt werden, um kalte Daten auf jeden von Keystone STaaS unterstützten Storage anderer Anbieter zu verschieben.
 
-Informationen zu Standard- und Add-on-Services finden Sie unter link:../concepts/supported-storage-services.html["Keystone STaaS Services"]. Informationen zu Service-Levels finden Sie unter link:../concepts/service-levels.html["Service-Level in Keystone"].
+unter link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"] .
 
 Der Tiering-Add-on-Service ist nur dann erforderlich, wenn Daten auf Storage anderer Anbieter – z. B. Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) – Tiering-Daten übertragen werden. Dazu zählen unter anderem Keystone STaaS-unterstützter, S3-kompatibler Objekt-Storage von Drittanbietern.
 

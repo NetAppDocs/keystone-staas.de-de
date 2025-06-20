@@ -14,7 +14,7 @@ summary: Nachhaltigkeit, sla, Service Level Agreement
 
 
 [role="lead"]
-NetApp Keystone liefert eine garantierte Messung der maximalen tatsächlichen Watt-Anzahl pro Tebibyte (W/tib) für Storage-Services auf Basis von ONTAP Flash-Storage-Arrays mit SLA zur Nachhaltigkeit. SLA für Nachhaltigkeit definiert den maximalen Verbrauch von W/tib für jeden qualifizierten Service-Level und hilft Unternehmen beim Erreichen ihrer Nachhaltigkeitsziele.
+NetApp Keystone liefert eine garantierte Messung der maximalen tatsächlichen Watt-Anzahl pro Tebibyte (W/tib) für Storage-Services auf Basis von ONTAP Flash-Storage-Arrays mit SLA zur Nachhaltigkeit. Das Nachhaltigkeits-SLA definiert den maximalen Verbrauch von W/TiB für jedes berechtigte Leistungsservicelevel und hilft Unternehmen, ihre Nachhaltigkeitsziele zu erreichen.
 
 
 NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
@@ -26,7 +26,7 @@ NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
 * *Watts*: Der Stromverbrauch wird aus täglichen AutoSupport gemeldet, einschließlich der Nutzung durch den Controller und angebrachte Platten-Shelves.
 * *Tebibyte*: Maximal:
 +
-** Die gebuchte Kapazität + zugewiesene Burst-Kapazität für das Service-Level oder
+** die zugesagte Kapazität + zugewiesene Burst-Kapazität für das Performance-Service-Level oder
 ** Die effektive bereitgestellte Kapazität, ausgehend von einem Storage-Effizienzfaktor von `2:1`.
 
 
@@ -37,7 +37,7 @@ Weitere Informationen über Storage-Effizienzverhältnisse finden Sie unter http
 
 
 
-== Service-Leveln
+== Leistungsservicelevel
 
 SLA für Nachhaltigkeit basiert auf folgenden Verbrauchskriterien:
 
@@ -61,7 +61,7 @@ Premium
 Leistung
 | <=4 W/tib | 300 tib | AFF A800 und AFF A900 
 |===
-Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Service-Level bei Keystone"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Leistungsservicelevel in Keystone"].
 
 
 

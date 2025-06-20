@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets-tab.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, bluexp, volumes in clusters 
 summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und -Nodes sowie zu StorageGRID-Grids, -Sites und -Nodes anzeigen, die von Ihren Keystone Abonnements gemanagt werden. 
 ---
-= Zeigt Details zu Clustern und Grids an, die von Keystone gemanagt werden
+= Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,109 @@ summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und 
 
 
 [role="lead"]
-Auf der Registerkarte *Assets* können Sie Details zu ONTAP-Clustern und -Nodes sowie zu StorageGRID-Grids, -Standorten und -Nodes anzeigen, die von Ihren Keystone-Abonnements gemanagt werden.
+Sie können detaillierte Informationen zu ONTAP-Clustern und -Knoten sowie zu StorageGRID-Grids, -Sites und -Knoten anzeigen, die über ein einziges Keystone-Abonnement verwaltet werden. Diese Ansicht Ihrer Abonnement-Assets ist in den Keystone-Dashboard-Ansichten von BlueXP und Digital Advisor verfügbar.
 
-Die Registerkarte *Assets* des Keystone Dashboards enthält zwei Unterregisterkarten: *ONTAP* und *StorageGRID*. Auf dieser Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene für ONTAP und Informationen auf Grid-Ebene für StorageGRID gesammelt, wobei die Daten jeweils mit genauen Details getrennt und dargestellt werden. Sie können diese Informationen anzeigen, indem Sie auf die entsprechenden Unterregisterkarten klicken.
+
+
+== Keystone-Abonnementressourcen von BlueXP anzeigen
+
+Die Registerkarte *Assets* innerhalb der Registerkarte *Subscriptions* in BlueXP bietet detaillierte Informationen zu Volumes in Clustern, StorageGRID-Knoten und ONTAP-Knoten, die mit dem Abonnement verknüpft sind, einschließlich verschiedener Details und Kapazitätsstatus.
+
+
+NOTE: Diese Ansicht ist jeweils auf ein Keystone-Abonnement beschränkt. Sie können auch die Assets anderer Abonnements anzeigen, indem Sie aus der Dropdown-Liste *Tracking-ID* auswählen. Das Keystone-Dashboard in BlueXP ermöglicht Ihnen die Anzeige von Assets mehrerer Keystone-Abonnements. Weitere Informationen finden Sie unter link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"].
+
+Sie können diese Informationen anzeigen, indem Sie die folgenden Schritte ausführen:
+
+[role="tabbed-block"]
+====
+.Volumes in Clustern
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
+. Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* der Tabelle aus.
++
+Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
+
+. Wählen Sie die Registerkarte *Assets*.
+. Wählen Sie *Volumes im Cluster* aus der Dropdown-Liste *Anzeigen* aus.
++
+image:bxp-volumes-clusters-single-subscription.png["Ein Screenshot von Volumes in Clustern für ein Abonnement"]
+
++
+Sie sehen detaillierte Informationen zu Volumes in Clustern, einschließlich Volumename, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel. Sie können außerdem die bereitgestellte Kapazität, die logische und physische Auslastung sowie Cold Data überwachen.
+
++
+
+TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Tabellendaten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
+
+
+--
+.Knoten in Clustern
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
++
+Standardmäßig wird auf der Registerkarte *Abonnements* die Unterregisterkarte *Abonnements* angezeigt.
+
+. Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* der Tabelle aus.
++
+Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
+
+. Wählen Sie die Registerkarte *Assets*.
+. Wählen Sie *Knoten in Clustern* aus der Dropdown-Liste *Anzeigen* aus.
++
+image:bxp-nodes-cluster-single-subscription.png["Ein Screenshot von Knoten in Clustern für ein Abonnement"]
+
++
+Sie sehen ONTAP-Clusterdetails, aufgeschlüsselt nach Speichereffizienzeinstellungen, Plattformtyp und Kapazitätsdetails.
+
++
+
+TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Tabellendaten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
+
+
+--
+.Knoten in Gittern
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
++
+Standardmäßig wird auf der Registerkarte *Abonnements* die Unterregisterkarte *Abonnements* angezeigt.
+
+. Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* der Tabelle aus.
++
+Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
+
+. Wählen Sie die Registerkarte *Assets*.
+. Wählen Sie *Knoten in Rastern* aus der Dropdown-Liste *Ansicht*.
++
+image:bxp-nodes-grids-single-subscription.png["Ein Screenshot von Knoten in Rastern für ein Abonnement"]
+
++
+Sie können detaillierte Informationen zu Knoten in Grids anzeigen, einschließlich Knotenname, Knotenstatus, Grid-Name, Knotentyp und Kunde. Sie können außerdem die verbrauchte und verfügbare Datenkapazität, die CPU-Auslastung und die nutzbare Datenkapazität überwachen.
+
++
+
+TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Tabellendaten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
+
+
+--
+====
+
+
+== Keystone-Abonnementressourcen von Digital Advisor anzeigen
+
+Die Registerkarte *Assets* des Keystone-Dashboards in Digital Advisor enthält zwei Unterregisterkarten: *ONTAP* und *StorageGRID*. Auf dieser Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene für ONTAP und Informationen auf Grid-Ebene für StorageGRID gesammelt, wobei die Daten jeweils mit genauen Details getrennt und dargestellt werden. Sie können diese Informationen anzeigen, indem Sie auf die entsprechenden Unterregisterkarten klicken.
 
 [role="tabbed-block"]
 ====
 .ONTAP
 --
 .Schritte
-. Klicken Sie auf *GENERAL > Keystone Abonnements > Assets > ONTAP*.
+. Klicken Sie auf *Allgemein > Keystone-Abonnements > Assets > ONTAP*.
 . Wählen Sie die Abonnementnummer aus, für die Sie die Cluster anzeigen möchten.
 +
 Sie sehen die Cluster-Details aufgeschlüsselt nach Storage-Effizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Wenn Sie auf einen der Cluster klicken, gelangen Sie zum Widget *Cluster* auf dem Digital Advisor-Bildschirm, wo Sie zusätzliche Informationen zu diesem Cluster erhalten. Digital Advisor bietet umfassende Informationen auf Bestandsebene Ihrer Implementierungen.
@@ -37,7 +130,7 @@ image:assets-tab-3.png["Screenshot, um Informationen auf Cluster-Ebene für ONTA
 .StorageGRID
 --
 .Schritte
-. Klicken Sie auf *GENERAL > Keystone Abonnements > Assets > StorageGRID*.
+. Klicken Sie auf *Allgemein > Keystone-Abonnements > Assets > StorageGRID*.
 . Wählen Sie die Abonnementnummer aus.
 +
 Sie sehen die Grid-Details, die nach Grid- und Node-Kennungen, Standortinformationen, Hardware-Spezifikationen und Kapazitätsdetails kategorisiert sind, die Sie beim Monitoring und Management von Nodes in der StorageGRID Infrastruktur unterstützen.
@@ -51,10 +144,11 @@ image:assets-tab-storagegrid.png["Screenshot, um die Grid-Informationen für Sto
 ====
 *Verwandte Informationen*
 
-* link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
-* link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Stromaufnahme"]
-* link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
-* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
-* link:../integrations/performance-tab.html["Leistung"]
+* link:../integrations/dashboard-overview.html["Keystone-Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"]
+* link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
 

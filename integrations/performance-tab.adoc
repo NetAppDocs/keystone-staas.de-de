@@ -17,10 +17,12 @@ summary: Performance-Kennzahlen für die von Ihren Keystone Abonnements gemanagt
 Performance-Kennzahlen für die von Ihren Keystone Abonnements gemanagten ONTAP Volumes lassen sich anzeigen, um die Performance der Systeme zu überwachen.
 
 
-TIP: Diese Registerkarte ist optional für Sie verfügbar. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.
+TIP: Diese Registerkarte steht Ihnen in Digital Advisor optional zur Verfügung. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen. In BlueXP ist sie nicht verfügbar.
+
+Um diese Registerkarte in Digital Advisor anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Performance*.
+. Klicken Sie auf *Allgemein > Keystone-Abonnements > Leistung*.
 . Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste Abonnementnummer ausgewählt.
 . Wählen Sie den gewünschten Volume-Namen aus der Liste aus.
 +
@@ -29,20 +31,20 @@ Alternativ können Sie auf klicken image:aiq-ks-time-icon.png["Diagrammsymbol"] 
 . Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.
 
 
-Die abgerufenen Details basieren auf dem Service-Level-Ziel für jeden Service-Level. So werden beispielsweise die IOPS-Spitzenwerte, der maximale Durchsatz, die Ziellatenz und andere Metriken durch die einzelnen Einstellungen für das Service-Level bestimmt. Weitere Informationen zu den Einstellungen finden Sie unter link:../concepts/service-levels.html["Service-Level bei Keystone"].
+Die abgerufenen Details basieren auf dem Leistungs-Servicelevel-Ziel für jedes Leistungs-Servicelevel. Beispielsweise werden Spitzen-IOPS, maximaler Durchsatz, Ziellatenz und andere Kennzahlen durch die individuellen Einstellungen des Leistungs-Servicelevels bestimmt. Weitere Informationen zu den Einstellungen finden Sie unter link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"] .
 
 
-NOTE: Wenn Sie das Kontrollkästchen *SLO Reference Line* aktivieren, werden die Diagramme IOPS, Durchsatz und Latenz auf Basis des Service-Level-Ziels für den Service-Level dargestellt. Andernfalls werden sie in tatsächlichen Zahlen angezeigt.
+NOTE: Wenn Sie das Kontrollkästchen *SLO-Referenzlinie* aktivieren, werden die IOPS-, Durchsatz- und Latenzdiagramme basierend auf dem Leistungs-Servicelevelziel für das Leistungs-Servicelevel gerendert. Andernfalls werden sie in tatsächlichen Zahlen angezeigt.
 
 Die im horizontalen Diagramm angezeigten Leistungsdaten sind ein Durchschnitt in jedem fünfminütigen Intervall und entsprechend dem Datumsbereich der Abfrage angeordnet. Sie können durch die Diagramme blättern und mit der Maus über bestimmte Datenpunkte fahren, um weiter unten in die erfassten Daten zu gelangen.
 
-Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der Kombination aus Abonnementnummer, Volumenname und ausgewähltem Datumsbereich anzeigen und vergleichen. Die Details werden nach dem dem dem Volume zugewiesenen Service-Level angezeigt. Sie können den Cluster-Namen und den Volume-Typ sehen, d. h. die dem Volume zugewiesenen Lese- und Schreibberechtigungen. Jede mit dem Volume verknüpfte Warnmeldung wird ebenfalls angezeigt.
+Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der Kombination aus Abonnementnummer, Volumenname und ausgewähltem Datumsbereich anzeigen und vergleichen. Die Details werden gemäß dem dem Volume zugewiesenen Leistungsservicelevel angezeigt. Sie können den Cluster-Namen und den Volume-Typ sehen, d. h. die dem Volume zugewiesenen Lese- und Schreibberechtigungen. Jede mit dem Volume verknüpfte Warnmeldung wird ebenfalls angezeigt.
 
 
 
 == IOPS/tib
 
-In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Die Spitzenwerte-IOPS für das Service-Level und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/tib angezeigt.
+In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Die Spitzen-IOPS für das Leistungsservicelevel und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/TiB angezeigt.
 
 image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
 
@@ -50,7 +52,7 @@ image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
 
 == Durchsatz (MB/s/tib)
 
-In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Service-Level (SLO Max) und den aktuellen Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitbereich in MBit/s/tib angezeigt.
+In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Leistungsservicelevel (SLO Max) und der aktuelle Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitraum in MBps/TiB angezeigt.
 
 image:perf-thr.png["Durchsatzdiagramme"]
 
@@ -58,7 +60,7 @@ image:perf-thr.png["Durchsatzdiagramme"]
 
 == Latenz (ms)
 
-In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume angezeigt, basierend auf dem Datumsbereich der Abfrage. Die maximale Latenz für das Service-Level (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.
+In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume angezeigt, basierend auf dem Datumsbereich der Abfrage. Die maximale Latenz für das Leistungsservicelevel (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.
 
 Dieses Diagramm hat die folgenden Farben:
 
@@ -78,10 +80,12 @@ image:perf-log-usd.png["Diagramm „genutzte logische Kapazität“"]
 
 *Verwandte Informationen*
 
-* link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
-* link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Stromaufnahme"]
-* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
-* link:../integrations/volumes-objects-tab.html["Volumen  Objekte"]
-* link:../integrations/assets-tab.html["Ressourcen"]
+* link:../integrations/dashboard-overview.html["Keystone-Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
+* link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"]
+* link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
 

@@ -18,9 +18,9 @@ NetApp Einblicke in die Dateninfrastruktur (DII, ehemals Cloud Insights) ist ein
 
 Weitere Informationen zu Einblicken in Dateninfrastrukturen finden Sie unter link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Dokumentation zu Data Infrastructure Insights"^].
 
-DII ist sowohl für neue als auch für bestehende Abonnements verfügbar. Sie kann als Add-on für die gebuchte Kapazität in ein Keystone Abonnement integriert werden. Wenn DII in ein Keystone Abonnement integriert ist, verfügt es über ein entsprechendes Service-Level für jeden Basis-Service-Level im Abonnement. Beispielsweise ordnet Extreme DII Extreme zu, Premium DII Premium und Performance DII Performance. Dadurch wird sichergestellt, dass das DII Service-Level mit dem Basis-Service-Level Ihres Keystone Abonnements übereinstimmt.
+DII ist sowohl für neue als auch für bestehende Abonnements verfügbar. Sie kann als Add-on für die gebuchte Kapazität in ein Keystone Abonnement integriert werden. Wenn DII in ein Keystone-Abonnement integriert ist, verfügt es über ein entsprechendes Leistungsservicelevel für jedes Basisleistungsservicelevel im Abonnement. Beispielsweise ordnet Extreme DII Extreme zu, Premium DII Premium und Performance DII Performance. Diese Zuordnungen stellen sicher, dass das DII-Leistungsservicelevel mit dem Basisleistungsservicelevel Ihres Keystone-Abonnements übereinstimmt.
 
-Ansicht der DII-Service-Level innerhalb eines Widget *Keystone Abonnements* im Digital Advisor Dashboard:
+Eine Ansicht der DII-Leistungsservicelevel in einem *Keystone Subscriptions*-Widget auf dem Digital Advisor-Dashboard:
 
 image:keystone-widget-dii.png["Screenshot des Keystone Abonnements-Widgets, das die DII-Service-Level anzeigt"]
 
@@ -51,9 +51,12 @@ Beachten Sie Folgendes:
 | Cloud Volumes ONTAP | NetApp Cloud Volumes ONTAP 
 |===
 +
-Nach der Konfiguration beginnt die DII-Instanz mit der Überwachung des Keystone Speichers.
+Nach der Konfiguration beginnt die DII-Instanz mit der Überwachung der als Teil von Keystone bereitgestellten NetApp-Speicherressourcen.
 
 
+
+
+NOTE: DII bietet zwar umfangreiche Überwachungsfunktionen für die eingesetzte Hardware, liefert jedoch keine Einblicke in Ihr Keystone-Abonnement, wie z. B. die Abonnementnutzung oder Details zu den Leistungs-Serviceleveln. Informationen zu Abonnements finden Sie unter link:../integrations/keystone-aiq.html["Keystone-Dashboard und -Berichte"] .
 
 
 
@@ -66,7 +69,7 @@ Im Folgenden werden die Details zur Abrechnung und Messung des DII-Add-on-Servic
 image:current-consumption-dii.png["Screenshot der Registerkarte „Aktuelle Nutzung“, in der die Messung der Service-Level angezeigt wird"]
 
 * Dieser Service wird gemessen und mit Ihrem Keystone Abonnement auf derselben Rechnung abgerechnet. Wenn Sie DII für Keystone vor der Aktivierung Ihres Keystone Abonnements konfigurieren, beginnt die Abrechnung dennoch am Datum der Aktivierung des Keystone Abonnements oder am Änderungsdatum für vorhandene Abonnements.
-* Der Service wird nach Nutzung der gebuchten Kapazität und Burst-Nutzung für DII-Service-Level zusätzlich zur Standardrechnung von Keystone gemessen und in Rechnung gestellt. Beim Messen dieses Add-on-Service folgt dieselbe Methodik wie beim zugrunde liegenden Keystone Abonnement-Service Level, das logisch, provisioniert oder physisch sein könnte.
+* Dieser Service wird zusätzlich zur Standardrechnung von Keystone basierend auf der zugesagten Kapazität und der Burst-Nutzung für DII-Leistungsservicelevel gemessen und abgerechnet. Die Messung dieses Zusatzservices erfolgt nach der gleichen Methodik wie das zugrunde liegende Keystone-Abonnement-Leistungsservicelevel, das logisch, bereitgestellt oder physisch sein kann.
 * Dieser Service endet mit dem Keystone Abonnement, mit dem er verknüpft ist. Bei der Verlängerung können Sie entscheiden, ob der Add-on-Service verlängert werden soll. Wenn Sie das Keystone Abonnement nicht verlängern, wird die überwachte Hardware außer Betrieb genommen und der Add-on-Service wird automatisch beendet.
 
 

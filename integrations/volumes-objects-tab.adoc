@@ -14,7 +14,9 @@ summary: Anzeige von Kapazitätsdetails auf Volume- oder Objekt-Storage-Ebene
 
 
 [role="lead"]
-Wenn Sie Kapazitätsdetails auf Volume- oder Objekt-Storage-Ebene anzeigen möchten, können Sie zu *Volumes & Objects* navigieren. Bei StorageGRID können Sie auf dieser Registerkarte den Verbrauch durch die einzelnen Nodes in Ihrer Objekt-Storage-Umgebung lesen.
+Wenn Sie Kapazitätsdetails auf Volume- oder Objektspeicherebene anzeigen möchten, können Sie in Digital Advisor zur Registerkarte *Volumes & Objekte* navigieren. Bei StorageGRID können Sie auf dieser Registerkarte den Verbrauch durch die einzelnen Nodes in Ihrer Objekt-Storage-Umgebung lesen.
+
+Diese Details finden Sie auf der Registerkarte *Assets* in BlueXP. Sie link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"] .
 
 
 NOTE: Der Titel dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl ONTAP als auch Objektspeicher haben, wird der Titel der Registerkarte als *Volumes & Objekte* angezeigt. Nur für ONTAP erscheint der Name *Volumes*. Für StorageGRID-Objektspeicher können Sie die Registerkarte *Objects* sehen.
@@ -23,16 +25,13 @@ NOTE: Der Titel dieser Registerkarte hängt von der Art der Bereitstellung an Ih
 
 == Hier können Sie Details zu ONTAP Volumes und Objekt-Storage anzeigen
 
-Die Registerkarte *Volumes & Objekte* bietet Einblicke in ONTAP System-Volumes und Objekt-Storage mit verschiedenen Detailebenen. Für ONTAP-Volumes gibt es zwei Unterregisterkarten: *Volume Summary*, die eine Gesamtanzahl der Volumes bereitstellt, die den abonnierten Service-Levels zugeordnet sind, und *Volume Details*, die diese Volumes erneut mit ihren spezifischen Angaben auflisten. Die Unterregisterkarte *objects* enthält Details zum Objektspeicher für Abonnements, die Service-Level für Datei- und Objekt-Storage enthalten.
-
-
-NOTE: Die Unterregisterkarte *objects* ist unter der Registerkarte *Volumes* nicht verfügbar, und auf der Registerkarte *objects* enthalten die Unterregisterkarten *Volume Summary* und *Volume Details* keine Daten.
+Die Registerkarte *Volumes & Objekte* bietet Einblicke in ONTAP System-Volumes und Objekt-Storage mit verschiedenen Detailebenen. Für ONTAP-Volumes gibt es zwei Unterregisterkarten: „Volume-Zusammenfassung“ zeigt die Gesamtzahl der den abonnierten Performance-Service-Levels zugeordneten Volumes an, und „Volume-Details“ listet diese Volumes mit ihren spezifischen Merkmalen auf. Die Unterregisterkarte „Objekte“ bietet Details zum Objektspeicher für Abonnements, die Performance-Service-Levels sowohl für Datei- als auch für Objektspeicher beinhalten.
 
 [role="tabbed-block"]
 ====
 .Volume-Übersicht
 --
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes & Objects > Volume Summary*.
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone-Abonnements > Volumes und Objekte > Volume-Zusammenfassung*.
 . Wählen Sie die Abonnementnummer aus.
 +
 Für das ausgewählte Keystone STaaS Abonnement können Sie die Gesamtanzahl der Volumes, ihren QoS-Compliance-Status, die Anzahl der geschützten Volumes und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen oder geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste anzeigen können, die entweder die nicht kompatiblen Volumes oder die geschützten Volumes anzeigt, basierend auf Ihrer Auswahl.
@@ -45,10 +44,10 @@ image:volume-summary-2.png["Registerkarte „Volume Summary“"]
 --
 .Volume-Details
 --
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Volumes > Volume Details*.
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone-Abonnements > Volumes > Volumedetails*.
 . Wählen Sie die Abonnementnummer aus.
 +
-Die Volumes, beispielsweise Kapazitätsauslastung, Volume-Typ, Cluster, Aggregat und die zugewiesenen Keystone Service-Level, werden tabellarisch aufgelistet. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
+Sie können die tabellarische Auflistung der Volumes sehen, beispielsweise Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und die zugewiesenen Keystone-Leistungsservicelevel. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
 
 +
 Sie können *Spalten ausblenden/einblenden* verwenden, um Spalten hinzuzufügen oder zu entfernen, die in der Tabelle angezeigt werden. Standardmäßig sind alle Spalten mit Ausnahme der Spalte *Abteilung* ausgewählt. Sie können alle Spalten auswählen oder die Auswahl aufheben, einschließlich der Spalte *Abteilung*, und Ihre Einstellungen werden für die spätere Verwendung gespeichert. Wenn Sie den CSV-Bericht herunterladen, werden die Details der Spalte *Abteilung* bei Auswahl berücksichtigt, während andere Spalten unabhängig von ihrem Auswahlstatus in der Tabelle angezeigt werden.
@@ -65,8 +64,8 @@ image:volume-details-3.png["Registerkarte „Volume-Details“"]
 --
 .Objekte
 --
-. Klicken Sie auf *GENERAL > Keystone Subscriptions > Objects*.
-. Wählen Sie die Abonnementnummer aus. Standardmäßig wird die erste verfügbare Abonnementnummer ausgewählt, wenn das zuvor ausgewählte Abonnement keine Service-Level für Datei- und Objektspeicher enthält.
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone-Abonnements > Objekte*.
+. Wählen Sie die Abonnementnummer aus. Standardmäßig wird die erste verfügbare Abonnementnummer ausgewählt, wenn das zuvor ausgewählte Abonnement keine Leistungsservicelevel für Datei- und Objektspeicher enthält.
 +
 
 NOTE: Bei StorageGRID wird auf dieser Registerkarte die physische Nutzung der Nodes für den Objektspeicher angezeigt.
@@ -80,10 +79,12 @@ image:objects-details.png["Registerkarte „Objekte"]
 ====
 *Verwandte Informationen*
 
-* link:../integrations/aiq-keystone-details.html["Verwenden Sie das Keystone Dashboard und die Berichterstellung"]
-* link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Stromaufnahme"]
-* link:../integrations/capacity-trend-tab.html["Verbrauchstrend"]
-* link:../integrations/assets-tab.html["Ressourcen"]
-* link:../integrations/performance-tab.html["Leistung"]
+* link:../integrations/dashboard-overview.html["Keystone-Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
+* link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"]
+* link:../integrations/performance-tab.html["Performance-Metriken anzeigen"]
 
