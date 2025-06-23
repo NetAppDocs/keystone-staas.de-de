@@ -89,7 +89,7 @@ sidebar:
         url: "/dark-sites/monitor.html"
   - title: Verwalten und Überwachen von Keystone-Abonnements
     entries:
-    - title: Keystone-Dashboard verstehen
+    - title: Das Keystone-Dashboard verstehen
       entries:
       - title: Erfahren Sie mehr über das Keystone-Dashboard
         url: "/integrations/dashboard-overview.html"

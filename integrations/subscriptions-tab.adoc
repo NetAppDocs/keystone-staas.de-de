@@ -111,7 +111,7 @@ image:icon-grey.png["Graues Punktsymbol"] : Es wurde keine Kapazitätsnutzung im
 ====
 *Verwandte Informationen*
 
-* link:../integrations/dashboard-overview.html["Keystone-Dashboard verstehen"]
+* link:../integrations/dashboard-overview.html["Das Keystone-Dashboard verstehen"]
 * link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
 * link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]

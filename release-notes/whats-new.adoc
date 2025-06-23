@@ -33,7 +33,7 @@ Mit dem Keystone-Dashboard in BlueXP können Sie:
 * Bleiben Sie mit den neuesten Informationen zu Ihrer Speicherumgebung auf dem Laufenden.
 
 
-Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:../integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"^].
+Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:../integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"].
 
 
 
@@ -245,7 +245,7 @@ Um Ihre ONTAP-Systemvolumes besser zu machen, wurden zwei neue Tabulatortasten, 
 
 === Verbesserte Suchfunktionen auf Digital Advisor
 
-Die Suchparameter auf dem *Digital Advisor*-Bildschirm enthalten nun die für Keystone Abonnements erstellten Keystone Abonnementnummern und Watchlisten. Sie können die ersten drei Zeichen einer Abonnementnummer oder eines Watchlist-Namens eingeben. Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Das Keystone Dashboard finden Sie im Active IQ Digital Advisor"^].
+Die Suchparameter auf dem *Digital Advisor*-Bildschirm enthalten nun die für Keystone Abonnements erstellten Keystone Abonnementnummern und Watchlisten. Sie können die ersten drei Zeichen einer Abonnementnummer oder eines Watchlist-Namens eingeben. Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Sehen Sie sich das Keystone-Dashboard auf Active IQ Digital Advisor an"^].
 
 
 

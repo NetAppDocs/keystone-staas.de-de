@@ -38,7 +38,7 @@ image:bxp-subscription-timeline.png["Ein Screenshot, der die Abonnement-Zeitleis
 
 *Verwandte Informationen*
 
-* link:../integrations/dashboard-overview.html["Keystone-Dashboard verstehen"]
+* link:../integrations/dashboard-overview.html["Das Keystone-Dashboard verstehen"]
 * link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
 * link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
