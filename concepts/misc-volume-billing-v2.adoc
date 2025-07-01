@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/misc-volume-billing.html 
+permalink: concepts/misc-volume-billing-v2.html 
 keywords: Billing and miscellaneous scenarios 
 summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Konfigurationen, darunter geklonte Volumes, erweiterte Datensicherung und mehr. 
 ---
@@ -14,7 +14,7 @@ summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Kon
 
 
 [role="lead"]
-Das Verständnis der Keystone-Abrechnung für bestimmte Konfigurationen in Version 3 (v3) kann Ihnen helfen, die Servicenutzung zu optimieren und die Kosten zu verwalten. Die Konfigurationen umfassen geklonte Volumes, erweiterten Datenschutz, temporäre Volumes, SnapMirror-Ziele, LUNs und System-/Root-Volumes.
+Das Verständnis der Keystone-Abrechnung für bestimmte Konfigurationen in Version 2 (v2) kann Ihnen helfen, die Servicenutzung zu optimieren und die Kosten zu verwalten. Die Konfigurationen umfassen geklonte Volumes, erweiterten Datenschutz, temporäre Volumes, QoS-Richtlinien, SnapMirror-Ziele, LUNs und System-/Root-Volumes.
 
 
 
@@ -50,21 +50,9 @@ Gelegentlich werden durch ONTAP temporäre Volumes (TMP) beim Verschieben von Vo
 
 
 
-== Abrechnung für SnapMirror Ziele
+== Abrechnung und anpassungsfähige QoS-Richtlinien
 
-Die Preise für SnapMirror-Zielvolumes, egal ob für die Notfallwiederherstellung oder die langfristige Datenaufbewahrung, richten sich nach dem dem Ziel zugewiesenen Leistungsservicelevel. Für den Datenschutz fallen keine zusätzlichen Gebühren an.
-
-
-
-== Abrechnung für LUNs
-
-Bei LUNs erfolgt die Abrechnung auf Basis der Leistungsservicelevel des Volumes.
-
-
-
-== System- und Root-Volumes
-
-System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Service überwacht, jedoch nicht gezählt oder abgerechnet. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.
+Keystone misst den Verbrauch anhand von Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Implementierung werden Sie über die Details der einzelnen anpassungsfähigen QoS-Richtlinien für die abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes die entsprechenden anpassungsfähigen QoS-Richtlinien gemäß den abonnierten Service-Leveln zugewiesen sind, um unerwartete Abrechnungsvorgänge zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"^].
 
 
 

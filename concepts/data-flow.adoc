@@ -22,13 +22,13 @@ Die Daten in Keystone STaaS Systemen fließen über Keystone Collector und die I
 
 Keystone Collector initiiert REST-API-Aufrufe an die Storage Controller und erhält regelmäßig Nutzungsdetails der Controller, wie in diesem Flussdiagramm dargestellt:
 
-image:collector-data-flow-2.png["Zeigt den Datenfluss innerhalb der Kollektorkomponenten an"]
+image:data-collector-flow.png["Zeigt den Datenfluss innerhalb der Kollektorkomponenten an"]
 
 .Legende
-. NetApp Collector initiiert eine HTTPS-Session für das Active-IQ Cloud-Portal.
+. NetApp Keystone Collector stellt eine Verbindung zur Keystone-Cloud her.
 . Die vom Kunden betriebene Firewall erlaubt die Verbindung.
-. Das Active IQ Cloud-Portal akzeptiert die Verbindung und stellt einen Tunnel zum NetApp Collector her.
-. Der NetApp Collector erstellt eine REST-API-Sitzung für die Managementverbindung des Storage Controllers. Er ruft Umgebungsdaten ab und sendet sie an das Active IQ-Portal.
+. Keystone Collector stellt eine REST-API-Verbindung direkt zur Verwaltungsverbindung des Speichercontrollers her oder tunnelt durch Active IQ Unified Manager, um Nutzungs- und Leistungsdaten zu erfassen.
+. Diese Daten werden sicher über HTTPS an die Keystone-Cloud-Komponenten gesendet.
 
 
 
@@ -37,7 +37,7 @@ image:collector-data-flow-2.png["Zeigt den Datenfluss innerhalb der Kollektorkom
 
 Das kontinuierliche Monitoring des Zustands der Storage-Infrastruktur ist eines der wichtigsten Funktionen von Keystone Service. Für Monitoring und Berichterstellung verwendet Keystone die ITOM Monitoring-Lösung. Das folgende Bild beschreibt, wie der Fernzugriff auf den Kundenstandort durch die ITOM-Überwachungslösung gesichert wird. Kunden können die Remote-Sitzungsfunktion aktivieren, damit das Keystone Support-Team eine Verbindung zu überwachten Geräten herstellen kann, um Fehler zu beheben.
 
-image:monitoring-flow-1.png["Datenfluss"]
+image:monitoring-flow-2.png["Datenfluss"]
 
 .Legende
 . Das Gateway der ITOM-Überwachungslösung initiiert eine TLS-Sitzung zum Cloud-Portal.

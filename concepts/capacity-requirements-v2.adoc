@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/capacity-requirements.html 
+permalink: concepts/capacity-requirements-v2.html 
 keywords: storage capacity requirement for service levels, capacity definition per PSL, 
 summary: Die Kapazitätsanforderungen für Service-Levels unterscheiden sich vom durch das Keystone STaaS Abonnement unterstützten File-, Block-, Objekt- oder Cloud-Storage. 
 ---
@@ -14,60 +14,34 @@ summary: Die Kapazitätsanforderungen für Service-Levels unterscheiden sich vom
 
 
 [role="lead"]
-Die Kapazitätsanforderungen für die Leistungsservicelevel von Keystone STaaS in Version 3 (v3) unterscheiden sich zwischen den vom Keystone STaaS-Abonnement unterstützten einheitlichen, blockoptimierten, Objekt- oder Cloud-Speicherangeboten.
+Die Kapazitätsanforderungen für die Leistungsservicelevel von Keystone STaaS in Version 2 (v2) unterscheiden sich zwischen den vom Keystone STaaS-Abonnement unterstützten Datei-, Block-, Objekt- oder Cloud-Speicherangeboten.
 
 
 
-== Mindestkapazitätsanforderungen für einheitlichen und blockoptimierten Speicher
+== Mindestkapazitätsanforderungen für File- und Block-Services
 
-Die pro Abonnement zulässige Mindestkapazität und inkrementelle Kapazität für einheitlichen und blockoptimierten Speicher können Sie den folgenden Tabellen entnehmen:
-
-*Unified Storage*
+Die minimale Kapazität und die inkrementelle Kapazität, die pro Abonnement zulässig ist, werden in der folgenden Tabelle beschrieben. Die Mindestkapazität pro Leistungsservicelevel ist für alle Keystone-Verkaufsaktionen gleich definiert. Die Kapazität über der minimalen Kapazität, sei es zu Beginn des Abonnements, als Add-on-Service für das Abonnement oder nach der Optimierung während des Abonnements, ist ebenfalls in der Tabelle gegliedert.
 
 |===
 
 
-| Kapazität | Extrem | Premium | Standard | Wert 
+| Kapazität | Extrem | Premium | Leistung | Standard | Wert 
 
 
  a| 
 Minimale Kapazität [in tib]
-2+| 50 2+| 100 
+3+| 25 2+| 100 
 
 
  a| 
 Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]
-4+| 25 
+3+| 25 2+| 25 
 
 
  a| 
 Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]
-4+| 25 
+3+| 25 2+| 25 
 |===
-*Blockoptimierter Speicher*
-
-|===
-
-
-| Kapazität | Extrem | Premium 
-
-
- a| 
-Minimale Kapazität [in tib]
-2+| 50 
-
-
- a| 
-Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]
-2+| 25 
-
-
- a| 
-Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]
-2+| 25 
-|===
-Die Mindestkapazität für jedes Leistungsservicelevel ist bei allen Keystone-Verkäufen gleich.
-
 
 
 == Mindestkapazitätsanforderungen für Objekt-Storage
@@ -77,48 +51,46 @@ In der folgenden Tabelle werden die Mindestanforderungen an die Kapazität für 
 |===
 
 
-| Kapazität | Standard | Wert 
+| Kapazität | Daten-Tiering | Objekt | Cloud Volumes ONTAP | Cloud Backup Service 
 
 
  a| 
-Mindestkapazität [in TiB] pro Bestellung
-| 200 | 500 
-
-
+Minimale Kapazität [in tib]
  a| 
-Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]
-| 25 | 100 
-
-
+Keine Angabe
  a| 
-Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]
-| 25 | 100 
-|===
-
-
-== Mindestkapazitätsanforderungen für Cloud-Dienste
-
-Die Mindestkapazitätsanforderungen für Cloud-Dienste können Sie der folgenden Tabelle entnehmen:
-
-|===
-
-
-| Kapazität | Cloud Volumes ONTAP 
-
-
+500
  a| 
-Mindestkapazität [in TiB] pro Bestellung
-| 4 
+4
+ a| 
+4
+
 
 
  a| 
 Inkrementelle Kapazität (und in Vielfachen) beim Start des Abonnements zulässig [in tib]
-| 1 
+ a| 
+Keine Angabe
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
 
 
  a| 
 Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in tib]
-| 1 
+ a| 
+Keine Angabe
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
 |===
 
 
@@ -127,7 +99,7 @@ Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements
 Erfahren Sie mehr über Kapazitätsanpassungen:
 
 * Die Kapazität kann während der Laufzeit jederzeit (mit Ausnahme der letzten 90 Tage der Vertragslaufzeit) in den in den Tabellen im vorherigen Abschnitt beschriebenen Schritten pro Leistungsservicelevel hinzugefügt werden. Das Hinzufügen von Kapazitäten oder Diensten ist innerhalb der letzten 90 Tage der Vertragslaufzeit zulässig, sofern eine Zustimmung zur Dienstverlängerung vorliegt. Jede zusätzliche Kapazität und jeder neue Service vor Ort oder in der Cloud können mit der bestehenden Laufzeit in Verbindung stehen. Die Rechnung, die Ihnen nach Aktivierung der neuen Services zugesandt wurde, entspricht der überarbeiteten Abrechnung. Die verplante Kapazität von Cloud-Services kann während der Abonnementdauer an keinem Punkt verringert werden. In der Zwischenzeit können die zugewisserten Kapazitäten und die für die On-Premises-Services während der Vertragslaufzeit erforderlichen Ausgaben aufgrund bestimmter Kriterien, wie im folgenden Abschnitt _Kapazitätsreduzierung_ definiert, verringert werden.
-* An jedem Standort steht mithilfe der Keystone-Vereinbarung ein Burst-Speicherplatz zur Verfügung. Normalerweise wird es bis zu 20 % über der zugesagten Kapazität für ein Leistungsservicelevel festgelegt. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Wenn der zusätzliche Burst-Bedarf größer ist als die vereinbarte Kapazität, wenden Sie sich an den Support.
+* An jedem Standort steht mithilfe der Keystone-Vereinbarung ein Burst-Speicherplatz zur Verfügung. Normalerweise liegt es 20 % über der zugesagten Kapazität für ein Leistungsservicelevel. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Wenn der zusätzliche Burst-Bedarf größer ist als die vereinbarte Kapazität, wenden Sie sich an den Support.
 * Die verplante Kapazität kann während einer Vertragslaufzeit nur unter bestimmten Bedingungen geändert werden, wie im folgenden Abschnitt _Kapazitätsreduzierung_ beschrieben.
 * Eine Kapazitätserhöhung oder ein Wechsel zu einem Servicelevel mit höherer Leistung während der Abonnementlaufzeit ist zulässig. Ein Wechsel von einem Servicelevel mit höherer Leistung zu einem Servicelevel mit niedrigerer Leistung ist jedoch nicht zulässig.
 * Jede Änderungsanfrage in den letzten 90 Tagen der Servicezeit erfordert eine Erneuerung des Services für mindestens ein Jahr.

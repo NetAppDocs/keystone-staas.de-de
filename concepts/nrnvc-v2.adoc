@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: concepts/nrnvc-v2.html 
+keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
+summary: Im Rahmen Ihres NetApp Keystone Abonnements erweitert NetApp das NRNVC-Angebot für Ihre File-, Block- und Objekt-Services. 
+---
+= Non-Returnable, nichtflüchtige Komponenten und SnapLock Compliance
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Rahmen Ihres NetApp Keystone Abonnements erweitert NetApp das Angebot von nichtflüchtigen Komponenten zur Einwegnahme (Non-Volatile Components, NRNVC) für Ihre File-, Block- und Objekt-Services.
+
+NetApp stellt die während der gesamten Servicezeit verwendeten physischen Storage-Medien oder bei einer Beendigung der Services nicht wieder her, wenn NetApp anderenfalls alle bei der Erbringung des Service genutzten physischen Ressourcen wiederherstellt.
+
+Diesen Add-on-Service können Sie als Teil Ihres Keystone Abonnements abonnieren. Wenn Sie diesen Service erworben haben, beachten Sie Folgendes:
+
+* Sie müssen am Ende der Laufzeit keine Laufwerke und keinen nichtflüchtigen Speicher zurückgeben, falls sie ausgefallen sind oder während der Laufzeit des Service defekt waren.
+* Sie müssen jedoch eine Bescheinigung über die Vernichtung der Laufwerke und/oder des nicht-flüchtigen Speichers vorlegen und können nicht für andere Zwecke verwendet werden.
+* Die zusätzlichen Kosten für den NRNVC werden als Prozentsatz der monatlichen Gesamtrechnung für Abonnementservices (einschließlich Standard-Service, erweiterte Datensicherung und Daten-Tiering) berechnet.
+* Dieser Service ist nur für File-, Block- und Objekt-Services anwendbar.
+
+
+Informationen zu den Standard- und Cloud-Diensten finden Sie unter link:supported-storage-services.html["Keystone STaaS Services"].
+
+Informationen zu Performance-Service-Levels finden Sie unter link:../concepts/service-levels.html["Leistungsservice-Levels in Keystone"] .
+
+
+
+== SnapLock-Compliance
+
+Die SnapLock-Technologie aktiviert die NRNVC-Funktion, indem das Laufwerk nach dem im Volume festgelegten Ablaufdatum unbrauchbar wird. Um die SnapLock-Technologie auf Ihren Volumes nutzen zu können, müssen Sie NRNVC abonnieren. Dies gilt nur für File- und Block-Services.
+
+Informationen zur SnapLock-Technologie finden Sie unter https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["Was ist SnapLock"^].

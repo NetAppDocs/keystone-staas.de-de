@@ -37,6 +37,10 @@ Die Registerkarte *Volumes & Objekte* bietet Einblicke in ONTAP System-Volumes u
 Für das ausgewählte Keystone STaaS Abonnement können Sie die Gesamtanzahl der Volumes, ihren QoS-Compliance-Status, die Anzahl der geschützten Volumes und die gesamte gebuchte, verbrauchte und verfügbare Kapazität in allen diesen Volumes anzeigen. Wenn Sie auf die Anzahl der nicht kompatiblen oder geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste anzeigen können, die entweder die nicht kompatiblen Volumes oder die geschützten Volumes anzeigt, basierend auf Ihrer Auswahl.
 
 +
+
+NOTE: QoS-Richtlinien sind in Keystone Version 3 (v3) nicht anwendbar.
+
++
 image:volume-summary-2.png["Registerkarte „Volume Summary“"]
 
 
@@ -48,6 +52,10 @@ image:volume-summary-2.png["Registerkarte „Volume Summary“"]
 . Wählen Sie die Abonnementnummer aus.
 +
 Sie können die tabellarische Auflistung der Volumes sehen, beispielsweise Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und die zugewiesenen Keystone-Leistungsservicelevel. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
+
++
+
+NOTE: QoS-Richtlinien sind in Keystone Version 3 nicht anwendbar.
 
 +
 Sie können *Spalten ausblenden/einblenden* verwenden, um Spalten hinzuzufügen oder zu entfernen, die in der Tabelle angezeigt werden. Standardmäßig sind alle Spalten mit Ausnahme der Spalte *Abteilung* ausgewählt. Sie können alle Spalten auswählen oder die Auswahl aufheben, einschließlich der Spalte *Abteilung*, und Ihre Einstellungen werden für die spätere Verwendung gespeichert. Wenn Sie den CSV-Bericht herunterladen, werden die Details der Spalte *Abteilung* bei Auswahl berücksichtigt, während andere Spalten unabhängig von ihrem Auswahlstatus in der Tabelle angezeigt werden.

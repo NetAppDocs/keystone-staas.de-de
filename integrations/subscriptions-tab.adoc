@@ -94,14 +94,10 @@ TIP: Wenn Sie den Add-on-Service für erweiterte Datensicherung abonniert haben,
 ** image:subs-dtls-icon.png["Symbol"]: Wenn Sie auf dieses Symbol für ein Abonnement klicken, wird der Tab *Aktueller Verbrauch* mit den Nutzungsdetails des Abonnements geöffnet.
 ** image:aiq-ks-time-icon.png["Symbol"] : Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Verbrauchstrend* geöffnet, auf der Sie die historischen Nutzungsdaten für jedes in diesem Abonnement enthaltene Leistungsservicelevel anzeigen können.
 +
-Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
+Sie können den Nutzungsstatus jedes Abonnements anhand der Nutzungsindikatoren überprüfen:
 
 +
-image:usage-indicator-2.png["Symbol"]
-
-+
-.Indizieren
-image:icon-grey.png["Graues Punktsymbol"] : Es wurde keine Kapazitätsnutzung im Vergleich zur zugesagten Kapazität des Leistungsservicelevels erfasst image:icon-green.png["Grünes Punktsymbol"] : Der Verbrauch ist normal, innerhalb von 80 % der zugesagten Kapazität image:icon-amber.png["Gelbes Punktsymbol"] : Maximaler Verbrauch, d. h. die Nutzung erreicht bald 100 % oder mehr der zugesicherten Kapazität. Die Spalte *Verbraucht* zeigt diesen Indikator für jeden Verbrauch über 80 % der zugesicherten Kapazität an. image:icon-red.png["Rotes Punktsymbol"] : Der Verbrauch liegt innerhalb des Burst-Limits. Der Burst-Verbrauch ist der Verbrauch, der die zugesicherte Kapazität eines Leistungsservicelevels von 100 % übersteigt und innerhalb des vereinbarten Burst-Nutzungslimits liegt, z. B. 120 %. image:icon-purple.png["Violettes Punktsymbol"] : Zeigt einen Verbrauch über der festgelegten Burst-Grenze an
+image:icon-grey.png["Graues Punktsymbol"] *Kein Verbrauch*: Im Vergleich zur zugesagten Kapazität des Leistungsservicelevels wurde keine Kapazitätsnutzung erfasst. image:icon-green.png["Grünes Punktsymbol"] *Normal*: Der Verbrauch ist normal. image:icon-amber.png["Gelbes Punktsymbol"] *Hoch*: Maximaler Verbrauch, d. h. die Nutzung erreicht bald 100 % oder mehr der zugesagten Kapazität. image:icon-red.png["Rotes Punktsymbol"] *Burst*: Der Verbrauch liegt innerhalb des Burst-Limits. Der Burst-Verbrauch ist der Verbrauch, der die zugesagte Kapazität eines Leistungsservicelevels von 100 % übersteigt und innerhalb des vereinbarten Burst-Nutzungslimits liegt. image:icon-purple.png["Violettes Punktsymbol"] *Über Burst-Grenze*: Zeigt einen Verbrauch über der vereinbarten Burst-Grenze an.
 
 
 

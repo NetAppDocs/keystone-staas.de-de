@@ -18,6 +18,12 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
+== 1 2025-06-30
+
+Sie können jetzt Keystone Version 3 (v3), die neueste Version des NetApp Keystone STaaS-Angebots, abonnieren. Diese Version bietet zahlreiche Verbesserungen, darunter vereinfachte Performance-Service-Levels, zusätzliche Burst-Kapazitätsoptionen und flexible Abrechnungsintervalle. Diese Verbesserungen vereinfachen die Verwaltung, Optimierung und Skalierung von Speicherlösungen. Weitere Informationen finden Sie unter link:../concepts/metrics.html["Keystone STaaS-Dienste für v3"].
+
+
+
 == 1 2025-06-19
 
 
@@ -219,11 +225,11 @@ Die QuickInfo, die angezeigt wird, wenn Sie den Mauszeiger über dem Balkendiagr
 
 Sie können sich nun Verlaufsdaten ansehen, wenn ein Keystone Abonnement geändert oder verlängert wird. Sie können das Startdatum eines Abonnements auf ein vorheriges Datum einstellen, um Folgendes anzuzeigen:
 
-* Verbrauchsdaten und aufgelaufene Burst-Nutzungsdaten aus der Registerkarte *Capacity Trend*,
-* Leistungskennzahlen von ONTAP-Volumes aus der Registerkarte *Performance*,
+* Daten zum Verbrauch und zur aufgelaufenen Burst-Nutzung von der Registerkarte *Kapazitätstrend*.
+* Leistungsmetriken von ONTAP-Volumes aus der Registerkarte *Leistung*.
 
 
-Alle zeigen die Daten basierend auf dem ausgewählten Datum des Abonnements an.
+Die Daten werden basierend auf dem ausgewählten Startdatum des Abonnements angezeigt.
 
 
 

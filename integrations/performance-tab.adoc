@@ -42,15 +42,15 @@ Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der
 
 
 
-== IOPS/tib
+== IOPS
 
-In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Die Spitzen-IOPS für das Leistungsservicelevel und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/TiB angezeigt.
+In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Angezeigt werden die Spitzen-IOPS für das Performance-Servicelevel und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/Tib.
 
 image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
 
 
 
-== Durchsatz (MB/s/tib)
+== Durchsatz
 
 In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Leistungsservicelevel (SLO Max) und der aktuelle Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitraum in MBps/TiB angezeigt.
 

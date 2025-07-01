@@ -14,21 +14,27 @@ summary: Keystone ist ein wachstumbasiertes abonnementbasiertes Servicemodell f�
 
 
 [role="lead"]
-NetApp Keystone (Keystone) ist ein abonnementbasiertes Servicemodell, bei dem das nutzungsbasierte Pay-as-you-grow-Modell bietet Unternehmen nahtloses Hybrid-Cloud-Modell, bei dem sie lieber Betriebskosten als vorab- oder Leasingmodelle bevorzugen.
+NetApp Keystone ist ein nutzungsbasiertes Servicemodell auf Abonnementbasis, das Unternehmen, die zur Erfüllung ihrer Anforderungen an Datenspeicherung und -sicherung Verbrauchsmodelle für die Betriebskosten gegenüber Vorabinvestitionen oder Leasing bevorzugen, ein nahtloses Hybrid-Cloud-Erlebnis bietet.
 
-Keystone ermöglicht Kunden eine schnellere Amortisierung, indem es Hürden beim Management des unvorhersehbaren Kapazitätswachstums und der komplexen Beschaffungszyklen beseitigt. Keystone ermöglicht Kunden, die Wirtschaftlichkeit und den Betrieb auf ihre Geschäftsprioritäten abzustimmen.
+Mit Keystone profitieren Sie von:
 
-image:nkfsosm_image2.png["keystone"]
+* *Kosteneffizienz*: Zahlen Sie nur für den Speicherplatz, den Sie benötigen, und haben Sie die Flexibilität, zusätzliche Kapazitäten zu nutzen.
+* *Kapitaleffizienz*: Greifen Sie ohne Vorabinvestitionen auf Speicher auf Unternehmensebene zu.
+* *Skalierbarkeit*: Skalieren Sie Ihre Speicherkapazität problemlos, wenn Ihr Unternehmen wächst.
+* *Anpassung*: Passen Sie Ihre Speicherpläne an und wechseln Sie nach Bedarf in die Cloud, um Ihre Gesamtkosten zu optimieren.
+* *Cloud-Integration*: Kombinieren Sie lokale und Cloud-Dienste in einem Abonnement.
+* *Sicherheit*: Schützen Sie Ihre Daten mit erweiterten Sicherheitsmaßnahmen und garantierter Wiederherstellung nach Bedrohungen.
 
-Keystone bietet Speicherkapazität auf vordefinierten Leistungsserviceleveln für Block-, Datei- und Objektdatentypen, die vor Ort bereitgestellt und von NetApp, einem Partner oder dem Kunden betrieben werden können. Keystone kann in Verbindung mit NetApp Cloud-Services verwendet werden, z. B. Cloud Volumes ONTAP, die in einer Hyperscaler-Umgebung Ihrer Wahl implementiert werden können.
 
-Ein Keystone Abonnement ist mit Tarifplänen verknüpft. Es können mehrere Tarifpläne zu einem einzigen Abonnement beigefügt werden.
+image:keystone-benefit-1.png["Keystone-Vorteile"]
+
+Keystone bietet Speicherkapazität mit vordefinierten Leistungsserviceleveln für Datei-, Block- und Objektspeichertypen. Dieser Speicher kann vor Ort bereitgestellt und von NetApp, einem Partner oder dem Kunden betrieben werden. Keystone kann in Verbindung mit NetApp Cloud-Services verwendet werden, z. B. Cloud Volumes ONTAP, die in einer Hyperscaler-Umgebung Ihrer Wahl implementiert werden können.
 
 
 
 == Keystone Storage-as-a-Service (STaaS)
 
-Mit Storage-als-Service-Angeboten (STaaS) wird ein Public-Cloud-ähnliches Modell für die Beschaffung, Implementierung und das Management von Storage-Infrastruktur bereitgestellt. Der Großteil der Unternehmen arbeitet immer noch an ihrer Hybrid-Cloud-Strategie, doch Sie als Kunde können sich für ein auf Betriebskosten basierendes „ Pay-per-use“ -Nutzungsmodell entscheiden. Unter Umständen gibt es ein Mandat, um alle Workloads in die Cloud zu verschieben – ohne dabei aber einen klaren Plan oder Zeitplan für die Migration bestimmter Teile oder aller Workloads in die Cloud zu haben. Keystone STaaS bietet Ihnen die Flexibilität, mit On-Premises-Services zu beginnen und später die richtigen Workloads zu finden und in die Cloud zu wechseln. Keystone STaaS bietet Schutz für alle Implementierungsmodelle. Anstatt mehr für Cloud-Services zu bezahlen, können Sie als On-Premises-Kunde Ihre On-Premises-Ausgaben neu zuordnen und so Cloud-Services hinzufügen. Sie bezahlen im Wesentlichen dieselbe monatliche Rechnung, die vor dieser Neuzuweisung festgelegt wurde.
+Mit Storage-als-Service-Angeboten (STaaS) wird ein Public-Cloud-ähnliches Modell für die Beschaffung, Implementierung und das Management von Storage-Infrastruktur bereitgestellt. Während viele Unternehmen noch an ihrer Strategie für die Hybrid Cloud arbeiten, bietet Keystone STaaS die Flexibilität, mit lokalen Diensten zu beginnen und zu gegebener Zeit in die Cloud zu wechseln. So können Sie Ihre Verpflichtungen über verschiedene Bereitstellungsmodelle hinweg erfüllen und Ihre Ausgaben nach Bedarf umverteilen, ohne Ihre monatliche Rechnung zu erhöhen.
 
 *Verwandte Informationen*
 

@@ -49,10 +49,14 @@ image:bxp-current-consumption-table.png["Stromverbrauchsdetails in Tabellenform"
 . Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone-Abonnements > Aktueller Verbrauch*.
 . Wählen oder suchen Sie die gewünschte Abonnementnummer aus der Dropdown-Liste *Abonnement*.
 +
-image:aiq-ks-dtls-3.png["Registerkarte Stromaufnahme"]
+image:aiq-ks-dtls-4.png["Registerkarte Stromaufnahme"]
 
 +
 Für das ausgewählte Abonnement können Sie Details wie das Start- und Enddatum des Abonnements sowie den Abrechnungszeitraum, z. B. monatlich oder jährlich, anzeigen. Im Rahmen der Abonnementnutzung können Sie den Namen des Performance-Servicelevels, die zugesagten, verbrauchten und verfügbaren Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung (in TiB) anzeigen. Bestimmte Performance-Servicelevel mit höherem Verbrauch werden hervorgehoben. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+
++
+
+NOTE: Mit Keystone Version 3 (v3) können Sie aktuelle Verbrauchsdetails für jede Instanz des Performance-Service-Levels anzeigen. Wenn Sie beispielsweise zwei Instanzen des Performance-Service-Levels „Extrem“ innerhalb eines Abonnements haben, zeigt jede Instanz ihre eigenen zugesagten, verbrauchten und verfügbaren Kapazitäten separat an. Weitere Informationen zu den Performance-Service-Levels finden Sie unter link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"] .
 
 +
 Zusammen mit dem aktuellen Verbrauch können Sie die historischen Nutzungsdaten zum Vergleich anzeigen. Klicken Sie auf die Schaltfläche *Historische Daten anzeigen*, um zur Registerkarte *Verbrauchstrend* zu navigieren, um die historischen Daten für dasselbe Abonnement anzuzeigen.

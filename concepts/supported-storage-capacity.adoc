@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/supported-storage-capacity.html 
 keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
-summary: Erfahren Sie mehr über die Arten von Storage-Kapazitäten, die vom NetApp Keystone STaaS Service unterstützt werden. 
+summary: Informieren Sie sich über die Speicherkapazitätstypen, die vom NetApp Keystone STaaS-Dienst für Version 3 unterstützt werden. 
 ---
 = Unterstützte Storage-Kapazitäten in Keystone
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Erfahren Sie mehr über die Arten von Storage-Kapazitäten, die vom Net
 
 
 [role="lead"]
-Der NetApp Keystone STaaS Service unterstützt mehrere Arten von Storage-Kapazitäten. Das Verständnis dieser unterschiedlichen Kapazitätsbegriffe kann bei der Verwendung von Keystone hilfreich sein.
+Der NetApp Keystone STaaS-Dienst für Version 3 (v3) unterstützt mehrere Arten von Speicherkapazitäten. Das Verständnis dieser unterschiedlichen Kapazitätsbegriffe kann bei der Verwendung von Keystone hilfreich sein.
 
 
 
 == Logische Kapazität
 
-Dies sind die Daten, die ein Kunde in der Keystone Infrastruktur abgelegt. Alle Keystone Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Keystone Infrastruktur gespeichert ist, sollte mindestens 1 tib Kapazität erworben werden.
+Dies ist die Speicherkapazität, die zum Speichern von Benutzerdaten erforderlich ist, bevor die vom Speicherarray bereitgestellten Dateneffizienzen angewendet werden.
 
 
 
@@ -29,7 +29,7 @@ Dies sind die Daten, die ein Kunde in der Keystone Infrastruktur abgelegt. Alle 
 Die minimale logische Kapazität, die während des Abonnements monatlich in Rechnung gestellt wird:
 
 * Jedem Service Level ist die Kapazität zugeordnet.
-* Verplante Kapazität und zusätzliche Service Level können während der Laufzeit hinzugefügt werden.
+* Während der Laufzeit können gebundene Kapazitäten und zusätzliche Leistungsservice-Levels hinzugefügt werden.
 
 
 
@@ -40,29 +40,48 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 * Die zuges. Kapazität kann unter bestimmten Bedingungen verringert werden. Weitere Informationen finden Sie unter link:../concepts/capacity-requirements.html["Senkung der Kapazität"].
 * Die gebuchte Kapazität kann 90 Tage vor Ablauf Ihres Abonnements nicht erhöht werden, es sei denn, das Abonnement muss für eine zusätzliche 12-monatige Laufzeit verlängert werden.
-* Sie können Änderungen an der zugesagt Kapazität über die BlueXP-Schnittstelle oder über Keystone Success Manager (KSM) anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Keystone-Support"].
+* Sie können Änderungen an der zugesagten Kapazität über die BlueXP-Schnittstelle oder von Ihrem Keystone Success Manager (KSM) anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Keystone-Support"].
 
 
 
 
 == Verbrauchte Kapazität
 
-Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die derzeit auf dem Service verwendet wird. Es ist die Summe aus:
+Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die derzeit auf dem Service verwendet wird. Die Berechnung erfolgt je nach Speichertyp unterschiedlich:
 
-* Logische Kapazität zur Speicherung aller Instanzen und Typen von Benutzerdaten (wie Kopien, gespiegelte Kopien und Versionen).
-* Logische Kapazität, die für die Speicherung von Klon-Volumes verwendet wird, die mehr als 10 % der Größe des ursprünglichen Volumes betragen.
-* Die physische Kapazität, die zur Speicherung der differenziellen Daten von Snapshot-Kopien verwendet wird.
-* Die zugewiesene physische Kapazität.
+* *Einheitlicher oder blockoptimierter Speicher*: Die verbrauchte Kapazität wird basierend auf dem in der Bestellung ausgewählten Kapazitätstyp berechnet, der entweder logische oder physische Kapazität sein kann. Die Berechnung erfolgt pro Performance-Service-Level-Instanz.
++
+.. *Logische Kapazität*: Sie ist die Summe aus:
++
+*** Gemessene logische Kapazität vor Dateneffizienz des Speicherarrays zum Speichern aller Instanzen und Typen von Kundendaten, z. B. Kopien, gespiegelte Kopien, Versionen und Klone.
+*** Physische Kapazität, die zum Speichern von Metadaten und differenziellen Daten von Snapshots und bestimmten Klonen verwendet wird.
+*** Jede physisch bereitgestellte Kapazität mit hoher Kapazität.
+
+
+.. *Körperliche Leistungsfähigkeit*: Sie setzt sich zusammen aus:
++
+*** Gemessene physische Kapazität, nach Dateneffizienz des Speicherarrays, zum Speichern aller Instanzen und Typen von Kundendaten, wie Kopien, gespiegelte Kopien, Versionen, Klone.
+*** Physische Kapazität zum Speichern von Metadaten und differenziellen Daten von Snapshots.
+*** Jede physisch bereitgestellte Kapazität mit hoher Kapazität.
+
+
+
+
+* *Objektspeicher*: Die verbrauchte Kapazität wird als die gemessene physische Kapazität berechnet, die zum Speichern aller Instanzen und Typen von Kundendaten auf allen Knoten verwendet wird. Diese Berechnung basiert auf den konfigurierten Richtlinien für das Information Lifecycle Management (ILM).
+* *Cloud Volumes ONTAP*: Die verbrauchte Kapazität wird als Menge der gemessenen bereitgestellten Kapazität aller Cloud Volumes ONTAP-Volumes berechnet.
 
 
 
 
 == Burst-Kapazität
 
-Mit Keystone Service können Sie zusätzlich Kapazität für einen Service Level nutzen. Dies ist die Burst-Kapazität. Beachten Sie folgende Punkte:
+Mit dem NetApp Keystone STaaS-Service können Sie zusätzlich zur zugesicherten Kapazität für einen Performance-Servicelevel zusätzliche Kapazität nutzen. Dies wird als Burst-Kapazitätsnutzung bezeichnet.
 
-* Burst-Kapazität wird in der Keystone Vereinbarung vereinbart. Sie ist in der Regel bis zu 20 % über der festgelegten Kapazität angelegt und wird mit der gleichen Rate wie die zugesagt Kapazität berechnet.
-* Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis für den verbrauchten Durchschnitt berechnet.
+Beachten Sie folgende Punkte:
+
+* Burst-Kapazität wird in der Keystone Vereinbarung vereinbart. Normalerweise wird es pro Instanz des Performance-Service-Levels auf bis zu 20 % über der zugesagten Kapazität eingestellt, wobei zusätzliche Optionen zur Auswahl von Burst-Kapazitätsgrenzen von 40 % oder 60 % der zugesagten Kapazität verfügbar sind.
+* Der Verbrauch der Burst-Kapazität wird zum gleichen Satz in Rechnung gestellt wie die zugesagte Kapazität, die dem ausgewählten Leistungsservicelevel entspricht.
+* Keystone STaaS-Dienste bieten eine Verzichtsfrist von 60 Tagen ab dem Startdatum.
 
 
 

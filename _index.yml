@@ -1,18 +1,17 @@
 ---
 indexpage:
   title: Keystone Dokumentation
-  summary: NetApp Keystone ist ein nutzungsbasiertes Storage-as-a-Service-Angebot.
-    Datenservices für lokalen Storage und die Cloud sind dabei in einem Abonnement
-    zusammengefasst, und die Storage-Ausgaben können Cloud-übergreifend neu zugeordnet
-    werden.
+  summary: NetApp Keystone ist ein nutzungsbasiertes Storage-as-a-Service-Angebot
+    für lokale und Cloud-Datenspeicherdienste im Rahmen eines Abonnements mit der
+    Möglichkeit, Speicherausgaben auf verschiedene Clouds umzuverteilen.
   keywords: Keystone STaaS
-  lead: NetApp Keystone ist ein flexibler abonnementbasierter Pay-as-you-grow-Service.
-    Er bietet eine nahtlose Hybrid-Cloud-Erfahrung für Kunden, die lieber auf Betriebskosten
-    oder auf Investitionskosten oder Leasing setzen. Mit diesem Service können Sie
-    die Amortisierung beschleunigen, indem Sie die IT VON der Last des Managements
-    der Ressourcen und des langatmigen Beschaffungszyklus befreien. Durchsuchen Sie
-    die Dokumente in dieser Bibliothek, um mehr über das NetApp Keystone StaaS Angebot
-    in Ihrer ONTAP- oder StorageGRID-Umgebung zu erfahren.
+  lead: NetApp Keystone ist ein flexibler, nutzungsbasierter Abonnementservice, der
+    Kunden, die Betriebskosten gegenüber Investitionen oder Leasing bevorzugen, ein
+    nahtloses Hybrid-Cloud-Erlebnis bietet. Mit diesem Service können Sie die Amortisierung
+    beschleunigen, indem Sie die IT VON der Last des Managements der Ressourcen und
+    des langatmigen Beschaffungszyklus befreien. In der Dokumentation dieser Bibliothek
+    erfahren Sie mehr über das NetApp Keystone Storage-as-a-Service (STaaS)-Angebot
+    in Ihrer ONTAP- oder StorageGRID-Umgebung.
   tiles:
   - title: Los geht's
     links:
@@ -65,6 +64,8 @@ indexpage:
     links:
     - title: Kennen Sie Ihr Support-Team
       url: "/concepts/gssc.html"
+    - title: Erhöhen Sie die Burst-Kapazität
+      url: "/concepts/burst-capacity.html"
     - title: Was kann ich mit meinen kalten oder weniger genutzten Daten tun?
       url: "/concepts/data-tiering.html"
     - title: Wie kann ich meine Keystone Daten schützen?

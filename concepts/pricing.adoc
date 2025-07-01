@@ -14,14 +14,14 @@ summary: Keystone bietet ein Pay-as-you-grow-Modell für Ihren flexiblen und ska
 
 
 [role="lead"]
-Wenn Sie ein Nutzungsmodell für Betriebskosten statt Investitionskosten oder Leasing bevorzugen, können Sie sich für das Pay-as-you-grow-Modell von NetApp Keystone STaaS entscheiden. Es bietet eine flexible und skalierbare Nutzung mit vorhersehbaren Vorabpreisen für Ihr Storage-Abonnement.
+Der nutzungsbasierte Abonnementdienst NetApp Keystone STaaS bietet flexiblen und skalierbaren Verbrauch mit vorhersehbaren und im Voraus festgelegten Preisen für Ihren Speicherbedarf.
 
-Keystone bietet Ihnen folgende Abrechnungsmöglichkeiten:
+Keystone für Version 3 (v3) bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
 
-* Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Die verschiedenen Performance-Service-Tiers: Extreme, Premium, Performance, Standard, Value, Zudem können Sie mithilfe von Object Ihren erworbenen Service-Level Storage managen.
+* Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Die verschiedenen Leistungsservicestufen – Extreme, Premium, Standard, Value, Object und Cloud Volumes ONTAP – ermöglichen Ihnen die Verwaltung Ihres Speichers basierend auf dem von Ihnen erworbenen Servicelevel.
 * Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.
-* Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie verfügen über eine einzelne Rechnung für jeden Storage-Typ, jeden File-, Block-, Objekt- oder Cloud-Storage-Service.
-* Wählen Sie einen flexiblen Begriff für die Services und die Zahlung aus: Sie können sich für 12 Monate, 25 tib oder mehr pro Standort entscheiden. Danach können Sie die automatische Verlängerung für 12 Monate fortsetzen.
+* Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie erhalten für jeden Speichertyp (vereinheitlichte, Block-, optimierte, Objekt- oder Cloud-Speicherdienste) eine einzige Rechnung.
+* Sie können die Laufzeit der Dienste und die Zahlungsoptionen flexibel auswählen, beispielsweise monatlich, vierteljährlich, halbjährlich oder jährlich.
 
 
 Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-Nutzung.

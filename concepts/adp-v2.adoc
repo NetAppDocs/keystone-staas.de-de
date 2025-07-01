@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/adp.html 
+permalink: concepts/adp-v2.html 
 keywords: data protection advanced 
 summary: Nutzen Sie den erweiterten Add-on Service für Datensicherheit, um eine effiziente Datensicherung für geschäftskritische Workloads zu gewährleisten. 
 ---

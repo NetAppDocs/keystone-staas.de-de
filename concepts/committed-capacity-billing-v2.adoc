@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/committed-capacity-billing-v2.html 
+keywords: Billing based on committed capacity, committed capacity billing 
+summary: Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. 
+---
+= Abrechnung basiert auf der verplante Kapazität
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei der zugesicherten Kapazität handelt es sich um die Kapazität, die beim Erwerb des Abonnements für ein bestimmtes Leistungsservicelevel zugesichert wurde.
+
+Die zugesicherte Kapazität kann die Gesamtkapazität für verschiedene Leistungsservicelevel in einem einzigen Abonnement sein, wie von Ihnen und NetApp/Partner akzeptiert. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Kapazitätsverbrauch in Rechnung gestellt.
+
+Informationen zu den verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity-v2.html["Unterstützte Storage-Kapazitäten in Keystone"] .

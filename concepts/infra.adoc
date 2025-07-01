@@ -26,15 +26,15 @@ NetApp behält sich das Recht vor, folgende Maßnahmen zu ergreifen:
 
 Die Keystone-Infrastruktur umfasst mehrere Komponenten, u. a. die folgenden:
 
-* Keystone-Infrastruktur, einschließlich Storage-Controllern
-* Tools zum Managen und Betreiben des Service, wie ITOM Monitoring Solution, Active IQ und Active IQ Unified Manager.
+* Die Keystone-Infrastruktur, einschließlich NetApp-Speichersysteme.
+* Tools zum Verwalten und Betreiben des Dienstes wie die ITOM-Überwachungslösung, BlueXP, Active IQ und Active IQ Unified Manager.
 
 
 
 
 == Storage-Plattformen
 
-Enterprise-Applikationen benötigen Storage-Plattformen, um schnelle Bereitstellungs-Workflows zu unterstützen, eine kontinuierliche Verfügbarkeit aufrechtzuerhalten, hohe Workloads mit niedriger Latenz aufrechtzuerhalten, eine höhere Performance zu ermöglichen und die Integration mit führenden Cloud-Providern zu unterstützen. NetApp bietet verschiedene Produkte und Technologien zur Erfüllung dieser Anforderungen. Für den Keystone-Service setzt NetApp AFF und StorageGRID Plattformen ein.
+Unternehmensanwendungen benötigen Speicherplattformen, um schnelle Bereitstellungsabläufe zu unterstützen, kontinuierliche Verfügbarkeit zu gewährleisten, hohe Workloads mit geringer Latenz zu bewältigen, höhere Leistung zu liefern und die Integration mit wichtigen Cloud-Anbietern zu unterstützen. NetApp bietet verschiedene Produkte und Technologien zur Erfüllung dieser Anforderungen. Für den Keystone-Service nutzt NetApp AFF-, ASA- und FAS-Systeme sowie StorageGRID-Systeme.
 
 
 
@@ -45,9 +45,9 @@ In einem vom Keystone Kunden betriebenen Service sind die Storage-Infrastruktur 
 Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und Verbrauchsüberwachung bereitgestellt.
 
 * Keystone IT Operations Management (ITOM) – eine Cloud-basierte SaaS-Applikation zur Überwachung der Keystone Umgebung Die Lösung ist in NetApp Storage-Plattformen integriert, um Umgebungsdaten zu erfassen und die Computing-, Netzwerk- und Storage-Komponenten Ihrer Keystone Infrastruktur zu überwachen. Diese Monitoring-Funktion eignet sich auch für lokale Konfigurationen, Datacenter, Cloud-Umgebungen oder eine beliebige Kombination dieser Optionen. Der Service wird mithilfe eines lokalen ITOM Collectors aktiviert, der an Ihrem Standort installiert ist und mit dem Cloud-Portal kommuniziert.
-* Keystone Data Collector: Keystone Collector bietet Keystone Kunden Abrechnungsservices. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst Daten von ONTAP und StorageGRID Controllern in einem Intervall von fünf Minuten. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Active IQ Data Lake verarbeitet die Abrechnungsdaten und sendet sie zur Abrechnung an Zuora.
+* Keystone Data Collector: Der Keystone Data Collector sammelt Daten und stellt sie der Keystone-Abrechnungsplattform zur weiteren Verarbeitung zur Verfügung. Diese Anwendung wird mit Active IQ Unified Manager gebündelt. Es erfasst Daten von ONTAP und StorageGRID Controllern in einem Intervall von fünf Minuten. Die Daten werden verarbeitet und Metadaten werden über den AutoSupport-Mechanismus an den zentralen Active IQ Data Lake geschickt, der zur Generierung von Abrechnungsdaten verwendet wird. Der Active IQ Data Lake verarbeitet die Abrechnungsdaten und sendet sie zur Abrechnung an Zuora.
 
 
-image:mgmt-stack-2.png["Management-Stack"]
+image:data-collector-flow.png["Collector-Datenfluss"]
 
-Digital Advisor ermöglicht Ihnen die Anmeldung und die Anzeige der Abonnement- und Verbrauchsdetails für Ihre Keystone Abonnements. Weitere Informationen zu Keystone Berichten im Digital Advisor Dashboard finden Sie unter link:../integrations/keystone-aiq.html["Keystone und Digital Advisor"].
+Sie können die Abonnement- und Verbrauchsdetails Ihrer Keystone-Abonnements über BlueXP oder Digital Advisor einsehen. Weitere Informationen zur Keystone-Berichterstellung finden Sie unter link:../integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"] .

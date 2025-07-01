@@ -28,15 +28,8 @@ Sie können Ihre Suche mithilfe der erweiterten Filteroption (sofern verfügbar)
 
 == Generieren Sie Berichte aus BlueXP oder Digital Advisor
 
-Sie können Berichte für Ihre Keystone-Daten erstellen und anzeigen, indem Sie die Download-Schaltfläche in den Registerkarten von BlueXP oder Digital Advisor verwenden. Über diese Registerkarten können Sie Berichte für Ihre Abonnements, Ihre historische Nutzung, Ihre Burst-Nutzung, Ihre Leistung, Ihre Assets, Ihre Volumes und Ihre Objekte erstellen.
+Sie können Berichte für Ihre Keystone-Daten über die Download-Schaltfläche erstellen und anzeigen image:bluexp-download-report-2.png["Bericht-Download-Symbol 2 in BlueXP"] verfügbar in Registerkarten in BlueXP oder Digital Advisor. diese Registerkarten können Sie Berichte für Ihre Abonnements, Ihre historische Nutzung, Ihre Burst-Nutzung, Ihre Leistung, Ihre Assets, Ihre Volumes und Ihre Objekte erstellen.
 
-[cols="1,1"]
-|===
-| Download-Schaltfläche in BlueXP | Download-Schaltfläche im Digital Advisor 
-
-
-| image:bluexp-download-report-1.png["Bericht-Download-Symbol 1 in BlueXP"] Oder image:bluexp-download-report-2.png["Bericht-Download-Symbol 2 in BlueXP"] | image:download-report-da.png["Symbol zum Herunterladen des Berichts"] 
-|===
 Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwendung und den Vergleich speichern können.
 
 
@@ -55,7 +48,7 @@ Weitere Informationen zum Erstellen von Berichten finden Sie unter link:https://
 
 == Warnmeldungen vom Digital Advisor anzeigen
 
-Das Keystone-Dashboard in Digital Advisor bietet Warnmeldungen, die Ihnen helfen, die in Ihrer Speicherumgebung auftretenden Probleme zu verstehen. Diese Benachrichtigungen können als informative Warnungen oder Warnungen angezeigt werden. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Wählen Sie die Warnmeldung aus, um die Liste der nicht konformen Volumes auf der Registerkarte „Volumes & Objekte“ anzuzeigen.
+Das Keystone-Dashboard in Digital Advisor bietet Warnmeldungen, die Ihnen helfen, die in Ihrer Speicherumgebung auftretenden Probleme zu verstehen. Diese Benachrichtigungen können als informative Warnungen oder Warnungen angezeigt werden. Wenn sich beispielsweise bei Keystone Version 2 (v2) in Ihren verwalteten Clustern Volumes befinden, denen keine adaptiven QoS-Richtlinien (AQoS) zugeordnet sind, wird möglicherweise eine Warnmeldung angezeigt. Wählen Sie die Warnmeldung aus, um die Liste der nicht konformen Volumes auf der Registerkarte „Volumes & Objekte“ anzuzeigen.
 
 
 NOTE: Wenn Sie nur ein Leistungsservicelevel oder einen Tarifplan abonniert haben, wird Ihnen die Warnung für nicht konforme Volumina nicht angezeigt.

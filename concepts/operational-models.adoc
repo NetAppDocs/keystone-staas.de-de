@@ -16,15 +16,20 @@ summary: NetApp Keystone STaaS bietet zwei Betriebsmodelle für die Service-Bere
 [role="lead"]
 NetApp Keystone STaaS bietet zwei Betriebsmodelle für die Servicebereitstellung: Modell mit Betrieb durch Partner und Modell mit Betrieb durch den Kunden. Sie sollten diese Optionen genau kennen, bevor Sie mit Keystone beginnen.
 
-* *Vom Partner betriebenes Modell*: Ein Partner oder Dienstleister betreibt die Dienstleistungen für seine Endkunden. Bei NetApp ist der Partner der referenzierte Vertragspartner. Mandanten sind Kunden von Partnern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell nutzt eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter ihre eigenen Abonnements haben, die vom Partner in Rechnung gestellt werden. Der Partneradministrator führt die administrativen Aufgaben für alle Mandanten aus.
-* *Vom Kunden betriebenes Modell*: Als Kunde können Sie Keystone-Services nach Ihren ausgewählten Service-Levels und Storage abonnieren. NetApp definiert die Architektur und das Produkt und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Als Kunde sind Sie der Mandant oder Mandant von NetApp oder einem Partner/Service Provider. Auf der Grundlage Ihres Vertrags können Sie Service-Anfragen stellen, die von NetApp oder Ihrem Service Provider bearbeitet werden müssen. Ein Administrator am Ende kann die administrativen Aufgaben an Ihrem Standort (Ihrer Umgebung) ausführen. Diese Aufgaben sind an die Benutzer in Ihrer Umgebung gebunden.
+* *Partnerbetriebenes Modell*: Dieses Modell bietet zwei Optionen:
++
+** *Serviceprovider*: Ein Serviceprovider betreibt die Services für seine Endkunden. Als Vertragspartner von NetApp verwaltet er eine mandantenfähige Umgebung, in der jeder Mandant, der Kunde des Serviceproviders ist, über ein eigenes Abonnement verfügt, das vom Serviceprovider abgerechnet wird. Der Administrator des Serviceproviders ist für alle administrativen Aufgaben der Mandanten verantwortlich.
+** *Reseller*: Als Reseller fungiert ein Partner als Brücke zwischen NetApp und dem Kunden. Der Partner verkauft Keystone-Services an den Endkunden und verwaltet die Rechnungsstellung. Während der Partner die Abrechnung übernimmt, bietet NetApp dem Kunden direkten Support. Der Keystone-Support interagiert mit dem Kunden und übernimmt alle administrativen Aufgaben für die Mandanten.
+
+
+* *Kundenbetriebenes Modell*: Als Kunde können Sie Keystone-Dienste entsprechend Ihrer gewählten Leistungs-Servicelevel und Speicherkapazität abonnieren. NetApp definiert die Architektur und das Produkt und implementiert Keystone vor Ort. Das Management der Infrastruktur sollte durch Storage- und IT-Ressourcen durchgeführt werden. Auf der Grundlage Ihres Vertrags können Sie Service-Anfragen stellen, die von NetApp oder Ihrem Service Provider bearbeitet werden müssen. Ein Administrator Ihrer Organisation kann die Verwaltungsaufgaben an Ihrem Standort (in Ihrer Umgebung) durchführen. Diese Aufgaben sind den Benutzern in Ihrer Umgebung zugeordnet.
 
 
 
 
 == Rollen und Verantwortlichkeiten über den gesamten Servicezyklus hinweg
 
-* *Partner-Operated Model*: Der Anteil von Rollen und Verantwortlichkeiten hängt vom SLA zwischen Ihnen und dem Dienstleister oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
+* *Partnerbetriebenes Modell*: Die Aufteilung der Rollen und Verantwortlichkeiten hängt von der Vereinbarung zwischen Ihnen und dem Dienstanbieter oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
 * *vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.
 
 
