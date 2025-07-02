@@ -18,7 +18,7 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 
 
-== 1 2025-06-30
+== 30 Juni 2025
 
 
 
@@ -28,7 +28,7 @@ Sie können jetzt Keystone Version 3 (v3), die neueste Version des NetApp Keysto
 
 
 
-== 1 2025-06-19
+== 19 Juni 2025
 
 
 
@@ -43,11 +43,11 @@ Mit dem Keystone-Dashboard in BlueXP können Sie:
 * Bleiben Sie mit den neuesten Informationen zu Ihrer Speicherumgebung auf dem Laufenden.
 
 
-Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:../integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"].
+Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"].
 
 
 
-== 1 2025-01-08
+== 08 Januar 2025
 
 
 
@@ -57,7 +57,7 @@ Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monat
 
 
 
-== 1 2024-12-12
+== Bis 12. Dezember 2024
 
 
 
@@ -79,7 +79,7 @@ Die Registerkarte *Volume Details* in *Volumes & Objects* enthält nun eine Opti
 
 
 
-== 1 2024-11-21
+== 21. November 2024
 
 
 
@@ -101,7 +101,7 @@ Diese Spalten bieten eine bessere Übersichtlichkeit in der Spalte *Logical Used
 
 
 
-== 1 2024-11-11
+== Bis 11. November 2024
 
 
 
@@ -111,7 +111,7 @@ Mit der Funktion „Bericht“ in Digital Advisor können Sie jetzt einen konsol
 
 
 
-== Juli 10, 2024
+== 10 Juli 2024
 
 
 
@@ -127,7 +127,7 @@ Die Dropdown-Liste *Abonnements* über alle Registerkarten im Fenster *Keystone 
 
 
 
-== 27. Juni 2024
+== 27 Juni 2024
 
 
 
@@ -141,7 +141,7 @@ Der Bildschirm *Keystone Subscriptions* wird aktualisiert, um die ausgewählte A
 
 
 
-== Mai 29, 2024
+== 29 Mai 2024
 
 
 
@@ -179,7 +179,7 @@ Die QuickInfo, die angezeigt wird, wenn Sie den Mauszeiger über dem Balkendiagr
 
 
 
-== Mai 09, 2024
+== 09 Mai 2024
 
 
 
@@ -201,7 +201,7 @@ Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bie
 
 
 
-== März 28, 2024
+== 28 März 2024
 
 
 
@@ -237,7 +237,7 @@ Die Daten werden basierend auf dem ausgewählten Startdatum des Abonnements ange
 
 
 
-== Februar 29, 2024
+== 29 Februar 2024
 
 
 
@@ -265,7 +265,7 @@ Sie können den Zeitstempel der Verbrauchsdaten (in UTC) auf dem alten Dashboard
 
 
 
-== Februar 13, 2024
+== 13 Februar 2024
 
 
 
@@ -275,7 +275,7 @@ Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnemen
 
 
 
-== Januar 11, 2024
+== 11 Januar 2024
 
 
 
@@ -291,7 +291,7 @@ Wenn Sie ein Abonnement mit Tarifen mit _Null_ gebuchter Kapazität haben, könn
 
 
 
-== Dezember 15, 2023
+== Bis 15. Dezember 2023
 
 
 

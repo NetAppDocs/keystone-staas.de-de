@@ -15,4 +15,4 @@ Mit dem Keystone-Dashboard in BlueXP können Sie:
 * Bleiben Sie mit den neuesten Informationen zu Ihrer Speicherumgebung auf dem Laufenden.
 
 
-Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:../integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"].
+Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone*. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Übersicht über Keystone Dashboard"].
