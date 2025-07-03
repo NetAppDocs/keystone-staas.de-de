@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: release-notes/whats-new.html 
+permalink: whats-new.html 
 keywords: 'new features, release notes, enhancements, what"s new' 
 summary: NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Keystone STaaS Services. 
 ---
@@ -10,7 +10,7 @@ summary: NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Versi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,7 +24,7 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 === Veröffentlichung von Keystone Version 3 (v3).
 
-Sie können jetzt Keystone Version 3 (v3), die neueste Version des NetApp Keystone STaaS-Angebots, abonnieren. Diese Version bietet zahlreiche Verbesserungen, darunter vereinfachte Performance-Service-Levels, zusätzliche Burst-Kapazitätsoptionen und flexible Abrechnungsintervalle. Diese Verbesserungen vereinfachen die Verwaltung, Optimierung und Skalierung von Speicherlösungen. Weitere Informationen finden Sie unter link:../concepts/metrics.html["Keystone STaaS-Dienste für v3"].
+Sie können jetzt Keystone Version 3 (v3), die neueste Version des NetApp Keystone STaaS-Angebots, abonnieren. Diese Version bietet zahlreiche Verbesserungen, darunter vereinfachte Performance-Service-Levels, zusätzliche Burst-Kapazitätsoptionen und flexible Abrechnungsintervalle. Diese Verbesserungen vereinfachen die Verwaltung, Optimierung und Skalierung von Speicherlösungen. Weitere Informationen finden Sie unter link:./concepts/metrics.html["Keystone STaaS-Dienste für v3"].
 
 
 
@@ -53,7 +53,7 @@ Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > K
 
 === Hinzufügen von Anzeigeoptionen für die tägliche aufgelaufene Datennutzung
 
-Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
+Sie können jetzt die tägliche anrechenbare Burst-Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum im Diagramm- oder Tabellenformat anzeigen, indem Sie auf den Balken klicken, in dem die Rechnungsdaten angezeigt werden. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
 
 
 
@@ -69,13 +69,13 @@ Die Spalte *Logical used* im Register *Volume Details* innerhalb von *Volumes & 
 
 === Registerkarte „Enhanced Assets“
 
-Die Registerkarte *Assets* im Fenster *Keystone Abonnements* hat nun zwei neue Unterregisterkarten: *ONTAP* und *StorageGRID*. Diese Unterregisterkarten bieten basierend auf Ihren Abonnements detaillierte Einblicke auf Cluster-Ebene für ONTAP und Informationen zur Grid-Ebene für StorageGRID. Weitere Informationen finden Sie unter link:../integrations/assets-tab.html["Registerkarte „Assets“"^].
+Die Registerkarte *Assets* im Fenster *Keystone Abonnements* hat nun zwei neue Unterregisterkarten: *ONTAP* und *StorageGRID*. Diese Unterregisterkarten bieten basierend auf Ihren Abonnements detaillierte Einblicke auf Cluster-Ebene für ONTAP und Informationen zur Grid-Ebene für StorageGRID. Weitere Informationen finden Sie unter link:./integrations/assets-tab.html["Registerkarte „Assets“"^].
 
 
 
 === Neue Option „Spalten ausblenden/einblenden“
 
-Die Registerkarte *Volume Details* in *Volumes & Objects* enthält nun eine Option *Spalten ausblenden/einblenden*. Mit dieser Option können Sie Spalten auswählen oder abwählen, um die tabellarische Liste der Volumes Ihren Wünschen entsprechend anzupassen. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+Die Registerkarte *Volume Details* in *Volumes & Objects* enthält nun eine Option *Spalten ausblenden/einblenden*. Mit dieser Option können Sie Spalten auswählen oder abwählen, um die tabellarische Liste der Volumes Ihren Wünschen entsprechend anzupassen. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
 
 
 
@@ -85,7 +85,7 @@ Die Registerkarte *Volume Details* in *Volumes & Objects* enthält nun eine Opti
 
 === Verbesserte aufgelaufene Burst-Kapazität in Rechnung gestellt
 
-Sie können nun über die Option *fakturierte aufgelaufene Burst-Kapazität* quartalsweise aufgelaufene Burst-Nutzungsdaten anzeigen, wenn Sie sich für einen vierteljährlichen Abrechnungszeitraum entschieden haben. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+Sie können nun über die Option *fakturierte aufgelaufene Burst-Kapazität* quartalsweise aufgelaufene Burst-Nutzungsdaten anzeigen, wenn Sie sich für einen vierteljährlichen Abrechnungszeitraum entschieden haben. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
 
 
 
@@ -107,7 +107,7 @@ Diese Spalten bieten eine bessere Übersichtlichkeit in der Spalte *Logical Used
 
 === Verbesserte Berichterstellung
 
-Mit der Funktion „Bericht“ in Digital Advisor können Sie jetzt einen konsolidierten Bericht erstellen, um die Details Ihrer Keystone-Daten anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/options.html#generate-consolidated-report-from-digital-advisor["Erstellen Sie einen konsolidierten Bericht"^] .
+Mit der Funktion „Bericht“ in Digital Advisor können Sie jetzt einen konsolidierten Bericht erstellen, um die Details Ihrer Keystone-Daten anzuzeigen. Weitere Informationen finden Sie unter link:./integrations/options.html#generate-consolidated-report-from-digital-advisor["Erstellen Sie einen konsolidierten Bericht"^] .
 
 
 
@@ -163,7 +163,7 @@ Die Service-Level *CVO Primary* und *CVO Secondary* unterstützen Cloud Volumes 
 
 === Zoom-Funktion für kurzfristige Bursts
 
-Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details von kurzfristigen Bursts in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html["Registerkarte „Kapazitätstrend“"^].
+Die Registerkarte *Capacity Trend* enthält jetzt eine Zoom-in-Funktion, um die Details von kurzfristigen Bursts in den Nutzungdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html["Registerkarte „Kapazitätstrend“"^].
 
 
 
@@ -207,14 +207,14 @@ Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bie
 
 === Verbesserung der QoS-Richtlinienkonformität auf der Registerkarte „Volume Details“
 
-Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bietet jetzt einen besseren Einblick in die Einhaltung der QoS-Richtlinien. Die früher als *AQoS* bekannte Spalte wird in *Compliant* umbenannt, was angibt, ob die QoS-Richtlinie konform ist. Zusätzlich wird eine neue Spalte *QoS Policy Type* hinzugefügt, die angibt, ob die Policy fest oder adaptiv ist. Wenn keines der beiden Werte zutrifft, wird in der Spalte „_Not available_“ angezeigt. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+Die Registerkarte *Volume Details* auf der Registerkarte *Volumes & Objekte* bietet jetzt einen besseren Einblick in die Einhaltung der QoS-Richtlinien. Die früher als *AQoS* bekannte Spalte wird in *Compliant* umbenannt, was angibt, ob die QoS-Richtlinie konform ist. Zusätzlich wird eine neue Spalte *QoS Policy Type* hinzugefügt, die angibt, ob die Policy fest oder adaptiv ist. Wenn keines der beiden Werte zutrifft, wird in der Spalte „_Not available_“ angezeigt. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
 
 
 
 === Neue Spalte und vereinfachte Abonnementanzeige auf der Registerkarte „Volume Summary“
 
 * Die Registerkarte *Volume Summary* auf der Registerkarte *Volumes & Objekte* enthält nun eine neue Spalte mit dem Titel *protected*. Diese Spalte enthält eine Anzahl der geschützten Volumes, die Ihren abonnierten Service-Levels zugeordnet sind. Wenn Sie auf die Anzahl der geschützten Volumes klicken, gelangen Sie auf die Registerkarte *Volume Details*, auf der Sie eine gefilterte Liste geschützter Volumes anzeigen können.
-* Die Registerkarte *Volume Summary* wird aktualisiert, um nur Basisabonnements anzuzeigen, ohne Add-on-Dienste. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+* Die Registerkarte *Volume Summary* wird aktualisiert, um nur Basisabonnements anzuzeigen, ohne Add-on-Dienste. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
 
 
 
@@ -243,19 +243,19 @@ Die Daten werden basierend auf dem ausgewählten Startdatum des Abonnements ange
 
 === Hinzufügen der Registerkarte „Assets“
 
-Der Bildschirm *Keystone Subscriptions* enthält jetzt die Registerkarte *Assets*. Auf dieser neuen Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene angezeigt. Weitere Informationen finden Sie unter link:../integrations/assets-tab.html["Registerkarte „Assets“"^].
+Der Bildschirm *Keystone Subscriptions* enthält jetzt die Registerkarte *Assets*. Auf dieser neuen Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene angezeigt. Weitere Informationen finden Sie unter link:./integrations/assets-tab.html["Registerkarte „Assets“"^].
 
 
 
 === Verbesserungen an der Registerkarte Volumes & Objekte
 
-Um Ihre ONTAP-Systemvolumes besser zu machen, wurden zwei neue Tabulatortasten, *Volume Summary* und *Volume Details*, auf der Registerkarte *Volumes* hinzugefügt. Die Registerkarte *Volume Summary* bietet eine Gesamtanzahl der Volumes, die Ihren abonnierten Service-Levels zugeordnet sind, einschließlich des AQoS-Compliance-Status und der Kapazitätsinformationen. Die Registerkarte *Volume Details* listet alle Volumes und ihre Besonderheiten auf. Weitere Informationen finden Sie unter link:../integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
+Um Ihre ONTAP-Systemvolumes besser zu machen, wurden zwei neue Tabulatortasten, *Volume Summary* und *Volume Details*, auf der Registerkarte *Volumes* hinzugefügt. Die Registerkarte *Volume Summary* bietet eine Gesamtanzahl der Volumes, die Ihren abonnierten Service-Levels zugeordnet sind, einschließlich des AQoS-Compliance-Status und der Kapazitätsinformationen. Die Registerkarte *Volume Details* listet alle Volumes und ihre Besonderheiten auf. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte Volumes  Objekte"^].
 
 
 
 === Verbesserte Suchfunktionen auf Digital Advisor
 
-Die Suchparameter auf dem *Digital Advisor*-Bildschirm enthalten nun die für Keystone Abonnements erstellten Keystone Abonnementnummern und Watchlisten. Sie können die ersten drei Zeichen einer Abonnementnummer oder eines Watchlist-Namens eingeben. Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Sehen Sie sich das Keystone-Dashboard auf Active IQ Digital Advisor an"^].
+Die Suchparameter auf dem *Digital Advisor*-Bildschirm enthalten nun die für Keystone Abonnements erstellten Keystone Abonnementnummern und Watchlisten. Sie können die ersten drei Zeichen einer Abonnementnummer oder eines Watchlist-Namens eingeben. Weitere Informationen finden Sie unter link:./integrations/keystone-aiq.html["Sehen Sie sich das Keystone-Dashboard auf Active IQ Digital Advisor an"^].
 
 
 
@@ -281,7 +281,7 @@ Bei einigen Ihrer primären Abonnements können sekundäre verknüpfte Abonnemen
 
 === Die Rechnungsdaten wurden für aufgelaufene Burst zurückgegeben
 
-Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
+Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-accrued-burst["Anzeigen der angefallenen Burst-Rechnung"^].
 
 
 
@@ -297,10 +297,10 @@ Wenn Sie ein Abonnement mit Tarifen mit _Null_ gebuchter Kapazität haben, könn
 
 === Möglichkeit zur Suche nach Watchlisten
 
-Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen über die Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Sie können nach Keystone Watchlisten suchen"^].
+Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen über die Verwendung von Watchlisten in Keystone STaaS finden Sie unter link:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Sie können nach Keystone Watchlisten suchen"^].
 
 
 
 === Datum in UTC-Zeitzone umgewandelt
 
-Die auf den Registerkarten des Bildschirms *Keystone-Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:../integrations/keystone-aiq.html["Keystone Abonnement-Dashboard und Berichterstellung"^].
+Die auf den Registerkarten des Bildschirms *Keystone-Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter link:./integrations/keystone-aiq.html["Keystone Abonnement-Dashboard und Berichterstellung"^].
