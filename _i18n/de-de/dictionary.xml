@@ -1243,7 +1243,6 @@ Hier ein Beispiel:</block>
   <block id="544918a98971531911cde1c8c60f796e" category="admonition">Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface (TUI)“ zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können. Sie können verschiedene Tastaturbedienungen wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.</block>
   <block id="7a3c910d56f9c3c52e1890f667afa19f" category="paragraph">Keystone Collector erfasst begrenzte Konfigurations-, Status- und Performance-Informationen, die für die Durchführung der Abonnementmessung erforderlich sind. Es besteht die Möglichkeit, die gesammelten Informationen durch Maskierung sensibler Informationen aus dem hochgeladenen Inhalt weiter einzuschränken. Dies hat keine Auswirkung auf die Berechnung der Abrechnung. Eine Einschränkung der Informationen kann sich jedoch auf die Nutzbarkeit der Berichtsinformationen auswirken, da einige Elemente, die leicht von Benutzern identifiziert werden können, wie z. B. der Volumenname, durch UUIDs ersetzt werden.</block>
   <block id="6c0db94d9ea0b326e31b7d4eba357a6e" category="summary">Keystone erfasst Konfigurations-, Status- und Verwendungsinformationen für ONTAP- und StorageGRID-Abonnements. Außerdem kann es ONTAP-Leistungsdaten erfassen.</block>
-  <block id="a55c5d30c0f103bf2686ce0ab6868ff4" category="paragraph">Keystone erfasst Informationen zu Konfiguration, Status und Nutzung Ihrer Keystone ONTAP und Keystone StorageGRID Abonnements. Es kann auch Leistungsdaten nur für ONTAP erfassen, wenn die Option in Keystone Collector aktiviert ist.</block>
   <block id="c57abebf579a7f279028b7943e0a852b" category="summary">Keystone Collector ist eine NetApp-Software, die Sie auf einem VMware vSphere- oder Linux-Host an Ihrem Standort installieren. Die Software erfasst Nutzungsdaten für Keystone Systeme.</block>
   <block id="174a6506a636f3bea0b05c1dbacf7c24" category="doc">Weitere Informationen zu Keystone Collector</block>
   <block id="e7b0f86afead67fa5262542c846d2165" category="paragraph">_Keystone Collector_ ist eine NetApp-Software, die Sie auf einem VMware vSphere- oder Linux-Host an Ihrem Standort installieren, um auf Ihre Keystone-Services zuzugreifen. Die Software erfasst Nutzungsdaten für Keystone Systeme.</block>
@@ -2544,4 +2543,37 @@ Hier ein Beispiel:</block>
   <block id="7faee727fce43e18a5f377b7afb57542" category="paragraph">Die Bezeichnungen für *aufgelaufene Burst* werden nun auf der Registerkarte *Kapazitätstrend* in *fakturierte aufgelaufene Burst* geändert. Wenn Sie diese Option auswählen, können Sie die monatlichen Diagramme für die berechneten aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter <block ref="eabab3ebfcc1135a01e03f1ece2ffb1c" category="inline-link-macro-rx"></block>.</block>
   <block id="8c238ecbe1955b491db6b48ea17933c2" category="paragraph">Die Unterstützung für Watchlisten in Digital Advisor wurde auf Keystone Systeme erweitert. Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Watchlisten suchen. Weitere Informationen über die Verwendung von Watchlisten in Keystone STaaS finden Sie unter <block ref="2875e10a779b54ebea1ca23299e1022f" category="inline-link-macro-rx"></block>.</block>
   <block id="e2328d669041a542b4660884da5e30c6" category="paragraph">Die auf den Registerkarten des Bildschirms *Keystone-Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen finden Sie unter <block ref="111f11f9178fe48f6cc874a0bf33e9ed" category="inline-link-macro-rx"></block>.</block>
+  <block id="7c5da8baa0fbbd37b4a692b7125db568" category="paragraph">Keystone erfasst Konfigurations-, Status- und Nutzungsinformationen von Keystone ONTAP und Keystone StorageGRID -Abonnements sowie Telemetriedaten der virtuellen Maschine (VM), auf der Keystone Collector läuft. Leistungsdaten für ONTAP können nur erfasst werden, wenn diese Option in Keystone Collector aktiviert ist.</block>
+  <block id="6aa83c82143e174e72f244ecef8dc7ad" category="section-title">Telemetriedatenerfassung</block>
+  <block id="49e2322dae056a2f8739263d880abd73" category="example-title">&lt;strong&gt;Von der Keystone Collector VM erfasste Telemetriedaten: Weitere Informationen&lt;/strong&gt;</block>
+  <block id="ce4c85de38de26999e02d0806330175d" category="paragraph">Die folgende Liste ist eine repräsentative Auswahl der für Keystone -Systeme gesammelten Telemetriedaten:</block>
+  <block id="956d4d3bb3fde86f6c2f08cfdc313bdb" category="list-text">Systeminformationen</block>
+  <block id="5b2a04bc80cdb645cbf95048a7e2ac0f" category="list-text">Der Name des Betriebssystems</block>
+  <block id="170861220308516da165525eb6107a96" category="list-text">Betriebssystemversion</block>
+  <block id="5043bf7355ddf1dbfaa39f4b69ecadad" category="list-text">Betriebssystem-ID</block>
+  <block id="2f09802220af233ac91b13f1c881b435" category="list-text">Systemhostname</block>
+  <block id="59796defd7dd6310215c49cb4e3efb02" category="list-text">Standard-IP-Adresse des Systems</block>
+  <block id="6735d18e4d3fc0c912fc420cc7538172" category="list-text">Nutzung der Systemressourcen</block>
+  <block id="cf99a04328c2d7ca48f16b353f06aace" category="list-text">Systemverfügbarkeit</block>
+  <block id="927c643f69c46e95a8be2c969fd9764a" category="list-text">Anzahl der CPU-Kerne</block>
+  <block id="e686d0ecebbbc124e870747bd31576cc" category="list-text">Systemlast (1 Min., 5 Min., 15 Min.)</block>
+  <block id="173211c78ced72410b48d5df0fba0ec1" category="list-text">Gesamtspeicher</block>
+  <block id="407d58a596a7de659531b8c04cb51035" category="list-text">Freier Speicher</block>
+  <block id="88bb1929d3370e0babc9dfad9e196052" category="list-text">Verfügbarer Speicher</block>
+  <block id="3ad952d787b1273b58745461bb5b2bc0" category="list-text">Gemeinsam genutzter Speicher</block>
+  <block id="700da48d6f421367f17be9a45789b873" category="list-text">Pufferspeicher</block>
+  <block id="61cc47a86dc843e3504f752195ecb91b" category="list-text">Zwischengespeicherter Speicher</block>
+  <block id="9b3d0c3ca1edf9f890422025970ab9c5" category="list-text">Gesamttausch</block>
+  <block id="5d419d17e6b440a7e251814bbcf8166e" category="list-text">Kostenloser Tausch</block>
+  <block id="488c8c2e78a0edfba492bcc8d16f0e9c" category="list-text">Zwischengespeicherter Swap</block>
+  <block id="28e91bf96c7a28ba92d540180159f4b7" category="list-text">Name des Datenträgerdateisystems</block>
+  <block id="f308e6ca453d47a2876df6eae740d8f8" category="list-text">Festplattengröße</block>
+  <block id="f50c6aae233fa53b969e7b10774363e1" category="list-text">Verwendete Festplatte</block>
+  <block id="7ef72e0347fdea4ecf7819d56d5c0151" category="list-text">Datenträger verfügbar</block>
+  <block id="90dc07e4c191f33e8c23867d64df3500" category="list-text">Prozentsatz der Festplattennutzung</block>
+  <block id="04bb4f94fa98b7f9725a89c2b58870fb" category="list-text">Datenträger-Einhängepunkt</block>
+  <block id="35d792af9283dd95d7605999364c786d" category="list-text">Installierte Pakete</block>
+  <block id="c5015af0f3f8bd7ccedb75312dd4eed3" category="list-text">Collector-Konfiguration</block>
+  <block id="4f41955c42edb315e08aec95ec34acd3" category="list-text">Dienstprotokolle</block>
+  <block id="494dd216fe759558e1a91f40c35ee621" category="list-text">Serviceprotokolle von Keystone -Diensten</block>
 </blocks>
