@@ -5,13 +5,13 @@ indexpage:
     für lokale und Cloud-Datenspeicherdienste im Rahmen eines Abonnements mit der
     Möglichkeit, Speicherausgaben auf verschiedene Clouds umzuverteilen.
   keywords: Keystone STaaS
-  lead: NetApp Keystone ist ein flexibler, nutzungsbasierter Abonnementservice, der
-    Kunden, die Betriebskosten gegenüber Investitionen oder Leasing bevorzugen, ein
-    nahtloses Hybrid-Cloud-Erlebnis bietet. Mit diesem Service können Sie die Amortisierung
-    beschleunigen, indem Sie die IT VON der Last des Managements der Ressourcen und
-    des langatmigen Beschaffungszyklus befreien. In der Dokumentation dieser Bibliothek
-    erfahren Sie mehr über das NetApp Keystone Storage-as-a-Service (STaaS)-Angebot
-    in Ihrer ONTAP- oder StorageGRID-Umgebung.
+  lead: NetApp Keystone ist ein flexibler, abonnementbasierter Pay-as-you-go-Service,
+    der Kunden, die Betriebskosten gegenüber Investitionen oder Leasing bevorzugen,
+    ein nahtloses Hybrid-Cloud-Erlebnis bietet. Sie haben die Möglichkeit, die Time-to-Value
+    zu beschleunigen, indem Sie die IT-Last der Ressourcenverwaltung beseitigen und
+    den langwierigen Beschaffungszyklus vermeiden. Durchsuchen Sie die Dokumente in
+    dieser Bibliothek, um mehr über das NetApp Keystone Storage-as-a-Service (STaaS)-Angebot
+    zu erfahren.
   tiles:
   - title: Los geht's
     links:
@@ -39,8 +39,6 @@ indexpage:
     links:
     - title: Keystone-Leistungsservice-Levels
       url: "/concepts/service-levels.html"
-    - title: Servicequalität (QoS)
-      url: "/concepts/qos.html"
     - title: Was sind die Maßeinheiten?
       url: "/concepts/metrics.html"
     - title: Welcher Basis-Storage wird unterstützt?
@@ -49,7 +47,7 @@ indexpage:
       url: "/concepts/capacity-requirements.html#capacity-adjustments"
   - title: Keystone Preisgestaltung und Abrechnung
     links:
-    - title: Informieren Sie sich über die Preise für Keystone
+    - title: Erfahren Sie mehr über die Keystone -Preise
       url: "/concepts/pricing.html"
     - title: Meine Abrechnungspläne
       url: "/concepts/billing-schedules.html"
@@ -62,7 +60,7 @@ indexpage:
       url: "/concepts/burst-consumption-billing.html"
   - title: Mit den Keystone Services mehr erreichen
     links:
-    - title: Kennen Sie Ihr Support-Team
+    - title: Erfahren Sie mehr über Ihr Support-Team
       url: "/concepts/gssc.html"
     - title: Erhöhen Sie die Burst-Kapazität
       url: "/concepts/burst-capacity.html"
@@ -74,7 +72,7 @@ indexpage:
       url: "/concepts/data-infra-insights.html"
     - title: US Citizen Support
       url: "/concepts/usps.html"
-  - title: Erfahren Sie mehr
+  - title: Mehr erfahren
     links:
     - title: Active IQ Digitalberater
       url: https://docs.netapp.com/us-en/active-iq/index.html

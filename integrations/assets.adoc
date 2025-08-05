@@ -50,7 +50,7 @@ TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selec
 . Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
 . Wählen Sie die Registerkarte *Volumes in Clustern*.
 +
-image:bxp-volumes-clusters-multiple-sub.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
+image:bxp-volumes-clusters-multiple-sub-1.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
 
 +
 Sie sehen detaillierte Informationen zu allen Volumes in Clustern aller Keystone-Abonnements, einschließlich Volumename, Abonnementnummer, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel. Sie können die bereitgestellte Kapazität, die logische und physische Auslastung sowie Cold Data überwachen. Außerdem erhalten Sie einen Überblick über:

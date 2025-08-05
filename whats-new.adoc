@@ -14,7 +14,17 @@ summary: NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Versi
 
 
 [role="lead"]
-NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Keystone STaaS Services.
+Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keystone STaaS-Dienste.
+
+
+
+== 05. August 2025
+
+
+
+=== Anzeigen von Verbrauchsdaten auf Instanzebene
+
+Sie können den aktuellen Verbrauch und historische Daten für jede Instanz des Performance-Service-Levels über das Keystone -Dashboard in BlueXP anzeigen. Diese Funktion ist für Leistungsservicelevel mit mehreren Instanzen verfügbar, sofern Sie über ein Abonnement für Keystone Version 3 (v3) verfügen. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Den Verbrauch Ihrer Keystone -Abonnements anzeigen"] .
 
 
 
@@ -24,7 +34,7 @@ NetApp bietet Ihnen neue und erweiterte Funktionen in jeder neuen Version der Ke
 
 === Veröffentlichung von Keystone Version 3 (v3).
 
-Sie können jetzt Keystone Version 3 (v3), die neueste Version des NetApp Keystone STaaS-Angebots, abonnieren. Diese Version bietet zahlreiche Verbesserungen, darunter vereinfachte Performance-Service-Levels, zusätzliche Burst-Kapazitätsoptionen und flexible Abrechnungsintervalle. Diese Verbesserungen vereinfachen die Verwaltung, Optimierung und Skalierung von Speicherlösungen. Weitere Informationen finden Sie unter link:./concepts/metrics.html["Keystone STaaS-Dienste für v3"].
+Sie können jetzt Keystone Version 3 (v3) abonnieren, die neueste Version des NetApp Keystone STaaS-Angebots. Diese Version führt mehrere Verbesserungen ein, darunter vereinfachte Leistungsservicelevel, zusätzliche Burst-Kapazitätsoptionen und flexible Abrechnungsfrequenzen. Diese Verbesserungen vereinfachen die Verwaltung, Optimierung und Skalierung von Speicherlösungen. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Keystone STaaS-Dienste für v3"] .
 
 
 

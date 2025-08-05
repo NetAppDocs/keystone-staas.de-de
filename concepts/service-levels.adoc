@@ -20,7 +20,7 @@ Ein Abonnement kann mehrere Tarifpläne umfassen, und jeder Tarifplan entspricht
 
 Ein Performance-Servicelevel kann mehrere Instanzen umfassen, wobei jede Instanz ein separates Speicherarray darstellt, das diesem Performance-Servicelevel in der Kundenumgebung zugewiesen ist. Jedes Performance-Servicelevel wird durch Eingabe-/Ausgabevorgänge pro Sekunde (IOPS), Durchsatz (GBps) und Latenz (ms) definiert. Diese Kennzahlen werden pro Performance-Servicelevel-Instanz gemessen und angewendet.
 
-Sie wählen die Leistungsservicelevel basierend auf Ihrer Speicherumgebung sowie Ihren Speicher- und Verbrauchsanforderungen aus. Die Basis-Leistungsservicelevel stehen Ihnen standardmäßig zur Verfügung. Spezifische Leistungsservicelevel sind zusätzlich verfügbar, wenn Sie sich für Zusatzdienste entschieden haben. Beispielsweise ist Ihrem Abonnement für den Zusatzdienst „Erweiterter Datenschutz“ das Leistungsservicelevel „Advanced Data-Protect“ zugewiesen.
+Sie wählen Leistungsservicelevel basierend auf Ihrer Speicherumgebung und Ihren Speicher- und Verbrauchsanforderungen aus. Die Basis-Performance-Service-Levels stehen Ihnen standardmäßig zur Verfügung. Wenn Sie sich für Zusatzdienste entschieden haben, stehen Ihnen zusätzlich bestimmte Leistungsservice-Level zur Verfügung.
 
 
 TIP: Eine detaillierte Servicebeschreibung für die Performance-Service-Levels von NetApp Keystone STaaS ist verfügbar  https://www.netapp.com/services/keystone/terms-and-conditions/["Hier"^] .

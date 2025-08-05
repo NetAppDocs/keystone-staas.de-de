@@ -1,0 +1,9 @@
+= Anzeigen von Verbrauchsdaten auf Instanzebene
+:allow-uri-read: 
+
+
+
+
+=== Anzeigen von Verbrauchsdaten auf Instanzebene
+
+Sie können den aktuellen Verbrauch und historische Daten für jede Instanz des Performance-Service-Levels über das Keystone -Dashboard in BlueXP anzeigen. Diese Funktion ist für Leistungsservicelevel mit mehreren Instanzen verfügbar, sofern Sie über ein Abonnement für Keystone Version 3 (v3) verfügen. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Den Verbrauch Ihrer Keystone -Abonnements anzeigen"] .

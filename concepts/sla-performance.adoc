@@ -29,7 +29,6 @@ NetApp Keystone bietet latenzbasierte SLOs pro Performance-Servicelevel, wie in 
 ** Von AQoS hinzugefügte Latenz zur Aufrechterhaltung des IOPS-Minimums pro Volume werden von der Stichprobe ausgeschlossen.
 ** Bei Volumes mit aktivierter FabricPool-Funktion wird die bei der Übertragung der Daten zum und vom Ziel-Storage (Cold) anfallende Latenz nicht gezählt.
 ** Latenz, die durch das Applikations-, Host- oder Kundennetzwerk außerhalb des ONTAP-Clusters verursacht wird, wird nicht gezählt.
-** Wenn Sie den erweiterten Add-on-Service für Datensicherung verwenden, umfasst die Ziellatenz nur I/O-Vorgänge zum und vom lokalen Storage-Array.
 ** Während eines Zeitraums von 24 Stunden sollten mindestens zehn gültige Kennzahlen verfügbar sein. Andernfalls werden die Kennzahlen verworfen.
 ** Wenn auf einem oder mehreren Volumes auf einem Storage-Array keine gültige AQoS-Richtlinie angewendet wird, kann sich die Anzahl der für andere Volumes verfügbaren IOPS auswirken. NetApp ist nicht dafür verantwortlich, die Performance-Level auf diesem Storage-Array zu erreichen oder zu erreichen.
 ** In FabricPool-Konfigurationen sind Performance-Level anwendbar, wenn alle angeforderten Datenblöcke auf FabricPool Quell-Storage (heiß) liegen und sich der Quell-Storage nicht in einer synchronen SnapMirror Beziehung befindet.

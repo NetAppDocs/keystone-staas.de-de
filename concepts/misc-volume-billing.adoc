@@ -14,7 +14,7 @@ summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Kon
 
 
 [role="lead"]
-Das Verständnis der Keystone-Abrechnung für bestimmte Konfigurationen in Version 3 (v3) kann Ihnen helfen, die Servicenutzung zu optimieren und die Kosten zu verwalten. Die Konfigurationen umfassen geklonte Volumes, erweiterten Datenschutz, temporäre Volumes, SnapMirror-Ziele, LUNs und System-/Root-Volumes.
+Wenn Sie die Keystone -Abrechnung für bestimmte Konfigurationen in Version 3 (v3) verstehen, können Sie die Servicenutzung optimieren und die Kosten verwalten.  Die Konfigurationen umfassen geklonte Volumes, temporäre Volumes, SnapMirror -Ziele, LUNs und System-/Root-Volumes.
 
 
 
@@ -28,19 +28,6 @@ Beachten Sie Folgendes:
 * Für geklonte Volumes gibt es keine 24-stündige Karenzzeit. Es wird nur die Größe des Klons berücksichtigt.
 * Sobald das Klon-Volume 10 % der physischen Größe des übergeordneten Volume überschreitet, wird der Klon als Standard-Volume abgerechnet (genutzte logische Kapazität).
 
-
-
-
-== Die Kosten für die erweiterte Datensicherung werden abgerechnet
-
-Die erweiterte Datensicherung verwendet NetApp MetroCluster, um Daten zwischen zwei physisch getrennten Clustern zu spiegeln. Bei MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Der Keystone-Service berechnet unabhängig vom Verbrauch auf jeder Seite und führt zu zwei identischen Verbrauchsdatensätzen. Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden, oder ob sie gespiegelt oder unverspiegelte Daten sind.
-
-Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und Keystone kommen. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.
-
-.Beispiel:
-Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Keystone erkennt 10 TB des Verbrauchs an jedem Standort, was einer Erhöhung der Gesamtzahl um 20 TB ergibt. System Manager und Unified Manager melden ein 10-TB-Volume, das auf Standort A erstellt wurde, melden Sie jedoch kein 10-TB-Volume an Standort B.
-
-Darüber hinaus zählen alle auf einem Keystone System mit erweiterter Datensicherung erstellten Volumes auf die Nutzung der erweiterten Datensicherung, unabhängig davon, ob diese Volumes gespiegelt wurden oder nicht.
 
 
 

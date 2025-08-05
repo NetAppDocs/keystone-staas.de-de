@@ -36,7 +36,7 @@ Auf der Seite *Abonnement ändern* werden die Details zu den abonnierten Leistun
 NOTE: Optional können Sie auf die Seite *Abonnement ändern* zugreifen, indem Sie im Abschnitt mit den Abonnementdetails auf *Abonnement verwalten* klicken und dann *Ändern* auswählen.
 
 +
-image:bxp-modify-subscription.png["Ein Screenshot, der die Änderungsoption aus der Abonnementliste zeigt"]
+image:bxp-modify-subscription-1.png["Ein Screenshot, der die Änderungsoption aus der Abonnementliste zeigt"]
 
 . Klicken Sie auf *Kapazität bearbeiten*, um die zugesagte Kapazität für die Leistungsservicelevel zu ändern, geben Sie die erforderlichen Details ein und klicken Sie auf *Senden*.
 +

@@ -38,10 +38,14 @@ Die historischen Verbrauchsdaten für jedes Leistungsservicelevel werden basiere
 NOTE: Sie können *Aufgelaufene Burst-Daten* aus der Dropdown-Liste *Anzeigen* auswählen, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden. Mithilfe dieser Daten können Sie die in Ihrer Rechnung ausgewiesene Nutzung analysieren. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"].
 
 +
-image:bxp-consumption-trend.png["Screenshot mit der Anzeige des historischen Verbrauchs"]
+image:bxp-consumption-trend-1.png["Screenshot mit der Anzeige des historischen Verbrauchs"]
 
 +
-Das Liniendiagramm zeigt historische Verbrauchsdaten und ermöglicht die Analyse von Trends über einen ausgewählten Zeitraum. Das Diagramm zeigt Kennzahlen wie Daten (von Benutzerdaten genutzte Speicherkapazität), Snapshot (von Snapshot-Daten genutzte Speicherkapazität) und genutzte Kapazität (Gesamtspeicherkapazität, einschließlich Daten und Snapshot-Daten) sowie die zugesicherte und Burst-Kapazität. Datum und Uhrzeit jedes Datenpunkts werden unten im Diagramm angezeigt. Abhängig vom Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte. Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung für jeden Datenerfassungspunkt anzuzeigen.
+Das Liniendiagramm zeigt historische Verbrauchsdaten an und ermöglicht Benutzern die Analyse von Trends über einen ausgewählten Datumsbereich. Das Diagramm zeigt Kennzahlen wie die genutzte Kapazität (Gesamtspeicherkapazität, einschließlich Daten und Snapshot-Daten), Daten (von Benutzerdaten genutzte Speicherkapazität) und Snapshot (von Snapshot-Daten genutzte Speicherkapazität) sowie die zugesagte und Burst-Kapazität. Datum und Uhrzeit jedes Datenpunkts werden unten im Diagramm angezeigt. Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte. Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.
+
++
+
+NOTE: Wenn ein Leistungsservicelevel mehrere Instanzen hat, können Sie nach Instanz filtern, um die Verlaufsdaten für jede Instanz separat anzuzeigen.
 
 +
 Sie können sich neben dem historischen Verbrauch auch eine Zusammenfassung des aktuellen Verbrauchs anzeigen lassen, um einen klaren Überblick über Ihren Verbrauch zu erhalten.
@@ -155,45 +159,3 @@ Ein Beispielbild, das die tägliche Nutzung der aufgelaufenen Burst-Daten in ein
 image:invoiced-daily-accr-burst-date.png["Screenshot mit Burst-Nutzungsdaten in einem Liniendiagramm"]
 
 Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm auf die Option *Tabelle* klicken. Die Tabellenansicht bietet detaillierte tägliche Nutzungsmetriken, einschließlich Leistungsservicelevel, Zeitstempel, zugesagter Kapazität, verbrauchter Kapazität und abrechenbarer bereitgestellter Kapazität. Sie können auch einen Bericht dieser Details im CSV-Format für die zukünftige Verwendung und den Vergleich erstellen.
-
-
-
-== Referenzdiagramme zur erweiterten Datensicherung für MetroCluster
-
-Wenn Sie den Zusatzdienst für erweiterten Datenschutz abonniert haben, können Sie die Aufschlüsselung der Verbrauchsdaten für die MetroCluster-Partner-Sites auf der Registerkarte *Verbrauchstrend* im Digital Advisor anzeigen.
-
-Weitere Informationen zum erweiterten Add-on-Service für Datensicherheit finden Sie unter link:../concepts/adp.html["Erweiterte Datensicherung"].
-
-Wenn die Cluster in Ihrer ONTAP-Speicherumgebung in einem MetroCluster-Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone-Abonnements im selben historischen Datendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basisleistungs-Servicelevel anzuzeigen.
-
-
-NOTE: Die Verbrauchsbalkendiagramme sind nur für die Basis-Leistungsservicelevel unterteilt. Für den Zusatzservice „Erweiterter Datenschutz“, d. h. das Leistungsservicelevel „Advanced Data-Protect“, wird diese Abgrenzung nicht angezeigt.
-
-.Erweiterter Datenschutzleistungs-Servicelevel
-Beim Leistungsservicelevel „Advanced Data-Protect“ wird der Gesamtverbrauch zwischen den Partner-Sites aufgeteilt und die Nutzung an jedem Partner-Site wird in einem separaten Abonnement erfasst und abgerechnet: ein Abonnement für die primäre Site und ein weiteres für die Spiegel-Site. Dies ist der Grund, warum, wenn Sie die Abonnementnummer für den primären Standort auf der Registerkarte *Verbrauchstrend* auswählen, die Verbrauchsdiagramme für den erweiterten Datenschutz-Add-on-Dienst die diskreten Verbrauchsdetails nur des primären Standorts anzeigen. Da jeder Partnerstandort in einer MetroCluster Konfiguration sowohl als Quelle als auch als Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.
-
-
-TIP: Die QuickInfo neben der Tracking-ID Ihres Abonnements auf der Registerkarte *Aktueller Verbrauch* hilft Ihnen, das Partnerabonnement in der MetroCluster-Einrichtung zu identifizieren.
-
-.Grundlegende Leistungsservice-Levels
-Für die Basisleistungs-Servicelevel wird jedes Volume wie am primären und am Spiegelstandort bereitgestellt berechnet. Daher ist das gleiche Balkendiagramm entsprechend dem Verbrauch am primären und am Spiegelstandort aufgeteilt.
-
-.Was Sie für das primäre Abonnement sehen können
-Die folgende Abbildung zeigt die Diagramme für das Leistungsservicelevel „Extrem“ (Basisleistungsservicelevel) und eine primäre Abonnementnummer. Das gleiche historische Datendiagramm zeigt auch den Verbrauch der Spiegelseite in einem helleren Farbton desselben Farbcodes an, der für den primären Standort verwendet wird. Mit der Kurzinformation beim Mauszeiger wird der Aufschlüsselungsverbrauch (in tib) für die primären und gespiegelten Standorte, 22.24 tib bzw. 14.86 tib angezeigt.
-
-image:mcc-chart-1.png["mcc primär"]
-
-Für das Leistungsservicelevel „Advanced Data-Protect“ sehen die Diagramme folgendermaßen aus:
-
-image:adp-src-1.png["mcc-Primärbasis"]
-
-.Was Sie für das sekundäre Abonnement (Mirror Site) sehen können
-Wenn Sie das sekundäre Abonnement überprüfen, können Sie sehen, dass das Balkendiagramm für das Leistungsservicelevel „Extrem“ (Basisleistungsservicelevel) am gleichen Datenerfassungspunkt wie die Partnersite umgekehrt ist und die Verbrauchsaufteilung an den primären und Spiegelsites 14,86 TiB bzw. 22,24 TiB beträgt.
-
-image:mcc-chart-mirror-1.png["mcc-Spiegel"]
-
-Für den Performance-Service-Level _Advanced Data-Protect_ sieht das Diagramm für denselben Abholpunkt wie beim Partnerstandort folgendermaßen aus:
-
-image:adp-mir-1.png["mcc-Spiegelsockel"]
-
-Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datensicherung und Disaster Recovery verstehen"^].

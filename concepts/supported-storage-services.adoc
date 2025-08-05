@@ -14,12 +14,12 @@ summary: Keystone StaaS-Services unterstützt ONTAP und StorageGRID.
 
 
 [role="lead"]
-Keystone STaaS-Dienste für Version 3 (v3) unterstützen einheitlichen, blockoptimierten und Objektspeicher von NetApp und Cloud Volumes ONTAP.
+Der Keystone STaaS-Dienst unterstützt einheitlichen, blockoptimierten und objektbasierten Speicher von NetApp und Cloud Volumes ONTAP.
 
-Jeder Speichertyp umfasst:
+Die unterstützten Speicheroptionen sind:
 
 * *Unified Storage*: Umfasst sowohl Datei-, Block- als auch S3-Objektspeicher, verfügbar auf NetApp ONTAP AFF- und FAS-Systemen.
-* *Blockoptimierter Speicher*: Beinhaltet Blockspeicher, der auf NetApp ONTAP ASA-Systemen verfügbar ist.
+* *Blockoptimierter Speicher*: Beinhaltet Blockspeicher, der auf NetApp ONTAP ASA -Systemen verfügbar ist.
 * *Objektspeicher*: Beinhaltet den auf NetApp StorageGRID-Systemen verfügbaren Objektspeicher.
 
 

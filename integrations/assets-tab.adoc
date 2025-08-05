@@ -40,10 +40,10 @@ Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
 . Wählen Sie die Registerkarte *Assets*.
 . Wählen Sie *Volumes im Cluster* aus der Dropdown-Liste *Anzeigen* aus.
 +
-image:bxp-volumes-clusters-single-subscription.png["Ein Screenshot von Volumes in Clustern für ein Abonnement"]
+image:bxp-volumes-clusters-single-subscription-1.png["Ein Screenshot von Volumes in Clustern für ein Abonnement"]
 
 +
-Sie sehen detaillierte Informationen zu Volumes in Clustern, einschließlich Volumename, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel. Sie können außerdem die bereitgestellte Kapazität, die logische und physische Auslastung sowie Cold Data überwachen.
+Sie sehen detaillierte Informationen zu Volumes in Clustern, einschließlich Volumename, Knotenseriennummer, Clustername, Hostname und Leistungsservicelevel. Sie können auch die bereitgestellte Kapazität, die logische und physische Auslastung sowie kalte Daten überwachen.
 
 +
 

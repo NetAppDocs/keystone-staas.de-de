@@ -25,10 +25,10 @@ Die Registerkarte „Abonnements“ in BlueXP ist in zwei Bereiche unterteilt: �
 .Schritte
 . Gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone > Abonnements*.
 +
-image:bxp-subscription- list.png["Details der Registerkarte „Abonnement“ anzeigen"]
+image:bxp-subscription-list-1.png["Details der Registerkarte „Abonnement“ anzeigen"]
 
 +
-Sie sehen die wichtigsten Kennzahlen wie Kapazitätsstatus, Abonnementablaufstatus und Keystone-Version für alle Abonnements. Weitere Informationen finden Sie unter link:../integrations/keystone-bluexp.html["Keystone-Dashboard in BlueXP"].
+Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und Keystone Version für alle Abonnements. Weitere Informationen finden Sie unterlink:../integrations/keystone-bluexp.html["Keystone-Dashboard in BlueXP"] .
 
 +
 Aus der Tabelle können Sie folgende Details entnehmen:
@@ -38,7 +38,7 @@ Aus der Tabelle können Sie folgende Details entnehmen:
 ** *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
 ** *Kundenname*: Der Name des Kunden, der mit dem Keystone-Abonnement verknüpft ist.
 ** *Verknüpfte Abonnements*: Wenn Sie sekundäre Abonnements haben, die mit Ihrem primären Abonnement verknüpft sind, werden in dieser Spalte die verknüpften Abonnementnummern für das primäre Abonnement aufgeführt. Diese Abonnementnummer kann zu Ihrem primären oder sekundären (verknüpften) Abonnement gehören.
-** *Keystone-Version*: Die Version des Keystone-Dienstes, die für das Abonnement verwendet wird.
+** * Keystone -Version*: Die Version des Keystone Dienstes, die für das Abonnement verwendet wird. Die Tarifregeln für Leistungsservicelevel können je nach Abonnementversion unterschiedlich sein. Weitere Informationen zur Version v1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Keystone-Abonnementdienste | Dokumentation Version 1"^] .
 ** *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements.
 ** *Leistungsservicelevel*: Die Anzahl der mit dem Abonnement verknüpften Tarifpläne, wobei jeder Tarifplan einem bestimmten Leistungsservicelevel und einer zugesagten Kapazität entspricht.
 ** *Höchste Kapazität*: Die maximale Kapazität, die innerhalb des Abonnements verbraucht wird.
@@ -57,7 +57,7 @@ image:bxp-performance-levels.png["Leistungsservicelevel für alle Abonnements an
 ** *Leistungsservicelevel über Abonnements hinweg*: Zeigt die Anzahl der Leistungsservicelevel über die Abonnements hinweg an.
 ** *Bereitstellungskonsistenz über Abonnements hinweg*: Zeigt die Anzahl der über- und unterbereitgestellten Leistungsservicelevel.
 +
-Sie können die Liste der Performance-Servicelevel einsehen, einschließlich wichtiger Details wie Kundenname, Abonnementnummer, Art des Performance-Servicelevels, Gesamtzahl der Volumes und deren QoS-Compliance-Status. Die Tabelle zeigt außerdem die Anzahl der geschützten Volumes, die insgesamt zugesagte, verbrauchte, bereitgestellte und verfügbare Kapazität (mit und ohne Burst) sowie die angesammelte Burst-Kapazität.
+Sie können die Liste der Leistungsservicelevel einschließlich wichtiger Details wie dem Namen des Kunden, der Abonnementnummer, der Art des Leistungsservicelevels und der Gesamtzahl der Datenträger anzeigen. Die Tabelle zeigt außerdem die Anzahl der geschützten Volumes, die insgesamt zugesagte, verbrauchte, bereitgestellte und verfügbare Kapazität (mit und ohne Burst) sowie die aufgelaufene Burst-Kapazität an.
 
 
 
@@ -74,18 +74,15 @@ Um Ihre Abonnements in Digital Advisor anzuzeigen, führen Sie die folgenden Sch
 Sie können hier alle Ihre Abonnements mit detaillierten Informationen zu jedem einzelnen anzeigen.
 
 +
-image:all-subs-3.png["Ein Bild der Registerkarte Abonnements"]
+image:all-subs-4.png["Ein Bild der Registerkarte Abonnements"]
 
 +
 Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
 
 +
 ** *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
+** *Verknüpfte Abonnements*: Diese Spalte steht Ihnen optional zur Verfügung. Wenn Sie über sekundäre Abonnements verfügen, die mit Ihrem primären Abonnement verknüpft sind, werden in dieser Spalte die verknüpften Abonnementnummern für das primäre Abonnement aufgeführt. Diese Abonnementnummer kann zu Ihrem primären oder sekundären (verknüpften) Abonnement gehören.
 ** *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Site.
-+
-
-TIP: Wenn Sie den Add-on-Service für erweiterte Datensicherung abonniert haben, können Sie auf die Kurzinformation zu Ihrer Abonnementnummer klicken, um die Tracking ID des Partnerabonnements in einer MetroCluster Einrichtung anzuzeigen. Um den detaillierten Verbrauch nach Partnerabonnements in einer MetroCluster-Konfiguration anzuzeigen, siehe link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Referenzdiagramme für erweiterten Datenschutz"] .
-
 ** *Nutzungsart*: Möglicherweise haben Sie mehrere Keystone-Versionen abonniert. Die Tarifregeln für die Leistungsservice-Level können je nach Abonnementversion unterschiedlich sein. Anhand des Werts in dieser Spalte können Sie erkennen, ob die Nutzungsart nach bereitgestellter, physischer oder logischer Nutzung abgerechnet wird. Weitere Informationen zu Version 1 finden Sie unter  https://docs.netapp.com/us-en/keystone/index.html["Keystone-Abonnementdienste | Dokumentation Version 1"^] .
 ** *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements.
 ** *Startdatum*: Das Startdatum des Abonnements.

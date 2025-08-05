@@ -31,13 +31,8 @@ Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowi
 * *Kapazitätsnutzung*: Verbrauchsdaten wie keine Nutzung, Verbrauch über 80 % der zugesagten Kapazität, Burst-Nutzung und Verbrauch über der Burst-Kapazität.
 * *Warnungen*: Sie sehen Warnungen für verschiedene Szenarien, wenn sie für Sie relevant sind.
 +
-** *Läuft bald ab*: Falls Ihre Abonnements innerhalb von 90 Tagen ablaufen.
-** *QoS Warnungen*: Sie haben Volumes ohne AQoS Richtlinien zugewiesen.
-+
 
 TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonnements auf der Registerkarte *Abonnements* anzuzeigen.
-
-
 
 
 
