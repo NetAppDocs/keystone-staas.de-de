@@ -14,7 +14,7 @@ summary: Keystone STaaS für Version 3 bietet Speicherkapazität auf vordefinier
 
 
 [role="lead"]
-Keystone STaaS für Version 3 (v3) bietet Datenspeicherkapazität auf vordefinierten Leistungsserviceleveln. Jedem von Keystone-Diensten verwalteten Datenträger ist ein Leistungsdienstlevel zugeordnet.
+Keystone STaaS bietet Datenspeicherkapazität auf vordefinierten Leistungsserviceleveln. Jedes von Keystone -Diensten verwaltete Volume ist mit einem Leistungsservicelevel verknüpft.
 
 Ein Abonnement kann mehrere Tarifpläne umfassen, und jeder Tarifplan entspricht einem Leistungsservicelevel. Jeder Tarifplan verfügt über eine zugesicherte Kapazität pro Leistungsservicelevel.
 

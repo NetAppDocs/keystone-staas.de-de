@@ -14,7 +14,7 @@ summary: Die Kapazitätsanforderungen für Service-Levels unterscheiden sich vom
 
 
 [role="lead"]
-Die Kapazitätsanforderungen für die Leistungsservicelevel von Keystone STaaS in Version 3 (v3) unterscheiden sich zwischen den vom Keystone STaaS-Abonnement unterstützten einheitlichen, blockoptimierten, Objekt- oder Cloud-Speicherangeboten.
+Die Kapazitätsanforderungen für die Leistungsservicelevel von Keystone STaaS unterscheiden sich zwischen den einheitlichen, blockoptimierten, Objekt- oder Cloud-Speicherangeboten, die vom Keystone STaaS-Abonnement unterstützt werden.
 
 
 

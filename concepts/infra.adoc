@@ -34,7 +34,7 @@ Die Keystone-Infrastruktur umfasst mehrere Komponenten, u. a. die folgenden:
 
 == Storage-Plattformen
 
-Unternehmensanwendungen benötigen Speicherplattformen, um schnelle Bereitstellungsabläufe zu unterstützen, kontinuierliche Verfügbarkeit zu gewährleisten, hohe Workloads mit geringer Latenz zu bewältigen, höhere Leistung zu liefern und die Integration mit wichtigen Cloud-Anbietern zu unterstützen. NetApp bietet verschiedene Produkte und Technologien zur Erfüllung dieser Anforderungen. Für den Keystone-Service nutzt NetApp AFF-, ASA- und FAS-Systeme sowie StorageGRID-Systeme.
+Unternehmensanwendungen benötigen Speicherplattformen, um schnelle Bereitstellungsworkflows zu unterstützen, kontinuierliche Verfügbarkeit aufrechtzuerhalten, hohe Arbeitslasten mit geringer Latenz zu bewältigen, eine höhere Leistung zu liefern und die Integration mit großen Cloud-Anbietern zu unterstützen. NetApp verfügt über mehrere Produkte und Technologien zur Unterstützung dieser Anforderungen. Für den Keystone -Dienst verwendet NetApp ONTAP -Systeme (AFF, ASA und FAS) und StorageGRID Systeme.
 
 
 

@@ -14,11 +14,11 @@ summary: Der NetApp Keystone STaaS Service verwendet mehrere Begriffe zur Messun
 
 
 [role="lead"]
-Der NetApp Keystone STaaS Service verwendet mehrere Begriffe zur Messung von Kennzahlen. Möglicherweise möchten Sie mehr über diese Begriffe erfahren, wenn Sie Keystone für Version 3 (v3) verwenden.
+Der NetApp Keystone STaaS-Dienst verwendet mehrere Begriffe zum Messen von Metriken. Möglicherweise möchten Sie bei der Verwendung von Keystone mehr über diese Begriffe erfahren.
 
 Die folgenden Begriffe und Definitionen werden innerhalb des Keystone STaaS Service zur Messung von Kennzahlen verwendet:
 
-* Kapazität Maßeinheiten: Gib, tib und PiB
+* Kapazität: Gemessen in GiB, TiB und PiB.
 * IOPS: Anzahl der pro Sekunde verarbeiteten Eingabe-/Ausgabevorgänge.
 * Service-Verfügbarkeit
 * Datenaufbewahrung bei präzisen Datenzugriffs
@@ -29,7 +29,7 @@ Die folgenden Begriffe und Definitionen werden innerhalb des Keystone STaaS Serv
 
 == Kennzahlenmessung
 
-* *Kapazitätsmessung in Gibibyte (gib), Tebibyte (tib) und Pebibyte (PiB)*: Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).
+* *Kapazitätsmessung in GiB, TiB und PiB*: Messungen der Datenspeicherkapazität auf Basis von 1024 (1 GiB = 1024^3^ Bytes, 1 TiB = 1024^4^ Bytes und 1 PiB = 1024^5^ Bytes).
 * *Operationszählerdiagramm in IOPS*: Die von der Anwendung angeforderten Protokolloperationen pro Sekunde.
 * *Verfügbarkeit*: Gemessen als Prozentsatz der vom Dienst erfolgreich beantworteten E/A-Anfragen, geteilt durch die Gesamtzahl der an den Dienst gestellten I/O-Anfragen. Dies wird an der Service-Abgrenzung in einem Monat gemessen und schließt nicht die geplante Ausfallzeit oder Nichtverfügbarkeit der vom Kunden bereitgestellten Einrichtungen, Netzwerke oder anderen Services ein.
 * *Langlebigkeit*: Prozentsatz der Daten, auf die ohne Verlust der Treue zugegriffen wird, ausgenommen vom Kunden verursachte Löschung oder Beschädigung.

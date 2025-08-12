@@ -14,7 +14,7 @@ summary: Informieren Sie sich über die Speicherkapazitätstypen, die vom NetApp
 
 
 [role="lead"]
-Der NetApp Keystone STaaS-Dienst für Version 3 (v3) unterstützt mehrere Arten von Speicherkapazitäten. Das Verständnis dieser unterschiedlichen Kapazitätsbegriffe kann bei der Verwendung von Keystone hilfreich sein.
+Der NetApp Keystone STaaS-Dienst unterstützt mehrere Arten von Speicherkapazitäten. Das Verständnis dieser unterschiedlichen Kapazitätsbegriffe kann Ihnen bei der Verwendung von Keystone helfen.
 
 
 
@@ -49,7 +49,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die derzeit auf dem Service verwendet wird. Die Berechnung erfolgt je nach Speichertyp unterschiedlich:
 
-* *Einheitlicher oder blockoptimierter Speicher*: Die verbrauchte Kapazität wird basierend auf dem in der Bestellung ausgewählten Kapazitätstyp berechnet, der entweder logische oder physische Kapazität sein kann. Die Berechnung erfolgt pro Performance-Service-Level-Instanz.
+* *Einheitlicher oder blockoptimierter Speicher*: Die verbrauchte Kapazität wird basierend auf der Art der Kapazität (entweder logisch oder physisch) berechnet, die während des Bestellvorgangs ausgewählt wurde.  Die Berechnung erfolgt pro Performance-Service-Level-Instanz.
 +
 .. *Logische Kapazität*: Sie ist die Summe aus:
 +
@@ -58,7 +58,7 @@ Die verbrauchte Kapazität bezieht sich auf die Kapazität (in tib Storage), die
 *** Jede physisch bereitgestellte Kapazität mit hoher Kapazität.
 
 
-.. *Körperliche Leistungsfähigkeit*: Sie setzt sich zusammen aus:
+.. *Körperliche Leistungsfähigkeit*: Sie ist die Summe aus:
 +
 *** Gemessene physische Kapazität, nach Dateneffizienz des Speicherarrays, zum Speichern aller Instanzen und Typen von Kundendaten, wie Kopien, gespiegelte Kopien, Versionen, Klone.
 *** Physische Kapazität zum Speichern von Metadaten und differenziellen Daten von Snapshots.

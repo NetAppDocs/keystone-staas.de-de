@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/billing-schedules.html 
 keywords: billing schedules, schedule for payment 
-summary: Keystone STaaS Abonnements werden monatlich und jährlich abgerechnet. 
+summary: Keystone STaaS-Abonnements werden monatlich, vierteljährlich, halbjährlich oder jährlich abgerechnet. 
 ---
 = Abrechnungszeitpläne
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Keystone STaaS Abonnements werden monatlich und jährlich abgerechnet.
 
 
 [role="lead"]
-Keystone STaaS-Abonnements in Version 3 (v3) werden monatlich, vierteljährlich, halbjährlich oder jährlich abgerechnet.
+Keystone STaaS-Abonnements werden monatlich, vierteljährlich, halbjährlich oder jährlich abgerechnet.
 
 
 
@@ -26,11 +26,11 @@ Rechnungen werden monatlich versendet. Für den Monat, in dem die Dienstleistung
 
 == Vierteljährliche, halbjährliche und jährliche Abrechnung
 
-Bei der vierteljährlichen, halbjährlichen und jährlichen Abrechnung ist der Prozess ähnlich, mit leichten zeitlichen Abweichungen:
+Bei der vierteljährlichen, halbjährlichen und jährlichen Abrechnung ist der Ablauf ähnlich, mit leichten Abweichungen im Zeitablauf:
 
 * *Vierteljährliche Abrechnung*: Zu Beginn jedes Abonnementquartals wird eine Rechnung über die Mindestzahlung der zugesagten Kapazität erstellt. Eine weitere Rechnung wird am Quartalsende für die angefallene Burst-Nutzung versandt.
-* *Halbjährliche Abrechnung*: Zu Beginn jedes Halbjahres wird eine Rechnung über die Mindestzahlung für die zugesagte Kapazität erstellt. Am Ende jedes Quartals wird eine weitere Rechnung für die angefallene Burst-Nutzung versandt.
-* *Jährliche Abrechnung*: Zu Beginn jedes Abonnementjahres wird eine Rechnung über die Mindestzahlung der zugesagten Kapazität erstellt. Eine weitere Rechnung wird am Ende jedes Quartals für die angefallene Burst-Nutzung versandt.
+* *Halbjährliche Abrechnung*: Zu Beginn jedes Halbjahres wird eine Rechnung über die Mindestzahlung der zugesagten Kapazität erstellt.  Für die angefallene Burst-Nutzung wird jeweils am Quartalsende eine weitere Rechnung verschickt.
+* *Jährliche Abrechnung*: Zu Beginn jedes Abonnementjahres wird eine Rechnung über die Mindestzahlung der zugesagten Kapazität erstellt.  Für die angefallene Burst-Nutzung wird jeweils am Quartalsende eine weitere Rechnung verschickt.
 
 
-Bei vierteljährlicher, halbjährlicher und jährlicher Abrechnung wird im Falle einer Änderung der zugesagten Kapazität während eines Abonnements am selben Tag eine Rechnung über die anteiligen Mindestzahlungen für den Rest des Abonnementjahres gesendet. Die Abrechnung wird ab dem Tag berechnet, an dem die Änderung der zugesagt Kapazität wirksam ist.
+Bei vierteljährlicher, halbjährlicher und jährlicher Abrechnung wird bei einer Änderung der zugesagten Kapazität während eines Abonnements am selben Tag eine Rechnung über die anteiligen Mindestzahlungen für den Rest des Abonnementjahres gesendet.  Die Abrechnung erfolgt ab dem Tag, an dem die Änderung der zugesagten Kapazität wirksam wird.

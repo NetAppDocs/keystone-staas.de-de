@@ -18,22 +18,23 @@ Die Keystone STaaS-Standardservices für File- und Block-Storage umfassen Tierin
 
 unter link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"] .
 
-Der Tiering-Add-on-Service ist nur dann erforderlich, wenn Daten auf Storage anderer Anbieter – z. B. Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) – Tiering-Daten übertragen werden. Dazu zählen unter anderem Keystone STaaS-unterstützter, S3-kompatibler Objekt-Storage von Drittanbietern.
+
+NOTE: Der Tiering-Add-On-Dienst ist nur erforderlich, wenn Daten auf Nicht- NetApp -Speicher wie Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) und andere von Keystone STaaS unterstützte, S3-kompatible Objektspeicher von Drittanbietern gestaffelt werden.
 
 Die Tiering-Funktion nutzt die NetApp FabricPool-Technologie, die ein automatisiertes Tiering von selten genutzten Daten auf Objekt-Storage-Tiers vor Ort und an anderen Standorten ermöglicht.
 
-Der Daten-Tiering-Service mit Add-on ermöglicht das Tiering von Extreme-, Premium-, Performance-, Standard- und Value-Tier zu einem Objekt-Storage-Ziel. Das Verhältnis zwischen häufig benötigten und kalten Daten, die verschoben werden sollen, ist nicht festgelegt. Zudem wird für jeden Tier eine separate Messung durchgeführt und abgerechnet.
+Der zusätzliche Daten-Tiering-Dienst ermöglicht das Tiering von den Tiers Extreme, Premium, Performance, Standard und Value zu einem Objektspeicherziel. Das Verhältnis zwischen den zu stufenden heißen und kalten Daten ist nicht festgelegt und jede Stufe wird separat gemessen und in Rechnung gestellt.
 
 Wenn das Ziel für Cold-Storage Tier beispielsweise lautet:
 
-* Keystone STaaS-Objekt-Tier, Keystone STaaS-StorageGRID-Objekt-Tier oder vorhandenes SGWS-Grid (Eigentum des Kunden) – Es fallen keine zusätzlichen Kosten an und es ist Teil des Standard-Service.
+* Keystone STaaS Value Tier, Keystone STaaS StorageGRID Object Tier oder vorhandenes StorageGRID Webscale (SGWS)-Grid (im Besitz des Kunden) – Es fallen keine zusätzlichen Kosten an; es ist Teil des Standarddienstes.
 * Public Cloud (AWS, Azure, Google) oder von Keystone STaaS unterstützter Objekt-Storage von Drittanbietern – Es gibt eine zusätzliche Gebühr für Datenkapazität, die auf Cold-Storage-Ziel verschoben wird.
 
 
 Die Gebühren für zusätzliche Tiering-Services gelten für die gesamte Abonnementlaufzeit.
 
 
-NOTE: Die von Cloud Volumes ONTAP benötigten Hyperscale-basierten Computing-, Storage- und Netzwerk-Services werden von NetApp nicht als Bestandteil der Keystone STaaS-Abonnements bereitgestellt. Diese Services müssen direkt von Hyperscale-Cloud-Service-Providern in Anspruch genommen werden.
+NOTE: Die von Cloud Volumes ONTAP benötigten Hyperscaler-basierten Rechen-, Speicher- und Netzwerkdienste werden von NetApp nicht als Teil der Keystone STaaS-Abonnements bereitgestellt. Diese Dienste müssen direkt von Hyperscaler-Cloud-Service-Anbietern bezogen werden.
 
 *Verwandte Informationen*
 

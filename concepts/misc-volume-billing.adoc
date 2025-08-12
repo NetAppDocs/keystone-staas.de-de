@@ -14,7 +14,7 @@ summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Kon
 
 
 [role="lead"]
-Wenn Sie die Keystone -Abrechnung für bestimmte Konfigurationen in Version 3 (v3) verstehen, können Sie die Servicenutzung optimieren und die Kosten verwalten.  Die Konfigurationen umfassen geklonte Volumes, temporäre Volumes, SnapMirror -Ziele, LUNs und System-/Root-Volumes.
+Wenn Sie die Keystone -Abrechnung für bestimmte Konfigurationen verstehen, können Sie die Servicenutzung optimieren und die Kosten verwalten. Die Konfigurationen umfassen geklonte Volumes, temporäre Volumes, SnapMirror -Ziele, LUNs und System-/Root-Volumes.
 
 
 
@@ -46,28 +46,6 @@ Die Preise für SnapMirror-Zielvolumes, egal ob für die Notfallwiederherstellun
 == Abrechnung für LUNs
 
 Bei LUNs erfolgt die Abrechnung auf Basis der Leistungsservicelevel des Volumes.
-
-
-
-== System- und Root-Volumes
-
-System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Service überwacht, jedoch nicht gezählt oder abgerechnet. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.
-
-
-
-== Abrechnung für SnapMirror Ziele
-
-Das Preismodell für das SnapMirror Ziel-Volume unterliegt der anpassungsfähigen QoS-Richtlinie für das Service-Level, das auf dem Quell-Volume zugewiesen ist. Wenn der Quelle jedoch keine Adaptive QoS-Richtlinie zugeordnet ist, wird das Ziel auf der Grundlage des niedrigsten verfügbaren Service-Levels abgerechnet.
-
-
-
-== Abrechnung für LUNs
-
-Bei LUNs wird dasselbe Abrechnungsmuster befolgt wie für Volumes, die durch anpassungsfähige QoS-Richtlinien gesteuert werden. Wenn separate anpassungsfähige QoS-Richtlinien auf LUNs festgelegt werden, dann:
-
-* Die LUN-Größe wird gemäß dem zugehörigen Service-Level der LUN für den Verbrauch gezählt.
-* Der restliche Speicherplatz im Volume, falls vorhanden, wird gemäß der anpassungsfähigen QoS-Richtlinie des für das Volume festgelegten Service-Levels abgerechnet.
-
 
 
 
