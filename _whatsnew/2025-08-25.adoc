@@ -1,0 +1,15 @@
+= Verbesserte logische Nutzungsverfolgung mit einer neuen Spalte
+:allow-uri-read: 
+
+
+
+
+=== Verbesserte logische Nutzungsverfolgung mit einer neuen Spalte
+
+Eine neue Spalte, Gesamt-Footprint, wurde hinzugefügt, um die Keystone Verbrauchsverfolgung für FabricPool -Volumes zu verbessern:
+
+* * Keystone -Dashboard in BlueXP*: Sie können die Spalte *Gesamt-Footprint* auf der Registerkarte *Volumes in Clustern* innerhalb der Registerkarte *Assets* sehen.
+* * Digital Advisor*: Sie können die Spalte *Gesamt-Footprint* auf der Registerkarte *Volume-Details* innerhalb der Registerkarte *Volumes & Objekte* sehen.
+
+
+Diese Spalte zeigt den gesamten logischen Footprint für Volumes mit FabricPool -Tiering an, einschließlich Daten aus Leistungs- und Cold-Tiers, sodass Sie den Keystone -Verbrauch genau berechnen können.
