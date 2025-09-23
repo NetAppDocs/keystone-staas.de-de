@@ -76,6 +76,11 @@ link:../integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keyston
 
 
  a| 
+link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
+| Ja. | Nein 
+
+
+ a| 
 link:../integrations/modify-subscription.html["Ändern Sie Ihre Abonnements"] (nur für Keystone-Administratoren)
 | Ja. | Nein 
 

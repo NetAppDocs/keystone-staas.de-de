@@ -31,7 +31,7 @@ Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
 . Wählen Sie die Registerkarte *Verbrauchstrend*.
 . Wählen Sie „Historischer Verbrauch“ aus der Dropdown-Liste „Ansicht“ und wählen Sie mithilfe des Kalendersymbols im Feld „Zeitraum“ den Zeitraum aus, um Trends bei der Kapazitätsnutzung zu analysieren.
 +
-Die historischen Verbrauchsdaten für jedes Leistungsservicelevel werden basierend auf dem ausgewählten Zeitraum in einem Liniendiagramm angezeigt.
+Die historischen Verbrauchsdaten für jedes Leistungsservicelevel werden basierend auf dem ausgewählten Zeitbereich in einem Liniendiagramm angezeigt. Wenn ein Keystone Abonnement geändert oder erneuert wird, können Sie das Startdatum auf ein früheres Datum festlegen, um vergangene Verbrauchsdaten anzuzeigen.
 
 +
 

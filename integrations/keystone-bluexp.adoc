@@ -36,5 +36,6 @@ Die Registerkarte *Übersicht* bietet folgende Einblicke:
 * link:..//integrations/keystone-aiq.html["Keystone-Dashboard im Digital Advisor"]
 * link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
 * link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
 

@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: integrations/monitoring-alert-monitors.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnmonitore für Ihre Keystone Abonnements anzuzeigen und zu erstellen. 
+---
+= Anzeigen und Erstellen von Warnmonitoren für Keystone -Abonnements
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Warnmonitore für Ihre Keystone Abonnements über das Keystone Dashboard in BlueXP anzeigen und erstellen.  Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Monitore für die Kapazitätsnutzung und das Ablaufen von Abonnements an.  Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen.  Diese Funktion ist in Digital Advisor nicht verfügbar.
+
+
+
+== Alarmmonitore anzeigen
+
+Um Warnmonitore anzuzeigen, führen Sie die folgenden Schritte aus:
+
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Überwachung > Alarmmonitore*.
++
+image:monitoring-alert-monitors-default-view.png["Ein Screenshot der Warnmonitore für Keystone -Abonnements"]
+
++
+Sie können eine Liste der Alarmmonitore für Ihre Keystone -Abonnements anzeigen, einschließlich Monitornamen, Alarmbedingungen, die Benachrichtigungen auslösen, Schweregrade, Abonnementnummern, Leistungsservicelevel und Status.  Sie können die Spalte *Erstellt von* überprüfen, um festzustellen, ob die Warnmonitore systemgeneriert oder benutzerdefiniert sind.
+
+
+
+
+
+== Erstellen und Verwalten von Warnmonitoren
+
+Auf der Registerkarte *Alarmmonitore* können Sie Monitore erstellen, um die Kapazitätsnutzung und das Ablaufen des Abonnements zu verfolgen.  Sie können vorhandene Monitore auch nach Bedarf bearbeiten, duplizieren oder löschen.
+
+[role="tabbed-block"]
+====
+.Erstellen eines Monitors
+--
+Um einen Alarmmonitor zu erstellen, gehen Sie folgendermaßen vor:
+
+.Schritte
+. Klicken Sie auf die Schaltfläche *Monitor erstellen*.
++
+Die Seite *Alarmmonitor erstellen* wird angezeigt.
+
++
+image:create-alert-monitor.png["Ein Screenshot der Erstellung eines Alarmmonitors für Keystone -Abonnements"]
+
+. Wählen Sie entweder *Kapazitätsnutzung* oder *Ablauf des Abonnements*, um den Monitortyp zu definieren.  Geben Sie basierend auf Ihrer Auswahl die folgenden Details an:
++
+** *Allgemeine Details*: Geben Sie einen Alarmnamen ein und wählen Sie den Schweregrad aus.
+** *Ressourcenauswahl*: Wählen Sie die Erstellung des Monitors für bestimmte Abonnements.  Füllen Sie basierend auf der Auswahl Ihres Monitortyps die angezeigten Pflichtfelder aus, z. B. Abonnementnummern und Leistungsservicelevel für Kapazitätsnutzungsmonitore oder nur Abonnementnummern für Monitore zum Ablauf von Abonnements.
++
+image:resource-selection.png["Ein Screenshot der Ressourcenauswahl für den Kapazitätsnutzungsmonitor"]
+
+** *Bedingung*: Legen Sie die Schwellenwertbedingung fest, die den Alarm auslöst.  Lösen Sie beispielsweise eine Warnung aus, wenn die Kapazitätsauslastung einen bestimmten Prozentsatz überschreitet.
+** *Benachrichtigungen*: Wählen Sie die Benutzer aus, die Warnbenachrichtigungen erhalten sollen.
+
+
+. Klicken Sie auf *Erstellen*.
++
+Nachdem Sie den Monitor erstellt haben, kehrt das System zur Seite *Alert-Monitore* zurück und zeigt den neuen Alert-Monitor mit aktivem Status in der Liste an.
+
+
+
+--
+.Monitor bearbeiten
+--
+.Schritte
+. Wählen Sie das Auslassungssymbol für den Alarmmonitor aus, den Sie ändern möchten.
++
+image:edit-alert-monitor.png["Ein Screenshot der Bearbeitung eines Alarmmonitors für Keystone -Abonnements"]
+
+. Wählen Sie *Bearbeiten*.
++
+Die Seite *Alarmmonitor bearbeiten* wird mit der aktuellen Monitorkonfiguration angezeigt.
+
+. Ändern Sie die erforderlichen Felder.  Feldbeschreibungen finden Sie unterlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Erstellen eines Monitors"] .
++
+
+NOTE: Bei systemgenerierten Warnmonitoren können Sie nur Abonnementnummern und Leistungsservicelevel für Kapazitätsnutzungsmonitore und nur Abonnementnummern für Abonnementablaufmonitore ändern.
+
+. Wählen Sie *Änderungen speichern*.
++
+Das System leitet Sie zur Seite *Alarmmonitore* zurück, wo der aktualisierte Monitor in der Liste angezeigt wird.
+
+
+
+--
+.Doppelter Monitor
+--
+.Schritte
+. Wählen Sie das Auslassungssymbol für den Monitor aus, den Sie kopieren möchten.
+. Wählen Sie *Duplizieren*.
++
+Die Seite *Alarmmonitor erstellen* wird angezeigt und die vorhandenen Feldwerte sind bereits ausgefüllt.
+
+. Ändern Sie die Felder nach Bedarf und klicken Sie auf *Erstellen*.
++
+Ein neuer Alarmmonitor wird mit der aktualisierten Konfiguration erstellt und in der Liste *Alarmmonitore* angezeigt.
+
+
+
+--
+.Monitor löschen
+--
+.Schritte
+. Wählen Sie das Auslassungssymbol für den Monitor aus, den Sie entfernen möchten.
+. Wählen Sie *Löschen* und bestätigen Sie den Löschvorgang.
++
+Nach dem Löschen erhalten die mit dem Monitor verbundenen Abonnements keine Benachrichtigungen mehr.
+
++
+
+NOTE: Vom System generierte Monitore können von Benutzern nicht gelöscht werden.
+
+
+
+--
+====
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone-Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen"]
+* link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Benachrichtigungen für Keystone -Abonnements"]
+

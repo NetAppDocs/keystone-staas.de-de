@@ -79,5 +79,6 @@ Informationen zu Ihren Keystone-Speicherdiensten und den entsprechenden Leistung
 * link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
 * link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
 * link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
 * link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
 

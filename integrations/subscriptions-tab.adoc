@@ -20,18 +20,15 @@ Sie können eine Liste aller Ihrer Abonnements sowohl in BlueXP als auch in Digi
 ====
 .BlueXP
 --
-Die Registerkarte „Abonnements“ in BlueXP ist in zwei Bereiche unterteilt: „Abonnements“ und „Leistungs-Servicelevel“. Jeder Bereich bietet spezifische Einblicke, die Ihnen bei der Verwaltung und Überwachung Ihrer Keystone-Abonnements helfen. Um detaillierte Informationen zu Ihren Abonnements anzuzeigen, gehen Sie wie folgt vor:
+Um detaillierte Informationen zu Ihren Abonnements anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
 . Gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone > Abonnements*.
 +
-image:bxp-subscription-list-1.png["Details der Registerkarte „Abonnement“ anzeigen"]
+image:bxp-subscription-list-2.png["Details der Registerkarte „Abonnement“ anzeigen"]
 
 +
-Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und Keystone Version für alle Abonnements. Weitere Informationen finden Sie unterlink:../integrations/keystone-bluexp.html["Keystone-Dashboard in BlueXP"] .
-
-+
-Aus der Tabelle können Sie folgende Details entnehmen:
+Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und nicht aufgelöste Warnungen. Aus der Tabelle können Sie folgende Details entnehmen:
 
 +
 ** *Abonnementnummer*: Die von NetApp zugewiesene Abonnementnummer des Keystone-Abonnements.
@@ -45,19 +42,11 @@ Aus der Tabelle können Sie folgende Details entnehmen:
 ** *Tage bis zum Ablauf des Abonnements*: Die Anzahl der verbleibenden Tage bis zum Ablauf des Abonnements.
 +
 
+NOTE: Sie können auf den Abwärtspfeil neben der Spalte *Ablaufdatum* klicken, um die Leistungsservicelevel-Informationen für jedes Abonnement anzuzeigen.  Hier werden detaillierte Kapazitätsinformationen angezeigt, darunter aktuelle Nutzung, zugesagte Kapazität, bereitgestellte Kapazität, Burst-Kapazität und verfügbare Kapazität.
+
++
+
 TIP: Sie können die in der Tabelle angezeigten Spalten mithilfe der Spaltenauswahl anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
-
-
-
-. Sie können die Unterregisterkarte *Leistungsservicelevel* auswählen, um die Leistungsservicelevel aller Abonnements anzuzeigen.
-+
-image:bxp-performance-levels.png["Leistungsservicelevel für alle Abonnements anzeigen"]
-
-+
-** *Leistungsservicelevel über Abonnements hinweg*: Zeigt die Anzahl der Leistungsservicelevel über die Abonnements hinweg an.
-** *Bereitstellungskonsistenz über Abonnements hinweg*: Zeigt die Anzahl der über- und unterbereitgestellten Leistungsservicelevel.
-+
-Sie können die Liste der Leistungsservicelevel einschließlich wichtiger Details wie dem Namen des Kunden, der Abonnementnummer, der Art des Leistungsservicelevels und der Gesamtzahl der Datenträger anzeigen. Die Tabelle zeigt außerdem die Anzahl der geschützten Volumes, die insgesamt zugesagte, verbrauchte, bereitgestellte und verfügbare Kapazität (mit und ohne Burst) sowie die aufgelaufene Burst-Kapazität an.
 
 
 
@@ -110,5 +99,6 @@ image:icon-grey.png["Graues Punktsymbol"] *Kein Verbrauch*: Im Vergleich zur zug
 * link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
 * link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
 * link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
 * link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
 

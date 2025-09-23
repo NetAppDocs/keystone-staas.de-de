@@ -100,5 +100,6 @@ Sie können in der Spalte *Abonnementnummer* auf eine Abonnementnummer klicken, 
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
 * link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
 * link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
 * link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
 

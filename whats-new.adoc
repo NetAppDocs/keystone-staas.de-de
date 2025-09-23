@@ -18,6 +18,28 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+== 22. September 2025
+
+
+
+=== Hinzufügen einer Alarmüberwachung
+
+Das Keystone -Dashboard in BlueXP enthält jetzt eine Registerkarte „Überwachung“ zum Verwalten von Warnungen und Monitoren für Ihre Abonnements.  Mit dieser neuen Registerkarte können Sie:
+
+* Zeigen Sie aktive Warnungen an und lösen Sie diese, darunter sowohl systemgenerierte als auch benutzerdefinierte Warnungen zur Kapazitätsnutzung und zum Ablauf von Abonnements.
+* Erstellen Sie Warnmonitore, um die Kapazitätsnutzung und den Ablauf von Abonnements zu verfolgen.
+
+
+Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"] .
+
+
+
+=== Optimierte Anzeige der Leistungsservice-Level
+
+Sie können die Informationen zu den Leistungsserviceleveln, die jetzt von einer separaten Registerkarte in eine erweiterbare Ansicht verschoben wurden, auf der Registerkarte *Abonnements* anzeigen.  Klicken Sie auf den Abwärtspfeil neben der Spalte *Ablaufdatum*, um sie für jedes Abonnement anzuzeigen. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Details zu Ihren Keystone-Abonnements anzeigen"] .
+
+
+
 == 28. August 2025
 
 

@@ -122,6 +122,12 @@ sidebar:
         url: "/integrations/assets-tab.html"
       - title: Anzeigen von Assets über mehrere Abonnements hinweg
         url: "/integrations/assets.html"
+    - title: Anzeigen und Verwalten von Warnungen und Monitoren
+      entries:
+      - title: Anzeigen und Verwalten von Warnungen
+        url: "/integrations/monitoring-alerts.html"
+      - title: Anzeigen und Erstellen von Warnmonitoren
+        url: "/integrations/monitoring-alert-monitors.html"
     - title: Ändern Sie Ihre Abonnements
       url: "/integrations/modify-subscription.html"
     - title: Zeigen Sie Ihre Serviceanfrage an

@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: integrations/monitoring-alerts.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnungen für Ihre Keystone Abonnements anzuzeigen und zu verwalten. 
+---
+= Anzeigen und Verwalten von Benachrichtigungen für Keystone -Abonnements
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über das Keystone -Dashboard in BlueXP können Sie aktive Warnungen in Ihrer Keystone Speicherumgebung anzeigen und verwalten.  Sie können sowohl systemgenerierte als auch benutzerdefinierte Warnungen zur Kapazitätsnutzung und zum Ablauf des Abonnements sehen.  In dieser Ansicht können Sie den Schweregrad von Warnungen schnell einschätzen, Speicherprobleme erkennen und Korrekturmaßnahmen ergreifen. Diese Ansicht ist in Digital Advisor nicht verfügbar.
+
+Informationen zum Konfigurieren benutzerdefinierter Warnungen finden Sie unterlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Erstellen und Verwalten von Warnmonitoren"] .
+
+
+
+== Warnungen anzeigen
+
+Um aktive Warnungen anzuzeigen, führen Sie die folgenden Schritte aus:
+
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Überwachung > Warnungen*.
++
+image:monitoring-alerts-default-view.png["Ein Screenshot aktiver Warnungen für Keystone -Abonnements"]
+
++
+Sie können Alarmdetails wie Schweregrad, ID, Beschreibung, Auslösezeit, Abonnementnummer, Tracking-ID, Leistungsservicelevel und Status anzeigen.  Auf der Seite wird auch die Gesamtzahl der nicht gelösten Warnungen nach Schweregrad und Typ angezeigt.
+
+
+
+
+
+== Verwalten von Warnungen
+
+Auf der Registerkarte *Warnungen* können Sie die folgenden Aktionen ausführen:
+
+* *Warnungen prüfen und beheben*: Wählen Sie die Warnmeldungs-ID-Nummer aus, um eine detaillierte Ansicht der Warnung zu öffnen.  In dieser Ansicht werden die Alarmbeschreibung und die vorgeschlagenen Lösungsschritte angezeigt.  Von dieser Detailansicht aus können Sie:
++
+** Markieren Sie die Warnung als gelöst, indem Sie nach der Behebung des Problems die Schaltfläche *Bearbeiten* auswählen.
+** Fügen Sie bei Bedarf unterstützende Notizen hinzu, indem Sie die Schaltfläche *Notiz hinzufügen* auswählen.
+
+
+* *Warnungen filtern*: Verwenden Sie das Filtersymbol in der Spalte *Status*, um nur aktive Warnungen, gelöste Warnungen oder beides anzuzeigen.
+* *Abonnementdetails anzeigen*: Wählen Sie die Abonnementnummer aus der Spalte *Abonnement* aus, um auf Abonnementdetails, Verbrauchstrends und Asset-Informationen zuzugreifen, die Ihnen beim Verstehen und Beheben der Warnung helfen können. Weitere Informationen finden Sie unter link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"] .
+
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone-Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone-Abonnementressourcen an"]
+* link:../integrations/monitoring-alert-monitors.html["Anzeigen und Erstellen von Warnmonitoren"]
+* link:../integrations/volumes-objects-tab.html["Zeigen Sie Volumes und Objektdetails an"]
+
