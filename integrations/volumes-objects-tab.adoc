@@ -16,7 +16,7 @@ summary: Anzeige von Kapazitätsdetails auf Volume- oder Objekt-Storage-Ebene
 [role="lead"]
 Wenn Sie Kapazitätsdetails auf Volume- oder Objektspeicherebene anzeigen möchten, können Sie in Digital Advisor zur Registerkarte *Volumes & Objekte* navigieren. Bei StorageGRID können Sie auf dieser Registerkarte den Verbrauch durch die einzelnen Nodes in Ihrer Objekt-Storage-Umgebung lesen.
 
-Diese Details finden Sie auf der Registerkarte *Assets* in BlueXP. Sie link:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"] .
+Sie können diese Details auf der Seite *Assets* in der NetApp Konsole anzeigen. Um die Details für ein bestimmtes Keystone STaaS-Abonnement anzuzeigen, lesen Sielink:../integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind"] . Wenn Sie Details zu mehreren Keystone Abonnements anzeigen möchten, lesen Sielink:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"] .
 
 
 NOTE: Der Titel dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl ONTAP als auch Objektspeicher haben, wird der Titel der Registerkarte als *Volumes & Objekte* angezeigt. Nur für ONTAP erscheint der Name *Volumes*. Für StorageGRID-Objektspeicher können Sie die Registerkarte *Objects* sehen.

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: integrations/keystone-bluexp.html 
-keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
-summary: Als NetApp Keystone STaaS-Abonnent können Sie sich einen Überblick über Ihre Abonnements von NetApp BlueXP verschaffen. 
+permalink: integrations/keystone-console.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor, NetApp Console, Console 
+summary: Als NetApp Keystone STaaS-Abonnent können Sie sich über die NetApp Console einen Überblick über Ihre Abonnements verschaffen. 
 ---
-= Keystone-Dashboard in BlueXP
+= Keystone -Dashboard in der NetApp -Konsole
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Als NetApp Keystone STaaS-Abonnent können Sie sich einen Überblick ü
 
 
 [role="lead"]
-Über die Registerkarte „Übersicht“ können Sie schnell die gefährdeten Workloads ermitteln, die Kapazität und den Ablaufstatus von Abonnements einsehen, ungelöste Warnmeldungen identifizieren und die Abonnements mit der höchsten Kapazitätsauslastung anzeigen. Sie können außerdem den Status Ihrer Abonnements für verschiedene Keystone-Versionen anzeigen und alle Probleme hervorheben, die Ihre Aufmerksamkeit erfordern.
+Auf der Seite *Übersicht* können Sie schnell die gefährdeten Workloads ermitteln, die Kapazität und den Ablaufstatus von Abonnements anzeigen, die nicht aufgelösten Warnungen identifizieren und die Abonnements mit der höchsten Kapazitätsauslastung anzeigen. Sie können auch den Status Ihrer Abonnements für verschiedene Versionen von Keystone anzeigen und alle Probleme hervorheben, die Ihre Aufmerksamkeit erfordern.
 
-Um die Registerkarte *Übersicht* anzuzeigen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone > Übersicht*.
+Um die Seite *Übersicht* anzuzeigen, gehen Sie im linken Navigationsmenü der Konsole zu *Speicher > Keystone > Übersicht*.
 
-image:bxp-dashboard-overview-1.png["ein Screenshot der Registerkarte „Übersicht“"]
+image:bxp-dashboard-overview-2.png["ein Screenshot der Übersichtsseite"]
 
-Die Registerkarte *Übersicht* bietet folgende Einblicke:
+Die Seite *Übersicht* bietet folgende Einblicke:
 
 * *Zusammenfassung*: Zeigt die Gesamtzahl der Abonnements, ONTAP-Cluster, StorageGRID-Knoten und ONTAP-Knoten an. Jede Kategorie verfügt über eine Schaltfläche „Anzeigen“, um einfach zu detaillierten Abschnitten auf der Registerkarte „Abonnements“ oder „Assets“ zu navigieren.
 * *Läuft bald ab*: Die Anzahl der Abonnements, die innerhalb von 6 Monaten ablaufen. Klicken Sie auf *Anzeigen*, um diese Abonnements auf der Registerkarte *Abonnements* anzuzeigen.
@@ -36,6 +36,5 @@ Die Registerkarte *Übersicht* bietet folgende Einblicke:
 * link:..//integrations/keystone-aiq.html["Keystone-Dashboard im Digital Advisor"]
 * link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
 * link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
-* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
 

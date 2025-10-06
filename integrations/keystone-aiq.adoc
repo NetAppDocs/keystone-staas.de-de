@@ -61,7 +61,7 @@ image:watchlist.png["Bildschirm „watchlist“"]
 *Verwandte Informationen*
 
 * link:../integrations/dashboard-access.html["Erste Schritte mit dem Keystone-Dashboard"]
-* link:../integrations/keystone-bluexp.html["Keystone-Dashboard in BlueXP"]
+* link:../integrations/keystone-console.html["Keystone -Dashboard in der NetApp -Konsole"]
 * link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
 * link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]

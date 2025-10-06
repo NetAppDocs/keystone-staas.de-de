@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/administration-tab.html 
-keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription 
+keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription, NetApp Console, Console 
 summary: Serviceanfrage für Keystone-Abonnement anzeigen oder stornieren. 
 ---
 = Serviceanfragen für Keystone-Abonnements anzeigen
@@ -14,18 +14,18 @@ summary: Serviceanfrage für Keystone-Abonnement anzeigen oder stornieren.
 
 
 [role="lead"]
-Sie können Serviceanfragen zum Ändern von Keystone-Abonnements über BlueXP anzeigen und verfolgen, sodass Sie eine schnelle Zusammenfassung erhalten und den Fortschritt überwachen können.
+Sie können Serviceanfragen zum Ändern von Keystone -Abonnements über die NetApp Konsole anzeigen und verfolgen, wodurch eine schnelle Zusammenfassung bereitgestellt und der Fortschritt überwacht wird.
 
 Um den Fortschritt anzuzeigen oder eine Anfrage abzubrechen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Verwaltung*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Verwaltung*.
 +
 Sie sehen eine Liste aller Serviceanfragen inklusive Anfragenummer, Anfragetyp und aktuellem Status.
 
 . Sie können auf das Symbol image:down-arrow.png["Abwärtspfeilsymbol"] Symbol neben der Spalte *Einreichungsdatum*, um die Anforderungsnummer zu erweitern und Details anzuzeigen. Sie sehen die Leistungsservicelevel, für die die Anforderungen gestellt wurden.
 +
-image:bxp-service-request-list.png["Ein Screenshot zeigt, für welche Performance-Service-Levels die Änderungsanforderungen gestellt werden."]
+image:console-service-request-list.png["Ein Screenshot zeigt, für welche Performance-Service-Levels die Änderungsanforderungen gestellt werden."]
 
 . Wählen Sie die Anforderungsnummer aus, um detaillierte Informationen anzuzeigen, einschließlich Änderungsdetails für das angeforderte Abonnement und den aktuellen Fortschrittsstatus.
 +

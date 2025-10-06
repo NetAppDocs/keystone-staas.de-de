@@ -21,7 +21,7 @@ Der Workflow zur Interaktion mit der REST-API von Digital Advisor umfasst im all
 . Richten Sie Ihr Digital Advisor-Konto ein. Sie müssen über gültige Anmeldedaten für die NetApp Support-Website verfügen, um sich bei Digital Advisor anzumelden. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/task_login_activeiq.html["Melden Sie sich bei Digital Advisor an."]
 . Verstehen Sie den zweistufigen Authentifizierungsprozess.
 +
-.. *Erzeugen eines Refresh-Tokens*: Ein Refresh-Token wird über die Digital Advisor-Konsole mit NetApp-Anmeldeinformationen abgerufen. Dieses Token wird verwendet, um einen kontinuierlichen Zugriff ohne wiederholte Anmeldungen zu gewährleisten.
+.. *Erstellen eines Aktualisierungstokens*: Ein Aktualisierungstoken wird über die Digital Advisor Konsole mithilfe der NetApp Anmeldeinformationen abgerufen. Dieses Token wird verwendet, um einen kontinuierlichen Zugriff ohne wiederholte Anmeldungen zu gewährleisten.
 .. *Einen Zugriffstoken generieren*: Das Refresh-Token wird verwendet, um Zugriffstoken zu generieren. Für die Autorisierung von API-Aufrufen des Keystone Service ist ein Zugriffstoken erforderlich. Das Token ist eine Stunde lang gültig.
 
 

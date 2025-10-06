@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/dashboard-access.html 
-keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
-summary: Als NetApp Keystone STaaS-Abonnent erhalten Sie über NetApp BlueXP oder Digital Advisor Zugriff auf das Keystone-Dashboard. 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions, NetApp Console, Console 
+summary: Als NetApp Keystone STaaS-Abonnent können Sie über die NetApp Console oder Digital Advisor auf das Keystone -Dashboard zugreifen. 
 ---
 = Erste Schritte mit dem Keystone-Dashboard
 :hardbreaks:
@@ -14,22 +14,22 @@ summary: Als NetApp Keystone STaaS-Abonnent erhalten Sie über NetApp BlueXP ode
 
 
 [role="lead"]
-Sie können über NetApp BlueXP oder Digital Advisor auf das Keystone-Dashboard zugreifen, nachdem Sie die NetApp Keystone-Dienste abonniert haben.
+Sie können über die NetApp Konsole oder Digital Advisor auf das Keystone -Dashboard zugreifen, nachdem Sie die NetApp Keystone -Dienste abonniert haben.
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp Konsole
 --
-Um sich bei BlueXP anzumelden, können Sie Ihre Anmeldeinformationen für die NetApp-Support-Site verwenden oder sich mit Ihrer E-Mail-Adresse und einem Passwort bei BlueXP registrieren. Erfahren Sie mehr über link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Melden Sie sich bei BlueXP an"^].
+Melden Sie sich mit Ihren Anmeldeinformationen für die NetApp Support-Site bei der Konsole an oder registrieren Sie sich mit Ihrer E-Mail-Adresse und einem Kennwort für eine NetApp Cloud-Anmeldung. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["Anmelden bei der Konsole"^] .
 
 .Schritte
-. Melden Sie sich bei BlueXP an.
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone*.
+. Melden Sie sich bei der Konsole an.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone* aus.
 +
 Das Keystone-Dashboard wird angezeigt.
 
 +
-image:discover-subscriptions-1.png["die Keystone-Dashboard-Seite"]
+image:discover-subscriptions-2.png["die Keystone-Dashboard-Seite"]
 
 +
 
@@ -54,7 +54,7 @@ Sie können die Details Ihres Abonnements und Ihrer Nutzung sowie eine Zusammenf
 ====
 *Verwandte Informationen*
 
-* link:../integrations/keystone-bluexp.html["Keystone-Dashboard in BlueXP"]
+* link:../integrations/keystone-console.html["Keystone -Dashboard in der NetApp -Konsole"]
 * link:..//integrations/keystone-aiq.html["Keystone-Dashboard im Digital Advisor"]
 * link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
 

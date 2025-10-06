@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/monitoring-alert-monitors.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, netapp console 
 summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnmonitore für Ihre Keystone Abonnements anzuzeigen und zu erstellen. 
 ---
 = Anzeigen und Erstellen von Warnmonitoren für Keystone -Abonnements
@@ -14,7 +14,7 @@ summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnmonitore fü
 
 
 [role="lead"]
-Sie können Warnmonitore für Ihre Keystone Abonnements über das Keystone Dashboard in BlueXP anzeigen und erstellen.  Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Monitore für die Kapazitätsnutzung und das Ablaufen von Abonnements an.  Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen.  Diese Funktion ist in Digital Advisor nicht verfügbar.
+Sie können Warnmonitore für Ihre Keystone Abonnements über das Keystone -Dashboard in der NetApp -Konsole anzeigen und erstellen. Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Monitore für die Kapazitätsnutzung und das Ablaufen von Abonnements an. Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen. Diese Funktion ist in Digital Advisor nicht verfügbar.
 
 
 
@@ -23,9 +23,9 @@ Sie können Warnmonitore für Ihre Keystone Abonnements über das Keystone Dashb
 Um Warnmonitore anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Überwachung > Alarmmonitore*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Überwachung > Alarmmonitore*.
 +
-image:monitoring-alert-monitors-default-view.png["Ein Screenshot der Warnmonitore für Keystone -Abonnements"]
+image:monitoring-alert-monitors-default-view-1.png["Ein Screenshot der Warnmonitore für Keystone -Abonnements"]
 
 +
 Sie können eine Liste der Alarmmonitore für Ihre Keystone -Abonnements anzeigen, einschließlich Monitornamen, Alarmbedingungen, die Benachrichtigungen auslösen, Schweregrade, Abonnementnummern, Leistungsservicelevel und Status.  Sie können die Spalte *Erstellt von* überprüfen, um festzustellen, ob die Warnmonitore systemgeneriert oder benutzerdefiniert sind.

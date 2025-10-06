@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/modify-subscription.html 
-keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription 
-summary: Ändern Sie Ihr Keystone-Abonnement, um die zugesagte Kapazität für die zugehörigen Leistungsservicelevel über BlueXP zu ändern. 
+keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription, NetApp Console, Console 
+summary: Ändern Sie Ihr Keystone -Abonnement, um die zugesagte Kapazität für die zugehörigen Leistungsservicelevel über die NetApp Konsole zu ändern. 
 ---
-= Ändern Sie Ihr Keystone-Abonnement von BlueXP
+= Ändern Sie Ihr Keystone -Abonnement über die NetApp Konsole
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,19 @@ summary: Ändern Sie Ihr Keystone-Abonnement, um die zugesagte Kapazität für d
 
 
 [role="lead"]
-Sie können die zugesagte Kapazität Ihres Keystone-Abonnements für die zugehörigen Leistungsservicelevel über BlueXP ändern.
+Sie können die zugesagte Kapazität Ihres Keystone Abonnements für die zugehörigen Leistungsservicelevel über die NetApp Konsole ändern.
 
 [NOTE]
 ====
 * Sie können die zugesicherte Kapazität ändern, wenn bis zum Ablauf des Abonnements noch mehr als 90 Tage verbleiben.
-* Um die zugesagte Kapazität ändern zu können, muss Ihnen die Rolle *Keystone-Administrator* zugewiesen sein. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Informieren Sie sich über Zugriffsrollen von BlueXP"^].
+* Um die zugesagte Kapazität ändern zu können, muss Ihnen die Rolle * Keystone -Administrator* zugewiesen sein. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole"^] .
 
 
 ====
 Um die zugesicherte Kapazität zu ändern, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Wählen Sie im BlueXP-Menü *Speicher > Keystone > Abonnements*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 . Klicken Sie in der Tabelle auf das Auslassungssymbol für das Abonnement, das Sie ändern möchten, und wählen Sie dann *Ändern* aus.
 +
 Auf der Seite *Abonnement ändern* werden die Details zu den abonnierten Leistungsserviceleveln angezeigt, die mit der ausgewählten Abonnementnummer verknüpft sind.
@@ -36,7 +36,7 @@ Auf der Seite *Abonnement ändern* werden die Details zu den abonnierten Leistun
 NOTE: Optional können Sie auf die Seite *Abonnement ändern* zugreifen, indem Sie im Abschnitt mit den Abonnementdetails auf *Abonnement verwalten* klicken und dann *Ändern* auswählen.
 
 +
-image:bxp-modify-subscription-1.png["Ein Screenshot, der die Änderungsoption aus der Abonnementliste zeigt"]
+image:console-modify-subscription.png["Ein Screenshot, der die Änderungsoption aus der Abonnementliste zeigt"]
 
 . Klicken Sie auf *Kapazität bearbeiten*, um die zugesagte Kapazität für die Leistungsservicelevel zu ändern, geben Sie die erforderlichen Details ein und klicken Sie auf *Senden*.
 +

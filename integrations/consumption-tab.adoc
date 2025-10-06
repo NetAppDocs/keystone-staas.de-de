@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/consumption-tab.html 
-keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp 
+keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp, NetApp Console, Console 
 summary: Wenn Sie die Abonnementnutzung verstehen, haben Sie die Möglichkeit, die gebuchte Kapazität, die verbrauchte Kapazität, die verfügbare Kapazität und vieles mehr anzuzeigen. 
 ---
 = Verbrauchstrends Ihrer Keystone-Abonnements anzeigen
@@ -16,14 +16,14 @@ summary: Wenn Sie die Abonnementnutzung verstehen, haben Sie die Möglichkeit, d
 [role="lead"]
 Sie können Ihre Abonnementnutzung überwachen, indem Sie Verlaufsdaten Ihrer Keystone-Abonnements für einen bestimmten Zeitraum anzeigen. So erhalten Sie wertvolle Einblicke in Ihr Nutzungsverhalten.
 
-Sie können historische Daten Ihrer Keystone-Abonnements über BlueXP oder Digital Advisor anzeigen:
+Sie können historische Daten Ihrer Keystone -Abonnements über die NetApp Konsole oder Digital Advisor anzeigen:
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp Konsole
 --
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 . Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* aus.
 +
 Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
@@ -129,7 +129,7 @@ Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kap
 
 == Aufgelaufenen Burst anzeigen
 
-Sie können den aufgelaufenen Datenverbrauch über BlueXP oder Digital Advisor einsehen. Wenn Sie in BlueXP im Dropdown-Menü „Anzeigen“ im Tab „Verbrauchstrend“ die Option „Aufgelaufener Datenverbrauch“ oder im Tab „Verbrauchstrend“ die Option „Abgerechneter Datenverbrauch“ im Tab „Verbrauchstrend“ ausgewählt haben, können Sie den aufgelaufenen Datenverbrauch monatlich oder vierteljährlich einsehen, abhängig vom gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 Monate verfügbar, die in Rechnung gestellt wurden, und Sie können bis zu den letzten 30 Monaten nach dem Datumsbereich abfragen. Balkendiagramme zeigen die fakturierten Daten an, und wenn die Nutzung noch nicht in Rechnung gestellt wurde, werden sie für diesen Zeitraum als „_Pending_“ markiert.
+Sie können die aufgelaufene Burst-Datennutzung über die Konsole oder Digital Advisor anzeigen. Wenn Sie in der Konsole im Dropdown-Menü *Anzeigen* auf der Registerkarte *Verbrauchstrend* die Option *Aufgelaufener Burst* oder in Digital Advisor auf der Registerkarte *Verbrauchstrend* die Option *Abgerechneter aufgelaufener Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung je nach ausgewähltem Abrechnungszeitraum auf monatlicher oder vierteljährlicher Basis anzeigen. Diese Daten sind für die letzten 12 abgerechneten Monate verfügbar und Sie können nach Datumsbereich für bis zu 30 Monate abfragen. Balkendiagramme zeigen die in Rechnung gestellten Daten an. Wenn die Nutzung noch nicht in Rechnung gestellt wurde, wird sie für diesen Zeitraum als _Ausstehend_ markiert.
 
 
 TIP: Die in Rechnung gestellte aufgelaufene Burst-Nutzung wird pro Abrechnungszeitraum basierend auf der zugesagten und verbrauchten Kapazität für ein Leistungsservicelevel berechnet.
@@ -146,7 +146,7 @@ Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM
 
 == Anzeige der täglichen angesammelten Burst-Datennutzung
 
-Sie können den täglich aufgelaufenen Burst-Datenverbrauch für einen monatlichen oder vierteljährlichen Abrechnungszeitraum über BlueXP oder Digital Advisor einsehen. In BlueXP bietet die Tabelle „Aufgelaufener Burst nach Tagen“ detaillierte Daten, einschließlich Zeitstempel, zugesagter, verbrauchter und aufgelaufener Burst-Kapazität, wenn Sie im Dropdown-Menü „Anzeigen“ auf der Registerkarte „Verbrauchstrend“ die Option „Aufgelaufener Burst“ auswählen.
+Sie können die täglich aufgelaufene Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum über die Konsole oder den Digital Advisor anzeigen. In der Konsole bietet die Tabelle *Aufgelaufener Burst nach Tagen* detaillierte Daten, einschließlich Zeitstempel, zugesagter, verbrauchter und aufgelaufener Burst-Kapazität, wenn Sie *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auf der Registerkarte *Verbrauchstrend* auswählen.
 
 image:bxp-accrued-burst-days.png["Screenshot der Tabelle mit den aufgelaufenen Bursts nach Tagen"]
 

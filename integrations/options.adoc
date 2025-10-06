@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/options.html 
-keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor, NetApp Console, Console 
 summary: Als NetApp Keystone STaaS-Abonnent können Sie Ihre Daten suchen und filtern, Berichte für Abonnements und Nutzung erstellen, Zeitstempel überprüfen und Warnungen anzeigen. 
 ---
 = Durchsuchen Sie Keystone-Daten, erstellen Sie Berichte und zeigen Sie Warnmeldungen an
@@ -18,17 +18,17 @@ Sie können Ihre Daten suchen und filtern, Berichte zu Abonnements und Nutzung e
 
 
 
-== Suchen und filtern Sie Daten von BlueXP
+== Suchen und Filtern von Daten über die NetApp Konsole
 
-In BlueXP können Sie Keystone-Daten anhand der in der Tabelle innerhalb eines Tabs verfügbaren Spaltenparameter suchen und filtern. Beispielsweise können Sie im Untertabulator „Abonnements“ unter dem Tab „Abonnements“ Daten filtern, indem Sie die Keystone-Version in das Suchfeld eingeben. Ebenso können Sie im Tab „Volumes in Clustern“ unter dem Tab „Assets“ Volumes filtern, indem Sie den Volumenamen in das Suchfeld eingeben.
+In der Konsole können Sie Keystone -Daten basierend auf den in der Tabelle innerhalb einer Registerkarte verfügbaren Spaltenparametern suchen und filtern. Beispielsweise können Sie auf der Registerkarte *Abonnements* auf der Seite *Abonnements* Daten filtern, indem Sie die Keystone -Version in das Suchfeld eingeben. Ebenso können Sie auf der Registerkarte *Volumes in Clustern* auf der Seite *Assets* Volumes filtern, indem Sie den Volumenamen in das Suchfeld eingeben.
 
-Sie können Ihre Suche verfeinern, indem Sie die erweiterte Filteroption verwenden, sofern verfügbar. Beispielsweise können Sie im Unterregister *Abonnements* Daten nach Keystone Version, Abrechnungszeitraum, höchster Kapazität und Tagen bis zum Ablauf des Abonnements filtern und im Register *Volumes in Clustern* können Sie nach Volume-Name, Cluster-Name, Volume-Typ und mehr filtern. Um Ihre Ergebnisse präzise einzugrenzen, können mehrere Filter gleichzeitig angewendet werden.image:bxp-filter-search.png["erweiterte Filteroption"]
+Sie können Ihre Suche verfeinern, indem Sie die erweiterte Filteroption verwenden, sofern verfügbar. Beispielsweise können Sie auf der Registerkarte *Abonnements* Daten nach Keystone Version, Abrechnungszeitraum, höchster Kapazität und Tagen bis zum Ablauf des Abonnements filtern und auf der Registerkarte *Volumes in Clustern* können Sie nach Volume-Name, Cluster-Name, Volume-Typ und mehr filtern. Um Ihre Ergebnisse präzise einzugrenzen, können mehrere Filter gleichzeitig angewendet werden.image:bxp-filter-search.png["erweiterte Filteroption"]
 
 
 
-== Generieren Sie Berichte aus BlueXP oder Digital Advisor
+== Generieren Sie Berichte über die NetApp Konsole oder Digital Advisor
 
-Sie können Berichte für Ihre Keystone-Daten über die Download-Schaltfläche erstellen und anzeigen image:bluexp-download-report-2.png["Bericht-Download-Symbol 2 in BlueXP"] verfügbar in Registerkarten in BlueXP oder Digital Advisor. diese Registerkarten können Sie Berichte für Ihre Abonnements, Ihre historische Nutzung, Ihre Burst-Nutzung, Ihre Leistung, Ihre Assets, Ihre Volumes und Ihre Objekte erstellen.
+Über den Download-Button können Sie Berichte zu Ihren Keystone -Daten erstellen und anzeigenimage:bluexp-download-report-2.png["Symbol 2 zum Herunterladen von Berichten in der Konsole"] in Registerkarten in der Konsole oder im Digital Advisor verfügbar. Über diese Registerkarten können Sie Berichte zu Ihren Abonnements, zur historischen Nutzung, zur Burst-Nutzung, zur Leistung, zu Assets, Volumes und Objekten erstellen.
 
 Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwendung und den Vergleich speichern können.
 

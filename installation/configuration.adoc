@@ -110,7 +110,7 @@ image:kc-custom-ca.png["TUI-Bildschirm für CA-Anpassung"]
 
 == Erstellung Von Performance-Service-Leveln
 
-Sie können Performance Service Levels (PSLs) mit dem Management-TUI-Dienstprogramm Keystone Collector erstellen. Durch das Erstellen von PSLs über die TUI werden automatisch die Standardwerte für jedes Service-Level ausgewählt, wodurch das Risiko von Fehlern verringert wird, die auftreten können, wenn diese Werte manuell festgelegt werden, während PSLs über Active IQ Unified Manager erstellt werden.
+Sie können Performance Service Levels (PSLs) mit dem TUI-Verwaltungsdienstprogramm von Keystone Collector erstellen. Beim Erstellen von PSLs über die TUI werden automatisch die für jedes Leistungsservicelevel festgelegten Standardwerte ausgewählt. Dadurch wird die Wahrscheinlichkeit von Fehlern verringert, die beim manuellen Festlegen dieser Werte beim Erstellen von PSLs über Active IQ Unified Manager auftreten können.
 
 Weitere Informationen zu PSLs finden Sie unter link:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html["Performance Service Level"^].
 
@@ -133,15 +133,15 @@ image:qos-STaaS-selection-2.png["TUI-Bildschirm zur Angabe der Keystone-Version"
 
 +
 
-NOTE: Sie können die Option *KFS* für Keystone Abonnementservices Version 1 hervorheben. Die Keystone Abonnement-Services unterscheiden sich von Keystone STaaS in den Bereichen Service-Level, Service-Angebote und Abrechnungsgrundsätze. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Keystone Abonnementservices von Version 1"^].
+NOTE: Sie können die Option *KFS* für Keystone -Abonnementdienste Version 1 hervorheben. Die Abonnementdienste von Keystone unterscheiden sich von Keystone STaaS in den Leistungsstufen, Serviceangeboten und Abrechnungsgrundsätzen. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Keystone Abonnementservices von Version 1"^] .
 
-. Alle unterstützten Keystone Service-Level werden innerhalb der Option *Select Keystone Service Levels* für die angegebene Keystone Version angezeigt. Aktivieren Sie die gewünschten Service-Level aus der Liste.
+. Alle unterstützten Keystone Leistungsservicelevel werden in der Option * Keystone -Servicelevel auswählen* für die angegebene Keystone Version angezeigt. Aktivieren Sie die gewünschten Leistungsservicelevel aus der Liste.
 +
 image:qos-STaaS-selection-3.png["TUI-Bildschirm, um alle unterstützten Keystone-Service-Level anzuzeigen"]
 
 +
 
-NOTE: Sie können mehrere Service-Level gleichzeitig auswählen, um PSLs zu erstellen.
+NOTE: Sie können mehrere Leistungsservicelevel gleichzeitig auswählen, um PSLs zu erstellen.
 
 . Wählen Sie *Speichern* und drücken Sie die Eingabetaste. Performance Service Levels werden erstellt.
 +
@@ -153,4 +153,4 @@ image:qos-performance-sl.png["UI-Screenshot zum Anzeigen der erstellten AQoS-Ric
 
 
 
-TIP: Wenn auf dem angegebenen Active IQ-Server bereits eine PSL für den ausgewählten Service-Level vorhanden ist, können Sie sie nicht erneut erstellen. Wenn Sie versuchen, dies zu tun, erhalten Sie eine Fehlermeldung. image:qos-failed-policy-1.png["TUI-Bildschirm, um die Fehlermeldung für die Richtlinienerstellung anzuzeigen"]
+TIP: Wenn auf dem angegebenen Active IQ Unified Manager-Server bereits ein PSL für das ausgewählte Performance-Service-Level vorhanden ist, können Sie es nicht erneut erstellen. Wenn Sie dies versuchen, erhalten Sie eine Fehlermeldung.image:qos-failed-policy-1.png["TUI-Bildschirm, um die Fehlermeldung für die Richtlinienerstellung anzuzeigen"]

@@ -14,7 +14,7 @@ summary: Die REST-API von Digital Advisor ruft eine Liste aller Abonnements und 
 
 
 [role="lead"]
-Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der angegebenen Kunden-ID verknüpft sind.
+Diese API ruft eine Liste aller Abonnements und Leistungsservicelevel ab, die mit der angegebenen Kunden-ID verknüpft sind.
 
 *Anfrage:*
 
@@ -43,7 +43,7 @@ Diese API ruft eine Liste aller Abonnements und Service-Level ab, die mit der an
 |===
 *Antwort:*
 
-Die API antwortet mit einem JSON-Objekt, das eine Liste aller Abonnements und zugehörigen Service-Level-Details für den angegebenen Kunden enthält. Hier ein Beispiel für eine Antwort:
+Die API antwortet mit einem JSON-Objekt, das eine Liste aller Abonnements und der zugehörigen Leistungsserviceleveldetails für den jeweiligen Kunden enthält. Hier ist eine Beispielantwort:
 
 [listing]
 ----

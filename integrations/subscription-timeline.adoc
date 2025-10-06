@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/subscription-timeline.html 
-keywords: keystone, BlueXP, subscriptions, timeline, lifecycle, activation, modification, renewal 
-summary: Sehen Sie sich die Abonnementzeitleiste von BlueXP an, die Ereignisse wie Aktivierungs-, Änderungs- und Verlängerungsdaten enthält. 
+keywords: keystone, BlueXP, subscriptions, timeline, lifecycle, activation, modification, renewal, NetApp Console, Console 
+summary: Zeigen Sie die Abonnementzeitleiste in der NetApp Konsole an, die Ereignisse wie Aktivierungs-, Änderungs- und Verlängerungsdaten enthält. 
 ---
 = Sehen Sie sich die Zeitleiste Ihrer Keystone-Abonnements an
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: Sehen Sie sich die Abonnementzeitleiste von BlueXP an, die Ereignisse w
 
 
 [role="lead"]
-Das Keystone-Dashboard in BlueXP bietet eine Zeitleistenansicht Ihrer Keystone-Abonnements und zeigt Ereignisse wie Aktivierungs-, Änderungs- und Verlängerungsdaten an. Diese Zeitleistenansicht ist in Digital Advisor nicht verfügbar.
+Das Keystone -Dashboard in der NetApp Konsole bietet eine Zeitleistenansicht Ihrer Keystone Abonnements und zeigt Ereignisse wie Aktivierungs-, Änderungs- und Verlängerungsdaten an. Diese Zeitleisten-Ansicht ist in Digital Advisor nicht verfügbar.
 
 Um die Abonnement-Zeitleiste anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 . Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* aus, um die Abonnementzeitleiste anzuzeigen.
 +
 Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
@@ -29,7 +29,7 @@ Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
 image:bxp-subscription-timeline-graph.png["Ein Screenshot, der die Abonnement-Zeitleiste in einem Liniendiagrammformat zusammen mit wichtigen Ereignissen anzeigt"]
 
 +
-Die Abonnement-Zeitleiste wird standardmäßig als Liniendiagramm angezeigt, wobei wichtige Ereignisse durch Symbole gekennzeichnet sind. Bewegen Sie den Mauszeiger über ein Ereignis, um detaillierte Informationen wie Datum und Änderungen an der zugesicherten Kapazität während einer Änderung anzuzeigen. Um diese Ereignisse in einer Tabelle anzuzeigen, wählen Sie die Option *Tabelle* aus der Dropdown-Liste *Anzeigen als*. Sie können die Zeitleiste anderer Abonnements auch anzeigen, indem Sie die Dropdown-Liste *Tracking-ID* auswählen oder darin suchen.
+Die Abonnement-Zeitleiste wird standardmäßig als Liniendiagramm angezeigt, wobei wichtige Ereignisse mit Symbolen gekennzeichnet sind. Bewegen Sie den Mauszeiger über ein Ereignis, um Details anzuzeigen, einschließlich des Datums und der zugesagten Kapazitätsänderungen. Um diese Ereignisse in einer Tabelle anzuzeigen, wählen Sie die Option *Tabelle* aus der Dropdown-Liste *Anzeigen als*. Um andere Abonnementzeitpläne anzuzeigen, wählen Sie aus der Dropdown-Liste *Tracking-ID* eine Option aus oder suchen Sie danach.
 
 +
 image:bxp-subscription-timeline.png["Ein Screenshot, der die Abonnement-Zeitleiste in einem Tabellendiagrammformat zusammen mit wichtigen Ereignissen anzeigt"]

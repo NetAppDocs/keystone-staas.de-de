@@ -28,7 +28,7 @@ Dies ist die Speicherkapazität, die zum Speichern von Benutzerdaten erforderlic
 
 Die minimale logische Kapazität, die während des Abonnements monatlich in Rechnung gestellt wird:
 
-* Jedem Service Level ist die Kapazität zugeordnet.
+* Für jedes Leistungsservicelevel ist Kapazität festgelegt.
 * Während der Laufzeit können gebundene Kapazitäten und zusätzliche Leistungsservice-Levels hinzugefügt werden.
 
 
@@ -40,7 +40,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 * Die zuges. Kapazität kann unter bestimmten Bedingungen verringert werden. Weitere Informationen finden Sie unter link:../concepts/capacity-requirements.html["Senkung der Kapazität"].
 * Die gebuchte Kapazität kann 90 Tage vor Ablauf Ihres Abonnements nicht erhöht werden, es sei denn, das Abonnement muss für eine zusätzliche 12-monatige Laufzeit verlängert werden.
-* Sie können Änderungen an der zugesagten Kapazität über die BlueXP-Schnittstelle oder von Ihrem Keystone Success Manager (KSM) anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:../concepts/gssc.html["NetApp Keystone-Support"].
+* Sie können Änderungen an der zugesagten Kapazität über die Konsole oder Ihren Keystone Success Manager (KSM) anfordern. Informationen zum Anfordern von Änderungen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone-Support"] .
 
 
 

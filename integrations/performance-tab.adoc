@@ -17,12 +17,12 @@ summary: Performance-Kennzahlen für die von Ihren Keystone Abonnements gemanagt
 Performance-Kennzahlen für die von Ihren Keystone Abonnements gemanagten ONTAP Volumes lassen sich anzeigen, um die Performance der Systeme zu überwachen.
 
 
-TIP: Diese Registerkarte steht Ihnen in Digital Advisor optional zur Verfügung. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen. In BlueXP ist sie nicht verfügbar.
+TIP: Dieser Reiter steht Ihnen im Digital Advisor optional zur Verfügung. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen. Es ist in der NetApp Konsole nicht verfügbar.
 
 Um diese Registerkarte in Digital Advisor anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Klicken Sie auf *Allgemein > Keystone-Abonnements > Leistung*.
+. Wählen Sie *Allgemein > Keystone -Abonnements > Leistung*.
 . Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste Abonnementnummer ausgewählt.
 . Wählen Sie den gewünschten Volume-Namen aus der Liste aus.
 +

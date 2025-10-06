@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/monitoring-alerts.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, console 
 summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnungen für Ihre Keystone Abonnements anzuzeigen und zu verwalten. 
 ---
 = Anzeigen und Verwalten von Benachrichtigungen für Keystone -Abonnements
@@ -14,7 +14,7 @@ summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnungen für I
 
 
 [role="lead"]
-Über das Keystone -Dashboard in BlueXP können Sie aktive Warnungen in Ihrer Keystone Speicherumgebung anzeigen und verwalten.  Sie können sowohl systemgenerierte als auch benutzerdefinierte Warnungen zur Kapazitätsnutzung und zum Ablauf des Abonnements sehen.  In dieser Ansicht können Sie den Schweregrad von Warnungen schnell einschätzen, Speicherprobleme erkennen und Korrekturmaßnahmen ergreifen. Diese Ansicht ist in Digital Advisor nicht verfügbar.
+Über das Keystone -Dashboard in der NetApp -Konsole können Sie aktive Warnungen in Ihrer Keystone -Speicherumgebung anzeigen und verwalten. Sie können sowohl systemgenerierte als auch benutzerdefinierte Warnungen zur Kapazitätsnutzung und zum Ablauf des Abonnements sehen. In dieser Ansicht können Sie den Schweregrad von Warnungen schnell einschätzen, Speicherprobleme erkennen und Korrekturmaßnahmen ergreifen. Diese Ansicht ist in Digital Advisor nicht verfügbar.
 
 Informationen zum Konfigurieren benutzerdefinierter Warnungen finden Sie unterlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Erstellen und Verwalten von Warnmonitoren"] .
 
@@ -25,9 +25,9 @@ Informationen zum Konfigurieren benutzerdefinierter Warnungen finden Sie unterli
 Um aktive Warnungen anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Überwachung > Warnungen*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Überwachung > Warnungen*.
 +
-image:monitoring-alerts-default-view.png["Ein Screenshot aktiver Warnungen für Keystone -Abonnements"]
+image:monitoring-alerts-default-view-1.png["Ein Screenshot aktiver Warnungen für Keystone -Abonnements"]
 
 +
 Sie können Alarmdetails wie Schweregrad, ID, Beschreibung, Auslösezeit, Abonnementnummer, Tracking-ID, Leistungsservicelevel und Status anzeigen.  Auf der Seite wird auch die Gesamtzahl der nicht gelösten Warnungen nach Schweregrad und Typ angezeigt.

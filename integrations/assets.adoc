@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, NetApp Console, Console 
 summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und -Nodes sowie zu StorageGRID-Grids, -Sites und -Nodes anzeigen, die von Ihren Keystone Abonnements gemanagt werden. 
 ---
 = Anzeigen von Assets über mehrere Keystone-Abonnements hinweg
@@ -14,19 +14,19 @@ summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und 
 
 
 [role="lead"]
-Das Keystone-Dashboard in BlueXP ermöglicht Ihnen die Anzeige detaillierter Informationen zu Knoten in Clustern, bereitgestellten Volumes und StorageGRID-Knoten über mehrere Keystone-Abonnements hinweg, entsprechend Ihren Zugriffsberechtigungen. Diese Ansicht ist in Digital Advisor nicht verfügbar.
+Über das Keystone Dashboard in der NetApp -Konsole können Sie je nach Ihren Zugriffsberechtigungen detaillierte Informationen zu Knoten in Clustern, bereitgestellten Volumes und StorageGRID Knoten über mehrere Keystone Abonnements hinweg anzeigen. Diese Ansicht ist in Digital Advisor nicht verfügbar.
 
 [role="tabbed-block"]
 ====
 .Knoten in Clustern
 --
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Assets* aus.
 +
-Auf der Registerkarte *Assets* wird die Unterregisterkarte *Knoten im Cluster* angezeigt.
+Auf der Seite *Assets* wird die Registerkarte *Knoten im Cluster* angezeigt.
 
 +
-image:bxp-nodes-clusters-multiple-subscription.png["Ein Screenshot von Knoten in Clustern für mehrere Abonnements"]
+image:console-nodes-clusters-multiple-subscription.png["Ein Screenshot von Knoten in Clustern für mehrere Abonnements"]
 
 +
 Sie können detaillierte Informationen zu allen Knoten in Clustern über Keystone-Abonnements hinweg anzeigen, einschließlich Knotenseriennummern, Status, Speichereffizienzeinstellungen, Plattformtyp und Kapazitätsdetails. Sie erhalten außerdem einen Überblick über:
@@ -47,10 +47,10 @@ TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selec
 .Volumes in Clustern
 --
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Assets* aus.
 . Wählen Sie die Registerkarte *Volumes in Clustern*.
 +
-image:bxp-volumes-clusters-multiple-sub-1.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
+image:console-volumes-clusters-multiple-sub.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
 
 +
 Sie sehen detaillierte Informationen zu allen Volumes in Clustern aller Keystone-Abonnements, einschließlich Volumename, Abonnementnummer, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel. Sie können die bereitgestellte Kapazität, die logische und physische Auslastung sowie Cold Data überwachen. Außerdem erhalten Sie einen Überblick über:
@@ -73,10 +73,10 @@ Sie können in der Spalte *Abonnementnummer* auf eine Abonnementnummer klicken, 
 .Knoten in Gittern
 --
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Assets* aus.
 . Wählen Sie die Registerkarte *Knoten in Rastern*.
 +
-image:bxp-nodes-grids-multiple-sub.png["Ein Screenshot von Knoten in Rastern für mehrere Abonnements"]
+image:console-nodes-grids-multiple-sub.png["Ein Screenshot von Knoten in Rastern für mehrere Abonnements"]
 
 +
 Sie können detaillierte Informationen zu allen Knoten in Grids aller Keystone-Abonnements anzeigen, einschließlich Knotenname, Knoten-ID, Abonnementnummer, Grid-Name, Knotentyp und Kunde. Sie können die verbrauchte und verfügbare Datenkapazität, die CPU-Auslastung und die nutzbare Datenkapazität überwachen.

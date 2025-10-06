@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
-keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions, NetApp Console, Console 
 summary: Wenn Sie die Abonnementnutzung verstehen, haben Sie die Möglichkeit, die gebuchte Kapazität, die verbrauchte Kapazität, die verfügbare Kapazität und vieles mehr anzuzeigen. 
 ---
 = Sehen Sie sich den aktuellen Verbrauch Ihrer Keystone-Abonnements an
@@ -16,14 +16,14 @@ summary: Wenn Sie die Abonnementnutzung verstehen, haben Sie die Möglichkeit, d
 [role="lead"]
 Sie erhalten Einblicke in die Nutzung Ihres Abonnements, indem Sie detaillierte Informationen wie zugesagte Kapazität, verbrauchte Kapazität und verfügbare Kapazität anzeigen. Dabei wird der aktuelle Verbrauchsstatus angezeigt und nach Leistungsserviceleveln aufgeschlüsselt.
 
-Um den aktuellen Verbrauchsstatus Ihrer Abonnements über BlueXP oder Digital Advisor anzuzeigen, gehen Sie folgendermaßen vor:
+Um den aktuellen Verbrauchsstatus Ihrer Abonnements über die NetApp Konsole oder Digital Advisor anzuzeigen, führen Sie die folgenden Schritte aus:
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp Konsole
 --
 .Schritte
-. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 . Wählen Sie in der Tabelle in der Spalte *Abonnementnummer* die Abonnementnummer aus, um den aktuellen Verbrauch anzuzeigen.
 +
 Sie werden zum Reiter *Stromverbrauch* weitergeleitet.

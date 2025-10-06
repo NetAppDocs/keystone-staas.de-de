@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/subscriptions-tab.html 
-keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp, NetApp Console, Console 
 summary: Weitere Informationen zu Ihren Keystone Abonnements finden Sie auf der Registerkarte Abonnements. 
 ---
 = Details zu Ihren Keystone-Abonnements anzeigen
@@ -14,21 +14,24 @@ summary: Weitere Informationen zu Ihren Keystone Abonnements finden Sie auf der 
 
 
 [role="lead"]
-Sie können eine Liste aller Ihrer Abonnements sowohl in BlueXP als auch in Digital Advisor unter der Registerkarte „Abonnements“ einsehen. Diese Registerkarte bietet leicht verständliche Einblicke basierend auf Ihrem Abonnementstatus und Ihrer Nutzung. So bleiben Sie stets informiert und können bei Bedarf Maßnahmen ergreifen.
+Sie können eine Liste aller Ihrer Abonnements unter *Abonnements* in der NetApp Konsole und im Digital Advisor anzeigen. Diese Ansicht bietet leicht verständliche Einblicke basierend auf Ihrem Abonnementstatus und Ihrer Nutzung und hilft Ihnen, auf dem Laufenden zu bleiben und bei Bedarf Maßnahmen zu ergreifen.
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetApp Konsole
 --
 Um detaillierte Informationen zu Ihren Abonnements anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone > Abonnements*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 +
-image:bxp-subscription-list-2.png["Details der Registerkarte „Abonnement“ anzeigen"]
+image:bxp-subscription-list-3.png["Details der Registerkarte „Abonnement“ anzeigen"]
 
 +
-Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und nicht aufgelöste Warnungen. Aus der Tabelle können Sie folgende Details entnehmen:
+Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und nicht aufgelöste Warnungen.
+
++
+Aus der Tabelle können Sie folgende Details entnehmen:
 
 +
 ** *Abonnementnummer*: Die von NetApp zugewiesene Abonnementnummer des Keystone-Abonnements.
