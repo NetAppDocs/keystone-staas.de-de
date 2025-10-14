@@ -78,6 +78,10 @@ Die folgende Liste enthält ein repräsentatives Beispiel für die Daten zur Kap
 ** Storage-Typ
 ** Aggregatname
 ** Aggregat-UUID
+** Physisch verwendet
+** Verfügbare Größe
+** Größe
+** Verwendete Größe
 
 
 * Aggregieren von Objektspeichern
@@ -174,6 +178,17 @@ Die folgende Liste enthält ein repräsentatives Beispiel für die Daten zur Kap
 ** VolumeBlocksFootprintBin1
 
 
+* MetroCluster
++
+** Node
+** Aggregat
+** LIFs
+** Konfigurationsreplikation
+** Anschlüsse
+** Cluster
+** Volumes
+
+
 * MetroCluster Cluster
 +
 ** ClusterUUID
@@ -182,6 +197,36 @@ Die folgende Liste enthält ein repräsentatives Beispiel für die Daten zur Kap
 ** RemoteCluserName
 ** LocalConfigurationState
 ** RemoteConfigurationState
+
+
+* MetroCluster -Knoten
++
+** DR-Spiegelungsstatus
+** Intercluster LIF
+** Knotenerreichbarkeit
+** DR-Partnerknoten
+** DR Aux Partner-Knoten
+** Symmetrische Beziehung zwischen DR, DR Aux und HA-Knoten
+** Automatische ungeplante Umschaltung
+
+
+* MetroCluster -Konfigurationsreplikation
++
+** Remote-Heartbeat
+** Letzter gesendeter Heartbeat
+** Letzter empfangener Heartbeat
+** Vserver Stream
+** Cluster-Stream
+** Storage
+** Speichervolumen im Einsatz
+
+
+* MetroCluster Mediatoren
++
+** Adresse des Mediators
+** Mediator-Port
+** Mediator konfiguriert
+** Mediator erreichbar
 ** Modus
 
 
@@ -243,6 +288,13 @@ Die folgende Liste ist ein repräsentatives Beispiel für die Performance-Daten,
 * QoSPolicyGroupLatenzzeit
 * ReadMBps
 * QoSSyncSnapmirrorLatency
+* Daten auf Systemebene
++
+** Schreiben/Lesen/Sonstige/Gesamt-IOPS
+** Schreiben/Lesen/Sonstiges/Gesamtdurchsatz
+** Schreiben/Lesen/Sonstiges/Gesamtlatenz
+
+
 * WriteIOPS
 
 
@@ -298,6 +350,11 @@ Die folgende Liste enthält ein repräsentatives Beispiel für die `Physical Dat
 * Instanz
 * StorageGRID-Speicherauslastung Byte
 * StorageGRID-Metadaten für Storage-Auslastung
+
+
+Die folgende Liste ist eine repräsentative Auswahl der `Availability/Uptime Data` für StorageGRID gesammelt:
+
+* SLA-Betriebszeit in Prozent
 
 
 ====

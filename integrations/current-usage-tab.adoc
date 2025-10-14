@@ -29,7 +29,7 @@ Um den aktuellen Verbrauchsstatus Ihrer Abonnements über die NetApp Konsole ode
 Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
 
 +
-image:bxp-current-consumption-graph-1.png["Stromverbrauchsdetails im grafischen Format"]
+image:console-current-consumption-graph.png["Stromverbrauchsdetails im grafischen Format"]
 
 +
 Für das ausgewählte Abonnement können Sie Verbrauchsdetails entweder tabellarisch oder grafisch anzeigen. Verwenden Sie dazu die Option *Tabelle* oder *Diagramm* in der Dropdown-Liste *Anzeigen als*. In der grafischen Ansicht sehen Sie den aktuellen Verbrauch pro Leistungsservicelevel, einschließlich der genutzten Kapazität, der bereitgestellten Kapazität, des zugesicherten Kapazitätslimits und des Burst-Kapazitätslimits.
@@ -39,10 +39,10 @@ Für das ausgewählte Abonnement können Sie Verbrauchsdetails entweder tabellar
 NOTE: Wenn ein Leistungsservicelevel mehrere Instanzen hat, können Sie in beiden Ansichten *Nach Instanzen anzeigen* erweitern, um die aktuellen Verbrauchsdetails für jede Instanz separat anzuzeigen.  Wenn Sie beispielsweise zwei Instanzen des Servicelevels „Extreme Leistung“ innerhalb eines Abonnements haben, werden für jede Instanz die eigenen zugesagten, verbrauchten und verfügbaren Kapazitäten separat angezeigt.
 
 +
-In der Tabellenansicht sehen Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf. Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, den Verbrauchsstatus, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazitäten und Volumes anzeigen. Sie können die Tabelle mithilfe der Spaltenauswahl anpassen. image:column-selector.png["Spaltenauswahlsymbol"] Symbol.
+In der Tabellenansicht können Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf sehen. Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, die Kapazitätsnutzung, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazität und Volumen anzeigen. Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol.
 
 +
-image:bxp-current-consumption-table-1.png["Stromverbrauchsdetails in Tabellenform"]
+image:console-current-consumption-table.png["Stromverbrauchsdetails in Tabellenform"]
 
 
 

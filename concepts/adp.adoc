@@ -1,39 +1,8 @@
 ---
-sidebar: sidebar 
 permalink: concepts/adp.html 
-keywords: data protection advanced 
-summary: Nutzen Sie den erweiterten Add-on Service für Datensicherheit, um eine effiziente Datensicherung für geschäftskritische Workloads zu gewährleisten. 
+redirect: keystone-staas/concepts/metrics.html 
 ---
-= Mehr über erweiterte Datensicherung erfahren
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
 
-[role="lead"]
-Sie können den erweiterten Zusatzdienst für Datenschutz mit Ihrem Keystone STaaS-Abonnement abonnieren. Dieser Zusatzdienst nutzt die NetApp MetroCluster -Technologie, um einen effizienten Datenschutz Ihrer unternehmenskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 sicherzustellen.
-
-
-NOTE: Die Keystone STaaS-Standarddienste für Datei- und Blockspeicher bieten standardmäßige Datenschutzdienste durch die Verwendung von NetApp -Technologien wie SnapMirror, SnapVault und Snapshot.
-
-Informationen zum Standard- und Cloud-Service finden Sie unter link:../concepts/supported-storage-services.html["Keystone STaaS Services"].
-
-Der erweiterte Keystone Datensicherungsservice kann Daten synchron an einen sekundären Standort spiegeln. Im Falle eines Ausfalls am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion nutzt die link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] Konfiguration zwischen zwei Standorten, um Datenschutz zu ermöglichen. Sie können die erweiterten Datensicherungs-Add-on-Services nur für Ihre Datei- und Block-Storage-Services in Anspruch nehmen. Als Teil dieses Zusatzdienstes bietet die  `Advanced Data-Protect` Ihrem Abonnement ist ein Leistungsservicelevel zugewiesen.
-
-Informationen zum Anzeigen des Verbrauchs in einer MetroCluster-Konfiguration finden Sie unter link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Referenzdiagramme für erweiterten Datenschutz"].
-
-Die Zusatzgebühren gelten für alle Kapazitäten im Abonnement: Die Quelle, gespiegelte Kopie und nicht gespiegelte Daten.
-
-Beachten Sie Folgendes:
-
-* Für diesen Service werden 100 % der zugewiesenen Kapazität zu einem damit verbundenen Storage als zugewiesene Kapazität konfiguriert.
-* Der Storage wird sowohl für das Quell- als auch das Ziel-Cluster abgerechnet. Dieser Add-on Service wird sowohl für die primären als auch für sekundäre (gespiegelte) Volumes in Rechnung gestellt.
-* Die Gebühren gelten nur für Ihre Datei- und Blocklagerung.
-
-
-Es werden die folgenden MetroCluster-Szenarien unterstützt:
-
-image:mcc.png["MetroCluster Konfigurationen werden von Keystone unterstützt"]

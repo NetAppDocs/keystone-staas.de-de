@@ -18,6 +18,27 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+== 13. Oktober 2025
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Spalte „QoS-Richtlinie außer Kraft setzen“ auf der Registerkarte „Assets“
+
+Die Registerkarte *Volumes in Clustern* innerhalb der Registerkarte *Assets* enthält jetzt eine Spalte *Außerkraftsetzung der QoS-Richtlinie*, die angibt, ob QoS-Regeln für Sicherungs- und Spiegelvolumes umgangen werden. Dabei wird *true* (Regeln ignoriert), *false* (Regeln erzwungen) oder *N/A* (für Spiegelvolumes) angezeigt.
+
+
+NOTE: Bei Keystone v3-Abonnements wird in dieser Spalte *N/A* angezeigt, da QoS-Richtlinien im v3-Angebot nicht anwendbar sind.
+
+
+
+=== Verbesserte Sichtbarkeit von Warnungen auf der Übersichtsseite
+
+Die Seite *Übersicht* enthält jetzt zwei neue Warnabschnitte mit den Namen *Ungelöste Warnmeldungen nach Schweregrad* und *Älteste ungelöste Keystone Warnmeldungen*. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/keystone-console.html["Keystone -Dashboard in der NetApp -Konsole"] .
+
+
+
 == 06. Oktober 2025
 
 

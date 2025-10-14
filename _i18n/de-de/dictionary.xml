@@ -66,7 +66,6 @@
   <block id="2e36da56dea864a88d8bfe77e37ce8ce" category="section-title">Monitoring-Tools</block>
   <block id="6961b64b96800d43e0da115e9763a226" category="paragraph">In einem vom Keystone Kunden betriebenen Service sind die Storage-Infrastruktur und Monitoring-Tools vor Ort installiert. Die Storage-Infrastruktur besteht aus der erforderlichen Storage-Hardware zur Unterstützung Ihres Erstauftrags. Die Infrastruktur kann später mehr Storage bestellt werden.</block>
   <block id="ae031eb46bb3af9ef59c200e318f13e4" category="paragraph">Neben der Storage-Ausrüstung werden zwei Monitoring-Tools für das Storage- und Verbrauchsüberwachung bereitgestellt.</block>
-  <block id="b21152b7b912739b58060e9f661767eb" category="list-text">Der Storage wird sowohl für das Quell- als auch das Ziel-Cluster abgerechnet. Dieser Add-on Service wird sowohl für die primären als auch für sekundäre (gespiegelte) Volumes in Rechnung gestellt.</block>
   <block id="5ac36e6be3720d69479533a204a80ef9" category="doc">Metriken und Definitionen für Keystone Services</block>
   <block id="36e9a03898f9ae86972da464b865fd7e" category="list-text">Service-Verfügbarkeit</block>
   <block id="f99112a4c6eaa146943fa5e2ddfd9879" category="list-text">Datenaufbewahrung bei präzisen Datenzugriffs</block>
@@ -173,9 +172,6 @@
   <block id="1ad380d64aaf6780bee52adfb88395c3" category="list-text">Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum durch den Kunden oder Partner Keystone Success Manager (KSM) formal eingereicht werden.</block>
   <block id="11cc259f3fbff7a9b169739c7cd9d613" category="list-text">Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie eine E-Mail an eine der folgenden Adressen: keystone.services@netapp.com keystone.escalations@netapp.com</block>
   <block id="a7bfd854f2e9dacfba92f6c8e2081c3e" category="list-text">Dieser Service ist nur für File-, Block- und Objekt-Services anwendbar.</block>
-  <block id="789c0cf84faa868401f2d0fbccadc981" category="paragraph">Die Zusatzgebühren gelten für alle Kapazitäten im Abonnement: Die Quelle, gespiegelte Kopie und nicht gespiegelte Daten.</block>
-  <block id="707341c09d7ffe7d139516dd4be5dcc7" category="inline-image-macro">MetroCluster Konfigurationen werden von Keystone unterstützt</block>
-  <block id="5aca18c7a53d30f1878ae1f0a8d3c847" category="paragraph"><block ref="5aca18c7a53d30f1878ae1f0a8d3c847" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f3cab949200d7bfe230983c92bd7983f" category="list-text">Die vom Kunden betriebene Firewall erlaubt die Verbindung.</block>
   <block id="72a2e26ee3dd7a4431c7b48558a4e647" category="paragraph">Sie sollten die Stromverteiler (PDUs) bereitstellen, die an zwei separate, geschützte Schaltkreise mit ausreichend C13-Steckdosen angeschlossen sind. Im kundengesteuerten Angebot sind in einigen Fällen C19-Steckdosen erforderlich. Beim NetApp Angebot können NetApp oder der Kunde die PDUs je nach Anforderungen bereitstellen.</block>
   <block id="9696806b0bc121063e619b6f0922f330" category="paragraph">Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 GB, 40 GB und 100 GB.</block>
@@ -192,8 +188,6 @@
   <block id="c32944bc40d1accb43f1f8bfaf090dce" category="paragraph">Die Gebühren für zusätzliche Tiering-Services gelten für die gesamte Abonnementlaufzeit.</block>
   <block id="9b25613e0d8ca22f20fe93edf63407f1" category="cell">*Workload-Typen der Probe*</block>
   <block id="c553b9ccdf9dbcac0e340f4775dc3b5a" category="paragraph">Der Keystone Success Manager (KSM) ist ein USA US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.</block>
-  <block id="4a313a9affe19522ce794cef41abbe6f" category="paragraph">Informationen zum Standard- und Cloud-Service finden Sie unter <block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block>.</block>
-  <block id="4d194848bc2fab0aa3d23867126f7f3c" category="list-text">Für diesen Service werden 100 % der zugewiesenen Kapazität zu einem damit verbundenen Storage als zugewiesene Kapazität konfiguriert.</block>
   <block id="83051df9527e67fafbf41db513cd8e94" category="paragraph">Keystone STaaS bietet Standard- und optionale Services für Ihren Storage.</block>
   <block id="f711abd7b1376e4ea173ce403853e332" category="paragraph">*Keystone STaaS Standard Services*: Standard-Services sind im Basisabonnement inbegriffen und werden nicht separat berechnet.</block>
   <block id="f768fe86ef4edbeda93c2b9eb617765e" category="paragraph">*Keystone STaaS Add-on-Services*: Diese sind optionale, kostenpflichtige Services, die zusätzlich zu den Standard-Keystone STaaS-Abonnementservices zusätzliche Dienstprogramme und Vorteile bieten.</block>
@@ -626,8 +620,6 @@ VCenter-Versionen vor 7.0u2 können die Authentizität des Codesignaturzertifika
 <block ref="de3bc771b0100381aa743c5ecbd3a7df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1f5e8b836d490bee65ada2e551662a8f" category="sidebar">Installieren Sie Keystone Collector</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Beachten Sie Folgendes:</block>
-  <block id="c2c11a830d011ece03d73534208897a1" category="list-text">Die Gebühren gelten nur für Ihre Datei- und Blocklagerung.</block>
-  <block id="3505917ad3d0afd6896fab28f67d309e" category="paragraph">Es werden die folgenden MetroCluster-Szenarien unterstützt:</block>
   <block id="89daf59b9c591b51911d438bdad9f762" category="list-text">*Nutzungsstatus*: Zeigt den Nutzungsindikator an, um anzugeben, ob der Verbrauch innerhalb oder außerhalb des Abonnementlimits liegt. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.</block>
   <block id="6645e0ebb53d4b6e68be7936af3a8039" category="inline-link">AutoSupport</block>
   <block id="ed55999d50b7451fbe4281de85f01c45" category="example-title">VCenter 7.0u1 und früher: Weitere Informationen</block>
@@ -656,7 +648,6 @@ VCenter-Versionen vor 7.0u2 können die Authentizität des Codesignaturzertifika
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="ad18d1cc4c02be72a25ef833b2c8c734" category="inline-link-macro">Referenzdiagramme für erweiterten Datenschutz</block>
   <block id="9eb8ff0f43ab3ce564117624a689cfa3" category="paragraph">Digital Advisor bietet ein einheitliches Dashboard, das über die Schaltfläche *zum alten/neuen Dashboard wechseln* Einblicke in verschiedene Ebenen Ihrer Abonnementdaten und Nutzungsinformationen gibt.</block>
   <block id="225101b6a3b9351114a047a3df14351f" category="paragraph-title">Standard-Dashboard (alt)</block>
   <block id="5ed038c610a4830d7271f424b6634183" category="inline-image-macro">Altes Dashboard</block>
@@ -1003,8 +994,6 @@ Hier ein Beispiel:</block>
   <block id="479449c6cb6b88b7c379b1672435686c" category="admonition">Der Standardport für MySQL, 3306, ist während einer Neuinstallation von Unified Manager nur auf localhost beschränkt, was die Erfassung von Leistungsmetriken für Keystone Collector verhindert. Weitere Informationen finden Sie unter <block ref="997798a1af398517058dc0d935faaa2c" category="inline-link-macro-rx"></block>.</block>
   <block id="1b1d9e9b28e55ae75dd476a860b48088" category="inline-link-macro">Zusätzliche Menüoptionen</block>
   <block id="915546b63309e4afc31cc6f77934d3f4" category="admonition">Der Standardport für MySQL, 3306, ist während einer Neuinstallation von Unified Manager nur auf localhost beschränkt, wodurch die Erfassung von Performance-Daten für Keystone ONTAP verhindert wird. Diese Konfiguration kann geändert und die Verbindung kann über die Option in der Wartungskonsole von Unified Manager anderen Hosts zur Verfügung gestellt werden<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> . Weitere Informationen finden Sie unter <block ref="df7524dc87f6643f2fa76eb53a86ec87" category="inline-link-macro-rx"></block>.</block>
-  <block id="3173b2ec37a82d2973529cd167d6287e" category="summary">Nutzen Sie den erweiterten Add-on Service für Datensicherheit, um eine effiziente Datensicherung für geschäftskritische Workloads zu gewährleisten.</block>
-  <block id="a6b5c7400b59e86e1201f869cdba2c1a" category="doc">Mehr über erweiterte Datensicherung erfahren</block>
   <block id="c9830eb427c91a86a2ded324ba8b803d" category="summary">Die Abrechnung von Keystone STaaS basiert auf der Burst-Kapazität – der von Ihnen verbrauchten Kapazität – zusätzlich zur gebuchten Kapazität im Abonnement.</block>
   <block id="b1c4c6aab8cd7c824717fc1621d76273" category="paragraph">Die Abrechnung von Keystone STaaS basiert auf der „_Burst Capacity_“, d. h. der von Ihnen verbrauchten Kapazität zusätzlich zur gebuchten Kapazität im Abonnement.</block>
   <block id="44356560df15caffd928422c99dc9948" category="summary">Die Kapazitätsanforderungen für Service-Levels unterscheiden sich vom durch das Keystone STaaS Abonnement unterstützten File-, Block-, Objekt- oder Cloud-Storage.</block>
@@ -1676,7 +1665,6 @@ Hier ein Beispiel:</block>
   <block id="7fdbb259eae173e23f83dbc4823d28da" category="list-text">Zeigen Sie alle Ihre Abonnementdetails, Kapazitätsnutzung und Assets an einem Ort an.</block>
   <block id="4cc15c3d51785ada1c6ba9fa1e1e13b0" category="list-text">Verwalten Sie Abonnements ganz einfach und fordern Sie Änderungen an, wenn sich Ihre Anforderungen ändern.</block>
   <block id="c946fc133c6959483805e8ee848d8d3c" category="list-text">Bleiben Sie mit den neuesten Informationen zu Ihrer Speicherumgebung auf dem Laufenden.</block>
-  <block id="fae22dda3b161bc9a9e770f8b7e7a634" category="paragraph">Informationen zum Anzeigen des Verbrauchs in einer MetroCluster-Konfiguration finden Sie unter <block ref="0e74b0f4cd2655beb5f463b480ef4016" category="inline-link-macro-rx"></block>.</block>
   <block id="9b83bd6bb9b0235168f39a4c45d8529f" category="paragraph">Die zugesagt Kapazität ist die Kapazität, die Ihnen beim Kauf des Abonnements zugesagt wird. Die zugesagte Kapazität und die Burst-Kapazität werden pro Leistungsservicelevel gemessen. Verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen.</block>
   <block id="c63c700d510218e3fd6113514c7cadf9" category="inline-link-macro">Verbrauchstrends Ihrer Keystone-Abonnements anzeigen</block>
   <block id="60b79d3b7a1433cb62d9ea5b5a5dac01" category="paragraph">Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider. Weitere Informationen finden Sie unter <block ref="d40818e721dbdfb8ef017a3c524d1def" category="inline-link-macro-rx"></block>.</block>
@@ -1798,7 +1786,6 @@ Hier ein Beispiel:</block>
   <block id="d74dcd27166505385c38faabf0aa85e8" category="list-text">Wählen Sie in der Tabelle in der Spalte *Abonnementnummer* die Abonnementnummer aus, um den aktuellen Verbrauch anzuzeigen.</block>
   <block id="53a763ce4287b06d38f889380a89f60e" category="inline-image-macro">Stromverbrauchsdetails im grafischen Format</block>
   <block id="f2f90873373e8bda06d2b4b7f736c646" category="paragraph">Für das ausgewählte Abonnement können Sie Verbrauchsdetails entweder tabellarisch oder grafisch anzeigen. Verwenden Sie dazu die Option *Tabelle* oder *Diagramm* in der Dropdown-Liste *Anzeigen als*. In der grafischen Ansicht sehen Sie den aktuellen Verbrauch pro Leistungsservicelevel, einschließlich der genutzten Kapazität, der bereitgestellten Kapazität, des zugesicherten Kapazitätslimits und des Burst-Kapazitätslimits.</block>
-  <block id="c4fcbd586e1246d8dc64a993418dc4e6" category="paragraph">In der Tabellenansicht sehen Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf. Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, den Verbrauchsstatus, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazitäten und Volumes anzeigen. Sie können die Tabelle mithilfe der Spaltenauswahl anpassen. <block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block> Symbol.</block>
   <block id="34a7549847d69b5f6a7bc80883249b7c" category="inline-image-macro">Stromverbrauchsdetails in Tabellenform</block>
   <block id="358fad495e1a2eb2366e40c04887ab64" category="list-text">Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein &gt; Keystone-Abonnements &gt; Aktueller Verbrauch*.</block>
   <block id="f4dd6979877f030ad7dafa413c0d90c7" category="list-text">Wählen oder suchen Sie die gewünschte Abonnementnummer aus der Dropdown-Liste *Abonnement*.</block>
@@ -1928,7 +1915,6 @@ Hier ein Beispiel:</block>
   <block id="edecc7e6feeced1cf533a9de993dd568" category="list-text"><block ref="edecc7e6feeced1cf533a9de993dd568" category="inline-link-macro-rx"></block></block>
   <block id="904d19fedb40bf9820beb309aafcf17b" category="inline-link-macro">Sehen Sie sich das Keystone-Dashboard auf Active IQ Digital Advisor an</block>
   <block id="1749d12df3df2319d3eee218a277ff83" category="inline-link-macro">MetroCluster</block>
-  <block id="b0e7be39762b5cd093fd721cb637ce50" category="paragraph">Der erweiterte Keystone Datensicherungsservice kann Daten synchron an einen sekundären Standort spiegeln. Im Falle eines Ausfalls am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion nutzt die <block ref="e34027f10b07a4258180f071293183bf" category="inline-link-macro-rx"></block> Konfiguration zwischen zwei Standorten, um Datenschutz zu ermöglichen. Sie können die erweiterten Datensicherungs-Add-on-Services nur für Ihre Datei- und Block-Storage-Services in Anspruch nehmen. Als Teil dieses Zusatzdienstes bietet die <block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block> Ihrem Abonnement ist ein Leistungsservicelevel zugewiesen.</block>
   <block id="6460d354c4ef5c2f34d145689f3906df" category="list-text">*Vierteljährliche Abrechnung*: Zu Beginn jedes Abonnementquartals wird eine Rechnung über die Mindestzahlung der zugesagten Kapazität erstellt. Eine weitere Rechnung wird am Quartalsende für die angefallene Burst-Nutzung versandt.</block>
   <block id="1ae0b00f6871c042811b2ef5f0368dc4" category="summary">Ermöglicht Kunden, über ihre zugesagte Kapazität hinaus zusätzliche Speicherkapazität zu nutzen.</block>
   <block id="8a2359cfa062fe95972fc70674d2584a" category="doc">Burst-Kapazitätsoptionen</block>
@@ -2170,8 +2156,6 @@ Hier ein Beispiel:</block>
   <block id="c1682b4af830f8e1dcda8da16400f7e1" category="doc">Anzeigen von Verbrauchsdaten auf Instanzebene</block>
   <block id="10d5879ffcf41a017554a80a63e4b46e" category="inline-link-macro">Den Verbrauch Ihrer Keystone -Abonnements anzeigen</block>
   <block id="d2c70766af411fb0e8a745645e1d2b86" category="paragraph">Sie können den aktuellen Verbrauch und historische Daten für jede Instanz des Performance-Service-Levels über das Keystone -Dashboard in BlueXP anzeigen. Diese Funktion ist für Leistungsservicelevel mit mehreren Instanzen verfügbar, sofern Sie über ein Abonnement für Keystone Version 3 (v3) verfügen. Weitere Informationen finden Sie unter<block ref="500828148463e083954a63124cb9a7bb" category="inline-link-macro-rx"></block> .</block>
-  <block id="279160650841dbd8f0f6b25bf0ff9e80" category="paragraph">Sie können den erweiterten Zusatzdienst für Datenschutz mit Ihrem Keystone STaaS-Abonnement abonnieren. Dieser Zusatzdienst nutzt die NetApp MetroCluster -Technologie, um einen effizienten Datenschutz Ihrer unternehmenskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 sicherzustellen.</block>
-  <block id="cfcbbd8a31fba3f531d652505099a6e6" category="admonition">Die Keystone STaaS-Standarddienste für Datei- und Blockspeicher bieten standardmäßige Datenschutzdienste durch die Verwendung von NetApp -Technologien wie SnapMirror, SnapVault und Snapshot.</block>
   <block id="9a074d3c3d3b3789030128089b065c8d" category="paragraph">Sie wählen Leistungsservicelevel basierend auf Ihrer Speicherumgebung und Ihren Speicher- und Verbrauchsanforderungen aus. Die Basis-Performance-Service-Levels stehen Ihnen standardmäßig zur Verfügung. Wenn Sie sich für Zusatzdienste entschieden haben, stehen Ihnen zusätzlich bestimmte Leistungsservice-Level zur Verfügung.</block>
   <block id="cc625dd61c8f93252f42b4f3adf096b7" category="paragraph">Der Keystone STaaS-Dienst unterstützt einheitlichen, blockoptimierten und objektbasierten Speicher von NetApp und Cloud Volumes ONTAP.</block>
   <block id="a38c4c1572c8ef4e4dba4054df60c293" category="paragraph">Die unterstützten Speicheroptionen sind:</block>
@@ -2184,9 +2168,7 @@ Hier ein Beispiel:</block>
   <block id="5c5e806c3574f28d7ccf6a897c034d18" category="paragraph"><block ref="5c5e806c3574f28d7ccf6a897c034d18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21c9d68b030c5bf0ddbda9a170d32552" category="paragraph">Das Liniendiagramm zeigt historische Verbrauchsdaten an und ermöglicht Benutzern die Analyse von Trends über einen ausgewählten Datumsbereich. Das Diagramm zeigt Kennzahlen wie die genutzte Kapazität (Gesamtspeicherkapazität, einschließlich Daten und Snapshot-Daten), Daten (von Benutzerdaten genutzte Speicherkapazität) und Snapshot (von Snapshot-Daten genutzte Speicherkapazität) sowie die zugesagte und Burst-Kapazität. Datum und Uhrzeit jedes Datenpunkts werden unten im Diagramm angezeigt. Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte. Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.</block>
   <block id="1b137f241f929a351e941ba96f7347a8" category="admonition">Wenn ein Leistungsservicelevel mehrere Instanzen hat, können Sie nach Instanz filtern, um die Verlaufsdaten für jede Instanz separat anzuzeigen.</block>
-  <block id="dfa99eff3410a5ab865d863e81dce8fa" category="paragraph"><block ref="dfa99eff3410a5ab865d863e81dce8fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c790cd64cc9ce087b29b63d208671f07" category="admonition">Wenn ein Leistungsservicelevel mehrere Instanzen hat, können Sie in beiden Ansichten *Nach Instanzen anzeigen* erweitern, um die aktuellen Verbrauchsdetails für jede Instanz separat anzuzeigen.  Wenn Sie beispielsweise zwei Instanzen des Servicelevels „Extreme Leistung“ innerhalb eines Abonnements haben, werden für jede Instanz die eigenen zugesagten, verbrauchten und verfügbaren Kapazitäten separat angezeigt.</block>
-  <block id="1d33ed42565e60483002000b7dcb22c3" category="paragraph"><block ref="1d33ed42565e60483002000b7dcb22c3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d302dcc8fc5540b6e87e54f3d0753c8" category="admonition">Wenn ein Leistungsservicelevel mehrere Instanzen hat, können Sie die Registerkarte *Instanzen* auswählen, um die aktuellen Verbrauchsdetails für jede Instanz anzuzeigen.  Wenn Sie beispielsweise zwei Instanzen des Servicelevels „Extreme Leistung“ innerhalb eines Abonnements haben, werden für jede Instanz die eigenen zugesagten, verbrauchten und verfügbaren Kapazitäten separat angezeigt.  Weitere Informationen zu den Leistungsservice-Levels finden Sie unter<block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block> .</block>
   <block id="f888b3b7cb5daf8fc505a9054b74b03d" category="list-text">*Läuft bald ab*: Die Anzahl der Abonnements, die innerhalb von 6 Monaten ablaufen. Klicken Sie auf *Anzeigen*, um diese Abonnements auf der Registerkarte *Abonnements* anzuzeigen.</block>
   <block id="e7a862d1277ff52d64b2b8419fe26d69" category="list-text">*Kapazitätsnutzung*: Der Kapazitätsverbrauchsstatus für Abonnements, die über dem Burst liegen, Burst verwenden und nicht ausgelastet sind. Jede Kategorie enthält eine Schaltfläche *Anzeigen*, um zur Registerkarte *Abonnements* mit den entsprechenden angewendeten Filtern zu navigieren.</block>
@@ -2266,9 +2248,7 @@ Hier ein Beispiel:</block>
   <block id="b2aa832e4d8d1fd7361158475afea146" category="paragraph"><block ref="b2aa832e4d8d1fd7361158475afea146" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b4c98c2b68ae3596fde0807f39bf8eb" category="list-text">Wählen Sie entweder *Kapazitätsnutzung* oder *Ablauf des Abonnements*, um den Monitortyp zu definieren.  Geben Sie basierend auf Ihrer Auswahl die folgenden Details an:</block>
   <block id="36f26e169972f962b25a6506460ae66c" category="list-text">*Allgemeine Details*: Geben Sie einen Alarmnamen ein und wählen Sie den Schweregrad aus.</block>
-  <block id="01d4a6c47010cf55459d034438cd8558" category="list-text">*Ressourcenauswahl*: Wählen Sie die Erstellung des Monitors für bestimmte Abonnements.  Füllen Sie basierend auf der Auswahl Ihres Monitortyps die angezeigten Pflichtfelder aus, z. B. Abonnementnummern und Leistungsservicelevel für Kapazitätsnutzungsmonitore oder nur Abonnementnummern für Monitore zum Ablauf von Abonnements.</block>
   <block id="77c6e2eed99c9f2a9d3128048679495b" category="inline-image-macro">Ein Screenshot der Ressourcenauswahl für den Kapazitätsnutzungsmonitor</block>
-  <block id="6d50a26803a6349c2cc6cb785a778441" category="paragraph"><block ref="6d50a26803a6349c2cc6cb785a778441" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdbe9792be04e34a378a291acc9fd58e" category="list-text">*Bedingung*: Legen Sie die Schwellenwertbedingung fest, die den Alarm auslöst.  Lösen Sie beispielsweise eine Warnung aus, wenn die Kapazitätsauslastung einen bestimmten Prozentsatz überschreitet.</block>
   <block id="081b779044826c7402e8be12f60e47fc" category="list-text">*Benachrichtigungen*: Wählen Sie die Benutzer aus, die Warnbenachrichtigungen erhalten sollen.</block>
   <block id="f2a42a68e067e481d094b018459ef895" category="list-text">Klicken Sie auf *Erstellen*.</block>
@@ -2370,23 +2350,19 @@ Hier ein Beispiel:</block>
   <block id="e955295a860e893d00951c8233972d56" category="paragraph">Erfahren Sie mehr über die<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block> .</block>
   <block id="e1a2098926fff2b44e76595b2fab04b4" category="list-text">Während die Konsole und der Digital Advisor einige exklusive Funktionen bieten, stellt die Konsole Verwaltungsfunktionen für Keystone bereit, mit denen Sie Abonnements verwalten und notwendige Anpassungen vornehmen können.</block>
   <block id="5ed613d5969e54b01e0691f040afb027" category="inline-link-macro">Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole</block>
-  <block id="ff366c40543fbef7804957d52fabf2a0" category="list-text">Um Abonnements ändern zu können, muss Ihnen die Rolle „Keystone -Administrator“ zugewiesen sein. Weitere Informationen finden Sie unter<block ref="22d60f99a4ac0841de53b7fa8c3f1253" category="inline-link-macro-rx"></block> .</block>
   <block id="7d0366e10bff9b03e7d1ebe083232ad0" category="inline-link-macro">Digital Advisor Integration mit der NetApp Konsole</block>
   <block id="19f702ba317875d05972d4dc2df1d379" category="list-text">Digital Advisor ist in die Konsole integriert, sodass Sie direkt von der Konsole aus auf alle Funktionen von Digital Advisor zugreifen können, einschließlich des Keystone -Dashboards. Weitere Informationen finden Sie unter<block ref="5983da9102c6398c455221dbbeef93c0" category="inline-link-macro-rx"></block> .</block>
   <block id="754a3a5b6d930270b1fbfb641c89b440" category="section-title">Keystone -Funktionen in NetApp Console und Digital Advisor</block>
   <block id="fbe45a39864c469e12feb1cb9128ed44" category="paragraph">Die folgende Tabelle zeigt die Verfügbarkeit von Funktionen in der NetApp Konsole und im Digital Advisor und hilft Ihnen, schnell die richtige Plattform für Ihre Anforderungen zu finden:</block>
   <block id="14b33e994477a76e918b15271e482d20" category="cell">* NetApp Konsole*</block>
-  <block id="e35a8b08a1eced21ae0e1445810e0ff0" category="paragraph"><block ref="e35a8b08a1eced21ae0e1445810e0ff0" category="inline-link-macro-rx"></block></block>
   <block id="2e8b12135324e72007b3768ea8e3b475" category="summary">Als NetApp Keystone STaaS-Abonnent können Sie sich über die NetApp Console einen Überblick über Ihre Abonnements verschaffen.</block>
   <block id="a8b926e7f40ce1b8a36a0d50c4412766" category="paragraph">Auf der Seite *Übersicht* können Sie schnell die gefährdeten Workloads ermitteln, die Kapazität und den Ablaufstatus von Abonnements anzeigen, die nicht aufgelösten Warnungen identifizieren und die Abonnements mit der höchsten Kapazitätsauslastung anzeigen. Sie können auch den Status Ihrer Abonnements für verschiedene Versionen von Keystone anzeigen und alle Probleme hervorheben, die Ihre Aufmerksamkeit erfordern.</block>
   <block id="859167398832678cbae2e0062c6a5136" category="paragraph">Um die Seite *Übersicht* anzuzeigen, gehen Sie im linken Navigationsmenü der Konsole zu *Speicher &gt; Keystone &gt; Übersicht*.</block>
   <block id="e9803f7c01419ecddf878fe4fd33bc47" category="inline-image-macro">ein Screenshot der Übersichtsseite</block>
-  <block id="4e1db70e55c012f3d68da057084056e2" category="paragraph"><block ref="4e1db70e55c012f3d68da057084056e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8325080ad6eca6e402bccdbbcccd2b3" category="paragraph">Die Seite *Übersicht* bietet folgende Einblicke:</block>
   <block id="b6a17a16f2925f240966aa803c2d67ff" category="summary">Ändern Sie Ihr Keystone -Abonnement, um die zugesagte Kapazität für die zugehörigen Leistungsservicelevel über die NetApp Konsole zu ändern.</block>
   <block id="2227728e15b4a8b218a3533e278cf342" category="doc">Ändern Sie Ihr Keystone -Abonnement über die NetApp Konsole</block>
   <block id="84b1a13bc7964ae4f7768e4f9c3c8756" category="paragraph">Sie können die zugesagte Kapazität Ihres Keystone Abonnements für die zugehörigen Leistungsservicelevel über die NetApp Konsole ändern.</block>
-  <block id="9313fbe04542c1ff2b3e92ade6375732" category="list-text">Um die zugesagte Kapazität ändern zu können, muss Ihnen die Rolle * Keystone -Administrator* zugewiesen sein. Weitere Informationen finden Sie unter<block ref="22d60f99a4ac0841de53b7fa8c3f1253" category="inline-link-macro-rx"></block> .</block>
   <block id="7a91109a620e891743c65eea451a0cf2" category="paragraph"><block ref="7a91109a620e891743c65eea451a0cf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb873e65402011d905122364da690822" category="paragraph">Sie können Warnmonitore für Ihre Keystone Abonnements über das Keystone -Dashboard in der NetApp -Konsole anzeigen und erstellen. Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Monitore für die Kapazitätsnutzung und das Ablaufen von Abonnements an. Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen. Diese Funktion ist in Digital Advisor nicht verfügbar.</block>
   <block id="b5c32e6c2b4476154d229af70df8cf7a" category="list-text">Wählen Sie im linken Navigationsmenü der Konsole *Speicher &gt; Keystone &gt; Überwachung &gt; Alarmmonitore*.</block>
@@ -2418,4 +2394,55 @@ Hier ein Beispiel:</block>
   <block id="827607b42918efbeec5d1431418ad729" category="paragraph">Während die Navigation der beiden Angebote ähnlich ist,<block ref="07f7314e0fdd92e843ce6bfcd1f08066" category="inline-link-macro-rx"></block> Die Abonnementdienste von Keystone unterscheiden sich von Keystone STaaS in den Leistungsstufen, dem Serviceangebot und den Abrechnungsgrundsätzen. Ab April 2024 verwaltet und veröffentlicht NetApp Dokumentationen nur für Keystone STaaS. Wenn Sie noch Keystone Abonnementdienste verwenden, wenden Sie sich an Ihren KSM, um Unterstützung bei der Migration zu Keystone STaaS zu erhalten. Bei Bedarf können Sie hier auf eine PDF-Version der Dokumentation zu den Keystone Abonnementdiensten zugreifen:</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">06. Oktober 2025</block>
   <block id="03e4603e7e1d94d1d2afa097ed77bcc4" category="sidebar">Keystone -Dashboard in der NetApp Konsole und im Digital Advisor</block>
+  <block id="13f711a55db449e74aa63517fe680750" category="doc">Spalte „QoS-Richtlinie außer Kraft setzen“ auf der Registerkarte „Assets“</block>
+  <block id="d272e1753b82039c96c37cf7d7f1dcce" category="paragraph">Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:</block>
+  <block id="c6276ebcdb23205ceaed5fbf4249ea31" category="paragraph">Die Registerkarte *Volumes in Clustern* innerhalb der Registerkarte *Assets* enthält jetzt eine Spalte *Außerkraftsetzung der QoS-Richtlinie*, die angibt, ob QoS-Regeln für Sicherungs- und Spiegelvolumes umgangen werden. Dabei wird *true* (Regeln ignoriert), *false* (Regeln erzwungen) oder *N/A* (für Spiegelvolumes) angezeigt.</block>
+  <block id="11a43b8d2f9eca6ac1fbd015814f99f3" category="admonition">Bei Keystone v3-Abonnements wird in dieser Spalte *N/A* angezeigt, da QoS-Richtlinien im v3-Angebot nicht anwendbar sind.</block>
+  <block id="b953e2efb9e42549a0a1a0948af92e84" category="section-title">Verbesserte Sichtbarkeit von Warnungen auf der Übersichtsseite</block>
+  <block id="2236517eb263ad0757df75dbb425c588" category="paragraph">Die Seite *Übersicht* enthält jetzt zwei neue Warnabschnitte mit den Namen *Ungelöste Warnmeldungen nach Schweregrad* und *Älteste ungelöste Keystone Warnmeldungen*. Weitere Informationen finden Sie unter<block ref="a7e79568e4aab3fed7388da5f153bdec" category="inline-link-macro-rx"></block> .</block>
+  <block id="aa7a1a40be5427d20e444e625b1e8690" category="list-text">Physisch verwendet</block>
+  <block id="0811dbd951e43bbe1fc86f756210d7e1" category="list-text">Verfügbare Größe</block>
+  <block id="c2b555f514e74c99fe1ee6eaa6770e35" category="list-text">Verwendete Größe</block>
+  <block id="6c3a6944a808a7c0bbb6788dbec54a9f" category="list-text">Node</block>
+  <block id="bfa10f7c5e846fdab9228aa316c04549" category="list-text">LIFs</block>
+  <block id="9e1894c70a5220dfab0925ac115d2ed6" category="list-text">Konfigurationsreplikation</block>
+  <block id="98a2bc79c11d0cbb19f99b2b8c70e6e3" category="list-text">Anschlüsse</block>
+  <block id="cf8683a46a9fce46da2b0e7bac364b41" category="list-text">MetroCluster -Knoten</block>
+  <block id="b1bcb082b9f4bfb2e9950b72c46ff1e1" category="list-text">DR-Spiegelungsstatus</block>
+  <block id="54f7d853bcd07992f133218c21a038be" category="list-text">Intercluster LIF</block>
+  <block id="b3d4d99e2963cdc1ba5444b9c4f62295" category="list-text">Knotenerreichbarkeit</block>
+  <block id="db4e7a23ada0f093c517d41efe049779" category="list-text">DR-Partnerknoten</block>
+  <block id="668d9d7500fec64fc64a67d1a756077c" category="list-text">DR Aux Partner-Knoten</block>
+  <block id="b68fb88346774a3d1c33270e3be52557" category="list-text">Symmetrische Beziehung zwischen DR, DR Aux und HA-Knoten</block>
+  <block id="5f40a0155cfe0bbbd8b2764836ebb3e9" category="list-text">Automatische ungeplante Umschaltung</block>
+  <block id="f5643211f88659eaf49718a1434d4efe" category="list-text">MetroCluster -Konfigurationsreplikation</block>
+  <block id="7edd41b738e0d4f4661cf8ce53b95719" category="list-text">Remote-Heartbeat</block>
+  <block id="c53dc32b833a96f36213da88e4d519d2" category="list-text">Letzter gesendeter Heartbeat</block>
+  <block id="ffc7e818f459dd40b0602c5559ba0956" category="list-text">Letzter empfangener Heartbeat</block>
+  <block id="e7f09ca73d207d376215a76fcb9f6ac5" category="list-text">Vserver Stream</block>
+  <block id="f9c03fed2172cc949108bc9deba594ea" category="list-text">Cluster-Stream</block>
+  <block id="5d6e7ea0747340efe96e6ee216c70f32" category="list-text">Speichervolumen im Einsatz</block>
+  <block id="fa5d802c1e0b472446381304bcc2ff35" category="list-text">MetroCluster Mediatoren</block>
+  <block id="6cd5a922d59678d886207fc62464e56a" category="list-text">Adresse des Mediators</block>
+  <block id="dd74069b22733e2b03a0958eb9f230a3" category="list-text">Mediator-Port</block>
+  <block id="144307032147887917be25ed225bafb6" category="list-text">Mediator konfiguriert</block>
+  <block id="12a348ac24415229fee936cd66e2e92d" category="list-text">Mediator erreichbar</block>
+  <block id="b421cdbed621e0e15c8acb8194a4fdb6" category="list-text">Daten auf Systemebene</block>
+  <block id="a32872d4ee3d3cc5fb982a73c188de0c" category="list-text">Schreiben/Lesen/Sonstige/Gesamt-IOPS</block>
+  <block id="2c627ab62d04412aa9cab71e9e33c9cb" category="list-text">Schreiben/Lesen/Sonstiges/Gesamtdurchsatz</block>
+  <block id="fabeb58b0dad9f899d8b88416117bc79" category="list-text">Schreiben/Lesen/Sonstiges/Gesamtlatenz</block>
+  <block id="c5bf928fa690e77e77b3e5dc9c570773" category="paragraph">Die folgende Liste ist eine repräsentative Auswahl der<block ref="05916e807214b60fdcd842fb212b7897" prefix=" " category="inline-code"></block> für StorageGRID gesammelt:</block>
+  <block id="2961ad92d313263d5c9701f5aa8126a9" category="list-text">SLA-Betriebszeit in Prozent</block>
+  <block id="c0029d3ed944e8ef4f598481e14db28c" category="paragraph"><block ref="c0029d3ed944e8ef4f598481e14db28c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9aa673728fdf49de5fd7f4392426fc4" category="paragraph">In der Tabellenansicht können Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf sehen. Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, die Kapazitätsnutzung, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazität und Volumen anzeigen. Sie können die Tabelle mithilfe der Spaltenauswahl anpassen<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block> Symbol.</block>
+  <block id="c8e3290600a931a2c7f5ea26d1268469" category="paragraph"><block ref="c8e3290600a931a2c7f5ea26d1268469" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="65c72fc91b63262452cae6ffc68b5fe8" category="list-text">Um Abonnements ändern zu können, muss Ihnen die Rolle „Keystone -Administrator“ zugewiesen sein. Weitere Informationen finden Sie unter<block ref="d47ae35a0d63c1eadf9e54d8e5017d63" category="inline-link-macro-rx"></block> .</block>
+  <block id="3073adc4a7680cc828c55134467305ae" category="paragraph"><block ref="3073adc4a7680cc828c55134467305ae" category="inline-link-macro-rx"></block></block>
+  <block id="503323af5c69bab54cb6fe53ccef6f8e" category="paragraph"><block ref="503323af5c69bab54cb6fe53ccef6f8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3564bb0e09fc76eb6075b25b3c3643e0" category="list-text">*Ungelöste Warnungen nach Schweregrad*: Listet die Gesamtzahl der ungelösten Warnungen nach Schweregrad auf – „Kritisch“, „Warnung“ und „Informativ“.  Jede Kategorie enthält eine Schaltfläche *Anzeigen*, um Details zu überprüfen und weitere Maßnahmen zu ergreifen.</block>
+  <block id="fbdd0ec7256573dce976dc52a2cdad0e" category="list-text">*Älteste ungelöste Keystone -Warnungen*: Zeigt eine Tabelle der ältesten kritischen ungelösten Warnungen aller Abonnements an.</block>
+  <block id="9fcb29f9ba41ea80f15f38f0907ab2f0" category="list-text">Um die zugesagte Kapazität ändern zu können, muss Ihnen die Rolle * Keystone -Administrator* zugewiesen sein. Weitere Informationen finden Sie unter<block ref="d47ae35a0d63c1eadf9e54d8e5017d63" category="inline-link-macro-rx"></block> .</block>
+  <block id="012cc690ee0f390b86e69b7ef941643e" category="list-text">*Ressourcenauswahl*: Wählen Sie, ob der Monitor für bestimmte Abonnements oder für alle Abonnements erstellt werden soll. Füllen Sie basierend auf der Auswahl Ihres Monitortyps die angezeigten Pflichtfelder aus, z. B. Abonnementnummern und Leistungsservicelevel für Kapazitätsnutzungsmonitore oder nur Abonnementnummern für Monitore zum Ablauf von Abonnements.</block>
+  <block id="17eb308ea945cce061c4020365ec2ddf" category="paragraph"><block ref="17eb308ea945cce061c4020365ec2ddf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="44758d2951f923446ffff8310f8ac382" category="section-title">13. Oktober 2025</block>
 </blocks>

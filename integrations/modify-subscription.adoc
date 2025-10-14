@@ -19,7 +19,7 @@ Sie können die zugesagte Kapazität Ihres Keystone Abonnements für die zugehö
 [NOTE]
 ====
 * Sie können die zugesicherte Kapazität ändern, wenn bis zum Ablauf des Abonnements noch mehr als 90 Tage verbleiben.
-* Um die zugesagte Kapazität ändern zu können, muss Ihnen die Rolle * Keystone -Administrator* zugewiesen sein. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole"^] .
+* Um die zugesagte Kapazität ändern zu können, muss Ihnen die Rolle * Keystone -Administrator* zugewiesen sein. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole"^] .
 
 
 ====

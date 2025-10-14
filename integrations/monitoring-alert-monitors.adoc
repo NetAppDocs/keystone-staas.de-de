@@ -55,9 +55,9 @@ image:create-alert-monitor.png["Ein Screenshot der Erstellung eines Alarmmonitor
 . Wählen Sie entweder *Kapazitätsnutzung* oder *Ablauf des Abonnements*, um den Monitortyp zu definieren.  Geben Sie basierend auf Ihrer Auswahl die folgenden Details an:
 +
 ** *Allgemeine Details*: Geben Sie einen Alarmnamen ein und wählen Sie den Schweregrad aus.
-** *Ressourcenauswahl*: Wählen Sie die Erstellung des Monitors für bestimmte Abonnements.  Füllen Sie basierend auf der Auswahl Ihres Monitortyps die angezeigten Pflichtfelder aus, z. B. Abonnementnummern und Leistungsservicelevel für Kapazitätsnutzungsmonitore oder nur Abonnementnummern für Monitore zum Ablauf von Abonnements.
+** *Ressourcenauswahl*: Wählen Sie, ob der Monitor für bestimmte Abonnements oder für alle Abonnements erstellt werden soll. Füllen Sie basierend auf der Auswahl Ihres Monitortyps die angezeigten Pflichtfelder aus, z. B. Abonnementnummern und Leistungsservicelevel für Kapazitätsnutzungsmonitore oder nur Abonnementnummern für Monitore zum Ablauf von Abonnements.
 +
-image:resource-selection.png["Ein Screenshot der Ressourcenauswahl für den Kapazitätsnutzungsmonitor"]
+image:resource-selection-1.png["Ein Screenshot der Ressourcenauswahl für den Kapazitätsnutzungsmonitor"]
 
 ** *Bedingung*: Legen Sie die Schwellenwertbedingung fest, die den Alarm auslöst.  Lösen Sie beispielsweise eine Warnung aus, wenn die Kapazitätsauslastung einen bestimmten Prozentsatz überschreitet.
 ** *Benachrichtigungen*: Wählen Sie die Benutzer aus, die Warnbenachrichtigungen erhalten sollen.

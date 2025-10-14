@@ -18,14 +18,16 @@ Auf der Seite *Übersicht* können Sie schnell die gefährdeten Workloads ermitt
 
 Um die Seite *Übersicht* anzuzeigen, gehen Sie im linken Navigationsmenü der Konsole zu *Speicher > Keystone > Übersicht*.
 
-image:bxp-dashboard-overview-2.png["ein Screenshot der Übersichtsseite"]
+image:console-overview.png["ein Screenshot der Übersichtsseite"]
 
 Die Seite *Übersicht* bietet folgende Einblicke:
 
 * *Zusammenfassung*: Zeigt die Gesamtzahl der Abonnements, ONTAP-Cluster, StorageGRID-Knoten und ONTAP-Knoten an. Jede Kategorie verfügt über eine Schaltfläche „Anzeigen“, um einfach zu detaillierten Abschnitten auf der Registerkarte „Abonnements“ oder „Assets“ zu navigieren.
 * *Läuft bald ab*: Die Anzahl der Abonnements, die innerhalb von 6 Monaten ablaufen. Klicken Sie auf *Anzeigen*, um diese Abonnements auf der Registerkarte *Abonnements* anzuzeigen.
 * *Offene Anfragen*: Die Gesamtzahl der offenen Serviceanfragen.
+* *Ungelöste Warnungen nach Schweregrad*: Listet die Gesamtzahl der ungelösten Warnungen nach Schweregrad auf – „Kritisch“, „Warnung“ und „Informativ“.  Jede Kategorie enthält eine Schaltfläche *Anzeigen*, um Details zu überprüfen und weitere Maßnahmen zu ergreifen.
 * *Kapazitätsnutzung*: Der Kapazitätsverbrauchsstatus für Abonnements, die über dem Burst liegen, Burst verwenden und nicht ausgelastet sind. Jede Kategorie enthält eine Schaltfläche *Anzeigen*, um zur Registerkarte *Abonnements* mit den entsprechenden angewendeten Filtern zu navigieren.
+* *Älteste ungelöste Keystone -Warnungen*: Zeigt eine Tabelle der ältesten kritischen ungelösten Warnungen aller Abonnements an.
 * *Top 5 Abonnements mit der höchsten Kapazitätsauslastung*: Zeigt eine Tabelle der fünf Keystone-Abonnements mit der höchsten prozentualen Kapazitätsauslastung an. Klicken Sie in der Spalte *Abonnement* auf die Abonnementnummer, um detaillierte Informationen zu erhalten.
 
 
