@@ -104,6 +104,9 @@ NOTE: Die unterstützten Dateierweiterungen sind `.pem`, `.crt`, `.cert`. Stelle
 . Wählen Sie *Speichern*. Die Konfiguration wird angewendet.
 
 
+
+NOTE: Das CA-Zertifikat wird kopiert an `/opt/netapp/ks-collector/ca.pem` auf dem Keystone Collector-Server.
+
 image:kc-custom-ca.png["TUI-Bildschirm für CA-Anpassung"]
 
 
