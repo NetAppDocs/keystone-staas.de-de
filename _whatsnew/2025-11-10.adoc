@@ -1,0 +1,11 @@
+= Füllen Sie Ihr Feld für die Versicherungsbenachrichtigung aus.
+:allow-uri-read: 
+
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Füllen Sie Ihr Feld für die Versicherungsbenachrichtigung aus.
+
+Auf der Seite „Überwachung“ befindet sich unter dem Reiter „Warnungen“ ein Benachrichtigungsfeld mit der Aufschrift „Vervollständigen Sie Ihre Abdeckung“, das erscheint, wenn Abdeckungslücken bestehen.  In dieser Box werden Abonnements aufgelistet, bei denen Kapazitäts- oder Ablaufüberwachungen fehlen, sowie Überwachungen ohne Abonnements.  Sie können die Lücken schließen, indem Sie bestehenden Monitoren Abonnements hinzufügen, neue Monitore erstellen oder nicht verwendete Monitore löschen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alert-monitors.html#manage-coverage-gaps["Abdeckungslücken für Alarmmonitore verwalten"].

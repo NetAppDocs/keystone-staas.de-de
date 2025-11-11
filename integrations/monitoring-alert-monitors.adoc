@@ -14,7 +14,7 @@ summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnmonitore fü
 
 
 [role="lead"]
-Sie können Warnmonitore für Ihre Keystone Abonnements über das Keystone -Dashboard in der NetApp -Konsole anzeigen und erstellen. Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Monitore für die Kapazitätsnutzung und das Ablaufen von Abonnements an. Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen. Diese Funktion ist in Digital Advisor nicht verfügbar.
+Im Keystone Dashboard der NetApp Console können Sie Alarmmonitore für Ihre Keystone Abonnements anzeigen und erstellen.  Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Überwachungsindikatoren für Kapazitätsauslastung und Abonnementablauf an. Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen.  Sie können Abdeckungslücken schließen, indem Sie nicht abgedeckte Abonnements um Monitore erweitern oder ungenutzte Monitore reaktivieren. Diese Funktion ist in Digital Advisor nicht verfügbar.
 
 
 
@@ -28,7 +28,7 @@ Um Warnmonitore anzuzeigen, führen Sie die folgenden Schritte aus:
 image:monitoring-alert-monitors-default-view-1.png["Ein Screenshot der Warnmonitore für Keystone -Abonnements"]
 
 +
-Sie können eine Liste der Alarmmonitore für Ihre Keystone -Abonnements anzeigen, einschließlich Monitornamen, Alarmbedingungen, die Benachrichtigungen auslösen, Schweregrade, Abonnementnummern, Leistungsservicelevel und Status.  Sie können die Spalte *Erstellt von* überprüfen, um festzustellen, ob die Warnmonitore systemgeneriert oder benutzerdefiniert sind.
+Sie können eine Liste der Alarmmonitore für Ihre Keystone -Abonnements anzeigen, einschließlich Monitornamen, Alarmbedingungen, die Benachrichtigungen auslösen, Schweregrade, Abonnementnummern, Leistungsservicelevel und Status. In der Spalte *Erstellt von* können Sie überprüfen, ob die Alarmmonitore systemgeneriert oder benutzerdefiniert sind.
 
 
 
@@ -45,7 +45,7 @@ Auf der Registerkarte *Alarmmonitore* können Sie Monitore erstellen, um die Kap
 Um einen Alarmmonitor zu erstellen, gehen Sie folgendermaßen vor:
 
 .Schritte
-. Klicken Sie auf die Schaltfläche *Monitor erstellen*.
+. Wählen Sie die Schaltfläche *Monitor erstellen*.
 +
 Die Seite *Alarmmonitor erstellen* wird angezeigt.
 
@@ -101,7 +101,7 @@ Das System leitet Sie zur Seite *Alarmmonitore* zurück, wo der aktualisierte Mo
 +
 Die Seite *Alarmmonitor erstellen* wird angezeigt und die vorhandenen Feldwerte sind bereits ausgefüllt.
 
-. Ändern Sie die Felder nach Bedarf und klicken Sie auf *Erstellen*.
+. Ändern Sie die benötigten Felder und klicken Sie auf *Erstellen*.
 +
 Ein neuer Alarmmonitor wird mit der aktualisierten Konfiguration erstellt und in der Liste *Alarmmonitore* angezeigt.
 
@@ -119,6 +119,58 @@ Nach dem Löschen erhalten die mit dem Monitor verbundenen Abonnements keine Ben
 +
 
 NOTE: Vom System generierte Monitore können von Benutzern nicht gelöscht werden.
+
+
+
+--
+====
+
+
+== Deckungslücken schließen
+
+Wenn Handlungsbedarf besteht, erscheint oberhalb der Liste der Alarmmonitore ein ausklappbares Benachrichtigungsfeld mit dem Hinweis *Vervollständigen Sie Ihre Abdeckung*.  Es hilft Ihnen:
+
+* Identifizieren und beheben Sie Probleme mit Abonnements, die keine Kapazitätsauslastung oder keinen Abonnementablauf überwachen.
+* Überprüfen und verwalten Sie Monitore, die derzeit keinem Abonnement zugeordnet sind.
++
+image:coverage-gaps.png["Ein Screenshot der Abdeckungslücken für Alarmmonitore bei Keystone Abonnements"]
+
+
+
+Um Abonnements ohne Monitore oder mit ungenutzten Monitoren zu reparieren, befolgen Sie diese Schritte:
+
+[role="tabbed-block"]
+====
+.Abonnements ohne Monitore
+--
+.Schritte
+. Wählen Sie die Registerkarte *Ablaufdatum der Abonnements* oder *Kapazitätsnutzung*.
+. Wählen Sie in der Spalte *Beheben* das Symbol mit den Auslassungspunkten für das Abonnement aus, das Sie bearbeiten möchten.
+. Wählen Sie eines aus:
++
+** *Zum vorhandenen Monitor hinzufügen*: Ein Popup wird angezeigt.  Wählen Sie einen Monitor aus und bestätigen Sie.
+** *Neuen Monitor erstellen*: Das System zeigt die Seite *Alarmmonitor erstellen* an.  Folgen Sie den Schritten inlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Erstellen eines Monitors"] einen neuen Monitor erstellen.
++
+Das Abonnement verschwindet nach dem Hinzufügen des Versicherungsschutzes aus dem Tab.
+
+
+
+
+
+--
+.Unbenutzte Monitore
+--
+.Schritte
+. Wählen Sie die Registerkarte *Nicht verwendet*.
+. Wählen Sie in der Spalte *Resolve* das Symbol mit den Auslassungspunkten für den Monitor aus, den Sie ansprechen möchten.
+. Wählen Sie eines aus:
++
+** *Bearbeiten*: Das System zeigt die Seite *Warnungsmonitor bearbeiten* an.  Ändern Sie die benötigten Felder und speichern Sie die Datei.  Weitere Informationen finden Sie unterlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Monitor bearbeiten"] Die
+** *Löschen*: Bestätigen Sie die Löschung, um den Monitor zu entfernen.
++
+Der Monitor wird aus dem Tab entfernt, nachdem Sie Abonnements hinzugefügt oder ihn gelöscht haben.
+
+
 
 
 
