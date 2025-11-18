@@ -8,8 +8,6 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-    release_notes_autogen:
-      release_notes_repo: console-relnotes
   versions:
   - version-number: '3.0'
     url: "/keystone-staas"
@@ -207,6 +205,6 @@ sidebar:
   - title: Keystone Abonnementservices Version 1
     url: "/subscription-services-v1.html"
   - title: Keystone hilft Ihnen dabei
-    url: "/concepts/gssc.html"
+    url: "/concepts/support-services.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"

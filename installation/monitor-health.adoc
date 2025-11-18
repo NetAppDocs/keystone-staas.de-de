@@ -105,5 +105,5 @@ Nachfolgend ein Beispiel für einen erfolgreichen Auftrag zur optionalen Erfassu
 `$ keystone-collector-tui`
 . Gehen Sie zu *Fehlerbehebung > Supportpaket generieren*.image:tui-sup-bundl.png["tui-Bildschirm"]
 . Bei der Erzeugung wird der Speicherort des Pakets angezeigt. Verwenden Sie FTP, SFTP oder SCP, um eine Verbindung zum Speicherort herzustellen und die Protokolldatei auf ein lokales System herunterzuladen.image:tui-sup-bundl-2.png["tui-Bildschirm"]
-. Wenn die Datei heruntergeladen wird, können Sie sie an das Keystone ServiceNow Support Ticket anhängen. Weitere Informationen zum Anheben von Tickets finden Sie unter link:../concepts/gssc.html["Serviceanforderungen werden erstellt"].
+. Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen. Informationen zum Sammeln von Tickets finden Sie unter link:../concepts/support-services.html["Serviceanforderungen werden erstellt"]Die
 

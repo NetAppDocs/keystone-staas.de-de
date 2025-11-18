@@ -104,7 +104,7 @@ image:sla-breach.png["excel-Sheet-Vorlage"]
 [NOTE]
 ====
 * Eine Service-Gutschriftanfrage sollte innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den NetApp Keystone Support eingeleitet werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.
-* Service Credits können auf eine zukünftige Rechnung angerechnet werden. Service-Gutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter link:../concepts/gssc.html["NetApp Keystone-Support"].
+* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter link:../concepts/support-services.html["NetApp Keystone-Support"].
 
 
 ====
