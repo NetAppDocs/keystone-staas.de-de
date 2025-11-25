@@ -32,6 +32,10 @@ image:monitoring-alerts-default-view-1.png["Ein Screenshot aktiver Warnungen fü
 +
 Sie können Alarmdetails wie Schweregrad, ID, Beschreibung, Auslösezeit, Abonnementnummer, Tracking-ID, Leistungsservicelevel und Status anzeigen.  Auf der Seite wird auch die Gesamtzahl der nicht gelösten Warnungen nach Schweregrad und Typ angezeigt.
 
++
+
+NOTE: Die Registerkarte *Berichte* ist für Keystone -Abonnements derzeit nicht verfügbar.
+
 
 
 

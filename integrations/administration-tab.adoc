@@ -19,13 +19,17 @@ Sie können Serviceanfragen zum Ändern von Keystone -Abonnements über die NetA
 Um den Fortschritt anzuzeigen oder eine Anfrage abzubrechen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Verwaltung*.
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Administration > Anfragen*.
 +
 Sie sehen eine Liste aller Serviceanfragen inklusive Anfragenummer, Anfragetyp und aktuellem Status.
 
++
+
+NOTE: Die Registerkarten *Agentenverwaltung* und *Berichte* sind für Keystone -Abonnements derzeit nicht verfügbar.
+
 . Sie können auf das Symbol image:down-arrow.png["Abwärtspfeilsymbol"] Symbol neben der Spalte *Einreichungsdatum*, um die Anforderungsnummer zu erweitern und Details anzuzeigen. Sie sehen die Leistungsservicelevel, für die die Anforderungen gestellt wurden.
 +
-image:console-service-request-list.png["Ein Screenshot zeigt, für welche Performance-Service-Levels die Änderungsanforderungen gestellt werden."]
+image:console-service-request-list.png["Ein Screenshot zeigt die Leistungs-Servicelevel für die Änderungsanfragen."]
 
 . Wählen Sie die Anforderungsnummer aus, um detaillierte Informationen anzuzeigen, einschließlich Änderungsdetails für das angeforderte Abonnement und den aktuellen Fortschrittsstatus.
 +

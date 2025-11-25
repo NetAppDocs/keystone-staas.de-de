@@ -1,0 +1,11 @@
+= Tracking-ID für Abonnements mit Abdeckungslücke
+:allow-uri-read: 
+
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Tracking-ID für Abonnements mit Abdeckungslücke
+
+Im Benachrichtigungsfeld *Vervollständigen Sie Ihre Abdeckung* unter *Überwachung > Alarmmonitore* wird nun für jedes Abonnement neben der Abonnementnummer die Tracking-ID angezeigt.

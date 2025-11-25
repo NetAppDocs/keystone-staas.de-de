@@ -30,6 +30,10 @@ image:monitoring-alert-monitors-default-view-1.png["Ein Screenshot der Warnmonit
 +
 Sie können eine Liste der Alarmmonitore für Ihre Keystone -Abonnements anzeigen, einschließlich Monitornamen, Alarmbedingungen, die Benachrichtigungen auslösen, Schweregrade, Abonnementnummern, Leistungsservicelevel und Status. In der Spalte *Erstellt von* können Sie überprüfen, ob die Alarmmonitore systemgeneriert oder benutzerdefiniert sind.
 
++
+
+NOTE: Die Registerkarte *Berichte* ist für Keystone -Abonnements derzeit nicht verfügbar.
+
 
 
 
@@ -133,7 +137,7 @@ Wenn Handlungsbedarf besteht, erscheint oberhalb der Liste der Alarmmonitore ein
 * Identifizieren und beheben Sie Probleme mit Abonnements, die keine Kapazitätsauslastung oder keinen Abonnementablauf überwachen.
 * Überprüfen und verwalten Sie Monitore, die derzeit keinem Abonnement zugeordnet sind.
 +
-image:coverage-gaps.png["Ein Screenshot der Abdeckungslücken für Alarmmonitore bei Keystone Abonnements"]
+image:coverage-gaps-1.png["Ein Screenshot der Abdeckungslücken für Alarmmonitore bei Keystone Abonnements"]
 
 
 
