@@ -1,0 +1,11 @@
+= Umbenannt in „Aufgelaufene Auslösekapazität“
+:allow-uri-read: 
+
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Umbenannt in „Aufgelaufene Auslösekapazität“
+
+Die Bezeichnung *Accrued burst capacity* wird in *Accrued burst* umbenannt.

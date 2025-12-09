@@ -16,6 +16,9 @@ summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und 
 [role="lead"]
 Über das Keystone Dashboard in der NetApp -Konsole können Sie je nach Ihren Zugriffsberechtigungen detaillierte Informationen zu Knoten in Clustern, bereitgestellten Volumes und StorageGRID Knoten über mehrere Keystone Abonnements hinweg anzeigen. Diese Ansicht ist in Digital Advisor nicht verfügbar.
 
+
+NOTE: Auf der Seite *Assets* werden Registerkarten angezeigt, die auf den Plattformen basieren, die mit Ihren Keystone -Abonnements verknüpft sind. Für ONTAP stehen sowohl die Registerkarten *Knoten in Clustern* als auch *Volumes in Clustern* zur Verfügung. Bei StorageGRID wird die Tabelle *Knoten in Rastern* direkt ohne Registerkartenauswahl angezeigt. Wenn das Abonnement beide Plattformen umfasst, sind alle drei Tabs verfügbar.
+
 [role="tabbed-block"]
 ====
 .Knoten in Clustern

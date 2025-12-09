@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Abonnements werden im Digital Advisor Dashboard fälschlicherweise als *Über dem Burst-Limit* angezeigt, obwohl der Verbrauch innerhalb der zulässigen Burst-Limits liegt.
+ a| 
+Fest
+ a| 
+08.12.2025
+
+
+
+ a| 
 Fehlende Burst-Schwellenwertlinie in Verbrauchstrenddiagrammen für Abonnements, die mit einer MetroCluster -Konfiguration im Digital Advisor Dashboard konfiguriert wurden, zeigt einen falschen Status *Über Burst-Grenze* an.
  a| 
 Fest

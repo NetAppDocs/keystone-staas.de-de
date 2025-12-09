@@ -18,6 +18,18 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+== 8. Dezember 2025
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Umbenannt in „Aufgelaufene Auslösekapazität“
+
+Die Bezeichnung *Accrued burst capacity* wird in *Accrued burst* umbenannt.
+
+
+
 == 24. November 2025
 
 Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
