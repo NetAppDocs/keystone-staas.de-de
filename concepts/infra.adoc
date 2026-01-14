@@ -4,7 +4,7 @@ permalink: concepts/infra.html
 keywords: keystone infrastructure, infra 
 summary: Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten ausschließlich mit NetApp im Unternehmen. 
 ---
-= Keystone Infrastruktur
+= Keystone Infrastruktur verstehen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

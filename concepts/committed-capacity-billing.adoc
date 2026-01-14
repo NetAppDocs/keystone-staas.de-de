@@ -4,7 +4,7 @@ permalink: concepts/committed-capacity-billing.html
 keywords: Billing based on committed capacity, committed capacity billing 
 summary: Bei der Bereitstellung der Kapazität handelt es sich um die Kapazität, die für ein bestimmtes Servicelevel beim Erwerb des Abonnements festgelegt ist. 
 ---
-= Abrechnung basiert auf der verplante Kapazität
+= Keystone Abrechnung der zugesagten Kapazität verstehen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

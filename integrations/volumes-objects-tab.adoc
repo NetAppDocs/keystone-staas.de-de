@@ -4,7 +4,7 @@ permalink: integrations/volumes-objects-tab.html
 keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
 summary: Anzeige von Kapazitätsdetails auf Volume- oder Objekt-Storage-Ebene 
 ---
-= Zeigen Sie Details zu ONTAP Volumes und Objekt-Storage an
+= ONTAP Volumes und Objektspeicherdetails für Keystone -Abonnements anzeigen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

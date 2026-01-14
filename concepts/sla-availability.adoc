@@ -4,7 +4,7 @@ permalink: concepts/sla-availability.html
 keywords: availability, sla, service level agreement, slo, service level objectives 
 summary: 'Das Verfügbarkeits-SLO zielt auf eine Uptime von 99.999 % während des Abrechnungszeitraums für alle bei der Keystone Bestellung implementierten NetApp ONTAP Flash Storage-Arrays ab.' 
 ---
-= Verfügbarkeits-SLO
+= Verfügbarkeits-SLO für Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

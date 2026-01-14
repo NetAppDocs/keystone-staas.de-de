@@ -4,7 +4,7 @@ permalink: concepts/burst-consumption-billing.html
 keywords: burst consumption billing 
 summary: Die Abrechnung von Keystone STaaS basiert auf der Burst-Kapazität – der von Ihnen verbrauchten Kapazität – zusätzlich zur gebuchten Kapazität im Abonnement. 
 ---
-= Abrechnung auf Basis von Burst-Nutzung
+= Keystone Abrechnung von Verbrauchsspitzen verstehen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

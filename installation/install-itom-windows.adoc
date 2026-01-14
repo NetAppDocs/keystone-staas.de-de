@@ -4,7 +4,7 @@ permalink: installation/install-itom-windows.html
 keywords: Windows installation Keystone, ITOM Collector installation 
 summary: Installieren Sie ITOM Collector auf einem Windows-basierten System. 
 ---
-= Installieren Sie ITOM Collector auf Windows-Systemen
+= Keystone ITOM Collector auf Windows-Systemen installieren
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

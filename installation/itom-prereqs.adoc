@@ -4,7 +4,7 @@ permalink: installation/itom-prereqs.html
 keywords: prerequisites, ITOM, 
 summary: Ihre Systeme müssen mehrere Anforderungen erfüllen, bevor Sie ITOM Collector installieren können. 
 ---
-= Installationsanforderungen für ITOM Collector
+= Installationsvoraussetzungen für Keystone ITOM Collector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

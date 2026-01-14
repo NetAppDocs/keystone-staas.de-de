@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: Der Daten-Tiering Add-on Service identifiziert selten genutzte Daten und führt sie auf unterstützten Storage zu. 
 ---
-= Mehr über Daten-Tiering erfahren
+= Daten-Tiering-Zusatzdienst für Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

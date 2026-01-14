@@ -4,7 +4,7 @@ permalink: concepts/nrnvc.html
 keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
 summary: Im Rahmen Ihres NetApp Keystone Abonnements erweitert NetApp das NRNVC-Angebot für Ihre File-, Block- und Objekt-Services. 
 ---
-= Non-Returnable, nichtflüchtige Komponenten und SnapLock Compliance
+= Nicht rückgabefähige, nichtflüchtige Komponenten und SnapLock -Konformitäts-Zusatzservice für Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
