@@ -48,6 +48,10 @@ Auf der Registerkarte *Warnungen* können Sie die folgenden Aktionen ausführen:
 +
 ** Markieren Sie die Warnung als gelöst, indem Sie nach der Behebung des Problems die Schaltfläche *Bearbeiten* auswählen.
 ** Fügen Sie bei Bedarf unterstützende Notizen hinzu, indem Sie die Schaltfläche *Notiz hinzufügen* auswählen.
++
+
+NOTE: Zum Bearbeiten von Warnmeldungen ist die * Keystone Administratorrolle* erforderlich. Die Rolle * Keystone -Betrachter* kann nur Alarmdetails anzeigen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Keystone -Zugriffsrollen in der NetApp Console"^]Die
+
 
 
 * *Warnungen filtern*: Verwenden Sie das Filtersymbol in der Spalte *Status*, um nur aktive Warnungen, gelöste Warnungen oder beides anzuzeigen.

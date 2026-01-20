@@ -42,6 +42,9 @@ NOTE: Die Registerkarte *Berichte* ist für Keystone -Abonnements derzeit nicht 
 
 Auf der Registerkarte *Alarmmonitore* können Sie Monitore erstellen, um die Kapazitätsnutzung und das Ablaufen des Abonnements zu verfolgen.  Sie können vorhandene Monitore auch nach Bedarf bearbeiten, duplizieren oder löschen.
 
+
+NOTE: Sie müssen der * Keystone -Administratorrolle* zugewiesen sein, um Alarmmonitore zu erstellen und zu verwalten. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Keystone -Zugriffsrollen in der NetApp Console"^]Die
+
 [role="tabbed-block"]
 ====
 .Erstellen eines Monitors

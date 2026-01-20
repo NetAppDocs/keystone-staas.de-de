@@ -18,6 +18,18 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+== 19. Januar 2026
+
+Aktualisierungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Abonnementänderung nicht möglich
+
+Die Option zur Änderung der zugesicherten Kapazität für Keystone -Abonnements ist derzeit nicht verfügbar. Diese Funktionalität wird in einer zukünftigen Version wieder eingeführt.
+
+
+
 == 8. Dezember 2025
 
 Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
