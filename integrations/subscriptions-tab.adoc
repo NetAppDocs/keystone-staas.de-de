@@ -25,7 +25,7 @@ Um detaillierte Informationen zu Ihren Abonnements anzuzeigen, führen Sie die f
 .Schritte
 . Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 +
-image:bxp-subscription-list-3.png["Details der Registerkarte „Abonnement“ anzeigen"]
+image:bxp-subscription-list-4.png["Details der Registerkarte „Abonnement“ anzeigen"]
 
 +
 Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und nicht aufgelöste Warnungen.
@@ -39,13 +39,14 @@ Aus der Tabelle können Sie folgende Details entnehmen:
 ** *Kundenname*: Der Name des Kunden, der mit dem Keystone-Abonnement verknüpft ist.
 ** *Verknüpfte Abonnements*: Wenn Sie sekundäre Abonnements haben, die mit Ihrem primären Abonnement verknüpft sind, werden in dieser Spalte die verknüpften Abonnementnummern für das primäre Abonnement aufgeführt. Diese Abonnementnummer kann zu Ihrem primären oder sekundären (verknüpften) Abonnement gehören.
 ** * Keystone -Version*: Die Version des Keystone Dienstes, die für das Abonnement verwendet wird. Die Tarifregeln für Leistungsservicelevel können je nach Abonnementversion unterschiedlich sein. Weitere Informationen zur Version v1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Keystone-Abonnementdienste | Dokumentation Version 1"^] .
+** *Nutzungsart*: Möglicherweise haben Sie mehrere Keystone Versionen abonniert. Die Tarifregeln für Leistungs-Servicelevel können sich je nach Abonnementversion unterscheiden. Anhand des Werts in dieser Spalte wissen Sie, ob die Nutzungsart gemäß der bereitgestellten, physischen oder logischen Nutzung abgerechnet wird. Weitere Informationen zu Version 1 finden Sie unter  https://docs.netapp.com/us-en/keystone/index.html["Keystone-Abonnementdienste | Dokumentation Version 1"^].
 ** *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements.
 ** *Leistungsservicelevel*: Die Anzahl der mit dem Abonnement verknüpften Tarifpläne, wobei jeder Tarifplan einem bestimmten Leistungsservicelevel und einer zugesagten Kapazität entspricht.
 ** *Höchste Kapazität*: Die maximale Kapazität, die innerhalb des Abonnements verbraucht wird.
 ** *Tage bis zum Ablauf des Abonnements*: Die Anzahl der verbleibenden Tage bis zum Ablauf des Abonnements.
 +
 
-NOTE: Sie können auf den Abwärtspfeil neben der Spalte *Ablaufdatum* klicken, um die Leistungsservicelevel-Informationen für jedes Abonnement anzuzeigen.  Hier werden detaillierte Kapazitätsinformationen angezeigt, darunter aktuelle Nutzung, zugesagte Kapazität, bereitgestellte Kapazität, Burst-Kapazität und verfügbare Kapazität.
+NOTE: Sie können auf den Pfeil nach unten image:down-arrow.png["Symbol zum Erweitern"] in der Tabellenüberschrift klicken, um alle Abonnements zu erweitern und die Informationen zu den Performance-Service-Levels für jedes Abonnement gleichzeitig anzuzeigen. Dies zeigt detaillierte Kapazitätsinformationen, einschließlich aktueller Nutzung, zugesicherter Kapazität, bereitgestellter Kapazität, Spitzenkapazität und verfügbarer Kapazität für alle Abonnements. Alternativ können Sie auf den Pfeil nach unten neben der Spalte *Ablaufdatum* in den einzelnen Abonnementzeilen klicken, um diese einzeln zu erweitern.
 
 +
 

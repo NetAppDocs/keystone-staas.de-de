@@ -1,0 +1,29 @@
+= Interaktive Filterung für täglich akkumulierte Burst-Daten
+:allow-uri-read: 
+
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Interaktive Filterung für täglich akkumulierte Burst-Daten
+
+Die Tabelle *Accrued burst by days* im Tab *Consumption trend* unterstützt jetzt interaktives Filtern. Wählen Sie einen beliebigen Balken im Diagramm der aufgelaufenen Ausfälle aus, um nur die Tage innerhalb dieses Abrechnungszeitraums anzuzeigen. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
+
+
+
+=== Erweiterte Datumsbereichsanzeige im Diagramm der kumulierten Ausbrüche
+
+Das Diagramm der aufgelaufenen Spitzenabrechnungen im Tab *Consumption trend* zeigt jetzt für jeden Abrechnungszeitraum vollständige Datumsbereiche an, wie zum Beispiel 01. Okt 2025 bis 31. Okt 2025, anstatt nur Monat und Jahr.
+
+
+
+=== Erweiterbare Ansicht der Abonnementdetails
+
+Die Registerkarte *Abonnements* enthält eine Option, um alle Abonnements zu erweitern und gleichzeitig Informationen zu den Performance-Servicelevels für jedes Abonnement anzuzeigen. Weitere Informationen finden Sie unter link:./integrations/subscriptions-tab.html["Details zu Ihren Keystone-Abonnements anzeigen"].
+
+
+
+=== Neue Spalte Nutzungstyp
+
+Die Registerkarte *Abonnements* enthält eine Spalte *Nutzungstyp*, die anzeigt, ob das Abonnement auf Basis der bereitgestellten, physischen oder logischen Nutzung abgerechnet wird. Weitere Informationen finden Sie unter link:./integrations/subscriptions-tab.html["Details zu Ihren Keystone-Abonnements anzeigen"].

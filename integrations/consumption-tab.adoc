@@ -129,18 +129,20 @@ Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kap
 
 == Aufgelaufenen Burst anzeigen
 
-Sie können die aufgelaufene Burst-Datennutzung über die Konsole oder Digital Advisor anzeigen. Wenn Sie in der Konsole im Dropdown-Menü *Anzeigen* auf der Registerkarte *Verbrauchstrend* die Option *Aufgelaufener Burst* oder in Digital Advisor auf der Registerkarte *Verbrauchstrend* die Option *Abgerechneter aufgelaufener Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung je nach ausgewähltem Abrechnungszeitraum auf monatlicher oder vierteljährlicher Basis anzeigen. Diese Daten sind für die letzten 12 abgerechneten Monate verfügbar und Sie können nach Datumsbereich für bis zu 30 Monate abfragen. Balkendiagramme zeigen die in Rechnung gestellten Daten an. Wenn die Nutzung noch nicht in Rechnung gestellt wurde, wird sie für diesen Zeitraum als _Ausstehend_ markiert.
+Sie können die aufgelaufene Burst-Datennutzung über die Console oder Digital Advisor anzeigen. Wenn Sie im Tab *Consumption trend* in der Console im Dropdown-Menü *View* die Option *Accrued burst* oder im Tab *Consumption Trend* in Digital Advisor die Option *Invoiced Accrued Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung monatlich oder vierteljährlich anzeigen, abhängig von Ihrem gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 abgerechneten Monate verfügbar, und Sie können nach dem Datumsbereich für bis zu 30 Monate in der Vergangenheit abfragen.
+
+[TIP]
+====
+* In der Konsole können Sie mit dem Diagramm der aufgelaufenen Burst-Abrechnung interaktiv arbeiten, um den täglichen Datenverbrauch zu filtern. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
+* Die in Rechnung gestellte aufgelaufene Burst-Nutzung wird pro Abrechnungszeitraum basierend auf der zugesagten und verbrauchten Kapazität für ein Leistungsservicelevel berechnet.
 
 
-TIP: Die in Rechnung gestellte aufgelaufene Burst-Nutzung wird pro Abrechnungszeitraum basierend auf der zugesagten und verbrauchten Kapazität für ein Leistungsservicelevel berechnet.
-
+====
 Wenn das Abonnement bei einem vierteljährlichen Abrechnungszeitraum an einem anderen Datum als dem 1^st^ des Monats beginnt, deckt die Quartalsrechnung den darauf folgenden 90-tägigen Zeitraum ab. Wenn Ihr Abonnement beispielsweise am 15. August beginnt, wird die Rechnung für den Zeitraum von August 15 bis Oktober 14 generiert.
 
 Wenn Sie von einer vierteljährlichen zu einer monatlichen Abrechnung wechseln, deckt die Quartalsrechnung weiterhin den 90-Tage-Zeitraum ab. Dabei werden im letzten Monat des Quartals zwei Rechnungen generiert: Eine für den vierteljährlichen Abrechnungszeitraum und eine weitere für die restlichen Tage dieses Monats. Mit dieser Umstellung kann der monatliche Abrechnungszeitraum am 1^st^ des Folgemonats beginnen. Wenn Ihr Abonnement beispielsweise am 15. Oktober beginnt, erhalten Sie im Januar zwei Rechnungen – eine für Oktober 15 bis Januar 14 und eine für Januar 15 bis 31 –, bevor der monatliche Abrechnungszeitraum am 1. Februar beginnt.
 
 image:accr-burst-2.png["Anfallende Burst-Nutzung vierteljährlich"]
-
-Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.
 
 
 
@@ -148,7 +150,9 @@ Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM
 
 Sie können die täglich aufgelaufene Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum über die Konsole oder den Digital Advisor anzeigen. In der Konsole bietet die Tabelle *Aufgelaufener Burst nach Tagen* detaillierte Daten, einschließlich Zeitstempel, zugesagter, verbrauchter und aufgelaufener Burst-Kapazität, wenn Sie *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auf der Registerkarte *Verbrauchstrend* auswählen.
 
-image:bxp-accrued-burst-days.png["Screenshot der Tabelle mit den aufgelaufenen Bursts nach Tagen"]
+In der Console können Sie die Tabelle filtern, indem Sie einen beliebigen Balken auswählen, der einen Abrechnungszeitraum im Diagramm der aufgelaufenen Burst-Gebühren darstellt. Wenn gefiltert, zeigt die Tabelle nur die Tage innerhalb des ausgewählten Abrechnungszeitraums an. Um den vollständigen Datensatz wieder anzuzeigen, verwenden Sie die Option *Clear filters*. Wenn für den ausgewählten Zeitraum keine Daten verfügbar sind, wird eine Meldung angezeigt, die angibt, dass keine Daten verfügbar sind.
+
+image:bxp-accrued-burst-days-1.png["Screenshot der Tabelle mit den aufgelaufenen Bursts nach Tagen"]
 
 Wenn Sie in Digital Advisor auf die Leiste klicken, die die Rechnungsdaten aus der Option *Invoiced Accrued Burst* anzeigt, wird unter dem Balkendiagramm der Abschnitt „Berechnebare bereitgestellte Kapazität“ angezeigt, der sowohl die Anzeige von Diagrammen als auch von Tabellen bietet. In der Standardgrafik-Ansicht wird die tägliche angesammelte Burst-Datennutzung in einem Liniengrafikformat angezeigt, in dem die Nutzungsänderungen im Laufe der Zeit angezeigt werden.
 
