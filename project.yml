@@ -118,6 +118,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: Zeigen Sie die Zeitleiste Ihres Abonnements an
         url: "/integrations/subscription-timeline.html"
+      - title: Anzeigen des MetroCluster-Abonnementverbrauchs und -zustands
+        url: "/integrations/adp-tab.html"
     - title: Assets anzeigen
       entries:
       - title: Anzeigen von Assets, die mit einem Abonnement verknüpft sind
@@ -150,8 +152,10 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: Kapazitätsanforderungen für Performance-Service-Levels
         url: "/concepts/capacity-requirements.html"
-    - title: Erfahren Sie mehr über Zusatzleistungen
+    - title: Zusatzdienste
       entries:
+      - title: Erweiterter Datenschutz
+        url: "/concepts/adp.html"
       - title: Burst-Kapazitätsoptionen
         url: "/concepts/burst-capacity.html"
       - title: Einblicke In Die Dateninfrastruktur

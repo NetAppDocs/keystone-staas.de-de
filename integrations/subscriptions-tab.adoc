@@ -34,7 +34,7 @@ Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Ab
 Aus der Tabelle können Sie folgende Details entnehmen:
 
 +
-** *Abonnementnummer*: Die von NetApp zugewiesene Abonnementnummer des Keystone-Abonnements.
+** *Abonnementnummer*: Die Abonnementnummer des Keystone-Abonnements, die von NetApp vergeben wurde. Abonnements mit dem image:metrocluster-icon.png["MetroCluster Abonnement-Symbol"] Symbol sind MetroCluster-Abonnements. Weitere Informationen zu MetroCluster-Abonnements finden Sie unter link:../integrations/adp-tab.html["Verbrauch und Status Ihrer Keystone MetroCluster Abonnements einsehen"].
 ** *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
 ** *Kundenname*: Der Name des Kunden, der mit dem Keystone-Abonnement verknüpft ist.
 ** *Verknüpfte Abonnements*: Wenn Sie sekundäre Abonnements haben, die mit Ihrem primären Abonnement verknüpft sind, werden in dieser Spalte die verknüpften Abonnementnummern für das primäre Abonnement aufgeführt. Diese Abonnementnummer kann zu Ihrem primären oder sekundären (verknüpften) Abonnement gehören.

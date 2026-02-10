@@ -1,8 +1,72 @@
 ---
+sidebar: sidebar 
 permalink: concepts/adp.html 
-redirect: keystone-staas/concepts/metrics.html 
+keywords: data protection advanced 
+summary: Nutzen Sie den erweiterten Datenschutz-Zusatzdienst, um einen effizienten Datenschutz für geschäftskritische Workloads zu gewährleisten. 
 ---
-= 
+= Erweitertes Datenschutz-Add-on für Keystone
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
+[role="lead"]
+Sie können den erweiterten Datenschutz-Zusatzdienst (ADP) mit Ihrem Keystone STaaS-Abonnement abonnieren. Während die Standarddienste von Keystone einen standardmäßigen Datenschutz mittels SnapMirror, SnapVault und Snapshot bieten, verwendet dieser Zusatzdienst die NetApp MetroCluster-Technologie, um einen effizienten Datenschutz Ihrer geschäftskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 sicherzustellen.
+
+Keystone advanced data protection service kann Daten synchron an einen sekundären Standort spiegeln. Im Falle einer Katastrophe am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion verwendet die link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] Konfiguration zwischen zwei Standorten, um den Datenschutz zu ermöglichen. Sie können die erweiterten Datenschutz-Add-on-Services nur für Ihre Datei- und Blockspeicherdienste verwenden. Als Teil dieses Add-on-Services wird das  `Advanced Data-Protect` Performance-Service-Level Ihrem Abonnement zugewiesen.
+
+Sie können Verbrauchs- und Zustandskennzahlen Ihrer MetroCluster-Konfiguration überwachen. Weitere Informationen finden Sie unter link:../integrations/adp-tab.html["Verbrauch und Status Ihrer MetroCluster-Abonnements anzeigen"].
+
+
+
+== Preisgestaltung verstehen
+
+Der Preis für den erweiterten Datenschutz-Zusatzservice richtet sich nach der zugesicherten Kapazität an jedem Standort. Dies hilft, die tatsächlichen Kosten des erweiterten Datenschutzservices in $/TiB zu bestimmen. Die Zusatzgebühren gelten für alle Kapazitäten Ihres Abonnements, einschließlich Quelldaten, gespiegelter Kopien und nicht gespiegelter Daten.
+
+Für die MetroCluster-Konfiguration benötigt jeder Standort ein eigenes Abonnement, und die zugesicherte Kapazität wird an jedem Standort unabhängig in Rechnung gestellt.
+
+Beachten Sie Folgendes:
+
+* Der Service verwendet 100 % der zugesicherten Kapazität des zugehörigen Speichers als zugesicherte Kapazität.
+* Gebühren fallen sowohl für primäre als auch für sekundäre Standorte an und decken sowohl Quell- als auch Zielcluster ab.
+* Gebühren fallen nur für Ihre Datei- und Blockspeicherdienste an.
+
+
+
+
+== Unterstützte MetroCluster Konfigurationen
+
+Keystone unterstützt die folgenden MetroCluster Bereitstellungsszenarien:
+
+Aktiv/Passiv-Konfiguration:: In dieser Konfiguration werden Primärdaten an einem Standort auf einen sekundären Standort gespiegelt. Wenn beispielsweise 100 TiB an logischen Daten an Standort A verbraucht werden, werden sie auf Standort B repliziert. Beide Standorte benötigen identische Abonnements:
++
+--
+* *Abonnement 1 (Standort A):* 100 TiB Storage Service + 100 TiB ADP
+* *Abonnement 2 (Standort B):* 100 TiB Storage Service + 100 TiB ADP
+
+
+--
+Aktiv/Aktiv-Konfiguration mit vollständiger Spiegelung:: In dieser Konfiguration hosten beide Standorte Primärdaten, die bidirektional gespiegelt werden. Beispielsweise werden 100 TiB Primärdaten am Standort A nach Standort B gespiegelt und 100 TiB Primärdaten am Standort B nach Standort A. Beide Standorte benötigen Abonnements für die kombinierte Kapazität:
++
+--
+* *Abonnement 1 (Standort A):* 200 TiB Storage Service + 200 TiB ADP
+* *Abonnement 2 (Standort B):* 200 TiB Storage Service + 200 TiB ADP
+
+
+--
+Aktiv/Aktiv-Konfiguration mit teilweiser Spiegelung:: In dieser Konfiguration hostet ein Standort gespiegelte Daten, während der andere Standort sowohl gespiegelte als auch ungespiegelte Daten hostet. Beispielsweise werden 100 TiB primärer Daten an Standort A zu Standort B gespiegelt, während Standort B zusätzlich 100 TiB ungespiegelte Daten hostet. Die Abonnements unterscheiden sich je nach Kapazität an jedem Standort:
++
+--
+* *Abonnement 1 (Standort A):* 100 TiB Storage Service + 100 TiB ADP
+* *Abonnement 2 (Standort B):* 200 TiB Storage Service + 200 TiB ADP
+
+
+--
+
+
+Das folgende Diagramm zeigt diese unterstützten MetroCluster Konfigurationen:
+
+image:mcc-1.png["Diagramm mit drei MetroCluster Konfigurationen: Aktiv/Passiv mit symmetrischer Spiegelung, Aktiv/Aktiv mit vollständiger bidirektionaler Spiegelung und Aktiv/Aktiv mit partieller Spiegelung"]
