@@ -16,7 +16,7 @@ summary: Als NetApp Keystone STaaS-Abonnent können Sie sich über die NetApp Co
 [role="lead"]
 Das Keystone-Dashboard ist Ihre Lösung für die effiziente Überwachung, Analyse und Verwaltung Ihrer Keystone-Abonnements. Mit dem Keystone-Dashboard erreichen Sie folgende Ziele:
 
-* *Abonnementdetails überwachen*: Zeigen Sie detaillierte Informationen zu Ihren Keystone-Abonnements an, einschließlich Leistungsservicelevel, Kapazitätsnutzung, Assets und Warnungen.
+* *Abonnementdetails überwachen*: Sehen Sie detaillierte Informationen zu Ihren Keystone-Abonnements ein, einschließlich der Leistungs-Servicelevel (Basis- und Zusatzdienste wie erweiterter Datenschutz und Data Infrastructure Insights), Kapazitätsnutzung, Assets und Warnmeldungen.
 * *Kapazitätsnutzung verfolgen und Berichte erstellen*: Behalten Sie die aktuelle und historische Kapazitätsnutzung im Auge und erstellen Sie Berichte, um Abonnementdaten zu analysieren und fundierte Entscheidungen zu treffen.
 * *Abonnement-Zeitleiste anzeigen*: Bleiben Sie über wichtige Termine und Ereignisse informiert, indem Sie die Zeitleiste Ihrer Abonnements überwachen.
 * *Abonnements verwalten*: Senden Sie Anfragen zum Ändern der Leistungsservicelevel oder anderer Abonnementparameter, wenn sich Ihre Anforderungen ändern.

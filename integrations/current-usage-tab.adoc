@@ -44,6 +44,10 @@ In der Tabellenansicht können Sie Details wie die maximal verbrauchte Kapazitä
 +
 image:console-current-consumption-table.png["Stromverbrauchsdetails in Tabellenform"]
 
++
+
+NOTE: Wenn Sie Zusatzdienste wie Advanced Data Protection (ADP) oder Data Infrastructure Insights (DII) abonniert haben, wird der aktuelle Verbrauch dieser Dienste zusammen mit Ihren Basis-Leistungsdienstebenen sowohl in der grafischen als auch in der Tabellenansicht angezeigt. Weitere Informationen zu Zusatzdiensten finden Sie unter link:../concepts/adp.html["Erfahren Sie mehr über Zusatzleistungen"].
+
 
 
 --
