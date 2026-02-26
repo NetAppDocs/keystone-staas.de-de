@@ -21,16 +21,13 @@ NetApp Keystone bietet latenzbasierte SLOs pro Performance-Servicelevel, wie in 
 == Metriken
 
 * *Verminderte Performance*: Dauer in Minuten pro Vorfall, während derer das Ziel für die^90.^ Perzentil-Latenz nicht erreicht wird
-* Die *90^th^ percentile Latenz* wird pro Volume, pro Performance-Level für alle Volumes innerhalb einer Keystone Bestellung gemessen. Die Latenz wird alle fünf Minuten gemessen. Der über einen Zeitraum von 24 Stunden berechnete 90^th^ perzentil-Wert dient als tägliche Kennzahl unter Berücksichtigung der folgenden Punkte:
+* Die *Latenz im 90. Perzentil* wird pro Volume, pro Performance-Service-Level-Instanz, für alle Volumes innerhalb eines Keystone Order gemessen. Die Latenz wird alle fünf Minuten erfasst, und der über einen Zeitraum von 24 Stunden berechnete Wert im 90. Perzentil wird als Tagesmaß unter Berücksichtigung der folgenden Punkte verwendet:
 +
 ** Die Volumes, die zum Zeitpunkt der Kennzahlenerfassung mindestens fünf IOPS aufzeichnen, werden als Beispiel betrachtet.
 ** Volumes mit mehr als 30 % Schreibvorgängen zum Zeitpunkt der Kennzahlenerfassung werden aus der Stichprobe ausgeschlossen.
-** Von AQoS für den angeforderten IOPS/tib hinzugefügte Latenz, die über dem Ziel-IOPS/tib liegt, wird von der Stichprobe ausgeschlossen.
-** Von AQoS hinzugefügte Latenz zur Aufrechterhaltung des IOPS-Minimums pro Volume werden von der Stichprobe ausgeschlossen.
 ** Bei Volumes mit aktivierter FabricPool-Funktion wird die bei der Übertragung der Daten zum und vom Ziel-Storage (Cold) anfallende Latenz nicht gezählt.
 ** Latenz, die durch das Applikations-, Host- oder Kundennetzwerk außerhalb des ONTAP-Clusters verursacht wird, wird nicht gezählt.
-** Während eines Zeitraums von 24 Stunden sollten mindestens zehn gültige Kennzahlen verfügbar sein. Andernfalls werden die Kennzahlen verworfen.
-** Wenn auf einem oder mehreren Volumes auf einem Storage-Array keine gültige AQoS-Richtlinie angewendet wird, kann sich die Anzahl der für andere Volumes verfügbaren IOPS auswirken. NetApp ist nicht dafür verantwortlich, die Performance-Level auf diesem Storage-Array zu erreichen oder zu erreichen.
+** Während eines Zeitraums von 24 Stunden sollten mindestens zehn gültige Metriken verfügbar sein. Wenn die Bedingung nicht erfüllt ist, werden die Metriken verworfen.
 ** In FabricPool-Konfigurationen sind Performance-Level anwendbar, wenn alle angeforderten Datenblöcke auf FabricPool Quell-Storage (heiß) liegen und sich der Quell-Storage nicht in einer synchronen SnapMirror Beziehung befindet.
 
 
@@ -45,14 +42,14 @@ Alle Performance-Service-Levels, die von ONTAP Flash-Speicher-Arrays unterstütz
 |===
 
 
-| *Service Level* | Extrem | Premium | Leistung | Standard 
+| *Service Level* | Extrem | Premium | Standard | Wert 
 
 
  a| 
 *Ziel: 90^th^ Perzentillatenz*
-| <1 ms | <2 ms | <4 ms | <4 ms 
+| <=1ms | <=1ms | <=4ms | >=4ms 
 |===
-Weitere Informationen zu den Latenzanforderungen der Performance-Service-Levels finden Sie unter link:../concepts/service-levels.html["Leistungsservice-Levels in Keystone"] .
+Weitere Informationen zu den Latenzanforderungen der Leistungs-Servicelevel finden Sie unter link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"].
 
 
 
@@ -106,7 +103,7 @@ Extrem
 |===
 Mit der Formel: Service Credits = ( 10 / 50 ) X 1000 x 2 x 0.03
 
-Die Service Credits betragen basierend auf der Berechnung 12 US-Dollar.
+Basierend auf der Berechnung beträgt die Servicegutschrift 12 $.
 
 
 
@@ -124,7 +121,7 @@ Wenn ein Verstoß gegen den SLA erkannt wird, eröffnen Sie beim NetApp Keystone
 .. Alle anderen relevanten Dokumente
 
 
-* Geben Sie die Details in der Excel-Tabelle an, wie unten gezeigt, für ein P3-Ticket, das mit NetApp Keystone Support eröffnet wurde.
+* Geben Sie die Details in der Excel-Tabelle wie unten gezeigt für ein P3-Ticket an, das bei NetApp Keystone support eröffnet wurde.
 +
 image:sla-breach.png["excel-Sheet-Vorlage"]
 
@@ -133,7 +130,7 @@ image:sla-breach.png["excel-Sheet-Vorlage"]
 [NOTE]
 ====
 * Eine Service-Gutschriftanfrage sollte innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den NetApp Keystone Support eingeleitet werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.
-* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter link:../concepts/support-services.html["NetApp Keystone-Support"].
+* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone-Abonnements. Weitere Informationen finden Sie unter link:../concepts/support-services.html["NetApp Keystone-Support"].
 
 
 ====

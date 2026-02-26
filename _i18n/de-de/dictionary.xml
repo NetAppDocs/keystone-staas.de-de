@@ -1085,19 +1085,11 @@ Hier ein Beispiel:</block>
   <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">excel-Sheet-Vorlage</block>
   <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="23f04236d1f84e52d087f768059adbbe" category="list-text">*Verminderte Performance*: Dauer in Minuten pro Vorfall, während derer das Ziel für die^90.^ Perzentil-Latenz nicht erreicht wird</block>
-  <block id="3fe43b4ffa54563c104bbdf1eeea2b59" category="list-text">Die *90^th^ percentile Latenz* wird pro Volume, pro Performance-Level für alle Volumes innerhalb einer Keystone Bestellung gemessen. Die Latenz wird alle fünf Minuten gemessen. Der über einen Zeitraum von 24 Stunden berechnete 90^th^ perzentil-Wert dient als tägliche Kennzahl unter Berücksichtigung der folgenden Punkte:</block>
   <block id="35254eb51c71659b3cf343855354b8b1" category="list-text">Die Volumes, die zum Zeitpunkt der Kennzahlenerfassung mindestens fünf IOPS aufzeichnen, werden als Beispiel betrachtet.</block>
   <block id="0e0e9d5bae73de26860af74cb8fc6ac2" category="list-text">Volumes mit mehr als 30 % Schreibvorgängen zum Zeitpunkt der Kennzahlenerfassung werden aus der Stichprobe ausgeschlossen.</block>
-  <block id="ab4c900b0e1430edc1bd09939be8859a" category="list-text">Von AQoS für den angeforderten IOPS/tib hinzugefügte Latenz, die über dem Ziel-IOPS/tib liegt, wird von der Stichprobe ausgeschlossen.</block>
-  <block id="565d8433df6c6c23be6de8fd7871abae" category="list-text">Von AQoS hinzugefügte Latenz zur Aufrechterhaltung des IOPS-Minimums pro Volume werden von der Stichprobe ausgeschlossen.</block>
   <block id="f901dbc53f8dea2d74e68635ec84a298" category="list-text">Bei Volumes mit aktivierter FabricPool-Funktion wird die bei der Übertragung der Daten zum und vom Ziel-Storage (Cold) anfallende Latenz nicht gezählt.</block>
   <block id="23ca5c8d56457bbd625ff236b3c706ef" category="list-text">Latenz, die durch das Applikations-, Host- oder Kundennetzwerk außerhalb des ONTAP-Clusters verursacht wird, wird nicht gezählt.</block>
-  <block id="efbd8d78a7008161e0e4f42c63d84ad6" category="list-text">Während eines Zeitraums von 24 Stunden sollten mindestens zehn gültige Kennzahlen verfügbar sein. Andernfalls werden die Kennzahlen verworfen.</block>
-  <block id="5b8e1d393a8c6bf1b5c0be8eb268aba3" category="list-text">Wenn auf einem oder mehreren Volumes auf einem Storage-Array keine gültige AQoS-Richtlinie angewendet wird, kann sich die Anzahl der für andere Volumes verfügbaren IOPS auswirken. NetApp ist nicht dafür verantwortlich, die Performance-Level auf diesem Storage-Array zu erreichen oder zu erreichen.</block>
   <block id="d8ace9c4f3c105767c7ec01ce669eca3" category="list-text">In FabricPool-Konfigurationen sind Performance-Level anwendbar, wenn alle angeforderten Datenblöcke auf FabricPool Quell-Storage (heiß) liegen und sich der Quell-Storage nicht in einer synchronen SnapMirror Beziehung befindet.</block>
-  <block id="ce8f4bd254d7fa591c64caccc3aa3eeb" category="cell">&lt;1 ms</block>
-  <block id="101d21e523f12f01303be5acdf4141d9" category="cell">&lt;2 ms</block>
-  <block id="65e7d97f5e59814284d01d2b0cd62581" category="cell">&lt;4 ms</block>
   <block id="4528f5e882cc88c8842dcf9b1ac1b1bc" category="paragraph">NetApp gibt Service-Gutschriften für die beeinträchtigte Performance aus:</block>
   <block id="72c2dabc519f204563247ef9d2fd1c7a" category="cell">*Leistungsschwelle*</block>
   <block id="133c2090971805c26a4b7780a43a4e1f" category="paragraph">90^th^ Perzentillatenz &gt; Ziel-Latenz</block>
@@ -1105,13 +1097,11 @@ Hier ein Beispiel:</block>
   <block id="68bff7f600a4d4bddae207bf52b8dbdb" category="paragraph">Service-Gutschriften = (betroffene Kapazität/gesamte gebuchte Kapazität) X Kapazitätsgebühren X betroffene Tage X Kreditprozentsatz</block>
   <block id="518fb0e9794f4b9e14b0dc061ac61fda" category="list-text">*Kapazitätsgebühren*: Die Gebühren für das betroffene Leistungsniveau gemäß der Keystone-Bestellung.</block>
   <block id="9bd7cf79d77a54ab7c62e80f778e9d2a" category="list-text">*Betroffene Tage*: Die Anzahl der betroffenen Kalendertage.</block>
-  <block id="b452a2e7bf15034c9bd63c001b3e6e64" category="cell">*Betroffene Kalendertage*</block>
   <block id="a22d50cab82690cbdc8113c3ff9c2076" category="cell">10 Tib</block>
   <block id="58f24a17f570c7949880710fdf616d32" category="cell">50 Tib</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="dcfe0b3ef8eb8156a5e83949c2e2f7b6" category="cell">3 % erreicht</block>
   <block id="b9ad6821bc2a0e4300b5b91ca5245476" category="paragraph">Mit der Formel: Service Credits = ( 10 / 50 ) X 1000 x 2 x 0.03</block>
-  <block id="732192040cca36723308ae6b02982093" category="paragraph">Die Service Credits betragen basierend auf der Berechnung 12 US-Dollar.</block>
   <block id="fed70707a2e768c22f4b0fc06a401786" category="summary">NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garantie-Programm für Ransomware-Daten aus SnapLock Compliance Volumes</block>
   <block id="30a37a729e8d5bdf11c9e3c6965f6872" category="doc">Recovery-Garantie Von Ransomware</block>
   <block id="c314df61fd93029a87d16eb15b842e7d" category="paragraph">NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garantie-Programm für Ransomware-Daten aus SnapLock Compliance Volumes. NetApp Ransomware Recovery Assurance Service ist zur Unterstützung des Ransomware-Recovery-Garantieprogramms erforderlich und sollte separat über die damit verbundene Keystone Bestellung erworben werden.</block>
@@ -1562,7 +1552,6 @@ Hier ein Beispiel:</block>
   <block id="bcd6ed294af34e837c537b83a1a3de21" category="list-text">CentOS 7 (nur für vorhandene Umgebungen)</block>
   <block id="265561b81e51364d306e58144832b7a8" category="summary">Wenn Sie Hilfe benötigen, wenden Sie sich bitte an das NetApp Keystone Support-Team.</block>
   <block id="9dc4e2b4f34e5f118e35019c46b06a4a" category="paragraph">Wenn ein Verstoß gegen den SLA erkannt wird, eröffnen Sie beim NetApp Keystone Support ein Support-Ticket mit der Priorität 3 (P3).</block>
-  <block id="5ece80a8e6fc51ca90ea8b795dbe7f83" category="list-text">Geben Sie die Details in der Excel-Tabelle an, wie unten gezeigt, für ein P3-Ticket, das mit NetApp Keystone Support eröffnet wurde.</block>
   <block id="cac189ace7fac11fbcff63b35adf8770" category="list-text">Eine Service-Gutschriftanfrage sollte innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den NetApp Keystone Support eingeleitet werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.</block>
   <block id="3a36d2372ffa5421518253f5c68f7c51" category="paragraph">Wenn ein Verstoß gegen das SLA erkannt wird, eröffnen Sie ein Support-Ticket mit der Priorität 3 (P3) beim NetApp Keystone Support. Geben Sie die Details wie unten in der Excel-Tabelle angegeben an:</block>
   <block id="cb74be13d3a600957d1ee583265f537d" category="section-title">Anzeige der täglichen angesammelten Burst-Datennutzung</block>
@@ -1643,8 +1632,6 @@ Hier ein Beispiel:</block>
   <block id="5f351af05581a0eadaf1177970b72a10" category="section-title">Leistungsservicelevel</block>
   <block id="e1a2df339e5e1d4b2b6d447c58823500" category="list-text">*Gesamtkapazität zugesagt*: Die zugesagte Kapazität für das Leistungsservicelevel für die Keystone-Bestellung.</block>
   <block id="651923524521408d98ff12d09f60af11" category="list-text">*Kapazitätsgebühren*: Die Gebühren für das betroffene Leistungsservicelevel für den Monat.</block>
-  <block id="b4b730f8748f9304cf03a7bd9ca06fbf" category="inline-link-macro">Leistungsservice-Levels in Keystone</block>
-  <block id="256f997b6fa99f6bde704d4194be3d6c" category="paragraph">Weitere Informationen zu den Latenzanforderungen der Performance-Service-Levels finden Sie unter <block ref="d8f18ae99fd2b456a3470321b1aded8e" category="inline-link-macro-rx"></block> .</block>
   <block id="edab02bbfaf3788182e3fa77788a9e44" category="list-text">die zugesagte Kapazität + zugewiesene Burst-Kapazität für das Performance-Service-Level oder</block>
   <block id="1ef86c84141cbf98bc2a59eeffa9afd3" category="paragraph">Weitere Informationen finden Sie unter <block ref="b7d94ab5747cf2f7821847d435faf714" category="inline-link-macro-rx"></block>.</block>
   <block id="33a7d9c43d0ae3063679287913d61f25" category="summary">Serviceanfrage für Keystone-Abonnement anzeigen oder stornieren.</block>
@@ -2392,7 +2379,6 @@ Hier ein Beispiel:</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10. November 2025</block>
   <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">Der Kunde stellt einen Linux-Server bereit, auf dem eines der folgenden Betriebssysteme läuft: Debian 12, Red Hat Enterprise Linux 8.6 oder spätere Versionen der 8.x-Reihe, Red Hat Enterprise Linux 9.0 oder spätere Versionen oder CentOS 7 (nur für bestehende Umgebungen). Die Keystone Software wird mithilfe von<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> oder<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> Das Paket ist abhängig von der Linux-Distribution.</block>
   <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">Der Kunde stellt einen Linux-Server bereit, auf dem Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Red Hat Enterprise Linux 9.0, Amazon Linux 2023 oder eine neuere Version läuft.</block>
-  <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>.</block>
   <block id="75269ad6e7abe01d12768761ab748b48" category="paragraph"><block ref="75269ad6e7abe01d12768761ab748b48" category="inline-link-rx"></block></block>
   <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">Änderungen der zugesagten Kapazität können Sie über die Konsole oder über Ihren Keystone Success Manager (KSM) anfordern. Informationen zum Beantragen von Änderungen finden Sie unter <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>Die</block>
   <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen. Informationen zum Sammeln von Tickets finden Sie unter <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>Die</block>
@@ -2610,4 +2596,14 @@ Hier ein Beispiel:</block>
   <block id="3a0ac91f607c4908d1e3d47d382884f8" category="list-text">*Verknüpfte Abonnements*: Wenn Sie sekundäre Abonnements mit Ihrem Hauptabonnement verknüpft haben, listet diese Spalte die verknüpften Abonnementnummern für das Hauptabonnement auf.</block>
   <block id="b3f613e3d8f464b4f2aaf03e58cd7343" category="list-text">*Verknüpfte Abonnements*: Falls Sie sekundäre Abonnements mit Ihrem primären Abonnement verknüpft haben, werden in dieser Spalte die verknüpften Abonnementnummern für das primäre Abonnement aufgelistet.</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">16. Februar 2026</block>
+  <block id="5232623a9d0949665269220e42d1050b" category="list-text">Geben Sie die Details in der Excel-Tabelle wie unten gezeigt für ein P3-Ticket an, das bei NetApp Keystone support eröffnet wurde.</block>
+  <block id="13505dac4434596c4a796389e650eb08" category="list-text">Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone-Abonnements. Weitere Informationen finden Sie unter <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>.</block>
+  <block id="1f5595c5befe745db8dadf46b35fce52" category="list-text">Die *Latenz im 90. Perzentil* wird pro Volume, pro Performance-Service-Level-Instanz, für alle Volumes innerhalb eines Keystone Order gemessen. Die Latenz wird alle fünf Minuten erfasst, und der über einen Zeitraum von 24 Stunden berechnete Wert im 90. Perzentil wird als Tagesmaß unter Berücksichtigung der folgenden Punkte verwendet:</block>
+  <block id="40f098b2e9bcd6666815272fd1d0b84e" category="list-text">Während eines Zeitraums von 24 Stunden sollten mindestens zehn gültige Metriken verfügbar sein. Wenn die Bedingung nicht erfüllt ist, werden die Metriken verworfen.</block>
+  <block id="0e20d6162625fb8fb8b7b598f96e52da" category="cell">&lt;=1ms</block>
+  <block id="692ed37295bb7f348009da0eb9d9f9ba" category="cell">&lt;=4ms</block>
+  <block id="6efe08597c08ab2309936c3460daafb5" category="cell">&gt;=4ms</block>
+  <block id="da4bea38cc1244c367fa4751943a1de3" category="paragraph">Weitere Informationen zu den Latenzanforderungen der Leistungs-Servicelevel finden Sie unter <block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block>.</block>
+  <block id="b4508efb1fe09000c916385cb19795aa" category="cell">*Betroffene Kalendertage*</block>
+  <block id="2f8ed0b357b613711aa9e5d215bc6566" category="paragraph">Basierend auf der Berechnung beträgt die Servicegutschrift 12 $.</block>
 </blocks>
