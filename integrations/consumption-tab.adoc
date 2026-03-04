@@ -45,7 +45,11 @@ NOTE: Wenn Sie Zusatzdienste wie Advanced Data Protection (ADP) oder Data Infras
 image:bxp-consumption-trend-1.png["Screenshot mit der Anzeige des historischen Verbrauchs"]
 
 +
-Das Liniendiagramm zeigt historische Verbrauchsdaten an und ermöglicht Benutzern die Analyse von Trends über einen ausgewählten Datumsbereich. Das Diagramm zeigt Kennzahlen wie die genutzte Kapazität (Gesamtspeicherkapazität, einschließlich Daten und Snapshot-Daten), Daten (von Benutzerdaten genutzte Speicherkapazität) und Snapshot (von Snapshot-Daten genutzte Speicherkapazität) sowie die zugesagte und Burst-Kapazität. Datum und Uhrzeit jedes Datenpunkts werden unten im Diagramm angezeigt. Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte. Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.
+Das Liniendiagramm zeigt historische Verbrauchsdaten und ermöglicht es den Benutzern, Trends über einen ausgewählten Datumsbereich zu analysieren. Das Diagramm zeigt Kennzahlen wie die verwendete Kapazität (Gesamtspeicherkapazität, einschließlich sowohl Daten als auch Snapshot-Daten), Daten (Speicherkapazität, die von Benutzerdaten verwendet wird), und Snapshot (Speicherkapazität, die von Snapshot-Daten verwendet wird), zusammen mit zugesicherter und Burst-Kapazität. Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte an. Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.
+
++
+
+NOTE: Der von Ihnen gewählte Datumsbereich bestimmt den Detaillierungsgrad am unteren Rand des Diagramms. Bei Zeiträumen von 30 Tagen oder weniger werden sowohl das Datum als auch die Uhrzeit für jeden Datenpunkt angezeigt. Bei Zeiträumen von mehr als 30 Tagen wird nur das Datum angezeigt.
 
 +
 
@@ -135,6 +139,10 @@ Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kap
 
 Sie können die aufgelaufene Burst-Datennutzung über die Console oder Digital Advisor anzeigen. Wenn Sie im Tab *Consumption trend* in der Console im Dropdown-Menü *View* die Option *Accrued burst* oder im Tab *Consumption Trend* in Digital Advisor die Option *Invoiced Accrued Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung monatlich oder vierteljährlich anzeigen, abhängig von Ihrem gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 abgerechneten Monate verfügbar, und Sie können nach dem Datumsbereich für bis zu 30 Monate in der Vergangenheit abfragen.
 
+In der Konsole können Sie neben der in Rechnung gestellten Burst-Nutzung auch die nicht in Rechnung gestellte Burst-Nutzung (aufgelaufen, aber noch nicht abgerechnet) und die vorläufige Burst-Nutzung (im aktuellen Abrechnungszeitraum aufgelaufen und noch nicht in Rechnung gestellt) einsehen.
+
+image:accr-burst-provision-invoice.png["Screenshot, der den aufgelaufenen Burst-Verbrauch in der Console anzeigt"]
+
 [TIP]
 ====
 * In der Konsole können Sie mit dem Diagramm der aufgelaufenen Burst-Abrechnung interaktiv arbeiten, um den täglichen Datenverbrauch zu filtern. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
@@ -157,6 +165,8 @@ Sie können die täglich aufgelaufene Datennutzung für einen monatlichen oder v
 In der Console können Sie die Tabelle filtern, indem Sie einen beliebigen Balken auswählen, der einen Abrechnungszeitraum im Diagramm der aufgelaufenen Burst-Gebühren darstellt. Wenn gefiltert, zeigt die Tabelle nur die Tage innerhalb des ausgewählten Abrechnungszeitraums an. Um den vollständigen Datensatz wieder anzuzeigen, verwenden Sie die Option *Clear filters*. Wenn für den ausgewählten Zeitraum keine Daten verfügbar sind, wird eine Meldung angezeigt, die angibt, dass keine Daten verfügbar sind.
 
 image:bxp-accrued-burst-days-1.png["Screenshot der Tabelle mit den aufgelaufenen Bursts nach Tagen"]
+
+Sie können die Daten auch im Excel-Format herunterladen, einschließlich des Burst-Status (fakturiert, nicht fakturiert oder vorläufig) und des Abrechnungszeitraums.
 
 Wenn Sie in Digital Advisor auf die Leiste klicken, die die Rechnungsdaten aus der Option *Invoiced Accrued Burst* anzeigt, wird unter dem Balkendiagramm der Abschnitt „Berechnebare bereitgestellte Kapazität“ angezeigt, der sowohl die Anzeige von Diagrammen als auch von Tabellen bietet. In der Standardgrafik-Ansicht wird die tägliche angesammelte Burst-Datennutzung in einem Liniengrafikformat angezeigt, in dem die Nutzungsänderungen im Laufe der Zeit angezeigt werden.
 

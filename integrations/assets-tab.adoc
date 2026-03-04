@@ -44,7 +44,11 @@ Sie können diese Informationen anzeigen, indem Sie die folgenden Schritte ausf�
 image:bxp-volumes-clusters-single-subscription-1.png["Ein Screenshot von Volumes in Clustern für ein Abonnement"]
 
 +
-Sie sehen detaillierte Informationen zu Volumes in Clustern, einschließlich Volumename, Knotenseriennummer, Clustername, Hostname und Leistungsservicelevel. Sie können auch die bereitgestellte Kapazität, die logische und physische Auslastung sowie kalte Daten überwachen.
+Sie sehen detaillierte Informationen zu Volumes in Clustern, einschließlich Volume-Name, Knotenseriennummer, Clustername, Hostname und Performance-Servicelevel. Sie können außerdem die bereitgestellte Kapazität, die logische und physische Auslastung, Cold Data und Hot Data überwachen.
+
++
+
+NOTE: Die Spalten *Cold tier %* und *Hot tier %* zeigen den Prozentsatz der Daten auf jeder Ebene an, berechnet als (Cold data / Total footprint) × 100 bzw. (Hot data / Total footprint) × 100.
 
 +
 

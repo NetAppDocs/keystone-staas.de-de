@@ -28,7 +28,7 @@ Um Warnmonitore anzuzeigen, führen Sie die folgenden Schritte aus:
 image:monitoring-alert-monitors-default-view-1.png["Ein Screenshot der Warnmonitore für Keystone -Abonnements"]
 
 +
-Sie können eine Liste der Alarmmonitore für Ihre Keystone -Abonnements anzeigen, einschließlich Monitornamen, Alarmbedingungen, die Benachrichtigungen auslösen, Schweregrade, Abonnementnummern, Leistungsservicelevel und Status. In der Spalte *Erstellt von* können Sie überprüfen, ob die Alarmmonitore systemgeneriert oder benutzerdefiniert sind.
+Sie können eine Liste der Alarmmonitore Ihrer Keystone-Abonnements einsehen, einschließlich Monitornamen, Überwachungsbedingungen, die Benachrichtigungen auslösen, Schweregrad, Abonnementnummern, Leistungsservicelevel und Status. Sie können die Spalte *Erstellt von* überprüfen, um zu sehen, ob die Alarmmonitore systemgeneriert oder benutzerdefiniert sind.
 
 +
 
@@ -84,6 +84,10 @@ Nachdem Sie den Monitor erstellt haben, kehrt das System zur Seite *Alert-Monito
 +
 image:edit-alert-monitor.png["Ein Screenshot der Bearbeitung eines Alarmmonitors für Keystone -Abonnements"]
 
++
+
+NOTE: Systemgenerierte Monitore können nicht bearbeitet werden.
+
 . Wählen Sie *Bearbeiten*.
 +
 Die Seite *Alarmmonitor bearbeiten* wird mit der aktuellen Monitorkonfiguration angezeigt.
@@ -119,13 +123,13 @@ Ein neuer Alarmmonitor wird mit der aktualisierten Konfiguration erstellt und in
 --
 .Schritte
 . Wählen Sie das Auslassungssymbol für den Monitor aus, den Sie entfernen möchten.
++
+
+NOTE: Systemgenerierte Monitore können nicht gelöscht werden.
+
 . Wählen Sie *Löschen* und bestätigen Sie den Löschvorgang.
 +
 Nach dem Löschen erhalten die mit dem Monitor verbundenen Abonnements keine Benachrichtigungen mehr.
-
-+
-
-NOTE: Vom System generierte Monitore können von Benutzern nicht gelöscht werden.
 
 
 

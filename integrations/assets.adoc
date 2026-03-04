@@ -56,11 +56,15 @@ TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selec
 image:console-volumes-clusters-multiple-sub.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
 
 +
-Sie sehen detaillierte Informationen zu allen Volumes in Clustern aller Keystone-Abonnements, einschließlich Volumename, Abonnementnummer, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel. Sie können die bereitgestellte Kapazität, die logische und physische Auslastung sowie Cold Data überwachen. Außerdem erhalten Sie einen Überblick über:
+Sie sehen detaillierte Informationen zu allen Volumes in Clustern über Keystone Subscriptions hinweg, einschließlich Volume-Name, Subscription-Nummer, Node-Seriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Performance-Servicelevel. Sie können die bereitgestellte Kapazität, die logische und physische Auslastung, Cold Data und Hot Data überwachen. Sie erhalten außerdem eine Übersicht über:
 
 +
 ** Die Gesamtzahl der Abonnements, Cluster und Volumes.
 ** Konformitäts- und Schutzstatus des Volumes mit einer Schaltfläche *Anzeigen* zum Filtern der Tabelle und Anzeigen von Assets basierend auf Kriterien wie „konform“, „nicht konform“ oder „nicht geschützt“.
++
+
+NOTE: Die Spalten *Cold tier %* und *Hot tier %* zeigen den Prozentsatz der Daten auf jeder Ebene an, berechnet als (Cold data / Total footprint) × 100 bzw. (Hot data / Total footprint) × 100.
+
 +
 
 TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Keystone-Daten basierend auf den Spaltenparametern zu suchen und zu filtern.
