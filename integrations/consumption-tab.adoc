@@ -71,7 +71,7 @@ Sie können sich neben dem historischen Verbrauch auch eine Zusammenfassung des 
 
 NOTE: Wählen Sie „Invoiced Accrued Burst“ aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden. Mithilfe dieser Daten können Sie die in Ihrer Rechnung ausgewiesene Nutzung analysieren. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"].
 
-. Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.
+. Wählen Sie den Zeitraum über die Kalendersymbole in den Feldern *From Date* und *To Date* aus. Standardmäßig ist der Datumsbereich die letzten 30 Tage ab heute. Sie können diesen Bereich ändern, aber Sie können kein zukünftiges Datum auswählen.
 +
 
 TIP: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf drei Monate.
@@ -79,6 +79,10 @@ TIP: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begren
 . Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Leistungsservicelevel werden basierend auf dem ausgewählten Zeitraum angezeigt.
 +
 Die Balkendiagramme zeigen den Namen des Leistungsservicelevels und die für diesen Leistungsservicelevel verbrauchte Kapazität für den Datumsbereich an. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt. Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
+
++
+
+NOTE: Wenn Sie einen Datumsbereich von weniger als 30 Tagen auswählen, zeigt das Diagramm für die ausgewählten Tage jeweils einen Daten-Erfassungspunkt pro Tag an. Beispielsweise zeigt ein 4-tägiger Bereich 4 Daten-Erfassungspunkte an, nicht 30. Am unteren Rand des Diagramms wird für jeden ausgewählten Bereich nur das Datum angezeigt. Zeitstempel sind nur sichtbar, wenn Sie mithilfe der unten beschriebenen Zoom-in-Funktion in das Diagramm hineinzoomen.
 
 +
 Die Balkendiagramme zeigen kurzfristige Bursts an, und Sie können diese Bursts mit der Zoom-in-Funktion anzeigen. Wenn ein kurzfristiger Burst vorhanden ist, wird dieser durch einen blauen Punkt auf dem entsprechenden Balken oder direkt auf der X-Achse angezeigt, wenn keine Daten verbraucht werden. Um die Details anzuzeigen, klicken Sie auf die Leiste oder die x-Achse, auf der der blaue Punkt angezeigt wird, und ziehen Sie den Cursor über das Diagramm, um das gewünschte Zeitintervall auszuwählen. Lassen Sie die Maustaste los, um die Auswahl zu bestätigen. Diese Aktion vergrößert die Daten und bietet eine detailliertere Ansicht der Kapazität, die auf dieser Leistungsdienstebene für das ausgewählte Intervall verwendet wird. Sie können auf die Schaltfläche *Zoom zurücksetzen* klicken, um zur ursprünglichen Kartenansicht zurückzukehren.
