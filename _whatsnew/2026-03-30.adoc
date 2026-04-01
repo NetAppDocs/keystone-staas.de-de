@@ -1,0 +1,29 @@
+= Oberhalb der Spitzenkapazität im historischen Verbrauchsdiagramm
+:allow-uri-read: 
+
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Oberhalb der Spitzenkapazität im historischen Verbrauchsdiagramm
+
+Das Diagramm zum historischen Verbrauch im Tab *Verbrauchstrend* hebt nun Verbrauch hervor, der das Burst-Limit überschreitet. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone-Abonnements anzeigen"].
+
+
+
+=== Prognose für die Kapazitätsauslastung
+
+Sie können die *Prognose*-Funktion in der Ansicht *Historischer Verbrauch* auf der Registerkarte *Verbrauchstrend* nutzen, um die Kapazitätsauslastung für die nächsten 120 Tage ab dem aktuellen Datum zu prognostizieren. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-forecast-data["Prognosedaten anzeigen"].
+
+
+
+=== Tracking-ID im Abonnement-Export
+
+Der von der Seite *Abonnements* heruntergeladene Abonnementbericht enthält nun die *Tracking ID* in den Leistungsdaten auf Serviceebene sowohl im Excel- als auch im CSV-Format.
+
+
+
+=== Aktualisierungen der Sichtbarkeit von Spalten auf der Abonnementseite
+
+Auf der Seite *Abonnements* ist die Spalte *Keystone-Version* jetzt standardmäßig ausgeblendet, und die Spalte *Verknüpfte Abonnements* wird nur angezeigt, wenn verknüpfte Abonnements verfügbar sind.
