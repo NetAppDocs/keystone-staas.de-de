@@ -124,46 +124,66 @@ Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements
 
 == Kapazitätsanpassungen
 
-Erfahren Sie mehr über Kapazitätsanpassungen:
+Teilen Sie geplante Kapazitätsänderungen NetApp rechtzeitig mit, damit eine Planung und Bereitstellung möglich ist. Für alle Kapazitätsanpassungen gelten die folgenden Bedingungen:
 
-* Die Kapazität kann während der Laufzeit jederzeit (mit Ausnahme der letzten 90 Tage der Vertragslaufzeit) in den in den Tabellen im vorherigen Abschnitt beschriebenen Schritten pro Leistungsservicelevel hinzugefügt werden. Das Hinzufügen von Kapazitäten oder Diensten ist innerhalb der letzten 90 Tage der Vertragslaufzeit zulässig, sofern eine Zustimmung zur Dienstverlängerung vorliegt. Jede zusätzliche Kapazität und jeder neue Service vor Ort oder in der Cloud können mit der bestehenden Laufzeit in Verbindung stehen. Die Rechnung, die Ihnen nach Aktivierung der neuen Services zugesandt wurde, entspricht der überarbeiteten Abrechnung. Die verplante Kapazität von Cloud-Services kann während der Abonnementdauer an keinem Punkt verringert werden. In der Zwischenzeit können die zugewisserten Kapazitäten und die für die On-Premises-Services während der Vertragslaufzeit erforderlichen Ausgaben aufgrund bestimmter Kriterien, wie im folgenden Abschnitt _Kapazitätsreduzierung_ definiert, verringert werden.
-* An jedem Standort steht mithilfe der Keystone-Vereinbarung ein Burst-Speicherplatz zur Verfügung. Normalerweise wird es bis zu 20 % über der zugesagten Kapazität für ein Leistungsservicelevel festgelegt. Für jegliche Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Wenn der zusätzliche Burst-Bedarf größer ist als die vereinbarte Kapazität, wenden Sie sich an den Support.
-* Die verplante Kapazität kann während einer Vertragslaufzeit nur unter bestimmten Bedingungen geändert werden, wie im folgenden Abschnitt _Kapazitätsreduzierung_ beschrieben.
-* Eine Kapazitätserhöhung oder ein Wechsel zu einem Servicelevel mit höherer Leistung während der Abonnementlaufzeit ist zulässig. Ein Wechsel von einem Servicelevel mit höherer Leistung zu einem Servicelevel mit niedrigerer Leistung ist jedoch nicht zulässig.
-* Jede Änderungsanfrage in den letzten 90 Tagen der Servicezeit erfordert eine Erneuerung des Services für mindestens ein Jahr.
+* *Kapazitätserweiterungen*: Die zugesicherte Kapazität kann während der Vertragslaufzeit in den festgelegten Schritten erhöht werden, außer in den letzten 90 Tagen vor Ablauf, es sei denn, das Abonnement wird verlängert. Nach Bestätigung durch NetApp gilt die Erhöhung für die verbleibende Laufzeit und die Mindestzahlung wird entsprechend angepasst. Alle Kapazitätserweiterungen und neuen Services, ob On-Premises oder Cloud, laufen mit dem bestehenden Abonnement zusammen. Die zugesicherte Kapazität für Cloud-Services kann während der gesamten Laufzeit des Abonnements zu keinem Zeitpunkt reduziert werden.
+* *Abrechnung von Erhöhungen*: Bei Abonnements mit dem Zahlungsmodell _Annual in Advance_ wird NetApp jede anteilige Erhöhung der Mindestzahlungen für den Rest des laufenden Abrechnungszeitraums in Rechnung stellen. Die nach der Aktivierung der neuen Dienste versandte Rechnung spiegelt die überarbeitete Abrechnung wider.
+* *Zusätzliche Kapazität*: An jedem Standort steht über die zugesicherte Kapazität hinaus zusätzliche Kapazität zur Verfügung, typischerweise bis zu 20 % pro Leistungsstufe. Details zu den Grenzwerten und zur Abrechnung finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].
+* *Änderungen des Leistungsniveaus*: Eine Erhöhung auf ein höheres Leistungsniveau ist während der Vertragslaufzeit zulässig. Eine Reduzierung auf ein niedrigeres Leistungsniveau ist nicht zulässig.
+* *Reduzierung der On-Premises-Kapazität*: Die zugesicherte Kapazität für On-Premises-Services kann unter bestimmten Bedingungen reduziert werden. Siehe _Kapazitätsreduzierung_ für Details.
 
 
 
 
 === Senkung der Kapazität
 
-Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell _Annual in Advance_ und nur On-Premises-Implementierungen. Dies ist nicht für Cloud-Services oder Hybrid-Cloud-Services verfügbar. Die Lösung bietet eine Provisionierung von On-Premises-Kapazität, die um bis zu 25 % pro Service-Level pro Abonnement reduziert werden kann. Diese Reduzierung ist einmal im Jahr erlaubt, zu Beginn des nächsten Abrechnungszeitraums wirksam zu werden. Service-basierte On-Premises-Zahlungen sollten während der Laufzeit >= 200 .000 US-Dollar betragen, um von der Kapazitätsreduzierung zu profitieren. Da das Modell nur für On-Premises-Implementierungen unterstützt wird, bietet dieses Abrechnungsmodell keine Neuzuweisung bei Ausgaben für lokale und Cloud-Services. Ein Beispiel für eine jährliche Kapazitätsreduzierung ist im folgenden Bild dargestellt.
+Die garantierte Kapazitätsreduzierung gilt nur für das Zahlungsmodell _Annual in Advance_ und für lokale Keystone-Bereitstellungen. Eine Mindestvertragslaufzeit von 24 Monaten ist erforderlich, um berechtigt zu sein. Cloud-Services und Hybrid-Cloud-Bereitstellungen sind nicht für die Kapazitätsreduzierung berechtigt.
 
-image:reallocation.png["Logik der Neuzuweisung erklärt"]
+Für alle Anträge auf Kapazitätsreduzierung gelten folgende Bedingungen:
+
+* *Schriftlicher Antrag*: Anträge müssen schriftlich gestellt werden und müssen NetApp mindestens 60 Tage vor dem nächsten Jahresabonnementzeitraum, in dem die Ermäßigung wirksam wird, zugehen.
+* *Zulässige Reduzierungen pro Laufzeit*:
++
+** Für Abonnementlaufzeiten von 2 oder 3 Jahren: Eine Reduzierung ist während der Abonnementlaufzeit zulässig.
+** Bei Abonnementlaufzeiten von 4 oder 5 Jahren: Während der Abonnementlaufzeit sind zwei Reduzierungen zulässig.
+
+
+* *Reduzierungsobergrenze pro Anfrage*: Eine einzelne Reduzierung darf 25 % der zum Zeitpunkt der Anfrage zugesagten Kapazität nicht überschreiten.
+* *Mindestkapazitätsschwelle*: Durch eine Reduzierung darf die zugesagte Kapazität nicht unter die Mindest-Kapazitätsanforderungen für das jeweilige Leistungsniveau fallen.
+* *Wirksamkeitsdatum*: Genehmigte Reduzierungen treten zu Beginn des nächsten jährlichen Abonnementzeitraums in Kraft.
+
+
+Damit ein Antrag auf Reduzierung genehmigt werden kann, müssen die jährlichen Zahlungen für die vor Ort erbrachten Dienstleistungen nach Anwendung der Reduzierung weiterhin mindestens USD 200K betragen.
+
+Das folgende Bild zeigt ein Beispiel dafür, wie Kapazitätsreduzierungen bei einem 3-Jahres Keystone Abonnement angewendet werden.
+
+image:capacity-reduction.png["Logik der Neuzuweisung erklärt"]
+
+In diesem Beispiel beträgt die anfänglich zugesagte Kapazität 300 TiB (300.000 USD jährliche Zahlung). Im ersten Jahr geht ein Antrag auf Reduzierung der Kapazität auf 225 TiB ein. NetApp prüft, ob die Reduzierung (75 TiB) innerhalb der 25%-Grenze liegt und die resultierende Zahlung bei mindestens 200.000 USD bleibt. Der Antrag wird genehmigt und tritt zu Beginn des zweiten Jahres in Kraft. Im zweiten Jahr geht ein Antrag auf Reduzierung der Kapazität auf 100 TiB ein. NetApp lehnt den Antrag ab, da die Reduzierung 25 % der aktuell zugesagten Kapazität (225 TiB) überschreitet und die für diesen 3-Jahres-Zeitraum zulässige Reduzierung bereits genutzt wurde. Die Kapazität für das dritte Jahr bleibt bei 225 TiB (225.000 USD jährliche Zahlung), und weitere Reduzierungen sind nicht zulässig.
 
 
 
 === Vierteljährliche Neuzuweisung von Ausgaben
 
-Keystone STaaS bietet Ihnen die Möglichkeit, Ausgaben für On-Premises-Services für Cloud Volumes ONTAP-Ausgaben neu zuzuordnen.
+Die vierteljährliche Budgetumverteilung ist nur für Hybrid-Cloud-Dienste verfügbar. Sie ermöglicht es Ihnen, Ausgaben für lokale Dienste vierteljährlich den Ausgaben für Cloud-Dienste zuzuordnen. Eine Rückumverteilung von Cloud-Diensten zu lokalen Diensten ist nicht zulässig.
 
-Anforderungen und Bedingungen auf Abonnementebene:
+Für alle Umverteilungsanträge gelten folgende Bedingungen:
 
-* Gilt nur für monatliche Abrechnung im ARRück-Modell.
-* Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.
-* Kapazität für Cloud Volumes ONTAP und Cloud Backup Service sollte über Keystone erworben werden.
-* Für die Neuzuordnung von Cloud Services können bis zu 25 % der bestehenden lokalen, servicebasierten monatlichen Zahlungen verwendet werden.
-* Anfragen zur Neuzuordnung werden erst nach 90 Tagen nach dem letzten Aktivierungsdatum der Neuzuweisung wirksam.
-* Die Neuzuordnung kann nicht über Cloud-Services zu On-Premises-Services vorgenommen werden.
-* Eine Neuzuweisungen müssen mindestens eine Woche vor dem nächsten Abrechnungszeitraum durch den Kunden oder Partner Keystone Success Manager (KSM) formal eingereicht werden.
-* Neue Anfragen werden nur ab dem aufeinanderfolgenden Abrechnungszeitraum wirksam.
+* *Umverteilungslimit*: Bis zu 25 % des jährlichen Vertragswerts (ACV) zum Zeitpunkt der Anfrage können umverteilt werden.
+* *Mindestzahlung nach Neuverteilung*: Nach der Neuverteilung muss die monatliche Mindestzahlung pro Abonnement vor Ort weiterhin mindestens USD 16.667 betragen.
+* *90-Tage-Sperre*: Eine neue Umverteilungsanfrage kann erst 90 Tage nach der Aktivierung der vorherigen Umverteilung aktiviert werden.
+* *Beschränkung zum Ende der Vertragslaufzeit*: Eine Umbuchung ist in den letzten 90 Tagen der Vertragslaufzeit nicht zulässig, es sei denn, das Abonnement wird verlängert.
+* *Anfragefrist*: Anfragen müssen mindestens 5 Werktage vor dem nächsten Abrechnungszyklus eingereicht werden.
+* *Gültigkeitsdatum*: Genehmigte Anträge treten am ersten Tag des nächsten Abrechnungszeitraums in Kraft.
 
 
-Sie können einen Teil Ihrer Ausgaben für die Leistungsservice-Levels Ihres abonnierten Datei-, Block- oder Objektspeichers hybriden Cloud-Speicherdiensten zuordnen. Bis zu 25 % des Jahresvertragswerts (ACV) können vierteljährlich auf Cloud Volumes ONTAP Primär- und Cloud Volumes ONTAP Sekundärdienste neu zugewiesen werden:
+Die folgende Abbildung veranschaulicht, wie die vierteljährliche Ausgabenumverteilung funktioniert.
 
 image:reallocation.png["Logik der Neuzuweisung erklärt"]
 
-Diese Tabelle enthält eine Reihe von Beispielwerten, die zeigen, wie die Neuzuweisung von Ausgaben funktioniert. In diesem Beispiel `$5000` Die monatlichen Ausgaben werden dem Hybrid-Cloud-Storage-Service zugewiesen.
+In diesem Beispiel betragen die Ausgaben für On-Premises-Lösungen 30.000 USD pro Monat. Im Februar wird Antrag A zur Verlagerung von 5.000 USD in Cloud-Dienste genehmigt und im März aktiviert, wodurch eine 90-tägige Sperrfrist bis Mai ausgelöst wird. Antrag B, der während dieser Sperrfrist eingereicht wird, wird nach deren Ablauf aktiviert und reduziert die On-Premises-Ausgaben ab Juli auf 20.000 USD, während die Ausgaben für Cloud-Dienste auf 10.000 USD steigen. In den letzten 90 Tagen der Laufzeit sind keine Umverteilungen mehr zulässig.
+
+Diese Tabelle enthält Beispielwerte, die die Funktionsweise der Kostenumverteilung veranschaulichen. In diesem Beispiel werden 5.000 USD der monatlichen Ausgaben auf den Hybrid-Cloud-Speicherdienst umverteilt.
 
 |===
 
@@ -187,4 +207,6 @@ Diese Tabelle enthält eine Reihe von Beispielwerten, die zeigen, wie die Neuzuw
 |===
 Die Reduzierung beträgt (125-108) = 17 TiB der für den Servicelevel „Extreme Performance“ zugewiesenen Kapazität. Bei der Ausgabenzuweisung beträgt der zugewiesene Hybrid-Cloud-Storage nicht 17 tib, sondern eine äquivalente Kapazität, die 5.000 US-Dollar erworben werden kann. In diesem Beispiel erhalten Sie für 5.000 US-Dollar 17 TiB lokale Speicherkapazität für den Servicelevel „Extreme Performance“ und 47 TiB Hybrid-Cloud-Kapazität für den Servicelevel „Cloud Volumes ONTAP Performance“. Die Neuzuweisung richtet sich daher eher nach den Ausgaben, nicht nach der Kapazität.
 
-Wenden Sie sich an Ihren Keystone Success Manager (KSM), wenn Sie Ausgaben von Ihren On-Premises-Services mit Cloud-Services neu zuordnen möchten.
+Wenden Sie sich an Ihren Keystone Success Manager (KSM), um einen Antrag auf Umverteilung einzureichen.
+
+Weitere Informationen finden Sie unter  https://fieldportal.netapp.com/s/article/Changes-to-Keystone-STaaS-Service-Description-and-Supplement-v3-Reference-Guide["Keystone STaaS v3 Service-Beschreibung und Ergänzungs-Referenzhandbuch"^].
