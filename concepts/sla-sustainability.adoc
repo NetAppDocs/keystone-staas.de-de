@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/sla-sustainability.html 
 keywords: sustainability, sla, service level agreement, slo, service level objectives 
-summary: 'Keystone liefert eine garantierte Messung der maximalen Anzahl tatsächlicher Watt pro Tebibyte (W/TiB) für Speicherdienste basierend auf ONTAP Flash-Speicher-Arrays mit Sustainability SLO.' 
+summary: Erfahren Sie, wie das Nachhaltigkeits-SLO von Keystone Stromverbrauchsziele für Ihre STaaS-Bereitstellung definiert und wie Sie Servicegutschriften beantragen können, wenn diese Ziele nicht erreicht werden. 
 ---
 = Nachhaltigkeits-SLO für Keystone
 :hardbreaks:
@@ -14,51 +14,36 @@ summary: 'Keystone liefert eine garantierte Messung der maximalen Anzahl tatsäc
 
 
 [role="lead"]
-NetApp Keystone liefert eine garantierte Messung der maximalen tatsächlichen Watt-Anzahl pro Tebibyte (W/tib) für Storage-Services auf Basis von ONTAP Flash-Storage-Arrays mit SLO zur Nachhaltigkeit. Das Nachhaltigkeits-SLO definiert den maximalen Verbrauch von W/TiB für jedes berechtigte Leistungsservicelevel und hilft Unternehmen, ihre Nachhaltigkeitsziele zu erreichen.
+Das Nachhaltigkeitsziel (SLO) zielt darauf ab, den Stromverbrauch von STaaS-Produkten, die zur Bereitstellung der Leistungs-Service-Level-Instanz (PSLI) für einheitlichen (ausgenommen das Performance Service Level „Value“) und blockoptimierten Speicher oder pro AFX-Cluster eingesetzt werden, auf die maximale Nennleistung in Watt zu begrenzen. Erfahren Sie, wie das Nachhaltigkeitsziel von Keystone Ihre STaaS-Konfiguration beeinflusst und wie Sie Service-Gutschriften erhalten, wenn die Grenzwerte nicht eingehalten werden.
 
 
 
 == Metriken
 
-* *Watts*: Der Stromverbrauch wird aus täglichen AutoSupport gemeldet, einschließlich der Nutzung durch den Controller und angebrachte Platten-Shelves.
+* *Watt*: Die von den Speicherarrays bzw. dem AFX-Cluster verbrauchte Leistung, wie vom Überwachungstool gemeldet. Die Referenzwerte für den maximalen Stromverbrauch sind in der link:https://hwu.netapp.com["NetApp Hardware Universe"^] angegeben.
 * *Tebibyte*: Maximal:
 +
 ** die zugesagte Kapazität + zugewiesene Burst-Kapazität für das Performance-Service-Level oder
 ** Die effektive bereitgestellte Kapazität, ausgehend von einem Storage-Effizienzfaktor von `2:1`.
 
 
-+
+
+
 Weitere Informationen über Storage-Effizienzverhältnisse finden Sie unter https://docs.netapp.com/us-en/active-iq/task_analyze_storage_efficiency.html["Analyse der Einsparungen bei Kapazität und Storage-Effizienz"^].
 
 
 
+=== Unterstützte Konfigurationen
 
+Die Nachhaltigkeits-SLO gilt für Standard-Keystone-STaaS-Bestellungen mit den folgenden unterstützten Konfigurationen:
 
-== Leistungsservicelevel
+* ONTAP AFF A-Series Speicherarrays oder nur AFX Cluster.
+* Nur Zwei-Knoten-Clusterkonfigurationen ohne Switches.
+* Nur nicht vermischte Konfigurationen.
+* Nur Nicht-MetroCluster-Konfigurationen.
+* Vollständige und kontinuierliche Aktivierung des Überwachungstools und AutoSupport (ASUP) auf allen Speicherarrays.
+* Die Umgebungstemperatur während der Messung des Stromverbrauchs muss zwischen 25°C und 27°C liegen.
 
-SLO für Nachhaltigkeit basiert auf folgenden Verbrauchskriterien:
-
-|===
-
-
-| *Service Level* | *SLO-Kriterien* | *Mindestkapazität* | * Plattform* 
-
-
- a| 
-Extrem
-| <= 8 W/TiB | 200 tib | AFF A800 und AFF A900 
-
-
- a| 
-Premium
-| <= 4 W/TiB | 300 tib | AFF A800 und AFF A900 
-
-
- a| 
-Leistung
-| <= 4 W/TiB | 300 tib | AFF A800 und AFF A900 
-|===
-Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Leistungsservicelevel in Keystone"].
 
 
 
@@ -67,7 +52,7 @@ Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keysto
 
 NOTE: SLAs und Garantien sind auf Nominierungsbasis verfügbar.
 
-Wenn die Nutzung mit tib während des Abrechnungszeitraums die SLA-Kriterien nicht erfüllt, stellt NetApp folgende Service-Gutschriften aus:
+Wenn der Stromverbrauch während eines Abrechnungszeitraums die maximale Nennleistung der eingesetzten STaaS-Produkte überschreitet, stellt NetApp Servicegutschriften auf Basis der zugesagten Kapazität wie folgt aus:
 
 |===
 | Tage SLA im Abrechnungszeitraum verpasst | Servicegutschrift 
@@ -97,14 +82,14 @@ Wenn die Nutzung mit tib während des Abrechnungszeitraums die SLA-Kriterien nic
 
 === Service-Kredit-Anfrage
 
-Wenn ein Verstoß gegen das SLA erkannt wird, eröffnen Sie ein Support-Ticket mit der Priorität 3 (P3) beim NetApp Keystone Support. Geben Sie die Details wie unten in der Excel-Tabelle angegeben an:
+Um eine Servicegutschrift zu beantragen, öffnen Sie innerhalb von 7 Tagen nach Ende des Servicemonats ein Support-Ticket der Priorität 3 (P3) bei NetApp Keystone Support und geben Sie die in der unten dargestellten Excel-Tabelle angeforderten Details an:
 
 image:sla-breach.png["excel-Sheet-Vorlage"]
 
-[NOTE]
-====
-* Eine Service-Gutschriftanfrage sollte innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den NetApp Keystone Support eingeleitet werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.
-* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone-Abonnements. Weitere Informationen finden Sie unter link:../concepts/support-services.html["NetApp Keystone-Support"].
+Beachten Sie die folgenden Bedingungen für Anträge auf Servicegutschrift:
 
+* NetApp bestimmt, ob eine Verletzung des Servicelevels vorliegt.
+* Sie müssen die angeforderten zusätzlichen Informationen bereitstellen, wie von NetApp angefordert, einschließlich Ihrer Stromverbrauchsdaten und der Messmethode.
+* Die Gutschriften für Serviceleistungen werden ausschließlich auf Basis der zugesagten Kapazität berechnet.
+* Servicegutschriften können nur mit der Rechnung des Folgemonats verrechnet werden. Sie gelten nicht für abgelaufene Keystone-Abonnements. Um den NetApp Support zu kontaktieren und das für eine Servicegutschriftanfrage erforderliche Support-Ticket zu eröffnen, siehe link:../concepts/support-services.html["Keystone hilft Ihnen dabei"].
 
-====

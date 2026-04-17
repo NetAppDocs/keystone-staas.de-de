@@ -14,7 +14,10 @@ summary: Nutzen Sie den erweiterten Datenschutz-Zusatzdienst, um einen effizient
 
 
 [role="lead"]
-Sie können den erweiterten Datenschutz-Zusatzdienst (ADP) mit Ihrem Keystone STaaS-Abonnement abonnieren. Während die Standarddienste von Keystone einen standardmäßigen Datenschutz mittels SnapMirror, SnapVault und Snapshot bieten, verwendet dieser Zusatzdienst die NetApp MetroCluster-Technologie, um einen effizienten Datenschutz Ihrer geschäftskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 sicherzustellen.
+Abonnieren Sie das Add-on für erweiterten Datenschutz (ADP) mit Ihrem Keystone STaaS-Abonnement. ADP nutzt NetApp MetroCluster-Technologie für synchrone Datenspiegelung zwischen Standorten. Mit einem Recovery Point Objective (RPO) von 0 vermeiden Sie Datenverlust bei Standortausfällen. Erfahren Sie mehr über die Funktionsweise von ADP, unterstützte Konfigurationen und Preise.
+
+
+NOTE: Der erweiterte Datenschutz-Zusatzdienst ist nur für Unified Storage auf AFF-Speicherarrays (Leistungsstufen _Extreme_, _Premium_ und _Standard_) verfügbar. Er wird auf FAS-Speicherarrays (Leistungsstufe _Value_) nicht unterstützt.
 
 Keystone advanced data protection service kann Daten synchron an einen sekundären Standort spiegeln. Im Falle einer Katastrophe am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion verwendet die link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] Konfiguration zwischen zwei Standorten, um den Datenschutz zu ermöglichen. Sie können die erweiterten Datenschutz-Add-on-Services nur für Ihre Datei- und Blockspeicherdienste verwenden. Als Teil dieses Add-on-Services wird das  `Advanced Data-Protect` Performance-Service-Level Ihrem Abonnement zugewiesen.
 
@@ -24,7 +27,7 @@ Sie können Verbrauchs- und Zustandskennzahlen Ihrer MetroCluster-Konfiguration 
 
 == Preisgestaltung verstehen
 
-Der Preis für den erweiterten Datenschutz-Zusatzservice richtet sich nach der zugesicherten Kapazität an jedem Standort. Dies hilft, die tatsächlichen Kosten des erweiterten Datenschutzservices in $/TiB zu bestimmen. Die Zusatzgebühren gelten für alle Kapazitäten Ihres Abonnements, einschließlich Quelldaten, gespiegelter Kopien und nicht gespiegelter Daten.
+Der Preis für den erweiterten Datenschutz-Zusatzservice richtet sich nach der zugesicherten Kapazität an jedem Standort. Die Zusatzgebühren gelten für alle Kapazitäten Ihres Abonnements, einschließlich Quelldaten, gespiegelter Kopien und nicht gespiegelter Daten.
 
 Für die MetroCluster-Konfiguration benötigt jeder Standort ein eigenes Abonnement, und die zugesicherte Kapazität wird an jedem Standort unabhängig in Rechnung gestellt.
 

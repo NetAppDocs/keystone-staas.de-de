@@ -18,4 +18,4 @@ Bei der zugesicherten Kapazität handelt es sich um die Kapazität, die beim Erw
 
 Die zugesicherte Kapazität kann die Gesamtkapazität für verschiedene Leistungsservicelevel in einem einzigen Abonnement sein, wie von Ihnen und NetApp/Partner akzeptiert. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Kapazitätsverbrauch in Rechnung gestellt.
 
-Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].
+Informationen zu den verschiedenen Kapazitäten, die in Keystone unterstützt werden, finden Sie unter link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"].

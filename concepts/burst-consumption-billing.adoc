@@ -24,4 +24,4 @@ Wenn die verbrauchte Kapazität größer ist als die zugesagte Kapazität für e
 
 Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone-Abonnements anzeigen"].
 
-Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].
+Informationen zu den verschiedenen Kapazitäten, die in Keystone unterstützt werden, finden Sie unter link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"].

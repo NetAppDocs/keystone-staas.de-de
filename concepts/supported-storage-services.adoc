@@ -14,14 +14,11 @@ summary: Keystone StaaS-Services unterstützt ONTAP und StorageGRID.
 
 
 [role="lead"]
-Der Keystone STaaS-Dienst unterstützt einheitlichen, blockoptimierten und objektbasierten Speicher von NetApp und Cloud Volumes ONTAP.
+Keystone STaaS unterstützt einheitlichen, blockoptimierten, AFX- und Objektspeicher auf NetApp Plattformen sowie Cloud Volumes ONTAP. Jeder Speichertyp ist als Datenspeichertyp (DST) definiert und mit den im Basisabonnement enthaltenen Standarddiensten sowie optionalen Zusatzdiensten verfügbar.
 
-Die unterstützten Speicheroptionen sind:
 
-* *Unified Storage*: Umfasst sowohl Datei-, Block- als auch S3-Objektspeicher, verfügbar auf NetApp ONTAP AFF- und FAS-Systemen.
-* *Blockoptimierter Speicher*: Beinhaltet Blockspeicher, der auf NetApp ONTAP ASA -Systemen verfügbar ist.
-* *Objektspeicher*: Beinhaltet den auf NetApp StorageGRID-Systemen verfügbaren Objektspeicher.
 
+== Keystone STaaS Standard- und Zusatzdienste
 
 Keystone STaaS bietet Standard- und optionale Services für Ihren Storage.
 
@@ -29,48 +26,70 @@ Keystone STaaS bietet Standard- und optionale Services für Ihren Storage.
 
 *Keystone STaaS Add-on-Services*: Diese sind optionale, kostenpflichtige Services, die zusätzlich zu den Standard-Keystone STaaS-Abonnementservices zusätzliche Dienstprogramme und Vorteile bieten.
 
-Keystone STaaS-Dienste können gleichzeitig genutzt werden. Beispielsweise kann ein Cloud-Speicher-Abonnement die gleiche Laufzeit haben wie Abonnements für einheitlichen, blockoptimierten oder Objektspeicher. Während der Servicezeit eines vorhandenen Storage-Abonnements kann ein Cloud-Service an jedem Punkt inbegriffen sein. Wenn Sie jedoch ein bestehendes Abonnement für einheitlichen, blockoptimierten oder Objektspeicher nicht verlängern möchten, kann innerhalb der letzten 90 Tage des Abonnements kein weiteres Cloud-Speicher-Abonnement hinzugefügt werden.
+Sie können mehrere Keystone STaaS-Dienste gleichzeitig abonnieren. Wenn Cloud-Dienste zu einem Abonnement hinzugefügt werden, gilt für sie dieselbe Laufzeit wie für Unified, Block-Optimized und/oder Object Storage. Ein Cloud-Dienst kann jederzeit während eines aktiven Speicherabonnements hinzugefügt werden. Wenn Sie jedoch ein bestehendes Unified-, Block-Optimized- oder Object-Storage-Abonnement nicht verlängern möchten, kann in den letzten 90 Tagen dieses Abonnements kein Cloud-Dienst hinzugefügt werden.
+
+
+NOTE: Ein AFX-Abonnement ist eigenständig und kann nicht mit einheitlichem, blockoptimiertem oder Objektspeicher im selben Abonnement kombiniert werden. Wenn Sie AFX zusammen mit anderen Speichertypen benötigen, müssen Sie diese als separate Abonnements bestellen.
 
 
 
-== Dienste für einheitlichen, blockoptimierten und Objektspeicher
+== Unterstützte Datenspeichertypen
 
-Keystone STaaS-Dienste für einheitliche, blockoptimierte und Objektspeicherung unterstützen mehrere Funktionen und Protokolle und werden in der folgenden Tabelle beschrieben:
+Keystone STaaS-Dienste für einheitlichen, blockoptimierten, objektorientierten und AFX-Speicher unterstützen zahlreiche Funktionen und Protokolle und sind in der folgenden Tabelle beschrieben:
 
 |===
-| Storage | Plattform | Protokolle | Unterstützte Funktionen 
+| Datenspeichertyp | Beschreibung | Plattform | Protokolle | Unterstützte Funktionen 
 
 
  a| 
-Unified Storage
+Vereinheitlicht
  a| 
-ONTAP
+Beinhaltet Datei-, Block- und S3-Objektspeicherung
  a| 
-NFS und CIFS
+ONTAP auf AFF und FAS-Systemen
+ a| 
+FC, iSCSI, NFS, NFSv4/RDMA, NVMe/FC, NVMe/TCP, SMB, S3
  a| 
 Unterstützt alle ONTAP One-Funktionen
 
 
 
  a| 
-Blockoptimierter Speicher
+Blockoptimiert
  a| 
-ONTAP
+Beinhaltet Blockspeicherung
+ a| 
+NVMe/TCP, NVMe/FC, FC, iSCSI
  a| 
 FC und iSCSI
  a| 
+Unterstützt alle ONTAP One for SAN-Funktionen
+
+
+
+ a| 
+AFX
+ a| 
+Beinhaltet Datei- und Objektspeicherung auf einer disaggregierten Speicherplattform
+ a| 
+ONTAP auf AFX-Systemen
+ a| 
+NFSv3, NFSv4/RDMA, pNFS, SMB, S3
+ a| 
 Unterstützt alle ONTAP One-Funktionen
 
 
 
  a| 
-Objekt-Storage
+Objekt
+ a| 
+Beinhaltet Objektspeicherung
  a| 
 StorageGRID
  a| 
 S3
  a| 
-Unterstützt alle ONTAP One-Funktionen
+Unterstützt alle StorageGRID-Funktionen
 
 |===
 Weitere Informationen zu ONTAP One finden Sie unter link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["Übersicht über die ONTAP-Lizenzierung"^] Und link:https://www.netapp.com/blog/ontap-one/["ONTAP One: Die volle Leistung von ONTAP, jetzt alles in einem"^] .
@@ -82,4 +101,4 @@ Weitere Informationen zu ONTAP One finden Sie unter link:https://docs.netapp.com
 Keystone STaaS bietet Cloud-Storage-Services. Keystone STaaS unterstützt Cloud Volumes ONTAP-Datenmanagementfunktionen auf Amazon Web Services (AWS), Microsoft Azure und Google Cloud Platform.
 
 
-NOTE: Die von Cloud Volumes ONTAP benötigten Hyperscale-basierten Computing-, Storage- und Netzwerk-Services werden von NetApp nicht als Bestandteil der Keystone STaaS-Abonnements bereitgestellt. Diese Abonnements müssen direkt von Hyperscale-Cloud-Service-Providern erworben werden.
+NOTE: Von Hyperscalern bereitgestellte Compute-, Storage- und Netzwerkservices, die von Cloud Volumes ONTAP benötigt werden, werden nicht von NetApp im Rahmen der Keystone STaaS-Abonnements bereitgestellt; diese Abonnements müssen direkt von Hyperscaler-Cloud-Service-Anbietern bezogen werden.

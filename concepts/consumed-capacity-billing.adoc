@@ -18,4 +18,4 @@ Keystone STaaS bietet eine Messung basierend auf der Kapazität, die Sie währen
 
 Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Mindestens einmal alle fünf Minuten wird vom System ein Verbrauchsdatensatz erstellt, in dem die aktuell verbrauchte Kapazität für Ihr Abonnement detailliert aufgeführt wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
 
-Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].
+Informationen zu den verschiedenen Kapazitäten, die in Keystone unterstützt werden, finden Sie unter link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"].

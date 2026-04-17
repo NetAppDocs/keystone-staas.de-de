@@ -14,47 +14,62 @@ summary: Keystone STaaS für Version 3 bietet Speicherkapazität auf vordefinier
 
 
 [role="lead"]
-Keystone STaaS bietet Datenspeicherkapazität auf vordefinierten Leistungsserviceleveln. Jedes von Keystone -Diensten verwaltete Volume ist mit einem Leistungsservicelevel verknüpft.
+Keystone STaaS bietet vordefinierte Leistungs-Servicelevel (PSLs) für jeden Speichertyp. Jeder PSL legt die Leistungsziele (IOPS, Durchsatz und Latenz), die unterstützten Protokolle, die Plattform und die Mindestkapazitätsanforderungen fest. Prüfen Sie die verfügbaren PSLs, um den passenden Servicelevel für Ihre Workload auszuwählen und Ihr Abonnement zu planen.
 
-Ein Abonnement kann mehrere Tarifpläne umfassen, und jeder Tarifplan entspricht einem Leistungsservicelevel. Jeder Tarifplan verfügt über eine zugesicherte Kapazität pro Leistungsservicelevel.
+Ein Keystone-Abonnement kann mehrere PSLs über einen oder mehrere Speichertypen hinweg umfassen. Jeder PSL verfügt über eine zugesicherte Kapazität, die der Mindestkapazität entspricht, die während der Abonnementlaufzeit für dieses Servicelevel abgerechnet wird.
 
-Ein Performance-Servicelevel kann mehrere Instanzen umfassen, wobei jede Instanz ein separates Speicherarray darstellt, das diesem Performance-Servicelevel in der Kundenumgebung zugewiesen ist. Jedes Performance-Servicelevel wird durch Eingabe-/Ausgabevorgänge pro Sekunde (IOPS), Durchsatz (GBps) und Latenz (ms) definiert. Diese Kennzahlen werden pro Performance-Servicelevel-Instanz gemessen und angewendet.
 
-Sie wählen Leistungsservicelevel basierend auf Ihrer Speicherumgebung und Ihren Speicher- und Verbrauchsanforderungen aus. Die Basis-Performance-Service-Levels stehen Ihnen standardmäßig zur Verfügung. Wenn Sie sich für Zusatzdienste entschieden haben, stehen Ihnen zusätzlich bestimmte Leistungsservice-Level zur Verfügung.
+NOTE: Ein AFX-Abonnement ist auf den AFX-Speichertyp beschränkt und bietet derzeit nur einen PSL, Extreme.
+
+
+
+== Leistungs-Servicelevel-Instanzen
+
+Ein Performance Service Level (PSL) kann mehrere Instanzen, sogenannte Performance Service Level Instances (PSLIs), in Ihrer Umgebung umfassen. Jede PSLI ist ein separates Speichersystem, das diesem Performance Service Level zugeordnet ist, wobei die zugesicherte Kapazität pro PSLI gemessen wird.
+
+* Bei einheitlicher oder blockoptimierter Speicherung ist ein PSLI ein Speicherarray, das aus zwei Speichercontrollern in einem HA-Paar mit intern oder extern angeschlossenen Speichermedien besteht.
+* Bei AFX-Speicher entspricht ein PSLI einem einzelnen AFX-Speichercontroller. AFX verwendet eine disaggregierte Architektur, in der Controller (Compute) und Laufwerksschächte (Storage) unabhängig voneinander sind und separat skaliert werden können. IOPS- und Durchsatzziele gelten pro Controller; die zugesicherte Kapazität wird auf AFX-Clusterebene gemessen, die alle Controller und Laufwerksschächte im Cluster umfasst.
+
+
+Leistungskennzahlen wie IOPS, Durchsatz (GB/s) und Latenz (ms) werden pro PSLI gemessen.
 
 
 TIP: Eine detaillierte Servicebeschreibung für die Performance-Service-Levels von NetApp Keystone STaaS ist verfügbar  https://www.netapp.com/services/keystone/terms-and-conditions/["Hier"^] .
 
-Die grundlegenden Leistungsservicelevel für die unterstützten Speichertypen (vereinheitlichte, blockoptimierte, Objekt- und Cloud-Dienste) werden in den folgenden Abschnitten beschrieben:
+Die grundlegenden Leistungs-Servicelevel für die unterstützten Datenspeichertypen: Unified, Block-Optimized, AFX, Objekt- und Cloud-Dienste werden in den folgenden Abschnitten beschrieben:
 
 
 
 == Leistungsservicelevel für Unified Storage
 
-*Unterstützte Protokolle*: FC, iSCSI, NFS, NFSv4/RDMA, NVMe/FC, NVMe/TCP, SMB, S3
-
 |===
 
 
-| *Performance-Servicelevel* (alle Angaben pro Performance-Servicelevel-Instanz) | *Extreme* | *Premium* | *Standard* | *Wert* 
+| *Leistungsdienstleistungsebene* (alle Spezifikationen pro Leistungsdienstleistungsebeneninstanz [HA pair]) | *Extreme* | *Premium* | *Standard* | *Wert* 
+
+
+| *Unterstützte Protokolle* 4+| FC, iSCSI, NFS, NFSv4/RDMA, NVMe/FC, NVMe/TCP, SMB, S3 
 
 
 | *Workload-Typen der Probe* | KI/ML, HPC, InMem-DB | Analytik, EDA, OLTP | OLAP, IoT, Container | Backup, Archiv 
 
 
-| *Maximale IOPS*^1^ | 1M | 550K | 500K | NA 
-
-
-| *Maximale GBps* | 40 | 20 | 20 | NA 
-
-
 | *Ziel: 90^th^ Perzentillatenz* | <=1 ms | <=1 ms | <=4 ms | >4 ms 
+
+
+| *Maximale Ziel-IOPS*^1^ | 1M | 550K | 250.000 | NA 
+
+
+| *Maximale Ziel-GB/s*^1^ | 40 | 20 | 10 | NA 
+
+
+| * Plattform* | AFF A-Serie | AFF A-Serie | AFF C-Series | FAS 
 
 
 | *Mindestkapazität* | 50 tib | 50 tib | 100 tib | 100 tib 
 
 
-| *Inkrementelle Erhöhung der zugesagten Kapazität* 4+| 25TiB 
+| *Inkrementelle Erhöhung der zugesagten Kapazität* 4+| 25 tib 
 
 
 | *Art der gebuchten und gemessenen Kapazität* 4+| Logisch oder physisch 
@@ -63,40 +78,84 @@ Die grundlegenden Leistungsservicelevel für die unterstützten Speichertypen (v
 
 == Leistungsservicelevel für blockoptimierten Speicher
 
-*Unterstützte Protokolle*: NVMe/TCP, NVMe/FC, FC, iSCSI
+|===
+
+
+| *Leistungsdienstleistungsebene* (alle Spezifikationen pro Leistungsdienstleistungsebeneninstanz [HA pair]) | *Extreme* | *Premium* | *Standard* 
+
+
+| *Unterstützte Protokolle* 3+| NVMe/TCP, NVMe/FC, FC, iSCSI 
+
+
+| *Workload-Typen der Probe* 3+| SAP HANA, Oracle, MS SQL Server, EPIC 
+
+
+| *Ziel: 90^th^ Perzentillatenz* | <=1 ms | <=1 ms | <=4 ms 
+
+
+| *Maximale Ziel-IOPS*^1^ | 850K | 450K | 120K 
+
+
+| *Maximale Zielgeschwindigkeit GB/s* | 65 | 25 | 6 
+
+
+| * Plattform* | ASA A-Series | ASA A-Series | ASA C-Series 
+
+
+| *Mindestkapazität* | 50 tib | 50 tib | 100 tib 
+
+
+| *Inkrementelle Erhöhung der zugesagten Kapazität* 3+| 25TiB 
+
+
+| *Art der gebuchten und gemessenen Kapazität* 3+| Logisch oder physisch 
+|===
+
+
+== Leistungs-Servicelevels für AFX-Speicher
 
 |===
 
 
-| *Performance-Servicelevel* (alle Angaben pro Performance-Servicelevel-Instanz) | *Extreme* | *Premium* 
+| *Leistungsdienstleistungsebene* (alle Spezifikationen pro Leistungsdienstleistungsebeneninstanz [ein AFX-Speichercontroller]) | *Extreme* 
 
 
-| *Workload-Typen der Probe* 2+| SAP HANA, Oracle, MS SQL Server, EPIC 
+| *Unterstützte Protokolle* | NFSv3, NFSv4/RDMA, pNFS, SMB, S3 
 
 
-| *Maximale IOPS*^1^ | 850K | 450K 
+| *Workload-Typen der Probe* | KI/ML, HPC, InMem-DB 
 
 
-| *Maximale GBps* | 65 | 25 
+| *Ziel: 90^th^ Perzentillatenz* | <=1 ms 
 
 
-| *Ziel: 90^th^ Perzentillatenz* | <=1 ms | <=1 ms 
+| *Maximale Ziel-IOPS*^1^ | 625K 
 
 
-| *Mindestkapazität* | 50 tib | 50 tib 
+| *Maximale Zielgeschwindigkeit GB/s* | 20 
 
 
-| *Inkrementelle Erhöhung der zugesagten Kapazität* 2+| 25TiB 
+| * Plattform* | AFX 
 
 
-| *Art der gebuchten und gemessenen Kapazität* 2+| Logisch oder physisch 
+| *Mindestkapazität pro AFX-Cluster*^2^ | 200 tib 
+
+
+| *Inkrementelle Erhöhung der zugesagten Kapazität* | 100 tib 
+
+
+| *Art der gebuchten und gemessenen Kapazität* | Physisch 
 |===
+[NOTE]
+====
+* ^1^Sich gegenseitig ausschließende Ziele. Die tatsächliche Leistung kann je nach verschiedenen Faktoren, einschließlich Betriebssystemversion, Hardware, Workload-Typ und Anzahl gleichzeitiger Vorgänge, abweichen.
+* ^2^In einem AFX-Cluster gelten die Leistungsziele pro Speichercontroller. Jeder dem Cluster hinzugefügte Controller trägt dieselbe IOPS-Zahl und denselben Durchsatz bei. Die zugesicherte Kapazität und inkrementelle Erweiterungen beziehen sich auf die gesamte Laufwerksschachtkapazität des Clusters.
 
-NOTE: ^1^Sich gegenseitig ausschließende Ziele. Die tatsächliche Leistung kann je nach verschiedenen Faktoren, einschließlich Betriebssystemversion, Hardware, Workload-Typ und Anzahl gleichzeitiger Vorgänge, abweichen.
+
+====
 
 
-
-=== Mehr zu Performance-Service-Levels für einheitlichen und blockoptimierten Speicher
+== Leistungsmessbedingungen für einheitlichen, blockoptimierten und AFX-Speicher
 
 Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folgenden Bedingungen ab:
 
@@ -111,6 +170,12 @@ Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folge
 +
 ** *IOPS*: Bei ONTAP 9.16.1 mit FCP unterstützt jede Performance-Level-Instanz wahlfreien Zugriff mit einem Leseverhältnis von 70 % und 30 % Schreibverhältnis, einer Blockgröße von 8 KB und einer Latenz von 1 ms.
 ** *Durchsatz*: Bei ONTAP 9.16.1 mit FCP unterstützt jede Instanz der Leistungsstufe sequentiellen Zugriff mit 100 % Lesen und einer Blockgröße von 64 KB.
+
+
+* Für AFX-Speicher,
++
+** *IOPS*: Bei ONTAP 9.18.1 mit NFSv4 unterstützt jede Performance-Level-Instanz den wahlfreien Zugriff mit einem Verhältnis von 70 % Lesen und 30 % Schreiben sowie einer Blockgröße von 4 KB.
+** *Durchsatz*: Bei ONTAP 9.18.1 mit NFSv4 unterstützt jede Performance-Level-Instanz sequenziellen Zugriff mit 100 % Lesezugriff und einer Blockgröße von 64 KB.
 
 
 * Die Latenz umfasst nicht Folgendes:
@@ -128,12 +193,16 @@ Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folge
 
 == Leistungsservicelevel für Objektspeicher
 
-*unterstütztes Protokoll*: S3
-
 |===
 
 
 | *Leistungs-Service-Level* | *Standard* | *Wert* 
+
+
+| *Unterstütztes Protokoll* 2+| S3 
+
+
+| * Plattform* | SGF6112 | SG6160 
 
 
 | *Mindestkapazität pro Bestellung* | 200 tib | 500 tib 
@@ -148,12 +217,16 @@ Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folge
 
 == Cloud-Storage
 
-*Unterstützte Protokolle*: NFS, CIFS, iSCSI und S3 (nur AWS und Azure)
-
 |===
 
 
-| *Leistungs-Service-Level* | Cloud Volumes ONTAP 
+| *Leistungs-Service-Level* | *Cloud Volumes ONTAP* 
+
+
+| *Unterstützte Protokolle* | NFS, CIFS, iSCSI und S3 (nur AWS und Azure) 
+
+
+| * Plattform* | Cloud Volumes ONTAP 
 
 
 | *Mindestkapazität pro Bestellung* | 4 tib 
@@ -173,7 +246,7 @@ Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folge
 ====
 *Verwandte Informationen*
 
-* link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"]
+* link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"]
 * link:..//concepts/metrics.html["Metriken und Definitionen für Keystone Services"]
 * link:../concepts/pricing.html["Keystone-Preisgestaltung"]
 

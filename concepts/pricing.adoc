@@ -26,7 +26,7 @@ Keystone bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
 
 Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-Nutzung.
 
-Informationen zu verschiedenen in Keystone unterstützten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Storage-Kapazitäten in Keystone"].
+Informationen zu den verschiedenen Kapazitäten, die in Keystone unterstützt werden, finden Sie unter link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"].
 
 *Verwandte Informationen*
 

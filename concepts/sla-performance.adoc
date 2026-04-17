@@ -14,7 +14,7 @@ summary: Keystone bietet latenzbasierte SLOs pro Leistungsservicelevel, wie in d
 
 
 [role="lead"]
-NetApp Keystone bietet latenzbasierte SLOs pro Performance-Servicelevel, wie in der Keystone-Bestellung für die verbrauchte Kapazität bis zum Burst-Limit beschrieben, gemäß den nachfolgend aufgeführten Geschäftsbedingungen.
+Keystone STaaS bietet ein latenzbasiertes Leistungsziel (Service Level Objective, SLO), das die Latenz im 90. Perzentil pro Performance Service Level Instance (PSLI) für einheitlichen (ausgenommen das _Value_ Leistungsziel), blockoptimierten und AFX-Speicher anstrebt. Erfahren Sie, wie Sie die Leistung überprüfen, welche Regeln gelten und wie Sie Servicegutschriften erhalten, falls Keystone das Latenzziel für die genutzte Kapazität bis zum Burst-Limit nicht erreicht, wie in den Keystone-Bestellbedingungen festgelegt.
 
 
 
@@ -27,29 +27,15 @@ NetApp Keystone bietet latenzbasierte SLOs pro Performance-Servicelevel, wie in 
 ** Volumes mit mehr als 30 % Schreibvorgängen zum Zeitpunkt der Kennzahlenerfassung werden aus der Stichprobe ausgeschlossen.
 ** Bei Volumes mit aktivierter FabricPool-Funktion wird die bei der Übertragung der Daten zum und vom Ziel-Storage (Cold) anfallende Latenz nicht gezählt.
 ** Latenz, die durch das Applikations-, Host- oder Kundennetzwerk außerhalb des ONTAP-Clusters verursacht wird, wird nicht gezählt.
+** Bei Verwendung des erweiterten Datensicherungs-Add-ons umfasst die Ziellatenz nur E/A-Operationen zum und vom lokalen Speichersystem.
 ** Während eines Zeitraums von 24 Stunden sollten mindestens zehn gültige Metriken verfügbar sein. Wenn die Bedingung nicht erfüllt ist, werden die Metriken verworfen.
 ** In FabricPool-Konfigurationen sind Performance-Level anwendbar, wenn alle angeforderten Datenblöcke auf FabricPool Quell-Storage (heiß) liegen und sich der Quell-Storage nicht in einer synchronen SnapMirror Beziehung befindet.
 
 
+* Gilt nur für NetApp AFF und AFX-Plattformen.
+* Alle in der Keystone-Bestellung festgelegten Mindest- und Höchstkapazitäten sowie sonstige Beschränkungen pro Instanz des Performance-Service-Levels sind anwendbar.
+* Alle Instanzen des Performance-Service-Levels erfordern die vollständige und kontinuierliche Aktivierung des Monitoring-Tools und AutoSupport (ASUP).
 
-
-
-
-== Leistungsservicelevel
-
-Alle Performance-Service-Levels, die von ONTAP Flash-Speicher-Arrays unterstützt werden, sind für das Performance-SLO berechtigt und garantieren die Einhaltung der folgenden Ziellatenz:
-
-|===
-
-
-| *Service Level* | Extrem | Premium | Standard | Wert 
-
-
- a| 
-*Ziel: 90^th^ Perzentillatenz*
-| <=1ms | <=1ms | <=4ms | >=4ms 
-|===
-Weitere Informationen zu den Latenzanforderungen der Leistungs-Servicelevel finden Sie unter link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"].
 
 
 
@@ -89,7 +75,7 @@ Wo?
 
 *Beispiel*
 
-Das folgende Beispiel zeigt die Berechnungsmethode für Service Credits:
+Das folgende Beispiel zeigt, wie Dienstgutschriften berechnet werden:
 
 |===
 
@@ -103,7 +89,7 @@ Extrem
 |===
 Mit der Formel: Service Credits = ( 10 / 50 ) X 1000 x 2 x 0.03
 
-Basierend auf der Berechnung beträgt die Servicegutschrift 12 $.
+Basierend auf der Berechnung beträgt die Servicegutschrift 12 US-Dollar.
 
 
 
@@ -130,7 +116,7 @@ image:sla-breach.png["excel-Sheet-Vorlage"]
 [NOTE]
 ====
 * Eine Service-Gutschriftanfrage sollte innerhalb von sechs Wochen nach der Validierung eines Verstoßes durch den NetApp Keystone Support eingeleitet werden. Alle Service Credits sollten von NetApp anerkannt und genehmigt werden.
-* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone-Abonnements. Weitere Informationen finden Sie unter link:../concepts/support-services.html["NetApp Keystone-Support"].
+* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone-Abonnements. Um den NetApp Support zu kontaktieren und das für eine Servicegutschriftanfrage erforderliche Support-Ticket zu eröffnen, siehe link:../concepts/support-services.html["Keystone hilft Ihnen dabei"].
 
 
 ====

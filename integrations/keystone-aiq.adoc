@@ -43,7 +43,7 @@ Sie können auf *Alle Abonnements anzeigen* klicken, um die Nutzungsdetails und 
 Die Details der Abonnements, Nutzungsdiagramme für jedes Leistungsservicelevel und Volumendetails werden in den verschiedenen Registerkarten auf dem Bildschirm *Keystone-Abonnements* angezeigt.
 
 
-NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0,01 TiB beträgt, wird der Wert als 0 oder „Keine Nutzung“ angezeigt. Die Daten auf diesen Bildschirmen werden in UTC-Zeit (Serverzeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet. Weitere Informationen zu Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"].
+NOTE: Der Kapazitätsverbrauch in Keystone-Abonnements wird in TiBs auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen gerundet. Bei einem Verbrauch von weniger als 0,01 TiB wird der Wert als 0 oder No Usage angezeigt. Die Daten auf diesen Bildschirmen werden in UTC-Zeit (Serverzeitzone) angezeigt. Wenn Sie ein Datum für eine Abfrage eingeben, wird dieses automatisch als UTC-Zeit betrachtet. Weitere Informationen zu den Nutzungsmetriken finden Sie unter link:../concepts/metrics.html#metrics-measurement["Kennzahlenmessung"]. Informationen zu den verschiedenen Kapazitäten, die in Keystone verwendet werden, finden Sie unter link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"].
 
 
 
