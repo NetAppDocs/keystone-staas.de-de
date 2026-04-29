@@ -39,6 +39,10 @@ NOTE: Sie können *Aufgelaufene Burst-Daten* aus der Dropdown-Liste *Anzeigen* a
 
 +
 
+NOTE: Sie können die *Prognose*-Funktion nutzen, um die voraussichtliche Kapazitätsauslastung in der *Historischen Verbrauchsansicht* und den voraussichtlichen aufgelaufenen Burst in der *Aufgelaufenen Burst*-Ansicht anzuzeigen. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html#view-forecast-data["Prognosedaten anzeigen"].
+
++
+
 NOTE: Wenn Sie Zusatzdienste wie Advanced Data Protection (ADP) oder Data Infrastructure Insights (DII) abonniert haben, werden die Verbrauchsdaten dieser Dienste zusammen mit Ihren Basis-Leistungsdienststufen sowohl in der historischen Verbrauchsübersicht als auch in der Übersicht der kumulierten Spitzenwerte angezeigt. Weitere Informationen zu Zusatzdiensten finden Sie unter link:../concepts/adp.html["Erfahren Sie mehr über Zusatzleistungen"].
 
 +
@@ -137,20 +141,6 @@ Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Ve
 ====
 
 
-== Prognosedaten anzeigen
-
-Sie können die voraussichtliche Kapazitätsauslastung für die nächsten 120 Tage ab dem aktuellen Datum über die *Forecast*-Umschaltfunktion in der Ansicht *Historical consumption* auf der Registerkarte *Consumption trend* in der Console einsehen. Die Umschaltfunktion ist standardmäßig aktiviert.
-
-Standardmäßig zeigt das Diagramm den historischen Verbrauch der letzten 30 Tage sowie eine 120-Tage-Prognose ab dem aktuellen Datum im selben Diagramm an. Insgesamt werden bis zu 30 Datenpunkte dargestellt (20 für historische Daten und 10 für Prognosedaten), wobei eine vertikale Linie die beiden Segmente trennt.
-
-image:forecast-1.png["Screenshot mit Prognosedaten"]
-
-Wenn Sie einen Datumsbereich auswählen, der nicht mit dem aktuellen Datum endet, wird die Prognose automatisch deaktiviert. Um sie wieder zu aktivieren, werden Sie in einem Bestätigungsdialog darauf hingewiesen, dass Prognosedaten nur verfügbar sind, wenn der ausgewählte Zeitraum mit dem aktuellen Datum endet. Durch Bestätigen wird die Ansicht auf den Standardbereich der letzten 30 Tage historischer Daten plus die nächsten 120 Tage Prognose zurückgesetzt.
-
-Wenn der prognostizierte Verbrauch die Burst-Kapazität voraussichtlich übersteigt, erscheint ein Warnhinweis im Diagramm, der eine Kapazitätserweiterung empfiehlt.
-
-
-
 == Berechnung des aufgelaufenen Bursts
 
 Die angesammelten Burst-Kapazitäten für einen gesamten Monat werden wie folgt berechnet:
@@ -167,9 +157,9 @@ Der Burst-Wert ist die Differenz zwischen der verbrauchten und der gebuchten Kap
 
 == Aufgelaufenen Burst anzeigen
 
-Sie können die aufgelaufene Burst-Datennutzung über die Console oder Digital Advisor anzeigen. Wenn Sie im Tab *Consumption trend* in der Console im Dropdown-Menü *View* die Option *Accrued burst* oder im Tab *Consumption Trend* in Digital Advisor die Option *Invoiced Accrued Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung monatlich oder vierteljährlich anzeigen, abhängig von Ihrem gewählten Abrechnungszeitraum. Diese Daten sind für die letzten 12 abgerechneten Monate verfügbar, und Sie können nach dem Datumsbereich für bis zu 30 Monate in der Vergangenheit abfragen.
+Sie können die aufgelaufene Burst-Datennutzung über die Console oder Digital Advisor anzeigen. Wenn Sie im Tab *Consumption trend* in der Console im Dropdown-Menü *View* die Option *Accrued burst* oder im Tab *Consumption Trend* in Digital Advisor die Option *Invoiced Accrued Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung monatlich oder vierteljährlich anzeigen, abhängig von Ihrem gewählten Abrechnungszeitraum.
 
-In der Konsole können Sie neben der in Rechnung gestellten Burst-Nutzung auch die nicht in Rechnung gestellte Burst-Nutzung (aufgelaufen, aber noch nicht abgerechnet) und die vorläufige Burst-Nutzung (im aktuellen Abrechnungszeitraum aufgelaufen und noch nicht in Rechnung gestellt) einsehen.
+Wenn die *Prognose*-Funktion in der Konsole deaktiviert ist, können Sie die abgerechnete Burst-Nutzung sowie die nicht abgerechnete Burst-Nutzung (aufgelaufen, aber noch nicht in Rechnung gestellt) und die vorläufige Burst-Nutzung (im aktuellen Abrechnungszeitraum aufgelaufen und noch nicht in Rechnung gestellt) einsehen. Wenn die *Prognose*-Funktion aktiviert ist, zeigt das Diagramm zusätzlich die prognostizierte aufgelaufene Burst-Nutzung für die nächsten 120 Tage ab dem aktuellen Datum an. Weitere Informationen zur *Prognose*-Funktion finden Sie unter link:../integrations/consumption-tab.html#view-forecast-data["Prognosedaten anzeigen"].
 
 image:accr-burst-provision-invoice.png["Screenshot, der den aufgelaufenen Burst-Verbrauch in der Console anzeigt"]
 
@@ -188,15 +178,36 @@ image:accr-burst-2.png["Anfallende Burst-Nutzung vierteljährlich"]
 
 
 
+== Prognosedaten anzeigen
+
+In der Konsole können Sie im Tab *Verbrauchstrend* den *Prognose*-Schalter verwenden, um die prognostizierte Kapazitätsnutzung in der Ansicht *Historischer Verbrauch* und den prognostizierten aufgelaufenen Burst in der Ansicht *Aufgelaufener Burst* anzuzeigen. Der Schalter ist in beiden Ansichten standardmäßig aktiviert.
+
+In der Ansicht „Historischer Verbrauch“ werden die Verbrauchsdaten der letzten 30 Tage sowie eine 120-Tage-Prognose ab dem aktuellen Datum im selben Diagramm dargestellt. Insgesamt werden bis zu 30 Datenpunkte abgebildet (20 für historische Daten und 10 für Prognosedaten), mit einer vertikalen Linie, die die beiden Segmente voneinander trennt.
+
+image:forecast-1.png["Screenshot mit Prognosedaten"]
+
+In der Ansicht *Aufgelaufenes Burst-Kontingent* zeigt das Diagramm die letzten 6 Monate der aufgelaufenen Burst-Historie und eine 120-Tage-Prognose ab dem aktuellen Datum, wobei eine vertikale Linie die historischen und prognostizierten Daten trennt. Der Balken für den aktuellen Abrechnungszeitraum zeigt sowohl die vorläufige Burst-Nutzung als auch die Prognosedaten für die verbleibenden Tage an. Sie können auf jeden Balken klicken, um die tagesgenaue Aufschlüsselung in der Tabelle *Aufgelaufenes Burst-Kontingent nach Tagen* anzuzeigen. Weitere Informationen zur Tabelle *Aufgelaufenes Burst-Kontingent nach Tagen* finden Sie unter link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Anzeige der täglichen angesammelten Burst-Datennutzung"].
+
+image:accrued-burst-forecast.png["Screenshot mit der kumulierten Ausbruchsprognose"]
+
+Wenn Sie einen Datumsbereich auswählen, der nicht mit dem aktuellen Datum endet, wird die Prognose automatisch deaktiviert. Um sie wieder zu aktivieren, werden Sie in einem Bestätigungsdialog darauf hingewiesen, dass Prognosedaten nur verfügbar sind, wenn der ausgewählte Zeitraum mit dem aktuellen Datum endet. Wenn Sie den Dialog bestätigen, wird die Ansicht auf den Standardbereich für die ausgewählte Ansicht zurückgesetzt: die letzten 30 Tage der historischen Daten plus die nächsten 120 Tage Prognose in der Ansicht *Historischer Verbrauch* oder die letzten 6 Monate der aufgelaufenen Burst-Historie plus die nächsten 120 Tage Prognose in der Ansicht *Accrued burst*.
+
+Wenn der prognostizierte Verbrauch die zugesicherte Kapazität voraussichtlich übersteigt, erscheint im Diagramm eine orangefarbene Warnanzeige, die eine Kapazitätserweiterung empfiehlt. Wenn der prognostizierte Verbrauch die Burst-Kapazität voraussichtlich übersteigt, erscheint ebenfalls eine rote Warnanzeige, die eine Kapazitätserweiterung empfiehlt.
+
+
+
 == Anzeige der täglichen angesammelten Burst-Datennutzung
 
 Sie können die täglich aufgelaufene Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum über die Konsole oder den Digital Advisor anzeigen. In der Konsole bietet die Tabelle *Aufgelaufener Burst nach Tagen* detaillierte Daten, einschließlich Zeitstempel, zugesagter, verbrauchter und aufgelaufener Burst-Kapazität, wenn Sie *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auf der Registerkarte *Verbrauchstrend* auswählen.
 
 In der Console können Sie die Tabelle filtern, indem Sie einen beliebigen Balken auswählen, der einen Abrechnungszeitraum im Diagramm der aufgelaufenen Burst-Gebühren darstellt. Wenn gefiltert, zeigt die Tabelle nur die Tage innerhalb des ausgewählten Abrechnungszeitraums an. Um den vollständigen Datensatz wieder anzuzeigen, verwenden Sie die Option *Clear filters*. Wenn für den ausgewählten Zeitraum keine Daten verfügbar sind, wird eine Meldung angezeigt, die angibt, dass keine Daten verfügbar sind.
 
+
+NOTE: Die im Diagramm dargestellten Daten hängen davon ab, ob die *Vorhersage*-Funktion aktiviert oder deaktiviert ist.
+
 image:bxp-accrued-burst-days-1.png["Screenshot der Tabelle mit den aufgelaufenen Bursts nach Tagen"]
 
-Sie können die Daten auch im Excel-Format herunterladen, einschließlich des Burst-Status (fakturiert, nicht fakturiert oder vorläufig) und des Abrechnungszeitraums.
+Sie können die verfügbaren Daten auch im Excel-Format herunterladen, einschließlich des Burst-Status (fakturiert, nicht fakturiert, vorläufig oder prognostiziert, je nach Anwendbarkeit) und des Abrechnungszeitraums.
 
 Wenn Sie in Digital Advisor auf die Leiste klicken, die die Rechnungsdaten aus der Option *Invoiced Accrued Burst* anzeigt, wird unter dem Balkendiagramm der Abschnitt „Berechnebare bereitgestellte Kapazität“ angezeigt, der sowohl die Anzeige von Diagrammen als auch von Tabellen bietet. In der Standardgrafik-Ansicht wird die tägliche angesammelte Burst-Datennutzung in einem Liniengrafikformat angezeigt, in dem die Nutzungsänderungen im Laufe der Zeit angezeigt werden.
 

@@ -18,6 +18,24 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+== 27. April 2026
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== Umbenanntes Label für bereitgestellte Kapazität
+
+Die Bezeichnung *Bereitgestellte Kapazität* wurde in *Bereitgestellte Volumenkapazität* umbenannt. Die aktualisierte Bezeichnung wird auch in den zugehörigen CSV- und Excel-Berichten berücksichtigt.
+
+
+
+=== Prognoseumschalter für aufgelaufene Burst-Nutzung
+
+Sie können jetzt die *Prognose*-Funktion in der Ansicht *Aufgelaufener Burst* auf der Registerkarte *Verbrauchstrend* nutzen, um den aufgelaufenen Burst-Verbrauch für die nächsten 120 Tage ab dem aktuellen Datum zu prognostizieren. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-forecast-data["Prognosedaten anzeigen"].
+
+
+
 == 30. März 2026
 
 Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:

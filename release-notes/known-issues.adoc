@@ -24,6 +24,15 @@ Die folgenden bekannten Probleme werden in NetApp Keystone STaaS gemeldet:
 
 
  a| 
+Ungenauer Abwärtstrend in den prognostizierten Verbrauchsdaten
+ a| 
+Auf der Registerkarte *Verbrauchstrend* zeigt die prognostizierte Kapazitätsauslastung einen signifikanten und ungenauen Abwärtstrend, wenn in der Ansicht *Historischer Verbrauch* die Option *Prognose* aktiviert ist.
+ a| 
+Keine
+
+
+
+ a| 
 Abonnementänderung nicht möglich
  a| 
 Die Option zur Änderung der reservierten Kapazität für Keystone-Abonnements ist derzeit in der NetApp Console nicht verfügbar. Diese Funktionalität wird in einer zukünftigen Version wieder eingeführt.
