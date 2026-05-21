@@ -176,20 +176,12 @@ sidebar:
         url: "/concepts/sla-sustainability.html"
       - title: Recovery-Garantie Von Ransomware
         url: "/concepts/sla-ransomware.html"
-    - title: Abrechnung verstehen
+    - title: Keystone Abrechnung verstehen
       entries:
-      - title: Keystone-Preisgestaltung
+      - title: Erfahren Sie mehr über die Keystone-Abrechnung
         url: "/concepts/pricing.html"
-      - title: Abrechnung basiert auf der verplante Kapazität
-        url: "/concepts/committed-capacity-billing.html"
-      - title: Messung basierend auf verbrauchter Kapazität
-        url: "/concepts/consumed-capacity-billing.html"
-      - title: Abrechnung auf Basis von Burst-Nutzung
-        url: "/concepts/burst-consumption-billing.html"
-      - title: Abrechnung für spezifische Volumenkonfigurationen
+      - title: Keystone-Abrechnung für bestimmte Volumenarten
         url: "/concepts/misc-volume-billing.html"
-      - title: Abrechnungszeitpläne
-        url: "/concepts/billing-schedules.html"
   - title: Zugriff auf Keystone über die Digital Advisor REST-API
     entries:
     - title: Erste Schritte zum Abrufen von Keystone-Daten über die REST-API von Digital

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/pricing.html 
-keywords: pricing, billing introduction, Keystone billing 
-summary: Keystone bietet ein Pay-as-you-grow-Modell für Ihren flexiblen und skalierbaren Nutzungsbedarf. 
+keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules 
+summary: Mit NetApp Keystone STaaS zahlen Sie für das, was Sie buchen, und nur extra für das, was Sie darüber hinaus nutzen. Diese Seite erklärt, wie das Pay-as-you-grow-Modell funktioniert – von der Preisgestaltung Ihres Speicherkontingents über die Messung und Abrechnung der Kapazität bis hin zum Zeitpunkt der Rechnungsstellung. 
 ---
-= Erfahren Sie mehr über die Keystone -Preise
+= Erfahren Sie mehr über die Keystone-Abrechnung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,13 @@ summary: Keystone bietet ein Pay-as-you-grow-Modell für Ihren flexiblen und ska
 
 
 [role="lead"]
-Der nutzungsbasierte Abonnementdienst NetApp Keystone STaaS bietet flexiblen und skalierbaren Verbrauch mit vorhersehbaren und im Voraus festgelegten Preisen für Ihren Speicherbedarf.
+Mit NetApp Keystone STaaS zahlen Sie für das, was Sie buchen, und nur zusätzlich für das, was Sie darüber hinaus nutzen. Diese Seite erklärt, wie das Pay-as-you-go-Modell funktioniert, einschließlich wie Ihr Speicherkontingent bepreist wird, wie die Kapazität gemessen und abgerechnet wird und wann Rechnungen erstellt werden.
+
+
+
+== Keystone-Preismodell
+
+Mit Ihrem Keystone-Abonnement profitieren Sie von planbaren Kosten und der Flexibilität, bei Bedarf zu skalieren. Die Keystone-Gebühren richten sich nach dem von Ihnen gewählten Leistungsservicelevel und der Kapazität, zu der Sie sich verpflichten.
 
 Keystone bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
 
@@ -28,11 +34,77 @@ Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-N
 
 Informationen zu den verschiedenen Kapazitäten, die in Keystone unterstützt werden, finden Sie unter link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"].
 
-*Verwandte Informationen*
 
-* link:../concepts/committed-capacity-billing.html["Abrechnung basiert auf der verplante Kapazität"]
-* link:../concepts/consumed-capacity-billing.html["Messung basierend auf verbrauchter Kapazität"]
-* link:../concepts/burst-consumption-billing.html["Abrechnung auf Basis von Burst-Nutzung"]
-* link:../concepts/misc-volume-billing.html["Die Abrechnung basiert auf verschiedenen Volume-Typen"]
-* link:../concepts/billing-schedules.html["Abrechnungszeitpläne"]
+
+== Wie Keystone die Kapazität misst
+
+Keystone verwendet drei Kapazitätskonzepte zur Berechnung Ihrer Rechnung. Wenn Sie diese kennen, können Sie unerwartete Gebühren vermeiden.
+
+
+
+=== Engagierte Kapazität
+
+Die zugesicherte Kapazität ist die Kapazität, die Sie für ein bestimmtes Leistungsniveau beim Abschluss Ihres Keystone-Abonnements erwerben. Dieser Betrag ist in Ihrer Keystone-Bestellung festgelegt und wird in jeder Abrechnungsperiode vollständig in Rechnung gestellt, unabhängig davon, wie viel Kapazität Ihre Workloads tatsächlich nutzen.
+
+Wenn Sie sich beispielsweise für 100 TiB auf der Premium-Serviceebene verpflichten, werden Ihnen 100 TiB in Rechnung gestellt, selbst wenn die tatsächliche Nutzung in diesem Monat 80 TiB beträgt.
+
+Die zugesicherte Kapazität kann sich über mehrere Leistungsstufen innerhalb eines einzigen Abonnements erstrecken, wie von Ihnen und NetApp oder Ihrem Partner vereinbart.
+
+Um Ihre zugesagte Kapazität einzusehen und die tatsächliche Nutzung im Vergleich dazu zu verfolgen, siehe link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"].
+
+
+
+=== Verbrauchte Kapazität
+
+Die tatsächlich genutzte Kapazität ist die Kapazität, die Ihre Workloads zu jedem Zeitpunkt nutzen. Keystone überwacht und misst Ihren Verbrauch kontinuierlich während des gesamten Abrechnungszeitraums. Mindestens alle fünf Minuten wird ein Verbrauchsdatensatz erstellt, der die aktuell genutzte Kapazität Ihres Abonnements erfasst. Diese Datensätze werden über den Abrechnungszeitraum aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
+
+Das fünfminütige Überwachungsintervall gewährleistet eine detaillierte Nachverfolgung, sodass Spitzenverbrauch genau erkannt und abgerechnet wird – und nicht am Ende des Zeitraums geschätzt wird.
+
+Solange die genutzte Kapazität der zugesicherten Kapazität entspricht oder darunter liegt, gilt nur der Tarif für die zugesicherte Kapazität. Sobald die genutzte Kapazität die zugesicherte Kapazität überschreitet, gilt die Burst-Abrechnung.
+
+
+
+=== Burst Consumption
+
+Die sogenannte Burst-Nutzung bezeichnet die Kapazität, die Sie über Ihre vertraglich zugesicherte Kapazität hinaus nutzen. Ihr Burst-Limit ist in Ihrem Keystone-Vertrag festgelegt. Standardmäßig liegt es bei 20 % über der vertraglich zugesicherten Kapazität. Sie können auch Burst-Limits von 40 % oder 60 % der vertraglich zugesicherten Kapazität wählen. Weitere Informationen finden Sie unter link:../concepts/burst-capacity.html["Burst-Kapazitätsoptionen"].
+
+Wenn Ihre zugesicherte Kapazität beispielsweise 100 TiB beträgt und Sie 115 TiB nutzen, werden die zusätzlichen 15 TiB zum Burst-Tarif abgerechnet.
+
+Wenn die verbrauchte Kapazität die für ein Leistungsniveau zugesicherte Kapazität übersteigt, wird der Spitzenverbrauch erfasst und entsprechend abgerechnet. Eine Nutzung oberhalb des Spitzenkapazitätslimits wird als „Über dem Spitzenkapazitätslimit“ gekennzeichnet.
+
+Der Spitzenverbrauch wird für jeden Verbrauchsdatensatz berechnet, der während des Abrechnungszeitraums generiert wird. Er spiegelt sowohl die Menge als auch die Dauer Ihrer über die vertraglich vereinbarte Kapazität hinausgehenden Übernutzung wider. Um die Trends des Spitzenverbrauchs für Ihr Abonnement anzuzeigen, siehe link:../integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone-Abonnements anzeigen"].
+
+
+
+== Abrechnungszeitpläne
+
+Die Abrechnungshäufigkeit ist in Ihrem Keystone-Vertrag festgelegt. Die folgende Tabelle zeigt, wann Sie mit Rechnungen für die zugesicherte Kapazität und die Spitzennutzung im Rahmen der jeweiligen Optionen rechnen können.
+
+[cols="1,2,2"]
+|===
+| Abrechnungshäufigkeit | Rechnung für zugesagte Kapazität | Rechnung für Spitzennutzung 
+
+
+| Monatlich | Im Folgemonat versandt | Auf derselben Rechnung enthalten 
+
+
+| Vierteljährlich | Wird zu Beginn jedes Quartals versendet | Wird am Ende jedes Quartals versandt 
+
+
+| Halbjährlich | Wird zu Beginn jedes 6-Monats-Zeitraums versendet | Wird am Ende jedes Quartals versandt 
+
+
+| Jährlich | Wird zu Beginn jedes Abonnementjahres versandt | Wird am Ende jedes Quartals versandt 
+|===
+
+NOTE: Bei vierteljährlicher, halbjährlicher und jährlicher Abrechnung wird Ihnen bei einer Änderung Ihrer vertraglich vereinbarten Kapazität während der Laufzeit Ihres Abonnements am selben Tag eine Rechnung über die anteiligen Mindestzahlungen für den Rest des Abonnementjahres zugesandt. Die Abrechnung erfolgt ab dem Tag, an dem die Änderung der vertraglich vereinbarten Kapazität wirksam wird.
+
+
+
+== Verwandte Informationen
+
+* link:../concepts/supported-storage-capacity.html["Speicherkapazitätstypen in Keystone"]
+* link:../concepts/burst-capacity.html["Burst-Kapazitätsoptionen"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone-Abonnements anzeigen"]
 

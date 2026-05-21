@@ -49,15 +49,14 @@ indexpage:
     links:
     - title: Erfahren Sie mehr über die Keystone -Preise
       url: "/concepts/pricing.html"
-    - title: Meine Abrechnungspläne
-      url: "/concepts/billing-schedules.html"
-    - title: Abrechnung basiert auf der verplante Kapazität
-      url: "/concepts/committed-capacity-billing.html"
-    - title: Messung basierend auf verbrauchter Kapazität
-      url: "/concepts/consumed-capacity-billing.html"
-    - title: Was geschieht, wenn ich mehr als meine engagierte Kapazität verbraucht
-        habe?
-      url: "/concepts/burst-consumption-billing.html"
+    - title: Wie misst Keystone die Kapazität?
+      url: "/concepts/pricing.html#how-keystone-measures-capacity"
+    - title: Was versteht man unter zugesagter Kapazität?
+      url: "/concepts/pricing.html#committed-capacity"
+    - title: Was passiert, wenn ich meine zugesagte Kapazität überschreite?
+      url: "/concepts/pricing.html#burst-consumption"
+    - title: Wann werden Rechnungen erstellt?
+      url: "/concepts/pricing.html#billing-schedules"
   - title: Mit den Keystone Services mehr erreichen
     links:
     - title: Erfahren Sie mehr über Ihr Support-Team

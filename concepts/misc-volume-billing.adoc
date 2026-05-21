@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
-keywords: Billing and miscellaneous scenarios 
-summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Konfigurationen, darunter geklonte Volumes, erweiterte Datensicherung und mehr. 
+keywords: Keystone billing, special volume types, cloned volumes, SnapMirror destinations, LUNs, temporary volumes 
+summary: Die Abrechnungsregeln von Keystone unterscheiden sich je nach Volume-Konfiguration. Diese Seite erläutert die Abrechnung von geklonten Volumes, SnapMirror-Destinationen, LUNs, temporären Volumes und System-Volumes. 
 ---
-= Erfahren Sie mehr über die Abrechnung von Keystone für spezifische Volumenkonfigurationen.
+= Keystone-Abrechnung für bestimmte Volumenarten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,34 @@ summary: Informieren Sie sich über die Keystone Abrechnung für spezifische Kon
 
 
 [role="lead"]
-Wenn Sie die Keystone -Abrechnung für bestimmte Konfigurationen verstehen, können Sie die Servicenutzung optimieren und die Kosten verwalten. Die Konfigurationen umfassen geklonte Volumes, temporäre Volumes, SnapMirror -Ziele, LUNs und System-/Root-Volumes.
+Die Abrechnungsregeln von Keystone unterscheiden sich je nach Volume-Konfiguration. Kenntnisse über diese Ausnahmen helfen Ihnen, unerwartete Kosten bei der Arbeit mit geklonten Volumes, SnapMirror-Destinationen, LUNs oder temporärem Speicher zu vermeiden.
 
+Die folgende Tabelle fasst die Abrechnungsregeln für jeden Volumentyp zusammen.
+
+[cols="1,2"]
+|===
+| Volumentyp | Abrechnungsregel 
+
+
+| Geklonte Volumes | Als Standardvolumen abgerechnet 
+
+
+| Temporäre Bände | Nicht in Rechnung gestellt 
+
+
+| SnapMirror Ziele | Abrechnung auf dem Leistungsserviceniveau des Zielorts 
+
+
+| LUNs | Abrechnung auf der Leistungsebene des jeweiligen Volumes 
+
+
+| System- und Root-Volumes | Überwacht, aber nicht abgerechnet 
+|===
 
 
 == Abrechnung für geklonte Volumes
 
-Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherstellung Ihrer Daten verwenden, können Sie die Klone ohne zusätzliche Zahlungen weiterhin verwenden. Geklonte Volumes, die für andere Zwecke in Ihrem Unternehmen für einen hohen Zeitraum genutzt werden, werden jedoch in Rechnung gestellt.
-
-Beachten Sie Folgendes:
-
-* Klon-Volumes berechnen keine Kosten, solange ihre Größe weniger als 10 % des übergeordneten Volume beträgt (die physische Kapazität, die im Klon-Volume im Vergleich mit der im übergeordneten Volume genutzten physischen Kapazität verwendet wird).
-* Für geklonte Volumes gibt es keine 24-stündige Karenzzeit. Es wird nur die Größe des Klons berücksichtigt.
-* Sobald das Klon-Volume 10 % der physischen Größe des übergeordneten Volume überschreitet, wird der Klon als Standard-Volume abgerechnet (genutzte logische Kapazität).
-
+Geklonte Volumes werden wie Standard-Volumes auf demselben Performance-Servicelevel wie das Volume, von dem sie geklont wurden, abgerechnet. Alle geklonten Volumes werden unabhängig von ihrer Größe oder ihrem Verwendungszweck gemessen und berechnet.
 
 
 

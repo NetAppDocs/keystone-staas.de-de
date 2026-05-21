@@ -20,4 +20,4 @@ Die sogenannte Burst-Kapazität bezeichnet die zusätzliche Speicherkapazität, 
 
 Um Ihr Burst-Limit auf 40 % oder 60 % zu ändern, wenden Sie sich an das NetApp Keystone-Supportteam.
 
-Weitere Informationen zur Abrechnung der Burst-Kapazität finden Sie unter link:../concepts/burst-consumption-billing.html["Abrechnung auf Basis von Burst-Nutzung"] .
+Weitere Informationen zur Abrechnung von Burst-Kapazitäten finden Sie unter link:../concepts/pricing.html["Erfahren Sie mehr über die Keystone-Abrechnung"].
