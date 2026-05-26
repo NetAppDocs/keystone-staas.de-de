@@ -24,6 +24,15 @@ Die folgenden bekannten Probleme werden in NetApp Keystone STaaS gemeldet:
 
 
  a| 
+Falsches Ablaufdatum für abgelaufene Abonnements
+ a| 
+Auf der Registerkarte *Abonnements* wird bei abgelaufenen Abonnements das gestrige Datum als Ablaufdatum angezeigt, statt des tatsächlichen Abonnementendes.
+ a| 
+Keine
+
+
+
+ a| 
 Ungenauer Abwärtstrend in den prognostizierten Verbrauchsdaten
  a| 
 Auf der Registerkarte *Verbrauchstrend* zeigt die prognostizierte Kapazitätsauslastung einen signifikanten und ungenauen Abwärtstrend, wenn in der Ansicht *Historischer Verbrauch* die Option *Prognose* aktiviert ist.

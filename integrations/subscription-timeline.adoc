@@ -26,13 +26,13 @@ Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
 
 . Wählen Sie die Registerkarte *Abonnement-Zeitleiste*.
 +
-image:bxp-subscription-timeline-graph.png["Ein Screenshot, der die Abonnement-Zeitleiste in einem Liniendiagrammformat zusammen mit wichtigen Ereignissen anzeigt"]
+image:console-subscription-timeline-graph.png["Ein Screenshot, der die Abonnement-Zeitleiste in einem Liniendiagrammformat zusammen mit wichtigen Ereignissen anzeigt"]
 
 +
-Die Abonnement-Zeitleiste wird standardmäßig als Liniendiagramm angezeigt, wobei wichtige Ereignisse mit Symbolen gekennzeichnet sind. Bewegen Sie den Mauszeiger über ein Ereignis, um Details anzuzeigen, einschließlich des Datums und der zugesagten Kapazitätsänderungen. Um diese Ereignisse in einer Tabelle anzuzeigen, wählen Sie die Option *Tabelle* aus der Dropdown-Liste *Anzeigen als*. Um andere Abonnementzeitpläne anzuzeigen, wählen Sie aus der Dropdown-Liste *Tracking-ID* eine Option aus oder suchen Sie danach.
+Die Abonnement-Zeitleiste wird standardmäßig als Liniendiagramm mit Symbolen für wichtige Ereignisse dargestellt. Wenn mehrere Abonnementaktualisierungen unterschiedlicher Art am selben Tag erfolgen, zeigt das Diagramm anstelle separater Symbole eine Zahl an. Bewegen Sie den Mauszeiger über die Zahl, um alle an diesem Tag erfolgten Aktualisierungstypen anzuzeigen, oder über ein Ereignissymbol, um Details wie das Datum und Änderungen der zugesagten Kapazität zu erhalten. Um diese Ereignisse in einer Tabelle anzuzeigen, wählen Sie im Dropdown-Menü *Anzeigen als* die Option *Tabelle* aus. Um andere Abonnement-Zeitleisten anzuzeigen, wählen oder suchen Sie im Dropdown-Menü *Tracking ID*.
 
 +
-image:bxp-subscription-timeline.png["Ein Screenshot, der die Abonnement-Zeitleiste in einem Tabellendiagrammformat zusammen mit wichtigen Ereignissen anzeigt"]
+image:console-subscription-timeline.png["Ein Screenshot, der die Abonnement-Zeitleiste in einem Tabellendiagrammformat zusammen mit wichtigen Ereignissen anzeigt"]
 
 
 
