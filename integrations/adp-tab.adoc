@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/adp-tab.html 
-keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, bluexp, NetApp Console, Console 
-summary: Zeigen Sie Verbrauchsdaten an und überwachen Sie den Gesundheitsstatus Ihrer MetroCluster Partnerstandorte, wenn Sie den erweiterten Datenschutz-Zusatzdienst in Keystone abonnieren. 
+keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, license distribution, usage insights, license types, v1, v2, v3, bluexp, NetApp Console, Console 
+summary: Verbrauchsdaten, Gesundheitsstatus und ADP-Lizenzverteilung für Ihre MetroCluster Partnerstandorte werden angezeigt, wenn das Advanced Data Protection Add-on in Keystone abonniert ist. 
 ---
 = Verbrauch und Status Ihrer Keystone MetroCluster Abonnements einsehen
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Zeigen Sie Verbrauchsdaten an und überwachen Sie den Gesundheitsstatus
 
 
 [role="lead"]
-Wenn Sie den erweiterten Datenschutz-Zusatzdienst abonnieren, können Sie die Verbrauchsdaten Ihrer MetroCluster-Partnerstandorte entweder in der NetApp Console oder Digital Advisor einsehen. In der NetApp Console können Sie außerdem den Replikationsstatus und die Integrität Ihrer MetroCluster-Konfiguration überwachen.
+Beim Abonnement des Zusatzdienstes für erweiterten Datenschutz lassen sich die Verbrauchsdaten der MetroCluster Partner-Sites entweder in der NetApp Console oder im Digital Advisor anzeigen. In der NetApp Console ist zudem eine Überwachung des Zustands der MetroCluster Konfiguration sowie eine Nachverfolgung der Verteilung der Lizenzen für erweiterten Datenschutz möglich.
 
 
 
@@ -38,7 +38,7 @@ Die Registerkarte *Aktueller Verbrauch* wird geöffnet und zeigt Einblicke in de
 
 . Wählen Sie die Registerkarte *Advanced data protection (ADP)*.
 +
-Auf dieser Registerkarte können Sie Verbrauchsdaten für Ihre Basis-Performance-Service-Levels sowohl am primären als auch am Spiegelstandort einsehen, den Gesundheitszustand Ihrer MetroCluster-Konfiguration überwachen und den Synchronisierungsstatus verfolgen.
+Auf dieser Registerkarte können Sie Verbrauchsdaten für Ihre Basis Performance-Service-Levels sowohl am primären Standort als auch am Spiegelstandort einsehen, den Zustand und den Synchronisierungsstatus Ihrer MetroCluster Konfiguration überwachen sowie die ADP-Lizenznutzung und -verteilung über beide Cluster hinweg anzeigen.
 
 +
 ** Sehen Sie sich das Verbrauchsverteilungsdiagramm für den ausgewählten Zeitraum an.
@@ -50,10 +50,20 @@ Das Diagramm zeigt den Verbrauch sowohl für Ihre primäre als auch für Ihre Sp
 NOTE: Für die Basis-Servicelevels wird jedes Volume sowohl am primären als auch am Spiegelstandort entsprechend der Bereitstellung abgerechnet. Das Diagramm ist daher aufgeteilt, um den Verbrauch an jedem Standort darzustellen.
 
 +
-*Beispiel:* Im Tooltip werden Verbrauchswerte wie 1,15 TiB für den primären Standort und 4,22 TiB für den Spiegelstandort angezeigt.
+*Beispiel:* Im Tooltip werden Verbrauchswerte wie 109,29 TiB für den primären Standort und 111,97 TiB für den Spiegelstandort angezeigt.
 
 +
-image:adp-consumption-chart.png["Liniendiagramm, das die MetroCluster-Verbrauchsverteilung mit 1,15 TiB am primären Standort und 4,22 TiB am Spiegelstandort im Tooltip anzeigt"]
+image:adp-consumption-chart-1.png["Liniendiagramm, das die MetroCluster-Verbrauchsverteilung mit 1,15 TiB am primären Standort und 4,22 TiB am Spiegelstandort im Tooltip anzeigt"]
+
+** Das Diagramm zur Lizenzverteilung für den ausgewählten Zeitraum wird angezeigt.
++
+Das Diagramm zeigt den ADP-Lizenzverbrauch in Cluster A (primär) und Cluster B (Spiegel). Je nach der mit Ihrem Abonnement verknüpften Lizenzversion zeigt das Diagramm den Verbrauch für jedes ADP Add-on Performance-Servicelevel, wie zum Beispiel _Advanced data-protect premium tiering_ und Data-protect premium tiering, an jedem Standort an.
+
++
+image:adp-license-distribution.png["Gestapeltes Balkendiagramm, das die ADP-Lizenzverteilung in Cluster A und Cluster B für verschiedene Lizenzversionen zeigt"]
+
++
+Diese Daten ermöglichen die Überprüfung, ob die Abrechnung für ein bestimmtes Datum korrekt ist, sowie den Abgleich der Nutzungsabbuchungswerte für Ihr Abonnement.
 
 ** Überwachen Sie den Gesundheitszustand Ihrer MetroCluster Setup in der *ADP Topology*-Ansicht.
 +

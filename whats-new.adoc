@@ -18,6 +18,42 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+== 29. Juni 2026
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+=== ADP-Lizenzverteilung für MetroCluster Abonnements anzeigen
+
+Auf der Registerkarte *Erweiterter Datenschutz (ADP)* ist jetzt ein neuer Unterreiter *Lizenzverteilung* verfügbar, der Einblick in die ADP-Lizenznutzung in Ihren MetroCluster Partnerclustern bietet. Weitere Informationen sind unter link:./integrations/adp-tab.html["Verbrauch und Status Ihrer Keystone MetroCluster Abonnements einsehen"] zu finden.
+
+
+
+=== Ransomware-Schutzstatus für Ihre Volumes
+
+Die Registerkarte *Volumes in Clustern* unter *Assets* enthält jetzt eine Spalte *ARP-Status*, die anzeigt, ob der Autonomous Ransomware Protection (ARP) für jedes Volume aktiviert oder deaktiviert ist, wodurch Transparenz über den Ransomware-Schutzstatus aller verwalteten Assets entsteht. Weitere Informationen zu ARP finden sich unter link:https://docs.netapp.com/us-en/ontap/anti-ransomware/["Autonomous Ransomware Protection (ARP) in ONTAP"].
+
+
+
+=== Feedback kann über die Registerkarte „Feedback“ geteilt werden.
+
+Sie können nun von jedem Bildschirm im Keystone Dashboard aus Feedback geben, indem Sie die neue Registerkarte *Feedback* verwenden, die am unteren rechten Bildschirmrand verankert ist. Ein Klick darauf öffnet ein Fenster, in dem Sie Ihre Erfahrungen mitteilen und Kommentare direkt an NetApp senden können.
+
+
+
+=== Verbesserte Benachrichtigungen für Kapazitätsauslastung und Abonnementablauf
+
+Systemgenerierte Monitore bieten jetzt detailliertere Warnmeldungen zur Kapazitätsauslastung und zum Ablauf von Abonnements.
+
+Bei Ablauf des Abonnements werden nun Warnungen bei fünf Schwellenwerten ausgelöst: 180, 90, 60, 30 und 7 Tage vor Ablauf, wobei der Schweregrad mit Annäherung an das Datum von informativ zu kritisch ansteigt.
+
+Bei der Kapazitätsauslastung basiert der Schwellenwert für die Warnung bei Lastspitzen nun auf dem im Abonnement festgelegten Prozentsatz der zugesicherten Lastspitze anstatt auf einem festen Wert von 20 %. Wenn Ihre zugesicherte Lastspitze beispielsweise 40 % beträgt, wird die kritische Warnung bei 140 % der zugesicherten Kapazitätsauslastung ausgelöst.
+
+Weitere Informationen sind unter link:./integrations/monitoring-alert-monitors.html["Anzeigen und Erstellen von Warnmonitoren für Keystone -Abonnements"] zu finden.
+
+
+
 == 25. Mai 2026
 
 Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:

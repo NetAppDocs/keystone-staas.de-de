@@ -14,7 +14,7 @@ summary: Keystone STaaS für Version 3 bietet Speicherkapazität auf vordefinier
 
 
 [role="lead"]
-Keystone STaaS bietet vordefinierte Leistungs-Servicelevel (PSLs) für jeden Speichertyp. Jeder PSL legt die Leistungsziele (IOPS, Durchsatz und Latenz), die unterstützten Protokolle, die Plattform und die Mindestkapazitätsanforderungen fest. Prüfen Sie die verfügbaren PSLs, um den passenden Servicelevel für Ihre Workload auszuwählen und Ihr Abonnement zu planen.
+Keystone STaaS bietet vordefinierte Performance-Servicelevel (PSLs), auch Basis-Performance-Servicelevel genannt, für jeden Speichertyp. Jeder PSL legt die Performance-Ziele (IOPS, Durchsatz und Latenz), die unterstützten Protokolle, die Plattform und die Mindestkapazitätsanforderungen fest. Die verfügbaren PSLs können geprüft werden, um das passende Servicelevel für die jeweilige Workload auszuwählen und das Abonnement zu planen.
 
 Ein Keystone-Abonnement kann mehrere PSLs über einen oder mehrere Speichertypen hinweg umfassen. Jeder PSL verfügt über eine zugesicherte Kapazität, die der Mindestkapazität entspricht, die während der Abonnementlaufzeit für dieses Servicelevel abgerechnet wird.
 
