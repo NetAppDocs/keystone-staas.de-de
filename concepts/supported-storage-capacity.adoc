@@ -18,12 +18,14 @@ Keystone STaaS verwendet verschiedene Kapazitätsbegriffe, um Speicherplatz zu m
 
 
 
+[[logical-capacity]]
 == Logische Kapazität
 
 Dies ist die Speicherkapazität, die zum Speichern von Benutzerdaten erforderlich ist, bevor die vom Speicherarray bereitgestellten Dateneffizienzen angewendet werden.
 
 
 
+[[committed-capacity]]
 == Engagierte Kapazität
 
 Die minimale logische Kapazität, die während des Abonnements monatlich in Rechnung gestellt wird:
@@ -34,12 +36,14 @@ Die minimale logische Kapazität, die während des Abonnements monatlich in Rech
 
 
 
+[[changes-to-committed-capacity]]
 === Änderungen der zugesagt Kapazität
 
 Während eines Abonnements können Sie die zugesicherten Kapazitäten unter bestimmten Bedingungen ändern. Ausführliche Informationen zu den Regeln für Kapazitätserhöhungen und -reduzierungen finden Sie unter link:../concepts/capacity-requirements.html["Kapazitätsanforderungen für Keystone Leistungs-Servicelevel"]. Um eine Änderung zu beantragen, wenden Sie sich an Ihren Keystone Success Manager (KSM) oder link:../concepts/support-services.html["NetApp Support"].
 
 
 
+[[consumed-capacity]]
 == Verbrauchte Kapazität
 
 Die belegte Kapazität bezieht sich auf die Kapazität (in TiB Speicher), die aktuell vom Dienst genutzt wird. Sie wird je nach Datenspeichertyp unterschiedlich berechnet:
@@ -75,6 +79,7 @@ Die belegte Kapazität bezieht sich auf die Kapazität (in TiB Speicher), die ak
 
 
 
+[[burst-capacity]]
 == Burst-Kapazität
 
 Mit dem NetApp Keystone STaaS-Service können Sie zusätzlich zur zugesicherten Kapazität für einen Performance-Servicelevel zusätzliche Kapazität nutzen. Dies wird als Burst-Kapazitätsnutzung bezeichnet.
@@ -88,6 +93,7 @@ Beachten Sie folgende Punkte:
 
 
 
+[[billed-capacity]]
 == Rechnungskapazität
 
 Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (durchschnittliche tägliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]). Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.

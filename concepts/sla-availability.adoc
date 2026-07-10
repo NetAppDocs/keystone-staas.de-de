@@ -18,6 +18,7 @@ Das Verfügbarkeitsziel (Service Level Objective, SLO) sieht eine Verfügbarkeit
 
 
 
+[[metrics]]
 == Metriken
 
 * *Monatliche Verfügbarkeitsquote* = [(Anzahl der verfügbaren Sekunden im Monat - Anzahl der Sekunden, in denen ein PSLI in diesem Monat nicht verfügbar war) / Anzahl der verfügbaren Sekunden im Monat] x 100%
@@ -27,6 +28,7 @@ Das Verfügbarkeitsziel (Service Level Objective, SLO) sieht eine Verfügbarkeit
 
 
 
+[[service-credits]]
 == Service-Gutschriften
 
 
@@ -67,6 +69,7 @@ Falls die Verfügbarkeit von ONTAP Flash-Storage-Arrays für berechtigte Abonnem
 |===
 
 
+[[service-credit-calculation]]
 === Berechnung der Servicegutschrift
 
 Service Credits werden anhand der folgenden Formel ermittelt:
@@ -119,6 +122,7 @@ Laut Berechnung beträgt die Servicegutschrift 5 US-Dollar.
 
 
 
+[[service-credit-request]]
 === Service-Kredit-Anfrage
 
 Wenn ein Verstoß gegen den SLA erkannt wird, eröffnen Sie beim NetApp Keystone Support ein Support-Ticket mit der Priorität 3 (P3).

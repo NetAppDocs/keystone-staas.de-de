@@ -6,24 +6,28 @@ Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
 
 
 
+[[above-burst-capacity-on-the-historical-consumption-chart]]
 === Oberhalb der Spitzenkapazität im historischen Verbrauchsdiagramm
 
-Das Diagramm zum historischen Verbrauch im Tab *Verbrauchstrend* hebt nun Verbrauch hervor, der das Burst-Limit überschreitet. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone-Abonnements anzeigen"].
+Das Diagramm zum historischen Verbrauch im Tab *Verbrauchstrend* hebt nun Verbrauch hervor, der das Burst-Limit überschreitet. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone-staas/integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone-Abonnements anzeigen"].
 
 
 
+[[forecast-for-capacity-usage]]
 === Prognose für die Kapazitätsauslastung
 
-Sie können die *Prognose*-Funktion in der Ansicht *Historischer Verbrauch* auf der Registerkarte *Verbrauchstrend* nutzen, um die Kapazitätsauslastung für die nächsten 120 Tage ab dem aktuellen Datum zu prognostizieren. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-forecast-data["Prognosedaten anzeigen"].
+Sie können die *Prognose*-Funktion in der Ansicht *Historischer Verbrauch* auf der Registerkarte *Verbrauchstrend* nutzen, um die Kapazitätsauslastung für die nächsten 120 Tage ab dem aktuellen Datum zu prognostizieren. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone-staas/integrations/consumption-tab.html#view-forecast-data["Prognosedaten anzeigen"].
 
 
 
+[[tracking-id-in-subscription-export]]
 === Tracking-ID im Abonnement-Export
 
 Der von der Seite *Abonnements* heruntergeladene Abonnementbericht enthält nun die *Tracking ID* in den Leistungsdaten auf Serviceebene sowohl im Excel- als auch im CSV-Format.
 
 
 
+[[subscriptions-page-column-visibility-updates]]
 === Aktualisierungen der Sichtbarkeit von Spalten auf der Abonnementseite
 
 Auf der Seite *Abonnements* ist die Spalte *Keystone-Version* jetzt standardmäßig ausgeblendet, und die Spalte *Verknüpfte Abonnements* wird nur angezeigt, wenn verknüpfte Abonnements verfügbar sind.

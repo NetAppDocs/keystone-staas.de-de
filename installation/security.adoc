@@ -25,6 +25,7 @@ Die Funktionsweise von Keystone Collector basiert auf folgenden Sicherheitsprinz
 
 
 
+[[security-hardening]]
 == Verstärkte Sicherheit
 
 Standardmäßig ist Keystone Collector für die Verwendung sicherheitsgesicherter Konfigurationen konfiguriert. Im Folgenden werden die empfohlenen Sicherheitskonfigurationen aufgeführt:

@@ -47,6 +47,7 @@ NOTE: Der Kapazitätsverbrauch in Keystone-Abonnements wird in TiBs auf den Dash
 
 
 
+[[search-by-keystone-watchlists]]
 == Sie können nach Keystone Watchlisten suchen
 
 Watchlist ist eine Funktion in Digital Advisor. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Watchlist verstehen"^]. Informationen zum Erstellen von Watchlists finden Sie unter  https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Erstellen Sie eine Watchlist"^] .

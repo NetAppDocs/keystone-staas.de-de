@@ -50,12 +50,14 @@ NOTE: Nur die oben aufgeführten Drittanbieterpakete werden auf Keystone Collect
 
 
 
+[[other-requirements]]
 == Andere Anforderungen
 
 Stellen Sie sicher, dass die folgenden allgemeinen Anforderungen erfüllt sind:
 
 
 
+[[networking-requirements]]
 === Netzwerkanforderungen
 
 Die Netzwerkanforderungen von Keystone Collector sind in der folgenden Tabelle aufgeführt.
@@ -223,6 +225,7 @@ NOTE: Der Standardport für MySQL, 3306, ist während einer Neuinstallation von 
 
 
 
+[[url-access]]
 === URL-Zugriff
 
 Keystone Collector benötigt Zugriff auf die folgenden Internet-Hosts:

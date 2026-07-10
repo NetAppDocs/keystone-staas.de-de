@@ -38,6 +38,7 @@ NOTE: *Beschreibung der Ausgabe*: Keystone Collector führt eine Reihe von Conta
 
 
 
+[[view-system-logs]]
 == Systemprotokolle anzeigen
 
 Sie können Keystone Collector-Systemprotokolle anzeigen, um Systeminformationen zu überprüfen und mithilfe dieser Protokolle eine Fehlerbehebung durchzuführen. Keystone Collector verwendet das Logging-System _journald_ des Hosts, und die Systemprotokolle können über das Standard-Dienstprogramm _journalctl_ geprüft werden. Sie können die folgenden wichtigen Dienste nutzen, um die Protokolle zu prüfen:
@@ -96,6 +97,7 @@ Nachfolgend ein Beispiel für einen erfolgreichen Auftrag zur optionalen Erfassu
 ----
 
 
+[[generate-and-collect-support-bundles]]
 == Supportpakete generieren und sammeln
 
 Über die Keystone Collector TUI lassen sich Supportpakete generieren und Serviceanforderungen zur Behebung von Supportproblemen hinzufügen. Gehen Sie folgendermaßen vor:

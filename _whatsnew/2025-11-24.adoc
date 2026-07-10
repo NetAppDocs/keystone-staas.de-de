@@ -6,6 +6,7 @@ Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
 
 
 
+[[tracking-id-for-coverage-gap-subscriptions]]
 === Tracking-ID für Abonnements mit Abdeckungslücke
 
 Im Benachrichtigungsfeld *Vervollständigen Sie Ihre Abdeckung* unter *Überwachung > Alarmmonitore* wird nun für jedes Abonnement neben der Abonnementnummer die Tracking-ID angezeigt.

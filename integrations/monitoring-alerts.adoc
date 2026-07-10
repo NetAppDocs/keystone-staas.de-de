@@ -20,6 +20,7 @@ Informationen zum Konfigurieren benutzerdefinierter Warnungen finden Sie unterli
 
 
 
+[[view-alerts]]
 == Warnungen anzeigen
 
 Um aktive Warnungen anzuzeigen, führen Sie die folgenden Schritte aus:
@@ -44,6 +45,7 @@ TIP: Sie können die Tabelle mit dem Spaltenauswahl-image:column-selector.png["S
 
 
 
+[[manage-alerts]]
 == Verwalten von Warnungen
 
 Auf der Registerkarte *Warnungen* können Sie die folgenden Aktionen ausführen:

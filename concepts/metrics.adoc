@@ -18,6 +18,7 @@ Lernen Sie die wichtigsten Begriffe kennen, die Keystone STaaS zur Messung und B
 
 
 
+[[metrics-measurement]]
 == Kennzahlenmessung
 
 * *Kapazitätsmessung in GiB, TiB und PiB*: Messungen der Datenspeicherkapazität auf Basis von 1024 (1 GiB = 1024^3^ Bytes, 1 TiB = 1024^4^ Bytes und 1 PiB = 1024^5^ Bytes).

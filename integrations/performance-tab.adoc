@@ -42,6 +42,7 @@ Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der
 
 
 
+[[iops]]
 == IOPS
 
 In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Angezeigt werden die Spitzen-IOPS für das Performance-Servicelevel und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/Tib.
@@ -50,6 +51,7 @@ image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
 
 
 
+[[throughput]]
 == Durchsatz
 
 In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Leistungsservicelevel (SLO Max) und der aktuelle Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitraum in MBps/TiB angezeigt.
@@ -58,6 +60,7 @@ image:perf-thr.png["Durchsatzdiagramme"]
 
 
 
+[[latency-ms]]
 == Latenz (ms)
 
 In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume angezeigt, basierend auf dem Datumsbereich der Abfrage. Die maximale Latenz für das Leistungsservicelevel (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.
@@ -72,6 +75,7 @@ image:perf-lat.png["Performance-Diagramme"]
 
 
 
+[[logical-used-tib]]
 == Genutzte logische Nutzung (tib)
 
 In diesem Abschnitt werden die bereitgestellten und die logischen genutzten Kapazitäten des Volumes angezeigt. Die aktuell genutzte logische Kapazität (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimale, maximale und durchschnittliche Nutzung des Zeitbereichs werden in TIBS angezeigt. In diesem Diagramm steht der graue Bereich für die gebuchte Kapazität und das gelbe Diagramm für die logische Nutzung.

@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-logical-usage-tracking-with-a-new-column]]
 === Verbesserte logische Nutzungsverfolgung mit einer neuen Spalte
 
 Eine neue Spalte, Gesamt-Footprint, wurde hinzugefügt, um die Keystone Verbrauchsverfolgung für FabricPool -Volumes zu verbessern:

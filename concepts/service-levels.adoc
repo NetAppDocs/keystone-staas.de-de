@@ -23,6 +23,7 @@ NOTE: Ein AFX-Abonnement ist auf den AFX-Speichertyp beschränkt und bietet derz
 
 
 
+[[performance-service-levels-instances]]
 == Leistungs-Servicelevel-Instanzen
 
 Ein Performance Service Level (PSL) kann mehrere Instanzen, sogenannte Performance Service Level Instances (PSLIs), in Ihrer Umgebung umfassen. Jede PSLI ist ein separates Speichersystem, das diesem Performance Service Level zugeordnet ist, wobei die zugesicherte Kapazität pro PSLI gemessen wird.
@@ -40,6 +41,7 @@ Die grundlegenden Leistungs-Servicelevel für die unterstützten Datenspeicherty
 
 
 
+[[performance-service-levels-for-unified-storage]]
 == Leistungsservicelevel für Unified Storage
 
 |===
@@ -76,6 +78,7 @@ Die grundlegenden Leistungs-Servicelevel für die unterstützten Datenspeicherty
 |===
 
 
+[[performance-service-levels-for-block-optimized-storage]]
 == Leistungsservicelevel für blockoptimierten Speicher
 
 |===
@@ -112,6 +115,7 @@ Die grundlegenden Leistungs-Servicelevel für die unterstützten Datenspeicherty
 |===
 
 
+[[performance-service-levels-for-afx-storage]]
 == Leistungs-Servicelevels für AFX-Speicher
 
 |===
@@ -155,6 +159,7 @@ Die grundlegenden Leistungs-Servicelevel für die unterstützten Datenspeicherty
 ====
 
 
+[[performance-measurement-conditions-for-unified-block-optimized-and-afx-storage]]
 == Leistungsmessbedingungen für einheitlichen, blockoptimierten und AFX-Speicher
 
 Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folgenden Bedingungen ab:
@@ -191,6 +196,7 @@ Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folge
 
 
 
+[[performance-service-levels-for-object-storage]]
 == Leistungsservicelevel für Objektspeicher
 
 |===
@@ -215,6 +221,7 @@ Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folge
 |===
 
 
+[[cloud-storage]]
 == Cloud-Storage
 
 |===

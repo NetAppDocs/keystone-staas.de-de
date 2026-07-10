@@ -18,6 +18,7 @@ Die Mindestkapazitätsanforderungen und schrittweisen Kapazitätserhöhungen fü
 
 
 
+[[minimum-capacity-requirements-for-unified-and-block-optimized-storage]]
 == Mindestkapazitätsanforderungen für einheitlichen und blockoptimierten Speicher
 
 Die pro Abonnement zulässige Mindestkapazität und inkrementelle Kapazität für einheitlichen und blockoptimierten Speicher können Sie den folgenden Tabellen entnehmen:
@@ -70,6 +71,7 @@ Die Mindestkapazität für jedes Leistungsservicelevel ist bei allen Keystone-Ve
 
 
 
+[[minimum-capacity-requirements-for-afx-storage]]
 == Mindestkapazitätsanforderungen für AFX-Speicher
 
 Die Mindestkapazitätsanforderungen für AFX-Speicher finden Sie in der folgenden Tabelle:
@@ -99,6 +101,7 @@ NOTE: Bei AFX-Speichern wird die Kapazität auf Clusterebene über alle Laufwerk
 
 
 
+[[minimum-capacity-requirements-for-object-storage]]
 == Mindestkapazitätsanforderungen für Objekt-Storage
 
 In der folgenden Tabelle werden die Mindestanforderungen an die Kapazität für Objekt-Storage angezeigt:
@@ -125,6 +128,7 @@ Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements
 |===
 
 
+[[minimum-capacity-requirements-for-cloud-services]]
 == Mindestkapazitätsanforderungen für Cloud-Dienste
 
 Die Mindestkapazitätsanforderungen für Cloud-Dienste können Sie der folgenden Tabelle entnehmen:
@@ -151,6 +155,7 @@ Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements
 |===
 
 
+[[capacity-adjustments]]
 == Kapazitätsanpassungen
 
 Teilen Sie geplante Kapazitätsänderungen NetApp rechtzeitig mit, damit eine Planung und Bereitstellung möglich ist. Für alle Kapazitätsanpassungen gelten die folgenden Bedingungen:
@@ -164,6 +169,7 @@ Teilen Sie geplante Kapazitätsänderungen NetApp rechtzeitig mit, damit eine Pl
 
 
 
+[[capacity-reduction]]
 === Senkung der Kapazität
 
 Die garantierte Kapazitätsreduzierung gilt nur für das Zahlungsmodell _Annual in Advance_ und für lokale Keystone-Bereitstellungen. Eine Mindestvertragslaufzeit von 24 Monaten ist erforderlich, um berechtigt zu sein. Cloud-Services und Hybrid-Cloud-Bereitstellungen sind nicht für die Kapazitätsreduzierung berechtigt.
@@ -192,6 +198,7 @@ In diesem Beispiel beträgt die anfänglich zugesagte Kapazität 300 TiB (300.00
 
 
 
+[[quarterly-spend-reallocation]]
 === Vierteljährliche Neuzuweisung von Ausgaben
 
 Die vierteljährliche Budgetumverteilung ist nur für Hybrid-Cloud-Dienste verfügbar. Sie ermöglicht es Ihnen, Ausgaben für lokale Dienste vierteljährlich den Ausgaben für Cloud-Dienste zuzuordnen. Eine Rückumverteilung von Cloud-Diensten zu lokalen Diensten ist nicht zulässig.

@@ -18,6 +18,7 @@ Keystone STaaS bietet ein latenzbasiertes Leistungsziel (Service Level Objective
 
 
 
+[[metrics]]
 == Metriken
 
 * *Verminderte Performance*: Dauer in Minuten pro Vorfall, während derer das Ziel für die^90.^ Perzentil-Latenz nicht erreicht wird
@@ -39,6 +40,7 @@ Keystone STaaS bietet ein latenzbasiertes Leistungsziel (Service Level Objective
 
 
 
+[[service-credits]]
 == Service-Gutschriften
 
 
@@ -58,6 +60,7 @@ NetApp gibt Service-Gutschriften für die beeinträchtigte Performance aus:
 |===
 
 
+[[service-credit-calculation]]
 === Berechnung der Servicegutschrift
 
 Service Credits werden anhand der folgenden Formel ermittelt:
@@ -93,6 +96,7 @@ Basierend auf der Berechnung beträgt die Servicegutschrift 12 US-Dollar.
 
 
 
+[[service-credit-request]]
 === Service-Kredit-Anfrage
 
 Wenn ein Verstoß gegen den SLA erkannt wird, eröffnen Sie beim NetApp Keystone Support ein Support-Ticket mit der Priorität 3 (P3).

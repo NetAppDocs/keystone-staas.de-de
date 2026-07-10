@@ -20,6 +20,7 @@ Weitere Informationen zu Einblicken in Dateninfrastrukturen finden Sie unter lin
 
 
 
+[[about-dii-for-keystone-subscriptions]]
 == Informationen zu DII für Keystone subscriptions
 
 DII ist sowohl für neue als auch für bestehende Abonnements verfügbar. Es kann in ein Keystone-Abonnement als Zusatzoption für die zugesicherte Kapazität integriert werden.
@@ -28,6 +29,7 @@ Wenn DII in eine Keystone-Subscription integriert wird, hat es für jedes Basis-
 
 
 
+[[deployment-of-dii-for-keystone]]
 == Implementierung von DII für Keystone
 
 Kunden können DII für Keystone auf zwei Arten integrieren: Entweder als Teil einer vorhandenen Instanz, die andere Umgebungen überwacht, die nicht zu Keystone gehören, oder als Teil einer neuen Instanz. Es liegt in der Verantwortung des Kunden, DII einzurichten. Wenn Hilfe für die Einrichtung von DII in einer komplexen Umgebung benötigt wird, kann das Account-Team sich an link:https://www.netapp.com/services/["Professionelle NetApp Dienstleistungen"^].
@@ -62,6 +64,7 @@ NOTE: DII bietet zwar umfangreiche Überwachungsfunktionen für die eingesetzte 
 
 
 
+[[view-dii-consumption]]
 == DII consumption anzeigen
 
 Sie können den Verbrauch Ihrer DII-Zusatzdienste über die NetApp Console oder Digital Advisor einsehen. Die Verbrauchsdaten für DII-Performance-Servicelevel (wie DII Extreme, DII Premium und DII Performance) werden zusammen mit Ihren Basis-Performance-Serviceleveln in den Ansichten „Aktueller Verbrauch“ und „Verbrauchstrend“ angezeigt.
@@ -82,6 +85,7 @@ Weitere Informationen zur Anzeige des Verbrauchs finden Sie unter:
 
 
 
+[[billing-and-metering]]
 == Abrechnung und Messung
 
 Im Folgenden werden die Details zur Abrechnung und Messung des DII-Add-on-Service erläutert:
@@ -94,6 +98,7 @@ Im Folgenden werden die Details zur Abrechnung und Messung des DII-Add-on-Servic
 
 
 
+[[support-and-user-access]]
 == Support und Benutzerzugriff
 
 Mitglieder des NetApp-Supportteams können auf die DII-Instanz des Kunden zugreifen, wenn der Kunde die Option *NetApp-Zugriff auf die Dateninfrastrukturumgebung erlauben* aktiviert. Gehen Sie dazu zu *Hilfe > Support*, und aktivieren Sie die Option.

@@ -18,6 +18,7 @@ Das Nachhaltigkeitsziel (SLO) zielt darauf ab, den Stromverbrauch von STaaS-Prod
 
 
 
+[[metrics]]
 == Metriken
 
 * *Watt*: Die von den Speicherarrays bzw. dem AFX-Cluster verbrauchte Leistung, wie vom Überwachungstool gemeldet. Die Referenzwerte für den maximalen Stromverbrauch sind in der link:https://hwu.netapp.com["NetApp Hardware Universe"^] angegeben.
@@ -33,6 +34,7 @@ Weitere Informationen über Storage-Effizienzverhältnisse finden Sie unter http
 
 
 
+[[supported-configurations]]
 === Unterstützte Konfigurationen
 
 Die Nachhaltigkeits-SLO gilt für Standard-Keystone-STaaS-Bestellungen mit den folgenden unterstützten Konfigurationen:
@@ -47,6 +49,7 @@ Die Nachhaltigkeits-SLO gilt für Standard-Keystone-STaaS-Bestellungen mit den f
 
 
 
+[[service-credits]]
 == Service-Gutschriften
 
 
@@ -80,6 +83,7 @@ Wenn der Stromverbrauch während eines Abrechnungszeitraums die maximale Nennlei
 |===
 
 
+[[service-credit-request]]
 === Service-Kredit-Anfrage
 
 Um eine Servicegutschrift zu beantragen, öffnen Sie innerhalb von 7 Tagen nach Ende des Servicemonats ein Support-Ticket der Priorität 3 (P3) bei NetApp Keystone Support und geben Sie die in der unten dargestellten Excel-Tabelle angeforderten Details an:

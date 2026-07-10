@@ -39,30 +39,35 @@ Die folgende Tabelle fasst die Abrechnungsregeln für jeden Volumentyp zusammen.
 |===
 
 
+[[billing-for-cloned-volumes]]
 == Abrechnung für geklonte Volumes
 
 Geklonte Volumes werden wie Standard-Volumes auf demselben Performance-Servicelevel wie das Volume, von dem sie geklont wurden, abgerechnet. Alle geklonten Volumes werden unabhängig von ihrer Größe oder ihrem Verwendungszweck gemessen und berechnet.
 
 
 
+[[billing-for-temporary-volumes]]
 == Abrechnung für temporäre Volumes
 
 Gelegentlich werden durch ONTAP temporäre Volumes (TMP) beim Verschieben von Volumes erstellt. Diese temporären Volumen sind kurzlebig, und der Verbrauch auf diesen Volumen wird nicht für die Abrechnung gemessen.
 
 
 
+[[billing-for-snapmirror-destinations]]
 == Abrechnung für SnapMirror Ziele
 
 Die Preise für SnapMirror-Zielvolumes, egal ob für die Notfallwiederherstellung oder die langfristige Datenaufbewahrung, richten sich nach dem dem Ziel zugewiesenen Leistungsservicelevel. Für den Datenschutz fallen keine zusätzlichen Gebühren an.
 
 
 
+[[billing-for-luns]]
 == Abrechnung für LUNs
 
 Bei LUNs erfolgt die Abrechnung auf Basis der Leistungsservicelevel des Volumes.
 
 
 
+[[system-and-root-volumes]]
 == System- und Root-Volumes
 
 System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Service überwacht, jedoch nicht gezählt oder abgerechnet. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.

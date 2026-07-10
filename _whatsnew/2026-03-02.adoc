@@ -6,18 +6,21 @@ Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
 
 
 
+[[new-columns-in-the-volumes-in-clusters-tab]]
 === Neue Spalten auf der Registerkarte Volumes in clusters
 
-Drei neue Spalten, *Hot data*, *Cold tier (%)* und *Hot tier (%)*, wurden dem Tab *Volumes in clusters* in *Assets* hinzugefügt. Weitere Informationen finden Sie unter link:./integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind"] und link:./integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"].
+Drei neue Spalten, *Hot data*, *Cold tier (%)* und *Hot tier (%)*, wurden dem Tab *Volumes in clusters* in *Assets* hinzugefügt. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone-staas/integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind"] und https://docs.netapp.com/us-en/keystone-staas/integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"].
 
 
 
+[[invoiced-uninvoiced-and-provisional-burst-usage-in-consumption-trend]]
 === Fakturierte, nicht fakturierte und vorläufige Spitzennutzung im Verbrauchstrend
 
-Das Diagramm zur aufgelaufenen Burst-Abrechnung im Tab *Consumption trend* zeigt jetzt abgerechnete, nicht abgerechnete und vorläufige Burst-Nutzung an. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"].
+Das Diagramm zur aufgelaufenen Burst-Abrechnung im Tab *Consumption trend* zeigt jetzt abgerechnete, nicht abgerechnete und vorläufige Burst-Nutzung an. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone-staas/integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"].
 
 
 
+[[enhancements-to-the-monitoring-view]]
 === Verbesserungen an der Überwachungsansicht
 
 Die *Monitoring*-Ansicht umfasst die folgenden Aktualisierungen:
@@ -26,4 +29,4 @@ Die *Monitoring*-Ansicht umfasst die folgenden Aktualisierungen:
 * *Registerkarte Warnmonitore*: Die Spalte *Bedingung* wurde in *Überwachungstyp & Bedingung* umbenannt.
 
 
-Weitere Informationen finden Sie unter link:./integrations/monitoring-alerts.html["Anzeigen und Verwalten von Benachrichtigungen für Keystone -Abonnements"] und link:./integrations/monitoring-alert-monitors.html["Anzeigen und Erstellen von Warnmonitoren für Keystone -Abonnements"].
+Weitere Informationen finden Sie unter  https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["Anzeigen und Verwalten von Benachrichtigungen für Keystone -Abonnements"] und  https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alert-monitors.html["Anzeigen und Erstellen von Warnmonitoren für Keystone -Abonnements"].

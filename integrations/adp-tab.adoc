@@ -18,6 +18,7 @@ Beim Abonnement des Zusatzdienstes für erweiterten Datenschutz lassen sich die 
 
 
 
+[[view-metrocluster-subscriptions-consumption-and-health-status]]
 == Anzeigen des Verbrauchs von MetroCluster-Abonnements und des Gesundheitsstatus
 
 Führen Sie die folgenden Schritte aus:

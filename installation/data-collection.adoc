@@ -18,6 +18,7 @@ Keystone erfasst Konfigurations-, Status- und Nutzungsinformationen von Keystone
 
 
 
+[[ontap-data-collection]]
 == ONTAP Datenerfassung
 
 .<strong>-DatenausDatenausDatenerhebung für ONTAP: Lern-</strong>
@@ -325,6 +326,7 @@ Wenn die Option *Private Daten entfernen* auf Keystone Collector aktiviert ist, 
 ====
 
 
+[[storagegrid-data-collection]]
 == StorageGRID Datenerfassung
 
 .<strong>-DatenausDatenausDatenerhebung für StorageGRID: Lern-</strong>
@@ -372,6 +374,7 @@ Wenn die Option *Private Daten entfernen* auf Keystone Collector aktiviert ist, 
 ====
 
 
+[[telemetry-data-collection]]
 == Telemetriedatenerfassung
 
 .<strong>Von der Keystone Collector VM erfasste Telemetriedaten: Weitere Informationen</strong>

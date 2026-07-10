@@ -18,6 +18,7 @@ Im Keystone Dashboard der NetApp Console können Sie Alarmmonitore für Ihre Key
 
 
 
+[[view-alert-monitors]]
 == Alarmmonitore anzeigen
 
 Um Warnmonitore anzuzeigen, führen Sie die folgenden Schritte aus:
@@ -38,6 +39,7 @@ NOTE: Die Registerkarte *Berichte* ist für Keystone -Abonnements derzeit nicht 
 
 
 
+[[create-and-manage-alert-monitors]]
 == Erstellen und Verwalten von Warnmonitoren
 
 Auf der Registerkarte *Alarmmonitore* können Sie Monitore erstellen, um die Kapazitätsnutzung und das Ablaufen des Abonnements zu verfolgen.  Sie können vorhandene Monitore auch nach Bedarf bearbeiten, duplizieren oder löschen.
@@ -137,6 +139,7 @@ Nach dem Löschen erhalten die mit dem Monitor verbundenen Abonnements keine Ben
 ====
 
 
+[[manage-coverage-gaps]]
 == Deckungslücken schließen
 
 Wenn Handlungsbedarf besteht, erscheint oberhalb der Liste der Alarmmonitore ein ausklappbares Benachrichtigungsfeld mit dem Hinweis *Vervollständigen Sie Ihre Abdeckung*.  Es hilft Ihnen:

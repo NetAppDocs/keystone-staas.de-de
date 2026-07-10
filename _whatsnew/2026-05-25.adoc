@@ -6,6 +6,7 @@ Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
 
 
 
+[[improved-display-of-multiple-updates-on-the-same-day-in-the-subscription-timeline]]
 === Verbesserte Darstellung mehrerer Aktualisierungen am selben Tag in der Abonnement-Timeline
 
-Die Abonnement-Zeitleiste zeigt nun eine Zahl an, wenn mehrere Abonnementaktualisierungen unterschiedlicher Art am selben Tag erfolgen, anstatt separater Symbole. Bewegen Sie den Mauszeiger über die Zahl, um alle Aktualisierungstypen dieses Tages anzuzeigen. Der heruntergeladene Bericht enthält für jede Aktualisierung eine separate Zeile und bietet Ihnen eine vollständige Übersicht aller Änderungen. Weitere Informationen finden Sie unter link:./integrations/subscription-timeline.html["Sehen Sie sich die Zeitleiste Ihrer Keystone-Abonnements an"].
+Die Abonnement-Zeitleiste zeigt nun eine Zahl an, wenn mehrere Abonnementaktualisierungen unterschiedlicher Art am selben Tag erfolgen, anstatt separater Symbole. Bewegen Sie den Mauszeiger über die Zahl, um alle Aktualisierungstypen dieses Tages anzuzeigen. Der heruntergeladene Bericht enthält für jede Aktualisierung eine separate Zeile und bietet Ihnen eine vollständige Übersicht aller Änderungen. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone-staas/integrations/subscription-timeline.html["Sehen Sie sich die Zeitleiste Ihrer Keystone-Abonnements an"].

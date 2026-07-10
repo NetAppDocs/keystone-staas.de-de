@@ -55,6 +55,7 @@ Sie müssen einige Konfigurationsaufgaben ausführen, damit Keystone Collector N
 
 
 
+[[configure-http-proxy-on-keystone-collector]]
 == Konfigurieren Sie HTTP-Proxy auf Keystone Collector
 
 Die Collector-Software unterstützt die Verwendung eines HTTP-Proxys für die Kommunikation mit dem Internet. Diese kann in der TUI konfiguriert werden.
@@ -68,6 +69,7 @@ Die Collector-Software unterstützt die Verwendung eines HTTP-Proxys für die Ko
 
 
 
+[[limit-collection-of-private-data]]
 == Begrenzung der Erhebung privater Daten
 
 Keystone Collector erfasst begrenzte Konfigurations-, Status- und Performance-Informationen, die für die Durchführung der Abonnementmessung erforderlich sind. Es besteht die Möglichkeit, die gesammelten Informationen durch Maskierung sensibler Informationen aus dem hochgeladenen Inhalt weiter einzuschränken. Dies hat keine Auswirkung auf die Berechnung der Abrechnung. Eine Einschränkung der Informationen kann sich jedoch auf die Nutzbarkeit der Berichtsinformationen auswirken, da einige Elemente, die leicht von Benutzern identifiziert werden können, wie z. B. der Volumenname, durch UUIDs ersetzt werden.
@@ -80,6 +82,7 @@ Informationen zu den Elementen, die zur Beschränkung des Zugriffs auf private D
 
 
 
+[[trust-a-custom-root-ca]]
 == Einer benutzerdefinierten Stammzertifizierungsstelle vertrauen
 
 Die Überprüfung von Zertifikaten gegen eine öffentliche Stammzertifizierungsstelle (CA) ist Teil der Sicherheitsfunktionen von Keystone Collector. Falls erforderlich, können Sie Keystone Collector jedoch so konfigurieren, dass eine benutzerdefinierte Stammzertifizierungsstelle vertrauenswürdig ist.
@@ -111,6 +114,7 @@ image:kc-custom-ca.png["TUI-Bildschirm für CA-Anpassung"]
 
 
 
+[[create-performance-service-levels]]
 == Erstellung Von Performance-Service-Leveln
 
 Sie können Performance Service Levels (PSLs) mit dem TUI-Verwaltungsdienstprogramm von Keystone Collector erstellen. Beim Erstellen von PSLs über die TUI werden automatisch die für jedes Leistungsservicelevel festgelegten Standardwerte ausgewählt. Dadurch wird die Wahrscheinlichkeit von Fehlern verringert, die beim manuellen Festlegen dieser Werte beim Erstellen von PSLs über Active IQ Unified Manager auftreten können.

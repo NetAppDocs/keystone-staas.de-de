@@ -25,6 +25,7 @@ Das Keystone-Dashboard ist Ihre Lösung für die effiziente Überwachung, Analys
 
 
 
+[[access-the-keystone-dashboard]]
 == Greifen Sie auf das Keystone-Dashboard zu
 
 Sie können auf das Keystone-Dashboard wie folgt zugreifen:
@@ -35,6 +36,7 @@ Sie können auf das Keystone-Dashboard wie folgt zugreifen:
 
 
 
+[[about-netapp-console]]
 == Informationen zur NetApp Konsole
 
 Auf Keystone kann über die NetApp Konsole zugegriffen werden.
@@ -53,6 +55,7 @@ Beachten Sie Folgendes:
 
 
 
+[[keystone-features-in-netapp-console-and-digital-advisor]]
 == Keystone -Funktionen in NetApp Console und Digital Advisor
 
 Die folgende Tabelle zeigt die Verfügbarkeit von Funktionen in der NetApp Konsole und im Digital Advisor und hilft Ihnen, schnell die richtige Plattform für Ihre Anforderungen zu finden:

@@ -18,6 +18,7 @@ Keystone STaaS unterstützt einheitlichen, blockoptimierten, AFX- und Objektspei
 
 
 
+[[keystone-staas-standard-and-add-on-services]]
 == Keystone STaaS Standard- und Zusatzdienste
 
 Keystone STaaS bietet Standard- und optionale Services für Ihren Storage.
@@ -33,6 +34,7 @@ NOTE: Ein AFX-Abonnement ist eigenständig und kann nicht mit einheitlichem, blo
 
 
 
+[[supported-data-storage-types]]
 == Unterstützte Datenspeichertypen
 
 Keystone STaaS-Dienste für einheitlichen, blockoptimierten, objektorientierten und AFX-Speicher unterstützen zahlreiche Funktionen und Protokolle und sind in der folgenden Tabelle beschrieben:
@@ -96,6 +98,7 @@ Weitere Informationen zu ONTAP One finden Sie unter link:https://docs.netapp.com
 
 
 
+[[services-for-cloud-storage]]
 == Services für Cloud Storage
 
 Keystone STaaS bietet Cloud-Storage-Services. Keystone STaaS unterstützt Cloud Volumes ONTAP-Datenmanagementfunktionen auf Amazon Web Services (AWS), Microsoft Azure und Google Cloud Platform.

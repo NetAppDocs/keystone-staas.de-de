@@ -18,6 +18,7 @@ Sie können detaillierte Informationen zu ONTAP -Clustern und -Knoten sowie Stor
 
 
 
+[[view-keystone-subscription-assets-from-netapp-console]]
 == Anzeigen von Keystone -Abonnement-Assets über die NetApp Konsole
 
 Die Registerkarte *Assets* auf der Seite *Abonnements* zeigt detaillierte Informationen zu Volumes in Clustern, StorageGRID Knoten und ONTAP Knoten, die mit dem Abonnement verknüpft sind, einschließlich verschiedener Details und des Kapazitätsstatus.
@@ -106,6 +107,7 @@ TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selec
 ====
 
 
+[[view-keystone-subscription-assets-from-digital-advisor]]
 == Keystone-Abonnementressourcen von Digital Advisor anzeigen
 
 Die Registerkarte *Assets* des Keystone-Dashboards in Digital Advisor enthält zwei Unterregisterkarten: *ONTAP* und *StorageGRID*. Auf dieser Registerkarte werden basierend auf Ihren Abonnements Informationen auf Cluster-Ebene für ONTAP und Informationen auf Grid-Ebene für StorageGRID gesammelt, wobei die Daten jeweils mit genauen Details getrennt und dargestellt werden. Sie können diese Informationen anzeigen, indem Sie auf die entsprechenden Unterregisterkarten klicken.

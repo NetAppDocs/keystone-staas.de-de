@@ -18,6 +18,7 @@ Die Bereitstellung von Keystone Collector auf VMware vSphere Systemen umfasst da
 
 
 
+[[deploying-the-ova-template]]
 == Bereitstellen der OVA-Vorlage
 
 Führen Sie hierzu folgende Schritte aus:
@@ -59,6 +60,7 @@ Nachdem die VM aus der Vorlage implementiert und eingeschaltet wurde, öffnen Si
 
 
 
+[[initial-system-configuration]]
 == Erstkonfiguration des Systems
 
 Führen Sie diese Schritte auf Ihren VMware vSphere-Systemen für die Erstkonfiguration der über OVA bereitgestellten Keystone Collector-Server durch:

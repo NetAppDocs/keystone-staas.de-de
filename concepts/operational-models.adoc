@@ -27,6 +27,7 @@ NetApp Keystone STaaS bietet zwei Betriebsmodelle für die Servicebereitstellung
 
 
 
+[[roles-and-responsibilities-across-the-service-lifecycle]]
 == Rollen und Verantwortlichkeiten über den gesamten Servicezyklus hinweg
 
 * *Partnerbetriebenes Modell*: Die Aufteilung der Rollen und Verantwortlichkeiten hängt von der Vereinbarung zwischen Ihnen und dem Dienstanbieter oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
