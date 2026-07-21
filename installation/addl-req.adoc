@@ -22,7 +22,7 @@ Bevor Sie mit Keystone beginnen, müssen Sie sicherstellen, dass ONTAP-Cluster u
 --
 .Softwareversionen
 . ONTAP 9.8 oder höher
-. Active IQ Unified Manager (Unified Manager) 9.10 oder höher
+. Active IQ Unified Manager (Unified Manager) neuer als 9.10 und vor 9.16P2
 
 
 .Bevor Sie beginnen
@@ -54,7 +54,7 @@ Erfüllen Sie die folgenden Anforderungen, wenn Sie Nutzungsdaten nur über ONTA
 
 Erfüllen Sie die folgenden Anforderungen, wenn Sie Nutzungsdaten über Active IQ Unified Manager erfassen möchten:
 
-. Vergewissern Sie sich, dass Unified Manager 9.10 oder höher konfiguriert ist. Informationen zum Installieren von Unified Manager finden Sie unter den folgenden Links:
+. Stellen Sie sicher, dass Unified Manager in einer Version später als 9.10 und früher als 9.16P2 konfiguriert ist. Informationen zur Installation von Unified Manager sind unter den folgenden Links verfügbar:
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["Installation von Unified Manager auf VMware vSphere Systemen"^]
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["Installation von Unified Manager auf Linux Systemen"^]

@@ -25,7 +25,7 @@ Um detaillierte Informationen zu Ihren Abonnements anzuzeigen, führen Sie die f
 .Schritte
 . Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
 +
-image:bxp-subscription-list-4.png["Details der Registerkarte „Abonnement“ anzeigen"]
+image:console-subscription.png["Details der Registerkarte „Abonnement“ anzeigen"]
 
 +
 Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Abonnements und nicht aufgelöste Warnungen.
@@ -43,7 +43,18 @@ Aus der Tabelle können Sie folgende Details entnehmen:
 ** *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements.
 ** *Leistungsservicelevel*: Die Anzahl der mit dem Abonnement verknüpften Tarifpläne, wobei jeder Tarifplan einem bestimmten Leistungsservicelevel und einer zugesagten Kapazität entspricht.
 ** *Höchste Kapazität*: Die maximale Kapazität, die innerhalb des Abonnements verbraucht wird.
-** *Tage bis zum Ablauf des Abonnements*: Die Anzahl der verbleibenden Tage bis zum Ablauf des Abonnements.
+** *Tage bis zum Ablauf des Abonnements*: Neben dem Ablaufdatum wird ein Symbol angezeigt, das angibt, wie nah das Abonnement am Ablauf ist und ob es sich automatisch verlängert. Dieser Status ist schreibgeschützt und spiegelt Ihre Vertragsbedingungen wider. Zur Überprüfung der Vertragsdetails siehe link:../integrations/subscription-timeline.html["Sehen Sie sich die Zeitleiste Ihrer Keystone-Abonnements an"].
++
+Wenn die automatische Verlängerung deaktiviert ist, zeigt die Symbolfarbe die Nähe des Ablaufdatums an:
+
++
+*** *Grün*: Mehr als 120 Tage verbleiben bis zum Ablauf.
+*** *Orange*: Bis zum Ablauf verbleiben 91 bis 120 Tage.
+*** *Rot*: Weniger als 90 Tage verbleiben bis zum Ablauf. Um eine Serviceunterbrechung zu vermeiden, sollte ein Verlängerungsantrag beim NetApp Keystone Support eingereicht werden.
+*** *Grau*: Das Abonnement ist abgelaufen.
++
+Bei Abonnements mit aktivierter automatischer Verlängerung wird ein Symbol für die automatische Verlängerung angezeigt, das darauf hinweist, dass sich das Abonnement am Ende der aktuellen Laufzeit automatisch verlängert.
+
 +
 
 NOTE: Sie können auf den Pfeil nach unten image:down-arrow.png["Symbol zum Erweitern"] in der Tabellenüberschrift klicken, um alle Abonnements zu erweitern und die Informationen zu den Performance-Service-Levels für jedes Abonnement gleichzeitig anzuzeigen. Dies zeigt detaillierte Kapazitätsinformationen, einschließlich aktueller Nutzung, zugesicherter Kapazität, bereitgestellter Kapazität, Spitzenkapazität und verfügbarer Kapazität für alle Abonnements. Alternativ können Sie auf den Pfeil nach unten neben der Spalte *Ablaufdatum* in den einzelnen Abonnementzeilen klicken, um diese einzeln zu erweitern.
@@ -51,6 +62,8 @@ NOTE: Sie können auf den Pfeil nach unten image:down-arrow.png["Symbol zum Erwe
 +
 
 TIP: Sie können die in der Tabelle angezeigten Spalten mithilfe der Spaltenauswahl anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.
+
+
 
 
 

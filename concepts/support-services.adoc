@@ -59,7 +59,7 @@ NetApp nutzt die ITOM-Überwachungslösung, um den Zustand Ihrer Produkte und ab
 
 Weitere Informationen zu Keystone Services finden Sie unter:
 
-* link:https://www.netapp.com/us/solutions/keystone/index.aspx["NetApp Keystone"^]
+* link:https://www.netapp.com/keystone/["NetApp Keystone"^]
 * link:https://docs.netapp.com["NetApp Produktdokumentation"^]
 
 

@@ -18,6 +18,22 @@ Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keysto
 
 
 
+[[20-july-2026]]
+== 20. Juli 2026
+
+Neue Verbesserungen im Keystone -Dashboard in der NetApp Console:
+
+
+
+[[view-subscription-expiry-and-auto-renewal-status]]
+=== Ablauf des Abonnements und Status der automatischen Verlängerung
+
+Die Spalte *Tage bis zum Ablauf des Abonnements* in der Abonnementtabelle (*Storage > Keystone > Subscriptions*) zeigt nun neben dem Ablaufdatum ein Symbol an. Die Symbolfarbe gibt die Nähe des Ablaufs an, wenn die automatische Verlängerung deaktiviert ist: grün (>120 Tage), orange (91–120 Tage), rot (<90 Tage) oder grau (abgelaufen). Bei Abonnements mit aktivierter automatischer Verlängerung wird ein Symbol für die automatische Verlängerung angezeigt, das darauf hinweist, dass sich das Abonnement am Ende der aktuellen Laufzeit automatisch verlängert. Der Status ist schreibgeschützt und spiegelt Ihre Vertragsbedingungen wider. Nach dem Öffnen eines Abonnements erscheinen diese Symbole in der Kopfzeile der Abonnementdetails auf den Registerkarten *Aktueller Verbrauch*, *Verbrauchstrend*, *Abonnement-Timeline* und *Assets*, sodass der Ablauf- und Verlängerungsstatus beim Navigieren sichtbar ist.
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Details zu Ihren Keystone-Abonnements anzeigen"].
+
+
+
 [[29-june-2026]]
 == 29. Juni 2026
 
