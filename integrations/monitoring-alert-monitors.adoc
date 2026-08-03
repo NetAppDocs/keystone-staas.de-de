@@ -14,7 +14,7 @@ summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnmonitore fü
 
 
 [role="lead"]
-Im Keystone Dashboard der NetApp Console können Sie Alarmmonitore für Ihre Keystone Abonnements anzeigen und erstellen.  Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Überwachungsindikatoren für Kapazitätsauslastung und Abonnementablauf an. Sie können Monitore erstellen, um Schwellenwerte festzulegen, den Schweregrad von Warnungen auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen.  Sie können Abdeckungslücken schließen, indem Sie nicht abgedeckte Abonnements um Monitore erweitern oder ungenutzte Monitore reaktivieren. Diese Funktion ist in Digital Advisor nicht verfügbar.
+Im Keystone-Dashboard der NetApp Console können Sie Alarmmonitore für Ihre Keystone-Abonnements anzeigen und erstellen. Das Dashboard zeigt sowohl systemgenerierte als auch benutzerdefinierte Monitore für Kapazitätsauslastung und Abonnementablauf. Systemgenerierte Monitore werden automatisch für alle Abonnements erstellt und verfügen über vordefinierte Schwellenwerte. Es besteht außerdem die Möglichkeit, benutzerdefinierte Monitore zu erstellen, um individuelle Schwellenwerte festzulegen, den Schweregrad der Warnung auszuwählen und E-Mail-Empfänger für Benachrichtigungen hinzuzufügen. Abdeckungslücken lassen sich schließen, indem Monitore zu nicht abgedeckten Abonnements hinzugefügt oder ungenutzte Monitore entfernt werden. Diese Funktion ist im Digital Advisor nicht verfügbar.
 
 
 
@@ -32,8 +32,16 @@ image:monitoring-alert-monitors-default-view-1.png["Ein Screenshot der Warnmonit
 Sie können eine Liste der Alarmmonitore Ihrer Keystone-Abonnements einsehen, einschließlich Monitornamen, Überwachungsbedingungen, die Benachrichtigungen auslösen, Schweregrad, Abonnementnummern, Leistungsservicelevel und Status. Sie können die Spalte *Erstellt von* überprüfen, um zu sehen, ob die Alarmmonitore systemgeneriert oder benutzerdefiniert sind.
 
 +
+Keystone erstellt automatisch systemgenerierte Monitore für alle Ihre Abonnements. Diese Monitore können nicht gelöscht werden. Die Bearbeitung ist auf die Änderung der Abonnementnummern und der Performance-Servicelevel für Kapazitätsauslastungsmonitore sowie auf die Änderung der Abonnementnummern für Abonnementablaufmonitore beschränkt.
+
++
+** *Abonnementablaufüberwachung*: Warnmeldungen werden bei fünf Schwellenwerten vor dem Ablaufdatum des Abonnements ausgelöst (180, 90, 60, 30 und 7 Tage). Der Schweregrad steigt von informativ zu kritisch, je näher das Ablaufdatum rückt.
+** *Kapazitätsauslastungsüberwachung*: Warnmeldungen basieren auf dem zugesicherten Spitzenprozentsatz Ihres Abonnements und nicht auf einem festen Wert. Wenn beispielsweise Ihr zugesicherter Spitzenwert 40 % beträgt, wird die kritische Warnmeldung ausgelöst, sobald die Kapazitätsauslastung 140 % der zugesicherten Kapazität erreicht.
++
 
 NOTE: Die Registerkarte *Berichte* ist für Keystone -Abonnements derzeit nicht verfügbar.
+
+
 
 
 
