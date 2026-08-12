@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Im Tab *Verbrauchstrend* in Digital Advisor zeigt das Verbrauchstrend-Diagramm keine Verbrauchsdaten für den aktuellen Tag an, sondern nur die Daten bis zum Vortag.
+ a| 
+Fest
+ a| 
+10. August 2026
+
+
+
+ a| 
 Abonnements werden im Digital Advisor Dashboard fälschlicherweise als *Über dem Burst-Limit* angezeigt, obwohl der Verbrauch innerhalb der zulässigen Burst-Limits liegt.
  a| 
 Fest
