@@ -4,7 +4,7 @@ permalink: installation/monitor-health.html
 keywords: monitoring system health 
 summary: Um sicherzustellen, dass Daten verfügbar sind, können Sie den Zustand des Keystone Collectors mithilfe eines beliebigen Überwachungssystems überwachen, das HTTP-Anforderungen unterstützt. 
 ---
-= Überwachen Sie den Systemzustand von Keystone Collector
+= Gesundheitsüberwachung für Keystone Collector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

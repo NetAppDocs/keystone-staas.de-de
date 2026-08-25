@@ -80,4 +80,4 @@ Unterstützung
 
 | image:check.png["Aktivieren Sie das Kontrollkästchen"] | Keine 
 |===
-Weitere Informationen zur Bereitstellung finden Sie unter link:../concepts/infra.html["Keystone Infrastruktur"] Und link:..//concepts/components.html["Komponenten für die Implementierung"].
+Weitere Informationen zur Bereitstellung sind unter link:../concepts/infra.html["Informationen zur Keystone Infrastruktur"] und link:..//concepts/components.html["Für Keystone -Dienste erforderliche Komponenten"] zu finden.

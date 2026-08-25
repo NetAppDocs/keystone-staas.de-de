@@ -4,7 +4,7 @@ permalink: concepts/metrics.html
 keywords: metrics, GiB, IOPS, latency, durability, v3, version 3 
 summary: Der NetApp Keystone STaaS Service verwendet mehrere Begriffe zur Messung von Kennzahlen. Möglicherweise möchten Sie mehr über diese Bedingungen erfahren, wenn Sie Keystone für Version 3 des Dienstes verwenden. 
 ---
-= Speichermetriken und Definitionen in Keystone verstehen
+= Speichermetriken und Definitionen in Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

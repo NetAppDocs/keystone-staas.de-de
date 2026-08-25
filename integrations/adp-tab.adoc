@@ -79,7 +79,7 @@ TIP: Sie können das Cluster B-Abonnement (mirror) aus der ADP-Topologie auswäh
 
 +
 
-TIP: Wenn der Synchronisierungsstatus „nicht synchronisiert“ oder der Verbindungsstatus „beeinträchtigt“ angezeigt wird, lesen Sie link:../concepts/support-services.html["Keystone hilft Ihnen dabei"] zur Fehlerbehebung des Problems.
+TIP: Wenn der Synchronisierungsstatus „nicht synchronisiert“ oder der Verbindungsstatus „beeinträchtigt“ angezeigt wird, lesen Sie link:../concepts/support-services.html["Support-Services für Keystone"] zur Fehlerbehebung des Problems.
 
 ** Zeigen Sie historische Verbrauchstrends für den primären oder den Spiegelstandort an.
 +

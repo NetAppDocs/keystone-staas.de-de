@@ -95,5 +95,5 @@ Beachten Sie die folgenden Bedingungen für Anträge auf Servicegutschrift:
 * NetApp bestimmt, ob eine Verletzung des Servicelevels vorliegt.
 * Sie müssen die angeforderten zusätzlichen Informationen bereitstellen, wie von NetApp angefordert, einschließlich Ihrer Stromverbrauchsdaten und der Messmethode.
 * Die Gutschriften für Serviceleistungen werden ausschließlich auf Basis der zugesagten Kapazität berechnet.
-* Servicegutschriften können nur mit der Rechnung des Folgemonats verrechnet werden. Sie gelten nicht für abgelaufene Keystone-Abonnements. Um den NetApp Support zu kontaktieren und das für eine Servicegutschriftanfrage erforderliche Support-Ticket zu eröffnen, siehe link:../concepts/support-services.html["Keystone hilft Ihnen dabei"].
+* Servicegutschriften können nur mit der Rechnung des Folgemonats verrechnet werden. Sie gelten nicht für abgelaufene Keystone-Abonnements. Um den NetApp Support zu kontaktieren und das für eine Servicegutschriftanfrage erforderliche Support-Ticket zu eröffnen, siehe link:../concepts/support-services.html["Support-Services für Keystone"].
 
