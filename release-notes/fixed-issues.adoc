@@ -22,6 +22,15 @@ Probleme, die in früheren Versionen der NetApp Keystone STaaS Services gefunden
 
 
  a| 
+Im Tab *Consumption Trend* in Digital Advisor zeigt das Diagramm der in Rechnung gestellten aufgelaufenen Burst unterschiedliche Werte für denselben Abrechnungszeitraum an, wenn verschiedene Datumsbereiche ausgewählt werden.
+ a| 
+Fest
+ a| 
+31. August 2026
+
+
+
+ a| 
 Im Tab *Verbrauchstrend* in Digital Advisor zeigt das Verbrauchstrend-Diagramm keine Verbrauchsdaten für den aktuellen Tag an, sondern nur die Daten bis zum Vortag.
  a| 
 Fest
