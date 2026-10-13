@@ -36,6 +36,7 @@ Die Seite *Übersicht* bietet folgende Einblicke:
 * link:../integrations/dashboard-overview.html["Erfahren Sie mehr über das Keystone-Dashboard"]
 * link:../integrations/dashboard-access.html["Erste Schritte mit dem Keystone-Dashboard"]
 * link:..//integrations/keystone-aiq.html["Keystone-Dashboard im Digital Advisor"]
+* link:../integrations/health-assessment-reports.html["Systemstatusberichte erstellen und planen"]
 * link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
 * link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
 * link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets-tab.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, bluexp, volumes in clusters, NetApp Console, Console 
-summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und -Nodes sowie zu StorageGRID-Grids, -Sites und -Nodes anzeigen, die von Ihren Keystone Abonnements gemanagt werden. 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, bluexp, volumes in clusters, clusters and aggregates, NetApp Console, Console 
+summary: Auf der Registerkarte „Assets“ finden Sie Details zu ONTAP Volumes, Clustern, Aggregaten und Knoten sowie zu StorageGRID Grids, Sites und Knoten, die von Ihren Keystone Abonnements verwaltet werden. 
 ---
 = Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind
 :hardbreaks:
@@ -14,19 +14,19 @@ summary: Auf der Registerkarte Assets können Sie Details zu ONTAP-Clustern und 
 
 
 [role="lead"]
-Sie können detaillierte Informationen zu ONTAP -Clustern und -Knoten sowie StorageGRID -Grids, -Sites und -Knoten anzeigen, die von einem einzigen Keystone Abonnement verwaltet werden. Sie können auf diese Abonnement-Assets im Keystone -Dashboard über die NetApp Konsole oder Digital Advisor zugreifen.
+Sie können detaillierte Informationen zu ONTAP Volumes, Clustern, Aggregaten und Knoten sowie zu StorageGRID Grids, Sites und Knoten anzeigen, die von einem einzelnen Keystone Abonnement verwaltet werden. Sie können auf diese Abonnementressourcen im Keystone Dashboard über die NetApp Console oder Digital Advisor zugreifen.
 
 
 
 [[view-keystone-subscription-assets-from-netapp-console]]
 == Anzeigen von Keystone -Abonnement-Assets über die NetApp Konsole
 
-Die Registerkarte *Assets* auf der Seite *Abonnements* zeigt detaillierte Informationen zu Volumes in Clustern, StorageGRID Knoten und ONTAP Knoten, die mit dem Abonnement verknüpft sind, einschließlich verschiedener Details und des Kapazitätsstatus.
+Die Registerkarte *Assets* auf der Seite *Subscriptions* zeigt detaillierte Informationen zu ONTAP Volumes, Clustern, Aggregaten und Knoten sowie zu den mit dem Abonnement verknüpften StorageGRID Knoten, einschließlich des Kapazitätsstatus.
 
 [NOTE]
 ====
 * Diese Ansicht ist auf jeweils ein Keystone Abonnement beschränkt. Sie können auch die Vermögenswerte anderer Abonnements anzeigen, indem Sie aus der Dropdown-Liste *Tracking-ID* auswählen. Über das Keystone -Dashboard in der NetApp -Konsole können Sie Assets über mehrere Keystone Abonnements hinweg anzeigen. Weitere Informationen finden Sie unterlink:../integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"] .
-* Die Optionen im Dropdown-Menü *Ansicht* hängen von Ihren Keystone -Abonnementplattformen ab. *Volumes in clusters* und *Nodes in clusters* sind für ONTAP verfügbar. Bei StorageGRID ist das Dropdown-Menü *View* nicht verfügbar; die Tabelle *Nodes in grids* wird automatisch angezeigt. Wenn Ihr Abonnement beide Plattformen umfasst, stehen Ihnen alle drei Optionen zur Verfügung.
+* Die Optionen im Dropdown-Menü „Ansicht“ hängen von Ihren Keystone Abonnementplattformen ab. „Volumes in Clustern“ und „Knoten in Clustern“ sind für ONTAP verfügbar. „Cluster und Aggregate“ ist nur für ONTAP verfügbar, wenn Sie ein Keystone STaaS Abonnement mit Abrechnung nach physischer Kapazität haben. Für StorageGRID ist das Dropdown-Menü „Ansicht“ nicht verfügbar, und die Tabelle „Knoten in Grids“ wird automatisch angezeigt. Wenn Ihr Abonnement beide Plattformen umfasst, sind alle Ansichten im Dropdown-Menü „Ansicht“ verfügbar.
 
 
 ====
@@ -73,6 +73,35 @@ image:bxp-nodes-cluster-single-subscription.png["Ein Screenshot von Knoten in Cl
 
 +
 Sie sehen ONTAP-Clusterdetails, aufgeschlüsselt nach Speichereffizienzeinstellungen, Plattformtyp und Kapazitätsdetails.
+
++
+
+TIP: Sie können die Tabelle mit dem Spaltenselektor anpassen image:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Tabellendaten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
+
+
+--
+.Cluster und Aggregate
+--
+
+NOTE: Die Ansicht *Cluster und Aggregate* ist nur für ein Keystone STaaS-Abonnement verfügbar, das auf Basis der physischen Kapazität abgerechnet wird.
+
+.Schritte
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
+. Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* der Tabelle aus.
++
+Das System öffnet den Reiter *Stromverbrauch*.
+
+. Wählen Sie die Registerkarte *Assets*.
+. Die Auswahl erfolgt im Dropdown-Menü *Ansicht* über *Cluster und Aggregate*.
++
+image:console-clusters-aggregates-single-subscription.png["Details zur Cluster- und Aggregatkapazität für ein Keystone-Abonnement"]
+
++
+Sie sehen die physisch genutzte Kapazität, die physisch nutzbare Kapazität, die physisch verfügbare Kapazität, das Storage Effizienzverhältnis, die logische effektive Kapazität, die genutzte logische Kapazität und die ONTAP Version. Für ein Cluster lassen sich die entsprechenden Details zu seinen Aggregaten durch Erweitern anzeigen.
+
++
+Diese Ansicht hilft Ihnen, Cluster und Aggregate zu identifizieren, die maßgeblich für die Nutzung und den abgerechneten Verbrauch sind, die verfügbare Kapazität zu vergleichen und die Infrastrukturnutzung mit dem Abonnementverbrauch in Beziehung zu setzen.
 
 +
 

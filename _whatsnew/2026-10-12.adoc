@@ -1,0 +1,19 @@
+= Generierung von Systemstatus Erkenntnissen für Keystone Abonnements
+:allow-uri-read: 
+
+
+Diese Keystone STaaS-Version enthält die folgenden Aktualisierungen im Keystone Dashboard in der NetApp Console.
+
+
+
+[[generate-health-insights-for-keystone-subscriptions]]
+=== Generierung von Systemstatus Erkenntnissen für Keystone Abonnements
+
+Sie können PowerPoint Berichte bei Bedarf herunterladen oder eine einmalige, wöchentliche, monatliche oder vierteljährliche Delivery unter *Storage > Keystone > Monitoring > Health reports* in der NetApp Console planen. Jeder Bericht kombiniert die Abonnementnutzung, den Systemstatus, Risiken und Schwachstellen über ausgewählte Abonnements hinweg und unterstützt Sie dabei, Probleme zu identifizieren und umsetzbare Erkenntnisse mit Empfängern zu teilen. Weitere Informationen enthält  https://docs.netapp.com/us-en/keystone-staas/integrations/health-assessment-reports.html["Erstellung und Planung von Systemstatusberichten für Keystone Abonnements"].
+
+
+
+[[view-ontap-cluster-and-aggregate-capacity]]
+=== Anzeige der ONTAP Cluster- und Aggregatkapazität
+
+Sie können die physische Kapazität, die logische Kapazität und die Storage-Effizienz für ONTAP Cluster und deren Aggregate unter *Assets > Cluster und Aggregate* einsehen. Dies ist nur für Keystone STaaS Abonnements verfügbar, die auf Grundlage der physischen Kapazität abgerechnet werden. Weitere Informationen sind unter https://docs.netapp.com/us-en/keystone-staas/integrations/assets.html["Anzeigen von Assets in Ihren Keystone-Abonnements"] und https://docs.netapp.com/us-en/keystone-staas/integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind"] verfügbar.

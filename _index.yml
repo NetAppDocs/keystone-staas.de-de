@@ -33,6 +33,8 @@ indexpage:
       url: "/integrations/subscriptions-tab.html"
     - title: Assets anzeigen
       url: "/integrations/assets-tab.html"
+    - title: Systemstatusberichte erstellen und planen
+      url: "/integrations/health-assessment-reports.html"
     - title: Durchsuchen Sie Daten und erstellen Sie Berichte
       url: "/integrations/options.html"
   - title: Unterstützte Services in Keystone

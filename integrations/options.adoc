@@ -36,6 +36,15 @@ Die Details werden im CSV-Format generiert, das Sie für die zukünftige Verwend
 
 
 
+[[generate-health-reports-from-netapp-console]]
+== Erstellung von Systemstatusberichten aus der NetApp Console
+
+Über die NetApp Console können Sie Systemstatusberichte für ein oder mehrere Abonnements erstellen oder planen. Diese PowerPoint Berichte fassen Abonnementnutzung, betrieblichen Systemstatus, Risiken und Schwachstellen zusammen. Digital Advisor unterstützt weder die Erstellung noch die Planung von Berichten zur Bewertung des Systemstatus.
+
+Weitere Informationen sind unter link:../integrations/health-assessment-reports.html["Erstellung und Planung von Systemstatusberichten für Keystone Abonnements"] zu finden.
+
+
+
 [[generate-consolidated-report-from-digital-advisor]]
 == Konsolidierten Bericht aus Digital Advisor generieren
 

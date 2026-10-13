@@ -228,6 +228,7 @@ Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm
 * link:../integrations/dashboard-overview.html["Das Keystone-Dashboard verstehen"]
 * link:../integrations/subscriptions-tab.html["Details zu Ihren Keystone-Abonnements anzeigen"]
 * link:../integrations/current-usage-tab.html["Sehen Sie sich den aktuellen Verbrauch Ihrer Keystone-Abonnements an"]
+* link:../integrations/health-assessment-reports.html["Systemstatusberichte erstellen und planen"]
 * link:../integrations/subscription-timeline.html["Sehen Sie sich die Zeitleiste Ihrer Keystone-Abonnements an"]
 * link:../integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone-Abonnement verknüpft sind"]
 * link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]

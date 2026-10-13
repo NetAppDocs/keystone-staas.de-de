@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: integrations/health-assessment-reports.html 
+keywords: keystone-aiq, keystone reports, health assessment report, health reports, keystone dashboard, monitoring, console 
+summary: In der NetApp Console können Keystone Berichte zur Systemstatusbewertung verwendet werden, um Abonnementdetails anzuzeigen, den Systemstatus zu bewerten, Nutzungstrends zu analysieren und Risiken und Schwachstellen in einem oder mehreren Abonnements zu identifizieren. Berichte können bei Bedarf erstellt oder geplant werden, um Stakeholdern präzise Betriebs- und Compliance-Informationen bereitzustellen. 
+---
+= Erstellung und Planung von Systemstatusberichten für Keystone Abonnements
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Keystone Dashboard in der NetApp Console lassen sich Systemstatusberichte für ein oder mehrere Keystone Abonnements erstellen oder planen. Diese Berichte bieten einen konsolidierten Überblick über Abonnementnutzung, operativen Systemstatus, Risiken und Schwachstellen, die mit den vorgesehenen Empfängern geteilt werden können. Diese Funktion ist in Digital Advisor nicht verfügbar.
+
+.Über diese Aufgabe
+Systemstatusberichte bieten Ihnen einen Überblick über die Abonnementnutzung, den Systemstatus und identifizierte Risiken in den von Ihnen ausgewählten Abonnements. Auf der Seite *New report* dient der Bereich *Report configuration* zum Definieren des Umfangs und der Optionen für den Bericht. Im Vorschaubereich lassen sich die Reihenfolge der Folien und das Layout überprüfen, bevor der Bericht generiert oder geplant wird. Die Vorschau zeigt nur die Berichtsstruktur und keine tatsächlichen Abonnementdaten.
+
+Die folgenden Schritte dienen dazu, einen Bericht zum sofortigen Download zu erstellen oder einen einmaligen oder wiederkehrenden Bericht zur späteren Delivery zu planen:
+
+.Schritte
+. Im linken Navigationsmenü der Console erfolgt die Auswahl von *Speicher > Keystone > Überwachung > Berichte*.
+. *Neuer Bericht* auswählen.
+. Im *Berichtskonfigurationsbereich* erfolgt die Eingabe eines Namens in das Feld *Berichtsname*.
+. Die Auswahl eines Zeitraums erfolgt in der Dropdown-Liste *Time range*.
++
+Zur Auswahl stehen ein voreingestellter Zeitraum, z. B. *Letzte 60 Tage*, oder *Benutzerdefiniert* für die Eingabe eigener Datumsangaben. Der ausgewählte Zeitraum bestimmt die historischen Daten, die im Abschnitt *Verbrauchstrend* und in anderen zeitbasierten Abschnitten angezeigt werden. Bei Auswahl von *Benutzerdefiniert* ist keine Terminplanung für den Bericht möglich.
+
++
+image:../media/schedule-report.png["Konfiguration des Systemstatusberichts, die anzeigt, dass die Terminplanung deaktiviert ist, wenn ein benutzerdefinierter Datumsbereich ausgewählt wird"]
+
+. Im Dropdown-Menü *Abonnements* können Sie ein oder mehrere Abonnements auswählen.
++
+
+NOTE: NetApp Partner können Abonnements für eines oder mehrere ihrer verwalteten Keystone Kundenkonten auswählen.
+
+. Unter *Berichtsabschnitte* können die Abschnitte ausgewählt werden, die einbezogen werden sollen.
++
+Jeder von Ihnen ausgewählte Abschnitt erscheint im Vorschaubereich und wird in den generierten Bericht aufgenommen. Beispielsweise lässt sich eine Zusammenfassung Ihrer Abonnements, der aktuellen Kapazitätsauslastung, von Verbrauchstrends, der physischen Kapazität, des Systemstatus sowie von Risiken und Schwachstellen einfügen. Für *Verbrauchstrend* lässt sich ein Diagramm des bisherigen Verbrauchs und optional eine Prognose des zukünftigen Verbrauchs einfügen.
+
+. Auswahl eines Präsentationsthemas.
+. Die im Vorschaubereich angezeigten Abschnitte sollten mit Ihren Auswahlen übereinstimmen.
+. Hier können Sie auswählen, wie Sie den Bericht erstellen möchten.
++
+** *Bericht generieren*
++
+Über *Bericht generieren* lässt sich der Bericht sofort herunterladen.
+
++
+Nach dem Übermitteln des Berichts zur Generierung kehren Sie zur Registerkarte *Berichte* zurück. Der Bericht erscheint mit dem Status *Wird ausgeführt*.
+
++
+Sobald sich der Status zu *Generiert* ändert, erfolgt die Auswahl des Symbols mit den drei Punkten am Ende der Berichtszeile und anschließend von *Herunterladen*.
+
+** *Berichtszeitplan*
++
+Zum Erstellen eines einmaligen oder wiederkehrenden Berichts wird *Planen* ausgewählt; anschließend sind die folgenden Schritte auszuführen:
+
++
+... Zur Auswahl stehen die Häufigkeiten: *Einmalig*, *Wöchentlich*, *Monatlich* oder *Vierteljährlich*.
+... *Startdatum* auswählen.
++
+image:../media/schedule-dialog.png["Dialogfeld für den Berichtszeitplan mit ausgewählter wöchentlicher Frequenz, leeren Start- und Enddatumsfeldern, einem Empfängerfeld und ausgewähltem PPT Format"]
+
++
+Das Startdatum bestimmt, wann der Bericht erstmals ausgeführt wird. Bei wiederkehrenden Intervallen wird der Bericht gemäß dem ausgewählten wöchentlichen, monatlichen oder vierteljährlichen Zeitplan erneut ausgeführt.
+
+... Optional ist die Auswahl eines *Enddatums* möglich.
++
+Wenn Sie kein Enddatum auswählen, läuft der Zeitplan so lange weiter, bis Sie ihn ändern.
+
+... *Bericht planen* auswählen.
++
+Der Zeitplan wurde erstellt, und der Bericht erscheint auf der Registerkarte *Berichte* mit dem Ausführungstyp *Geplanter Lauf*. Mithilfe der Spalten *Letzter Lauf*, *Nächster Lauf* und *Status* lässt sich jede Ausführung verfolgen.
+
++
+Die Bearbeitung eines Wochen-, Monats- oder Quartalsplans erfolgt über das Symbol mit den drei Punkten am Ende der Berichtszeile und anschließend über *Plan bearbeiten*. Dies ist unabhängig davon möglich, ob der Status *Scheduled* oder *Generated* lautet. Ein *One time* Plan kann nach der Generierung des Berichts nicht bearbeitet werden.
+
++
+Sobald sich der Status in *Generated* geändert hat, wird das Symbol mit den drei Punkten neben dem Bericht und anschließend *Download* ausgewählt.
+
+
+
+
+
+
+
+.Ergebnis
+Generierte Berichte werden als PowerPoint Präsentationen heruntergeladen. Über das Menü mit den drei Punkten können Sie *Erneut generieren* auswählen, um einen neuen Bericht mit derselben Konfiguration zu erstellen.
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-access.html["Erste Schritte mit dem Keystone-Dashboard"]
+* link:../integrations/subscriptions-tab.html["Details zu Ihren Keystone-Abonnements anzeigen"]
+* link:../integrations/current-usage-tab.html["Aktuelle Nutzung anzeigen"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/assets-tab.html["Assets anzeigen, die mit Ihren Abonnements verknüpft sind"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen"]
+* link:../integrations/monitoring-alert-monitors.html["Anzeigen und Erstellen von Warnmonitoren"]
+
