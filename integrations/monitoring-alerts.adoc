@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: integrations/monitoring-alerts.html 
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, console 
-summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnungen für Ihre Keystone Abonnements anzuzeigen und zu verwalten. 
+summary: Auf der Registerkarte „Überwachung“ können Sie Warnmeldungen für Ihre Keystone-Abonnements anzeigen und managen. 
 ---
 = Anzeigen und Verwalten von Benachrichtigungen für Keystone -Abonnements
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concepts/overview.html 
-keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
-summary: Keystone ist ein wachstumbasiertes abonnementbasiertes Servicemodell für Unternehmen, die lieber auf Betriebskosten basierende Nutzungsmodelle als Vorabinvestitionen oder Leasing nutzen möchten. 
+keywords: learn about keystone, keystone introduction, keystone platform, keystone STaaS, storage as a service, subscription, overview 
+summary: NetApp Keystone ist die Storage-as-a-Service-Plattform und Marke von NetApp. Keystone STaaS ist das primäre Abonnementangebot für Datei-, Block- und Objekt-Storage-Services. 
 ---
 = Weitere Informationen zu NetApp Keystone
 :hardbreaks:
@@ -14,34 +14,47 @@ summary: Keystone ist ein wachstumbasiertes abonnementbasiertes Servicemodell f�
 
 
 [role="lead"]
-NetApp Keystone ist ein nutzungsbasiertes Servicemodell auf Abonnementbasis, das Unternehmen, die zur Erfüllung ihrer Anforderungen an Datenspeicherung und -sicherung Verbrauchsmodelle für die Betriebskosten gegenüber Vorabinvestitionen oder Leasing bevorzugen, ein nahtloses Hybrid-Cloud-Erlebnis bietet.
-
-Mit Keystone profitieren Sie von:
-
-* *Kosteneffizienz*: Zahlen Sie nur für den Speicherplatz, den Sie benötigen, und haben Sie die Flexibilität, zusätzliche Kapazitäten zu nutzen.
-* *Kapitaleffizienz*: Greifen Sie ohne Vorabinvestitionen auf Speicher auf Unternehmensebene zu.
-* *Skalierbarkeit*: Skalieren Sie Ihre Speicherkapazität problemlos, wenn Ihr Unternehmen wächst.
-* *Anpassung*: Passen Sie Ihre Speicherpläne an und wechseln Sie nach Bedarf in die Cloud, um Ihre Gesamtkosten zu optimieren.
-* *Cloud-Integration*: Kombinieren Sie lokale und Cloud-Dienste in einem Abonnement.
-* *Sicherheit*: Schützen Sie Ihre Daten mit erweiterten Sicherheitsmaßnahmen und garantierter Wiederherstellung nach Bedrohungen.
-
-
-image:keystone-benefit-1.png["Keystone-Vorteile"]
-
-Keystone bietet Speicherkapazität mit vordefinierten Leistungsserviceleveln für Datei-, Block- und Objektspeichertypen. Dieser Speicher kann vor Ort bereitgestellt und von NetApp, einem Partner oder dem Kunden betrieben werden. Keystone kann in Verbindung mit NetApp Cloud-Services verwendet werden, z. B. Cloud Volumes ONTAP, die in einer Hyperscaler-Umgebung Ihrer Wahl implementiert werden können.
+NetApp Keystone ist eine Plattform, die Keystone Storage-as-a-Service (STaaS) bereitstellt, ein Pay-as-you-go-Abonnementangebot für Unternehmen, die Betriebsausgaben gegenüber Vorabinvestitionen oder Leasing bevorzugen.
 
 
 
-[[keystone-storage-as-a-service-staas]]
-== Keystone Storage-as-a-Service (STaaS)
+[[keystone-staas-offering-and-services]]
+== Keystone STaaS Angebot und Services
 
-Mit Storage-als-Service-Angeboten (STaaS) wird ein Public-Cloud-ähnliches Modell für die Beschaffung, Implementierung und das Management von Storage-Infrastruktur bereitgestellt. Während viele Unternehmen noch an ihrer Strategie für die Hybrid Cloud arbeiten, bietet Keystone STaaS die Flexibilität, mit lokalen Diensten zu beginnen und zu gegebener Zeit in die Cloud zu wechseln. So können Sie Ihre Verpflichtungen über verschiedene Bereitstellungsmodelle hinweg erfüllen und Ihre Ausgaben nach Bedarf umverteilen, ohne Ihre monatliche Rechnung zu erhöhen.
+Keystone STaaS bietet ein Public-Cloud-ähnliches Modell für die Beschaffung, Bereitstellung und Verwaltung von Storage-Infrastruktur. Mit einem Abonnement von Keystone STaaS wählen Sie die Storage-Typen und Performance-Service-Levels aus, die Ihren Anforderungen entsprechen.
+
+Keystone STaaS ist das Angebot, das definiert, wie Storage-Funktionen bereitgestellt und genutzt werden. Services sind die mit diesem Angebot verfügbaren Funktionen, Standard-Services sind im Basisabonnement enthalten, während Add-on Services erworben werden können, wenn zusätzliche Funktionen benötigt werden. Beispielsweise ist Advanced Data Protection (ADP) ein Add-on Service, der für unterstützte Konfigurationen eine synchron Standort-zu-Standort-Spiegelung bereitstellt.
+
+Diese Unterscheidung hilft Ihnen zu verstehen, welche Funktionen in Ihrem Abonnement enthalten sind und für welche ein zusätzlicher Kauf erforderlich ist. Informationen zu Standard- und Add-on Services finden Sie unter link:../concepts/supported-storage-services.html["Keystone STaaS Services"].
+
+
+
+[[storage-flexibility-and-operational-models]]
+== Speicherflexibilität und Betriebsmodelle
+
+Keystone STaaS unterstützt mehrere Storage-Typen und Performance-Service-Levels. Sie können mit lokalem Storage beginnen und Cloud Services hinzufügen, wenn sich Ihre Anforderungen ändern. Kapazitätsanpassungen und Cloud-Umverteilungen unterliegen Ihren Abonnementbedingungen.
+
+Keystone STaaS kann in einem partnerbetriebenen oder kundenbetriebenen Modell betrieben werden. Einzelheiten enthält link:../concepts/operational-models.html["Betriebsmodelle in Keystone"].
+
+
+
+[[key-benefits-of-keystone-staas]]
+== Die wichtigsten Vorteile von Keystone STaaS
+
+* *Kosteneffizienz*: Sie erhalten planbare Kosten für die zugesagte Kapazität und nutzungsabhängige Gebühren für den Verbrauch über diese Zusage hinaus.
+* *Kapitaleffizienz*: Zugriff auf Enterprise Storage ohne hohe Vorabinvestitionen.
+* *Skalierbarkeit*: Die Storage-Kapazität wächst mit Ihrem Unternehmen.
+* *Flexibilität*: Anpassung Ihres Storage-Plans und Verlagerung von Workloads in die Cloud, wenn es sinnvoll ist.
+* *Cloud-Integration*: Lokale und Cloud Services lassen sich im Rahmen eines einzigen Abonnements nutzen.
+* *Sicherheit*: Schutz Ihrer Daten durch fortschrittliche Sicherheitsmaßnahmen und Wiederherstellungsfunktionen.
+
 
 *Verwandte Informationen*
 
-* link:../concepts/pricing.html["Keystone-Preisgestaltung"]
-* link:../concepts/adp.html["Zusätzliche Services in Keystone STaaS"]
-* link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"]
-* link:../concepts/infra.html["Informationen zur Keystone Infrastruktur"]
+* link:../concepts/pricing.html["Keystone STaaS Abrechnung"]
+* link:../concepts/adp.html["Zusatzdienst für erweiterten Datenschutz"]
+* link:../concepts/supported-storage-services.html["Keystone STaaS Services"]
+* link:../concepts/service-levels.html["Performance Servicelevel in Keystone STaaS"]
+* link:../concepts/infra.html["Informationen zur Keystone STaaS Infrastruktur"]
 * link:../concepts/operational-models.html["Betriebsmodelle in Keystone"]
 

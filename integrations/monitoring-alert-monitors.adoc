@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: integrations/monitoring-alert-monitors.html 
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, netapp console 
-summary: Verwenden Sie die Registerkarte „Überwachung“, um Warnmonitore für Ihre Keystone Abonnements anzuzeigen und zu erstellen. 
+summary: Über die Registerkarte „Überwachung“ können Sie Alarmmonitore für Ihre Keystone Abonnements anzeigen und erstellen. 
 ---
 = Anzeigen und Erstellen von Warnmonitoren für Keystone -Abonnements
 :hardbreaks:

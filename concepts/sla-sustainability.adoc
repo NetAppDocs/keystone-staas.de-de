@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/sla-sustainability.html 
 keywords: sustainability, sla, service level agreement, slo, service level objectives 
-summary: Erfahren Sie, wie das Nachhaltigkeits-SLO von Keystone Stromverbrauchsziele für Ihre STaaS-Bereitstellung definiert und wie Sie Servicegutschriften beantragen können, wenn diese Ziele nicht erreicht werden. 
+summary: Hier wird erläutert, wie das Nachhaltigkeits-SLO von Keystone STaaS Stromverbrauchsziele für Ihr Deployment definiert und wie Servicegutschriften beansprucht werden können, wenn diese Ziele nicht erreicht werden. 
 ---
-= Nachhaltigkeits-SLO für Keystone
+= Nachhaltigkeit SLO für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

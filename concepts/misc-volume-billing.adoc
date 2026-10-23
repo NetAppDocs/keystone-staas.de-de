@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Keystone billing, special volume types, cloned volumes, SnapMirror destinations, LUNs, temporary volumes 
-summary: Die Abrechnungsregeln von Keystone unterscheiden sich je nach Volume-Konfiguration. Diese Seite erläutert die Abrechnung von geklonten Volumes, SnapMirror-Destinationen, LUNs, temporären Volumes und System-Volumes. 
+summary: Die Abrechnungsregeln für Keystone STaaS unterscheiden sich je nach bestimmten Volume-Konfigurationen. Diese Seite erläutert die Abrechnung für geklonte Volumes, SnapMirror Ziele, LUNs, temporäre Volumes und System-Volumes. 
 ---
-= Keystone-Abrechnung für bestimmte Volumenarten
+= Keystone STaaS Abrechnung für bestimmte Volumentypen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Die Abrechnungsregeln von Keystone unterscheiden sich je nach Volume-Ko
 
 
 [role="lead"]
-Die Abrechnungsregeln von Keystone unterscheiden sich je nach Volume-Konfiguration. Kenntnisse über diese Ausnahmen helfen Ihnen, unerwartete Kosten bei der Arbeit mit geklonten Volumes, SnapMirror-Destinationen, LUNs oder temporärem Speicher zu vermeiden.
+Die Abrechnungsregeln für Keystone STaaS unterscheiden sich bei bestimmten Volume-Konfigurationen. Die Kenntnis dieser Ausnahmen hilft Ihnen, unerwartete Kosten bei der Arbeit mit geklonten Volumes, SnapMirror Zielen, LUNs oder temporärem Storage zu vermeiden.
 
 Die folgende Tabelle fasst die Abrechnungsregeln für jeden Volumentyp zusammen.
 

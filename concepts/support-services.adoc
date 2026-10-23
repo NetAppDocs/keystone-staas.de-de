@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/support-services.html 
 keywords: Keystone support, service request, support ticket 
-summary: Verwenden Sie die NetApp Support-Website, um einen Supportfall zu erstellen oder Kontaktinformationen für Ihre Keystone-Abonnements zu finden. 
+summary: Auf der NetApp Support Site können Sie einen Supportfall erstellen oder Kontaktinformationen für Ihre Keystone STaaS-Abonnements finden. 
 ---
-= Support-Services für Keystone
+= Support Services für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: Verwenden Sie die NetApp Support-Website, um einen Supportfall zu erste
 
 
 [role="lead"]
-NetApp bietet Keystone-Kunden operative Dienstleistungen. Kunden erhalten einen dedizierten Keystone Success Manager (KSM), direkte Support-Kontaktoptionen und proaktives Monitoring durch die ITOM-Lösung.
+NetApp stellt Keystone STaaS Kunden operative Services bereit. Kunden erhalten einen dedizierten Keystone Success Manager (KSM), direkte Support Kontaktmöglichkeiten und proaktive Überwachung durch die ITOM-Lösung.
 
 
 
 [[netapp-support-services]]
 == NetApp Support-Services
 
-NetApp bietet Keystone-Kunden operative Dienstleistungen aus der Ferne an. Diese Dienstleistungen umfassen ein breites Spektrum an Speichermanagementaktivitäten, darunter Anlagen- und Konfigurationsmanagement, Kapazitäts- und Leistungsmanagement, Änderungsmanagement, Ereignis- und Störungsmanagement, Bearbeitung von Serviceanfragen und Berichtswesen.
+NetApp bietet Keystone STaaS Kunden operative Services aus der Ferne. Diese Services umfassen eine Reihe von Storage-Management-Aktivitäten, darunter Asset- und Konfigurationsmanagement, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignis- und Incident-Management, die Erfüllung von Serviceanfragen und das Berichtswesen.
 
 .Keystone Success Manager
 Ihr KSM arbeitet eng mit Ihnen an Ihren Keystone-Services zusammen und stellt wöchentliche oder monatliche Abrechnungs- und Betriebsberichte bereit. Die spezifischen Verantwortlichkeiten sind in Ihrer NetApp Keystone-Vereinbarung definiert.

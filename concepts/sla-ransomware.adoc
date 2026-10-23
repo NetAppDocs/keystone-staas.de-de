@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/sla-ransomware.html 
 keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
-summary: NetApp garantiert im Falle eines Ransomware-Angriffs die Recovery-Garantie-Programm für Ransomware-Daten aus SnapLock Compliance Volumes 
+summary: Für Keystone STaaS Abonnements garantiert NetApp mit dem Ransomware Recovery Guarantee Programm die Wiederherstellung von Snapshot-Daten aus SnapLock Compliance Volumes im Falle eines Ransomware-Angriffs. 
 ---
-= Ransomware-Wiederherstellungsgarantie für Keystone
+= Ransomware-Wiederherstellungsgarantie für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

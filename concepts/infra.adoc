@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/infra.html 
 keywords: keystone infrastructure, infra 
-summary: Keystone sind Infrastruktur, Design, Auswahl an Technologien und Komponenten ausschließlich mit NetApp im Unternehmen. 
+summary: Für die Keystone STaaS Infrastruktur, das Design, die Technologieauswahl und die Komponentenprodukte ist ausschließlich NetApp verantwortlich. 
 ---
-= Informationen zur Keystone Infrastruktur
+= Informationen zur Keystone STaaS Infrastruktur
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone sind Infrastruktur, Design, Auswahl an Technologien und Kompon
 
 
 [role="lead"]
-NetApp ist allein für die Infrastruktur, das Design, die Auswahl an Technologien und die Komponenten von Keystone verantwortlich. Dies gilt sowohl für NetApp Umgebungen als auch für Umgebungen, die vom Kunden betrieben werden.
+NetApp ist allein verantwortlich für die Infrastruktur, das Design, die Technologieauswahl und die Komponenten von Keystone STaaS, was sowohl für von NetApp betriebene als auch für vom Kunden betriebene Umgebungen gilt.
 
 NetApp behält sich das Recht vor, folgende Maßnahmen zu ergreifen:
 

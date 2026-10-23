@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/pricing.html 
 keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules 
-summary: Mit NetApp Keystone STaaS zahlen Sie für das, was Sie buchen, und nur extra für das, was Sie darüber hinaus nutzen. Diese Seite erklärt, wie das Pay-as-you-grow-Modell funktioniert – von der Preisgestaltung Ihres Speicherkontingents über die Messung und Abrechnung der Kapazität bis hin zum Zeitpunkt der Rechnungsstellung. 
+summary: Mit NetApp Keystone STaaS zahlen Sie für das, wozu Sie sich verpflichten, und nur zusätzlich für das, was Sie darüber hinaus nutzen. Diese Seite erläutert, wie das Pay-as-you-go-Modell funktioniert, von der Preisgestaltung Ihres Storage Commitments über die Messung und Abrechnung der Kapazität bis hin zum Zeitpunkt der Rechnungserstellung. 
 ---
-= Erfahren Sie mehr über die Keystone-Abrechnung
+= Informationen zur Abrechnung von Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

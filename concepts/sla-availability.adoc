@@ -4,7 +4,7 @@ permalink: concepts/sla-availability.html
 keywords: availability, sla, service level agreement, slo, service level objectives 
 summary: Das Availability SLO zielt auf eine Verfügbarkeit von 99,999 Prozent während eines Abrechnungszeitraums für alle NetApp ONTAP Flash-Speicherarrays ab, die zur Auslieferung des Keystone-Auftrags eingesetzt werden. 
 ---
-= Verfügbarkeits-SLO für Keystone
+= Verfügbarkeits-SLO für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
